@@ -1,0 +1,4131 @@
+{
+  "generated_at": "2026-04-19T18:24:02.499844",
+  "months": [
+    "2025-08",
+    "2025-09",
+    "2025-10",
+    "2025-11",
+    "2025-12",
+    "2026-01",
+    "2026-02",
+    "2026-03",
+    "2026-04",
+    "2026-05",
+    "2026-06",
+    "2026-07",
+    "2026-08",
+    "2026-09",
+    "2026-10",
+    "2026-11",
+    "2026-12"
+  ],
+  "commission_rate": 0.2,
+  "projects": [
+    {
+      "gid": "1208274147150666",
+      "name": "Bowman Steel - Kings Mountain, NC",
+      "salesperson": "Unknown",
+      "project_number": "",
+      "status": "Closed",
+      "start_date": "2024-10-16",
+      "end_date": "2025-12-31",
+      "base_ar": 4620.0,
+      "base_ap": 1800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 4620.0,
+          "ap": 0.0,
+          "net_gp": 3696.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 4620.0,
+          "ap": 0.0,
+          "net_gp": 3696.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 3307.5,
+          "ap": 1020.0,
+          "net_gp": 1830.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 1995.0,
+          "ap": 840.0,
+          "net_gp": 924.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 1995.0,
+          "ap": 0.0,
+          "net_gp": 1596.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2024-10-16",
+            "end_date": "2025-10-15",
+            "monthly_amount": 2625.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-15",
+            "end_date": "2025-11-14",
+            "monthly_amount": 1800.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2025-01-01",
+            "end_date": "2025-12-31",
+            "monthly_amount": 1995.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1208641143232831",
+      "name": "Gray Construction - Bristol, TN - Paul - 2592",
+      "salesperson": "Paul",
+      "project_number": "2592",
+      "status": "Active",
+      "start_date": "2024-12-15",
+      "end_date": "2026-07-31",
+      "base_ar": 4700.0,
+      "base_ap": 3300.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 1800.0,
+          "net_gp": 2320.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 1800.0,
+          "net_gp": 2320.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 1800.0,
+          "net_gp": 2320.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 1800.0,
+          "net_gp": 2320.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 3366.67,
+          "ap": 1800.0,
+          "net_gp": 1253.34
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 3300.0,
+          "net_gp": -880.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1620.0,
+          "net_gp": 464.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1500.0,
+          "net_gp": 560.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1500.0,
+          "net_gp": 560.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1500.0,
+          "net_gp": 560.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1500.0,
+          "net_gp": 560.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 50.0,
+          "net_gp": 1720.0
+        }
+      },
+      "total_2026": {
+        "ar": 15400.0,
+        "ap": 10970.0,
+        "net_gp": 3544.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2024-12-15",
+            "end_date": "2025-12-14",
+            "monthly_amount": 2500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-07-01",
+            "monthly_amount": 1500.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2025-02-03",
+            "end_date": "2026-07-31",
+            "monthly_amount": 2200.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-02-03",
+            "end_date": "2026-02-02",
+            "monthly_amount": 1800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1209169429620891",
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506",
+      "salesperson": "Paul",
+      "project_number": "2506",
+      "status": "Active",
+      "start_date": "2025-01-20",
+      "end_date": "2027-02-14",
+      "base_ar": 32655.0,
+      "base_ap": 19475.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 12403.16,
+          "ap": 6233.33,
+          "net_gp": 4935.86
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 14680.0,
+          "ap": 7700.0,
+          "net_gp": 5584.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 18754.33,
+          "ap": 10541.67,
+          "net_gp": 6570.13
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 21870.0,
+          "ap": 12750.0,
+          "net_gp": 7296.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 24027.0,
+          "ap": 14235.0,
+          "net_gp": 7833.6
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 25465.0,
+          "ap": 15225.0,
+          "net_gp": 8192.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 30258.34,
+          "ap": 17948.33,
+          "net_gp": 9848.01
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 32655.0,
+          "ap": 19475.0,
+          "net_gp": 10544.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 30468.0,
+          "ap": 18200.0,
+          "net_gp": 9814.4
+        }
+      },
+      "total_2026": {
+        "ar": 380086.34,
+        "ap": 226648.33,
+        "net_gp": 122750.41
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-01-20",
+            "end_date": "2026-12-27",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        },
+        "B": {
+          "construction": {
+            "start_date": "2025-05-13",
+            "end_date": "2026-12-27",
+            "monthly_amount": 3895.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-13",
+            "end_date": "2026-12-27",
+            "monthly_amount": 3100.0
+          }
+        },
+        "C": {
+          "construction": {
+            "start_date": "2025-08-10",
+            "end_date": "2026-12-27",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-10",
+            "end_date": "2026-12-27",
+            "monthly_amount": 2200.0
+          }
+        },
+        "D": {
+          "construction": {
+            "start_date": "2025-08-13",
+            "end_date": "2026-12-27",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-13",
+            "end_date": "2026-12-27",
+            "monthly_amount": 2400.0
+          }
+        },
+        "E": {
+          "construction": {
+            "start_date": "2025-10-01",
+            "end_date": "2026-12-27",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-01",
+            "end_date": "2026-12-27",
+            "monthly_amount": 2400.0
+          }
+        },
+        "F": {
+          "construction": {
+            "start_date": "2025-10-28",
+            "end_date": "2026-12-27",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-27",
+            "end_date": "2026-12-27",
+            "monthly_amount": 2650.0
+          }
+        },
+        "G": {
+          "construction": {
+            "start_date": "2025-12-14",
+            "end_date": "2026-12-31",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-12-14",
+            "end_date": "2026-12-31",
+            "monthly_amount": 2475.0
+          }
+        },
+        "H": {
+          "construction": {
+            "start_date": "2026-02-03",
+            "end_date": "2027-02-02",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-03",
+            "end_date": "2027-02-02",
+            "monthly_amount": 1850.0
+          }
+        },
+        "I": {
+          "construction": {
+            "start_date": "2026-02-15",
+            "end_date": "2027-02-14",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-15",
+            "end_date": "2027-02-14",
+            "monthly_amount": 2400.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1209360353419933",
+      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
+      "salesperson": "Paul",
+      "project_number": "2509",
+      "status": "Closed",
+      "start_date": "2025-02-17",
+      "end_date": "2025-03-16",
+      "base_ar": 2200.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-02-17",
+            "end_date": "2025-03-16",
+            "monthly_amount": 2200.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1209518084230355",
+      "name": "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513",
+      "salesperson": "Paul",
+      "project_number": "2513",
+      "status": "Closed",
+      "start_date": "2025-03-09",
+      "end_date": "2026-03-08",
+      "base_ar": 7190.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 0.0,
+          "net_gp": 5752.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 0.0,
+          "net_gp": 5752.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 0.0,
+          "net_gp": 5752.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 0.0,
+          "net_gp": 5752.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 0.0,
+          "net_gp": 5752.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 0.0,
+          "net_gp": 5752.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 0.0,
+          "net_gp": 5752.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 1917.33,
+          "ap": 0.0,
+          "net_gp": 1533.86
+        }
+      },
+      "total_2026": {
+        "ar": 16297.33,
+        "ap": 0.0,
+        "net_gp": 13037.86
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-03-09",
+            "end_date": "2026-03-08",
+            "monthly_amount": 7190.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1209783110684124",
+      "name": "AES- Kirksville, MO - Paul - 2520",
+      "salesperson": "Paul",
+      "project_number": "2520",
+      "status": "Closed",
+      "start_date": "2025-03-30",
+      "end_date": "2025-05-29",
+      "base_ar": 1895.0,
+      "base_ap": 2600.0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-03-30",
+            "end_date": "2025-05-29",
+            "monthly_amount": 1895.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-03-26",
+            "end_date": "2025-05-31",
+            "monthly_amount": 950.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2025-06-30",
+            "end_date": "2025-07-31",
+            "monthly_amount": 1650.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1209864394478328",
+      "name": "Duininck Golf - Durham, NC - Paul - 2526",
+      "salesperson": "Paul",
+      "project_number": "2526",
+      "status": "Closed",
+      "start_date": "2025-04-08",
+      "end_date": "2025-08-03",
+      "base_ar": 2795.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 279.5,
+          "ap": 0.0,
+          "net_gp": 223.6
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-04-08",
+            "end_date": "2025-08-03",
+            "monthly_amount": 2795.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1209949506323121",
+      "name": "Caliber 1 - Jacksonville, Fl - 2524",
+      "salesperson": "Unknown",
+      "project_number": "2524",
+      "status": "Closed",
+      "start_date": "2025-04-20",
+      "end_date": "2025-06-14",
+      "base_ar": 4395.0,
+      "base_ap": 3500.0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-04-20",
+            "end_date": "2025-06-14",
+            "monthly_amount": 4395.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-26",
+            "end_date": "2025-06-14",
+            "monthly_amount": 3500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1209951377881879",
+      "name": "ARCO/Murray - Emeryville CA - Paul - 2528",
+      "salesperson": "Paul",
+      "project_number": "2528",
+      "status": "Closed",
+      "start_date": "2025-05-17",
+      "end_date": "2025-09-07",
+      "base_ar": 4250.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 4250.0,
+          "ap": 0.0,
+          "net_gp": 3400.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 991.67,
+          "ap": 0.0,
+          "net_gp": 793.34
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-17",
+            "end_date": "2025-09-07",
+            "monthly_amount": 4250.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1210012515088541",
+      "name": "ARCO/Murray - Dallas, TX - Paul - 2530",
+      "salesperson": "Paul",
+      "project_number": "2530",
+      "status": "Closed",
+      "start_date": "2025-05-17",
+      "end_date": "2025-08-10",
+      "base_ar": 2600.0,
+      "base_ap": 2050.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 866.67,
+          "ap": 683.33,
+          "net_gp": 146.67
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-17",
+            "end_date": "2025-08-10",
+            "monthly_amount": 2600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-17",
+            "end_date": "2025-08-10",
+            "monthly_amount": 2050.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210036500330349",
+      "name": "Arco - Groveland, FL - Paul - 2529",
+      "salesperson": "Paul",
+      "project_number": "2529",
+      "status": "Closed",
+      "start_date": "2025-05-20",
+      "end_date": "2025-08-15",
+      "base_ar": 2350.0,
+      "base_ap": 1850.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 1175.0,
+          "ap": 925.0,
+          "net_gp": 200.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-20",
+            "end_date": "2025-08-15",
+            "monthly_amount": 2350.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-20",
+            "end_date": "2025-08-15",
+            "monthly_amount": 1850.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210058724192730",
+      "name": "Arco- Lebanon, PA - Paul - 2531",
+      "salesperson": "Paul",
+      "project_number": "2531",
+      "status": "Closed",
+      "start_date": "2025-05-17",
+      "end_date": "2025-08-15",
+      "base_ar": 2500.0,
+      "base_ap": 2000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 1250.0,
+          "ap": 1000.0,
+          "net_gp": 200.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-17",
+            "end_date": "2025-08-15",
+            "monthly_amount": 2500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-17",
+            "end_date": "2025-08-15",
+            "monthly_amount": 2000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210056931565763",
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532",
+      "salesperson": "Paul",
+      "project_number": "2532",
+      "status": "Active",
+      "start_date": "2025-05-09",
+      "end_date": "2026-06-01",
+      "base_ar": 10190.0,
+      "base_ap": 7495.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 8510.0,
+          "ap": 4615.0,
+          "net_gp": 3116.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 7790.0,
+          "ap": 5695.0,
+          "net_gp": 1676.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 4200.34,
+          "ap": 4595.0,
+          "net_gp": -315.73
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 96.5,
+          "ap": 139.83,
+          "net_gp": -34.66
+        }
+      },
+      "total_2026": {
+        "ar": 35456.84,
+        "ap": 27514.83,
+        "net_gp": 6353.61
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-09",
+            "end_date": "2026-05-08",
+            "monthly_amount": 2500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-29",
+            "end_date": "2026-06-01",
+            "monthly_amount": 1800.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2025-05-09",
+            "end_date": "2026-05-08",
+            "monthly_amount": 2395.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-09",
+            "end_date": "2026-05-08",
+            "monthly_amount": 1500.0
+          }
+        },
+        "C": {
+          "construction": {
+            "start_date": "2025-05-09",
+            "end_date": "2025-08-09",
+            "monthly_amount": 2400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-09",
+            "end_date": "2025-08-09",
+            "monthly_amount": 1800.0
+          }
+        },
+        "D": {
+          "construction": {
+            "start_date": "2025-06-03",
+            "end_date": "2026-06-01",
+            "monthly_amount": 2895.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-06-03",
+            "end_date": "2026-06-01",
+            "monthly_amount": 2395.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210083238259355",
+      "name": "Arco - Grand Junction, CO - Paul - 2535 ",
+      "salesperson": "Paul",
+      "project_number": "2535",
+      "status": "Closed",
+      "start_date": "2025-05-25",
+      "end_date": "2025-08-10",
+      "base_ar": 2600.0,
+      "base_ap": 1850.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 866.67,
+          "ap": 616.67,
+          "net_gp": 200.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-25",
+            "end_date": "2025-08-10",
+            "monthly_amount": 2600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-25",
+            "end_date": "2025-08-10",
+            "monthly_amount": 1850.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210083740093755",
+      "name": "Arco - Tampa, FL - Paul - 2533 ",
+      "salesperson": "Paul",
+      "project_number": "2533",
+      "status": "Closed",
+      "start_date": "2025-05-25",
+      "end_date": "2025-07-30",
+      "base_ar": 2450.0,
+      "base_ap": 1500.0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-25",
+            "end_date": "2025-07-30",
+            "monthly_amount": 2450.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-25",
+            "end_date": "2025-07-30",
+            "monthly_amount": 1500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210175771951404",
+      "name": "Flow Dynamics Group- Frisco, TX - 2534",
+      "salesperson": "Unknown",
+      "project_number": "2534",
+      "status": "Closed",
+      "start_date": "2025-05-08",
+      "end_date": "2025-05-30",
+      "base_ar": 4400.0,
+      "base_ap": 3366.0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-08",
+            "end_date": "2025-05-30",
+            "monthly_amount": 4400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-08",
+            "end_date": "2025-05-30",
+            "monthly_amount": 3366.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210230923893650",
+      "name": "Duininck Golf - New London, MN - 2536",
+      "salesperson": "Unknown",
+      "project_number": "2536",
+      "status": "Closed",
+      "start_date": "2025-05-19",
+      "end_date": "2025-07-18",
+      "base_ar": 11500.0,
+      "base_ap": 7000.0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-19",
+            "end_date": "2025-07-18",
+            "monthly_amount": 11500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-19",
+            "end_date": "2025-07-18",
+            "monthly_amount": 7000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210255263253804",
+      "name": "RSD - Campbellsville, KY 1.0 ",
+      "salesperson": "Unknown",
+      "project_number": "",
+      "status": "Closed",
+      "start_date": "2025-05-16",
+      "end_date": "2025-09-30",
+      "base_ar": 3600.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-16",
+            "end_date": "2025-09-30",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1210352870430034",
+      "name": "Builtech - Fairfield, OH - 2538",
+      "salesperson": "Unknown",
+      "project_number": "2538",
+      "status": "Closed",
+      "start_date": "2025-05-26",
+      "end_date": "2025-06-25",
+      "base_ar": 2400.0,
+      "base_ap": 1750.0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-26",
+            "end_date": "2025-06-25",
+            "monthly_amount": 2400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-26",
+            "end_date": "2025-06-25",
+            "monthly_amount": 1750.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210403204610002",
+      "name": "Caliber 1 - Snellville, GA - Paul - 2539",
+      "salesperson": "Paul",
+      "project_number": "2539",
+      "status": "Closed",
+      "start_date": "2025-06-08",
+      "end_date": "2025-08-02",
+      "base_ar": 4995.0,
+      "base_ap": 2900.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 333.0,
+          "ap": 193.33,
+          "net_gp": 111.74
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-06-08",
+            "end_date": "2025-08-02",
+            "monthly_amount": 4995.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-06-08",
+            "end_date": "2025-08-02",
+            "monthly_amount": 2900.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210547823530724",
+      "name": "Petra CPS - Chula Vista, CA - 2543",
+      "salesperson": "Unknown",
+      "project_number": "2543",
+      "status": "Closed",
+      "start_date": "2025-06-16",
+      "end_date": "2025-07-25",
+      "base_ar": 9800.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-06-16",
+            "end_date": "2025-07-25",
+            "monthly_amount": 9800.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1210711315831289",
+      "name": "Gutknecht Construction - Oxford, OH - Matt - 2550",
+      "salesperson": "Matt",
+      "project_number": "2550",
+      "status": "Closed",
+      "start_date": "2025-07-07",
+      "end_date": "2025-09-01",
+      "base_ar": 10000.0,
+      "base_ap": 3300.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 10000.0,
+          "ap": 3300.0,
+          "net_gp": 5360.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 333.33,
+          "ap": 110.0,
+          "net_gp": 178.66
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-07-07",
+            "end_date": "2025-09-01",
+            "monthly_amount": 10000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-07-07",
+            "end_date": "2025-09-01",
+            "monthly_amount": 3300.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210884304533957",
+      "name": "Duininck Golf - Midway, UT - Paul - 2555",
+      "salesperson": "Paul",
+      "project_number": "2555",
+      "status": "Closed",
+      "start_date": "2025-09-01",
+      "end_date": "2025-11-30",
+      "base_ar": 4695.0,
+      "base_ap": 2500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 4695.0,
+          "ap": 2500.0,
+          "net_gp": 1756.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 4695.0,
+          "ap": 2500.0,
+          "net_gp": 1756.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 4695.0,
+          "ap": 2500.0,
+          "net_gp": 1756.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-01",
+            "end_date": "2025-11-30",
+            "monthly_amount": 4695.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-01",
+            "end_date": "2025-11-30",
+            "monthly_amount": 2500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210892056522705",
+      "name": "Flow Dynamics - Frisco TX #2 - Paul - 2556 ",
+      "salesperson": "Paul",
+      "project_number": "2556",
+      "status": "Closed",
+      "start_date": "2025-08-04",
+      "end_date": "2025-10-03",
+      "base_ar": 4150.0,
+      "base_ap": 3500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 3873.33,
+          "ap": 3266.67,
+          "net_gp": 485.33
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 4150.0,
+          "ap": 3500.0,
+          "net_gp": 520.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 415.0,
+          "ap": 350.0,
+          "net_gp": 52.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-08-04",
+            "end_date": "2025-10-03",
+            "monthly_amount": 4150.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-04",
+            "end_date": "2025-10-03",
+            "monthly_amount": 3500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210921570020300",
+      "name": "Newline Skateparks - State College, PA - Paul - 2557",
+      "salesperson": "Paul",
+      "project_number": "2557",
+      "status": "Closed",
+      "start_date": "2025-08-18",
+      "end_date": "2025-12-22",
+      "base_ar": 7995.0,
+      "base_ap": 5000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 3731.0,
+          "ap": 2333.33,
+          "net_gp": 1118.14
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 7995.0,
+          "ap": 5000.0,
+          "net_gp": 2396.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 7995.0,
+          "ap": 5000.0,
+          "net_gp": 2396.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 7995.0,
+          "ap": 5000.0,
+          "net_gp": 2396.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 5863.0,
+          "ap": 3666.67,
+          "net_gp": 1757.06
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-08-18",
+            "end_date": "2025-12-22",
+            "monthly_amount": 7995.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-18",
+            "end_date": "2025-12-22",
+            "monthly_amount": 5000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210992137957471",
+      "name": "Orion Marine - Sabine Pass, TX - Paul - 2558",
+      "salesperson": "Paul",
+      "project_number": "2558",
+      "status": "Closed",
+      "start_date": "2025-09-02",
+      "end_date": "2025-10-20",
+      "base_ar": 10400.0,
+      "base_ap": 6480.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 10053.33,
+          "ap": 6264.0,
+          "net_gp": 3031.46
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 6933.33,
+          "ap": 4320.0,
+          "net_gp": 2090.66
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-02",
+            "end_date": "2025-10-20",
+            "monthly_amount": 10400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-02",
+            "end_date": "2025-10-20",
+            "monthly_amount": 6480.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210992137957479",
+      "name": "Arco - Groveland, FL #2 - Paul - 2559 ",
+      "salesperson": "Paul",
+      "project_number": "2559",
+      "status": "Closed",
+      "start_date": "2025-08-20",
+      "end_date": "2025-12-15",
+      "base_ar": 2350.0,
+      "base_ap": 1850.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 940.0,
+          "ap": 740.0,
+          "net_gp": 160.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2350.0,
+          "ap": 1850.0,
+          "net_gp": 400.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2350.0,
+          "ap": 1850.0,
+          "net_gp": 400.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2350.0,
+          "ap": 1850.0,
+          "net_gp": 400.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 1175.0,
+          "ap": 925.0,
+          "net_gp": 200.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-08-20",
+            "end_date": "2025-12-15",
+            "monthly_amount": 2350.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-20",
+            "end_date": "2025-12-15",
+            "monthly_amount": 1850.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211026479463987",
+      "name": "RSD - Cynthiana, KY - David ",
+      "salesperson": "David",
+      "project_number": "",
+      "status": "Closed",
+      "start_date": "2025-10-01",
+      "end_date": "2026-03-31",
+      "base_ar": 3600.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        }
+      },
+      "total_2026": {
+        "ar": 10800.0,
+        "ap": 0.0,
+        "net_gp": 8640.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-01",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1211037193471740",
+      "name": "Arco - Lebanon, TN - Paul - 2560",
+      "salesperson": "Paul",
+      "project_number": "2560",
+      "status": "Closed",
+      "start_date": "2025-08-15",
+      "end_date": "2025-11-21",
+      "base_ar": 2950.0,
+      "base_ap": 1800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 1671.67,
+          "ap": 1020.0,
+          "net_gp": 521.34
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2950.0,
+          "ap": 1800.0,
+          "net_gp": 920.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2950.0,
+          "ap": 1800.0,
+          "net_gp": 920.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2065.0,
+          "ap": 1260.0,
+          "net_gp": 644.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-08-15",
+            "end_date": "2025-11-21",
+            "monthly_amount": 2950.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-15",
+            "end_date": "2025-11-21",
+            "monthly_amount": 1800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211164494308713",
+      "name": "Caliber 1 - Charleston, SC - Paul - 2567",
+      "salesperson": "Paul",
+      "project_number": "2567",
+      "status": "Closed",
+      "start_date": "2025-08-31",
+      "end_date": "2025-10-25",
+      "base_ar": 6000.0,
+      "base_ap": 4000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 200.0,
+          "ap": 133.33,
+          "net_gp": 53.34
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 4000.0,
+          "net_gp": 1600.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 5000.0,
+          "ap": 3333.33,
+          "net_gp": 1333.34
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-08-31",
+            "end_date": "2025-10-25",
+            "monthly_amount": 6000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-31",
+            "end_date": "2025-10-25",
+            "monthly_amount": 4000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211213718360953",
+      "name": "Calmex Engineering - San Diego, CA - Paul - 2568",
+      "salesperson": "Paul",
+      "project_number": "2568",
+      "status": "Closed",
+      "start_date": "2025-09-08",
+      "end_date": "2026-03-07",
+      "base_ar": 8495.0,
+      "base_ap": 5000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 6512.83,
+          "ap": 3833.33,
+          "net_gp": 2143.6
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 8495.0,
+          "ap": 5000.0,
+          "net_gp": 2796.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 8495.0,
+          "ap": 5000.0,
+          "net_gp": 2796.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 8495.0,
+          "ap": 5000.0,
+          "net_gp": 2796.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 8495.0,
+          "ap": 5000.0,
+          "net_gp": 2796.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 8495.0,
+          "ap": 5000.0,
+          "net_gp": 2796.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 1982.17,
+          "ap": 1166.67,
+          "net_gp": 652.4
+        }
+      },
+      "total_2026": {
+        "ar": 18972.17,
+        "ap": 11166.67,
+        "net_gp": 6244.4
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-08",
+            "end_date": "2026-03-07",
+            "monthly_amount": 8495.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-08",
+            "end_date": "2026-03-07",
+            "monthly_amount": 5000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211319142625206",
+      "name": "RSD - Pikeville, KY - David - 2571 ",
+      "salesperson": "David",
+      "project_number": "2571",
+      "status": "Closed",
+      "start_date": "2025-09-12",
+      "end_date": "2025-11-30",
+      "base_ar": 3600.0,
+      "base_ap": 2500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 2280.0,
+          "ap": 1583.33,
+          "net_gp": 557.34
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2500.0,
+          "net_gp": 880.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2500.0,
+          "net_gp": 880.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-12",
+            "end_date": "2025-11-30",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-12",
+            "end_date": "2025-11-30",
+            "monthly_amount": 2500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211427273217469",
+      "name": "Independence Excavating - Grove City, OH - Paul -2574",
+      "salesperson": "Paul",
+      "project_number": "2574",
+      "status": "Active",
+      "start_date": "2025-10-01",
+      "end_date": "2026-06-30",
+      "base_ar": 2600.0,
+      "base_ap": 1850.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 1850.0,
+          "net_gp": 600.0
+        }
+      },
+      "total_2026": {
+        "ar": 15600.0,
+        "ap": 11100.0,
+        "net_gp": 3600.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-01",
+            "end_date": "2026-06-30",
+            "monthly_amount": 2600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-01",
+            "end_date": "2026-06-30",
+            "monthly_amount": 1850.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211497205565604",
+      "name": "RSD - Johnson Central - David - 2579",
+      "salesperson": "David",
+      "project_number": "2579",
+      "status": "Active",
+      "start_date": "2025-10-08",
+      "end_date": "2026-05-31",
+      "base_ar": 9000.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 7200.0,
+          "ap": 0.0,
+          "net_gp": 5760.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 9000.0,
+          "ap": 0.0,
+          "net_gp": 7200.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 9000.0,
+          "ap": 0.0,
+          "net_gp": 7200.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 9000.0,
+          "ap": 0.0,
+          "net_gp": 7200.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 9000.0,
+          "ap": 0.0,
+          "net_gp": 7200.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 9000.0,
+          "ap": 0.0,
+          "net_gp": 7200.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 9000.0,
+          "ap": 0.0,
+          "net_gp": 7200.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 9000.0,
+          "ap": 0.0,
+          "net_gp": 7200.0
+        }
+      },
+      "total_2026": {
+        "ar": 45000.0,
+        "ap": 0.0,
+        "net_gp": 36000.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-08",
+            "end_date": "2026-05-31",
+            "monthly_amount": 9000.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1211534274175903",
+      "name": "Feldkamp Mechanical - Lexington, KY - Paul - 2581",
+      "salesperson": "Paul",
+      "project_number": "2581",
+      "status": "Closed",
+      "start_date": "2025-10-04",
+      "end_date": "2025-11-03",
+      "base_ar": 1900.0,
+      "base_ap": 1700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 1773.33,
+          "ap": 1586.67,
+          "net_gp": 149.33
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 190.0,
+          "ap": 170.0,
+          "net_gp": 16.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-04",
+            "end_date": "2025-11-03",
+            "monthly_amount": 1900.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-04",
+            "end_date": "2025-11-03",
+            "monthly_amount": 1700.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211579601941971",
+      "name": "DH Griffin - LaGrange, GA - Paul -2582",
+      "salesperson": "Paul",
+      "project_number": "2582",
+      "status": "Active",
+      "start_date": "2025-10-13",
+      "end_date": "2026-10-12",
+      "base_ar": 2700.0,
+      "base_ap": 1800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 1710.0,
+          "ap": 1140.0,
+          "net_gp": 456.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 1800.0,
+          "net_gp": 720.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 1080.0,
+          "ap": 720.0,
+          "net_gp": 288.0
+        }
+      },
+      "total_2026": {
+        "ar": 25380.0,
+        "ap": 16920.0,
+        "net_gp": 6768.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-13",
+            "end_date": "2026-10-12",
+            "monthly_amount": 2700.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-13",
+            "end_date": "2026-10-12",
+            "monthly_amount": 1800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211602632659485",
+      "name": "RSD - Lakeview Park - David - 2583",
+      "salesperson": "David",
+      "project_number": "2583",
+      "status": "Closed",
+      "start_date": "2025-10-22",
+      "end_date": "2026-02-28",
+      "base_ar": 2700.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 900.0,
+          "ap": 0.0,
+          "net_gp": 720.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 0.0,
+          "net_gp": 2160.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 0.0,
+          "net_gp": 2160.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 0.0,
+          "net_gp": 2160.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 0.0,
+          "net_gp": 2160.0
+        }
+      },
+      "total_2026": {
+        "ar": 5400.0,
+        "ap": 0.0,
+        "net_gp": 4320.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-22",
+            "end_date": "2026-02-28",
+            "monthly_amount": 2700.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1211649343765025",
+      "name": "RSD - Greg Collins - Lexington - David - 2584",
+      "salesperson": "David",
+      "project_number": "2584",
+      "status": "Active",
+      "start_date": "2025-10-20",
+      "end_date": "2026-08-31",
+      "base_ar": 2400.0,
+      "base_ap": 1000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 960.0,
+          "ap": 400.0,
+          "net_gp": 448.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 2400.0,
+          "ap": 1000.0,
+          "net_gp": 1120.0
+        }
+      },
+      "total_2026": {
+        "ar": 19200.0,
+        "ap": 8000.0,
+        "net_gp": 8960.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-20",
+            "end_date": "2026-08-31",
+            "monthly_amount": 2400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-20",
+            "end_date": "2026-08-31",
+            "monthly_amount": 1000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211697715124635",
+      "name": "Miller Pipeline - Saint Joseph, MO - Paul - 2586",
+      "salesperson": "Paul",
+      "project_number": "2586",
+      "status": "Active",
+      "start_date": "2025-12-01",
+      "end_date": "2026-11-30",
+      "base_ar": 4295.0,
+      "base_ap": 36930.7,
+      "base_crew": 0,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 4295.0,
+          "ap": 36930.7,
+          "net_gp": -26108.56
+        }
+      },
+      "total_2026": {
+        "ar": 47245.0,
+        "ap": 406237.7,
+        "net_gp": -287194.16
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-12-01",
+            "end_date": "2026-11-30",
+            "monthly_amount": 4295.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-12-01",
+            "end_date": "2026-11-30",
+            "monthly_amount": 36930.7
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211880628649052",
+      "name": "Mr Worx Inc - Beaumont, TX - Paul ",
+      "salesperson": "Paul",
+      "project_number": "",
+      "status": "Active",
+      "start_date": "2025-11-17",
+      "end_date": "2026-05-16",
+      "base_ar": 8350.0,
+      "base_ap": 6000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-11": {
+          "crew": 0,
+          "ar": 3896.67,
+          "ap": 2800.0,
+          "net_gp": 877.34
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 8350.0,
+          "ap": 6000.0,
+          "net_gp": 1880.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 8350.0,
+          "ap": 6000.0,
+          "net_gp": 1880.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 8350.0,
+          "ap": 6000.0,
+          "net_gp": 1880.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 8350.0,
+          "ap": 6000.0,
+          "net_gp": 1880.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 8350.0,
+          "ap": 6000.0,
+          "net_gp": 1880.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 4453.33,
+          "ap": 3200.0,
+          "net_gp": 1002.66
+        }
+      },
+      "total_2026": {
+        "ar": 37853.33,
+        "ap": 27200.0,
+        "net_gp": 8522.66
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-11-17",
+            "end_date": "2026-05-16",
+            "monthly_amount": 8350.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-11-17",
+            "end_date": "2026-05-16",
+            "monthly_amount": 6000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211939568903452",
+      "name": "Caliber 1 - Montgomery, AL - Paul - 2588 ",
+      "salesperson": "Paul",
+      "project_number": "2588",
+      "status": "Active",
+      "start_date": "2025-11-16",
+      "end_date": "2026-06-05",
+      "base_ar": 2875.0,
+      "base_ap": 1800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-11": {
+          "crew": 0,
+          "ar": 1437.5,
+          "ap": 900.0,
+          "net_gp": 430.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2875.0,
+          "ap": 1800.0,
+          "net_gp": 860.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2875.0,
+          "ap": 1800.0,
+          "net_gp": 860.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2875.0,
+          "ap": 1800.0,
+          "net_gp": 860.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2875.0,
+          "ap": 1800.0,
+          "net_gp": 860.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2875.0,
+          "ap": 1800.0,
+          "net_gp": 860.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2875.0,
+          "ap": 1800.0,
+          "net_gp": 860.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 479.17,
+          "ap": 300.0,
+          "net_gp": 143.34
+        }
+      },
+      "total_2026": {
+        "ar": 14854.17,
+        "ap": 9300.0,
+        "net_gp": 4443.34
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-11-16",
+            "end_date": "2026-06-05",
+            "monthly_amount": 2875.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-11-16",
+            "end_date": "2026-06-05",
+            "monthly_amount": 1800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212269370069299",
+      "name": "Bowman Steel Herndon, VA",
+      "salesperson": "Unknown",
+      "project_number": "",
+      "status": "Closed",
+      "start_date": "2025-01-02",
+      "end_date": "2025-12-01",
+      "base_ar": 3150.0,
+      "base_ap": 2200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 3150.0,
+          "ap": 2200.0,
+          "net_gp": 760.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 3150.0,
+          "ap": 2200.0,
+          "net_gp": 760.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 3150.0,
+          "ap": 2200.0,
+          "net_gp": 760.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 3150.0,
+          "ap": 2200.0,
+          "net_gp": 760.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 105.0,
+          "ap": 146.67,
+          "net_gp": -33.34
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-01-02",
+            "end_date": "2025-12-01",
+            "monthly_amount": 3150.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-01-01",
+            "end_date": "2025-12-02",
+            "monthly_amount": 2200.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212423691472124",
+      "name": "Orion (TJ Shellenberger) - Surprise, AZ - Paul - 2595",
+      "salesperson": "Paul",
+      "project_number": "2595",
+      "status": "Closed",
+      "start_date": "2025-12-13",
+      "end_date": "2026-01-12",
+      "base_ar": 2950.0,
+      "base_ap": 1950.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 1868.33,
+          "ap": 1235.0,
+          "net_gp": 506.66
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 1180.0,
+          "ap": 780.0,
+          "net_gp": 320.0
+        }
+      },
+      "total_2026": {
+        "ar": 1180.0,
+        "ap": 780.0,
+        "net_gp": 320.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-12-13",
+            "end_date": "2026-01-12",
+            "monthly_amount": 2950.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-12-13",
+            "end_date": "2026-01-12",
+            "monthly_amount": 1950.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212606733510112",
+      "name": "Genoa Construction Services Inc - Oklahoma City, OK - Paul - 2602",
+      "salesperson": "Paul",
+      "project_number": "2602",
+      "status": "Closed",
+      "start_date": "2026-01-05",
+      "end_date": "2026-04-13",
+      "base_ar": 2975.0,
+      "base_ap": 1850.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 2677.5,
+          "ap": 1665.0,
+          "net_gp": 810.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2975.0,
+          "ap": 1850.0,
+          "net_gp": 900.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2975.0,
+          "ap": 1850.0,
+          "net_gp": 900.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 1289.17,
+          "ap": 801.67,
+          "net_gp": 390.0
+        }
+      },
+      "total_2026": {
+        "ar": 9916.67,
+        "ap": 6166.67,
+        "net_gp": 3000.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-05",
+            "end_date": "2026-04-13",
+            "monthly_amount": 2975.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-05",
+            "end_date": "2026-04-13",
+            "monthly_amount": 1850.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212813348194340",
+      "name": "Jones Covey Group, Inc - Ringgold, GA - Paul - 2605",
+      "salesperson": "Paul",
+      "project_number": "2605",
+      "status": "Active",
+      "start_date": "2026-03-03",
+      "end_date": "2026-09-20",
+      "base_ar": 5150.0,
+      "base_ap": 2650.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-03": {
+          "crew": 0,
+          "ar": 4978.33,
+          "ap": 2561.67,
+          "net_gp": 1933.33
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 5150.0,
+          "ap": 2650.0,
+          "net_gp": 2000.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 5150.0,
+          "ap": 2650.0,
+          "net_gp": 2000.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 5150.0,
+          "ap": 2650.0,
+          "net_gp": 2000.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 5150.0,
+          "ap": 2650.0,
+          "net_gp": 2000.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 5150.0,
+          "ap": 2650.0,
+          "net_gp": 2000.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3433.33,
+          "ap": 1766.67,
+          "net_gp": 1333.33
+        }
+      },
+      "total_2026": {
+        "ar": 34161.66,
+        "ap": 17578.34,
+        "net_gp": 13266.66
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-03-03",
+            "end_date": "2026-09-20",
+            "monthly_amount": 5150.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-03",
+            "end_date": "2026-09-20",
+            "monthly_amount": 2650.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212876182730983",
+      "name": "Engelke - Fort Lauderdale, FL- Per Diem- Paul - 2608",
+      "salesperson": "Paul",
+      "project_number": "2608",
+      "status": "Closed",
+      "start_date": "2026-02-04",
+      "end_date": "2026-03-17",
+      "base_ar": 3600.0,
+      "base_ap": 2400.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 3000.0,
+          "ap": 2000.0,
+          "net_gp": 800.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2040.0,
+          "ap": 1360.0,
+          "net_gp": 544.0
+        }
+      },
+      "total_2026": {
+        "ar": 5040.0,
+        "ap": 3360.0,
+        "net_gp": 1344.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-04",
+            "end_date": "2026-03-17",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-04",
+            "end_date": "2026-03-17",
+            "monthly_amount": 2400.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213128799158470",
+      "name": "First Finish - Washington DC - Peyton  ",
+      "salesperson": "Peyton",
+      "project_number": "",
+      "status": "Closed",
+      "start_date": "2026-02-05",
+      "end_date": "2026-03-05",
+      "base_ar": 3700.0,
+      "base_ap": 2500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 2960.0,
+          "ap": 2000.0,
+          "net_gp": 768.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 616.67,
+          "ap": 416.67,
+          "net_gp": 160.0
+        }
+      },
+      "total_2026": {
+        "ar": 3576.67,
+        "ap": 2416.67,
+        "net_gp": 928.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-05",
+            "end_date": "2026-03-05",
+            "monthly_amount": 3700.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-05",
+            "end_date": "2026-03-05",
+            "monthly_amount": 2500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213229664713550",
+      "name": "Jones Covey Group, Inc - Eloy, AZ - Paul - 2611",
+      "salesperson": "Paul",
+      "project_number": "2611",
+      "status": "Closed",
+      "start_date": "2026-02-16",
+      "end_date": "2026-03-15",
+      "base_ar": 11575.0,
+      "base_ap": 5200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 5015.83,
+          "ap": 2253.33,
+          "net_gp": 2210.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 5787.5,
+          "ap": 2600.0,
+          "net_gp": 2550.0
+        }
+      },
+      "total_2026": {
+        "ar": 10803.33,
+        "ap": 4853.33,
+        "net_gp": 4760.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-16",
+            "end_date": "2026-03-15",
+            "monthly_amount": 11575.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-16",
+            "end_date": "2026-03-15",
+            "monthly_amount": 5200.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213348375076263",
+      "name": "Arco- Lebanon, TN - Paul - 2616",
+      "salesperson": "Paul",
+      "project_number": "2616",
+      "status": "Active",
+      "start_date": "2026-02-20",
+      "end_date": "2026-05-01",
+      "base_ar": 3000.0,
+      "base_ap": 1800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 900.0,
+          "ap": 540.0,
+          "net_gp": 288.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3000.0,
+          "ap": 1800.0,
+          "net_gp": 960.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 3000.0,
+          "ap": 1800.0,
+          "net_gp": 960.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 100.0,
+          "ap": 60.0,
+          "net_gp": 32.0
+        }
+      },
+      "total_2026": {
+        "ar": 7000.0,
+        "ap": 4200.0,
+        "net_gp": 2240.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-20",
+            "end_date": "2026-05-01",
+            "monthly_amount": 3000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-20",
+            "end_date": "2026-05-01",
+            "monthly_amount": 1800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213344941093825",
+      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618",
+      "salesperson": "Paul",
+      "project_number": "2618",
+      "status": "Active",
+      "start_date": "2026-02-25",
+      "end_date": "2027-03-31",
+      "base_ar": 12340.0,
+      "base_ap": 7700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 479.33,
+          "ap": 293.33,
+          "net_gp": 148.8
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 7190.0,
+          "ap": 4700.0,
+          "net_gp": 1992.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 12340.0,
+          "ap": 7700.0,
+          "net_gp": 3712.0
+        }
+      },
+      "total_2026": {
+        "ar": 118729.33,
+        "ap": 74293.33,
+        "net_gp": 35548.8
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-25",
+            "end_date": "2027-02-24",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-25",
+            "end_date": "2027-02-24",
+            "monthly_amount": 2200.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2026-03-02",
+            "end_date": "2027-03-01",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-02",
+            "end_date": "2027-03-01",
+            "monthly_amount": 2500.0
+          }
+        },
+        "C": {
+          "construction": {
+            "start_date": "2026-04-01",
+            "end_date": "2027-03-31",
+            "monthly_amount": 5150.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-01",
+            "end_date": "2027-03-31",
+            "monthly_amount": 3000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213407803351544",
+      "name": " Duggan Contracting - Paducah, KY - Paul - 2620",
+      "salesperson": "Paul",
+      "project_number": "2620",
+      "status": "Active",
+      "start_date": "2026-02-25",
+      "end_date": "2026-11-30",
+      "base_ar": 2900.0,
+      "base_ap": 1900.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 386.67,
+          "ap": 253.33,
+          "net_gp": 106.67
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1900.0,
+          "net_gp": 800.0
+        }
+      },
+      "total_2026": {
+        "ar": 26486.67,
+        "ap": 17353.33,
+        "net_gp": 7306.67
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-25",
+            "end_date": "2026-11-30",
+            "monthly_amount": 2900.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-25",
+            "end_date": "2026-11-30",
+            "monthly_amount": 1900.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213483695669834",
+      "name": "Peak Event Services- Woburn, MA - Paul - 2623",
+      "salesperson": "Paul",
+      "project_number": "2623",
+      "status": "Active",
+      "start_date": "2026-04-15",
+      "end_date": "2026-10-31",
+      "base_ar": 47795.0,
+      "base_ap": 26200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 4530.67,
+          "ap": 2400.0,
+          "net_gp": 1704.54
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 47795.0,
+          "ap": 26200.0,
+          "net_gp": 17276.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 47795.0,
+          "ap": 26200.0,
+          "net_gp": 17276.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 36595.0,
+          "ap": 26200.0,
+          "net_gp": 8316.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 36595.0,
+          "ap": 26200.0,
+          "net_gp": 8316.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 36595.0,
+          "ap": 26200.0,
+          "net_gp": 8316.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 32061.67,
+          "ap": 23853.33,
+          "net_gp": 6566.67
+        }
+      },
+      "total_2026": {
+        "ar": 241967.34,
+        "ap": 157253.33,
+        "net_gp": 67771.21
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-10-31",
+            "monthly_amount": 8100.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-10-31",
+            "monthly_amount": 4500.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-10-31",
+            "monthly_amount": 11500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-10-31",
+            "monthly_amount": 6000.0
+          }
+        },
+        "C": {
+          "construction": {
+            "start_date": "2026-04-15",
+            "end_date": "2026-10-31",
+            "monthly_amount": 8495.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-15",
+            "end_date": "2026-10-31",
+            "monthly_amount": 4500.0
+          }
+        },
+        "D": {
+          "construction": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-10-14",
+            "monthly_amount": 8500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-10-14",
+            "monthly_amount": 4400.0
+          }
+        },
+        "E": {
+          "construction": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-06-30",
+            "monthly_amount": 11200.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-05-01",
+            "end_date": "2026-10-31",
+            "monthly_amount": 6800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213692562297147",
+      "name": "Graydaze Contracting, Inc- Fairfax, IA - Paul - 2626",
+      "salesperson": "Paul",
+      "project_number": "2626",
+      "status": "Active",
+      "start_date": "2026-03-27",
+      "end_date": "2026-08-01",
+      "base_ar": 4700.0,
+      "base_ap": 2700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-03": {
+          "crew": 0,
+          "ar": 783.33,
+          "ap": 450.0,
+          "net_gp": 266.66
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 2700.0,
+          "net_gp": 1600.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 2700.0,
+          "net_gp": 1600.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 2700.0,
+          "net_gp": 1600.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 4700.0,
+          "ap": 2700.0,
+          "net_gp": 1600.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 156.67,
+          "ap": 90.0,
+          "net_gp": 53.34
+        }
+      },
+      "total_2026": {
+        "ar": 19740.0,
+        "ap": 11340.0,
+        "net_gp": 6720.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-03-27",
+            "end_date": "2026-08-01",
+            "monthly_amount": 4700.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-27",
+            "end_date": "2026-08-01",
+            "monthly_amount": 2700.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213885530868385",
+      "name": "RSD - Williamsburg, KY - David- 2629",
+      "salesperson": "David",
+      "project_number": "2629",
+      "status": "Active",
+      "start_date": "2026-04-04",
+      "end_date": "2026-12-31",
+      "base_ar": 3600.0,
+      "base_ap": 2800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 3240.0,
+          "ap": 2520.0,
+          "net_gp": 576.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2800.0,
+          "net_gp": 640.0
+        }
+      },
+      "total_2026": {
+        "ar": 32040.0,
+        "ap": 24920.0,
+        "net_gp": 5696.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-04",
+            "end_date": "2026-12-31",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-04",
+            "end_date": "2026-12-31",
+            "monthly_amount": 2800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213897662327634",
+      "name": "RSD - Harned, KY - David - 2632",
+      "salesperson": "David",
+      "project_number": "2632",
+      "status": "Active",
+      "start_date": "2026-04-05",
+      "end_date": "2026-12-31",
+      "base_ar": 7400.0,
+      "base_ap": 5200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 6413.33,
+          "ap": 4166.66,
+          "net_gp": 1797.34
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 7400.0,
+          "ap": 5200.0,
+          "net_gp": 1760.0
+        }
+      },
+      "total_2026": {
+        "ar": 65613.33,
+        "ap": 45766.66,
+        "net_gp": 15877.34
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-05",
+            "end_date": "2026-12-31",
+            "monthly_amount": 7400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-05",
+            "end_date": "2026-12-31",
+            "monthly_amount": 3500.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-04-11",
+            "end_date": "2026-12-31",
+            "monthly_amount": 1700.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1214058325010950",
+      "name": "BZI - Merritt Island, FL - Paul - 2634",
+      "salesperson": "Paul",
+      "project_number": "2634",
+      "status": "Active",
+      "start_date": "2026-04-19",
+      "end_date": "2026-07-31",
+      "base_ar": 7800.0,
+      "base_ap": 4200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 3120.0,
+          "ap": 1680.0,
+          "net_gp": 1152.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 7800.0,
+          "ap": 4200.0,
+          "net_gp": 2880.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 7800.0,
+          "ap": 4200.0,
+          "net_gp": 2880.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 7800.0,
+          "ap": 4200.0,
+          "net_gp": 2880.0
+        }
+      },
+      "total_2026": {
+        "ar": 26520.0,
+        "ap": 14280.0,
+        "net_gp": 9792.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-19",
+            "end_date": "2026-07-31",
+            "monthly_amount": 7800.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-19",
+            "end_date": "2026-07-31",
+            "monthly_amount": 4200.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1214068113981856",
+      "name": "Graydaze Contracting Inc - Waterloo, IA - Paul - 2636",
+      "salesperson": "Paul",
+      "project_number": "2636",
+      "status": "Upcoming",
+      "start_date": "2026-05-30",
+      "end_date": "2026-08-30",
+      "base_ar": 3995.0,
+      "base_ap": 2100.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-05": {
+          "crew": 0,
+          "ar": 266.33,
+          "ap": 140.0,
+          "net_gp": 101.06
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3995.0,
+          "ap": 2100.0,
+          "net_gp": 1516.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3995.0,
+          "ap": 2100.0,
+          "net_gp": 1516.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3995.0,
+          "ap": 2100.0,
+          "net_gp": 1516.0
+        }
+      },
+      "total_2026": {
+        "ar": 12251.33,
+        "ap": 6440.0,
+        "net_gp": 4649.06
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-05-30",
+            "end_date": "2026-08-30",
+            "monthly_amount": 3995.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-05-30",
+            "end_date": "2026-08-30",
+            "monthly_amount": 2100.0
+          }
+        }
+      }
+    }
+  ],
+  "monthly_totals": {
+    "2025-08": {
+      "crew": 0,
+      "ar": 73610.0,
+      "ap": 29059.99,
+      "net_gp": 35640.01,
+      "gp_pct": 48.42
+    },
+    "2025-09": {
+      "crew": 0,
+      "ar": 94041.16,
+      "ap": 47835.66,
+      "net_gp": 36964.4,
+      "gp_pct": 39.31
+    },
+    "2025-10": {
+      "crew": 0,
+      "ar": 106068.49,
+      "ap": 52886.67,
+      "net_gp": 42545.46,
+      "gp_pct": 40.11
+    },
+    "2025-11": {
+      "crew": 0,
+      "ar": 104419.17,
+      "ap": 49915.0,
+      "net_gp": 43603.34,
+      "gp_pct": 41.76
+    },
+    "2025-12": {
+      "crew": 0,
+      "ar": 100395.0,
+      "ap": 82084.04,
+      "net_gp": 14648.77,
+      "gp_pct": 14.59
+    },
+    "2026-01": {
+      "crew": 0,
+      "ar": 93517.5,
+      "ap": 81045.7,
+      "net_gp": 9977.44,
+      "gp_pct": 10.67
+    },
+    "2026-02": {
+      "crew": 0,
+      "ar": 110170.17,
+      "ap": 88834.02,
+      "net_gp": 17068.92,
+      "gp_pct": 15.49
+    },
+    "2026-03": {
+      "crew": 0,
+      "ar": 112635.33,
+      "ap": 94855.71,
+      "net_gp": 14223.7,
+      "gp_pct": 12.63
+    },
+    "2026-04": {
+      "crew": 0,
+      "ar": 121548.17,
+      "ap": 104369.03,
+      "net_gp": 13743.31,
+      "gp_pct": 11.31
+    },
+    "2026-05": {
+      "crew": 0,
+      "ar": 159430.0,
+      "ap": 125700.7,
+      "net_gp": 26983.44,
+      "gp_pct": 16.92
+    },
+    "2026-06": {
+      "crew": 0,
+      "ar": 143105.67,
+      "ap": 118445.53,
+      "net_gp": 19728.11,
+      "gp_pct": 13.79
+    },
+    "2026-07": {
+      "crew": 0,
+      "ar": 128730.0,
+      "ap": 114705.7,
+      "net_gp": 11219.44,
+      "gp_pct": 8.72
+    },
+    "2026-08": {
+      "crew": 0,
+      "ar": 114186.67,
+      "ap": 107845.7,
+      "net_gp": 5072.78,
+      "gp_pct": 4.44
+    },
+    "2026-09": {
+      "crew": 0,
+      "ar": 105918.33,
+      "ap": 103772.37,
+      "net_gp": 1716.77,
+      "gp_pct": 1.62
+    },
+    "2026-10": {
+      "crew": 0,
+      "ar": 96331.67,
+      "ap": 98579.03,
+      "net_gp": -1797.89,
+      "gp_pct": -1.87
+    },
+    "2026-11": {
+      "crew": 0,
+      "ar": 63190.0,
+      "ap": 74005.7,
+      "net_gp": -8652.56,
+      "gp_pct": -13.69
+    },
+    "2026-12": {
+      "crew": 0,
+      "ar": 53808.0,
+      "ap": 33900.0,
+      "net_gp": 15926.4,
+      "gp_pct": 29.6
+    }
+  },
+  "salesperson_summary": {
+    "Unknown": {
+      "2025-08": {
+        "ar": 11370.0,
+        "ap": 2200.0,
+        "commission": 1834.0
+      },
+      "2025-09": {
+        "ar": 11370.0,
+        "ap": 2200.0,
+        "commission": 1834.0
+      },
+      "2025-10": {
+        "ar": 6457.5,
+        "ap": 3220.0,
+        "commission": 647.5
+      },
+      "2025-11": {
+        "ar": 5145.0,
+        "ap": 3040.0,
+        "commission": 421.0
+      },
+      "2025-12": {
+        "ar": 2100.0,
+        "ap": 146.67,
+        "commission": 390.67
+      }
+    },
+    "Paul": {
+      "2025-08": {
+        "ar": 52240.0,
+        "ap": 23559.990000000005,
+        "commission": 5735.990000000001
+      },
+      "2025-09": {
+        "ar": 80057.83,
+        "ap": 43942.33,
+        "commission": 7223.099999999999
+      },
+      "2025-10": {
+        "ar": 83350.99,
+        "ap": 46766.67,
+        "commission": 7316.86
+      },
+      "2025-11": {
+        "ar": 77974.17,
+        "ap": 43375.0,
+        "commission": 6919.83
+      },
+      "2025-12": {
+        "ar": 80595.0,
+        "ap": 80937.37,
+        "commission": -68.47000000000033
+      },
+      "2026-01": {
+        "ar": 75817.5,
+        "ap": 80045.7,
+        "commission": -845.6400000000003
+      },
+      "2026-02": {
+        "ar": 89510.17,
+        "ap": 85834.02,
+        "commission": 735.2299999999997
+      },
+      "2026-03": {
+        "ar": 97018.66,
+        "ap": 93439.04,
+        "commission": 715.9299999999997
+      },
+      "2026-04": {
+        "ar": 100494.84,
+        "ap": 96682.37,
+        "commission": 762.4899999999997
+      },
+      "2026-05": {
+        "ar": 137029.99999999997,
+        "ap": 116700.7,
+        "commission": 4065.87
+      },
+      "2026-06": {
+        "ar": 129705.67,
+        "ap": 109445.53,
+        "commission": 4052.0199999999995
+      },
+      "2026-07": {
+        "ar": 115330.0,
+        "ap": 105705.7,
+        "commission": 1924.8599999999997
+      },
+      "2026-08": {
+        "ar": 100786.67,
+        "ap": 98845.7,
+        "commission": 388.18999999999966
+      },
+      "2026-09": {
+        "ar": 94918.33,
+        "ap": 95772.37,
+        "commission": -170.8100000000004
+      },
+      "2026-10": {
+        "ar": 85331.67,
+        "ap": 90579.03,
+        "commission": -1049.4700000000003
+      },
+      "2026-11": {
+        "ar": 52190.0,
+        "ap": 66005.7,
+        "commission": -2763.1400000000003
+      },
+      "2026-12": {
+        "ar": 42808.0,
+        "ap": 25900.0,
+        "commission": 3381.6
+      }
+    },
+    "Matt": {
+      "2025-08": {
+        "ar": 10000.0,
+        "ap": 3300.0,
+        "commission": 1340.0
+      },
+      "2025-09": {
+        "ar": 333.33,
+        "ap": 110.0,
+        "commission": 44.67
+      }
+    },
+    "David": {
+      "2025-10": {
+        "ar": 16260.0,
+        "ap": 2900.0,
+        "commission": 2672.0
+      },
+      "2025-11": {
+        "ar": 21300.0,
+        "ap": 3500.0,
+        "commission": 3560.0
+      },
+      "2025-12": {
+        "ar": 17700.0,
+        "ap": 1000.0,
+        "commission": 3340.0
+      },
+      "2026-01": {
+        "ar": 17700.0,
+        "ap": 1000.0,
+        "commission": 3340.0
+      },
+      "2026-02": {
+        "ar": 17700.0,
+        "ap": 1000.0,
+        "commission": 3340.0
+      },
+      "2026-03": {
+        "ar": 15000.0,
+        "ap": 1000.0,
+        "commission": 2800.0
+      },
+      "2025-09": {
+        "ar": 2280.0,
+        "ap": 1583.33,
+        "commission": 139.33
+      },
+      "2026-04": {
+        "ar": 21053.33,
+        "ap": 7686.66,
+        "commission": 2673.33
+      },
+      "2026-05": {
+        "ar": 22400.0,
+        "ap": 9000.0,
+        "commission": 2680.0
+      },
+      "2026-06": {
+        "ar": 13400.0,
+        "ap": 9000.0,
+        "commission": 880.0
+      },
+      "2026-07": {
+        "ar": 13400.0,
+        "ap": 9000.0,
+        "commission": 880.0
+      },
+      "2026-08": {
+        "ar": 13400.0,
+        "ap": 9000.0,
+        "commission": 880.0
+      },
+      "2026-09": {
+        "ar": 11000.0,
+        "ap": 8000.0,
+        "commission": 600.0
+      },
+      "2026-10": {
+        "ar": 11000.0,
+        "ap": 8000.0,
+        "commission": 600.0
+      },
+      "2026-11": {
+        "ar": 11000.0,
+        "ap": 8000.0,
+        "commission": 600.0
+      },
+      "2026-12": {
+        "ar": 11000.0,
+        "ap": 8000.0,
+        "commission": 600.0
+      }
+    },
+    "Peyton": {
+      "2026-02": {
+        "ar": 2960.0,
+        "ap": 2000.0,
+        "commission": 192.0
+      },
+      "2026-03": {
+        "ar": 616.67,
+        "ap": 416.67,
+        "commission": 40.0
+      }
+    }
+  }
+}

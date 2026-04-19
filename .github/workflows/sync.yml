@@ -1,0 +1,63 @@
+name: Sync Asana Data
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Daily at 6:00 AM UTC (1 AM EST / 11 PM PST)
+  workflow_dispatch:       # Manual trigger via GitHub UI
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Asana sync
+        env:
+          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
+        run: python3 sync.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "HHH Dashboard Bot"
+          git config user.email "bot@hardhathousing.com"
+          git add data/projects.json
+          git diff --cached --quiet || git commit -m "sync: update project data $(date -u +%Y-%m-%d)"
+          git push
+
+  deploy:
+    needs: sync
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
