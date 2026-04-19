@@ -87,17 +87,25 @@ def parse_date_pair(text):
     return None, None
 
 def parse_amount(text):
-    """Extract largest plausible dollar amount from text."""
+    """
+    Extract the primary dollar amount from text.
+    Takes the FIRST plausible monthly amount (ignoring yearly/daily figures
+    that appear in parentheses or after 'Yearly'/'Daily' labels).
+    """
+    # Strip parenthetical content that contains yearly/daily notes
+    text = re.sub(r"\(.*?(?:yearly|daily|annual|per year).*?\)", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"Yearly\s+amount[^$\n]*\$[\d,\.]+", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"Daily\s+rate[^$\n]*\$[\d,\.]+", "", text, flags=re.IGNORECASE)
+
     amounts = re.findall(r"\$\s*([\d,]+(?:\.\d{1,2})?)", text)
-    vals = []
     for a in amounts:
         try:
             v = float(a.replace(",", ""))
-            if 100 < v < 500_000:
-                vals.append(v)
+            if 100 < v < 100_000:   # plausible monthly rent range
+                return v
         except ValueError:
             pass
-    return max(vals) if vals else 0.0
+    return 0.0
 
 def parse_crew(text):
     m = re.search(r"crew\s+size\s*:?\s*(\d+)", text, re.IGNORECASE)
