@@ -2,13 +2,11 @@ name: Sync Asana Data
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # Daily at 6:00 AM UTC (1 AM EST / 11 PM PST)
-  workflow_dispatch:       # Manual trigger via GitHub UI
+    - cron: '0 6 * * *'   # Daily at 6:00 AM UTC (1 AM EST)
+  workflow_dispatch:       # Also runnable manually from GitHub → Actions tab
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   sync:
@@ -37,27 +35,3 @@ jobs:
           git add data/projects.json
           git diff --cached --quiet || git commit -m "sync: update project data $(date -u +%Y-%m-%d)"
           git push
-
-  deploy:
-    needs: sync
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
