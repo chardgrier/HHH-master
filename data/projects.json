@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T11:07:52.926749",
+  "generated_at": "2026-04-20T12:35:03.108924",
   "months": [
     "2025-08",
     "2025-09",
@@ -3783,127 +3783,3528 @@
           }
         }
       }
+    },
+    {
+      "gid": "1209953181968936",
+      "name": "Quality Walls and Ceiling - Lexington KY - Zeke - 2527",
+      "salesperson": "Zeke",
+      "project_number": "2527",
+      "status": "Closed",
+      "start_date": "2025-04-21",
+      "end_date": "2025-10-21",
+      "base_ar": 3600.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2520.0,
+          "ap": 0.0,
+          "net_gp": 2016.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-04-21",
+            "end_date": "2025-10-21",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1210240026827411",
+      "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+      "salesperson": "Zeke",
+      "project_number": "2537",
+      "status": "Closed",
+      "start_date": "2025-05-27",
+      "end_date": "2026-01-27",
+      "base_ar": 22000.0,
+      "base_ap": 10777.5,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 22000.0,
+          "ap": 427.5,
+          "net_gp": 17258.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 22000.0,
+          "ap": 427.5,
+          "net_gp": 17258.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 22000.0,
+          "ap": 427.5,
+          "net_gp": 17258.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 22000.0,
+          "ap": 427.5,
+          "net_gp": 17258.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 22000.0,
+          "ap": 427.5,
+          "net_gp": 17258.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 19800.0,
+          "ap": 6759.17,
+          "net_gp": 10432.66
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 10350.0,
+          "net_gp": -8280.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 10350.0,
+          "net_gp": -8280.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 10350.0,
+          "net_gp": -8280.0
+        }
+      },
+      "total_2026": {
+        "ar": 19800.0,
+        "ap": 37809.17,
+        "net_gp": -14407.34
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-05-27",
+            "end_date": "2026-01-27",
+            "monthly_amount": 22000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-05-23",
+            "end_date": "2026-01-31",
+            "monthly_amount": 427.5
+          }
+        },
+        "I": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-13",
+            "end_date": "2026-04-30",
+            "monthly_amount": 3650.0
+          }
+        },
+        "J": {
+          "construction": null,
+          "homeowner": null
+        },
+        "K": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-14",
+            "end_date": "2026-04-30",
+            "monthly_amount": 3350.0
+          }
+        },
+        "L": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-14",
+            "end_date": "2026-04-30",
+            "monthly_amount": 3350.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210559671986831",
+      "name": "Xpert Build - Charlotte, NC - Zeke - 2544",
+      "salesperson": "Zeke",
+      "project_number": "2544",
+      "status": "Closed",
+      "start_date": "2025-06-22",
+      "end_date": "2025-08-18",
+      "base_ar": 5250.0,
+      "base_ap": 2600.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 3150.0,
+          "ap": 1560.0,
+          "net_gp": 1272.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-06-22",
+            "end_date": "2025-08-18",
+            "monthly_amount": 5250.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-06-22",
+            "end_date": "2025-08-18",
+            "monthly_amount": 2600.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210592941592441",
+      "name": "Quest Events - Chicago, IL - Zeke - 2549",
+      "salesperson": "Zeke",
+      "project_number": "2549",
+      "status": "Closed",
+      "start_date": "2025-07-13",
+      "end_date": "2025-08-11",
+      "base_ar": 39750.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 14575.0,
+          "ap": 0.0,
+          "net_gp": 11660.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-07-13",
+            "end_date": "2025-08-11",
+            "monthly_amount": 39750.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1210751935671855",
+      "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
+      "salesperson": "Zeke",
+      "project_number": "2551",
+      "status": "Active",
+      "start_date": "2025-09-01",
+      "end_date": "2026-05-31",
+      "base_ar": 6540.0,
+      "base_ap": 3600.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 360.0,
+          "net_gp": -288.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 3600.0,
+          "net_gp": 2352.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 3600.0,
+          "net_gp": 2352.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 3600.0,
+          "net_gp": 2352.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 3600.0,
+          "net_gp": 2352.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 3600.0,
+          "net_gp": 2352.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
+        }
+      },
+      "total_2026": {
+        "ar": 32700.0,
+        "ap": 3600.0,
+        "net_gp": 23280.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-01",
+            "end_date": "2026-05-31",
+            "monthly_amount": 6540.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-29",
+            "end_date": "2026-01-31",
+            "monthly_amount": 3600.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210834959269420",
+      "name": "XPert Build - Troy, NY - Zeke - 2552",
+      "salesperson": "Zeke",
+      "project_number": "2552",
+      "status": "Closed",
+      "start_date": "2025-07-20",
+      "end_date": "2025-07-28",
+      "base_ar": 1600.0,
+      "base_ap": 1040.0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-07-20",
+            "end_date": "2025-07-28",
+            "monthly_amount": 1600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-07-20",
+            "end_date": "2025-07-28",
+            "monthly_amount": 1040.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1210847624719714",
+      "name": "Southern Wall Systems - Ann Arbor, MI - Logan - 2553 ",
+      "salesperson": "Logan",
+      "project_number": "2553",
+      "status": "Closed",
+      "start_date": "2025-08-02",
+      "end_date": "2026-01-31",
+      "base_ar": 2375.0,
+      "base_ap": 1700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 2375.0,
+          "ap": 1700.0,
+          "net_gp": 540.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2375.0,
+          "ap": 1700.0,
+          "net_gp": 540.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2375.0,
+          "ap": 1700.0,
+          "net_gp": 540.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2375.0,
+          "ap": 1700.0,
+          "net_gp": 540.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2375.0,
+          "ap": 1700.0,
+          "net_gp": 540.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2375.0,
+          "ap": 1700.0,
+          "net_gp": 540.0
+        }
+      },
+      "total_2026": {
+        "ar": 2375.0,
+        "ap": 1700.0,
+        "net_gp": 540.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-08-02",
+            "end_date": "2026-01-31",
+            "monthly_amount": 2375.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-02",
+            "end_date": "2026-01-31",
+            "monthly_amount": 1700.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211080380581292",
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563",
+      "salesperson": "Matt",
+      "project_number": "2563",
+      "status": "Closed",
+      "start_date": "2025-08-25",
+      "end_date": "2025-12-15",
+      "base_ar": 11500.0,
+      "base_ap": 10100.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 2683.33,
+          "ap": 2356.67,
+          "net_gp": 261.33
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 11500.0,
+          "ap": 10100.0,
+          "net_gp": 1120.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 11500.0,
+          "ap": 10100.0,
+          "net_gp": 1120.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 11500.0,
+          "ap": 10100.0,
+          "net_gp": 1120.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 5750.0,
+          "ap": 5050.0,
+          "net_gp": 560.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-08-25",
+            "end_date": "2025-12-15",
+            "monthly_amount": 11500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-08-25",
+            "end_date": "2025-12-15",
+            "monthly_amount": 10100.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211164220268151",
+      "name": "Quest Events - Jacksonville, FL - Zeke - 2565",
+      "salesperson": "Zeke",
+      "project_number": "2565",
+      "status": "Closed",
+      "start_date": "2025-09-11",
+      "end_date": "2025-10-16",
+      "base_ar": 6360.0,
+      "base_ap": 4083.35,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 4240.0,
+          "ap": 2722.23,
+          "net_gp": 1214.22
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 3392.0,
+          "ap": 2177.79,
+          "net_gp": 971.37
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-11",
+            "end_date": "2025-10-16",
+            "monthly_amount": 6360.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-11",
+            "end_date": "2025-10-16",
+            "monthly_amount": 4083.35
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211164220268157",
+      "name": "Quest Events - Austin, TX - Zeke - 2566",
+      "salesperson": "Zeke",
+      "project_number": "2566",
+      "status": "Closed",
+      "start_date": "2025-09-15",
+      "end_date": "2025-11-15",
+      "base_ar": 13720.0,
+      "base_ap": 4250.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 7317.33,
+          "ap": 2266.67,
+          "net_gp": 4040.53
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 13720.0,
+          "ap": 4250.0,
+          "net_gp": 7576.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 6860.0,
+          "ap": 2125.0,
+          "net_gp": 3788.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-15",
+            "end_date": "2025-11-15",
+            "monthly_amount": 13720.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-15",
+            "end_date": "2025-11-15",
+            "monthly_amount": 4250.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": null
+        }
+      }
+    },
+    {
+      "gid": "1211177547809199",
+      "name": "XpertBuild - Fremont, CA - Zeke - 2564",
+      "salesperson": "Zeke",
+      "project_number": "2564",
+      "status": "Closed",
+      "start_date": "2025-09-02",
+      "end_date": "2025-09-30",
+      "base_ar": 6000.0,
+      "base_ap": 4450.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 5800.0,
+          "ap": 4301.67,
+          "net_gp": 1198.66
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-02",
+            "end_date": "2025-09-30",
+            "monthly_amount": 6000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-02",
+            "end_date": "2025-09-30",
+            "monthly_amount": 4450.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211246492135453",
+      "name": "RSD - Barboursville, KY - David - 2569",
+      "salesperson": "David",
+      "project_number": "2569",
+      "status": "Closed",
+      "start_date": "2025-09-06",
+      "end_date": "2025-11-30",
+      "base_ar": 3600.0,
+      "base_ap": 1800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 3000.0,
+          "ap": 1500.0,
+          "net_gp": 1200.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 1800.0,
+          "net_gp": 1440.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 1800.0,
+          "net_gp": 1440.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-06",
+            "end_date": "2025-11-30",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-06",
+            "end_date": "2025-11-30",
+            "monthly_amount": 1800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211269009738648",
+      "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
+      "salesperson": "Logan",
+      "project_number": "2570",
+      "status": "Active",
+      "start_date": "2025-09-12",
+      "end_date": "2026-06-12",
+      "base_ar": 2200.0,
+      "base_ap": 1700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 1393.33,
+          "ap": 1133.33,
+          "net_gp": 208.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 510.0,
+          "net_gp": 1352.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 880.0,
+          "ap": 0.0,
+          "net_gp": 704.0
+        }
+      },
+      "total_2026": {
+        "ar": 11880.0,
+        "ap": 3910.0,
+        "net_gp": 6376.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-12",
+            "end_date": "2026-06-12",
+            "monthly_amount": 2200.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-11",
+            "end_date": "2026-03-09",
+            "monthly_amount": 1700.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211397768178812",
+      "name": "Sletten - San Pablo, CA - Zeke - 2573",
+      "salesperson": "Zeke",
+      "project_number": "2573",
+      "status": "Closed",
+      "start_date": "2025-09-19",
+      "end_date": "2025-10-31",
+      "base_ar": 3780.0,
+      "base_ap": 2200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 1512.0,
+          "ap": 880.0,
+          "net_gp": 505.6
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 3780.0,
+          "ap": 2200.0,
+          "net_gp": 1264.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-19",
+            "end_date": "2025-10-31",
+            "monthly_amount": 3780.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-09-19",
+            "end_date": "2025-10-31",
+            "monthly_amount": 2200.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211453655814597",
+      "name": "Gutknecht Construction - Indianapolis, IN - Matt - 2575",
+      "salesperson": "Matt",
+      "project_number": "2575",
+      "status": "Closed",
+      "start_date": "2026-01-01",
+      "end_date": "2026-01-15",
+      "base_ar": 8400.0,
+      "base_ap": 10375.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 4200.0,
+          "ap": 5187.5,
+          "net_gp": -790.0
+        }
+      },
+      "total_2026": {
+        "ar": 4200.0,
+        "ap": 5187.5,
+        "net_gp": -790.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-01-15",
+            "monthly_amount": 8400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-01-15",
+            "monthly_amount": 4500.0
+          }
+        },
+        "D": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-01-15",
+            "monthly_amount": 1675.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-01-15",
+            "monthly_amount": 2700.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-01-15",
+            "monthly_amount": 1500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211456854891625",
+      "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
+      "salesperson": "Paul",
+      "project_number": "2576",
+      "status": "Closed",
+      "start_date": "2025-09-30",
+      "end_date": "2026-03-31",
+      "base_ar": 5750.0,
+      "base_ap": 8700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 191.67,
+          "ap": 0.0,
+          "net_gp": 153.34
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 5750.0,
+          "ap": 7796.67,
+          "net_gp": -1637.34
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 5750.0,
+          "ap": 8700.0,
+          "net_gp": -2360.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 5750.0,
+          "ap": 8700.0,
+          "net_gp": -2360.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 5750.0,
+          "ap": 8700.0,
+          "net_gp": -2360.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 5750.0,
+          "ap": 8700.0,
+          "net_gp": -2360.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 5750.0,
+          "ap": 8700.0,
+          "net_gp": -2360.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 266.67,
+          "net_gp": -213.34
+        }
+      },
+      "total_2026": {
+        "ar": 17250.0,
+        "ap": 26366.67,
+        "net_gp": -7293.34
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-09-30",
+            "end_date": "2026-03-31",
+            "monthly_amount": 5750.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-01",
+            "end_date": "2026-03-31",
+            "monthly_amount": 1850.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2025-10-04",
+            "end_date": "2026-03-31",
+            "monthly_amount": 1850.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2025-10-07",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3400.0
+          }
+        },
+        "D": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2025-10-06",
+            "end_date": "2026-04-05",
+            "monthly_amount": 1600.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211480429883350",
+      "name": "Complete Development Inc. (CDI) - Orlando, FL - Zeke - 2578 ",
+      "salesperson": "Zeke",
+      "project_number": "2578",
+      "status": "Closed",
+      "start_date": "2025-10-19",
+      "end_date": "2026-01-31",
+      "base_ar": 6800.0,
+      "base_ap": 4500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 2946.67,
+          "ap": 1950.0,
+          "net_gp": 797.34
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 6800.0,
+          "ap": 4500.0,
+          "net_gp": 1840.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 6800.0,
+          "ap": 4500.0,
+          "net_gp": 1840.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 6800.0,
+          "ap": 4500.0,
+          "net_gp": 1840.0
+        }
+      },
+      "total_2026": {
+        "ar": 6800.0,
+        "ap": 4500.0,
+        "net_gp": 1840.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-19",
+            "end_date": "2026-01-31",
+            "monthly_amount": 6800.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-19",
+            "end_date": "2026-01-31",
+            "monthly_amount": 4500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211676690080154",
+      "name": "RSD - Greendale - Lexington, KY -David - 2585",
+      "salesperson": "David",
+      "project_number": "2585",
+      "status": "Closed",
+      "start_date": "2025-10-22",
+      "end_date": "2026-03-20",
+      "base_ar": 6300.0,
+      "base_ap": 3600.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 2100.0,
+          "ap": 1200.0,
+          "net_gp": 720.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 6300.0,
+          "ap": 3600.0,
+          "net_gp": 2160.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 6300.0,
+          "ap": 3600.0,
+          "net_gp": 2160.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 6300.0,
+          "ap": 3600.0,
+          "net_gp": 2160.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 6300.0,
+          "ap": 3600.0,
+          "net_gp": 2160.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 4200.0,
+          "ap": 2400.0,
+          "net_gp": 1440.0
+        }
+      },
+      "total_2026": {
+        "ar": 16800.0,
+        "ap": 9600.0,
+        "net_gp": 5760.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-22",
+            "end_date": "2026-03-20",
+            "monthly_amount": 6300.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-22",
+            "end_date": "2026-03-20",
+            "monthly_amount": 3600.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211712366460736",
+      "name": "RSD - Campbellsville, KY - David - 2554",
+      "salesperson": "David",
+      "project_number": "2554",
+      "status": "Closed",
+      "start_date": "2025-10-30",
+      "end_date": "2026-03-31",
+      "base_ar": 5600.0,
+      "base_ap": 4000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-10": {
+          "crew": 0,
+          "ar": 240.0,
+          "ap": 166.67,
+          "net_gp": 58.66
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 5000.0,
+          "ap": 3550.0,
+          "net_gp": 1160.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 5600.0,
+          "ap": 4000.0,
+          "net_gp": 1280.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2500.0,
+          "net_gp": 880.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2500.0,
+          "net_gp": 880.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2500.0,
+          "net_gp": 880.0
+        }
+      },
+      "total_2026": {
+        "ar": 10800.0,
+        "ap": 7500.0,
+        "net_gp": 2640.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-10-30",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-10-30",
+            "end_date": "2026-03-31",
+            "monthly_amount": 2500.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2025-11-10",
+            "end_date": "2025-12-31",
+            "monthly_amount": 2000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-11-10",
+            "end_date": "2025-12-31",
+            "monthly_amount": 1500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1211797010017729",
+      "name": "Southern Roots Steel Erectors - Fredericksburg, VA - Zeke - 2587",
+      "salesperson": "Zeke",
+      "project_number": "2587",
+      "status": "Closed",
+      "start_date": "2025-11-03",
+      "end_date": "2025-12-31",
+      "base_ar": 6600.0,
+      "base_ap": 3500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-11": {
+          "crew": 0,
+          "ar": 6160.0,
+          "ap": 3266.67,
+          "net_gp": 2314.66
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 6600.0,
+          "ap": 3500.0,
+          "net_gp": 2480.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-11-03",
+            "end_date": "2025-12-31",
+            "monthly_amount": 6600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-11-03",
+            "end_date": "2025-12-31",
+            "monthly_amount": 3500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212023042586559",
+      "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
+      "salesperson": "Zeke",
+      "project_number": "2590",
+      "status": "Active",
+      "start_date": "2026-01-01",
+      "end_date": "2026-04-30",
+      "base_ar": 6000.0,
+      "base_ap": 3150.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 3150.0,
+          "net_gp": 2280.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 3150.0,
+          "net_gp": 2280.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 3150.0,
+          "net_gp": 2280.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 3150.0,
+          "net_gp": 2280.0
+        }
+      },
+      "total_2026": {
+        "ar": 24000.0,
+        "ap": 12600.0,
+        "net_gp": 9120.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-04-30",
+            "monthly_amount": 6000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-04-30",
+            "monthly_amount": 3150.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212198830916907",
+      "name": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
+      "salesperson": "Zeke",
+      "project_number": "2591",
+      "status": "Closed",
+      "start_date": "2025-12-22",
+      "end_date": "2026-03-30",
+      "base_ar": 15400.0,
+      "base_ap": 17945.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 5133.33,
+          "ap": 0.0,
+          "net_gp": 4106.66
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 15400.0,
+          "ap": 7276.51,
+          "net_gp": 6498.79
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 15400.0,
+          "ap": 17678.33,
+          "net_gp": -1822.66
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 15400.0,
+          "ap": 17775.5,
+          "net_gp": -1900.4
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1866.67,
+          "net_gp": -1493.34
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1600.0,
+          "net_gp": -1280.0
+        }
+      },
+      "total_2026": {
+        "ar": 46200.0,
+        "ap": 57397.01,
+        "net_gp": -8957.61
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-12-22",
+            "end_date": "2026-03-30",
+            "monthly_amount": 15400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-02",
+            "end_date": "2026-03-30",
+            "monthly_amount": 1850.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-04",
+            "end_date": "2026-03-30",
+            "monthly_amount": 1550.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-02",
+            "end_date": "2026-03-30",
+            "monthly_amount": 2000.0
+          }
+        },
+        "D": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-04",
+            "end_date": "2026-04-04",
+            "monthly_amount": 2000.0
+          }
+        },
+        "E": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-31",
+            "end_date": "2026-03-27",
+            "monthly_amount": 1695.0
+          }
+        },
+        "F": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-02-01",
+            "end_date": "2026-03-30",
+            "monthly_amount": 1500.0
+          }
+        },
+        "G": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-31",
+            "end_date": "2026-03-30",
+            "monthly_amount": 1700.0
+          }
+        },
+        "H": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-02-01",
+            "end_date": "2026-03-31",
+            "monthly_amount": 1850.0
+          }
+        },
+        "I": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-02-01",
+            "end_date": "2026-03-30",
+            "monthly_amount": 2200.0
+          }
+        },
+        "J": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-02-04",
+            "end_date": "2026-12-31",
+            "monthly_amount": 1600.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212312491124751",
+      "name": "Miller Pipeline - Monett, MO - Paul - 2593",
+      "salesperson": "Paul",
+      "project_number": "2593",
+      "status": "Active",
+      "start_date": "2025-12-14",
+      "end_date": "2026-12-31",
+      "base_ar": 3595.0,
+      "base_ap": 1250.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 2157.0,
+          "ap": 791.67,
+          "net_gp": 1092.26
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 1250.0,
+          "net_gp": 1876.0
+        }
+      },
+      "total_2026": {
+        "ar": 43140.0,
+        "ap": 15000.0,
+        "net_gp": 22512.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-12-14",
+            "end_date": "2026-12-31",
+            "monthly_amount": 3595.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-12-13",
+            "end_date": "2026-12-31",
+            "monthly_amount": 1250.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212344857819012",
+      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
+      "salesperson": "Zeke",
+      "project_number": "2594",
+      "status": "Closed",
+      "start_date": "2025-12-11",
+      "end_date": "2026-04-10",
+      "base_ar": 5000.0,
+      "base_ap": 13525.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 3500.0,
+          "ap": 2990.0,
+          "net_gp": 408.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 5000.0,
+          "ap": 12845.0,
+          "net_gp": -6276.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 5000.0,
+          "ap": 13525.0,
+          "net_gp": -6820.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 5000.0,
+          "ap": 13525.0,
+          "net_gp": -6820.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 1666.67,
+          "ap": 4508.33,
+          "net_gp": -2273.33
+        }
+      },
+      "total_2026": {
+        "ar": 16666.67,
+        "ap": 44403.33,
+        "net_gp": -22189.33
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-12-11",
+            "end_date": "2026-04-10",
+            "monthly_amount": 5000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-12-12",
+            "end_date": "2026-04-10",
+            "monthly_amount": 2925.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2025-12-26",
+            "end_date": "2026-04-10",
+            "monthly_amount": 3200.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2025-12-29",
+            "end_date": "2026-04-10",
+            "monthly_amount": 4000.0
+          }
+        },
+        "D": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-01-08",
+            "end_date": "2026-04-10",
+            "monthly_amount": 3400.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212535977719565",
+      "name": "RSD - Morehead, KY - David - 2596",
+      "salesperson": "David",
+      "project_number": "2596",
+      "status": "Closed",
+      "start_date": "2025-12-21",
+      "end_date": "2026-03-31",
+      "base_ar": 3600.0,
+      "base_ap": 2000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 1320.0,
+          "ap": 733.33,
+          "net_gp": 469.34
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2000.0,
+          "net_gp": 1280.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2000.0,
+          "net_gp": 1280.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2000.0,
+          "net_gp": 1280.0
+        }
+      },
+      "total_2026": {
+        "ar": 10800.0,
+        "ap": 6000.0,
+        "net_gp": 3840.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2025-12-21",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2025-12-21",
+            "end_date": "2026-03-31",
+            "monthly_amount": 2000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212557289225412",
+      "name": "Aggregate Resource Industries, Inc. - Sparks, NV - Logan - 2609 ",
+      "salesperson": "Logan",
+      "project_number": "2609",
+      "status": "Closed",
+      "start_date": "2026-01-27",
+      "end_date": "2026-03-31",
+      "base_ar": 6400.0,
+      "base_ap": 3200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 1066.67,
+          "ap": 533.33,
+          "net_gp": 426.67
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 6400.0,
+          "ap": 3200.0,
+          "net_gp": 2560.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 6400.0,
+          "ap": 3200.0,
+          "net_gp": 2560.0
+        }
+      },
+      "total_2026": {
+        "ar": 13866.67,
+        "ap": 6933.33,
+        "net_gp": 5546.67
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-27",
+            "end_date": "2026-03-31",
+            "monthly_amount": 6400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-27",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3200.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212571157696151",
+      "name": "Sletten - San Pablo, CA - Zeke - 2601 ",
+      "salesperson": "Zeke",
+      "project_number": "2601",
+      "status": "Active",
+      "start_date": "2026-01-01",
+      "end_date": "2026-04-30",
+      "base_ar": 2700.0,
+      "base_ap": 2200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 2200.0,
+          "net_gp": 400.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 2200.0,
+          "net_gp": 400.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 2200.0,
+          "net_gp": 400.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2700.0,
+          "ap": 2200.0,
+          "net_gp": 400.0
+        }
+      },
+      "total_2026": {
+        "ar": 10800.0,
+        "ap": 8800.0,
+        "net_gp": 1600.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-04-30",
+            "monthly_amount": 2700.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-04-30",
+            "monthly_amount": 2200.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212605287294257",
+      "name": "Aggregate Resource Industries, Inc. - Granite, WY - Logan - 2603",
+      "salesperson": "Logan",
+      "project_number": "2603",
+      "status": "Closed",
+      "start_date": "2026-01-01",
+      "end_date": "2026-03-04",
+      "base_ar": 6575.0,
+      "base_ap": 3500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 6575.0,
+          "ap": 3500.0,
+          "net_gp": 2460.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 6575.0,
+          "ap": 3500.0,
+          "net_gp": 2460.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 876.67,
+          "ap": 466.67,
+          "net_gp": 328.0
+        }
+      },
+      "total_2026": {
+        "ar": 14026.67,
+        "ap": 7466.67,
+        "net_gp": 5248.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-03-04",
+            "monthly_amount": 6575.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-01",
+            "end_date": "2026-03-04",
+            "monthly_amount": 3500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212793467092033",
+      "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
+      "salesperson": "Logan",
+      "project_number": "2604",
+      "status": "Closed",
+      "start_date": "2026-01-21",
+      "end_date": "2026-03-21",
+      "base_ar": 6550.0,
+      "base_ap": 4000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 2401.67,
+          "ap": 1200.0,
+          "net_gp": 961.34
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 6550.0,
+          "ap": 4000.0,
+          "net_gp": 2040.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 4585.0,
+          "ap": 2800.0,
+          "net_gp": 1428.0
+        }
+      },
+      "total_2026": {
+        "ar": 13536.67,
+        "ap": 8000.0,
+        "net_gp": 4429.34
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-21",
+            "end_date": "2026-03-21",
+            "monthly_amount": 6550.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-23",
+            "end_date": "2026-03-21",
+            "monthly_amount": 4000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212842897797009",
+      "name": "Carl Walker Construction - Lexington, KY - Matt -2606",
+      "salesperson": "Matt",
+      "project_number": "2606",
+      "status": "Active",
+      "start_date": "2026-02-09",
+      "end_date": "2026-08-09",
+      "base_ar": 5325.0,
+      "base_ap": 3000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 3550.0,
+          "ap": 2000.0,
+          "net_gp": 1240.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 5325.0,
+          "ap": 3000.0,
+          "net_gp": 1860.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 5325.0,
+          "ap": 3000.0,
+          "net_gp": 1860.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 5325.0,
+          "ap": 3000.0,
+          "net_gp": 1860.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 5325.0,
+          "ap": 3000.0,
+          "net_gp": 1860.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 5325.0,
+          "ap": 3000.0,
+          "net_gp": 1860.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 1597.5,
+          "ap": 900.0,
+          "net_gp": 558.0
+        }
+      },
+      "total_2026": {
+        "ar": 31772.5,
+        "ap": 17900.0,
+        "net_gp": 11098.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-09",
+            "end_date": "2026-08-09",
+            "monthly_amount": 5325.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-09",
+            "end_date": "2026-08-09",
+            "monthly_amount": 3000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1212860002456293",
+      "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
+      "salesperson": "Logan",
+      "project_number": "2607",
+      "status": "Active",
+      "start_date": "2026-01-22",
+      "end_date": "2026-04-30",
+      "base_ar": 4425.0,
+      "base_ap": 2300.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-01": {
+          "crew": 0,
+          "ar": 1475.0,
+          "ap": 766.67,
+          "net_gp": 566.66
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 4425.0,
+          "ap": 2300.0,
+          "net_gp": 1700.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 4425.0,
+          "ap": 2300.0,
+          "net_gp": 1700.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 4425.0,
+          "ap": 2300.0,
+          "net_gp": 1700.0
+        }
+      },
+      "total_2026": {
+        "ar": 14750.0,
+        "ap": 7666.67,
+        "net_gp": 5666.66
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-01-22",
+            "end_date": "2026-04-30",
+            "monthly_amount": 4425.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-01-22",
+            "end_date": "2026-04-30",
+            "monthly_amount": 2300.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213202318450029",
+      "name": "FHG Marine Engineering Inc. - Port Angeles, WA - Logan- 2610",
+      "salesperson": "Logan",
+      "project_number": "2610",
+      "status": "Closed",
+      "start_date": "2026-02-11",
+      "end_date": "2026-03-11",
+      "base_ar": 4650.0,
+      "base_ap": 2400.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 2790.0,
+          "ap": 1440.0,
+          "net_gp": 1080.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 1705.0,
+          "ap": 880.0,
+          "net_gp": 660.0
+        }
+      },
+      "total_2026": {
+        "ar": 4495.0,
+        "ap": 2320.0,
+        "net_gp": 1740.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-11",
+            "end_date": "2026-03-11",
+            "monthly_amount": 4650.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-11",
+            "end_date": "2026-03-11",
+            "monthly_amount": 2400.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213233693750259",
+      "name": "Miami Marine Services - Las Vegas, NV -Zeke -2612",
+      "salesperson": "Zeke",
+      "project_number": "2612",
+      "status": "Closed",
+      "start_date": "2026-02-16",
+      "end_date": "2026-03-20",
+      "base_ar": 2920.0,
+      "base_ap": 1600.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 1265.33,
+          "ap": 693.33,
+          "net_gp": 457.6
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 1946.67,
+          "ap": 853.33,
+          "net_gp": 874.67
+        }
+      },
+      "total_2026": {
+        "ar": 3212.0,
+        "ap": 1546.66,
+        "net_gp": 1332.27
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-16",
+            "end_date": "2026-03-20",
+            "monthly_amount": 2920.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-16",
+            "end_date": "2026-03-16",
+            "monthly_amount": 1600.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213240184667434",
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613",
+      "salesperson": "Logan",
+      "project_number": "2613",
+      "status": "Active",
+      "start_date": "2026-02-15",
+      "end_date": "2026-05-31",
+      "base_ar": 21580.0,
+      "base_ap": 12470.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 4279.0,
+          "ap": 2407.66,
+          "net_gp": 1497.07
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 12230.0,
+          "ap": 6870.0,
+          "net_gp": 4288.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 9021.67,
+          "ap": 7253.33,
+          "net_gp": 1414.67
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 17047.17,
+          "ap": 9822.0,
+          "net_gp": 5780.14
+        }
+      },
+      "total_2026": {
+        "ar": 42577.84,
+        "ap": 26352.99,
+        "net_gp": 12979.88
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-15",
+            "end_date": "2026-05-03",
+            "monthly_amount": 555.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-15",
+            "end_date": "2026-05-03",
+            "monthly_amount": 320.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2026-02-18",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3850.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-18",
+            "end_date": "2026-04-30",
+            "monthly_amount": 2250.0
+          }
+        },
+        "C": {
+          "construction": {
+            "start_date": "2026-02-19",
+            "end_date": "2026-05-31",
+            "monthly_amount": 7825.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-19",
+            "end_date": "2026-05-31",
+            "monthly_amount": 4300.0
+          }
+        },
+        "D": {
+          "construction": {
+            "start_date": "2026-04-26",
+            "end_date": "2026-05-31",
+            "monthly_amount": 3850.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-26",
+            "end_date": "2026-05-31",
+            "monthly_amount": 2300.0
+          }
+        },
+        "E": {
+          "construction": {
+            "start_date": "2026-05-03",
+            "end_date": "2026-05-31",
+            "monthly_amount": 5500.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-05-03",
+            "end_date": "2026-05-31",
+            "monthly_amount": 3300.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213240216017591",
+      "name": "Power Design - Starbase, TX -Zeke - 2614",
+      "salesperson": "Zeke",
+      "project_number": "2614",
+      "status": "Active",
+      "start_date": "2026-02-21",
+      "end_date": "2026-12-31",
+      "base_ar": 12000.0,
+      "base_ap": 14000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2628.34,
+          "net_gp": 457.33
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 10200.0,
+          "net_gp": 1440.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 10706.67,
+          "net_gp": 1034.66
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14000.0,
+          "net_gp": -1600.0
+        }
+      },
+      "total_2026": {
+        "ar": 123200.0,
+        "ap": 135535.01,
+        "net_gp": -9868.01
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-21",
+            "end_date": "2026-12-31",
+            "monthly_amount": 12000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-22",
+            "end_date": "2026-12-31",
+            "monthly_amount": 2750.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-02-21",
+            "end_date": "2026-12-31",
+            "monthly_amount": 5200.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-02-21",
+            "end_date": "2026-12-31",
+            "monthly_amount": 2250.0
+          }
+        },
+        "D": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-04-27",
+            "end_date": "2026-12-31",
+            "monthly_amount": 3800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213329022938206",
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617",
+      "salesperson": "Logan",
+      "project_number": "2617",
+      "status": "Active",
+      "start_date": "2026-02-22",
+      "end_date": "2026-04-30",
+      "base_ar": 13500.0,
+      "base_ap": 16500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 1598.33,
+          "ap": 840.0,
+          "net_gp": 606.66
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 10618.33,
+          "ap": 14573.34,
+          "net_gp": -3164.01
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 13500.0,
+          "ap": 4000.0,
+          "net_gp": 7600.0
+        }
+      },
+      "total_2026": {
+        "ar": 25716.66,
+        "ap": 19413.34,
+        "net_gp": 5042.65
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-02-22",
+            "end_date": "2026-04-30",
+            "monthly_amount": 6850.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-02-22",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3600.0
+          }
+        },
+        "E": {
+          "construction": {
+            "start_date": "2026-03-15",
+            "end_date": "2026-04-30",
+            "monthly_amount": 6650.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-15",
+            "end_date": "2026-04-30",
+            "monthly_amount": 4000.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-01",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3000.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-01",
+            "end_date": "2026-03-31",
+            "monthly_amount": 3000.0
+          }
+        },
+        "D": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-04",
+            "end_date": "2026-03-31",
+            "monthly_amount": 2900.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213423592821387",
+      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621",
+      "salesperson": "Zeke",
+      "project_number": "2621",
+      "status": "Active",
+      "start_date": "2026-04-01",
+      "end_date": "2026-09-30",
+      "base_ar": 22800.0,
+      "base_ap": 11800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 18240.0,
+          "ap": 10253.33,
+          "net_gp": 6389.34
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 22800.0,
+          "ap": 11800.0,
+          "net_gp": 8800.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 15960.0,
+          "ap": 8320.0,
+          "net_gp": 6112.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 11400.0,
+          "ap": 6000.0,
+          "net_gp": 4320.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 11400.0,
+          "ap": 6000.0,
+          "net_gp": 4320.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 11400.0,
+          "ap": 6000.0,
+          "net_gp": 4320.0
+        }
+      },
+      "total_2026": {
+        "ar": 91200.0,
+        "ap": 48373.33,
+        "net_gp": 34261.34
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-01",
+            "end_date": "2026-09-30",
+            "monthly_amount": 11400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-01",
+            "end_date": "2026-09-30",
+            "monthly_amount": 6000.0
+          }
+        },
+        "B": {
+          "construction": {
+            "start_date": "2026-04-13",
+            "end_date": "2026-06-12",
+            "monthly_amount": 11400.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-09",
+            "end_date": "2026-06-12",
+            "monthly_amount": 5800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213439679118236",
+      "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
+      "salesperson": "Matt",
+      "project_number": "2622",
+      "status": "Closed",
+      "start_date": "2026-03-08",
+      "end_date": "2026-04-15",
+      "base_ar": 4200.0,
+      "base_ap": 9500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-03": {
+          "crew": 0,
+          "ar": 3216.67,
+          "ap": 8773.33,
+          "net_gp": -4445.33
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2100.0,
+          "ap": 7950.0,
+          "net_gp": -4680.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 6400.0,
+          "net_gp": -5120.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 213.34,
+          "net_gp": -170.67
+        }
+      },
+      "total_2026": {
+        "ar": 5316.67,
+        "ap": 23336.67,
+        "net_gp": -14416.0
+      },
+      "houses": {
+        "D": {
+          "construction": {
+            "start_date": "2026-03-08",
+            "end_date": "2026-04-15",
+            "monthly_amount": 2050.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-08",
+            "end_date": "2026-04-15",
+            "monthly_amount": 1500.0
+          }
+        },
+        "E": {
+          "construction": {
+            "start_date": "2026-03-10",
+            "end_date": "2026-04-15",
+            "monthly_amount": 2150.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-10",
+            "end_date": "2026-04-15",
+            "monthly_amount": 1600.0
+          }
+        },
+        "A": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-01",
+            "end_date": "2026-06-01",
+            "monthly_amount": 1850.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-01",
+            "end_date": "2026-06-01",
+            "monthly_amount": 1950.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-01",
+            "end_date": "2026-06-01",
+            "monthly_amount": 2600.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213523794178802",
+      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624",
+      "salesperson": "Matt",
+      "project_number": "2624",
+      "status": "Active",
+      "start_date": "2026-04-13",
+      "end_date": "2026-10-15",
+      "base_ar": 12000.0,
+      "base_ap": 22500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 7200.0,
+          "ap": 13500.0,
+          "net_gp": -5040.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 22500.0,
+          "net_gp": -8400.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 22500.0,
+          "net_gp": -8400.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 22500.0,
+          "net_gp": -8400.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 22500.0,
+          "net_gp": -8400.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 14963.33,
+          "net_gp": -2370.66
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 4600.0,
+          "net_gp": 1120.0
+        }
+      },
+      "total_2026": {
+        "ar": 73200.0,
+        "ap": 123063.33,
+        "net_gp": -39890.66
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-13",
+            "end_date": "2026-10-15",
+            "monthly_amount": 12000.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-13",
+            "end_date": "2026-10-15",
+            "monthly_amount": 4200.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-04-13",
+            "end_date": "2026-10-15",
+            "monthly_amount": 5000.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-04-13",
+            "end_date": "2026-09-13",
+            "monthly_amount": 10000.0
+          }
+        },
+        "D": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-04-13",
+            "end_date": "2026-09-13",
+            "monthly_amount": 3300.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213629324301274",
+      "name": "Power Design - Tucson, AZ - Zeke - 2615",
+      "salesperson": "Zeke",
+      "project_number": "2615",
+      "status": "Active",
+      "start_date": "2026-04-01",
+      "end_date": "2026-10-31",
+      "base_ar": 4600.0,
+      "base_ap": 2800.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 4600.0,
+          "ap": 2800.0,
+          "net_gp": 1440.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 4600.0,
+          "ap": 2800.0,
+          "net_gp": 1440.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 4600.0,
+          "ap": 2800.0,
+          "net_gp": 1440.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 4600.0,
+          "ap": 2800.0,
+          "net_gp": 1440.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 4600.0,
+          "ap": 2800.0,
+          "net_gp": 1440.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 4600.0,
+          "ap": 2800.0,
+          "net_gp": 1440.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 4600.0,
+          "ap": 2800.0,
+          "net_gp": 1440.0
+        }
+      },
+      "total_2026": {
+        "ar": 32200.0,
+        "ap": 19600.0,
+        "net_gp": 10080.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-01",
+            "end_date": "2026-10-31",
+            "monthly_amount": 4600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-01",
+            "end_date": "2026-10-31",
+            "monthly_amount": 2800.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213633710870931",
+      "name": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+      "salesperson": "Zeke",
+      "project_number": "2625",
+      "status": "Active",
+      "start_date": "2026-03-20",
+      "end_date": "2027-03-19",
+      "base_ar": 16650.0,
+      "base_ap": 11250.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-03": {
+          "crew": 0,
+          "ar": 6660.0,
+          "ap": 3375.0,
+          "net_gp": 2628.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 16650.0,
+          "ap": 11250.0,
+          "net_gp": 4320.0
+        }
+      },
+      "total_2026": {
+        "ar": 156510.0,
+        "ap": 104625.0,
+        "net_gp": 41508.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-03-20",
+            "end_date": "2027-03-19",
+            "monthly_amount": 16650.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-23",
+            "end_date": "2027-03-31",
+            "monthly_amount": 3750.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-23",
+            "end_date": "2027-03-31",
+            "monthly_amount": 3750.0
+          }
+        },
+        "C": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-23",
+            "end_date": "2027-03-31",
+            "monthly_amount": 3750.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213807211139673",
+      "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
+      "salesperson": "Logan",
+      "project_number": "2630",
+      "status": "Active",
+      "start_date": "2026-04-02",
+      "end_date": "2026-05-01",
+      "base_ar": 11100.0,
+      "base_ap": 6500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 10730.0,
+          "ap": 6283.33,
+          "net_gp": 3557.34
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 370.0,
+          "ap": 216.67,
+          "net_gp": 122.66
+        }
+      },
+      "total_2026": {
+        "ar": 11100.0,
+        "ap": 6500.0,
+        "net_gp": 3680.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-02",
+            "end_date": "2026-05-01",
+            "monthly_amount": 11100.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-02",
+            "end_date": "2026-05-01",
+            "monthly_amount": 6500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213812028376221",
+      "name": "Gutknecht Construction - Evansville, IN - Matt - 2627",
+      "salesperson": "Matt",
+      "project_number": "2627",
+      "status": "Active",
+      "start_date": "2026-03-29",
+      "end_date": "2026-06-19",
+      "base_ar": 7750.0,
+      "base_ap": 5200.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-03": {
+          "crew": 0,
+          "ar": 775.0,
+          "ap": 520.0,
+          "net_gp": 204.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 7750.0,
+          "ap": 5200.0,
+          "net_gp": 2040.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 7750.0,
+          "ap": 5200.0,
+          "net_gp": 2040.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 4908.33,
+          "ap": 3293.34,
+          "net_gp": 1291.99
+        }
+      },
+      "total_2026": {
+        "ar": 21183.33,
+        "ap": 14213.34,
+        "net_gp": 5575.99
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-03-29",
+            "end_date": "2026-06-19",
+            "monthly_amount": 7750.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-29",
+            "end_date": "2026-06-19",
+            "monthly_amount": 1700.0
+          }
+        },
+        "B": {
+          "construction": null,
+          "homeowner": {
+            "start_date": "2026-03-29",
+            "end_date": "2026-06-19",
+            "monthly_amount": 3500.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213864449534720",
+      "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628 ",
+      "salesperson": "Logan",
+      "project_number": "2628",
+      "status": "Active",
+      "start_date": "2026-03-31",
+      "end_date": "2026-04-30",
+      "base_ar": 7600.0,
+      "base_ap": 4000.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-03": {
+          "crew": 0,
+          "ar": 253.33,
+          "ap": 133.33,
+          "net_gp": 96.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 7600.0,
+          "ap": 4000.0,
+          "net_gp": 2880.0
+        }
+      },
+      "total_2026": {
+        "ar": 7853.33,
+        "ap": 4133.33,
+        "net_gp": 2976.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-03-31",
+            "end_date": "2026-04-30",
+            "monthly_amount": 7600.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-03-31",
+            "end_date": "2026-04-30",
+            "monthly_amount": 4000.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213884891926150",
+      "name": "Power Design - Savannah, GA - Zeke - 2631",
+      "salesperson": "Zeke",
+      "project_number": "2631",
+      "status": "Active",
+      "start_date": "2026-04-06",
+      "end_date": "2027-03-31",
+      "base_ar": 3200.0,
+      "base_ap": 2400.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 2666.67,
+          "ap": 2000.0,
+          "net_gp": 533.34
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "net_gp": 640.0
+        }
+      },
+      "total_2026": {
+        "ar": 28266.67,
+        "ap": 21200.0,
+        "net_gp": 5653.34
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-06",
+            "end_date": "2027-03-31",
+            "monthly_amount": 3200.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-06",
+            "end_date": "2027-03-31",
+            "monthly_amount": 2400.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1213942879454294",
+      "name": "Power Design - Charlotte, NC - Zeke - 2633",
+      "salesperson": "Zeke",
+      "project_number": "2633",
+      "status": "Active",
+      "start_date": "2026-04-08",
+      "end_date": "2026-12-31",
+      "base_ar": 3300.0,
+      "base_ap": 1750.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-04": {
+          "crew": 0,
+          "ar": 2530.0,
+          "ap": 1225.0,
+          "net_gp": 1044.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 3300.0,
+          "ap": 1750.0,
+          "net_gp": 1240.0
+        }
+      },
+      "total_2026": {
+        "ar": 28930.0,
+        "ap": 15225.0,
+        "net_gp": 10964.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-04-08",
+            "end_date": "2026-12-31",
+            "monthly_amount": 3300.0,
+            "crew_size": 0
+          },
+          "homeowner": {
+            "start_date": "2026-04-10",
+            "end_date": "2026-12-31",
+            "monthly_amount": 1750.0
+          }
+        }
+      }
+    },
+    {
+      "gid": "1214062281144643",
+      "name": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635 ",
+      "salesperson": "Zeke",
+      "project_number": "2635",
+      "status": "Upcoming",
+      "start_date": "2026-05-17",
+      "end_date": "2026-12-31",
+      "base_ar": 5200.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-05": {
+          "crew": 0,
+          "ar": 2600.0,
+          "ap": 0.0,
+          "net_gp": 2080.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 5200.0,
+          "ap": 0.0,
+          "net_gp": 4160.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 5200.0,
+          "ap": 0.0,
+          "net_gp": 4160.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 5200.0,
+          "ap": 0.0,
+          "net_gp": 4160.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 5200.0,
+          "ap": 0.0,
+          "net_gp": 4160.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 5200.0,
+          "ap": 0.0,
+          "net_gp": 4160.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 5200.0,
+          "ap": 0.0,
+          "net_gp": 4160.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 5200.0,
+          "ap": 0.0,
+          "net_gp": 4160.0
+        }
+      },
+      "total_2026": {
+        "ar": 39000.0,
+        "ap": 0.0,
+        "net_gp": 31200.0
+      },
+      "houses": {
+        "A": {
+          "construction": {
+            "start_date": "2026-05-17",
+            "end_date": "2026-12-31",
+            "monthly_amount": 5200.0,
+            "crew_size": 0
+          },
+          "homeowner": null
+        }
+      }
     }
   ],
   "monthly_totals": {
     "2025-08": {
       "crew": 0,
-      "ar": 69885.0,
-      "ap": 29059.99,
-      "net_gp": 32660.01,
-      "gp_pct": 46.73
+      "ar": 118268.33,
+      "ap": 35464.16,
+      "net_gp": 66243.34,
+      "gp_pct": 56.01
     },
     "2025-09": {
       "crew": 0,
-      "ar": 90316.16,
-      "ap": 47835.66,
-      "net_gp": 33984.4,
-      "gp_pct": 37.63
+      "ar": 159785.49,
+      "ap": 76467.06,
+      "net_gp": 66654.74,
+      "gp_pct": 41.72
     },
     "2025-10": {
       "crew": 0,
-      "ar": 102408.49,
-      "ap": 52886.67,
-      "net_gp": 39617.46,
-      "gp_pct": 38.69
+      "ar": 185072.16,
+      "ap": 91955.3,
+      "net_gp": 74493.49,
+      "gp_pct": 40.25
     },
     "2025-11": {
       "crew": 0,
-      "ar": 100824.17,
-      "ap": 49915.0,
-      "net_gp": 40727.34,
-      "gp_pct": 40.39
+      "ar": 185909.17,
+      "ap": 94984.17,
+      "net_gp": 72740.0,
+      "gp_pct": 39.13
     },
     "2025-12": {
       "crew": 0,
-      "ar": 96800.0,
-      "ap": 48153.34,
-      "net_gp": 38917.33,
-      "gp_pct": 40.2
+      "ar": 178825.33,
+      "ap": 89445.84,
+      "net_gp": 71503.59,
+      "gp_pct": 39.99
     },
     "2026-01": {
       "crew": 0,
-      "ar": 89922.5,
-      "ap": 47115.0,
-      "net_gp": 34246.0,
-      "gp_pct": 38.08
+      "ar": 195300.84,
+      "ap": 120083.18,
+      "net_gp": 60174.13,
+      "gp_pct": 30.81
     },
     "2026-02": {
       "crew": 0,
-      "ar": 106575.17,
-      "ap": 54903.32,
-      "net_gp": 41337.48,
-      "gp_pct": 38.79
+      "ar": 207892.83,
+      "ap": 144565.98,
+      "net_gp": 50661.48,
+      "gp_pct": 24.37
     },
     "2026-03": {
       "crew": 0,
-      "ar": 111676.67,
-      "ap": 60925.01,
-      "net_gp": 40601.33,
-      "gp_pct": 36.36
+      "ar": 241278.34,
+      "ap": 183230.51,
+      "net_gp": 46438.26,
+      "gp_pct": 19.25
     },
     "2026-04": {
       "crew": 0,
-      "ar": 121548.17,
-      "ap": 70438.33,
-      "net_gp": 40887.87,
-      "gp_pct": 33.64
+      "ar": 268588.18,
+      "ap": 185751.66,
+      "net_gp": 66269.22,
+      "gp_pct": 24.67
     },
     "2026-05": {
       "crew": 0,
-      "ar": 159430.0,
-      "ap": 91770.0,
-      "net_gp": 54128.0,
-      "gp_pct": 33.95
+      "ar": 279407.17,
+      "ap": 185758.67,
+      "net_gp": 74918.8,
+      "gp_pct": 26.81
     },
     "2026-06": {
       "crew": 0,
-      "ar": 143105.67,
-      "ap": 84514.83,
-      "net_gp": 46872.67,
-      "gp_pct": 32.75
+      "ar": 230724.0,
+      "ap": 156891.51,
+      "net_gp": 59065.99,
+      "gp_pct": 25.6
     },
     "2026-07": {
       "crew": 0,
-      "ar": 128730.0,
-      "ap": 80775.0,
-      "net_gp": 38364.0,
-      "gp_pct": 29.8
+      "ar": 206000.0,
+      "ap": 147325.0,
+      "net_gp": 46940.0,
+      "gp_pct": 22.79
     },
     "2026-08": {
       "crew": 0,
-      "ar": 114186.67,
-      "ap": 73915.0,
-      "net_gp": 32217.34,
-      "gp_pct": 28.21
+      "ar": 187729.17,
+      "ap": 138365.0,
+      "net_gp": 39491.34,
+      "gp_pct": 21.04
     },
     "2026-09": {
       "crew": 0,
-      "ar": 105918.33,
-      "ap": 69841.67,
-      "net_gp": 28861.33,
-      "gp_pct": 27.25
+      "ar": 177863.33,
+      "ap": 125855.0,
+      "net_gp": 41606.66,
+      "gp_pct": 23.39
     },
     "2026-10": {
       "crew": 0,
-      "ar": 96331.67,
-      "ap": 64648.33,
-      "net_gp": 25346.67,
-      "gp_pct": 26.31
+      "ar": 150876.67,
+      "ap": 104298.33,
+      "net_gp": 37262.67,
+      "gp_pct": 24.7
     },
     "2026-11": {
       "crew": 0,
-      "ar": 63190.0,
-      "ap": 40075.0,
-      "net_gp": 18492.0,
-      "gp_pct": 29.26
+      "ar": 107135.0,
+      "ap": 72325.0,
+      "net_gp": 27848.0,
+      "gp_pct": 25.99
     },
     "2026-12": {
       "crew": 0,
-      "ar": 53808.0,
-      "ap": 33900.0,
-      "net_gp": 15926.4,
-      "gp_pct": 29.6
+      "ar": 97753.0,
+      "ap": 66150.0,
+      "net_gp": 25282.4,
+      "gp_pct": 25.86
     }
   },
   "salesperson_summary": {
@@ -3941,133 +7342,198 @@
         "commission": 5016.990000000001
       },
       "2025-09": {
-        "ar": 76462.83,
+        "ar": 76654.5,
         "ap": 43942.33,
-        "commission": 6504.099999999999
+        "commission": 6542.429999999999
       },
       "2025-10": {
-        "ar": 79755.99,
-        "ap": 46766.67,
-        "commission": 6597.86
+        "ar": 85505.99,
+        "ap": 54563.34,
+        "commission": 6188.53
       },
       "2025-11": {
-        "ar": 74379.17,
-        "ap": 43375.0,
-        "commission": 6200.83
+        "ar": 80129.17,
+        "ap": 52075.0,
+        "commission": 5610.83
       },
       "2025-12": {
-        "ar": 77000.0,
-        "ap": 47006.67,
-        "commission": 5998.67
+        "ar": 84907.0,
+        "ap": 56498.34,
+        "commission": 5681.74
       },
       "2026-01": {
-        "ar": 72222.5,
-        "ap": 46115.0,
-        "commission": 5221.5
+        "ar": 81567.5,
+        "ap": 56065.0,
+        "commission": 5100.5
       },
       "2026-02": {
-        "ar": 85915.17,
-        "ap": 51903.32000000001,
-        "commission": 6802.37
+        "ar": 95260.17,
+        "ap": 61853.32000000001,
+        "commission": 6681.37
       },
       "2026-03": {
-        "ar": 96060.0,
-        "ap": 59508.34,
-        "commission": 7310.33
+        "ar": 105405.0,
+        "ap": 69458.34,
+        "commission": 7189.33
       },
       "2026-04": {
-        "ar": 100494.84,
-        "ap": 62751.67,
-        "commission": 7548.63
+        "ar": 104089.84,
+        "ap": 64268.34,
+        "commission": 7964.3
       },
       "2026-05": {
-        "ar": 137029.99999999997,
-        "ap": 82770.0,
-        "commission": 10852.01
+        "ar": 140624.99999999997,
+        "ap": 84020.0,
+        "commission": 11321.01
       },
       "2026-06": {
-        "ar": 129705.67,
-        "ap": 75514.83,
-        "commission": 10838.16
+        "ar": 133300.66999999998,
+        "ap": 76764.83,
+        "commission": 11307.16
       },
       "2026-07": {
-        "ar": 115330.0,
-        "ap": 71775.0,
-        "commission": 8711.0
+        "ar": 118925.0,
+        "ap": 73025.0,
+        "commission": 9180.0
       },
       "2026-08": {
-        "ar": 100786.67,
-        "ap": 64915.0,
-        "commission": 7174.33
+        "ar": 104381.67,
+        "ap": 66165.0,
+        "commission": 7643.33
       },
       "2026-09": {
-        "ar": 94918.33,
-        "ap": 61841.67,
-        "commission": 6615.33
+        "ar": 98513.33,
+        "ap": 63091.67,
+        "commission": 7084.33
       },
       "2026-10": {
-        "ar": 85331.67,
-        "ap": 56648.33,
-        "commission": 5736.67
+        "ar": 88926.67,
+        "ap": 57898.33,
+        "commission": 6205.67
       },
       "2026-11": {
-        "ar": 52190.0,
-        "ap": 32075.0,
-        "commission": 4023.0
+        "ar": 55785.0,
+        "ap": 33325.0,
+        "commission": 4492.0
       },
       "2026-12": {
-        "ar": 42808.0,
-        "ap": 25900.0,
-        "commission": 3381.6
+        "ar": 46403.0,
+        "ap": 27150.0,
+        "commission": 3850.6
       }
     },
     "Matt": {
       "2025-08": {
-        "ar": 10000.0,
-        "ap": 3300.0,
-        "commission": 1340.0
+        "ar": 12683.33,
+        "ap": 5656.67,
+        "commission": 1405.33
       },
       "2025-09": {
-        "ar": 333.33,
-        "ap": 110.0,
-        "commission": 44.67
+        "ar": 11833.33,
+        "ap": 10210.0,
+        "commission": 324.67
+      },
+      "2025-10": {
+        "ar": 11500.0,
+        "ap": 10100.0,
+        "commission": 280.0
+      },
+      "2025-11": {
+        "ar": 11500.0,
+        "ap": 10100.0,
+        "commission": 280.0
+      },
+      "2025-12": {
+        "ar": 5750.0,
+        "ap": 5050.0,
+        "commission": 140.0
+      },
+      "2026-01": {
+        "ar": 4200.0,
+        "ap": 5187.5,
+        "commission": -197.5
+      },
+      "2026-02": {
+        "ar": 3550.0,
+        "ap": 2000.0,
+        "commission": 310.0
+      },
+      "2026-03": {
+        "ar": 9316.67,
+        "ap": 12293.33,
+        "commission": -595.3299999999999
+      },
+      "2026-04": {
+        "ar": 22375.0,
+        "ap": 29650.0,
+        "commission": -1455.0
+      },
+      "2026-05": {
+        "ar": 25075.0,
+        "ap": 37100.0,
+        "commission": -2405.0
+      },
+      "2026-06": {
+        "ar": 22233.33,
+        "ap": 29006.68,
+        "commission": -1354.67
+      },
+      "2026-07": {
+        "ar": 17325.0,
+        "ap": 25500.0,
+        "commission": -1635.0
+      },
+      "2026-08": {
+        "ar": 13597.5,
+        "ap": 23400.0,
+        "commission": -1960.5
+      },
+      "2026-09": {
+        "ar": 12000.0,
+        "ap": 14963.33,
+        "commission": -592.67
+      },
+      "2026-10": {
+        "ar": 6000.0,
+        "ap": 4600.0,
+        "commission": 280.0
       }
     },
     "David": {
       "2025-10": {
-        "ar": 16260.0,
-        "ap": 2900.0,
-        "commission": 2672.0
+        "ar": 22200.0,
+        "ap": 6066.67,
+        "commission": 3226.67
       },
       "2025-11": {
-        "ar": 21300.0,
-        "ap": 3500.0,
-        "commission": 3560.0
+        "ar": 36200.0,
+        "ap": 12450.0,
+        "commission": 4750.0
       },
       "2025-12": {
-        "ar": 17700.0,
-        "ap": 1000.0,
-        "commission": 3340.0
+        "ar": 30920.0,
+        "ap": 9333.33,
+        "commission": 4317.33
       },
       "2026-01": {
-        "ar": 17700.0,
-        "ap": 1000.0,
-        "commission": 3340.0
+        "ar": 31200.0,
+        "ap": 9100.0,
+        "commission": 4420.0
       },
       "2026-02": {
-        "ar": 17700.0,
-        "ap": 1000.0,
-        "commission": 3340.0
+        "ar": 31200.0,
+        "ap": 9100.0,
+        "commission": 4420.0
       },
       "2026-03": {
-        "ar": 15000.0,
-        "ap": 1000.0,
-        "commission": 2800.0
+        "ar": 26400.0,
+        "ap": 7900.0,
+        "commission": 3700.0
       },
       "2025-09": {
-        "ar": 2280.0,
-        "ap": 1583.33,
-        "commission": 139.33
+        "ar": 5280.0,
+        "ap": 3083.33,
+        "commission": 439.33000000000004
       },
       "2026-04": {
         "ar": 21053.33,
@@ -4125,6 +7591,150 @@
         "ar": 616.67,
         "ap": 416.67,
         "commission": 40.0
+      }
+    },
+    "Zeke": {
+      "2025-08": {
+        "ar": 43325.0,
+        "ap": 2347.5,
+        "commission": 8195.5
+      },
+      "2025-09": {
+        "ar": 51009.33,
+        "ap": 14198.07,
+        "commission": 7362.25
+      },
+      "2025-10": {
+        "ar": 54898.67,
+        "ap": 14605.29,
+        "commission": 8058.67
+      },
+      "2025-11": {
+        "ar": 48360.0,
+        "ap": 13919.17,
+        "commission": 6888.17
+      },
+      "2025-12": {
+        "ar": 50573.33,
+        "ap": 15017.5,
+        "commission": 7111.17
+      },
+      "2026-01": {
+        "ar": 62240.0,
+        "ap": 40330.68,
+        "commission": 4381.87
+      },
+      "2026-02": {
+        "ar": 40105.33,
+        "ap": 50225.0,
+        "commission": -2023.94
+      },
+      "2026-03": {
+        "ar": 56246.67,
+        "ap": 61428.83,
+        "commission": -1036.4299999999998
+      },
+      "2026-04": {
+        "ar": 73593.34,
+        "ap": 60310.0,
+        "commission": 2656.67
+      },
+      "2026-05": {
+        "ar": 71690.0,
+        "ap": 45600.0,
+        "commission": 5218.0
+      },
+      "2026-06": {
+        "ar": 60910.0,
+        "ap": 42120.0,
+        "commission": 3758.0
+      },
+      "2026-07": {
+        "ar": 56350.0,
+        "ap": 39800.0,
+        "commission": 3310.0
+      },
+      "2026-08": {
+        "ar": 56350.0,
+        "ap": 39800.0,
+        "commission": 3310.0
+      },
+      "2026-09": {
+        "ar": 56350.0,
+        "ap": 39800.0,
+        "commission": 3310.0
+      },
+      "2026-10": {
+        "ar": 44950.0,
+        "ap": 33800.0,
+        "commission": 2230.0
+      },
+      "2026-11": {
+        "ar": 40350.0,
+        "ap": 31000.0,
+        "commission": 1870.0
+      },
+      "2026-12": {
+        "ar": 40350.0,
+        "ap": 31000.0,
+        "commission": 1870.0
+      }
+    },
+    "Logan": {
+      "2025-08": {
+        "ar": 2375.0,
+        "ap": 1700.0,
+        "commission": 135.0
+      },
+      "2025-09": {
+        "ar": 3768.33,
+        "ap": 2833.33,
+        "commission": 187.0
+      },
+      "2025-10": {
+        "ar": 4575.0,
+        "ap": 3400.0,
+        "commission": 235.0
+      },
+      "2025-11": {
+        "ar": 4575.0,
+        "ap": 3400.0,
+        "commission": 235.0
+      },
+      "2025-12": {
+        "ar": 4575.0,
+        "ap": 3400.0,
+        "commission": 235.0
+      },
+      "2026-01": {
+        "ar": 16093.34,
+        "ap": 9400.0,
+        "commission": 1338.67
+      },
+      "2026-02": {
+        "ar": 34817.33,
+        "ap": 19387.66,
+        "commission": 3085.94
+      },
+      "2026-03": {
+        "ar": 43293.33,
+        "ap": 31733.34,
+        "commission": 2312.0
+      },
+      "2026-04": {
+        "ar": 47476.67,
+        "ap": 23836.66,
+        "commission": 4728.0
+      },
+      "2026-05": {
+        "ar": 19617.17,
+        "ap": 10038.67,
+        "commission": 1915.7
+      },
+      "2026-06": {
+        "ar": 880.0,
+        "ap": 0.0,
+        "commission": 176.0
       }
     }
   }
