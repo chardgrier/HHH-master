@@ -8,6 +8,7 @@
   :root {
     --gold: #F5A623;
     --dark: #1a1a2e;
+    --darker: #111122;
     --card: #ffffff;
     --border: #e2e8f0;
     --text: #2d3748;
@@ -17,107 +18,96 @@
     --closed: #e53e3e;
     --bg: #f7f8fc;
     --row-hover: #fffbf0;
-    --total-bg: #1a1a2e;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 13px; }
+  html, body { height: 100%; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 13px; display: flex; flex-direction: column; overflow: hidden; }
 
-  /* ── Header ── */
-  header { background: var(--dark); color: #fff; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.3); }
-  header h1 { font-size: 20px; font-weight: 700; letter-spacing: .5px; }
+  /* ── Top bar ── */
+  header { background: var(--dark); color: #fff; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 6px rgba(0,0,0,.25); flex-shrink: 0; }
+  header h1 { font-size: 18px; font-weight: 700; letter-spacing: .4px; }
   header h1 span { color: var(--gold); }
   #sync-info { font-size: 11px; color: #a0aec0; }
-  #refresh-btn { background: var(--gold); border: none; color: #fff; font-weight: 700; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+  #refresh-btn { background: var(--gold); border: none; color: #fff; font-weight: 700; padding: 5px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; margin-left: 10px; }
   #refresh-btn:hover { opacity: .85; }
 
   /* ── KPI cards ── */
-  .kpi-row { display: flex; gap: 12px; padding: 16px 24px; flex-wrap: wrap; }
-  .kpi { background: var(--card); border-radius: 10px; padding: 14px 18px; flex: 1; min-width: 160px; border-left: 4px solid var(--gold); box-shadow: 0 1px 4px rgba(0,0,0,.06); }
-  .kpi label { font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: var(--muted); }
-  .kpi .val { font-size: 24px; font-weight: 700; margin-top: 4px; }
+  .kpi-row { display: flex; gap: 10px; padding: 14px 24px 10px; flex-wrap: wrap; flex-shrink: 0; }
+  .kpi { background: var(--card); border-radius: 8px; padding: 10px 14px; flex: 1; min-width: 140px; border-left: 3px solid var(--gold); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .kpi label { font-size: 10px; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); font-weight: 600; }
+  .kpi .val { font-size: 20px; font-weight: 700; margin-top: 2px; }
   .kpi .val.green { color: var(--active); }
-  .kpi .val.blue  { color: var(--upcoming); }
+  .kpi .val.blue { color: var(--upcoming); }
 
   /* ── Filters ── */
-  .filters { display: flex; gap: 8px; align-items: center; padding: 0 24px 12px; flex-wrap: wrap; }
-  .filters label { font-size: 11px; font-weight: 600; color: var(--muted); margin-right: 4px; }
-  .filter-btn { border: 1px solid var(--border); background: #fff; padding: 5px 12px; border-radius: 20px; cursor: pointer; font-size: 12px; }
+  .filters { display: flex; gap: 8px; align-items: center; padding: 0 24px 10px; flex-wrap: wrap; flex-shrink: 0; }
+  .filters label { font-size: 11px; font-weight: 600; color: var(--muted); margin-right: 2px; }
+  .filter-btn { border: 1px solid var(--border); background: #fff; padding: 4px 11px; border-radius: 18px; cursor: pointer; font-size: 12px; }
   .filter-btn.active { background: var(--gold); color: #fff; border-color: var(--gold); font-weight: 700; }
-  select { border: 1px solid var(--border); background: #fff; padding: 5px 10px; border-radius: 20px; font-size: 12px; }
+  select { border: 1px solid var(--border); background: #fff; padding: 4px 10px; border-radius: 18px; font-size: 12px; }
 
-  /* ── Master Table ── */
-  .table-wrap { overflow-x: auto; padding: 0 24px 40px; }
-  table { border-collapse: collapse; min-width: 100%; white-space: nowrap; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
-  th, td { border: 1px solid var(--border); padding: 5px 8px; text-align: right; }
-  th { background: var(--dark); color: #fff; font-size: 11px; font-weight: 600; text-align: center; position: sticky; top: 52px; z-index: 10; }
-  th.left { text-align: left; }
+  /* ── Scrollable master table ── */
+  .scroll-wrap { flex: 1; overflow: auto; margin: 0 24px 20px; background: #fff; border-radius: 10px; box-shadow: 0 1px 4px rgba(0,0,0,.06); position: relative; }
 
-  /* Sticky left columns */
-  .col-name  { position: sticky; left: 0;    min-width: 220px; max-width: 220px; z-index: 20; background: #fff; text-align: left !important; white-space: normal; word-break: break-word; line-height: 1.3; }
-  .col-sp    { position: sticky; left: 220px; min-width: 60px;  z-index: 20; background: #fff; text-align: center !important; }
-  .col-stat  { position: sticky; left: 280px; min-width: 75px;  z-index: 20; background: #fff; text-align: center !important; }
-  .col-start { position: sticky; left: 355px; min-width: 85px;  z-index: 20; background: #fff; }
-  .col-end   { position: sticky; left: 440px; min-width: 85px;  z-index: 20; background: #fff; }
+  table { border-collapse: separate; border-spacing: 0; white-space: nowrap; width: max-content; font-size: 12px; }
+  th, td { padding: 6px 9px; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); text-align: right; vertical-align: middle; background: #fff; }
+  th { background: var(--darker); color: #fff; font-weight: 600; font-size: 11px; text-align: center; border-right-color: #2d3748; }
 
-  th.col-name  { background: var(--dark); z-index: 30; }
-  th.col-sp    { background: var(--dark); z-index: 30; }
-  th.col-stat  { background: var(--dark); z-index: 30; }
-  th.col-start { background: var(--dark); z-index: 30; }
-  th.col-end   { background: var(--dark); z-index: 30; }
+  /* Sticky HEADER row (TOP) — both rows stick */
+  thead tr.year-row th  { position: sticky; top: 0;    z-index: 5; background: var(--darker); font-size: 11px; letter-spacing: .5px; border-bottom: 1px solid #2d3748; }
+  thead tr.month-row th { position: sticky; top: 28px; z-index: 5; background: #2d3748;      font-size: 12px; font-weight: 700; border-bottom: 2px solid var(--gold); }
 
-  tr:hover td { background: var(--row-hover); }
-  tr:hover td.col-name, tr:hover td.col-sp, tr:hover td.col-stat,
-  tr:hover td.col-start, tr:hover td.col-end { background: var(--row-hover); }
+  /* Sticky LEFT columns (both header + body cells) */
+  .c-name  { position: sticky; left: 0;    min-width: 240px; max-width: 240px; z-index: 2; text-align: left !important; white-space: normal; line-height: 1.25; font-weight: 600; }
+  .c-sp    { position: sticky; left: 240px; min-width: 60px;  z-index: 2; text-align: center !important; }
+  .c-stat  { position: sticky; left: 300px; min-width: 80px;  z-index: 2; text-align: center !important; }
+  .c-start { position: sticky; left: 380px; min-width: 85px;  z-index: 2; font-family: 'SF Mono', monospace; }
+  .c-end   { position: sticky; left: 465px; min-width: 85px;  z-index: 2; font-family: 'SF Mono', monospace; border-right: 3px solid var(--gold); }
 
-  /* Month group header */
-  th.month-hdr { background: #2d3748; font-size: 10px; }
-  th.sub-hdr { background: #3a4a5c; font-size: 10px; padding: 3px 6px; }
+  /* Header cells in sticky left cols: top-left corner */
+  thead th.c-name, thead th.c-sp, thead th.c-stat, thead th.c-start, thead th.c-end { z-index: 6; }
+  thead tr.year-row th.c-name { background: var(--darker); text-align: left !important; padding-left: 14px; font-size: 13px; letter-spacing: .8px; color: var(--gold); }
+  thead tr.year-row th.c-sp, thead tr.year-row th.c-stat, thead tr.year-row th.c-start, thead tr.year-row th.c-end { background: var(--darker); }
+  thead tr.month-row th.c-name, thead tr.month-row th.c-sp, thead tr.month-row th.c-stat, thead tr.month-row th.c-start, thead tr.month-row th.c-end { background: #2d3748; }
+
+  tbody tr:hover td { background: var(--row-hover); }
+
+  /* Month cell: three stacked small numbers */
+  .mcell { min-width: 95px; font-size: 11px; line-height: 1.35; padding: 4px 8px !important; font-family: 'SF Mono', monospace; }
+  .mcell .ar { color: var(--muted); }
+  .mcell .ap { color: #c05621; }
+  .mcell .gp { color: var(--active); font-weight: 700; }
+  .mcell.this-month { background: #fff8e1 !important; border-left: 2px solid var(--gold); }
+
+  th.this-month { background: #c05621 !important; color: #fff !important; }
+  th.year-apr { position: sticky; top: 0; z-index: 5; }
 
   /* Status badges */
-  .badge { display: inline-block; padding: 2px 7px; border-radius: 10px; font-size: 10px; font-weight: 700; }
-  .badge-Active   { background: #c6f6d5; color: #276749; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; }
+  .badge-Active { background: #c6f6d5; color: #276749; }
   .badge-Upcoming { background: #bee3f8; color: #2a69ac; }
-  .badge-Closed   { background: #fed7d7; color: #9b2c2c; }
-  .badge-Unknown  { background: #e2e8f0; color: #4a5568; }
+  .badge-Closed { background: #fed7d7; color: #9b2c2c; }
+  .badge-Unknown { background: #e2e8f0; color: #4a5568; }
 
-  /* Totals rows */
-  tr.total-row td { background: var(--dark); color: #fff; font-weight: 700; }
-  tr.total-row td.col-name, tr.total-row td.col-sp,
-  tr.total-row td.col-stat, tr.total-row td.col-start, tr.total-row td.col-end {
-    background: var(--dark);
-  }
-  tr.sub-total td { background: #2d3748; color: #e2e8f0; font-size: 11px; }
-  tr.sub-total td.col-name, tr.sub-total td.col-sp,
-  tr.sub-total td.col-stat, tr.sub-total td.col-start, tr.sub-total td.col-end {
-    background: #2d3748;
-  }
+  /* Total row at bottom */
+  tfoot tr td { background: var(--dark); color: #fff; font-weight: 700; font-size: 12px; position: sticky; bottom: 0; z-index: 4; border-top: 2px solid var(--gold); }
+  tfoot tr td.c-name, tfoot tr td.c-sp, tfoot tr td.c-stat, tfoot tr td.c-start, tfoot tr td.c-end { background: var(--dark); z-index: 6; }
 
-  /* Number formatting */
-  .num { font-family: 'SF Mono', 'Fira Code', monospace; }
-  .zero { color: #c7cfe8; }
-  .gp-pct { font-size: 10px; color: #a0aec0; }
+  /* 2026 total columns */
+  .total-col { background: #e6fffa !important; font-weight: 700; }
+  th.total-col { background: #276749 !important; color: #fff !important; }
 
-  /* Salesperson section */
-  .sp-section { padding: 0 24px 40px; }
-  .sp-section h2 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
-  .sp-cards { display: flex; gap: 12px; flex-wrap: wrap; }
-  .sp-card { background: #fff; border-radius: 10px; padding: 14px; min-width: 200px; flex: 1; box-shadow: 0 1px 4px rgba(0,0,0,.06); border-top: 3px solid var(--gold); }
-  .sp-card h3 { font-size: 14px; margin-bottom: 8px; }
-  .sp-stat { display: flex; justify-content: space-between; font-size: 12px; padding: 3px 0; border-bottom: 1px solid var(--border); }
-  .sp-stat:last-child { border: none; }
-
-  /* Loading/error */
+  /* Loading/empty states */
   #loading { padding: 60px; text-align: center; color: var(--muted); font-size: 16px; }
   #error   { padding: 40px; text-align: center; color: var(--closed); }
-
-  .dollar::before { content: '$'; font-size: 10px; }
+  .zero { color: #cbd5e0; }
 </style>
 </head>
 <body>
 
 <header>
   <h1>🦺 <span>Hard Hat Housing</span> — Master Dashboard</h1>
-  <div style="display:flex;align-items:center;gap:12px;">
+  <div style="display:flex;align-items:center;gap:10px;">
     <span id="sync-info">Loading…</span>
     <button id="refresh-btn" onclick="loadData()">↻ Refresh</button>
   </div>
@@ -126,7 +116,7 @@
 <div id="loading">Loading project data…</div>
 <div id="error" style="display:none"></div>
 
-<div id="app" style="display:none">
+<div id="app" style="display:none; flex: 1; display: flex; flex-direction: column; overflow: hidden;">
 
   <!-- KPI Row -->
   <div class="kpi-row" id="kpi-row"></div>
@@ -138,26 +128,18 @@
     <button class="filter-btn" onclick="setFilter('status','Active',this)">Active</button>
     <button class="filter-btn" onclick="setFilter('status','Upcoming',this)">Upcoming</button>
     <button class="filter-btn" onclick="setFilter('status','Closed',this)">Closed</button>
-    &nbsp;
+    &nbsp;&nbsp;
     <label>Salesperson:</label>
-    <select id="sp-filter" onchange="setFilter('sp',this.value,this)">
-      <option value="All">All</option>
-    </select>
+    <select id="sp-filter" onchange="setFilter('sp',this.value,this)"><option value="All">All</option></select>
   </div>
 
-  <!-- Master Table -->
-  <div class="table-wrap">
+  <!-- Scrollable master table -->
+  <div class="scroll-wrap">
     <table id="master-table">
       <thead id="table-head"></thead>
       <tbody id="table-body"></tbody>
       <tfoot id="table-foot"></tfoot>
     </table>
-  </div>
-
-  <!-- Salesperson Section -->
-  <div class="sp-section">
-    <h2>Salesperson Summary (2026 Total)</h2>
-    <div class="sp-cards" id="sp-cards"></div>
   </div>
 
 </div>
@@ -166,28 +148,30 @@
 // ─── State ────────────────────────────────────────────────────────────────────
 let DATA = null;
 let FILTERS = { status: 'All', sp: 'All' };
+
+const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
 const TODAY_KEY = (() => {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
 })();
 
-// ─── Format helpers ───────────────────────────────────────────────────────────
+// ─── Formatting ───────────────────────────────────────────────────────────────
 function fmt$(n) {
   if (!n || n === 0) return '<span class="zero">—</span>';
-  return '$' + n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+  return '$' + Math.round(n).toLocaleString('en-US');
+}
+function fmt$Full(n) {
+  if (!n || n === 0) return '<span class="zero">—</span>';
+  return '$' + n.toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0});
 }
 function fmtDate(s) {
   if (!s) return '—';
   const [y,m,d] = s.split('-');
-  return `${m}/${d}/${y.slice(2)}`;
-}
-function monthLabel(key) {
-  const [y, m] = key.split('-');
-  const names = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  return names[parseInt(m)-1] + ' ' + y;
+  return `${parseInt(m)}/${parseInt(d)}/${y.slice(2)}`;
 }
 
-// ─── Load data ────────────────────────────────────────────────────────────────
+// ─── Load ─────────────────────────────────────────────────────────────────────
 async function loadData() {
   document.getElementById('loading').style.display = 'block';
   document.getElementById('app').style.display = 'none';
@@ -201,17 +185,15 @@ async function loadData() {
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
-    document.getElementById('error').innerHTML = `<b>Could not load data.</b><br>${e.message}<br><small>Run <code>python3 sync.py</code> to generate data/projects.json</small>`;
+    document.getElementById('error').innerHTML = `<b>Could not load data.</b><br>${e.message}`;
   }
 }
 
-// ─── Filters ─────────────────────────────────────────────────────────────────
+// ─── Filter ───────────────────────────────────────────────────────────────────
 function setFilter(key, val, el) {
   FILTERS[key] = val;
   if (el.tagName === 'BUTTON') {
-    el.closest('.filters').querySelectorAll('.filter-btn').forEach(b => {
-      if (b.getAttribute('onclick').includes("'status'")) b.classList.remove('active');
-    });
+    el.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     el.classList.add('active');
   }
   render();
@@ -222,6 +204,10 @@ function filteredProjects() {
     if (FILTERS.status !== 'All' && p.status !== FILTERS.status) return false;
     if (FILTERS.sp !== 'All' && p.salesperson !== FILTERS.sp) return false;
     return true;
+  }).sort((a,b) => {
+    const statusOrder = {'Active':0, 'Upcoming':1, 'Closed':2, 'Unknown':3};
+    if (statusOrder[a.status] !== statusOrder[b.status]) return statusOrder[a.status] - statusOrder[b.status];
+    return a.name.localeCompare(b.name);
   });
 }
 
@@ -229,114 +215,114 @@ function filteredProjects() {
 function render() {
   if (!DATA) return;
   document.getElementById('loading').style.display = 'none';
-  document.getElementById('app').style.display = 'block';
+  document.getElementById('app').style.display = 'flex';
 
-  // Populate SP filter
   const sps = [...new Set(DATA.projects.map(p => p.salesperson))].sort();
   const spSel = document.getElementById('sp-filter');
-  spSel.innerHTML = '<option value="All">All</option>' + sps.map(s => `<option>${s}</option>`).join('');
-  spSel.value = FILTERS.sp;
+  spSel.innerHTML = '<option value="All">All Salespeople</option>' + sps.map(s => `<option ${FILTERS.sp===s?'selected':''}>${s}</option>`).join('');
 
   renderKPIs();
   renderTable();
-  renderSPCards();
 }
 
 function renderKPIs() {
-  const projects = filteredProjects();
-  const active = projects.filter(p => p.status === 'Active').length;
-  const upcoming = projects.filter(p => p.status === 'Upcoming').length;
+  const all = DATA.projects;
+  const filtered = filteredProjects();
+  const active = filtered.filter(p => p.status === 'Active').length;
+  const upcoming = filtered.filter(p => p.status === 'Upcoming').length;
 
-  // Current month totals
   const tot = DATA.monthly_totals[TODAY_KEY] || {};
   const ar = tot.ar || 0, ap = tot.ap || 0, gp = tot.net_gp || 0;
 
   document.getElementById('kpi-row').innerHTML = `
-    <div class="kpi"><label>Active Projects</label><div class="val green">${active}</div></div>
-    <div class="kpi"><label>Upcoming Projects</label><div class="val blue">${upcoming}</div></div>
-    <div class="kpi"><label>This Month A/R</label><div class="val">${fmt$(ar)}</div></div>
-    <div class="kpi"><label>This Month A/P</label><div class="val">${fmt$(ap)}</div></div>
-    <div class="kpi"><label>This Month Net GP</label><div class="val green">${fmt$(gp)}</div></div>
+    <div class="kpi"><label>Active</label><div class="val green">${active}</div></div>
+    <div class="kpi"><label>Upcoming</label><div class="val blue">${upcoming}</div></div>
+    <div class="kpi"><label>All Projects</label><div class="val">${all.length}</div></div>
+    <div class="kpi"><label>${monthLabel(TODAY_KEY)} A/R</label><div class="val">${fmt$(ar)}</div></div>
+    <div class="kpi"><label>${monthLabel(TODAY_KEY)} A/P</label><div class="val">${fmt$(ap)}</div></div>
+    <div class="kpi"><label>Net GP</label><div class="val green">${fmt$(gp)}</div></div>
     <div class="kpi"><label>GP %</label><div class="val">${tot.gp_pct ? tot.gp_pct.toFixed(1)+'%' : '—'}</div></div>
   `;
+}
+
+function monthLabel(key) {
+  const [y, m] = key.split('-');
+  return MONTH_NAMES[parseInt(m)-1] + " '" + y.slice(2);
 }
 
 function renderTable() {
   const months = DATA.months;
   const projects = filteredProjects();
 
-  // ── HEADER ──
-  let head = '<tr>';
-  head += '<th class="col-name left">Project</th>';
-  head += '<th class="col-sp">SP</th>';
-  head += '<th class="col-stat">Status</th>';
-  head += '<th class="col-start">Start</th>';
-  head += '<th class="col-end">End</th>';
-  // Monthly columns — group by year
-  let prevYear = null;
+  // ── Group months by year for year-row header ──
+  const yearGroups = [];
   months.forEach(key => {
-    const [y] = key.split('-');
-    if (y !== prevYear) {
-      // Count months in this year
-      const cnt = months.filter(k => k.startsWith(y)).length;
-      prevYear = y;
-    }
+    const y = key.split('-')[0];
+    const last = yearGroups[yearGroups.length-1];
+    if (last && last.year === y) last.count++;
+    else yearGroups.push({year: y, count: 1});
   });
-  months.forEach(key => {
-    const cls = key === TODAY_KEY ? ' style="background:#c05621;color:#fff"' : '';
-    head += `<th class="month-hdr"${cls}>${monthLabel(key)}</th>`;
+
+  // ── HEAD ──
+  let head = '';
+  // Year row
+  head += '<tr class="year-row">';
+  head += '<th class="c-name" rowspan="2">PROJECT</th>';
+  head += '<th class="c-sp" rowspan="2">SP</th>';
+  head += '<th class="c-stat" rowspan="2">Status</th>';
+  head += '<th class="c-start" rowspan="2">Start</th>';
+  head += '<th class="c-end" rowspan="2">End</th>';
+  yearGroups.forEach(g => {
+    head += `<th colspan="${g.count}" style="background:#1a1a2e;color:var(--gold);font-size:14px;letter-spacing:1.5px;">${g.year}</th>`;
   });
-  head += '<th style="background:#276749">2026 Total A/R</th>';
-  head += '<th style="background:#276749">2026 Total A/P</th>';
-  head += '<th style="background:#276749">2026 Net GP</th>';
+  head += '<th colspan="3" class="total-col">2026 TOTAL</th>';
   head += '</tr>';
-  // Sub-header
-  head += '<tr>';
-  head += '<th class="col-name sub-hdr left">Name</th>';
-  head += '<th class="col-sp sub-hdr">Person</th>';
-  head += '<th class="col-stat sub-hdr"></th>';
-  head += '<th class="col-start sub-hdr">Start</th>';
-  head += '<th class="col-end sub-hdr">End</th>';
+  // Month row
+  head += '<tr class="month-row">';
   months.forEach(key => {
-    head += `<th class="sub-hdr" title="${key}">A/R | A/P | GP</th>`;
+    const isThis = key === TODAY_KEY ? ' this-month' : '';
+    const [,m] = key.split('-');
+    head += `<th class="${isThis.trim()}">${MONTH_NAMES[parseInt(m)-1]}</th>`;
   });
-  head += '<th class="sub-hdr"></th><th class="sub-hdr"></th><th class="sub-hdr"></th>';
+  head += '<th class="total-col">A/R</th><th class="total-col">A/P</th><th class="total-col">Net GP</th>';
   head += '</tr>';
+
   document.getElementById('table-head').innerHTML = head;
 
   // ── BODY ──
   let body = '';
   projects.forEach(p => {
     body += '<tr>';
-    body += `<td class="col-name"><b>${p.name}</b></td>`;
-    body += `<td class="col-sp">${p.salesperson}</td>`;
-    body += `<td class="col-stat"><span class="badge badge-${p.status}">${p.status}</span></td>`;
-    body += `<td class="col-start num">${fmtDate(p.start_date)}</td>`;
-    body += `<td class="col-end num">${fmtDate(p.end_date)}</td>`;
+    body += `<td class="c-name" title="${p.name}">${p.name}</td>`;
+    body += `<td class="c-sp">${p.salesperson}</td>`;
+    body += `<td class="c-stat"><span class="badge badge-${p.status}">${p.status}</span></td>`;
+    body += `<td class="c-start">${fmtDate(p.start_date)}</td>`;
+    body += `<td class="c-end">${fmtDate(p.end_date)}</td>`;
     months.forEach(key => {
       const mv = p.monthly[key];
-      if (!mv) {
-        body += '<td class="zero">—</td>';
+      const cls = key === TODAY_KEY ? 'mcell this-month' : 'mcell';
+      if (!mv || (mv.ar === 0 && mv.ap === 0)) {
+        body += `<td class="${cls}"><span class="zero">—</span></td>`;
       } else {
-        const gp = fmt$(mv.net_gp);
-        body += `<td title="Crew:${mv.crew}"><small>${fmt$(mv.ar)}</small><br><small>${fmt$(mv.ap)}</small><br><b style="color:#276749">${gp}</b></td>`;
+        body += `<td class="${cls}" title="Crew: ${mv.crew}">`;
+        body += `<div class="ar">${fmt$(mv.ar)}</div>`;
+        body += `<div class="ap">${fmt$(mv.ap)}</div>`;
+        body += `<div class="gp">${fmt$(mv.net_gp)}</div>`;
+        body += '</td>';
       }
     });
     const t = p.total_2026;
-    body += `<td class="num">${fmt$(t.ar)}</td>`;
-    body += `<td class="num">${fmt$(t.ap)}</td>`;
-    body += `<td class="num" style="color:#276749;font-weight:700">${fmt$(t.net_gp)}</td>`;
+    body += `<td class="total-col">${fmt$(t.ar)}</td>`;
+    body += `<td class="total-col">${fmt$(t.ap)}</td>`;
+    body += `<td class="total-col" style="color:var(--active);">${fmt$(t.net_gp)}</td>`;
     body += '</tr>';
   });
-  document.getElementById('table-body').innerHTML = body;
+  document.getElementById('table-body').innerHTML = body || '<tr><td colspan="22" style="padding:40px;text-align:center;color:#999">No projects match filters.</td></tr>';
 
   // ── FOOT (totals) ──
-  let foot = '<tr class="total-row">';
-  foot += '<td class="col-name">TOTAL (' + projects.length + ' projects)</td>';
-  foot += '<td class="col-sp"></td>';
-  foot += '<td class="col-stat"></td>';
-  foot += '<td class="col-start"></td>';
-  foot += '<td class="col-end"></td>';
+  let foot = '<tr>';
+  foot += `<td class="c-name">TOTALS — ${projects.length} projects</td>`;
+  foot += `<td class="c-sp"></td><td class="c-stat"></td><td class="c-start"></td><td class="c-end"></td>`;
   let grand_ar = 0, grand_ap = 0, grand_gp = 0;
   months.forEach(key => {
     let ar = 0, ap = 0, gp = 0;
@@ -345,49 +331,21 @@ function renderTable() {
       if (mv) { ar += mv.ar; ap += mv.ap; gp += mv.net_gp; }
     });
     if (key.startsWith('2026')) { grand_ar += ar; grand_ap += ap; grand_gp += gp; }
-    const gpPct = ar > 0 ? ((gp/ar)*100).toFixed(1)+'%' : '—';
-    foot += `<td><small>${fmt$(ar)}</small><br><small>${fmt$(ap)}</small><br><b>${fmt$(gp)}</b><br><span class="gp-pct">${gpPct}</span></td>`;
+    const cls = key === TODAY_KEY ? 'mcell this-month' : 'mcell';
+    const gpPct = ar > 0 ? ((gp/ar)*100).toFixed(0)+'%' : '';
+    foot += `<td class="${cls}" style="color:#fff !important;">`;
+    foot += `<div class="ar" style="color:#a0aec0">${fmt$(ar)}</div>`;
+    foot += `<div class="ap" style="color:#fbb;">${fmt$(ap)}</div>`;
+    foot += `<div class="gp" style="color:#68d391;">${fmt$(gp)} <small style="opacity:.7">(${gpPct})</small></div>`;
+    foot += '</td>';
   });
-  foot += `<td>${fmt$(grand_ar)}</td><td>${fmt$(grand_ap)}</td><td style="color:#68d391">${fmt$(grand_gp)}</td>`;
+  foot += `<td class="total-col">${fmt$(grand_ar)}</td>`;
+  foot += `<td class="total-col">${fmt$(grand_ap)}</td>`;
+  foot += `<td class="total-col" style="color:var(--active);">${fmt$(grand_gp)}</td>`;
   foot += '</tr>';
-
-  // GP % row
-  foot += '<tr class="sub-total">';
-  foot += '<td class="col-name">Gross Profit %</td>';
-  foot += '<td class="col-sp"></td><td class="col-stat"></td><td class="col-start"></td><td class="col-end"></td>';
-  months.forEach(key => {
-    const tot = DATA.monthly_totals[key];
-    foot += `<td>${tot && tot.gp_pct ? tot.gp_pct.toFixed(2)+'%' : '—'}</td>`;
-  });
-  foot += '<td></td><td></td><td></td></tr>';
-
   document.getElementById('table-foot').innerHTML = foot;
 }
 
-function renderSPCards() {
-  const sp = DATA.salesperson_summary || {};
-  const months2026 = DATA.months.filter(k => k.startsWith('2026'));
-
-  let html = '';
-  Object.entries(sp).sort().forEach(([name, data]) => {
-    let ar = 0, ap = 0, commission = 0;
-    months2026.forEach(k => {
-      const v = data[k] || {};
-      ar += v.ar || 0; ap += v.ap || 0; commission += v.commission || 0;
-    });
-    html += `
-      <div class="sp-card">
-        <h3>${name}</h3>
-        <div class="sp-stat"><span>2026 A/R</span><b>${fmt$(ar)}</b></div>
-        <div class="sp-stat"><span>2026 A/P</span><b>${fmt$(ap)}</b></div>
-        <div class="sp-stat"><span>2026 Commission</span><b style="color:var(--gold)">${fmt$(commission)}</b></div>
-        <div class="sp-stat"><span>2026 Net GP</span><b style="color:var(--active)">${fmt$((ar-ap)*0.8)}</b></div>
-      </div>`;
-  });
-  document.getElementById('sp-cards').innerHTML = html;
-}
-
-// ── Init ──
 loadData();
 </script>
 </body>

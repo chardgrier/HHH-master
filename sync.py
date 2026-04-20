@@ -17,9 +17,17 @@ except ImportError:
 
 ASANA_TOKEN = os.environ.get("ASANA_TOKEN", "")
 BASE_URL = "https://app.asana.com/api/1.0"
+WORKSPACE_GID  = "1203487090849714"
 PORTFOLIO_GIDS = ["1206746778121935", "1207604445018695"]  # HHH + Rising Sun
 COMMISSION_RATE = 0.20
-SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template"]
+SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template",
+              "1501 richmond", "4709 orlando", "1113 taborlake"]
+
+# Regex: project names that look like HHH deals (Company - Location - Salesperson - Number)
+HHH_PROJECT_RE = re.compile(
+    r"\b(Paul|Zeke|Matt|Logan|David|Charlie|Peyton)\b.*?-?\s*\d{4}",
+    re.IGNORECASE,
+)
 
 # Dashboard months: Aug 2025 → Dec 2026
 MONTHS = []
@@ -342,7 +350,7 @@ def sync():
     from datetime import datetime
     print(f"Starting sync at {datetime.now():%Y-%m-%d %H:%M}")
 
-    # Collect all unique projects across portfolios
+    # Collect all unique projects across portfolios + workspace-wide search
     all_projects = {}
     for pgid in PORTFOLIO_GIDS:
         try:
@@ -352,7 +360,27 @@ def sync():
         except Exception as e:
             print(f"  Warning: portfolio {pgid} error: {e}")
 
-    print(f"Found {len(all_projects)} portfolio items")
+    # Also pull ALL non-archived projects in the workspace, filter to HHH naming pattern.
+    # Many Zeke/Logan projects aren't in any portfolio.
+    try:
+        ws_projects = asana("projects", {
+            "workspace": WORKSPACE_GID,
+            "archived": "false",
+            "opt_fields": "name,permalink_url",
+            "limit": 100,
+        })
+        added = 0
+        for item in ws_projects:
+            if item["gid"] in all_projects:
+                continue
+            if HHH_PROJECT_RE.search(item.get("name", "")):
+                all_projects[item["gid"]] = item
+                added += 1
+        print(f"  + {added} extra workspace projects matching salesperson pattern")
+    except Exception as e:
+        print(f"  Warning: workspace scan error: {e}")
+
+    print(f"Found {len(all_projects)} total projects to process")
 
     projects_data = []
 
