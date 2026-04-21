@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-20T14:17:54.324973",
+  "generated_at": "2026-04-21T10:52:03.016762",
   "months": [
     "2025-08",
     "2025-09",
@@ -996,7 +996,7 @@
       "name": "HousHak Unlimited - Lexington KY - David - 2572",
       "salesperson": "David",
       "project_number": "2572",
-      "status": "Active",
+      "status": "Closed",
       "start_date": "2025-09-20",
       "end_date": "2026-04-20",
       "base_ar": 3200.0,
@@ -1815,7 +1815,7 @@
       "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
       "salesperson": "Logan",
       "project_number": "2604",
-      "status": "Active",
+      "status": "Closed",
       "start_date": "2026-03-21",
       "end_date": "2026-04-20",
       "base_ar": 3800.0,
