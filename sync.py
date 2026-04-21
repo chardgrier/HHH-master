@@ -246,9 +246,40 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
 
         return segments
 
+    # Reconcile orphan addendums: if an addendum's prefix group has no lease
+    # of the same type, merge it into the group that DOES have that lease
+    # (when there's exactly one such lease in the project). Handles the case
+    # where naming is inconsistent, e.g. "Homeowner Lease" (no prefix) +
+    # "A: Homeowner Addendum #1" (with prefix) — they belong together.
+    for gtype in ("construction", "homeowner"):
+        # Identify the sole lease group of this type, if any
+        groups_with_lease = [pre for pre, types in groups.items()
+                             if types.get(gtype, {}).get("lease")]
+        if len(groups_with_lease) != 1:
+            continue
+        target_pre = groups_with_lease[0]
+        target = groups[target_pre].setdefault(gtype, {"lease": None, "addendums": []})
+        # Move addendums from any OTHER prefix group into the target
+        for pre in list(groups.keys()):
+            if pre == target_pre: continue
+            g = groups[pre].get(gtype)
+            if not g: continue
+            if g["lease"] is None and g["addendums"]:
+                target["addendums"].extend(g["addendums"])
+                g["addendums"] = []
+
+    # Clean up groups that now have no lease and no addendums after reconciling
+    for pre in list(groups.keys()):
+        for gtype in list(groups[pre].keys()):
+            g = groups[pre][gtype]
+            if g["lease"] is None and not g["addendums"]:
+                del groups[pre][gtype]
+        if not groups[pre]:
+            del groups[pre]
+
     # Handle inconsistent prefix naming: if a project has exactly ONE construction
-    # lease (any prefix) and ONE homeowner lease (any prefix), they belong to the
-    # same house even if prefixes differ.
+    # lease (any prefix) and ONE homeowner lease (any prefix) in different prefix
+    # groups, merge the lone homeowner into the construction's prefix.
     all_c_prefixes = [pre for pre, types in groups.items() if types.get("construction", {}).get("lease")]
     all_h_prefixes = [pre for pre, types in groups.items() if types.get("homeowner",    {}).get("lease")]
     if len(all_c_prefixes) == 1 and len(all_h_prefixes) == 1 and all_c_prefixes[0] != all_h_prefixes[0]:
@@ -282,6 +313,26 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
                 ap_segs = [{"start": ar_segs[0]["start"],
                             "end":   ar_segs[-1]["end"],
                             "amount": float(c_ap)}]
+
+        # ─── Auto-extension rule ────────────────────────────────────────────
+        # Construction lease dates are the master range for the house.
+        # If A/P doesn't cover the full construction range (no addendum exists
+        # but construction extends), extrapolate the nearest homeowner rate.
+        # Explicit homeowner addendum dates already produced their own segments
+        # above, so they take precedence (they shrink the "gap" we fill here).
+        if ar_segs and ap_segs:
+            ar_start = min(s["start"] for s in ar_segs)
+            ar_end   = max(s["end"]   for s in ar_segs)
+            # Extrapolate backward: if construction starts before first A/P,
+            # extend the earliest A/P segment's start backwards.
+            first_ap = min(ap_segs, key=lambda s: s["start"])
+            if ar_start < first_ap["start"]:
+                first_ap["start"] = ar_start
+            # Extend forward: if construction ends after last A/P, extend the
+            # latest A/P segment's end to match construction end.
+            last_ap = max(ap_segs, key=lambda s: s["end"])
+            if ar_end > last_ap["end"]:
+                last_ap["end"] = ar_end
 
         crew = 0
         if cs["lease"]:
