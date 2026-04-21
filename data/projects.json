@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T10:52:03.016762",
+  "generated_at": "2026-04-21T15:30:58.286232",
   "months": [
     "2025-08",
     "2025-09",
@@ -22,674 +22,1493 @@
   "commission_rate": 0.2,
   "projects": [
     {
+      "gid": "1208641143232831",
+      "name": "Gray Construction - Bristol, TN - Paul - 2592",
+      "salesperson": "Paul",
+      "project_number": "2592",
+      "status": "Active",
+      "start_date": "2025-02-03",
+      "end_date": "2026-07-31",
+      "base_ar": 0,
+      "base_ap": 1900.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1900.0,
+          "net_gp": -1520.0
+        }
+      },
+      "total_2026": {
+        "ar": 0.0,
+        "ap": 13300.0,
+        "net_gp": -10640.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
       "gid": "1209169429620891",
-      "task_gid": "1209169543299873",
-      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506",
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [Houses A,B,C,D,E,F]",
       "salesperson": "Paul",
       "project_number": "2506",
       "status": "Active",
-      "start_date": "2025-08-01",
+      "start_date": "2025-05-13",
       "end_date": "2026-12-27",
       "base_ar": 21870.0,
-      "base_ap": 16050.0,
+      "base_ap": 12750.0,
       "base_crew": 7,
       "monthly": {
         "2025-08": {
           "crew": 7,
-          "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ar": 12403.16,
+          "ap": 6233.33,
+          "net_gp": 4935.86
         },
         "2025-09": {
           "crew": 7,
-          "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ar": 14680.0,
+          "ap": 7700.0,
+          "net_gp": 5584.0
         },
         "2025-10": {
           "crew": 7,
-          "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ar": 18754.33,
+          "ap": 10541.67,
+          "net_gp": 6570.13
         },
         "2025-11": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2025-12": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-01": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-02": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-03": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-04": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-05": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-06": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-07": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-08": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-09": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-10": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-11": {
           "crew": 7,
           "ar": 21870.0,
-          "ap": 16050.0,
-          "net_gp": 4656.0
+          "ap": 12750.0,
+          "net_gp": 7296.0
         },
         "2026-12": {
           "crew": 7,
           "ar": 19683.0,
-          "ap": 14445.0,
-          "net_gp": 4190.4
+          "ap": 11475.0,
+          "net_gp": 6566.4
         }
       },
       "total_2026": {
         "ar": 260253.0,
-        "ap": 190995.0,
-        "net_gp": 55406.4
+        "ap": 151725.0,
+        "net_gp": 86822.4
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1209169429620891",
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House G]",
+      "salesperson": "Paul",
+      "project_number": "2506",
+      "status": "Active",
+      "start_date": "2025-12-14",
+      "end_date": "2026-12-31",
+      "base_ar": 3595.0,
+      "base_ap": 2675.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 2157.0,
+          "ap": 1605.0,
+          "net_gp": 441.6
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2675.0,
+          "net_gp": 736.0
+        }
+      },
+      "total_2026": {
+        "ar": 43140.0,
+        "ap": 32100.0,
+        "net_gp": 8832.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1209169429620891",
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House H]",
+      "salesperson": "Paul",
+      "project_number": "2506",
+      "status": "Active",
+      "start_date": "2025-08-29",
+      "end_date": "2027-02-02",
+      "base_ar": 3595.0,
+      "base_ap": 1850.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 185.0,
+          "net_gp": -148.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1850.0,
+          "net_gp": -1480.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1850.0,
+          "net_gp": -1480.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1850.0,
+          "net_gp": -1480.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1850.0,
+          "net_gp": -1480.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1850.0,
+          "net_gp": -1480.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 3115.67,
+          "ap": 0.0,
+          "net_gp": 2492.54
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
+        }
+      },
+      "total_2026": {
+        "ar": 39065.67,
+        "ap": 1850.0,
+        "net_gp": 29772.54
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1209169429620891",
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House I]",
+      "salesperson": "Paul",
+      "project_number": "2506",
+      "status": "Active",
+      "start_date": "2026-02-15",
+      "end_date": "2027-02-14",
+      "base_ar": 3595.0,
+      "base_ap": 2600.0,
+      "base_crew": 0,
+      "monthly": {
+        "2026-02": {
+          "crew": 0,
+          "ar": 1677.67,
+          "ap": 1213.33,
+          "net_gp": 371.47
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "net_gp": 796.0
+        }
+      },
+      "total_2026": {
+        "ar": 37627.67,
+        "ap": 27213.33,
+        "net_gp": 8331.47
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1209360353419933",
+      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
+      "salesperson": "Paul",
+      "project_number": "2509",
+      "status": "Active",
+      "start_date": "2025-02-17",
+      "end_date": "2205-09-20",
+      "base_ar": 2200.0,
+      "base_ap": 374.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "net_gp": 1460.8
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "net_gp": 1460.8
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 211.93,
+          "net_gp": 1590.46
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-07": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-09": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-10": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-11": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        },
+        "2026-12": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 0.0,
+          "net_gp": 1760.0
+        }
+      },
+      "total_2026": {
+        "ar": 26400.0,
+        "ap": 0.0,
+        "net_gp": 21120.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1209518084230355",
-      "task_gid": "1209518762870882",
       "name": "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513",
       "salesperson": "Paul",
       "project_number": "2513",
       "status": "Active",
       "start_date": "2025-08-01",
-      "end_date": "2026-12-31",
-      "base_ar": 7190.0,
-      "base_ap": 4735.76,
+      "end_date": "2027-03-07",
+      "base_ar": 3595.0,
+      "base_ap": 0,
       "base_crew": 4,
       "monthly": {
         "2025-08": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2025-09": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2025-10": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2025-11": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2025-12": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-01": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-02": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-03": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-04": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-05": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-06": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-07": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-08": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-09": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-10": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-11": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-12": {
           "crew": 4,
-          "ar": 7190.0,
-          "ap": 4735.76,
-          "net_gp": 1963.39
+          "ar": 3595.0,
+          "ap": 0.0,
+          "net_gp": 2876.0
         }
       },
       "total_2026": {
-        "ar": 86280.0,
-        "ap": 56829.12,
-        "net_gp": 23560.68
+        "ar": 43140.0,
+        "ap": 0.0,
+        "net_gp": 34512.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1209864394478328",
+      "name": "Duininck Golf - Durham, NC - Paul - 2526",
+      "salesperson": "Paul",
+      "project_number": "2526",
+      "status": "Closed",
+      "start_date": "2025-04-08",
+      "end_date": "2025-08-03",
+      "base_ar": 2795.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 279.5,
+          "ap": 0.0,
+          "net_gp": 223.6
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1209953181968936",
-      "task_gid": "1209953110858713",
       "name": "Quality Walls and Ceiling - Lexington KY - Zeke - 2527",
       "salesperson": "Zeke",
       "project_number": "2527",
       "status": "Active",
       "start_date": "2025-08-01",
-      "end_date": "2026-07-31",
+      "end_date": "2026-08-31",
       "base_ar": 3600.0,
-      "base_ap": 3300.0,
+      "base_ap": 0,
       "base_crew": 3,
       "monthly": {
         "2025-08": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2025-09": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2025-10": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2025-11": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2025-12": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2026-01": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2026-02": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2026-03": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2026-04": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2026-05": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2026-06": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
         },
         "2026-07": {
           "crew": 3,
           "ar": 3600.0,
-          "ap": 3300.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 2880.0
+        },
+        "2026-08": {
+          "crew": 3,
+          "ar": 3600.0,
+          "ap": 0.0,
+          "net_gp": 2880.0
         }
       },
       "total_2026": {
-        "ar": 25200.0,
-        "ap": 23100.0,
-        "net_gp": 1680.0
+        "ar": 28800.0,
+        "ap": 0.0,
+        "net_gp": 23040.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210012515088541",
+      "name": "ARCO/Murray - Dallas, TX - Paul - 2530",
+      "salesperson": "Paul",
+      "project_number": "2530",
+      "status": "Closed",
+      "start_date": "2025-05-17",
+      "end_date": "2025-08-10",
+      "base_ar": 2600.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 866.67,
+          "ap": 0.0,
+          "net_gp": 693.34
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210036500330349",
+      "name": "Arco - Groveland, FL - Paul - 2529",
+      "salesperson": "Paul",
+      "project_number": "2529",
+      "status": "Closed",
+      "start_date": "2025-05-20",
+      "end_date": "2025-08-15",
+      "base_ar": 2350.0,
+      "base_ap": 1975.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 1175.0,
+          "ap": 987.5,
+          "net_gp": 150.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1210056931565763",
-      "task_gid": "1210062449628709",
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532",
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
       "salesperson": "Paul",
       "project_number": "2532",
       "status": "Active",
-      "start_date": "2025-08-01",
-      "end_date": "2026-06-30",
-      "base_ar": 7790.0,
-      "base_ap": 6095.0,
-      "base_crew": 3,
+      "start_date": "2025-05-09",
+      "end_date": "2026-05-08",
+      "base_ar": 2395.0,
+      "base_ap": 1615.0,
+      "base_crew": 0,
       "monthly": {
         "2025-08": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2025-09": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2025-10": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2025-11": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2025-12": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2026-01": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2026-02": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2026-03": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2026-04": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 2395.0,
+          "ap": 1615.0,
+          "net_gp": 624.0
         },
         "2026-05": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
-        },
-        "2026-06": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 6095.0,
-          "net_gp": 1356.0
+          "crew": 0,
+          "ar": 638.67,
+          "ap": 430.67,
+          "net_gp": 166.4
         }
       },
       "total_2026": {
-        "ar": 46740.0,
-        "ap": 36570.0,
-        "net_gp": 8136.0
+        "ar": 10218.67,
+        "ap": 6890.67,
+        "net_gp": 2662.4
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210056931565763",
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House C]",
+      "salesperson": "Paul",
+      "project_number": "2532",
+      "status": "Closed",
+      "start_date": "2025-05-09",
+      "end_date": "2025-08-09",
+      "base_ar": 2400.0,
+      "base_ap": 1900.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 720.0,
+          "ap": 570.0,
+          "net_gp": 120.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210056931565763",
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
+      "salesperson": "Paul",
+      "project_number": "2532",
+      "status": "Active",
+      "start_date": "2025-06-03",
+      "end_date": "2026-06-01",
+      "base_ar": 2895.0,
+      "base_ap": 2545.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2895.0,
+          "ap": 2545.0,
+          "net_gp": 280.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 96.5,
+          "ap": 84.83,
+          "net_gp": 9.34
+        }
+      },
+      "total_2026": {
+        "ar": 14571.5,
+        "ap": 12809.83,
+        "net_gp": 1409.34
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210058724192730",
+      "name": "Arco- Lebanon, PA - Paul - 2531",
+      "salesperson": "Paul",
+      "project_number": "2531",
+      "status": "Closed",
+      "start_date": "2025-05-17",
+      "end_date": "2025-08-15",
+      "base_ar": 0,
+      "base_ap": 2080.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 1040.0,
+          "net_gp": -832.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210083238259355",
+      "name": "Arco - Grand Junction, CO - Paul - 2535",
+      "salesperson": "Paul",
+      "project_number": "2535",
+      "status": "Closed",
+      "start_date": "2025-05-25",
+      "end_date": "2025-08-18",
+      "base_ar": 2600.0,
+      "base_ap": 1950.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 1560.0,
+          "ap": 1170.0,
+          "net_gp": 312.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210083740093755",
+      "name": "Arco - Tampa, FL - Paul - 2533",
+      "salesperson": "Paul",
+      "project_number": "2533",
+      "status": "Closed",
+      "start_date": "2025-05-25",
+      "end_date": "2025-07-30",
+      "base_ar": 2450.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {},
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1210240026827411",
-      "task_gid": "1210240889837823",
       "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
       "salesperson": "Zeke",
       "project_number": "2537",
       "status": "Active",
       "start_date": "2025-05-27",
       "end_date": "2026-04-30",
-      "base_ar": 25000.0,
-      "base_ap": 14821.0,
-      "base_crew": 24,
+      "base_ar": 58150.0,
+      "base_ap": 10725.0,
+      "base_crew": 47,
       "monthly": {
         "2025-08": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 38750.0,
+          "ap": 0.0,
+          "net_gp": 31000.0
         },
         "2025-09": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 38750.0,
+          "ap": 0.0,
+          "net_gp": 31000.0
         },
         "2025-10": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 38750.0,
+          "ap": 0.0,
+          "net_gp": 31000.0
         },
         "2025-11": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 38750.0,
+          "ap": 0.0,
+          "net_gp": 31000.0
         },
         "2025-12": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 38750.0,
+          "ap": 0.0,
+          "net_gp": 31000.0
         },
         "2026-01": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 50243.33,
+          "ap": 6560.83,
+          "net_gp": 34946.0
         },
         "2026-02": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 58150.0,
+          "ap": 10725.0,
+          "net_gp": 37940.0
         },
         "2026-03": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 58150.0,
+          "ap": 10725.0,
+          "net_gp": 37940.0
         },
         "2026-04": {
-          "crew": 24,
-          "ar": 25000.0,
-          "ap": 14821.0,
-          "net_gp": 8143.2
+          "crew": 47,
+          "ar": 58150.0,
+          "ap": 10725.0,
+          "net_gp": 37940.0
         }
       },
       "total_2026": {
-        "ar": 100000.0,
-        "ap": 59284.0,
-        "net_gp": 32572.8
+        "ar": 224693.33,
+        "ap": 38735.83,
+        "net_gp": 148766.0
       },
       "source": "asana_custom_fields"
     },
     {
-      "gid": "1210240026827411",
-      "task_gid": "1210587211135248",
-      "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537 \u2014 Phase 2",
-      "salesperson": "Zeke",
-      "project_number": "2537",
-      "status": "Active",
-      "start_date": "2025-06-25",
-      "end_date": "2026-04-30",
-      "base_ar": 13750.0,
-      "base_ap": 7370.0,
-      "base_crew": 12,
+      "gid": "1210403204610002",
+      "name": "Caliber 1 - Snellville, GA - Paul - 2539",
+      "salesperson": "Paul",
+      "project_number": "2539",
+      "status": "Closed",
+      "start_date": "2025-06-08",
+      "end_date": "2025-08-02",
+      "base_ar": 4995.0,
+      "base_ap": 3250.0,
+      "base_crew": 0,
       "monthly": {
         "2025-08": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 333.0,
+          "ap": 216.67,
+          "net_gp": 93.06
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210559671986831",
+      "name": "Xpert Build - Charlotte, NC - Zeke - 2544",
+      "salesperson": "Zeke",
+      "project_number": "2544",
+      "status": "Closed",
+      "start_date": "2025-06-22",
+      "end_date": "2025-09-08",
+      "base_ar": 1225.0,
+      "base_ap": 700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 1225.0,
+          "ap": 700.0,
+          "net_gp": 420.0
         },
         "2025-09": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 326.67,
+          "ap": 186.67,
+          "net_gp": 112.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210592941592441",
+      "name": "Quest Events - Chicago, IL - Zeke - 2549",
+      "salesperson": "Zeke",
+      "project_number": "2549",
+      "status": "Closed",
+      "start_date": "2025-07-13",
+      "end_date": "2025-08-11",
+      "base_ar": 39750.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 14575.0,
+          "ap": 0.0,
+          "net_gp": 11660.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210711315831289",
+      "name": "Gutknecht Construction - Oxford, OH - Matt - 2550",
+      "salesperson": "Matt",
+      "project_number": "2550",
+      "status": "Closed",
+      "start_date": "2025-07-07",
+      "end_date": "2025-09-01",
+      "base_ar": 10000.0,
+      "base_ap": 3425.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 10000.0,
+          "ap": 3425.0,
+          "net_gp": 5260.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 333.33,
+          "ap": 114.17,
+          "net_gp": 175.33
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210751935671855",
+      "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
+      "salesperson": "Zeke",
+      "project_number": "2551",
+      "status": "Active",
+      "start_date": "2025-09-01",
+      "end_date": "2026-05-31",
+      "base_ar": 6540.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         },
         "2025-10": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         },
         "2025-11": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         },
         "2025-12": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         },
         "2026-01": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         },
         "2026-02": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         },
         "2026-03": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         },
         "2026-04": {
-          "crew": 12,
-          "ar": 13750.0,
-          "ap": 7370.0,
-          "net_gp": 5104.0
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 6540.0,
+          "ap": 0.0,
+          "net_gp": 5232.0
         }
       },
       "total_2026": {
-        "ar": 55000.0,
-        "ap": 29480.0,
-        "net_gp": 20416.0
+        "ar": 32700.0,
+        "ap": 0.0,
+        "net_gp": 26160.0
       },
       "source": "asana_custom_fields"
     },
     {
-      "gid": "1210240026827411",
-      "task_gid": "1212775243310897",
-      "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537 \u2014 Phase 3",
+      "gid": "1210834959269420",
+      "name": "XPert Build - Troy, NY - Zeke - 2552",
       "salesperson": "Zeke",
-      "project_number": "2537",
-      "status": "Active",
-      "start_date": "2026-01-13",
-      "end_date": "2026-04-30",
-      "base_ar": 10500.0,
-      "base_ap": 7250.0,
-      "base_crew": 9,
-      "monthly": {
-        "2026-01": {
-          "crew": 9,
-          "ar": 6650.0,
-          "ap": 4591.67,
-          "net_gp": 1646.66
-        },
-        "2026-02": {
-          "crew": 9,
-          "ar": 10500.0,
-          "ap": 7250.0,
-          "net_gp": 2600.0
-        },
-        "2026-03": {
-          "crew": 9,
-          "ar": 10500.0,
-          "ap": 7250.0,
-          "net_gp": 2600.0
-        },
-        "2026-04": {
-          "crew": 9,
-          "ar": 10500.0,
-          "ap": 7250.0,
-          "net_gp": 2600.0
-        }
-      },
+      "project_number": "2552",
+      "status": "Closed",
+      "start_date": "2025-07-20",
+      "end_date": "2025-07-28",
+      "base_ar": 1600.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {},
       "total_2026": {
-        "ar": 38150.0,
-        "ap": 26341.67,
-        "net_gp": 9446.66
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1210240026827411",
-      "task_gid": "1212864562913501",
-      "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537 \u2014 Phase 4",
-      "salesperson": "Zeke",
-      "project_number": "2537",
-      "status": "Active",
-      "start_date": "2026-01-20",
-      "end_date": "2026-04-30",
-      "base_ar": 3400.0,
-      "base_ap": 3375.0,
-      "base_crew": 2,
-      "monthly": {
-        "2026-01": {
-          "crew": 2,
-          "ar": 1360.0,
-          "ap": 1350.0,
-          "net_gp": 8.0
-        },
-        "2026-02": {
-          "crew": 2,
-          "ar": 3400.0,
-          "ap": 3375.0,
-          "net_gp": 20.0
-        },
-        "2026-03": {
-          "crew": 2,
-          "ar": 3400.0,
-          "ap": 3375.0,
-          "net_gp": 20.0
-        },
-        "2026-04": {
-          "crew": 2,
-          "ar": 3400.0,
-          "ap": 3375.0,
-          "net_gp": 20.0
-        }
-      },
-      "total_2026": {
-        "ar": 11560.0,
-        "ap": 11475.0,
-        "net_gp": 68.0
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1210847624719714",
-      "task_gid": "1210847906160267",
       "name": "Southern Wall Systems - Ann Arbor, MI - Logan - 2553",
       "salesperson": "Logan",
       "project_number": "2553",
@@ -739,161 +1558,409 @@
         "2026-02": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-03": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-04": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-05": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-06": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-07": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-08": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-09": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-10": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         },
         "2026-11": {
           "crew": 1,
           "ar": 2375.0,
-          "ap": 1875.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 1900.0
         }
       },
       "total_2026": {
         "ar": 26125.0,
-        "ap": 20625.0,
-        "net_gp": 4400.0
+        "ap": 1875.0,
+        "net_gp": 19400.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210884304533957",
+      "name": "Duininck Golf - Midway, UT - Paul - 2555",
+      "salesperson": "Paul",
+      "project_number": "2555",
+      "status": "Closed",
+      "start_date": "2025-11-30",
+      "end_date": "2025-12-15",
+      "base_ar": 4695.0,
+      "base_ap": 2700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-11": {
+          "crew": 0,
+          "ar": 156.5,
+          "ap": 90.0,
+          "net_gp": 53.2
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2347.5,
+          "ap": 1350.0,
+          "net_gp": 798.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210892056522705",
+      "name": "Flow Dynamics - Frisco TX #2 - Paul - 2556",
+      "salesperson": "Paul",
+      "project_number": "2556",
+      "status": "Closed",
+      "start_date": "2025-08-04",
+      "end_date": "2025-10-03",
+      "base_ar": 4150.0,
+      "base_ap": 3500.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 3873.33,
+          "ap": 3266.67,
+          "net_gp": 485.33
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 4150.0,
+          "ap": 3500.0,
+          "net_gp": 520.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 415.0,
+          "ap": 350.0,
+          "net_gp": 52.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210992137957471",
+      "name": "Orion Marine - Sabine Pass, TX - Paul - 2558",
+      "salesperson": "Paul",
+      "project_number": "2558",
+      "status": "Closed",
+      "start_date": "2025-09-02",
+      "end_date": "2025-10-20",
+      "base_ar": 10400.0,
+      "base_ap": 6480.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 10053.33,
+          "ap": 6264.0,
+          "net_gp": 3031.46
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 6933.33,
+          "ap": 4320.0,
+          "net_gp": 2090.66
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1210992137957479",
+      "name": "Arco - Groveland, FL #2 - Paul - 2559",
+      "salesperson": "Paul",
+      "project_number": "2559",
+      "status": "Closed",
+      "start_date": "2025-08-20",
+      "end_date": "2025-12-15",
+      "base_ar": 2350.0,
+      "base_ap": 1975.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 940.0,
+          "ap": 790.0,
+          "net_gp": 120.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2350.0,
+          "ap": 1975.0,
+          "net_gp": 300.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2350.0,
+          "ap": 1975.0,
+          "net_gp": 300.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2350.0,
+          "ap": 1975.0,
+          "net_gp": 300.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 1175.0,
+          "ap": 987.5,
+          "net_gp": 150.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1211080380581292",
-      "task_gid": "1211080249681029",
-      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 1",
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563",
       "salesperson": "Matt",
       "project_number": "2563",
       "status": "Active",
-      "start_date": "2025-09-02",
-      "end_date": "2026-07-31",
-      "base_ar": 17300.0,
-      "base_ap": 14700.0,
-      "base_crew": 12,
+      "start_date": "2026-04-05",
+      "end_date": "2026-08-15",
+      "base_ar": 12000.0,
+      "base_ap": 0,
+      "base_crew": 0,
       "monthly": {
-        "2025-09": {
-          "crew": 12,
-          "ar": 16723.33,
-          "ap": 14210.0,
-          "net_gp": 2010.66
-        },
-        "2025-10": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
-        },
-        "2025-11": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
-        },
-        "2025-12": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
-        },
-        "2026-01": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
-        },
-        "2026-02": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
-        },
-        "2026-03": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
-        },
         "2026-04": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
+          "crew": 0,
+          "ar": 10400.0,
+          "ap": 0.0,
+          "net_gp": 8320.0
         },
         "2026-05": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-06": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-07": {
-          "crew": 12,
-          "ar": 17300.0,
-          "ap": 14700.0,
-          "net_gp": 2080.0
+          "crew": 0,
+          "ar": 12000.0,
+          "ap": 0.0,
+          "net_gp": 9600.0
+        },
+        "2026-08": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 0.0,
+          "net_gp": 4800.0
         }
       },
       "total_2026": {
-        "ar": 121100.0,
-        "ap": 102900.0,
-        "net_gp": 14560.0
+        "ar": 52400.0,
+        "ap": 0.0,
+        "net_gp": 41920.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211164220268151",
+      "name": "Quest Events - Jacksonville, FL - Zeke - 2565",
+      "salesperson": "Zeke",
+      "project_number": "2565",
+      "status": "Closed",
+      "start_date": "2025-09-11",
+      "end_date": "2025-10-16",
+      "base_ar": 0,
+      "base_ap": 4383.35,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 2922.23,
+          "net_gp": -2337.78
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 2337.79,
+          "net_gp": -1870.23
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211164220268157",
+      "name": "Quest Events - Austin, TX - Zeke - 2566",
+      "salesperson": "Zeke",
+      "project_number": "2566",
+      "status": "Closed",
+      "start_date": "2025-09-15",
+      "end_date": "2025-11-15",
+      "base_ar": 13720.0,
+      "base_ap": 0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 7317.33,
+          "ap": 0.0,
+          "net_gp": 5853.86
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 13720.0,
+          "ap": 0.0,
+          "net_gp": 10976.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 6860.0,
+          "ap": 0.0,
+          "net_gp": 5488.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211164494308713",
+      "name": "Caliber 1 - Charleston, SC - Paul - 2567",
+      "salesperson": "Paul",
+      "project_number": "2567",
+      "status": "Closed",
+      "start_date": "2025-08-31",
+      "end_date": "2025-10-25",
+      "base_ar": 6000.0,
+      "base_ap": 4180.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 200.0,
+          "ap": 139.33,
+          "net_gp": 48.54
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 6000.0,
+          "ap": 4180.0,
+          "net_gp": 1456.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 5000.0,
+          "ap": 3483.33,
+          "net_gp": 1213.34
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211177547809199",
+      "name": "XpertBuild - Fremont, CA - Zeke - 2564",
+      "salesperson": "Zeke",
+      "project_number": "2564",
+      "status": "Closed",
+      "start_date": "2025-09-02",
+      "end_date": "2025-09-30",
+      "base_ar": 6000.0,
+      "base_ap": 4450.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 5800.0,
+          "ap": 4301.67,
+          "net_gp": 1198.66
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1211213718360953",
-      "task_gid": "1211213389246256",
       "name": "Calmex Engineering - San Diego, CA - Paul - 2568",
       "salesperson": "Paul",
       "project_number": "2568",
@@ -901,104 +1968,221 @@
       "start_date": "2025-09-08",
       "end_date": "2026-09-07",
       "base_ar": 8495.0,
-      "base_ap": 5350.0,
+      "base_ap": 5200.0,
       "base_crew": 3,
       "monthly": {
         "2025-09": {
           "crew": 3,
           "ar": 6512.83,
-          "ap": 4101.67,
-          "net_gp": 1928.93
+          "ap": 3986.67,
+          "net_gp": 2020.93
         },
         "2025-10": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 5200.0,
+          "net_gp": 2636.0
         },
         "2025-11": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 5200.0,
+          "net_gp": 2636.0
         },
         "2025-12": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 5200.0,
+          "net_gp": 2636.0
         },
         "2026-01": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 5200.0,
+          "net_gp": 2636.0
         },
         "2026-02": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 5200.0,
+          "net_gp": 2636.0
         },
         "2026-03": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 1213.33,
+          "net_gp": 5825.34
         },
         "2026-04": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-05": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-06": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-07": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-08": {
           "crew": 3,
           "ar": 8495.0,
-          "ap": 5350.0,
-          "net_gp": 2516.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-09": {
           "crew": 3,
           "ar": 1982.17,
-          "ap": 1248.33,
-          "net_gp": 587.07
+          "ap": 0.0,
+          "net_gp": 1585.74
         }
       },
       "total_2026": {
         "ar": 69942.17,
-        "ap": 44048.33,
-        "net_gp": 20715.07
+        "ap": 11613.33,
+        "net_gp": 46663.08
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211269009738648",
+      "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
+      "salesperson": "Logan",
+      "project_number": "2570",
+      "status": "Active",
+      "start_date": "2025-09-11",
+      "end_date": "2026-06-12",
+      "base_ar": 2200.0,
+      "base_ap": 1700.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 1393.33,
+          "ap": 1133.33,
+          "net_gp": 208.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1700.0,
+          "net_gp": 400.0
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 880.0,
+          "ap": 680.0,
+          "net_gp": 160.0
+        }
+      },
+      "total_2026": {
+        "ar": 11880.0,
+        "ap": 9180.0,
+        "net_gp": 2160.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211319142625206",
+      "name": "RSD - Pikeville, KY - David - 2571",
+      "salesperson": "David",
+      "project_number": "2571",
+      "status": "Closed",
+      "start_date": "2025-09-12",
+      "end_date": "2025-11-30",
+      "base_ar": 3600.0,
+      "base_ap": 2750.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 2280.0,
+          "ap": 1741.67,
+          "net_gp": 430.66
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2750.0,
+          "net_gp": 680.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 3600.0,
+          "ap": 2750.0,
+          "net_gp": 680.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1211395610493059",
-      "task_gid": "1211401899289095",
       "name": "HousHak Unlimited - Lexington KY - David - 2572",
       "salesperson": "David",
       "project_number": "2572",
-      "status": "Closed",
+      "status": "Active",
       "start_date": "2025-09-20",
-      "end_date": "2026-04-20",
+      "end_date": "2026-12-31",
       "base_ar": 3200.0,
       "base_ap": 3200.0,
       "base_crew": 3,
@@ -1047,171 +2231,212 @@
         },
         "2026-04": {
           "crew": 3,
-          "ar": 2133.33,
-          "ap": 2133.33,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-05": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-06": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-07": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-08": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-09": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-10": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-11": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
+          "net_gp": 0.0
+        },
+        "2026-12": {
+          "crew": 3,
+          "ar": 3200.0,
+          "ap": 3200.0,
           "net_gp": 0.0
         }
       },
       "total_2026": {
-        "ar": 11733.33,
-        "ap": 11733.33,
+        "ar": 38400.0,
+        "ap": 38400.0,
         "net_gp": 0.0
       },
       "source": "asana_custom_fields"
     },
     {
+      "gid": "1211397768178812",
+      "name": "Sletten - San Pablo, CA - Zeke - 2573",
+      "salesperson": "Zeke",
+      "project_number": "2573",
+      "status": "Closed",
+      "start_date": "2025-09-19",
+      "end_date": "2025-10-31",
+      "base_ar": 0,
+      "base_ap": 2325.0,
+      "base_crew": 0,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 930.0,
+          "net_gp": -744.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 2325.0,
+          "net_gp": -1860.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
       "gid": "1211427273217469",
-      "task_gid": "1211430941230623",
       "name": "Independence Excavating - Grove City, OH - Paul -2574",
       "salesperson": "Paul",
       "project_number": "2574",
       "status": "Active",
-      "start_date": "2025-10-06",
+      "start_date": "2025-10-01",
       "end_date": "2026-06-30",
       "base_ar": 2600.0,
-      "base_ap": 2200.0,
+      "base_ap": 1950.0,
       "base_crew": 1,
       "monthly": {
         "2025-10": {
           "crew": 1,
           "ar": 2253.33,
-          "ap": 1906.67,
-          "net_gp": 277.33
+          "ap": 1950.0,
+          "net_gp": 242.66
         },
         "2025-11": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         },
         "2025-12": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         },
         "2026-01": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         },
         "2026-02": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         },
         "2026-03": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         },
         "2026-04": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         },
         "2026-05": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         },
         "2026-06": {
           "crew": 1,
           "ar": 2600.0,
-          "ap": 2200.0,
-          "net_gp": 320.0
+          "ap": 1950.0,
+          "net_gp": 520.0
         }
       },
       "total_2026": {
         "ar": 15600.0,
-        "ap": 13200.0,
-        "net_gp": 1920.0
+        "ap": 11700.0,
+        "net_gp": 3120.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1211456854891625",
-      "task_gid": "1211458558633093",
       "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
       "salesperson": "Paul",
       "project_number": "2576",
       "status": "Active",
-      "start_date": "2025-09-30",
+      "start_date": "2026-03-31",
       "end_date": "2026-05-31",
-      "base_ar": 11500.0,
-      "base_ap": 7545.0,
-      "base_crew": 12,
+      "base_ar": 0,
+      "base_ap": 7100.0,
+      "base_crew": 0,
       "monthly": {
-        "2025-09": {
-          "crew": 12,
-          "ar": 383.33,
-          "ap": 251.5,
-          "net_gp": 105.46
-        },
-        "2025-10": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
-        },
-        "2025-11": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
-        },
-        "2025-12": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
-        },
-        "2026-01": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
-        },
-        "2026-02": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
-        },
         "2026-03": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 236.67,
+          "net_gp": -189.34
         },
         "2026-04": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 7100.0,
+          "net_gp": -5680.0
         },
         "2026-05": {
-          "crew": 12,
-          "ar": 11500.0,
-          "ap": 7545.0,
-          "net_gp": 3164.0
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 7100.0,
+          "net_gp": -5680.0
         }
       },
       "total_2026": {
-        "ar": 57500.0,
-        "ap": 37725.0,
-        "net_gp": 15820.0
+        "ar": 0.0,
+        "ap": 14436.67,
+        "net_gp": -11549.34
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1211579601941971",
-      "task_gid": "1211580746596437",
       "name": "DH Griffin - LaGrange, GA - Paul -2582",
       "salesperson": "Paul",
       "project_number": "2582",
@@ -1219,98 +2444,97 @@
       "start_date": "2025-10-13",
       "end_date": "2026-10-12",
       "base_ar": 2700.0,
-      "base_ap": 1950.0,
+      "base_ap": 0,
       "base_crew": 1,
       "monthly": {
         "2025-10": {
           "crew": 1,
           "ar": 1710.0,
-          "ap": 1235.0,
-          "net_gp": 380.0
+          "ap": 0.0,
+          "net_gp": 1368.0
         },
         "2025-11": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2025-12": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-01": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-02": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-03": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-04": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-05": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-06": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-07": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-08": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-09": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 1950.0,
-          "net_gp": 600.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-10": {
           "crew": 1,
           "ar": 1080.0,
-          "ap": 780.0,
-          "net_gp": 240.0
+          "ap": 0.0,
+          "net_gp": 864.0
         }
       },
       "total_2026": {
         "ar": 25380.0,
-        "ap": 18330.0,
-        "net_gp": 5640.0
+        "ap": 0.0,
+        "net_gp": 20304.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1211697715124635",
-      "task_gid": "1211698806755655",
       "name": "Miller Pipeline - Saint Joseph, MO - Paul - 2586",
       "salesperson": "Paul",
       "project_number": "2586",
@@ -1318,92 +2542,91 @@
       "start_date": "2025-12-01",
       "end_date": "2026-11-30",
       "base_ar": 4295.0,
-      "base_ap": 3000.0,
+      "base_ap": 0,
       "base_crew": 3,
       "monthly": {
         "2025-12": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-01": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-02": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-03": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-04": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-05": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-06": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-07": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-08": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-09": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-10": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         },
         "2026-11": {
           "crew": 3,
           "ar": 4295.0,
-          "ap": 3000.0,
-          "net_gp": 1036.0
+          "ap": 0.0,
+          "net_gp": 3436.0
         }
       },
       "total_2026": {
         "ar": 47245.0,
-        "ap": 33000.0,
-        "net_gp": 11396.0
+        "ap": 0.0,
+        "net_gp": 37796.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1211939568903452",
-      "task_gid": "1211941814799610",
       "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
       "salesperson": "Paul",
       "project_number": "2588",
@@ -1411,68 +2634,67 @@
       "start_date": "2025-11-06",
       "end_date": "2026-06-05",
       "base_ar": 2875.0,
-      "base_ap": 1875.0,
+      "base_ap": 0,
       "base_crew": 1,
       "monthly": {
         "2025-11": {
           "crew": 1,
           "ar": 2395.83,
-          "ap": 1562.5,
-          "net_gp": 666.66
+          "ap": 0.0,
+          "net_gp": 1916.66
         },
         "2025-12": {
           "crew": 1,
           "ar": 2875.0,
-          "ap": 1875.0,
-          "net_gp": 800.0
+          "ap": 0.0,
+          "net_gp": 2300.0
         },
         "2026-01": {
           "crew": 1,
           "ar": 2875.0,
-          "ap": 1875.0,
-          "net_gp": 800.0
+          "ap": 0.0,
+          "net_gp": 2300.0
         },
         "2026-02": {
           "crew": 1,
           "ar": 2875.0,
-          "ap": 1875.0,
-          "net_gp": 800.0
+          "ap": 0.0,
+          "net_gp": 2300.0
         },
         "2026-03": {
           "crew": 1,
           "ar": 2875.0,
-          "ap": 1875.0,
-          "net_gp": 800.0
+          "ap": 0.0,
+          "net_gp": 2300.0
         },
         "2026-04": {
           "crew": 1,
           "ar": 2875.0,
-          "ap": 1875.0,
-          "net_gp": 800.0
+          "ap": 0.0,
+          "net_gp": 2300.0
         },
         "2026-05": {
           "crew": 1,
           "ar": 2875.0,
-          "ap": 1875.0,
-          "net_gp": 800.0
+          "ap": 0.0,
+          "net_gp": 2300.0
         },
         "2026-06": {
           "crew": 1,
           "ar": 479.17,
-          "ap": 312.5,
-          "net_gp": 133.34
+          "ap": 0.0,
+          "net_gp": 383.34
         }
       },
       "total_2026": {
         "ar": 14854.17,
-        "ap": 9687.5,
-        "net_gp": 4133.34
+        "ap": 0.0,
+        "net_gp": 11883.34
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212023042586559",
-      "task_gid": "1212047976974239",
       "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
       "salesperson": "Zeke",
       "project_number": "2590",
@@ -1480,44 +2702,43 @@
       "start_date": "2026-01-01",
       "end_date": "2026-04-30",
       "base_ar": 6000.0,
-      "base_ap": 3150.0,
+      "base_ap": 0,
       "base_crew": 6,
       "monthly": {
         "2026-01": {
           "crew": 6,
           "ar": 6000.0,
-          "ap": 3150.0,
-          "net_gp": 2280.0
+          "ap": 0.0,
+          "net_gp": 4800.0
         },
         "2026-02": {
           "crew": 6,
           "ar": 6000.0,
-          "ap": 3150.0,
-          "net_gp": 2280.0
+          "ap": 0.0,
+          "net_gp": 4800.0
         },
         "2026-03": {
           "crew": 6,
           "ar": 6000.0,
-          "ap": 3150.0,
-          "net_gp": 2280.0
+          "ap": 0.0,
+          "net_gp": 4800.0
         },
         "2026-04": {
           "crew": 6,
           "ar": 6000.0,
-          "ap": 3150.0,
-          "net_gp": 2280.0
+          "ap": 0.0,
+          "net_gp": 4800.0
         }
       },
       "total_2026": {
         "ar": 24000.0,
-        "ap": 12600.0,
-        "net_gp": 9120.0
+        "ap": 0.0,
+        "net_gp": 19200.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212198830916907",
-      "task_gid": "1212203117687578",
       "name": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
       "salesperson": "Zeke",
       "project_number": "2591",
@@ -1525,92 +2746,91 @@
       "start_date": "2026-01-01",
       "end_date": "2026-12-31",
       "base_ar": 15400.0,
-      "base_ap": 13595.0,
+      "base_ap": 0,
       "base_crew": 7,
       "monthly": {
         "2026-01": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-02": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-03": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-04": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-05": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-06": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-07": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-08": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-09": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-10": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-11": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         },
         "2026-12": {
           "crew": 7,
           "ar": 15400.0,
-          "ap": 13595.0,
-          "net_gp": 1444.0
+          "ap": 0.0,
+          "net_gp": 12320.0
         }
       },
       "total_2026": {
         "ar": 184800.0,
-        "ap": 163140.0,
-        "net_gp": 17328.0
+        "ap": 0.0,
+        "net_gp": 147840.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212312491124751",
-      "task_gid": "1212276797715369",
       "name": "Miller Pipeline - Monett, MO - Paul - 2593",
       "salesperson": "Paul",
       "project_number": "2593",
@@ -1618,155 +2838,97 @@
       "start_date": "2025-12-14",
       "end_date": "2026-12-31",
       "base_ar": 3595.0,
-      "base_ap": 2500.0,
+      "base_ap": 0,
       "base_crew": 2,
       "monthly": {
         "2025-12": {
           "crew": 2,
           "ar": 2157.0,
-          "ap": 1500.0,
-          "net_gp": 525.6
+          "ap": 0.0,
+          "net_gp": 1725.6
         },
         "2026-01": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-02": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-03": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-04": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-05": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-06": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-07": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-08": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-09": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-10": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-11": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         },
         "2026-12": {
           "crew": 2,
           "ar": 3595.0,
-          "ap": 2500.0,
-          "net_gp": 876.0
+          "ap": 0.0,
+          "net_gp": 2876.0
         }
       },
       "total_2026": {
         "ar": 43140.0,
-        "ap": 30000.0,
-        "net_gp": 10512.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1212344857819012",
-      "task_gid": "1212345656262393",
-      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
-      "salesperson": "Zeke",
-      "project_number": "2594",
-      "status": "Active",
-      "start_date": "2025-12-28",
-      "end_date": "2026-05-30",
-      "base_ar": 10000.0,
-      "base_ap": 6910.0,
-      "base_crew": 6,
-      "monthly": {
-        "2025-12": {
-          "crew": 6,
-          "ar": 1333.33,
-          "ap": 921.33,
-          "net_gp": 329.6
-        },
-        "2026-01": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "net_gp": 2472.0
-        },
-        "2026-02": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "net_gp": 2472.0
-        },
-        "2026-03": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "net_gp": 2472.0
-        },
-        "2026-04": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "net_gp": 2472.0
-        },
-        "2026-05": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "net_gp": 2472.0
-        }
-      },
-      "total_2026": {
-        "ar": 50000.0,
-        "ap": 34550.0,
-        "net_gp": 12360.0
+        "ap": 0.0,
+        "net_gp": 34512.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212571157696151",
-      "task_gid": "1212576117243482",
       "name": "Sletten - San Pablo, CA - Zeke - 2601",
       "salesperson": "Zeke",
       "project_number": "2601",
@@ -1774,77 +2936,75 @@
       "start_date": "2026-01-01",
       "end_date": "2026-04-30",
       "base_ar": 2700.0,
-      "base_ap": 2200.0,
+      "base_ap": 0,
       "base_crew": 1,
       "monthly": {
         "2026-01": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 2200.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-02": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 2200.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-03": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 2200.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         },
         "2026-04": {
           "crew": 1,
           "ar": 2700.0,
-          "ap": 2200.0,
-          "net_gp": 400.0
+          "ap": 0.0,
+          "net_gp": 2160.0
         }
       },
       "total_2026": {
         "ar": 10800.0,
-        "ap": 8800.0,
-        "net_gp": 1600.0
+        "ap": 0.0,
+        "net_gp": 8640.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212793467092033",
-      "task_gid": "1212816621066446",
       "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
       "salesperson": "Logan",
       "project_number": "2604",
-      "status": "Closed",
+      "status": "Active",
       "start_date": "2026-03-21",
-      "end_date": "2026-04-20",
+      "end_date": "2026-04-30",
       "base_ar": 3800.0,
-      "base_ap": 2000.0,
+      "base_ap": 0,
       "base_crew": 2,
       "monthly": {
         "2026-03": {
           "crew": 2,
           "ar": 1393.33,
-          "ap": 733.33,
-          "net_gp": 528.0
+          "ap": 0.0,
+          "net_gp": 1114.66
         },
         "2026-04": {
           "crew": 2,
-          "ar": 2533.33,
-          "ap": 1333.33,
-          "net_gp": 960.0
+          "ar": 3800.0,
+          "ap": 0.0,
+          "net_gp": 3040.0
         }
       },
       "total_2026": {
-        "ar": 3926.66,
-        "ap": 2066.66,
-        "net_gp": 1488.0
+        "ar": 5193.33,
+        "ap": 0.0,
+        "net_gp": 4154.66
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212813348194340",
-      "task_gid": "1212840282674001",
       "name": "Jones Covey Group, Inc - Ringgold, GA - Paul - 2605",
       "salesperson": "Paul",
       "project_number": "2605",
@@ -1852,62 +3012,61 @@
       "start_date": "2026-03-03",
       "end_date": "2026-09-20",
       "base_ar": 5150.0,
-      "base_ap": 2750.0,
+      "base_ap": 0,
       "base_crew": 1,
       "monthly": {
         "2026-03": {
           "crew": 1,
           "ar": 4978.33,
-          "ap": 2658.33,
-          "net_gp": 1856.0
+          "ap": 0.0,
+          "net_gp": 3982.66
         },
         "2026-04": {
           "crew": 1,
           "ar": 5150.0,
-          "ap": 2750.0,
-          "net_gp": 1920.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-05": {
           "crew": 1,
           "ar": 5150.0,
-          "ap": 2750.0,
-          "net_gp": 1920.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-06": {
           "crew": 1,
           "ar": 5150.0,
-          "ap": 2750.0,
-          "net_gp": 1920.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-07": {
           "crew": 1,
           "ar": 5150.0,
-          "ap": 2750.0,
-          "net_gp": 1920.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-08": {
           "crew": 1,
           "ar": 5150.0,
-          "ap": 2750.0,
-          "net_gp": 1920.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-09": {
           "crew": 1,
           "ar": 3433.33,
-          "ap": 1833.33,
-          "net_gp": 1280.0
+          "ap": 0.0,
+          "net_gp": 2746.66
         }
       },
       "total_2026": {
         "ar": 34161.66,
-        "ap": 18241.66,
-        "net_gp": 12736.0
+        "ap": 0.0,
+        "net_gp": 27329.32
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212842897797009",
-      "task_gid": "1212842991665910",
       "name": "Carl Walker Construction - Lexington, KY - Matt -2606",
       "salesperson": "Matt",
       "project_number": "2606",
@@ -1915,62 +3074,61 @@
       "start_date": "2026-02-08",
       "end_date": "2026-08-09",
       "base_ar": 5325.0,
-      "base_ap": 3150.0,
+      "base_ap": 0,
       "base_crew": 4,
       "monthly": {
         "2026-02": {
           "crew": 4,
           "ar": 3727.5,
-          "ap": 2205.0,
-          "net_gp": 1218.0
+          "ap": 0.0,
+          "net_gp": 2982.0
         },
         "2026-03": {
           "crew": 4,
           "ar": 5325.0,
-          "ap": 3150.0,
-          "net_gp": 1740.0
+          "ap": 0.0,
+          "net_gp": 4260.0
         },
         "2026-04": {
           "crew": 4,
           "ar": 5325.0,
-          "ap": 3150.0,
-          "net_gp": 1740.0
+          "ap": 0.0,
+          "net_gp": 4260.0
         },
         "2026-05": {
           "crew": 4,
           "ar": 5325.0,
-          "ap": 3150.0,
-          "net_gp": 1740.0
+          "ap": 0.0,
+          "net_gp": 4260.0
         },
         "2026-06": {
           "crew": 4,
           "ar": 5325.0,
-          "ap": 3150.0,
-          "net_gp": 1740.0
+          "ap": 0.0,
+          "net_gp": 4260.0
         },
         "2026-07": {
           "crew": 4,
           "ar": 5325.0,
-          "ap": 3150.0,
-          "net_gp": 1740.0
+          "ap": 0.0,
+          "net_gp": 4260.0
         },
         "2026-08": {
           "crew": 4,
           "ar": 1597.5,
-          "ap": 945.0,
-          "net_gp": 522.0
+          "ap": 0.0,
+          "net_gp": 1278.0
         }
       },
       "total_2026": {
         "ar": 31950.0,
-        "ap": 18900.0,
-        "net_gp": 10440.0
+        "ap": 0.0,
+        "net_gp": 25560.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1212860002456293",
-      "task_gid": "1212894002048329",
       "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
       "salesperson": "Logan",
       "project_number": "2607",
@@ -1978,221 +3136,113 @@
       "start_date": "2026-01-22",
       "end_date": "2026-04-22",
       "base_ar": 4425.0,
-      "base_ap": 2450.0,
+      "base_ap": 0,
       "base_crew": 3,
       "monthly": {
         "2026-01": {
           "crew": 3,
           "ar": 1475.0,
-          "ap": 816.67,
-          "net_gp": 526.66
+          "ap": 0.0,
+          "net_gp": 1180.0
         },
         "2026-02": {
           "crew": 3,
           "ar": 4425.0,
-          "ap": 2450.0,
-          "net_gp": 1580.0
+          "ap": 0.0,
+          "net_gp": 3540.0
         },
         "2026-03": {
           "crew": 3,
           "ar": 4425.0,
-          "ap": 2450.0,
-          "net_gp": 1580.0
+          "ap": 0.0,
+          "net_gp": 3540.0
         },
         "2026-04": {
           "crew": 3,
           "ar": 3245.0,
-          "ap": 1796.67,
-          "net_gp": 1158.66
+          "ap": 0.0,
+          "net_gp": 2596.0
         }
       },
       "total_2026": {
         "ar": 13570.0,
-        "ap": 7513.34,
-        "net_gp": 4845.32
+        "ap": 0.0,
+        "net_gp": 10856.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213240184667434",
-      "task_gid": "1213247408739993",
-      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613",
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses A,B,C]",
       "salesperson": "Logan",
       "project_number": "2613",
       "status": "Active",
       "start_date": "2026-02-15",
       "end_date": "2026-04-30",
-      "base_ar": 5500.0,
-      "base_ap": 3200.0,
-      "base_crew": 3,
+      "base_ar": 17175.0,
+      "base_ap": 0,
+      "base_crew": 10,
       "monthly": {
         "2026-02": {
-          "crew": 3,
-          "ar": 2566.67,
-          "ap": 1493.33,
-          "net_gp": 858.67
+          "crew": 10,
+          "ar": 6586.67,
+          "ap": 0.0,
+          "net_gp": 5269.34
         },
         "2026-03": {
-          "crew": 3,
-          "ar": 5500.0,
-          "ap": 3200.0,
-          "net_gp": 1840.0
+          "crew": 10,
+          "ar": 17175.0,
+          "ap": 0.0,
+          "net_gp": 13740.0
         },
         "2026-04": {
-          "crew": 3,
-          "ar": 5500.0,
-          "ap": 3200.0,
-          "net_gp": 1840.0
+          "crew": 10,
+          "ar": 17175.0,
+          "ap": 0.0,
+          "net_gp": 13740.0
         }
       },
       "total_2026": {
-        "ar": 13566.67,
-        "ap": 7893.33,
-        "net_gp": 4538.67
+        "ar": 40936.67,
+        "ap": 0.0,
+        "net_gp": 32749.34
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213240184667434",
-      "task_gid": "1213240688491369",
-      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 \u2014 B",
-      "salesperson": "Logan",
-      "project_number": "2613",
-      "status": "Active",
-      "start_date": "2026-02-18",
-      "end_date": "2026-04-30",
-      "base_ar": 3850.0,
-      "base_ap": 2250.0,
-      "base_crew": 2,
-      "monthly": {
-        "2026-02": {
-          "crew": 2,
-          "ar": 1411.67,
-          "ap": 825.0,
-          "net_gp": 469.34
-        },
-        "2026-03": {
-          "crew": 2,
-          "ar": 3850.0,
-          "ap": 2250.0,
-          "net_gp": 1280.0
-        },
-        "2026-04": {
-          "crew": 2,
-          "ar": 3850.0,
-          "ap": 2250.0,
-          "net_gp": 1280.0
-        }
-      },
-      "total_2026": {
-        "ar": 9111.67,
-        "ap": 5325.0,
-        "net_gp": 3029.34
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213240184667434",
-      "task_gid": "1213241143867374",
-      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 \u2014 C",
-      "salesperson": "Logan",
-      "project_number": "2613",
-      "status": "Active",
-      "start_date": "2026-02-19",
-      "end_date": "2026-04-30",
-      "base_ar": 7825.0,
-      "base_ap": 4300.0,
-      "base_crew": 5,
-      "monthly": {
-        "2026-02": {
-          "crew": 5,
-          "ar": 2608.33,
-          "ap": 1433.33,
-          "net_gp": 940.0
-        },
-        "2026-03": {
-          "crew": 5,
-          "ar": 7825.0,
-          "ap": 4300.0,
-          "net_gp": 2820.0
-        },
-        "2026-04": {
-          "crew": 5,
-          "ar": 7825.0,
-          "ap": 4300.0,
-          "net_gp": 2820.0
-        }
-      },
-      "total_2026": {
-        "ar": 18258.33,
-        "ap": 10033.33,
-        "net_gp": 6580.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213240184667434",
-      "task_gid": "1214059062125211",
-      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 \u2014 D",
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses D,E]",
       "salesperson": "Logan",
       "project_number": "2613",
       "status": "Upcoming",
       "start_date": "2026-04-26",
       "end_date": "2026-05-31",
-      "base_ar": 3850.0,
-      "base_ap": 2300.0,
-      "base_crew": 2,
+      "base_ar": 9350.0,
+      "base_ap": 0,
+      "base_crew": 5,
       "monthly": {
         "2026-04": {
-          "crew": 2,
+          "crew": 5,
           "ar": 641.67,
-          "ap": 383.33,
-          "net_gp": 206.67
+          "ap": 0.0,
+          "net_gp": 513.34
         },
         "2026-05": {
-          "crew": 2,
-          "ar": 3850.0,
-          "ap": 2300.0,
-          "net_gp": 1240.0
+          "crew": 5,
+          "ar": 9166.67,
+          "ap": 0.0,
+          "net_gp": 7333.34
         }
       },
       "total_2026": {
-        "ar": 4491.67,
-        "ap": 2683.33,
-        "net_gp": 1446.67
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213240184667434",
-      "task_gid": "1214059062125214",
-      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 \u2014 E",
-      "salesperson": "Logan",
-      "project_number": "2613",
-      "status": "Upcoming",
-      "start_date": "2026-05-03",
-      "end_date": "2026-05-31",
-      "base_ar": 5500.0,
-      "base_ap": 3300.0,
-      "base_crew": 3,
-      "monthly": {
-        "2026-05": {
-          "crew": 3,
-          "ar": 5316.67,
-          "ap": 3190.0,
-          "net_gp": 1701.34
-        }
-      },
-      "total_2026": {
-        "ar": 5316.67,
-        "ap": 3190.0,
-        "net_gp": 1701.34
+        "ar": 9808.34,
+        "ap": 0.0,
+        "net_gp": 7846.68
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213240216017591",
-      "task_gid": "1213271998019433",
       "name": "Power Design - Starbase, TX -Zeke - 2614",
       "salesperson": "Zeke",
       "project_number": "2614",
@@ -2200,86 +3250,85 @@
       "start_date": "2026-02-21",
       "end_date": "2026-12-31",
       "base_ar": 12000.0,
-      "base_ap": 10470.0,
+      "base_ap": 0,
       "base_crew": 10,
       "monthly": {
         "2026-02": {
           "crew": 10,
           "ar": 3200.0,
-          "ap": 2792.0,
-          "net_gp": 326.4
+          "ap": 0.0,
+          "net_gp": 2560.0
         },
         "2026-03": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-04": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-05": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-06": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-07": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-08": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-09": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-10": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-11": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         },
         "2026-12": {
           "crew": 10,
           "ar": 12000.0,
-          "ap": 10470.0,
-          "net_gp": 1224.0
+          "ap": 0.0,
+          "net_gp": 9600.0
         }
       },
       "total_2026": {
         "ar": 123200.0,
-        "ap": 107492.0,
-        "net_gp": 12566.4
+        "ap": 0.0,
+        "net_gp": 98560.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213329022938206",
-      "task_gid": "1213346125969032",
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617",
       "salesperson": "Logan",
       "project_number": "2617",
@@ -2287,251 +3336,247 @@
       "start_date": "2026-03-15",
       "end_date": "2026-04-30",
       "base_ar": 6650.0,
-      "base_ap": 4000.0,
+      "base_ap": 0,
       "base_crew": 3,
       "monthly": {
         "2026-03": {
           "crew": 3,
           "ar": 3768.33,
-          "ap": 2266.67,
-          "net_gp": 1201.33
+          "ap": 0.0,
+          "net_gp": 3014.66
         },
         "2026-04": {
           "crew": 3,
           "ar": 6650.0,
-          "ap": 4000.0,
-          "net_gp": 2120.0
+          "ap": 0.0,
+          "net_gp": 5320.0
         }
       },
       "total_2026": {
         "ar": 10418.33,
-        "ap": 6266.67,
-        "net_gp": 3321.33
+        "ap": 0.0,
+        "net_gp": 8334.66
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213344941093825",
-      "task_gid": "1213348406193831",
-      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618",
+      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House A]",
       "salesperson": "Paul",
       "project_number": "2618",
       "status": "Active",
       "start_date": "2026-02-25",
       "end_date": "2027-02-24",
       "base_ar": 3575.0,
-      "base_ap": 2350.0,
+      "base_ap": 0,
       "base_crew": 2,
       "monthly": {
         "2026-02": {
           "crew": 2,
           "ar": 476.67,
-          "ap": 313.33,
-          "net_gp": 130.67
+          "ap": 0.0,
+          "net_gp": 381.34
         },
         "2026-03": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-04": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-05": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-06": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-07": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-08": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-09": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-10": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-11": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-12": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2350.0,
-          "net_gp": 980.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         }
       },
       "total_2026": {
         "ar": 36226.67,
-        "ap": 23813.33,
-        "net_gp": 9930.67
+        "ap": 0.0,
+        "net_gp": 28981.34
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213344941093825",
-      "task_gid": "1213422578073035",
-      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 \u2014 B",
+      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House B]",
       "salesperson": "Paul",
       "project_number": "2618",
       "status": "Active",
       "start_date": "2026-03-02",
       "end_date": "2027-03-01",
       "base_ar": 3575.0,
-      "base_ap": 2750.0,
+      "base_ap": 0,
       "base_crew": 2,
       "monthly": {
         "2026-03": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-04": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-05": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-06": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-07": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-08": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-09": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-10": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-11": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         },
         "2026-12": {
           "crew": 2,
           "ar": 3575.0,
-          "ap": 2750.0,
-          "net_gp": 660.0
+          "ap": 0.0,
+          "net_gp": 2860.0
         }
       },
       "total_2026": {
         "ar": 35750.0,
-        "ap": 27500.0,
-        "net_gp": 6600.0
+        "ap": 0.0,
+        "net_gp": 28600.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213344941093825",
-      "task_gid": "1213583366862548",
-      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 \u2014 C",
+      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House C]",
       "salesperson": "Paul",
       "project_number": "2618",
       "status": "Upcoming",
       "start_date": "2026-08-02",
       "end_date": "2027-08-01",
       "base_ar": 5150.0,
-      "base_ap": 3250.0,
+      "base_ap": 0,
       "base_crew": 3,
       "monthly": {
         "2026-08": {
           "crew": 3,
           "ar": 5150.0,
-          "ap": 3250.0,
-          "net_gp": 1520.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-09": {
           "crew": 3,
           "ar": 5150.0,
-          "ap": 3250.0,
-          "net_gp": 1520.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-10": {
           "crew": 3,
           "ar": 5150.0,
-          "ap": 3250.0,
-          "net_gp": 1520.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-11": {
           "crew": 3,
           "ar": 5150.0,
-          "ap": 3250.0,
-          "net_gp": 1520.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         },
         "2026-12": {
           "crew": 3,
           "ar": 5150.0,
-          "ap": 3250.0,
-          "net_gp": 1520.0
+          "ap": 0.0,
+          "net_gp": 4120.0
         }
       },
       "total_2026": {
         "ar": 25750.0,
-        "ap": 16250.0,
-        "net_gp": 7600.0
+        "ap": 0.0,
+        "net_gp": 20600.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213348375076263",
-      "task_gid": "1213358753226416",
       "name": "Arco- Lebanon, TN - Paul - 2616",
       "salesperson": "Paul",
       "project_number": "2616",
@@ -2539,44 +3584,43 @@
       "start_date": "2026-02-20",
       "end_date": "2026-05-01",
       "base_ar": 3000.0,
-      "base_ap": 1875.0,
+      "base_ap": 0,
       "base_crew": 1,
       "monthly": {
         "2026-02": {
           "crew": 1,
           "ar": 900.0,
-          "ap": 562.5,
-          "net_gp": 270.0
+          "ap": 0.0,
+          "net_gp": 720.0
         },
         "2026-03": {
           "crew": 1,
           "ar": 3000.0,
-          "ap": 1875.0,
-          "net_gp": 900.0
+          "ap": 0.0,
+          "net_gp": 2400.0
         },
         "2026-04": {
           "crew": 1,
           "ar": 3000.0,
-          "ap": 1875.0,
-          "net_gp": 900.0
+          "ap": 0.0,
+          "net_gp": 2400.0
         },
         "2026-05": {
           "crew": 1,
           "ar": 100.0,
-          "ap": 62.5,
-          "net_gp": 30.0
+          "ap": 0.0,
+          "net_gp": 80.0
         }
       },
       "total_2026": {
         "ar": 7000.0,
-        "ap": 4375.0,
-        "net_gp": 2100.0
+        "ap": 0.0,
+        "net_gp": 5600.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213407803351544",
-      "task_gid": "1213409467767169",
       "name": "Duggan Contracting - Paducah, KY - Paul - 2620",
       "salesperson": "Paul",
       "project_number": "2620",
@@ -2584,426 +3628,884 @@
       "start_date": "2026-02-25",
       "end_date": "2026-11-30",
       "base_ar": 2900.0,
-      "base_ap": 2000.0,
+      "base_ap": 0,
       "base_crew": 1,
       "monthly": {
         "2026-02": {
           "crew": 1,
           "ar": 386.67,
-          "ap": 266.67,
-          "net_gp": 96.0
+          "ap": 0.0,
+          "net_gp": 309.34
         },
         "2026-03": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-04": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-05": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-06": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-07": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-08": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-09": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-10": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         },
         "2026-11": {
           "crew": 1,
           "ar": 2900.0,
-          "ap": 2000.0,
-          "net_gp": 720.0
+          "ap": 0.0,
+          "net_gp": 2320.0
         }
       },
       "total_2026": {
         "ar": 26486.67,
-        "ap": 18266.67,
-        "net_gp": 6576.0
+        "ap": 0.0,
+        "net_gp": 21189.34
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213423592821387",
-      "task_gid": "1213426118060906",
-      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621",
+      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
       "salesperson": "Zeke",
       "project_number": "2621",
       "status": "Active",
       "start_date": "2026-04-01",
       "end_date": "2026-09-30",
       "base_ar": 11400.0,
-      "base_ap": 6250.0,
+      "base_ap": 0,
       "base_crew": 6,
       "monthly": {
         "2026-04": {
           "crew": 6,
           "ar": 11400.0,
-          "ap": 6250.0,
-          "net_gp": 4120.0
+          "ap": 0.0,
+          "net_gp": 9120.0
         },
         "2026-05": {
           "crew": 6,
           "ar": 11400.0,
-          "ap": 6250.0,
-          "net_gp": 4120.0
+          "ap": 0.0,
+          "net_gp": 9120.0
         },
         "2026-06": {
           "crew": 6,
           "ar": 11400.0,
-          "ap": 6250.0,
-          "net_gp": 4120.0
+          "ap": 0.0,
+          "net_gp": 9120.0
         },
         "2026-07": {
           "crew": 6,
           "ar": 11400.0,
-          "ap": 6250.0,
-          "net_gp": 4120.0
+          "ap": 0.0,
+          "net_gp": 9120.0
         },
         "2026-08": {
           "crew": 6,
           "ar": 11400.0,
-          "ap": 6250.0,
-          "net_gp": 4120.0
+          "ap": 0.0,
+          "net_gp": 9120.0
         },
         "2026-09": {
           "crew": 6,
           "ar": 11400.0,
-          "ap": 6250.0,
-          "net_gp": 4120.0
+          "ap": 0.0,
+          "net_gp": 9120.0
         }
       },
       "total_2026": {
         "ar": 68400.0,
-        "ap": 37500.0,
-        "net_gp": 24720.0
+        "ap": 0.0,
+        "net_gp": 54720.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213423592821387",
-      "task_gid": "1213983372239025",
-      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 \u2014 B",
+      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
       "salesperson": "Zeke",
       "project_number": "2621",
       "status": "Active",
       "start_date": "2026-04-13",
       "end_date": "2026-06-12",
       "base_ar": 11400.0,
-      "base_ap": 6050.0,
+      "base_ap": 0,
       "base_crew": 6,
       "monthly": {
         "2026-04": {
           "crew": 6,
           "ar": 6840.0,
-          "ap": 3630.0,
-          "net_gp": 2568.0
+          "ap": 0.0,
+          "net_gp": 5472.0
         },
         "2026-05": {
           "crew": 6,
           "ar": 11400.0,
-          "ap": 6050.0,
-          "net_gp": 4280.0
+          "ap": 0.0,
+          "net_gp": 9120.0
         },
         "2026-06": {
           "crew": 6,
           "ar": 4560.0,
-          "ap": 2420.0,
-          "net_gp": 1712.0
+          "ap": 0.0,
+          "net_gp": 3648.0
         }
       },
       "total_2026": {
         "ar": 22800.0,
-        "ap": 12100.0,
-        "net_gp": 8560.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213439679118236",
-      "task_gid": "1213401332003084",
-      "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
-      "salesperson": "Matt",
-      "project_number": "2622",
-      "status": "Active",
-      "start_date": "2026-03-01",
-      "end_date": "2026-05-31",
-      "base_ar": 10500.0,
-      "base_ap": 6825.0,
-      "base_crew": 6,
-      "monthly": {
-        "2026-03": {
-          "crew": 6,
-          "ar": 10500.0,
-          "ap": 6825.0,
-          "net_gp": 2940.0
-        },
-        "2026-04": {
-          "crew": 6,
-          "ar": 10500.0,
-          "ap": 6825.0,
-          "net_gp": 2940.0
-        },
-        "2026-05": {
-          "crew": 6,
-          "ar": 10500.0,
-          "ap": 6825.0,
-          "net_gp": 2940.0
-        }
-      },
-      "total_2026": {
-        "ar": 31500.0,
-        "ap": 20475.0,
-        "net_gp": 8820.0
+        "ap": 0.0,
+        "net_gp": 18240.0
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213483695669834",
-      "task_gid": "1213864007069101",
-      "name": "Peak Event Services- Woburn, MA - Paul - 2623 \u2014 C",
+      "name": "Peak Event Services- Woburn, MA - Paul - 2623 [House C]",
       "salesperson": "Paul",
       "project_number": "2623",
       "status": "Active",
       "start_date": "2026-04-15",
       "end_date": "2026-10-31",
       "base_ar": 8495.0,
-      "base_ap": 4750.0,
+      "base_ap": 0,
       "base_crew": 6,
       "monthly": {
         "2026-04": {
           "crew": 6,
           "ar": 4530.67,
-          "ap": 2533.33,
-          "net_gp": 1597.87
+          "ap": 0.0,
+          "net_gp": 3624.54
         },
         "2026-05": {
           "crew": 6,
           "ar": 8495.0,
-          "ap": 4750.0,
-          "net_gp": 2996.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-06": {
           "crew": 6,
           "ar": 8495.0,
-          "ap": 4750.0,
-          "net_gp": 2996.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-07": {
           "crew": 6,
           "ar": 8495.0,
-          "ap": 4750.0,
-          "net_gp": 2996.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-08": {
           "crew": 6,
           "ar": 8495.0,
-          "ap": 4750.0,
-          "net_gp": 2996.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-09": {
           "crew": 6,
           "ar": 8495.0,
-          "ap": 4750.0,
-          "net_gp": 2996.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         },
         "2026-10": {
           "crew": 6,
           "ar": 8495.0,
-          "ap": 4750.0,
-          "net_gp": 2996.0
+          "ap": 0.0,
+          "net_gp": 6796.0
         }
       },
       "total_2026": {
         "ar": 55500.67,
-        "ap": 31033.33,
-        "net_gp": 19573.87
+        "ap": 0.0,
+        "net_gp": 44400.54
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213483695669834",
-      "task_gid": "1213885344600297",
-      "name": "Peak Event Services- Woburn, MA - Paul - 2623 \u2014 D",
+      "name": "Peak Event Services- Woburn, MA - Paul - 2623 [House D]",
       "salesperson": "Paul",
       "project_number": "2623",
       "status": "Upcoming",
       "start_date": "2026-05-01",
       "end_date": "2026-10-14",
       "base_ar": 8500.0,
-      "base_ap": 4650.0,
+      "base_ap": 0,
       "base_crew": 6,
       "monthly": {
         "2026-05": {
           "crew": 6,
           "ar": 8500.0,
-          "ap": 4650.0,
-          "net_gp": 3080.0
+          "ap": 0.0,
+          "net_gp": 6800.0
         },
         "2026-06": {
           "crew": 6,
           "ar": 8500.0,
-          "ap": 4650.0,
-          "net_gp": 3080.0
+          "ap": 0.0,
+          "net_gp": 6800.0
         },
         "2026-07": {
           "crew": 6,
           "ar": 8500.0,
-          "ap": 4650.0,
-          "net_gp": 3080.0
+          "ap": 0.0,
+          "net_gp": 6800.0
         },
         "2026-08": {
           "crew": 6,
           "ar": 8500.0,
-          "ap": 4650.0,
-          "net_gp": 3080.0
+          "ap": 0.0,
+          "net_gp": 6800.0
         },
         "2026-09": {
           "crew": 6,
           "ar": 8500.0,
-          "ap": 4650.0,
-          "net_gp": 3080.0
+          "ap": 0.0,
+          "net_gp": 6800.0
         },
         "2026-10": {
           "crew": 6,
           "ar": 3966.67,
-          "ap": 2170.0,
-          "net_gp": 1437.34
+          "ap": 0.0,
+          "net_gp": 3173.34
         }
       },
       "total_2026": {
         "ar": 46466.67,
-        "ap": 25420.0,
-        "net_gp": 16837.34
+        "ap": 0.0,
+        "net_gp": 37173.34
       },
       "source": "asana_custom_fields"
     },
     {
       "gid": "1213483695669834",
-      "task_gid": "1213985270928955",
-      "name": "Peak Event Services- Woburn, MA - Paul - 2623 \u2014 E",
+      "name": "Peak Event Services- Woburn, MA - Paul - 2623 [House E]",
       "salesperson": "Paul",
       "project_number": "2623",
       "status": "Upcoming",
       "start_date": "2026-05-01",
       "end_date": "2026-06-30",
       "base_ar": 11200.0,
-      "base_ap": 6800.0,
+      "base_ap": 0,
       "base_crew": 8,
       "monthly": {
         "2026-05": {
           "crew": 8,
           "ar": 11200.0,
-          "ap": 6800.0,
-          "net_gp": 3520.0
+          "ap": 0.0,
+          "net_gp": 8960.0
         },
         "2026-06": {
           "crew": 8,
           "ar": 11200.0,
-          "ap": 6800.0,
-          "net_gp": 3520.0
+          "ap": 0.0,
+          "net_gp": 8960.0
         }
       },
       "total_2026": {
         "ar": 22400.0,
-        "ap": 13600.0,
-        "net_gp": 7040.0
+        "ap": 0.0,
+        "net_gp": 17920.0
       },
       "source": "asana_custom_fields"
     },
     {
-      "gid": "1213483695669834",
-      "task_gid": "1213985270928959",
-      "name": "Peak Event Services- Woburn, MA - Paul - 2623",
-      "salesperson": "Paul",
-      "project_number": "2623",
-      "status": "Upcoming",
-      "start_date": "2026-05-01",
+      "gid": "1213629324301274",
+      "name": "Power Design - Tucson, AZ - Zeke - 2615",
+      "salesperson": "Zeke",
+      "project_number": "2615",
+      "status": "Active",
+      "start_date": "2026-04-01",
       "end_date": "2026-10-31",
-      "base_ar": 28100.0,
-      "base_ap": 13150.0,
-      "base_crew": 20,
+      "base_ar": 4600.0,
+      "base_ap": 0,
+      "base_crew": 4,
       "monthly": {
+        "2026-04": {
+          "crew": 4,
+          "ar": 4600.0,
+          "ap": 0.0,
+          "net_gp": 3680.0
+        },
         "2026-05": {
-          "crew": 20,
-          "ar": 28100.0,
-          "ap": 13150.0,
-          "net_gp": 11960.0
+          "crew": 4,
+          "ar": 4600.0,
+          "ap": 0.0,
+          "net_gp": 3680.0
         },
         "2026-06": {
-          "crew": 20,
-          "ar": 28100.0,
-          "ap": 13150.0,
-          "net_gp": 11960.0
+          "crew": 4,
+          "ar": 4600.0,
+          "ap": 0.0,
+          "net_gp": 3680.0
         },
         "2026-07": {
-          "crew": 20,
-          "ar": 28100.0,
-          "ap": 13150.0,
-          "net_gp": 11960.0
+          "crew": 4,
+          "ar": 4600.0,
+          "ap": 0.0,
+          "net_gp": 3680.0
         },
         "2026-08": {
-          "crew": 20,
-          "ar": 28100.0,
-          "ap": 13150.0,
-          "net_gp": 11960.0
+          "crew": 4,
+          "ar": 4600.0,
+          "ap": 0.0,
+          "net_gp": 3680.0
         },
         "2026-09": {
-          "crew": 20,
-          "ar": 28100.0,
-          "ap": 13150.0,
-          "net_gp": 11960.0
+          "crew": 4,
+          "ar": 4600.0,
+          "ap": 0.0,
+          "net_gp": 3680.0
         },
         "2026-10": {
-          "crew": 20,
-          "ar": 28100.0,
-          "ap": 13150.0,
-          "net_gp": 11960.0
+          "crew": 4,
+          "ar": 4600.0,
+          "ap": 0.0,
+          "net_gp": 3680.0
         }
       },
       "total_2026": {
-        "ar": 168600.0,
-        "ap": 78900.0,
-        "net_gp": 71760.0
+        "ar": 32200.0,
+        "ap": 0.0,
+        "net_gp": 25760.0
       },
       "source": "asana_custom_fields"
     },
     {
-      "gid": "1213523794178802",
-      "task_gid": "1213519453569525",
-      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624",
+      "gid": "1213633710870931",
+      "name": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+      "salesperson": "Zeke",
+      "project_number": "2625",
+      "status": "Active",
+      "start_date": "2026-03-23",
+      "end_date": "2027-03-31",
+      "base_ar": 16650.0,
+      "base_ap": 0,
+      "base_crew": 18,
+      "monthly": {
+        "2026-03": {
+          "crew": 18,
+          "ar": 4995.0,
+          "ap": 0.0,
+          "net_gp": 3996.0
+        },
+        "2026-04": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-05": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-06": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-07": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-08": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-09": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-10": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-11": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        },
+        "2026-12": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 0.0,
+          "net_gp": 13320.0
+        }
+      },
+      "total_2026": {
+        "ar": 154845.0,
+        "ap": 0.0,
+        "net_gp": 123876.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1213692562297147",
+      "name": "Graydaze Contracting, Inc- Fairfax, IA - Paul - 2626",
+      "salesperson": "Paul",
+      "project_number": "2626",
+      "status": "Active",
+      "start_date": "2026-03-27",
+      "end_date": "2026-08-01",
+      "base_ar": 4700.0,
+      "base_ap": 0,
+      "base_crew": 3,
+      "monthly": {
+        "2026-03": {
+          "crew": 3,
+          "ar": 783.33,
+          "ap": 0.0,
+          "net_gp": 626.66
+        },
+        "2026-04": {
+          "crew": 3,
+          "ar": 4700.0,
+          "ap": 0.0,
+          "net_gp": 3760.0
+        },
+        "2026-05": {
+          "crew": 3,
+          "ar": 4700.0,
+          "ap": 0.0,
+          "net_gp": 3760.0
+        },
+        "2026-06": {
+          "crew": 3,
+          "ar": 4700.0,
+          "ap": 0.0,
+          "net_gp": 3760.0
+        },
+        "2026-07": {
+          "crew": 3,
+          "ar": 4700.0,
+          "ap": 0.0,
+          "net_gp": 3760.0
+        },
+        "2026-08": {
+          "crew": 3,
+          "ar": 156.67,
+          "ap": 0.0,
+          "net_gp": 125.34
+        }
+      },
+      "total_2026": {
+        "ar": 19740.0,
+        "ap": 0.0,
+        "net_gp": 15792.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1213807211139673",
+      "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
+      "salesperson": "Logan",
+      "project_number": "2630",
+      "status": "Active",
+      "start_date": "2026-04-02",
+      "end_date": "2026-05-01",
+      "base_ar": 11100.0,
+      "base_ap": 0,
+      "base_crew": 4,
+      "monthly": {
+        "2026-04": {
+          "crew": 4,
+          "ar": 10730.0,
+          "ap": 0.0,
+          "net_gp": 8584.0
+        },
+        "2026-05": {
+          "crew": 4,
+          "ar": 370.0,
+          "ap": 0.0,
+          "net_gp": 296.0
+        }
+      },
+      "total_2026": {
+        "ar": 11100.0,
+        "ap": 0.0,
+        "net_gp": 8880.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1213812028376221",
+      "name": "Gutknecht Construction - Evansville, IN - Matt - 2627",
+      "salesperson": "Matt",
+      "project_number": "2627",
+      "status": "Active",
+      "start_date": "2026-03-29",
+      "end_date": "2026-06-19",
+      "base_ar": 7750.0,
+      "base_ap": 0,
+      "base_crew": 5,
+      "monthly": {
+        "2026-03": {
+          "crew": 5,
+          "ar": 775.0,
+          "ap": 0.0,
+          "net_gp": 620.0
+        },
+        "2026-04": {
+          "crew": 5,
+          "ar": 7750.0,
+          "ap": 0.0,
+          "net_gp": 6200.0
+        },
+        "2026-05": {
+          "crew": 5,
+          "ar": 7750.0,
+          "ap": 0.0,
+          "net_gp": 6200.0
+        },
+        "2026-06": {
+          "crew": 5,
+          "ar": 4908.33,
+          "ap": 0.0,
+          "net_gp": 3926.66
+        }
+      },
+      "total_2026": {
+        "ar": 21183.33,
+        "ap": 0.0,
+        "net_gp": 16946.66
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1213864449534720",
+      "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
+      "salesperson": "Logan",
+      "project_number": "2628",
+      "status": "Active",
+      "start_date": "2026-03-31",
+      "end_date": "2026-04-30",
+      "base_ar": 7600.0,
+      "base_ap": 0,
+      "base_crew": 4,
+      "monthly": {
+        "2026-03": {
+          "crew": 4,
+          "ar": 253.33,
+          "ap": 0.0,
+          "net_gp": 202.66
+        },
+        "2026-04": {
+          "crew": 4,
+          "ar": 7600.0,
+          "ap": 0.0,
+          "net_gp": 6080.0
+        }
+      },
+      "total_2026": {
+        "ar": 7853.33,
+        "ap": 0.0,
+        "net_gp": 6282.66
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1213884891926150",
+      "name": "Power Design - Savannah, GA - Zeke - 2631",
+      "salesperson": "Zeke",
+      "project_number": "2631",
+      "status": "Active",
+      "start_date": "2026-04-06",
+      "end_date": "2027-03-31",
+      "base_ar": 3200.0,
+      "base_ap": 0,
+      "base_crew": 2,
+      "monthly": {
+        "2026-04": {
+          "crew": 2,
+          "ar": 2666.67,
+          "ap": 0.0,
+          "net_gp": 2133.34
+        },
+        "2026-05": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        },
+        "2026-06": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        },
+        "2026-07": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        },
+        "2026-08": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        },
+        "2026-09": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        },
+        "2026-10": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        },
+        "2026-11": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        },
+        "2026-12": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 0.0,
+          "net_gp": 2560.0
+        }
+      },
+      "total_2026": {
+        "ar": 28266.67,
+        "ap": 0.0,
+        "net_gp": 22613.34
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1213942879454294",
+      "name": "Power Design - Charlotte, NC - Zeke - 2633",
+      "salesperson": "Zeke",
+      "project_number": "2633",
+      "status": "Active",
+      "start_date": "2026-04-08",
+      "end_date": "2026-12-31",
+      "base_ar": 3300.0,
+      "base_ap": 0,
+      "base_crew": 2,
+      "monthly": {
+        "2026-04": {
+          "crew": 2,
+          "ar": 2530.0,
+          "ap": 0.0,
+          "net_gp": 2024.0
+        },
+        "2026-05": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        },
+        "2026-06": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        },
+        "2026-07": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        },
+        "2026-08": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        },
+        "2026-09": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        },
+        "2026-10": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        },
+        "2026-11": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        },
+        "2026-12": {
+          "crew": 2,
+          "ar": 3300.0,
+          "ap": 0.0,
+          "net_gp": 2640.0
+        }
+      },
+      "total_2026": {
+        "ar": 28930.0,
+        "ap": 0.0,
+        "net_gp": 23144.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1214058325010950",
+      "name": "BZI - Merritt Island, FL - Paul - 2634",
+      "salesperson": "Paul",
+      "project_number": "2634",
+      "status": "Active",
+      "start_date": "2026-04-19",
+      "end_date": "2026-07-30",
+      "base_ar": 7800.0,
+      "base_ap": 0,
+      "base_crew": 4,
+      "monthly": {
+        "2026-04": {
+          "crew": 4,
+          "ar": 3120.0,
+          "ap": 0.0,
+          "net_gp": 2496.0
+        },
+        "2026-05": {
+          "crew": 4,
+          "ar": 7800.0,
+          "ap": 0.0,
+          "net_gp": 6240.0
+        },
+        "2026-06": {
+          "crew": 4,
+          "ar": 7800.0,
+          "ap": 0.0,
+          "net_gp": 6240.0
+        },
+        "2026-07": {
+          "crew": 4,
+          "ar": 7800.0,
+          "ap": 0.0,
+          "net_gp": 6240.0
+        }
+      },
+      "total_2026": {
+        "ar": 26520.0,
+        "ap": 0.0,
+        "net_gp": 21216.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": null,
+      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624 - AB",
+      "salesperson": "Matt",
+      "project_number": "2624",
+      "status": "Active",
+      "start_date": "2026-04-13",
+      "end_date": "2026-10-15",
+      "base_ar": 12000.0,
+      "base_ap": 9400.0,
+      "base_crew": 6,
+      "monthly": {
+        "2026-04": {
+          "crew": 6,
+          "ar": 7200.0,
+          "ap": 5640.0,
+          "net_gp": 1248.0
+        },
+        "2026-05": {
+          "crew": 6,
+          "ar": 12000.0,
+          "ap": 9400.0,
+          "net_gp": 2080.0
+        },
+        "2026-06": {
+          "crew": 6,
+          "ar": 12000.0,
+          "ap": 9400.0,
+          "net_gp": 2080.0
+        },
+        "2026-07": {
+          "crew": 6,
+          "ar": 12000.0,
+          "ap": 9400.0,
+          "net_gp": 2080.0
+        },
+        "2026-08": {
+          "crew": 6,
+          "ar": 12000.0,
+          "ap": 9400.0,
+          "net_gp": 2080.0
+        },
+        "2026-09": {
+          "crew": 6,
+          "ar": 12000.0,
+          "ap": 9400.0,
+          "net_gp": 2080.0
+        },
+        "2026-10": {
+          "crew": 6,
+          "ar": 6000.0,
+          "ap": 4700.0,
+          "net_gp": 1040.0
+        }
+      },
+      "total_2026": {
+        "ar": 73200.0,
+        "ap": 57340.0,
+        "net_gp": 12688.0
+      },
+      "source": "master_sheet_fallback"
+    },
+    {
+      "gid": null,
+      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624 - CD",
       "salesperson": "Matt",
       "project_number": "2624",
       "status": "Active",
@@ -3055,518 +4557,10 @@
         "ap": 67547.33,
         "net_gp": 16428.8
       },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213629324301274",
-      "task_gid": "1213629778229671",
-      "name": "Power Design - Tucson, AZ - Zeke - 2615",
-      "salesperson": "Zeke",
-      "project_number": "2615",
-      "status": "Active",
-      "start_date": "2026-04-01",
-      "end_date": "2026-10-31",
-      "base_ar": 4600.0,
-      "base_ap": 3050.0,
-      "base_crew": 4,
-      "monthly": {
-        "2026-04": {
-          "crew": 4,
-          "ar": 4600.0,
-          "ap": 3050.0,
-          "net_gp": 1240.0
-        },
-        "2026-05": {
-          "crew": 4,
-          "ar": 4600.0,
-          "ap": 3050.0,
-          "net_gp": 1240.0
-        },
-        "2026-06": {
-          "crew": 4,
-          "ar": 4600.0,
-          "ap": 3050.0,
-          "net_gp": 1240.0
-        },
-        "2026-07": {
-          "crew": 4,
-          "ar": 4600.0,
-          "ap": 3050.0,
-          "net_gp": 1240.0
-        },
-        "2026-08": {
-          "crew": 4,
-          "ar": 4600.0,
-          "ap": 3050.0,
-          "net_gp": 1240.0
-        },
-        "2026-09": {
-          "crew": 4,
-          "ar": 4600.0,
-          "ap": 3050.0,
-          "net_gp": 1240.0
-        },
-        "2026-10": {
-          "crew": 4,
-          "ar": 4600.0,
-          "ap": 3050.0,
-          "net_gp": 1240.0
-        }
-      },
-      "total_2026": {
-        "ar": 32200.0,
-        "ap": 21350.0,
-        "net_gp": 8680.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213633710870931",
-      "task_gid": "1213635055039389",
-      "name": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-      "salesperson": "Zeke",
-      "project_number": "2625",
-      "status": "Active",
-      "start_date": "2026-03-23",
-      "end_date": "2027-03-31",
-      "base_ar": 16650.0,
-      "base_ap": 11250.0,
-      "base_crew": 18,
-      "monthly": {
-        "2026-03": {
-          "crew": 18,
-          "ar": 4995.0,
-          "ap": 3375.0,
-          "net_gp": 1296.0
-        },
-        "2026-04": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-05": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-06": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-07": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-08": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-09": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-10": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-11": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        },
-        "2026-12": {
-          "crew": 18,
-          "ar": 16650.0,
-          "ap": 11250.0,
-          "net_gp": 4320.0
-        }
-      },
-      "total_2026": {
-        "ar": 154845.0,
-        "ap": 104625.0,
-        "net_gp": 40176.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213692562297147",
-      "task_gid": "1213692848932767",
-      "name": "Graydaze Contracting, Inc- Fairfax, IA - Paul - 2626",
-      "salesperson": "Paul",
-      "project_number": "2626",
-      "status": "Active",
-      "start_date": "2026-03-27",
-      "end_date": "2026-08-01",
-      "base_ar": 4700.0,
-      "base_ap": 2700.0,
-      "base_crew": 3,
-      "monthly": {
-        "2026-03": {
-          "crew": 3,
-          "ar": 783.33,
-          "ap": 450.0,
-          "net_gp": 266.66
-        },
-        "2026-04": {
-          "crew": 3,
-          "ar": 4700.0,
-          "ap": 2700.0,
-          "net_gp": 1600.0
-        },
-        "2026-05": {
-          "crew": 3,
-          "ar": 4700.0,
-          "ap": 2700.0,
-          "net_gp": 1600.0
-        },
-        "2026-06": {
-          "crew": 3,
-          "ar": 4700.0,
-          "ap": 2700.0,
-          "net_gp": 1600.0
-        },
-        "2026-07": {
-          "crew": 3,
-          "ar": 4700.0,
-          "ap": 2700.0,
-          "net_gp": 1600.0
-        },
-        "2026-08": {
-          "crew": 3,
-          "ar": 156.67,
-          "ap": 90.0,
-          "net_gp": 53.34
-        }
-      },
-      "total_2026": {
-        "ar": 19740.0,
-        "ap": 11340.0,
-        "net_gp": 6720.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213807211139673",
-      "task_gid": "1213814094632544",
-      "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
-      "salesperson": "Logan",
-      "project_number": "2630",
-      "status": "Active",
-      "start_date": "2026-04-02",
-      "end_date": "2026-05-01",
-      "base_ar": 11100.0,
-      "base_ap": 7650.0,
-      "base_crew": 4,
-      "monthly": {
-        "2026-04": {
-          "crew": 4,
-          "ar": 10730.0,
-          "ap": 7395.0,
-          "net_gp": 2668.0
-        },
-        "2026-05": {
-          "crew": 4,
-          "ar": 370.0,
-          "ap": 255.0,
-          "net_gp": 92.0
-        }
-      },
-      "total_2026": {
-        "ar": 11100.0,
-        "ap": 7650.0,
-        "net_gp": 2760.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213812028376221",
-      "task_gid": "1213812028617841",
-      "name": "Gutknecht Construction - Evansville, IN - Matt - 2627",
-      "salesperson": "Matt",
-      "project_number": "2627",
-      "status": "Active",
-      "start_date": "2026-03-29",
-      "end_date": "2026-06-19",
-      "base_ar": 7750.0,
-      "base_ap": 5450.0,
-      "base_crew": 5,
-      "monthly": {
-        "2026-03": {
-          "crew": 5,
-          "ar": 775.0,
-          "ap": 545.0,
-          "net_gp": 184.0
-        },
-        "2026-04": {
-          "crew": 5,
-          "ar": 7750.0,
-          "ap": 5450.0,
-          "net_gp": 1840.0
-        },
-        "2026-05": {
-          "crew": 5,
-          "ar": 7750.0,
-          "ap": 5450.0,
-          "net_gp": 1840.0
-        },
-        "2026-06": {
-          "crew": 5,
-          "ar": 4908.33,
-          "ap": 3451.67,
-          "net_gp": 1165.33
-        }
-      },
-      "total_2026": {
-        "ar": 21183.33,
-        "ap": 14896.67,
-        "net_gp": 5029.33
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213864449534720",
-      "task_gid": "1213864051612577",
-      "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
-      "salesperson": "Logan",
-      "project_number": "2628",
-      "status": "Active",
-      "start_date": "2026-03-31",
-      "end_date": "2026-04-30",
-      "base_ar": 7600.0,
-      "base_ap": 4280.0,
-      "base_crew": 4,
-      "monthly": {
-        "2026-03": {
-          "crew": 4,
-          "ar": 253.33,
-          "ap": 142.67,
-          "net_gp": 88.53
-        },
-        "2026-04": {
-          "crew": 4,
-          "ar": 7600.0,
-          "ap": 4280.0,
-          "net_gp": 2656.0
-        }
-      },
-      "total_2026": {
-        "ar": 7853.33,
-        "ap": 4422.67,
-        "net_gp": 2744.53
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213884891926150",
-      "task_gid": "1213887851724185",
-      "name": "Power Design - Savannah, GA - Zeke - 2631",
-      "salesperson": "Zeke",
-      "project_number": "2631",
-      "status": "Active",
-      "start_date": "2026-04-06",
-      "end_date": "2027-03-31",
-      "base_ar": 3200.0,
-      "base_ap": 2400.0,
-      "base_crew": 2,
-      "monthly": {
-        "2026-04": {
-          "crew": 2,
-          "ar": 2666.67,
-          "ap": 2000.0,
-          "net_gp": 533.34
-        },
-        "2026-05": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        },
-        "2026-06": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        },
-        "2026-07": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        },
-        "2026-08": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        },
-        "2026-09": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        },
-        "2026-10": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        },
-        "2026-11": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        },
-        "2026-12": {
-          "crew": 2,
-          "ar": 3200.0,
-          "ap": 2400.0,
-          "net_gp": 640.0
-        }
-      },
-      "total_2026": {
-        "ar": 28266.67,
-        "ap": 21200.0,
-        "net_gp": 5653.34
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1213942879454294",
-      "task_gid": "1213942934219495",
-      "name": "Power Design - Charlotte, NC - Zeke - 2633",
-      "salesperson": "Zeke",
-      "project_number": "2633",
-      "status": "Active",
-      "start_date": "2026-04-08",
-      "end_date": "2026-12-31",
-      "base_ar": 3300.0,
-      "base_ap": 1900.0,
-      "base_crew": 2,
-      "monthly": {
-        "2026-04": {
-          "crew": 2,
-          "ar": 2530.0,
-          "ap": 1456.67,
-          "net_gp": 858.66
-        },
-        "2026-05": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        },
-        "2026-06": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        },
-        "2026-07": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        },
-        "2026-08": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        },
-        "2026-09": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        },
-        "2026-10": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        },
-        "2026-11": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        },
-        "2026-12": {
-          "crew": 2,
-          "ar": 3300.0,
-          "ap": 1900.0,
-          "net_gp": 1120.0
-        }
-      },
-      "total_2026": {
-        "ar": 28930.0,
-        "ap": 16656.67,
-        "net_gp": 9818.66
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1214058325010950",
-      "task_gid": "1214080131156406",
-      "name": "BZI - Merritt Island, FL - Paul - 2634",
-      "salesperson": "Paul",
-      "project_number": "2634",
-      "status": "Active",
-      "start_date": "2026-04-19",
-      "end_date": "2026-07-30",
-      "base_ar": 7800.0,
-      "base_ap": 4450.0,
-      "base_crew": 4,
-      "monthly": {
-        "2026-04": {
-          "crew": 4,
-          "ar": 3120.0,
-          "ap": 1780.0,
-          "net_gp": 1072.0
-        },
-        "2026-05": {
-          "crew": 4,
-          "ar": 7800.0,
-          "ap": 4450.0,
-          "net_gp": 2680.0
-        },
-        "2026-06": {
-          "crew": 4,
-          "ar": 7800.0,
-          "ap": 4450.0,
-          "net_gp": 2680.0
-        },
-        "2026-07": {
-          "crew": 4,
-          "ar": 7800.0,
-          "ap": 4450.0,
-          "net_gp": 2680.0
-        }
-      },
-      "total_2026": {
-        "ar": 26520.0,
-        "ap": 15130.0,
-        "net_gp": 9112.0
-      },
-      "source": "asana_custom_fields"
+      "source": "master_sheet_fallback"
     },
     {
       "gid": null,
-      "task_gid": null,
       "name": "Rising Sun Developing",
       "salesperson": "HHH",
       "project_number": "",
@@ -3689,100 +4683,6 @@
     },
     {
       "gid": null,
-      "task_gid": null,
-      "name": "Gray Construction - Bristol, TN - Paul",
-      "salesperson": "Paul",
-      "project_number": "",
-      "status": "Active",
-      "start_date": "2025-08-01",
-      "end_date": "2026-07-31",
-      "base_ar": 2500.0,
-      "base_ap": 1950.0,
-      "base_crew": 1,
-      "monthly": {
-        "2025-08": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2025-09": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2025-10": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2025-11": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2025-12": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2026-01": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2026-02": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2026-03": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2026-04": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2026-05": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2026-06": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        },
-        "2026-07": {
-          "crew": 1,
-          "ar": 2500.0,
-          "ap": 1950.0,
-          "net_gp": 440.0
-        }
-      },
-      "total_2026": {
-        "ar": 17500.0,
-        "ap": 13650.0,
-        "net_gp": 3080.0
-      },
-      "source": "master_sheet_fallback"
-    },
-    {
-      "gid": null,
-      "task_gid": null,
       "name": "Gray Construction - Bristol, TN #2 - Paul",
       "salesperson": "Paul",
       "project_number": "",
@@ -3875,7 +4775,6 @@
     },
     {
       "gid": null,
-      "task_gid": null,
       "name": "Bowman Steel - Kings Mtn, NC - Paul (1 house)",
       "salesperson": "Paul",
       "project_number": "",
@@ -3929,302 +4828,453 @@
         "net_gp": 2941.2
       },
       "source": "master_sheet_fallback"
+    },
+    {
+      "gid": null,
+      "name": "Scaffold Resource Phase 2 - Baton Rouge, LA - Zeke - 2594",
+      "salesperson": "Zeke",
+      "project_number": "2594",
+      "status": "Active",
+      "start_date": "2025-12-28",
+      "end_date": "2026-05-30",
+      "base_ar": 10000.0,
+      "base_ap": 6910.0,
+      "base_crew": 6,
+      "monthly": {
+        "2025-12": {
+          "crew": 6,
+          "ar": 1333.33,
+          "ap": 921.33,
+          "net_gp": 329.6
+        },
+        "2026-01": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "net_gp": 2472.0
+        },
+        "2026-02": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "net_gp": 2472.0
+        },
+        "2026-03": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "net_gp": 2472.0
+        },
+        "2026-04": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "net_gp": 2472.0
+        },
+        "2026-05": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "net_gp": 2472.0
+        }
+      },
+      "total_2026": {
+        "ar": 50000.0,
+        "ap": 34550.0,
+        "net_gp": 12360.0
+      },
+      "source": "master_sheet_fallback"
+    },
+    {
+      "gid": null,
+      "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
+      "salesperson": "Matt",
+      "project_number": "2622",
+      "status": "Active",
+      "start_date": "2026-03-01",
+      "end_date": "2026-05-31",
+      "base_ar": 10500.0,
+      "base_ap": 6825.0,
+      "base_crew": 6,
+      "monthly": {
+        "2026-03": {
+          "crew": 6,
+          "ar": 10500.0,
+          "ap": 6825.0,
+          "net_gp": 2940.0
+        },
+        "2026-04": {
+          "crew": 6,
+          "ar": 10500.0,
+          "ap": 6825.0,
+          "net_gp": 2940.0
+        },
+        "2026-05": {
+          "crew": 6,
+          "ar": 10500.0,
+          "ap": 6825.0,
+          "net_gp": 2940.0
+        }
+      },
+      "total_2026": {
+        "ar": 31500.0,
+        "ap": 20475.0,
+        "net_gp": 8820.0
+      },
+      "source": "master_sheet_fallback"
     }
   ],
   "monthly_totals": {
     "2025-08": {
-      "crew": 184,
-      "ar": 199150.0,
-      "ap": 120496.76,
-      "net_gp": 62922.59,
-      "gp_pct": 31.6
+      "crew": 191,
+      "ar": 219035.66,
+      "ap": 91332.5,
+      "net_gp": 102162.53,
+      "gp_pct": 46.64
     },
     "2025-09": {
-      "crew": 214,
-      "ar": 223942.82,
-      "ap": 140233.26,
-      "net_gp": 66967.65,
-      "gp_pct": 29.9
+      "crew": 197,
+      "ar": 239795.15,
+      "ap": 114567.74,
+      "net_gp": 100181.93,
+      "gp_pct": 41.78
     },
     "2025-10": {
-      "crew": 216,
-      "ar": 243608.33,
-      "ap": 154433.43,
-      "net_gp": 71339.92,
-      "gp_pct": 29.28
+      "crew": 199,
+      "ar": 246055.99,
+      "ap": 114429.72,
+      "net_gp": 105301.02,
+      "gp_pct": 42.8
     },
     "2025-11": {
-      "crew": 217,
-      "ar": 247340.83,
-      "ap": 157004.26,
-      "net_gp": 72269.26,
-      "gp_pct": 29.22
+      "crew": 200,
+      "ar": 233852.33,
+      "ap": 103700.0,
+      "net_gp": 104121.86,
+      "gp_pct": 44.52
     },
     "2025-12": {
-      "crew": 228,
-      "ar": 255605.33,
-      "ap": 162738.09,
-      "net_gp": 74293.79,
-      "gp_pct": 29.07
+      "crew": 211,
+      "ar": 234829.83,
+      "ap": 103748.83,
+      "net_gp": 104864.8,
+      "gp_pct": 44.66
     },
     "2026-01": {
-      "crew": 257,
-      "ar": 301290.0,
-      "ap": 196780.1,
-      "net_gp": 83607.92,
-      "gp_pct": 27.75
+      "crew": 229,
+      "ar": 281913.33,
+      "ap": 116380.83,
+      "net_gp": 132426.0,
+      "gp_pct": 46.97
     },
     "2026-02": {
-      "crew": 285,
-      "ar": 325407.51,
-      "ap": 212987.92,
-      "net_gp": 89935.67,
-      "gp_pct": 27.64
+      "crew": 257,
+      "ar": 312840.85,
+      "ap": 118033.33,
+      "net_gp": 155846.02,
+      "gp_pct": 49.82
     },
     "2026-03": {
-      "crew": 329,
-      "ar": 385126.65,
-      "ap": 252437.76,
-      "net_gp": 106151.11,
-      "gp_pct": 27.56
+      "crew": 301,
+      "ar": 374956.65,
+      "ap": 122495.0,
+      "net_gp": 201969.32,
+      "gp_pct": 53.86
     },
     "2026-04": {
-      "crew": 373,
-      "ar": 474525.67,
-      "ap": 308840.42,
-      "net_gp": 132548.2,
-      "gp_pct": 27.93
+      "crew": 354,
+      "ar": 484289.01,
+      "ap": 141837.0,
+      "net_gp": 273961.61,
+      "gp_pct": 56.57
     },
     "2026-05": {
-      "crew": 331,
-      "ar": 438411.67,
-      "ap": 281653.26,
-      "net_gp": 125406.73,
-      "gp_pct": 28.6
+      "crew": 292,
+      "ar": 420085.34,
+      "ap": 139055.67,
+      "net_gp": 224823.74,
+      "gp_pct": 53.52
     },
     "2026-06": {
-      "crew": 297,
-      "ar": 384099.0,
-      "ap": 246969.93,
-      "net_gp": 109703.26,
-      "gp_pct": 28.56
+      "crew": 270,
+      "ar": 365975.5,
+      "ap": 113904.83,
+      "net_gp": 201656.54,
+      "gp_pct": 55.1
     },
     "2026-07": {
-      "crew": 272,
-      "ar": 351165.0,
-      "ap": 224745.76,
-      "net_gp": 101135.39,
-      "gp_pct": 28.8
+      "crew": 248,
+      "ar": 339855.0,
+      "ap": 110245.0,
+      "net_gp": 183688.0,
+      "gp_pct": 54.05
     },
     "2026-08": {
-      "crew": 254,
-      "ar": 314644.17,
-      "ap": 196980.76,
-      "net_gp": 94130.73,
-      "gp_pct": 29.92
+      "crew": 246,
+      "ar": 320734.17,
+      "ap": 106545.0,
+      "net_gp": 171351.34,
+      "gp_pct": 53.42
     },
     "2026-09": {
-      "crew": 247,
-      "ar": 294743.83,
-      "ap": 183322.75,
-      "net_gp": 89136.86,
-      "gp_pct": 30.24
+      "crew": 236,
+      "ar": 291233.83,
+      "ap": 98940.33,
+      "net_gp": 153834.8,
+      "gp_pct": 52.82
     },
     "2026-10": {
-      "crew": 229,
-      "ar": 264191.67,
-      "ap": 164525.76,
-      "net_gp": 79732.73,
-      "gp_pct": 30.18
+      "crew": 218,
+      "ar": 254681.67,
+      "ap": 88425.0,
+      "net_gp": 133005.34,
+      "gp_pct": 52.22
     },
     "2026-11": {
-      "crew": 192,
-      "ar": 217950.0,
-      "ap": 140625.76,
-      "net_gp": 61859.39,
-      "gp_pct": 28.38
+      "crew": 195,
+      "ar": 230540.0,
+      "ap": 83725.0,
+      "net_gp": 117452.0,
+      "gp_pct": 50.95
     },
     "2026-12": {
-      "crew": 187,
-      "ar": 206193.0,
-      "ap": 132145.76,
-      "net_gp": 59237.79,
-      "gp_pct": 28.73
+      "crew": 190,
+      "ar": 218783.0,
+      "ap": 82450.0,
+      "net_gp": 109066.4,
+      "gp_pct": 49.85
     }
   },
   "salesperson_summary": {
     "Paul": {
       "2025-08": {
-        "ar": 41550.0,
-        "ap": 30630.760000000002,
-        "commission": 2183.85
+        "ar": 35635.659999999996,
+        "ap": 22832.5,
+        "commission": 2560.63
       },
       "2025-09": {
-        "ar": 48446.16,
-        "ap": 34983.93,
-        "commission": 2692.45
+        "ar": 57031.16,
+        "ap": 37689.67,
+        "commission": 3868.2999999999997
       },
       "2025-10": {
-        "ar": 65508.33,
-        "ap": 46667.43,
-        "commission": 3768.18
+        "ar": 59195.990000000005,
+        "ap": 37741.93,
+        "commission": 4290.8099999999995
       },
       "2025-11": {
-        "ar": 69240.83,
-        "ap": 49238.26,
-        "commission": 4000.52
+        "ar": 53852.33,
+        "ap": 31675.0,
+        "commission": 4435.47
       },
       "2025-12": {
-        "ar": 76172.0,
-        "ap": 54050.76,
-        "commission": 4424.25
+        "ar": 63956.5,
+        "ap": 33552.5,
+        "commission": 6080.799999999999
       },
       "2026-01": {
-        "ar": 79605.0,
-        "ap": 56400.76,
-        "commission": 4640.85
+        "ar": 65305.0,
+        "ap": 33635.0,
+        "commission": 6334.0
       },
       "2026-02": {
-        "ar": 81368.34,
-        "ap": 57543.26,
-        "commission": 4765.02
+        "ar": 71861.68,
+        "ap": 32998.33,
+        "commission": 7772.66
       },
       "2026-03": {
-        "ar": 98416.66,
-        "ap": 68484.09,
-        "commission": 5986.52
+        "ar": 91306.66,
+        "ap": 30635.0,
+        "commission": 12134.34
       },
       "2026-04": {
-        "ar": 110155.67,
-        "ap": 75139.09,
-        "commission": 7003.320000000001
+        "ar": 103045.67,
+        "ap": 36285.0,
+        "commission": 13352.13
       },
       "2026-05": {
-        "ar": 163700.0,
-        "ap": 102813.26000000001,
-        "commission": 12177.35
+        "ar": 126733.67,
+        "ap": 35100.67,
+        "commission": 18326.6
       },
       "2026-06": {
-        "ar": 149105.66999999998,
-        "ap": 93238.26000000001,
-        "commission": 11173.48
+        "ar": 120202.17,
+        "ap": 24704.83,
+        "commission": 19099.46
       },
       "2026-07": {
-        "ar": 125640.0,
-        "ap": 76885.76000000001,
-        "commission": 9750.85
+        "ar": 104430.0,
+        "ap": 21725.0,
+        "commission": 16541.0
       },
       "2026-08": {
-        "ar": 113746.67,
-        "ap": 69325.76000000001,
-        "commission": 8884.18
+        "ar": 95036.67,
+        "ap": 18025.0,
+        "commission": 15402.33
       },
       "2026-09": {
-        "ar": 105360.5,
-        "ap": 64217.420000000006,
-        "commission": 8228.619999999999
+        "ar": 86650.5,
+        "ap": 18025.0,
+        "commission": 13725.1
       },
       "2026-10": {
-        "ar": 93791.67,
-        "ap": 57485.76,
-        "commission": 7261.18
+        "ar": 75081.67,
+        "ap": 18025.0,
+        "commission": 11411.33
       },
       "2026-11": {
-        "ar": 52150.0,
-        "ap": 36635.76,
-        "commission": 3102.85
+        "ar": 61540.0,
+        "ap": 18025.0,
+        "commission": 8703.0
       },
       "2026-12": {
-        "ar": 42768.0,
-        "ap": 30030.760000000002,
-        "commission": 2547.45
+        "ar": 52158.0,
+        "ap": 16750.0,
+        "commission": 7081.6
       }
     },
     "Zeke": {
       "2025-08": {
-        "ar": 42350.0,
-        "ap": 25491.0,
-        "commission": 3371.8
+        "ar": 58150.0,
+        "ap": 700.0,
+        "commission": 11490.0
       },
       "2025-09": {
-        "ar": 42350.0,
-        "ap": 25491.0,
-        "commission": 3371.8
+        "ar": 62334.0,
+        "ap": 8340.57,
+        "commission": 10798.689999999999
       },
       "2025-10": {
-        "ar": 42350.0,
-        "ap": 25491.0,
-        "commission": 3371.8
+        "ar": 62610.0,
+        "ap": 4662.79,
+        "commission": 11589.44
       },
       "2025-11": {
-        "ar": 42350.0,
-        "ap": 25491.0,
-        "commission": 3371.8
+        "ar": 55750.0,
+        "ap": 0.0,
+        "commission": 11150.0
       },
       "2025-12": {
-        "ar": 43683.33,
-        "ap": 26412.33,
-        "commission": 3454.2000000000003
+        "ar": 50223.33,
+        "ap": 921.33,
+        "commission": 9860.4
       },
       "2026-01": {
-        "ar": 84460.0,
-        "ap": 57287.67,
-        "commission": 5434.47
+        "ar": 94483.33,
+        "ap": 13470.83,
+        "commission": 16202.5
       },
       "2026-02": {
-        "ar": 93550.0,
-        "ap": 64763.0,
-        "commission": 5757.400000000001
+        "ar": 105590.0,
+        "ap": 17635.0,
+        "commission": 17591.0
       },
       "2026-03": {
-        "ar": 107345.0,
-        "ap": 75816.0,
-        "commission": 6305.8
+        "ar": 119385.0,
+        "ap": 17635.0,
+        "commission": 20350.0
       },
       "2026-04": {
-        "ar": 147036.67,
-        "ap": 100077.67,
-        "commission": 9391.8
+        "ar": 159076.67,
+        "ap": 17635.0,
+        "commission": 28288.33
       },
       "2026-05": {
-        "ar": 91550.0,
-        "ap": 65175.0,
-        "commission": 5275.0
+        "ar": 98090.0,
+        "ap": 6910.0,
+        "commission": 18236.0
       },
       "2026-06": {
         "ar": 74710.0,
-        "ap": 54635.0,
-        "commission": 4015.0
+        "ap": 0.0,
+        "commission": 14942.0
       },
       "2026-07": {
         "ar": 70150.0,
-        "ap": 52215.0,
-        "commission": 3587.0
+        "ap": 0.0,
+        "commission": 14030.0
       },
       "2026-08": {
-        "ar": 66550.0,
-        "ap": 48915.0,
-        "commission": 3527.0
+        "ar": 70150.0,
+        "ap": 0.0,
+        "commission": 14030.0
       },
       "2026-09": {
         "ar": 66550.0,
-        "ap": 48915.0,
-        "commission": 3527.0
+        "ap": 0.0,
+        "commission": 13310.0
       },
       "2026-10": {
         "ar": 55150.0,
-        "ap": 42665.0,
-        "commission": 2497.0
+        "ap": 0.0,
+        "commission": 11030.0
       },
       "2026-11": {
         "ar": 50550.0,
-        "ap": 39615.0,
-        "commission": 2187.0
+        "ap": 0.0,
+        "commission": 10110.0
       },
       "2026-12": {
         "ar": 50550.0,
-        "ap": 39615.0,
-        "commission": 2187.0
+        "ap": 0.0,
+        "commission": 10110.0
+      }
+    },
+    "Matt": {
+      "2025-08": {
+        "ar": 10000.0,
+        "ap": 3425.0,
+        "commission": 1315.0
+      },
+      "2025-09": {
+        "ar": 333.33,
+        "ap": 114.17,
+        "commission": 43.83
+      },
+      "2026-04": {
+        "ar": 51675.0,
+        "ap": 20517.0,
+        "commission": 6231.6
+      },
+      "2026-05": {
+        "ar": 65075.0,
+        "ap": 29645.0,
+        "commission": 7086.0
+      },
+      "2026-06": {
+        "ar": 51733.33,
+        "ap": 22820.0,
+        "commission": 5782.67
+      },
+      "2026-07": {
+        "ar": 46825.0,
+        "ap": 22820.0,
+        "commission": 4801.0
+      },
+      "2026-08": {
+        "ar": 37097.5,
+        "ap": 22820.0,
+        "commission": 2855.5
+      },
+      "2026-02": {
+        "ar": 3727.5,
+        "ap": 0.0,
+        "commission": 745.5
+      },
+      "2026-03": {
+        "ar": 16600.0,
+        "ap": 6825.0,
+        "commission": 1955.0
+      },
+      "2026-09": {
+        "ar": 19583.33,
+        "ap": 15215.33,
+        "commission": 873.6
+      },
+      "2026-10": {
+        "ar": 6000.0,
+        "ap": 4700.0,
+        "commission": 260.0
       }
     },
     "Logan": {
@@ -4234,163 +5284,96 @@
         "commission": 100.0
       },
       "2025-09": {
-        "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ar": 3768.33,
+        "ap": 3008.33,
+        "commission": 152.0
       },
       "2025-10": {
-        "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ar": 4575.0,
+        "ap": 3575.0,
+        "commission": 200.0
       },
       "2025-11": {
-        "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ar": 4575.0,
+        "ap": 3575.0,
+        "commission": 200.0
       },
       "2025-12": {
-        "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ar": 4575.0,
+        "ap": 3575.0,
+        "commission": 200.0
       },
       "2026-01": {
-        "ar": 3850.0,
-        "ap": 2691.67,
-        "commission": 231.67
+        "ar": 6050.0,
+        "ap": 3575.0,
+        "commission": 495.0
       },
       "2026-02": {
-        "ar": 13386.67,
-        "ap": 8076.66,
-        "commission": 1062.0
+        "ar": 15586.67,
+        "ap": 1700.0,
+        "commission": 2777.33
       },
       "2026-03": {
-        "ar": 29389.990000000005,
-        "ap": 17217.67,
-        "commission": 2434.46
+        "ar": 31589.990000000005,
+        "ap": 1700.0,
+        "commission": 5978.01
       },
       "2026-04": {
-        "ar": 50950.0,
-        "ap": 30813.33,
-        "commission": 4027.34
+        "ar": 54416.67,
+        "ap": 1700.0,
+        "commission": 10543.33
       },
       "2026-05": {
-        "ar": 11911.67,
-        "ap": 7620.0,
-        "commission": 858.3299999999999
+        "ar": 14111.67,
+        "ap": 1700.0,
+        "commission": 2482.33
       },
       "2026-06": {
-        "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ar": 3255.0,
+        "ap": 680.0,
+        "commission": 515.0
       },
       "2026-07": {
         "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ap": 0.0,
+        "commission": 475.0
       },
       "2026-08": {
         "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ap": 0.0,
+        "commission": 475.0
       },
       "2026-09": {
         "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ap": 0.0,
+        "commission": 475.0
       },
       "2026-10": {
         "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
+        "ap": 0.0,
+        "commission": 475.0
       },
       "2026-11": {
         "ar": 2375.0,
-        "ap": 1875.0,
-        "commission": 100.0
-      }
-    },
-    "Matt": {
-      "2025-09": {
-        "ar": 16723.33,
-        "ap": 14210.0,
-        "commission": 502.67
-      },
-      "2025-10": {
-        "ar": 17300.0,
-        "ap": 14700.0,
-        "commission": 520.0
-      },
-      "2025-11": {
-        "ar": 17300.0,
-        "ap": 14700.0,
-        "commission": 520.0
-      },
-      "2025-12": {
-        "ar": 17300.0,
-        "ap": 14700.0,
-        "commission": 520.0
-      },
-      "2026-01": {
-        "ar": 17300.0,
-        "ap": 14700.0,
-        "commission": 520.0
-      },
-      "2026-02": {
-        "ar": 21027.5,
-        "ap": 16905.0,
-        "commission": 824.5
-      },
-      "2026-03": {
-        "ar": 33900.0,
-        "ap": 25220.0,
-        "commission": 1736.0
-      },
-      "2026-04": {
-        "ar": 51375.0,
-        "ap": 38177.0,
-        "commission": 2639.6
-      },
-      "2026-05": {
-        "ar": 58375.0,
-        "ap": 43545.0,
-        "commission": 2966.0
-      },
-      "2026-06": {
-        "ar": 45033.33,
-        "ap": 34721.67,
-        "commission": 2062.33
-      },
-      "2026-07": {
-        "ar": 40125.0,
-        "ap": 31270.0,
-        "commission": 1771.0
-      },
-      "2026-08": {
-        "ar": 19097.5,
-        "ap": 14365.0,
-        "commission": 946.5
-      },
-      "2026-09": {
-        "ar": 7583.33,
-        "ap": 5815.33,
-        "commission": 353.6
+        "ap": 0.0,
+        "commission": 475.0
       }
     },
     "David": {
       "2025-09": {
-        "ar": 1173.33,
-        "ap": 1173.33,
-        "commission": 0.0
+        "ar": 3453.33,
+        "ap": 2915.0,
+        "commission": 107.67
       },
       "2025-10": {
-        "ar": 3200.0,
-        "ap": 3200.0,
-        "commission": 0.0
+        "ar": 6800.0,
+        "ap": 5950.0,
+        "commission": 170.0
       },
       "2025-11": {
-        "ar": 3200.0,
-        "ap": 3200.0,
-        "commission": 0.0
+        "ar": 6800.0,
+        "ap": 5950.0,
+        "commission": 170.0
       },
       "2025-12": {
         "ar": 3200.0,
@@ -4413,8 +5396,48 @@
         "commission": 0.0
       },
       "2026-04": {
-        "ar": 2133.33,
-        "ap": 2133.33,
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-05": {
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-06": {
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-07": {
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-08": {
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-09": {
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-10": {
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-11": {
+        "ar": 3200.0,
+        "ap": 3200.0,
+        "commission": 0.0
+      },
+      "2026-12": {
+        "ar": 3200.0,
+        "ap": 3200.0,
         "commission": 0.0
       }
     },
