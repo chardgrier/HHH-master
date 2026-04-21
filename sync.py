@@ -126,8 +126,14 @@ def classify(name):
     patterns = [
         (r"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?construction\s+addendum(?:\s*#?\s*\d+)?\s*$", "construction_addendum"),
         (r"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?homeowner\s+addendum(?:\s*#?\s*\d+)?\s*$",    "homeowner_addendum"),
+        # Also "Homeowner A Addendum" / "Homeowner A Addendum #1"
+        (r"^homeowner\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?\s*$", "homeowner_addendum"),
+        (r"^construction\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?\s*$", "construction_addendum"),
         (r"^(?:[a-z]\s*:\s*)?construction\s+lease(?:\s+phase\s+\d+)?\s*$",                 "construction_lease"),
         (r"^(?:[a-z]\s*:\s*)?homeowner\s+lease(?:\s+phase\s+\d+|\s*[-–]\s*[a-z])?\s*$",    "homeowner_lease"),
+        # Also "Homeowner A Lease" / "Construction A Lease" (letter in the middle)
+        (r"^homeowner\s+[a-z]\s+lease\s*$",    "homeowner_lease"),
+        (r"^construction\s+[a-z]\s+lease\s*$", "construction_lease"),
     ]
     for pat, kind in patterns:
         if re.match(pat, n):
@@ -137,6 +143,9 @@ def classify(name):
 def prefix_of(name):
     """Extract the letter/phase grouping key from a task name."""
     m = re.match(r"^([A-Z])\s*:", name)
+    if m: return m.group(1).upper()
+    # "Homeowner A Lease" / "Construction A Lease" / "Homeowner A Addendum"
+    m = re.match(r"^(?:homeowner|construction)\s+([A-Z])\s+(?:lease|addendum)", name, re.I)
     if m: return m.group(1).upper()
     m = re.search(r"phase\s+(\d+)", name, re.I)
     if m: return f"Phase{m.group(1)}"
@@ -163,10 +172,16 @@ def compute_status(start, end, today):
 def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
     """
     Group tasks by prefix (letter or _main) and return a list of houses:
-      [{"prefix": "A", "ar": segment or None, "ap": segment or None, "crew": int}]
+      [{"prefix": "A", "ar_segs": [seg,...], "ap_segs": [seg,...], "crew": int}]
 
-    Each segment = {start,end,amount}. Addendums extend end + override rate.
+    Each segment = {start,end,amount}. Addendums with the same rate as the
+    lease extend its end date (single segment). Addendums with a different rate
+    create a new segment (earlier segment is trimmed to just before the
+    addendum's start). This supports time-varying rates like Benco 2551
+    ($10,900 → $6,900) and ARD Phase 2/3/4.
     """
+    from datetime import timedelta
+
     groups = {}  # prefix → {type → {"lease":task|None, "addendums":[tasks...]}}
 
     for t in tasks:
@@ -182,32 +197,61 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
         elif g["lease"] is None:
             g["lease"] = t
 
-    def build_segment(lease, addendums, amt_gid):
-        base = lease or (addendums[0] if addendums else None)
-        if not base: return None
-        amount = cf_value(base, amt_gid)
-        start  = cf_value(base, start_gid)
-        end    = cf_value(base, end_gid)
-        for add in addendums:
-            ae = cf_value(add, end_gid)
-            aa = cf_value(add, amt_gid)
-            if ae and (end is None or ae > end): end = ae
-            if aa and aa > 0: amount = aa  # latest addendum wins
-        if amount is None or not start or not end: return None
-        try:
-            return {"start": date.fromisoformat(start),
-                    "end":   date.fromisoformat(end),
-                    "amount": float(amount)}
-        except ValueError:
-            return None
+    def build_segments(lease, addendums, amt_gid):
+        """Returns a list of non-overlapping segments."""
+        segments = []
+        # Start with the lease
+        if lease:
+            amt = cf_value(lease, amt_gid)
+            s   = cf_value(lease, start_gid)
+            e   = cf_value(lease, end_gid)
+            if amt and s and e:
+                try:
+                    segments.append({"start": date.fromisoformat(s),
+                                     "end":   date.fromisoformat(e),
+                                     "amount": float(amt)})
+                except ValueError: pass
+
+        # Sort addendums by start date and apply each in order
+        ads = []
+        for a in addendums:
+            s = cf_value(a, start_gid)
+            if s:
+                try: ads.append((a, date.fromisoformat(s)))
+                except ValueError: pass
+        ads.sort(key=lambda x: x[1])
+
+        for add, a_start in ads:
+            a_amt_raw = cf_value(add, amt_gid)
+            a_end_s   = cf_value(add, end_gid)
+            if not a_end_s: continue
+            try:    a_end = date.fromisoformat(a_end_s)
+            except ValueError: continue
+
+            if not a_amt_raw or a_amt_raw == 0:
+                # Date-only extension: extend latest segment's end
+                if segments:
+                    segments[-1]["end"] = max(segments[-1]["end"], a_end)
+                continue
+
+            a_amt = float(a_amt_raw)
+            # Same rate as latest? Just extend end date.
+            if segments and abs(segments[-1]["amount"] - a_amt) < 0.01:
+                segments[-1]["end"] = max(segments[-1]["end"], a_end)
+            else:
+                # Different rate: trim previous if it overlaps, then append new segment
+                if segments and segments[-1]["end"] >= a_start:
+                    segments[-1]["end"] = a_start - timedelta(days=1)
+                segments.append({"start": a_start, "end": a_end, "amount": a_amt})
+
+        return segments
 
     # Handle inconsistent prefix naming: if a project has exactly ONE construction
     # lease (any prefix) and ONE homeowner lease (any prefix), they belong to the
-    # same house even if prefixes differ (e.g. "Construction Lease" + "A: Homeowner Lease").
+    # same house even if prefixes differ.
     all_c_prefixes = [pre for pre, types in groups.items() if types.get("construction", {}).get("lease")]
     all_h_prefixes = [pre for pre, types in groups.items() if types.get("homeowner",    {}).get("lease")]
     if len(all_c_prefixes) == 1 and len(all_h_prefixes) == 1 and all_c_prefixes[0] != all_h_prefixes[0]:
-        # Merge the lone homeowner into the construction's prefix
         c_pre = all_c_prefixes[0]; h_pre = all_h_prefixes[0]
         groups[c_pre]["homeowner"] = groups[h_pre].pop("homeowner")
         if not groups[h_pre]:
@@ -217,30 +261,34 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
     for pre, types in groups.items():
         cs = types.get("construction", {"lease": None, "addendums": []})
         hs = types.get("homeowner",    {"lease": None, "addendums": []})
-        ar_seg = build_segment(cs["lease"], cs["addendums"], ar_gid)
-        ap_seg = build_segment(hs["lease"], hs["addendums"], ap_gid)
+        ar_segs = build_segments(cs["lease"], cs["addendums"], ar_gid)
+        ap_segs = build_segments(hs["lease"], hs["addendums"], ap_gid)
 
-        # Fallback: if homeowner segment failed due to missing dates but has
-        # an A/P value, use the construction lease's dates for it.
-        if ap_seg is None and ar_seg is not None and hs["lease"]:
+        # Fallback 1: if homeowner has no A/P but a lease exists with dates,
+        # try to pull A/P from the homeowner lease/addendum tasks themselves.
+        if not ap_segs and ar_segs and hs["lease"]:
             h_amt = cf_value(hs["lease"], ap_gid)
             if h_amt and h_amt > 0:
-                ap_seg = {"start": ar_seg["start"], "end": ar_seg["end"],
-                          "amount": float(h_amt)}
-            else:
-                for add in hs["addendums"]:
-                    aa = cf_value(add, ap_gid)
-                    if aa and aa > 0:
-                        ap_seg = {"start": ar_seg["start"], "end": ar_seg["end"],
-                                  "amount": float(aa)}
-                        break
+                ap_segs = [{"start": ar_segs[0]["start"],
+                            "end":   ar_segs[-1]["end"],
+                            "amount": float(h_amt)}]
+
+        # Fallback 2: if no homeowner lease in this group AND the construction
+        # lease has an A/P value, use it (covers ARD Phase N cases where A/P is
+        # on the Construction Lease aggregate).
+        if not ap_segs and ar_segs and cs["lease"]:
+            c_ap = cf_value(cs["lease"], ap_gid)
+            if c_ap and c_ap > 0:
+                ap_segs = [{"start": ar_segs[0]["start"],
+                            "end":   ar_segs[-1]["end"],
+                            "amount": float(c_ap)}]
 
         crew = 0
         if cs["lease"]:
             c = cf_value(cs["lease"], crew_gid)
             if c: crew = int(c)
-        if ar_seg or ap_seg:
-            houses.append({"prefix": pre, "ar": ar_seg, "ap": ap_seg, "crew": crew})
+        if ar_segs or ap_segs:
+            houses.append({"prefix": pre, "ar_segs": ar_segs, "ap_segs": ap_segs, "crew": crew})
     return houses
 
 def monthly_from_segments(segs, yr, mo):
@@ -380,31 +428,23 @@ def sync():
             for s in SALESPEOPLE:
                 if re.search(rf"\b{s}\b", pname, re.I): sp = s; break
 
-        # Group houses by their construction end-date. Houses that share an end
-        # date are aggregated into one row; different end dates → separate rows.
-        # (This matches the master sheet structure: Miller Saint Peters = 1 row,
-        #  Miller Lee's Summit = 3 rows, ARD Eastaboga = 4 phase rows.)
+        # Group houses by their LATEST construction end-date.
+        def house_end(h):
+            ends = [s["end"] for s in h["ar_segs"]] + [s["end"] for s in h["ap_segs"]]
+            return max(ends).isoformat() if ends else ""
         by_end = {}
         for h in houses:
-            ar_end = h["ar"]["end"] if h["ar"] else None
-            ap_end = h["ap"]["end"] if h["ap"] else None
-            # Cluster key: construction end date (preferred) or homeowner end date
-            key = ar_end.isoformat() if ar_end else (ap_end.isoformat() if ap_end else "")
-            by_end.setdefault(key, []).append(h)
+            by_end.setdefault(house_end(h), []).append(h)
 
-        # Emit rows
         if len(by_end) == 1:
-            # All houses share an end date → one aggregate row for the project
             hs = list(by_end.values())[0]
-            ar_segs = [h["ar"] for h in hs if h["ar"]]
-            ap_segs = [h["ap"] for h in hs if h["ap"]]
+            ar_segs = [s for h in hs for s in h["ar_segs"]]
+            ap_segs = [s for h in hs for s in h["ap_segs"]]
             crew_tot = sum(h["crew"] for h in hs)
             row = make_row(pname, sp, ar_segs, ap_segs, crew_tot,
                            source="asana_custom_fields", gid=pgid)
             if row: rows.append(row)
         else:
-            # Multiple end-date groups → one row per group
-            # Name each row by its distinguishing prefix(es) when possible
             for end_key, hs in by_end.items():
                 prefixes = sorted({h["prefix"] for h in hs if h["prefix"] and h["prefix"] != "_main"})
                 if not prefixes:
@@ -415,8 +455,8 @@ def sync():
                     suffix = f" [House {prefixes[0]}]"
                 else:
                     suffix = f" [Houses {','.join(prefixes)}]"
-                ar_segs = [h["ar"] for h in hs if h["ar"]]
-                ap_segs = [h["ap"] for h in hs if h["ap"]]
+                ar_segs = [s for h in hs for s in h["ar_segs"]]
+                ap_segs = [s for h in hs for s in h["ap_segs"]]
                 crew_tot = sum(h["crew"] for h in hs)
                 row = make_row(pname + suffix, sp, ar_segs, ap_segs, crew_tot,
                                source="asana_custom_fields", gid=pgid)
