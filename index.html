@@ -93,9 +93,11 @@
   tfoot tr td { background: var(--dark); color: #fff; font-weight: 700; font-size: 12px; position: sticky; bottom: 0; z-index: 4; border-top: 2px solid var(--gold); }
   tfoot tr td.c-name, tfoot tr td.c-sp, tfoot tr td.c-stat, tfoot tr td.c-start, tfoot tr td.c-end { background: var(--dark); z-index: 6; }
 
-  /* 2026 total columns */
-  .total-col { background: #e6fffa !important; font-weight: 700; }
+  /* Lifetime total columns */
+  .total-col { background: #e6fffa !important; color: #2d3748 !important; font-weight: 700; }
   th.total-col { background: #276749 !important; color: #fff !important; }
+  /* In the footer, total cols keep the teal background but use dark text so numbers are visible */
+  tfoot tr td.total-col { background: #276749 !important; color: #fff !important; }
 
   /* Loading/empty states */
   #loading { padding: 60px; text-align: center; color: var(--muted); font-size: 16px; }

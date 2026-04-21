@@ -31,6 +31,26 @@ COMMISSION_RATE = 0.20
 MASTER_FILE     = "data/master_data.json"
 CF_GIDS_FILE    = "data/custom_field_gids.json"
 
+# ─── Per-project commission / A/P rules ──────────────────────────────────────
+# Special rules by project-name pattern:
+#   • Rising Sun / HousHak     → no commission
+#   • Lexington, KY projects   → A/P = 65% of A/R, commission $100/crew/month
+#   • Everything else          → 20% of gross profit
+def project_rules(name):
+    n = (name or "").lower()
+    if "rising sun" in n or "rsd" in n or "houshak" in n:
+        return {"model": "none", "rate": 0, "ap_pct": None}
+    if "lexington" in n and "ky" in n:
+        return {"model": "per_crew", "rate": 100, "ap_pct": 0.65}
+    return {"model": "percent", "rate": COMMISSION_RATE, "ap_pct": None}
+
+def monthly_commission(rules, ar, ap, crew):
+    if rules["model"] == "none":
+        return 0.0
+    if rules["model"] == "per_crew":
+        return round(rules["rate"] * crew, 2)
+    return round((ar - ap) * rules["rate"], 2)
+
 SALESPEOPLE = ["Paul","Zeke","Matt","Logan","David","Charlie","Peyton"]
 HHH_PROJECT_RE = re.compile(rf"\b({'|'.join(SALESPEOPLE)})\b.*?\d{{4}}", re.IGNORECASE)
 
@@ -236,11 +256,12 @@ def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
     if not ar_segs and not ap_segs:
         return None
 
+    rules = project_rules(name)
+
     all_starts = [s["start"] for s in ar_segs + ap_segs]
     all_ends   = [s["end"]   for s in ar_segs + ap_segs]
     start = min(all_starts); end = max(all_ends)
 
-    # Determine current ("base") monthly amounts using a reference month = today's month
     today = date.today()
     base_ar = sum(s["amount"] for s in ar_segs if s["start"] <= today <= s["end"]) \
               or (sum(s["amount"] for s in ar_segs) if ar_segs else 0)
@@ -252,15 +273,27 @@ def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
         key = f"{yr}-{mo:02d}"
         ar = monthly_from_segments(ar_segs, yr, mo)
         ap = monthly_from_segments(ap_segs, yr, mo)
+
+        # Lexington-KY rule: A/P = 65% of A/R (overrides whatever came from leases)
+        if rules["ap_pct"] is not None and ar > 0:
+            ap = round(ar * rules["ap_pct"], 2)
+
         if ar > 0 or ap > 0:
             first = date(yr, mo, 1); last = date(yr, mo, monthrange(yr, mo)[1])
             month_active = any(not (s["start"] > last or s["end"] < first) for s in ar_segs)
+            month_crew = crew if month_active else 0
+            commission = monthly_commission(rules, ar, ap, month_crew)
             monthly[key] = {
-                "crew": crew if month_active else 0,
+                "crew": month_crew,
                 "ar":   ar,
                 "ap":   ap,
-                "net_gp": round((ar - ap) * (1 - COMMISSION_RATE), 2),
+                "commission": commission,
+                "net_gp": round(ar - ap - commission, 2),
             }
+
+    # Override base A/P if Lexington rule applies
+    if rules["ap_pct"] is not None and base_ar > 0:
+        base_ap = round(base_ar * rules["ap_pct"], 2)
 
     t_ar = sum(v["ar"]     for k, v in monthly.items() if k.startswith("2026"))
     t_ap = sum(v["ap"]     for k, v in monthly.items() if k.startswith("2026"))
@@ -277,6 +310,8 @@ def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
         "base_ar": round(base_ar, 2),
         "base_ap": round(base_ap, 2),
         "base_crew": crew,
+        "commission_model": rules["model"],
+        "commission_rate":  rules["rate"],
         "monthly": monthly,
         "total_2026": {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)},
         "source": source,
@@ -399,9 +434,11 @@ def sync():
         for key, v in rs.get("monthly", {}).items():
             ar = v.get("ar", 0); ap = v.get("ap", 0); crew = v.get("crew", 0)
             if ar > 0 or ap > 0:
+                # Rising Sun: no commission
                 rs_monthly[key] = {
                     "crew": crew, "ar": round(ar, 2), "ap": round(ap, 2),
-                    "net_gp": round((ar - ap) * (1 - COMMISSION_RATE), 2),
+                    "commission": 0,
+                    "net_gp": round(ar - ap, 2),
                 }
         if rs_monthly:
             keys = sorted(rs_monthly.keys())
@@ -419,6 +456,8 @@ def sync():
                 "start_date": keys[0] + "-01",
                 "end_date":   keys[-1] + "-28",
                 "base_ar": base_ar, "base_ap": base_ap, "base_crew": base_crew,
+                "commission_model": "none",
+                "commission_rate": 0,
                 "monthly": rs_monthly,
                 "total_2026": {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)},
                 "source": "rising_sun_manual",
@@ -455,10 +494,10 @@ def sync():
     monthly_totals = {}
     for yr, mo in MONTHS:
         key = f"{yr}-{mo:02d}"
-        ar   = sum(r["monthly"].get(key, {}).get("ar",   0) for r in rows)
-        ap   = sum(r["monthly"].get(key, {}).get("ap",   0) for r in rows)
-        crew = sum(r["monthly"].get(key, {}).get("crew", 0) for r in rows)
-        gp   = (ar - ap) * (1 - COMMISSION_RATE)
+        ar   = sum(r["monthly"].get(key, {}).get("ar",         0) for r in rows)
+        ap   = sum(r["monthly"].get(key, {}).get("ap",         0) for r in rows)
+        crew = sum(r["monthly"].get(key, {}).get("crew",       0) for r in rows)
+        gp   = sum(r["monthly"].get(key, {}).get("net_gp",     0) for r in rows)
         monthly_totals[key] = {
             "crew": crew, "ar": round(ar,2), "ap": round(ap,2),
             "net_gp": round(gp,2),
@@ -471,7 +510,7 @@ def sync():
             sp_summary.setdefault(r["salesperson"], {}).setdefault(key, {"ar":0,"ap":0,"commission":0})
             sp_summary[r["salesperson"]][key]["ar"] += v["ar"]
             sp_summary[r["salesperson"]][key]["ap"] += v["ap"]
-            sp_summary[r["salesperson"]][key]["commission"] += round((v["ar"]-v["ap"])*COMMISSION_RATE,2)
+            sp_summary[r["salesperson"]][key]["commission"] += v.get("commission", 0)
 
     out = {
         "generated_at": datetime.now().isoformat(),
