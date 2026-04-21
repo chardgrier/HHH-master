@@ -103,6 +103,33 @@
   #loading { padding: 60px; text-align: center; color: var(--muted); font-size: 16px; }
   #error   { padding: 40px; text-align: center; color: var(--closed); }
   .zero { color: #cbd5e0; }
+
+  /* Scoped totals panel */
+  .scope-totals { margin: 0 24px 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .scope-stat { background: #fff; border-left: 3px solid var(--gold); padding: 8px 14px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.05); min-width: 130px; }
+  .scope-stat label { font-size: 10px; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); font-weight: 600; display:block; }
+  .scope-stat .val { font-size: 17px; font-weight: 700; }
+  .scope-stat.ar  { border-color: #718096; }
+  .scope-stat.ap  { border-color: #c05621; }
+  .scope-stat.com { border-color: var(--upcoming); }
+  .scope-stat.gp  { border-color: var(--active); }
+  .scope-stat.gp  .val { color: var(--active); }
+  .scope-label { padding: 8px 0; color: var(--muted); font-size: 11px; font-weight: 600; }
+
+  /* Commission-by-salesperson section */
+  .commission-section { margin: 10px 24px 14px; }
+  .commission-section details { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .commission-section summary { padding: 10px 14px; cursor: pointer; font-weight: 700; color: var(--dark); user-select: none; }
+  .commission-section summary:hover { background: var(--row-hover); border-radius: 8px; }
+  .commission-section .cgrid { overflow-x: auto; padding: 0 14px 12px; }
+  .commission-section table { border-collapse: collapse; font-size: 11px; width: max-content; }
+  .commission-section th, .commission-section td { padding: 5px 8px; border: 1px solid var(--border); text-align: right; font-family: 'SF Mono', monospace; white-space: nowrap; }
+  .commission-section th { background: var(--dark); color: #fff; font-weight: 600; text-align: center; position: sticky; top: 0; }
+  .commission-section th.c-sp-name, .commission-section td.c-sp-name { text-align: left; font-weight: 700; position: sticky; left: 0; background: #fff; z-index: 2; font-family: inherit; min-width: 100px; }
+  .commission-section th.c-sp-name { background: var(--dark); color: #fff; z-index: 3; }
+  .commission-section tr.com-total td { background: #2d3748; color: #fff; font-weight: 700; }
+  .commission-section tr.com-total td.c-sp-name { background: #2d3748; color: #fff; }
+  .commission-section td.total-col { background: #e6fffa; color: var(--dark); font-weight: 700; }
 </style>
 </head>
 <body>
@@ -133,7 +160,20 @@
     &nbsp;&nbsp;
     <label>Salesperson:</label>
     <select id="sp-filter" onchange="setFilter('sp',this.value,this)"><option value="All">All</option></select>
+    &nbsp;&nbsp;
+    <label>Period:</label>
+    <select id="period-filter" onchange="setFilter('period',this.value,this)">
+      <option value="All">All months</option>
+      <option value="2025">2025 only</option>
+      <option value="2026">2026 only</option>
+    </select>
   </div>
+
+  <!-- Scoped totals panel -->
+  <div id="scope-totals" class="scope-totals"></div>
+
+  <!-- Commission by salesperson per month -->
+  <div id="commission-section" class="commission-section"></div>
 
   <!-- Scrollable master table -->
   <div class="scroll-wrap">
@@ -149,7 +189,7 @@
 <script>
 // ─── State ────────────────────────────────────────────────────────────────────
 let DATA = null;
-let FILTERS = { status: 'All', sp: 'All' };
+let FILTERS = { status: 'All', sp: 'All', period: 'All' };
 
 const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
@@ -223,8 +263,121 @@ function render() {
   const spSel = document.getElementById('sp-filter');
   spSel.innerHTML = '<option value="All">All Salespeople</option>' + sps.map(s => `<option ${FILTERS.sp===s?'selected':''}>${s}</option>`).join('');
 
+  // Populate period filter: All + years + each month
+  const periodSel = document.getElementById('period-filter');
+  if (periodSel.options.length <= 3) {  // one-time build
+    DATA.months.forEach(key => {
+      const opt = document.createElement('option');
+      opt.value = key; opt.textContent = monthLabel(key);
+      periodSel.appendChild(opt);
+    });
+  }
+  periodSel.value = FILTERS.period;
+
   renderKPIs();
+  renderScopeTotals();
+  renderCommissionTable();
   renderTable();
+}
+
+// Which months does the current period filter include?
+function periodMonths() {
+  if (FILTERS.period === 'All') return DATA.months;
+  if (FILTERS.period === '2025' || FILTERS.period === '2026')
+    return DATA.months.filter(k => k.startsWith(FILTERS.period));
+  return DATA.months.filter(k => k === FILTERS.period);  // single month
+}
+
+// Scoped totals panel: A/R + A/P + Commission + Net GP for current filters
+function renderScopeTotals() {
+  const months = periodMonths();
+  const projects = filteredProjects();
+
+  let ar = 0, ap = 0, comm = 0, gp = 0;
+  projects.forEach(p => {
+    months.forEach(k => {
+      const mv = p.monthly[k];
+      if (!mv) return;
+      ar += mv.ar || 0;
+      ap += mv.ap || 0;
+      comm += mv.commission || 0;
+      gp += mv.net_gp || 0;
+    });
+  });
+
+  const periodLabel =
+    FILTERS.period === 'All'  ? 'all months' :
+    FILTERS.period.length === 4 ? FILTERS.period :
+    monthLabel(FILTERS.period);
+  const spLabel = FILTERS.sp === 'All' ? 'all salespeople' : FILTERS.sp;
+  const statLabel = FILTERS.status === 'All' ? 'all statuses' : FILTERS.status.toLowerCase() + ' projects';
+  const gpPct = ar > 0 ? (gp/ar*100).toFixed(1)+'%' : '—';
+
+  document.getElementById('scope-totals').innerHTML = `
+    <div class="scope-label" style="width:100%;">
+      ▸ Showing totals for <b>${statLabel}</b> · <b>${spLabel}</b> · <b>${periodLabel}</b> (${projects.length} projects)
+    </div>
+    <div class="scope-stat ar"><label>Total A/R</label><div class="val">${fmt$(ar)}</div></div>
+    <div class="scope-stat ap"><label>Total A/P</label><div class="val">${fmt$(ap)}</div></div>
+    <div class="scope-stat com"><label>Total Commission</label><div class="val">${fmt$(comm)}</div></div>
+    <div class="scope-stat gp"><label>Net Gross Profit</label><div class="val">${fmt$(gp)}</div></div>
+    <div class="scope-stat"><label>GP %</label><div class="val">${gpPct}</div></div>
+  `;
+}
+
+// Commission-by-salesperson table
+function renderCommissionTable() {
+  const months = DATA.months;
+  const projects = filteredProjects();
+
+  // Aggregate per (salesperson, month)
+  const bySp = {};  // sp → { key → commission }
+  projects.forEach(p => {
+    const sp = p.salesperson || 'Unknown';
+    bySp[sp] = bySp[sp] || {};
+    months.forEach(k => {
+      const mv = p.monthly[k];
+      if (!mv) return;
+      bySp[sp][k] = (bySp[sp][k] || 0) + (mv.commission || 0);
+    });
+  });
+
+  const sps = Object.keys(bySp).sort();
+  if (sps.length === 0) {
+    document.getElementById('commission-section').innerHTML = '';
+    return;
+  }
+
+  // Build table
+  let html = '<details open><summary>💰 Salesperson commission by month — click to collapse</summary><div class="cgrid"><table><thead><tr>';
+  html += '<th class="c-sp-name">Salesperson</th>';
+  months.forEach(k => {
+    html += `<th${k === TODAY_KEY ? ' style="background:#c05621"' : ''}>${monthLabel(k)}</th>`;
+  });
+  html += '<th class="total-col" style="background:#276749;color:#fff">TOTAL</th></tr></thead><tbody>';
+
+  const colTotals = {}; let grand = 0;
+  sps.forEach(sp => {
+    let rowTotal = 0;
+    html += `<tr><td class="c-sp-name">${sp}</td>`;
+    months.forEach(k => {
+      const v = bySp[sp][k] || 0;
+      colTotals[k] = (colTotals[k] || 0) + v;
+      rowTotal += v;
+      const cls = k === TODAY_KEY ? 'this-month' : '';
+      html += `<td class="${cls}">${v > 0 ? fmt$(v) : '<span class="zero">—</span>'}</td>`;
+    });
+    grand += rowTotal;
+    html += `<td class="total-col">${fmt$(rowTotal)}</td></tr>`;
+  });
+  // Totals row
+  html += '<tr class="com-total"><td class="c-sp-name">All salespeople</td>';
+  months.forEach(k => {
+    html += `<td>${fmt$(colTotals[k] || 0)}</td>`;
+  });
+  html += `<td class="total-col" style="color:#68d391">${fmt$(grand)}</td></tr>`;
+  html += '</tbody></table></div></details>';
+  document.getElementById('commission-section').innerHTML = html;
 }
 
 function renderKPIs() {
