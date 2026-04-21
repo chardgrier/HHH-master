@@ -35,7 +35,10 @@ SALESPEOPLE = ["Paul","Zeke","Matt","Logan","David","Charlie","Peyton"]
 HHH_PROJECT_RE = re.compile(rf"\b({'|'.join(SALESPEOPLE)})\b.*?\d{{4}}", re.IGNORECASE)
 
 SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template",
-              "1501 richmond", "4709 orlando", "1113 taborlake"]
+              "1501 richmond", "4709 orlando", "1113 taborlake",
+              # Rising Sun / RSD: all values come from data/rising_sun.json instead
+              "rising sun", "rsd -", "rsd-"]
+RISING_SUN_FILE = "data/rising_sun.json"
 VOID_TASK = ("did not send","did not use","cancelled","termination","terminated",
              "back up","backup","not used","duplicate","did not")
 
@@ -178,12 +181,40 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
         except ValueError:
             return None
 
+    # Handle inconsistent prefix naming: if a project has exactly ONE construction
+    # lease (any prefix) and ONE homeowner lease (any prefix), they belong to the
+    # same house even if prefixes differ (e.g. "Construction Lease" + "A: Homeowner Lease").
+    all_c_prefixes = [pre for pre, types in groups.items() if types.get("construction", {}).get("lease")]
+    all_h_prefixes = [pre for pre, types in groups.items() if types.get("homeowner",    {}).get("lease")]
+    if len(all_c_prefixes) == 1 and len(all_h_prefixes) == 1 and all_c_prefixes[0] != all_h_prefixes[0]:
+        # Merge the lone homeowner into the construction's prefix
+        c_pre = all_c_prefixes[0]; h_pre = all_h_prefixes[0]
+        groups[c_pre]["homeowner"] = groups[h_pre].pop("homeowner")
+        if not groups[h_pre]:
+            del groups[h_pre]
+
     houses = []
     for pre, types in groups.items():
         cs = types.get("construction", {"lease": None, "addendums": []})
         hs = types.get("homeowner",    {"lease": None, "addendums": []})
         ar_seg = build_segment(cs["lease"], cs["addendums"], ar_gid)
         ap_seg = build_segment(hs["lease"], hs["addendums"], ap_gid)
+
+        # Fallback: if homeowner segment failed due to missing dates but has
+        # an A/P value, use the construction lease's dates for it.
+        if ap_seg is None and ar_seg is not None and hs["lease"]:
+            h_amt = cf_value(hs["lease"], ap_gid)
+            if h_amt and h_amt > 0:
+                ap_seg = {"start": ar_seg["start"], "end": ar_seg["end"],
+                          "amount": float(h_amt)}
+            else:
+                for add in hs["addendums"]:
+                    aa = cf_value(add, ap_gid)
+                    if aa and aa > 0:
+                        ap_seg = {"start": ar_seg["start"], "end": ar_seg["end"],
+                                  "amount": float(aa)}
+                        break
+
         crew = 0
         if cs["lease"]:
             c = cf_value(cs["lease"], crew_gid)
@@ -361,11 +392,50 @@ def sync():
 
     print(f"  → {len(rows)} rows from Asana projects with HHH fields")
 
+    # Rising Sun: manually-edited monthly values (not from Asana)
+    if os.path.exists(RISING_SUN_FILE):
+        with open(RISING_SUN_FILE) as f: rs = json.load(f)
+        rs_monthly = {}
+        for key, v in rs.get("monthly", {}).items():
+            ar = v.get("ar", 0); ap = v.get("ap", 0); crew = v.get("crew", 0)
+            if ar > 0 or ap > 0:
+                rs_monthly[key] = {
+                    "crew": crew, "ar": round(ar, 2), "ap": round(ap, 2),
+                    "net_gp": round((ar - ap) * (1 - COMMISSION_RATE), 2),
+                }
+        if rs_monthly:
+            keys = sorted(rs_monthly.keys())
+            t_ar = sum(v["ar"]     for k, v in rs_monthly.items() if k.startswith("2026"))
+            t_ap = sum(v["ap"]     for k, v in rs_monthly.items() if k.startswith("2026"))
+            t_gp = sum(v["net_gp"] for k, v in rs_monthly.items() if k.startswith("2026"))
+            base_ar = rs_monthly[keys[-1]]["ar"]  # current monthly
+            base_ap = rs_monthly[keys[-1]]["ap"]
+            base_crew = rs_monthly[keys[-1]]["crew"]
+            rs_row = {
+                "name": rs.get("name", "Rising Sun Developing"),
+                "salesperson": rs.get("salesperson", "HHH"),
+                "project_number": "",
+                "status": rs.get("status", "Active"),
+                "start_date": keys[0] + "-01",
+                "end_date":   keys[-1] + "-28",
+                "base_ar": base_ar, "base_ap": base_ap, "base_crew": base_crew,
+                "monthly": rs_monthly,
+                "total_2026": {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)},
+                "source": "rising_sun_manual",
+                "editable": True,
+            }
+            rows.append(rs_row)
+            print(f"  + Rising Sun (manual entry, {len(rs_monthly)} months)")
+
     # Fallback for projects that have no HHH custom fields yet (e.g. no project #)
     if os.path.exists(MASTER_FILE):
         with open(MASTER_FILE) as f: master = json.load(f)
         fallback_count = 0
         for p in master.get("projects", []):
+            pname_lower = p["name"].lower()
+            # Skip Rising Sun — handled separately above
+            if "rising sun" in pname_lower or "rsd" in pname_lower:
+                continue
             mnum = re.search(r"\b(2\d{3})\b", p["name"])
             if mnum and mnum.group(1) in seen_project_nums:
                 continue
