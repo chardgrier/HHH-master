@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 """
-HHH Master Dashboard — Sync
+HHH Master Dashboard — Sync v3 (project-level aggregation)
 
-Reads HHH custom fields on every Construction Lease task across the Asana
-workspace and emits data/projects.json for the browser dashboard.
+Model:
+  • Each Asana project = one dashboard row.
+  • Monthly A/R = sum of all Construction Lease + Construction Addendum
+    segments active that month (each segment has its own dates and $).
+  • Monthly A/P = sum of all Homeowner Lease + Homeowner Addendum segments
+    active that month.
+  • Each segment's $ is rent + cleaning + other fees (security deposit excluded),
+    which is what the HHH custom fields already hold.
+  • Addendums override their parent lease's dates/rate for the extension period.
 
-Every task with HHH:Monthly A/R + HHH:Start Date + HHH:End Date populated
-becomes one row in the dashboard. Multi-phase and multi-house projects
-naturally produce multiple rows.
-
-Falls back to data/master_data.json for any projects without custom fields
-(e.g. Rising Sun, which has no project number).
+Falls back to data/master_data.json for any project with no HHH custom fields
+populated (e.g. Rising Sun, Gray Construction Bristol — no project number).
 """
-
 import os, json, re, sys
 from datetime import date, datetime
 from calendar import monthrange
@@ -22,20 +24,20 @@ try:
 except ImportError:
     os.system("pip3 install requests -q"); import requests
 
-ASANA_TOKEN    = os.environ.get("ASANA_TOKEN", "")
-BASE_URL       = "https://app.asana.com/api/1.0"
-WORKSPACE_GID  = "1203487090849714"
+ASANA_TOKEN     = os.environ.get("ASANA_TOKEN", "")
+BASE_URL        = "https://app.asana.com/api/1.0"
+WORKSPACE_GID   = "1203487090849714"
 COMMISSION_RATE = 0.20
-MASTER_FILE    = "data/master_data.json"
-CF_GIDS_FILE   = "data/custom_field_gids.json"
+MASTER_FILE     = "data/master_data.json"
+CF_GIDS_FILE    = "data/custom_field_gids.json"
 
 SALESPEOPLE = ["Paul","Zeke","Matt","Logan","David","Charlie","Peyton"]
 HHH_PROJECT_RE = re.compile(rf"\b({'|'.join(SALESPEOPLE)})\b.*?\d{{4}}", re.IGNORECASE)
 
 SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template",
               "1501 richmond", "4709 orlando", "1113 taborlake"]
-VOID_TASK  = ("did not send","did not use","cancelled","termination","terminated",
-              "back up","backup","not used","duplicate")
+VOID_TASK = ("did not send","did not use","cancelled","termination","terminated",
+             "back up","backup","not used","duplicate","did not")
 
 # Dashboard months: Aug 2025 → Dec 2026
 MONTHS = []
@@ -49,15 +51,13 @@ while (y, m) <= (2026, 12):
 def asana(endpoint, params=None):
     if not ASANA_TOKEN: return []
     headers = {"Authorization": f"Bearer {ASANA_TOKEN}"}
-    url = f"{BASE_URL}/{endpoint}"
-    results = []
+    url = f"{BASE_URL}/{endpoint}"; results = []
     while url:
         r = requests.get(url, headers=headers, params=params, timeout=30)
         if r.status_code == 429:
             import time; time.sleep(int(r.headers.get("Retry-After", 5))); continue
         r.raise_for_status()
-        d = r.json()
-        body = d.get("data", [])
+        d = r.json(); body = d.get("data", [])
         if isinstance(body, list):
             results.extend(body)
         else:
@@ -67,10 +67,9 @@ def asana(endpoint, params=None):
         params = None
     return results
 
-# ─── Custom field extraction ─────────────────────────────────────────────────
+# ─── Custom field value extraction ────────────────────────────────────────────
 
 def cf_value(task, field_gid):
-    """Return the primitive value of a given custom field on a task."""
     for cf in task.get("custom_fields", []):
         if cf.get("gid") != field_gid: continue
         sub = cf.get("resource_subtype")
@@ -86,7 +85,41 @@ def cf_value(task, field_gid):
             return cf.get("text_value")
     return None
 
-# ─── Monthly pro-ration ───────────────────────────────────────────────────────
+def classify(name):
+    """
+    Classify a task. Only accepts CANONICAL lease/addendum names:
+      - "Construction Lease"        (unprefixed)
+      - "A: Construction Lease"     (letter prefix)
+      - "Construction Lease Phase N"
+      - ...and same variants for Homeowner/Addendum.
+
+    Reject variants like "Construction Lease House - 10 Telluride Dr."
+    (those are often one-off house notes, not the primary lease).
+    """
+    n = (name or "").strip().lower()
+    if not n or any(v in n for v in VOID_TASK): return None
+
+    # Canonical patterns (anchored)
+    patterns = [
+        (r"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?construction\s+addendum(?:\s*#?\s*\d+)?\s*$", "construction_addendum"),
+        (r"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?homeowner\s+addendum(?:\s*#?\s*\d+)?\s*$",    "homeowner_addendum"),
+        (r"^(?:[a-z]\s*:\s*)?construction\s+lease(?:\s+phase\s+\d+)?\s*$",                 "construction_lease"),
+        (r"^(?:[a-z]\s*:\s*)?homeowner\s+lease(?:\s+phase\s+\d+|\s*[-–]\s*[a-z])?\s*$",    "homeowner_lease"),
+    ]
+    for pat, kind in patterns:
+        if re.match(pat, n):
+            return kind
+    return None
+
+def prefix_of(name):
+    """Extract the letter/phase grouping key from a task name."""
+    m = re.match(r"^([A-Z])\s*:", name)
+    if m: return m.group(1).upper()
+    m = re.search(r"phase\s+(\d+)", name, re.I)
+    if m: return f"Phase{m.group(1)}"
+    return "_main"
+
+# ─── Pro-ration ───────────────────────────────────────────────────────────────
 
 def prorate(start, end, monthly, yr, mo):
     first = date(yr, mo, 1); last = date(yr, mo, monthrange(yr, mo)[1])
@@ -97,44 +130,122 @@ def prorate(start, end, monthly, yr, mo):
     if eff_s == first and eff_e == last: return monthly
     return round(monthly * days / 30, 2)
 
-def build_monthly(start, end, ar, ap, crew):
-    monthly = {}
-    for yr, mo in MONTHS:
-        key = f"{yr}-{mo:02d}"
-        mo_ar = prorate(start, end, ar, yr, mo)
-        mo_ap = prorate(start, end, ap, yr, mo)
-        first = date(yr, mo, 1); last = date(yr, mo, monthrange(yr, mo)[1])
-        mo_crew = crew if not (start > last or end < first) else 0
-        if mo_ar > 0 or mo_ap > 0:
-            monthly[key] = {
-                "crew": mo_crew,
-                "ar":   round(mo_ar, 2),
-                "ap":   round(mo_ap, 2),
-                "net_gp": round((mo_ar - mo_ap) * (1 - COMMISSION_RATE), 2),
-            }
-    return monthly
-
 def compute_status(start, end, today):
     if start > today: return "Upcoming"
     if end < today:   return "Closed"
     return "Active"
 
-def project_row(name, salesperson, start_s, end_s, ar, ap, crew, *, source, gid=None, task_gid=None):
-    start = date.fromisoformat(start_s)
-    end   = date.fromisoformat(end_s)
-    monthly = build_monthly(start, end, ar, ap, crew)
-    t_ar = sum(v["ar"]     for k,v in monthly.items() if k.startswith("2026"))
-    t_ap = sum(v["ap"]     for k,v in monthly.items() if k.startswith("2026"))
-    t_gp = sum(v["net_gp"] for k,v in monthly.items() if k.startswith("2026"))
+# ─── Collect segments for a project ──────────────────────────────────────────
+
+def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
+    """
+    Group tasks by prefix (letter or _main) and return a list of houses:
+      [{"prefix": "A", "ar": segment or None, "ap": segment or None, "crew": int}]
+
+    Each segment = {start,end,amount}. Addendums extend end + override rate.
+    """
+    groups = {}  # prefix → {type → {"lease":task|None, "addendums":[tasks...]}}
+
+    for t in tasks:
+        tname = (t.get("name") or "").strip()
+        kind  = classify(tname)
+        if not kind: continue
+
+        gtype = "construction" if kind.startswith("construction") else "homeowner"
+        pre = prefix_of(tname)
+        g = groups.setdefault(pre, {}).setdefault(gtype, {"lease": None, "addendums": []})
+        if "addendum" in kind:
+            g["addendums"].append(t)
+        elif g["lease"] is None:
+            g["lease"] = t
+
+    def build_segment(lease, addendums, amt_gid):
+        base = lease or (addendums[0] if addendums else None)
+        if not base: return None
+        amount = cf_value(base, amt_gid)
+        start  = cf_value(base, start_gid)
+        end    = cf_value(base, end_gid)
+        for add in addendums:
+            ae = cf_value(add, end_gid)
+            aa = cf_value(add, amt_gid)
+            if ae and (end is None or ae > end): end = ae
+            if aa and aa > 0: amount = aa  # latest addendum wins
+        if amount is None or not start or not end: return None
+        try:
+            return {"start": date.fromisoformat(start),
+                    "end":   date.fromisoformat(end),
+                    "amount": float(amount)}
+        except ValueError:
+            return None
+
+    houses = []
+    for pre, types in groups.items():
+        cs = types.get("construction", {"lease": None, "addendums": []})
+        hs = types.get("homeowner",    {"lease": None, "addendums": []})
+        ar_seg = build_segment(cs["lease"], cs["addendums"], ar_gid)
+        ap_seg = build_segment(hs["lease"], hs["addendums"], ap_gid)
+        crew = 0
+        if cs["lease"]:
+            c = cf_value(cs["lease"], crew_gid)
+            if c: crew = int(c)
+        if ar_seg or ap_seg:
+            houses.append({"prefix": pre, "ar": ar_seg, "ap": ap_seg, "crew": crew})
+    return houses
+
+def monthly_from_segments(segs, yr, mo):
+    """Sum pro-rated monthly amounts across every segment active in (yr,mo)."""
+    total = 0.0
+    for seg in segs:
+        total += prorate(seg["start"], seg["end"], seg["amount"], yr, mo)
+    return round(total, 2)
+
+# ─── Build a dashboard row for a project ─────────────────────────────────────
+
+def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
+    if not ar_segs and not ap_segs:
+        return None
+
+    all_starts = [s["start"] for s in ar_segs + ap_segs]
+    all_ends   = [s["end"]   for s in ar_segs + ap_segs]
+    start = min(all_starts); end = max(all_ends)
+
+    # Determine current ("base") monthly amounts using a reference month = today's month
+    today = date.today()
+    base_ar = sum(s["amount"] for s in ar_segs if s["start"] <= today <= s["end"]) \
+              or (sum(s["amount"] for s in ar_segs) if ar_segs else 0)
+    base_ap = sum(s["amount"] for s in ap_segs if s["start"] <= today <= s["end"]) \
+              or (sum(s["amount"] for s in ap_segs) if ap_segs else 0)
+
+    monthly = {}
+    for yr, mo in MONTHS:
+        key = f"{yr}-{mo:02d}"
+        ar = monthly_from_segments(ar_segs, yr, mo)
+        ap = monthly_from_segments(ap_segs, yr, mo)
+        if ar > 0 or ap > 0:
+            first = date(yr, mo, 1); last = date(yr, mo, monthrange(yr, mo)[1])
+            month_active = any(not (s["start"] > last or s["end"] < first) for s in ar_segs)
+            monthly[key] = {
+                "crew": crew if month_active else 0,
+                "ar":   ar,
+                "ap":   ap,
+                "net_gp": round((ar - ap) * (1 - COMMISSION_RATE), 2),
+            }
+
+    t_ar = sum(v["ar"]     for k, v in monthly.items() if k.startswith("2026"))
+    t_ap = sum(v["ap"]     for k, v in monthly.items() if k.startswith("2026"))
+    t_gp = sum(v["net_gp"] for k, v in monthly.items() if k.startswith("2026"))
+
     m = re.search(r"\b(2\d{3})\b", name)
     return {
-        "gid": gid, "task_gid": task_gid,
-        "name": name,
+        "gid": gid, "name": name,
         "salesperson": salesperson or "Unknown",
         "project_number": m.group(1) if m else "",
         "status": compute_status(start, end, date.today()),
-        "start_date": start_s, "end_date": end_s,
-        "base_ar": ar, "base_ap": ap, "base_crew": crew,
+        "start_date": start.isoformat(),
+        "end_date":   end.isoformat(),
+        "base_ar": round(base_ar, 2),
+        "base_ap": round(base_ap, 2),
+        "base_crew": crew,
         "monthly": monthly,
         "total_2026": {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)},
         "source": source,
@@ -146,40 +257,35 @@ def sync():
     print(f"=== HHH Sync @ {datetime.now():%Y-%m-%d %H:%M} ===")
 
     if not os.path.exists(CF_GIDS_FILE):
-        print(f"ERROR: {CF_GIDS_FILE} missing — create custom fields first")
-        sys.exit(1)
-    with open(CF_GIDS_FILE) as f:
-        CF = json.load(f)
+        print(f"ERROR: {CF_GIDS_FILE} missing"); sys.exit(1)
+    with open(CF_GIDS_FILE) as f: CF = json.load(f)
 
-    # ── Scan workspace for HHH projects ──
+    ar_g    = CF["HHH: Monthly A/R"]
+    ap_g    = CF["HHH: Monthly A/P"]
+    start_g = CF["HHH: Start Date"]
+    end_g   = CF["HHH: End Date"]
+    crew_g  = CF["HHH: Crew Size"]
+    sp_g    = CF["HHH: Salesperson"]
+
+    # Find HHH-pattern projects
     all_projects = {}
     if ASANA_TOKEN:
-        ws = asana("projects", {
-            "workspace": WORKSPACE_GID, "archived": "false",
-            "opt_fields": "name", "limit": 100,
-        })
-        for p in ws:
-            if HHH_PROJECT_RE.search(p.get("name","")):
-                if not any(s in p["name"].lower() for s in SKIP_NAMES):
-                    all_projects[p["gid"]] = p
-        # Also include the two portfolios
+        for p in asana("projects", {
+            "workspace": WORKSPACE_GID, "archived":"false",
+            "opt_fields":"name", "limit": 100,
+        }):
+            if not HHH_PROJECT_RE.search(p.get("name","")): continue
+            if any(s in p["name"].lower() for s in SKIP_NAMES): continue
+            all_projects[p["gid"]] = p
         for pgid in ("1206746778121935", "1207604445018695"):
             for p in asana(f"portfolios/{pgid}/items", {"opt_fields":"name"}):
-                if p["gid"] not in all_projects:
-                    if not any(s in p["name"].lower() for s in SKIP_NAMES):
-                        all_projects[p["gid"]] = p
-        print(f"Found {len(all_projects)} HHH-pattern projects in workspace")
+                if p["gid"] in all_projects: continue
+                if any(s in p["name"].lower() for s in SKIP_NAMES): continue
+                all_projects[p["gid"]] = p
+        print(f"Scanning {len(all_projects)} HHH-pattern projects…")
 
-    # ── For each project, pull tasks with custom fields populated ──
     rows = []
     seen_project_nums = set()
-
-    ar_gid    = CF["HHH: Monthly A/R"]
-    ap_gid    = CF["HHH: Monthly A/P"]
-    start_gid = CF["HHH: Start Date"]
-    end_gid   = CF["HHH: End Date"]
-    crew_gid  = CF["HHH: Crew Size"]
-    sp_gid    = CF["HHH: Salesperson"]
 
     for pgid, pitem in all_projects.items():
         pname = pitem["name"].strip()
@@ -195,77 +301,87 @@ def sync():
         except Exception as e:
             print(f"  ! {pname[:40]}: {e}"); continue
 
+        houses = build_house_segments(tasks, ar_g, ap_g, start_g, end_g, crew_g)
+        if not houses:
+            continue
+
+        # Determine salesperson once per project
+        sp = None
         for t in tasks:
-            tname = (t.get("name") or "").strip()
-            if not tname: continue
-            if any(v in tname.lower() for v in VOID_TASK): continue
+            sp = cf_value(t, sp_g)
+            if sp: break
+        if not sp:
+            for s in SALESPEOPLE:
+                if re.search(rf"\b{s}\b", pname, re.I): sp = s; break
 
-            ar    = cf_value(t, ar_gid)
-            ap    = cf_value(t, ap_gid)
-            start = cf_value(t, start_gid)
-            end   = cf_value(t, end_gid)
-            crew  = cf_value(t, crew_gid)
-            sp    = cf_value(t, sp_gid)
+        # Group houses by their construction end-date. Houses that share an end
+        # date are aggregated into one row; different end dates → separate rows.
+        # (This matches the master sheet structure: Miller Saint Peters = 1 row,
+        #  Miller Lee's Summit = 3 rows, ARD Eastaboga = 4 phase rows.)
+        by_end = {}
+        for h in houses:
+            ar_end = h["ar"]["end"] if h["ar"] else None
+            ap_end = h["ap"]["end"] if h["ap"] else None
+            # Cluster key: construction end date (preferred) or homeowner end date
+            key = ar_end.isoformat() if ar_end else (ap_end.isoformat() if ap_end else "")
+            by_end.setdefault(key, []).append(h)
 
-            if ar is None or ap is None or not start or not end:
-                continue
+        # Emit rows
+        if len(by_end) == 1:
+            # All houses share an end date → one aggregate row for the project
+            hs = list(by_end.values())[0]
+            ar_segs = [h["ar"] for h in hs if h["ar"]]
+            ap_segs = [h["ap"] for h in hs if h["ap"]]
+            crew_tot = sum(h["crew"] for h in hs)
+            row = make_row(pname, sp, ar_segs, ap_segs, crew_tot,
+                           source="asana_custom_fields", gid=pgid)
+            if row: rows.append(row)
+        else:
+            # Multiple end-date groups → one row per group
+            # Name each row by its distinguishing prefix(es) when possible
+            for end_key, hs in by_end.items():
+                prefixes = sorted({h["prefix"] for h in hs if h["prefix"] and h["prefix"] != "_main"})
+                if not prefixes:
+                    suffix = ""
+                elif any(p.startswith("Phase") for p in prefixes):
+                    suffix = " — " + ", ".join(p.replace("Phase","Phase ") for p in prefixes)
+                elif len(prefixes) == 1:
+                    suffix = f" [House {prefixes[0]}]"
+                else:
+                    suffix = f" [Houses {','.join(prefixes)}]"
+                ar_segs = [h["ar"] for h in hs if h["ar"]]
+                ap_segs = [h["ap"] for h in hs if h["ap"]]
+                crew_tot = sum(h["crew"] for h in hs)
+                row = make_row(pname + suffix, sp, ar_segs, ap_segs, crew_tot,
+                               source="asana_custom_fields", gid=pgid)
+                if row: rows.append(row)
 
-            # Build a display name for this row
-            # Use project name as base, then append task qualifier if it adds info
-            row_name = pname
-            qual = re.search(r"^([A-Z])\s*:|Phase\s*\d+|House\s+[A-Z]", tname, re.I)
-            if qual and re.search(r"construction lease", tname, re.I):
-                q = qual.group(0).rstrip(":").strip()
-                if q.upper() != "A" or "house" in tname.lower() or "phase" in tname.lower():
-                    row_name = f"{pname} — {tname.split(':')[0].strip() if ':' in tname else q}"
+        m = re.search(r"\b(2\d{3})\b", pname)
+        if m: seen_project_nums.add(m.group(1))
 
-            # Infer salesperson from project name if enum not set
-            if not sp:
-                for s in SALESPEOPLE:
-                    if re.search(rf"\b{s}\b", pname, re.I): sp = s; break
+    print(f"  → {len(rows)} rows from Asana projects with HHH fields")
 
-            rows.append(project_row(
-                row_name, sp, start, end,
-                float(ar), float(ap), int(crew or 0),
-                source="asana_custom_fields",
-                gid=pgid, task_gid=t["gid"],
-            ))
-            m = re.search(r"\b(2\d{3})\b", pname)
-            if m: seen_project_nums.add(m.group(1))
-
-    print(f"  → {len(rows)} rows from Asana custom fields")
-
-    # ── Fallback: include master_data entries that aren't in Asana by number ──
+    # Fallback for projects that have no HHH custom fields yet (e.g. no project #)
     if os.path.exists(MASTER_FILE):
-        with open(MASTER_FILE) as f:
-            master = json.load(f)
-        added = 0
+        with open(MASTER_FILE) as f: master = json.load(f)
+        fallback_count = 0
         for p in master.get("projects", []):
             mnum = re.search(r"\b(2\d{3})\b", p["name"])
             if mnum and mnum.group(1) in seen_project_nums:
-                continue  # already have it from Asana
-            # Also skip if name already matches a row (covers Rising Sun etc.)
+                continue
             if any(p["name"].lower() in r["name"].lower() for r in rows):
                 continue
-            rows.append(project_row(
-                p["name"], p.get("salesperson"),
-                p["start_date"], p["end_date"],
-                p["monthly_ar"], p["monthly_ap"], p["crew"],
-                source="master_sheet_fallback",
-            ))
-            added += 1
-        if added:
-            print(f"  + {added} rows from master_sheet fallback (missing from Asana)")
+            s = date.fromisoformat(p["start_date"]); e = date.fromisoformat(p["end_date"])
+            ar_segs = [{"start": s, "end": e, "amount": p["monthly_ar"]}]
+            ap_segs = [{"start": s, "end": e, "amount": p["monthly_ap"]}]
+            row = make_row(p["name"], p.get("salesperson"), ar_segs, ap_segs, p["crew"],
+                           source="master_sheet_fallback")
+            if row:
+                rows.append(row); fallback_count += 1
+        if fallback_count:
+            print(f"  + {fallback_count} rows from master_data fallback")
 
-    # ── Dedupe by (project name, start date) ──
-    seen = set(); unique = []
-    for r in rows:
-        key = (r["name"].strip().lower(), r["start_date"])
-        if key in seen: continue
-        seen.add(key); unique.append(r)
-    rows = unique
-
-    # ── Aggregates ──
+    # Aggregate totals
     monthly_totals = {}
     for yr, mo in MONTHS:
         key = f"{yr}-{mo:02d}"
@@ -282,10 +398,10 @@ def sync():
     sp_summary = {}
     for r in rows:
         for key, v in r["monthly"].items():
-            sp_summary.setdefault(r["salesperson"], {}).setdefault(key, {"ar":0, "ap":0, "commission":0})
+            sp_summary.setdefault(r["salesperson"], {}).setdefault(key, {"ar":0,"ap":0,"commission":0})
             sp_summary[r["salesperson"]][key]["ar"] += v["ar"]
             sp_summary[r["salesperson"]][key]["ap"] += v["ap"]
-            sp_summary[r["salesperson"]][key]["commission"] += round((v["ar"]-v["ap"])*COMMISSION_RATE, 2)
+            sp_summary[r["salesperson"]][key]["commission"] += round((v["ar"]-v["ap"])*COMMISSION_RATE,2)
 
     out = {
         "generated_at": datetime.now().isoformat(),
@@ -295,7 +411,6 @@ def sync():
         "monthly_totals": monthly_totals,
         "salesperson_summary": sp_summary,
     }
-
     os.makedirs("data", exist_ok=True)
     with open("data/projects.json", "w") as f:
         json.dump(out, f, indent=2, default=str)
@@ -305,8 +420,8 @@ def sync():
     closed   = sum(1 for r in rows if r["status"] == "Closed")
     asana_ct = sum(1 for r in rows if r.get("source") == "asana_custom_fields")
     fallback = sum(1 for r in rows if r.get("source") == "master_sheet_fallback")
-    print(f"\n✓ {len(rows)} rows  ·  {active} active · {upcoming} upcoming · {closed} closed")
-    print(f"  sources: {asana_ct} Asana custom fields · {fallback} master_sheet fallback")
+    print(f"\n✓ {len(rows)} rows · {active} active · {upcoming} upcoming · {closed} closed")
+    print(f"  sources: {asana_ct} Asana · {fallback} fallback")
     print("  Output → data/projects.json")
 
 if __name__ == "__main__":
