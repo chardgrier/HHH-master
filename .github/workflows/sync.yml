@@ -23,7 +23,19 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Asana sync
+      - name: Auto-populate new Asana lease/addendum custom fields from notes
+        env:
+          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
+        run: python3 populate_homeowners.py
+        continue-on-error: true
+
+      - name: Migrate / fill any remaining missing A/P values
+        env:
+          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
+        run: python3 fix_missing_ap.py
+        continue-on-error: true
+
+      - name: Read Asana → generate dashboard data
         env:
           ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
         run: python3 sync.py
