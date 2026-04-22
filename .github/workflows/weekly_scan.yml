@@ -1,0 +1,31 @@
+name: Weekly Asana Data Quality Scan
+
+on:
+  schedule:
+    - cron: '0 13 * * 1'   # Mondays 1 PM UTC (8 AM EST) — start of week check-in
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt
+
+      - name: Scan Asana for unparseable / incomplete tasks
+        env:
+          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
+        run: python3 scan_asana.py
+
+      - name: Commit scan report
+        run: |
+          git config user.name  "HHH Dashboard Bot"
+          git config user.email "bot@hardhathousing.com"
+          git add data/parse_issues.json
+          git diff --cached --quiet || git commit -m "scan: weekly Asana data-quality report $(date -u +%Y-%m-%d)"
+          git push

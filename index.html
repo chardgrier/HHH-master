@@ -225,6 +225,9 @@
   <!-- Scoped totals panel -->
   <div id="scope-totals" class="scope-totals"></div>
 
+  <!-- Weekly Asana data-quality report (if present) -->
+  <div id="parse-issues" class="commission-section"></div>
+
   <!-- Salesperson leaderboard -->
   <div id="sp-leaderboard" class="sp-leaderboard"></div>
 
@@ -274,6 +277,45 @@ function fmtDate(s) {
   return `${parseInt(m)}/${parseInt(d)}/${y.slice(2)}`;
 }
 
+// Separate load for weekly scan results
+async function loadParseIssues() {
+  try {
+    const r = await fetch('data/parse_issues.json?t=' + Date.now());
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+async function renderParseIssues() {
+  const issues = await loadParseIssues();
+  if (!issues) return;
+  const unmatched = issues.unmatched_names || [];
+  const missing   = issues.missing_fields   || [];
+  if (unmatched.length === 0 && missing.length === 0) return;
+
+  const stamp = new Date(issues.generated_at).toLocaleDateString();
+  let html = `<details><summary>🔍 Asana data-quality report — ${stamp} (${unmatched.length} unparseable task names · ${missing.length} tasks missing HHH fields)</summary><div class="cgrid"><div style="padding:10px">`;
+
+  if (unmatched.length) {
+    html += '<p style="font-weight:700;margin:8px 0 4px">Tasks that look like leases/addendums but don\'t match the standard naming:</p>';
+    html += '<ul style="font-size:11px;color:var(--muted);margin-left:16px">';
+    unmatched.slice(0,50).forEach(u => {
+      html += `<li><a href="${u.task_link}" target="_blank">"${u.task}"</a> in ${u.project}</li>`;
+    });
+    html += '</ul>';
+  }
+  if (missing.length) {
+    html += '<p style="font-weight:700;margin:8px 0 4px">Canonical tasks missing HHH custom fields:</p>';
+    html += '<ul style="font-size:11px;color:var(--muted);margin-left:16px">';
+    missing.slice(0,50).forEach(m => {
+      html += `<li><a href="${m.task_link}" target="_blank">"${m.task}"</a> in ${m.project} — missing: <b>${m.missing.join(', ')}</b></li>`;
+    });
+    html += '</ul>';
+  }
+  html += '</div></div></details>';
+  document.getElementById('parse-issues').innerHTML = html;
+}
+
 // ─── Load ─────────────────────────────────────────────────────────────────────
 async function loadData() {
   document.getElementById('loading').style.display = 'block';
@@ -290,6 +332,7 @@ async function loadData() {
     info.textContent = (ageHrs > 24 ? `⚠ Stale! Last sync: ` : 'Updated: ') + genAt.toLocaleString();
     info.classList.toggle('stale', ageHrs > 24);
     render();
+    renderParseIssues();
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';
@@ -708,8 +751,15 @@ function renderTable() {
       if (!mv || (mv.ar === 0 && mv.ap === 0)) {
         body += `<td class="${cls}"><span class="zero">—</span></td>`;
       } else {
+        // Reconciled marker (Rising Sun etc.): ✓ green = finalized, ⚠ orange = estimate
+        let mark = '';
+        if (p.editable) {
+          mark = mv.reconciled
+            ? '<span title="Reconciled — final numbers" style="color:#38a169;margin-left:3px">✓</span>'
+            : '<span title="Not yet reconciled — estimate" style="color:#dd6b20;margin-left:3px">⚠</span>';
+        }
         body += `<td class="${cls}" title="Crew: ${mv.crew}">`;
-        body += `<div class="ar">${fmt$(mv.ar)}</div>`;
+        body += `<div class="ar">${fmt$(mv.ar)}${mark}</div>`;
         body += `<div class="ap">${fmt$(mv.ap)}</div>`;
         body += `<div class="gp">${fmt$(mv.net_gp)}</div>`;
         body += '</td>';

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T21:45:38.614196",
+  "generated_at": "2026-04-21T21:49:30.977700",
   "months": [
     "2025-08",
     "2025-09",
@@ -5730,119 +5730,136 @@
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2025-09": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2025-10": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2025-11": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2025-12": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2026-01": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2026-02": {
           "crew": 122,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2026-03": {
           "crew": 118,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": true
         },
         "2026-04": {
           "crew": 116,
           "ar": 114793.75,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 52293.75
+          "net_gp": 52293.75,
+          "reconciled": false
         },
         "2026-05": {
           "crew": 116,
           "ar": 111500.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 49000.0
+          "net_gp": 49000.0,
+          "reconciled": false
         },
         "2026-06": {
           "crew": 116,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": false
         },
         "2026-07": {
           "crew": 116,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": false
         },
         "2026-08": {
           "crew": 116,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": false
         },
         "2026-09": {
           "crew": 116,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": false
         },
         "2026-10": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": false
         },
         "2026-11": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": false
         },
         "2026-12": {
           "crew": 128,
           "ar": 112875.0,
           "ap": 62500.0,
           "commission": 0,
-          "net_gp": 50375.0
+          "net_gp": 50375.0,
+          "reconciled": false
         }
       },
       "total_2026": {

@@ -531,12 +531,14 @@ def sync():
         rs_monthly = {}
         for key, v in rs.get("monthly", {}).items():
             ar = v.get("ar", 0); ap = v.get("ap", 0); crew = v.get("crew", 0)
+            reconciled = v.get("reconciled", False)
             if ar > 0 or ap > 0:
                 # Rising Sun: no commission
                 rs_monthly[key] = {
                     "crew": crew, "ar": round(ar, 2), "ap": round(ap, 2),
                     "commission": 0,
                     "net_gp": round(ar - ap, 2),
+                    "reconciled": bool(reconciled),
                 }
         if rs_monthly:
             keys = sorted(rs_monthly.keys())
