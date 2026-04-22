@@ -1,74 +1,47 @@
 #!/usr/bin/env python3
 """
-One-time QuickBooks Online OAuth helper.
+One-time QuickBooks Online OAuth helper (Production flow).
 
-Run this locally. It will:
-  1. Open your browser to the Intuit authorization page.
-  2. You sign in (to your QuickBooks company) and click Authorize.
-  3. Intuit redirects back to http://localhost:8765/callback with a code
-     + your Realm ID (QB company ID).
-  4. This script exchanges the code for a refresh token and prints it.
+For Production apps Intuit requires an HTTPS redirect URI, so we use
+the public GitHub Pages URL instead of a localhost callback. The flow
+is a tiny bit more manual:
 
-Paste the REFRESH TOKEN and REALM ID it prints back to Claude; they get
-stored as GitHub secrets and the nightly sync uses them from there.
-
-Refresh tokens are valid for 100 days from last use, and re-validate
-every time the sync script runs, so they effectively don't expire as
-long as the nightly job keeps running.
+  1. This script prints an authorization URL.
+  2. You open it in your browser and approve access to your QB company.
+  3. Intuit redirects you to https://chardgrier.github.io/HHH-master/
+     with ?code=... and &realmId=... appended to the URL.
+  4. You copy the full URL from your browser's address bar and paste
+     it back into this script.
+  5. The script extracts the code, exchanges it for a refresh token,
+     and prints the values you need to paste to Claude.
 """
 import os, sys, json, webbrowser, secrets, base64
 from urllib.parse import urlencode, urlparse, parse_qs
-from http.server import BaseHTTPRequestHandler, HTTPServer
 
 try:
     import requests
 except ImportError:
     os.system("pip3 install requests -q --user"); import requests
 
-# These get filled in from the env at runtime
 CLIENT_ID     = os.environ.get("QB_CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("QB_CLIENT_SECRET", "")
-REDIRECT_URI  = "http://localhost:8765/callback"
+REDIRECT_URI  = "https://chardgrier.github.io/HHH-master/"
 SCOPE         = "com.intuit.quickbooks.accounting"
 
 DISCOVERY_URL = "https://developer.api.intuit.com/.well-known/openid_configuration"
 
 def fetch_endpoints():
-    """Fetch the current OAuth endpoints from Intuit's OpenID discovery document."""
     r = requests.get(DISCOVERY_URL, timeout=10)
     r.raise_for_status()
     d = r.json()
     return d["authorization_endpoint"], d["token_endpoint"]
 
-AUTH_URL, TOKEN_URL = fetch_endpoints()
-
 if not CLIENT_ID or not CLIENT_SECRET:
     print("ERROR: set QB_CLIENT_ID and QB_CLIENT_SECRET env vars before running.")
-    print("       export QB_CLIENT_ID='...'")
-    print("       export QB_CLIENT_SECRET='...'")
     sys.exit(1)
 
-STATE   = secrets.token_urlsafe(16)
-RESULT  = {}
-
-class Handler(BaseHTTPRequestHandler):
-    def log_message(self, *a, **k): pass
-    def do_GET(self):
-        u = urlparse(self.path)
-        if u.path != "/callback":
-            self.send_response(404); self.end_headers(); return
-        q = parse_qs(u.query)
-        if q.get("state", [""])[0] != STATE:
-            self.send_response(400); self.end_headers()
-            self.wfile.write(b"State mismatch."); return
-        RESULT["code"]     = q.get("code",    [""])[0]
-        RESULT["realmId"]  = q.get("realmId", [""])[0]
-        RESULT["error"]    = q.get("error",   [""])[0]
-        self.send_response(200); self.send_header("Content-Type","text/html"); self.end_headers()
-        msg = "✓ Authorization received. You can close this window and return to the terminal."
-        if RESULT["error"]:
-            msg = f"❌ Error: {RESULT['error']}"
-        self.wfile.write(f"<html><body style='font-family:sans-serif;padding:40px'><h2>{msg}</h2></body></html>".encode())
+AUTH_URL, TOKEN_URL = fetch_endpoints()
+STATE = secrets.token_urlsafe(16)
 
 def main():
     params = {
@@ -79,30 +52,56 @@ def main():
         "state":         STATE,
     }
     url = f"{AUTH_URL}?{urlencode(params)}"
-    print("\n═══ QuickBooks OAuth ═══")
-    print("Opening your browser to Intuit's authorization page…")
-    print(f"(If it doesn't open, copy/paste this URL manually:\n  {url}\n)")
-    print("\nWaiting for callback on http://localhost:8765 …")
+
+    print("\n" + "═" * 70)
+    print("STEP 1: OPEN THIS URL IN YOUR BROWSER")
+    print("═" * 70)
+    print(url)
+    print("═" * 70)
+    print()
+    print("Your browser should open automatically. If not, copy/paste the URL above.")
+    print("Sign in to QuickBooks → select Hard Hat Housing → click Connect.")
+    print()
     webbrowser.open(url)
 
-    server = HTTPServer(("127.0.0.1", 8765), Handler)
-    server.handle_request()  # handles exactly one request, then exits
+    print("═" * 70)
+    print("STEP 2: PASTE THE REDIRECT URL")
+    print("═" * 70)
+    print("After clicking Connect, your browser will redirect to the HHH dashboard")
+    print("with a URL like:")
+    print("  https://chardgrier.github.io/HHH-master/?code=XXX&state=YYY&realmId=ZZZ")
+    print()
+    print("Copy the ENTIRE URL from your browser's address bar and paste it below,")
+    print("then press Enter:")
+    print("-" * 70)
+    callback_url = input("URL: ").strip()
 
-    if RESULT.get("error"):
-        print(f"\n❌ OAuth failed: {RESULT['error']}"); sys.exit(1)
-    if not RESULT.get("code"):
-        print("\n❌ No code received."); sys.exit(1)
+    u = urlparse(callback_url)
+    q = parse_qs(u.query)
+    code     = q.get("code",    [""])[0]
+    state    = q.get("state",   [""])[0]
+    realm_id = q.get("realmId", [""])[0]
+    error    = q.get("error",   [""])[0]
 
-    print("✓ Got authorization code, exchanging for refresh token…")
+    if error:
+        print(f"\n❌ Intuit returned error: {error}"); sys.exit(1)
+    if not code or not realm_id:
+        print("\n❌ URL missing code or realmId. Make sure you copied the full redirect URL.")
+        sys.exit(1)
+    if state != STATE:
+        print(f"\n⚠ State mismatch (expected {STATE!r}, got {state!r}).")
+        print("  This can happen if you ran the script twice — re-run to be safe.")
+        sys.exit(1)
 
-    # Exchange the code for an access + refresh token
+    print("\n✓ Got authorization code, exchanging for refresh token…")
+
     basic = base64.b64encode(f"{CLIENT_ID}:{CLIENT_SECRET}".encode()).decode()
     r = requests.post(TOKEN_URL,
         headers={"Authorization": f"Basic {basic}",
                  "Accept": "application/json",
                  "Content-Type": "application/x-www-form-urlencoded"},
         data={"grant_type":"authorization_code",
-              "code": RESULT["code"],
+              "code": code,
               "redirect_uri": REDIRECT_URI},
         timeout=30)
     if r.status_code >= 300:
@@ -113,9 +112,9 @@ def main():
     print("SUCCESS — copy these two values and paste them back to Claude:")
     print("═" * 70)
     print(f"  QB_REFRESH_TOKEN = {t['refresh_token']}")
-    print(f"  QB_REALM_ID      = {RESULT['realmId']}")
+    print(f"  QB_REALM_ID      = {realm_id}")
     print("═" * 70)
-    print("\n(These will be stored as GitHub secrets and used by the nightly sync.)")
+    print("\n(These will be stored as GitHub secrets for the nightly sync.)")
 
 if __name__ == "__main__":
     main()
