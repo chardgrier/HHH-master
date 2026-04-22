@@ -144,6 +144,32 @@ def status_for(invoice, today):
     if due and due < today: return "overdue"
     return "sent"
 
+# Keywords that identify a security-deposit line item (case-insensitive).
+# HHH wants A/R and A/P to include rent + cleaning + fees but NOT deposits.
+DEPOSIT_KEYWORDS = ("security deposit", "sec deposit", "sec dep", "deposit",
+                    "refundable deposit")
+
+def is_deposit_line(line):
+    """True if this invoice/bill line item looks like a security deposit."""
+    # Combine everything we might see the word "deposit" in
+    desc = (line.get("Description") or "").lower()
+    detail = line.get("SalesItemLineDetail") or line.get("AccountBasedExpenseLineDetail") or {}
+    item_name   = ((detail.get("ItemRef")    or {}).get("name") or "").lower()
+    acct_name   = ((detail.get("AccountRef") or {}).get("name") or "").lower()
+    blob = " ".join([desc, item_name, acct_name])
+    return any(kw in blob for kw in DEPOSIT_KEYWORDS)
+
+def rental_total(invoice_or_bill):
+    """Return the TOTAL minus any security-deposit line items."""
+    total    = float(invoice_or_bill.get("TotalAmt", 0) or 0)
+    lines    = invoice_or_bill.get("Line") or []
+    deposits = 0.0
+    for ln in lines:
+        if ln.get("DetailType") == "SubTotalLineDetail": continue
+        if is_deposit_line(ln):
+            deposits += float(ln.get("Amount", 0) or 0)
+    return round(total - deposits, 2), round(deposits, 2)
+
 def month_key(txn_date_str):
     """'2026-04-15' → '2026-04'"""
     if not txn_date_str: return None
@@ -204,10 +230,13 @@ def main():
         cust_name = (inv.get("CustomerRef") or {}).get("name", "")
         matched, pnum, house = match_project(inv.get("DocNumber"), cust_name)
         mk = month_key(inv.get("TxnDate",""))
+        rental, deposit = rental_total(inv)
         if matched and mk:
             ar_status[matched["name"]][mk].append({
                 "status":     status_for(inv, today),
-                "amount":     float(inv.get("TotalAmt", 0) or 0),
+                "amount":     rental,           # rent + cleaning + fees, EXCLUDING security deposits
+                "deposit":    deposit,          # separate for reference
+                "total_amt":  float(inv.get("TotalAmt", 0) or 0),
                 "balance":    float(inv.get("Balance",  0) or 0),
                 "invoice_id": inv.get("Id"),
                 "doc_number": inv.get("DocNumber"),
@@ -218,7 +247,7 @@ def main():
         else:
             unmatched_invoices.append({
                 "customer": cust_name, "date": inv.get("TxnDate"),
-                "amount": float(inv.get("TotalAmt",0) or 0),
+                "amount": rental, "deposit": deposit,
                 "doc_number": inv.get("DocNumber"),
             })
 
@@ -230,9 +259,12 @@ def main():
         vendor = (bill.get("VendorRef") or {}).get("name", "")
         matched, pnum, house = match_project(bill.get("DocNumber"), vendor)
         mk = month_key(bill.get("TxnDate",""))
+        rental, deposit = rental_total(bill)
         record = {
             "vendor":     vendor,
-            "amount":     float(bill.get("TotalAmt", 0) or 0),
+            "amount":     rental,           # rent + cleaning + fees, EXCLUDING security deposits
+            "deposit":    deposit,          # separate for reference
+            "total_amt":  float(bill.get("TotalAmt", 0) or 0),
             "balance":    float(bill.get("Balance",  0) or 0),
             "txn_date":   bill.get("TxnDate"),
             "due_date":   bill.get("DueDate"),
@@ -248,7 +280,7 @@ def main():
         else:
             unmatched_bills.append({
                 "vendor": vendor, "date": bill.get("TxnDate"),
-                "amount": float(bill.get("TotalAmt",0) or 0),
+                "amount": rental, "deposit": deposit,
                 "doc_number": bill.get("DocNumber"),
             })
 
