@@ -27,6 +27,16 @@ jobs:
       # values. When a new project/phase is added, fill in the HHH custom fields
       # directly in Asana (or ask Claude to populate from notes).
 
+      - name: Pull QuickBooks invoice + bill status
+        env:
+          QB_CLIENT_ID:     ${{ secrets.QB_CLIENT_ID }}
+          QB_CLIENT_SECRET: ${{ secrets.QB_CLIENT_SECRET }}
+          QB_REFRESH_TOKEN: ${{ secrets.QB_REFRESH_TOKEN }}
+          QB_REALM_ID:      ${{ secrets.QB_REALM_ID }}
+          QB_ENV:           ${{ secrets.QB_ENV }}
+        run: python3 qb_sync.py
+        continue-on-error: true
+
       - name: Read Asana → generate dashboard data
         env:
           ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
@@ -36,6 +46,6 @@ jobs:
         run: |
           git config user.name  "HHH Dashboard Bot"
           git config user.email "bot@hardhathousing.com"
-          git add data/projects.json
+          git add data/projects.json data/qb_status.json
           git diff --cached --quiet || git commit -m "sync: update project data $(date -u +%Y-%m-%d)"
           git push
