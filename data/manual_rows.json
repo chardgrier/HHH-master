@@ -1,0 +1,67 @@
+{
+  "_comment": "Manually-controlled dashboard rows. Use this for projects that don't fit the Asana lease/addendum model — time-varying aggregates, multi-phase collapsed into one row, or rows that need to be locked past-month. Matching projects in Asana are skipped from the automatic sync via their number in 'skip_asana_match'. Reconciled=true means the month's books are closed and the number will never be changed by the sync.",
+  "_updated": "2026-04-22",
+  "reconciled_through": "2026-03-31",
+  "rows": [
+    {
+      "name": "Rising Sun Developing",
+      "salesperson": "HHH",
+      "status": "Active",
+      "skip_asana_match": null,
+      "monthly": {
+        "2025-08": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": true},
+        "2025-09": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": true},
+        "2025-10": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": true},
+        "2025-11": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": true},
+        "2025-12": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": true},
+        "2026-01": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": true},
+        "2026-02": {"ar": 112875.00, "ap": 62500.00, "crew": 122, "reconciled": true},
+        "2026-03": {"ar": 112875.00, "ap": 62500.00, "crew": 118, "reconciled": true},
+        "2026-04": {"ar": 114793.75, "ap": 62500.00, "crew": 116, "reconciled": false},
+        "2026-05": {"ar": 111500.00, "ap": 62500.00, "crew": 116, "reconciled": false},
+        "2026-06": {"ar": 112875.00, "ap": 62500.00, "crew": 116, "reconciled": false},
+        "2026-07": {"ar": 112875.00, "ap": 62500.00, "crew": 116, "reconciled": false},
+        "2026-08": {"ar": 112875.00, "ap": 62500.00, "crew": 116, "reconciled": false},
+        "2026-09": {"ar": 112875.00, "ap": 62500.00, "crew": 116, "reconciled": false},
+        "2026-10": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": false},
+        "2026-11": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": false},
+        "2026-12": {"ar": 112875.00, "ap": 62500.00, "crew": 128, "reconciled": false}
+      }
+    },
+    {
+      "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+      "salesperson": "Zeke",
+      "status": "Active",
+      "skip_asana_match": "2537",
+      "_note": "A/R = sum of phases active that month (Phase 1 $25,000 from 5/27/25, Phase 2 $13,750 from 6/25/25, Phase 3 $10,500 from 1/13/26, Phase 4 $3,400 from 1/20/26). A/P is the project aggregate the user provided — time-varying.",
+      "monthly": {
+        "2025-08": {"ar": 38750, "ap": 19455, "crew": 36, "reconciled": true},
+        "2025-09": {"ar": 38750, "ap": 19455, "crew": 36, "reconciled": true},
+        "2025-10": {"ar": 38750, "ap": 19455, "crew": 36, "reconciled": true},
+        "2025-11": {"ar": 38750, "ap": 19455, "crew": 36, "reconciled": true},
+        "2025-12": {"ar": 38750, "ap": 19455, "crew": 36, "reconciled": true},
+        "2026-01": {"ar": 46760, "ap": 30000, "crew": 47, "reconciled": true},
+        "2026-02": {"ar": 52650, "ap": 33980, "crew": 47, "reconciled": true},
+        "2026-03": {"ar": 52650, "ap": 33980, "crew": 47, "reconciled": true},
+        "2026-04": {"ar": 52650, "ap": 33980, "crew": 47, "reconciled": false},
+        "2026-05": {"ar": 52650, "ap": 33980, "crew": 47, "reconciled": false}
+      }
+    },
+    {
+      "name": "Peak Event Services - Woburn, MA - Paul - 2623",
+      "salesperson": "Paul",
+      "status": "Active",
+      "skip_asana_match": "2623",
+      "_note": "Consolidated aggregate row. A/R $47,795 = sum of 5 house construction leases (A $8,100 + B $11,500 + C $8,495 + D $8,500 + E $11,200). A/P $27,450 is user-confirmed aggregate.",
+      "monthly": {
+        "2026-04": {"ar": 4531, "ap": 2599, "crew": 30, "reconciled": false},
+        "2026-05": {"ar": 47795, "ap": 27450, "crew": 30, "reconciled": false},
+        "2026-06": {"ar": 47795, "ap": 27450, "crew": 30, "reconciled": false},
+        "2026-07": {"ar": 36595, "ap": 22800, "crew": 22, "reconciled": false},
+        "2026-08": {"ar": 36595, "ap": 22800, "crew": 22, "reconciled": false},
+        "2026-09": {"ar": 36595, "ap": 22800, "crew": 22, "reconciled": false},
+        "2026-10": {"ar": 32595, "ap": 20050, "crew": 20, "reconciled": false}
+      }
+    }
+  ]
+}

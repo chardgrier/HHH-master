@@ -56,9 +56,10 @@ HHH_PROJECT_RE = re.compile(rf"\b({'|'.join(SALESPEOPLE)})\b.*?\d{{4}}", re.IGNO
 
 SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template",
               "1501 richmond", "4709 orlando", "1113 taborlake",
-              # Rising Sun / RSD: all values come from data/rising_sun.json instead
+              # Rising Sun / RSD: all values come from data/manual_rows.json instead
               "rising sun", "rsd -", "rsd-"]
-RISING_SUN_FILE = "data/rising_sun.json"
+MANUAL_ROWS_FILE = "data/manual_rows.json"
+RECONCILED_SNAPSHOT_FILE = "data/reconciled_snapshot.json"
 VOID_TASK = ("did not send","did not use","cancelled","termination","terminated",
              "back up","backup","not used","duplicate","did not")
 
@@ -475,6 +476,14 @@ def sync():
     crew_g  = CF["HHH: Crew Size"]
     sp_g    = CF["HHH: Salesperson"]
 
+    # Load manual-rows project numbers to skip from Asana scan first
+    manual_skip_nums = set()
+    if os.path.exists(MANUAL_ROWS_FILE):
+        with open(MANUAL_ROWS_FILE) as f: mr_preview = json.load(f)
+        for item in mr_preview.get("rows", []):
+            if item.get("skip_asana_match"):
+                manual_skip_nums.add(str(item["skip_asana_match"]))
+
     # Find HHH-pattern projects
     all_projects = {}
     if ASANA_TOKEN:
@@ -482,15 +491,18 @@ def sync():
             "workspace": WORKSPACE_GID, "archived":"false",
             "opt_fields":"name", "limit": 100,
         }):
-            if not HHH_PROJECT_RE.search(p.get("name","")): continue
-            if any(s in p["name"].lower() for s in SKIP_NAMES): continue
+            name = p.get("name","")
+            if not HHH_PROJECT_RE.search(name): continue
+            if any(s in name.lower() for s in SKIP_NAMES): continue
+            if any(num in name for num in manual_skip_nums): continue  # handled by manual_rows
             all_projects[p["gid"]] = p
         for pgid in ("1206746778121935", "1207604445018695"):
             for p in asana(f"portfolios/{pgid}/items", {"opt_fields":"name"}):
                 if p["gid"] in all_projects: continue
                 if any(s in p["name"].lower() for s in SKIP_NAMES): continue
+                if any(num in p["name"] for num in manual_skip_nums): continue
                 all_projects[p["gid"]] = p
-        print(f"Scanning {len(all_projects)} HHH-pattern projects…")
+        print(f"Scanning {len(all_projects)} HHH-pattern projects (skipping {len(manual_skip_nums)} manual)…")
 
     rows = []
     seen_project_nums = set()
@@ -561,46 +573,60 @@ def sync():
 
     print(f"  → {len(rows)} rows from Asana projects with HHH fields")
 
-    # Rising Sun: manually-edited monthly values (not from Asana)
-    if os.path.exists(RISING_SUN_FILE):
-        with open(RISING_SUN_FILE) as f: rs = json.load(f)
-        rs_monthly = {}
-        for key, v in rs.get("monthly", {}).items():
-            ar = v.get("ar", 0); ap = v.get("ap", 0); crew = v.get("crew", 0)
-            reconciled = v.get("reconciled", False)
-            if ar > 0 or ap > 0:
-                # Rising Sun: no commission
-                rs_monthly[key] = {
-                    "crew": crew, "ar": round(ar, 2), "ap": round(ap, 2),
-                    "commission": 0,
-                    "net_gp": round(ar - ap, 2),
-                    "reconciled": bool(reconciled),
-                }
-        if rs_monthly:
-            keys = sorted(rs_monthly.keys())
-            t_ar = sum(v["ar"]     for k, v in rs_monthly.items() if k.startswith("2026"))
-            t_ap = sum(v["ap"]     for k, v in rs_monthly.items() if k.startswith("2026"))
-            t_gp = sum(v["net_gp"] for k, v in rs_monthly.items() if k.startswith("2026"))
-            base_ar = rs_monthly[keys[-1]]["ar"]  # current monthly
-            base_ap = rs_monthly[keys[-1]]["ap"]
-            base_crew = rs_monthly[keys[-1]]["crew"]
-            rs_row = {
-                "name": rs.get("name", "Rising Sun Developing"),
-                "salesperson": rs.get("salesperson", "HHH"),
-                "project_number": "",
-                "status": rs.get("status", "Active"),
+    # Manual rows: projects whose values are hand-maintained (Rising Sun, ARD
+    # time-varying aggregate, Peak Event consolidated, etc.). Each manual row
+    # has its own `skip_asana_match` (project number to exclude from Asana
+    # sync) to prevent double-counting.
+    manual_skip_nums = set()
+    if os.path.exists(MANUAL_ROWS_FILE):
+        with open(MANUAL_ROWS_FILE) as f: mr = json.load(f)
+        today = date.today()
+        for item in mr.get("rows", []):
+            if item.get("skip_asana_match"):
+                manual_skip_nums.add(str(item["skip_asana_match"]))
+            monthly_out = {}
+            for key, v in item.get("monthly", {}).items():
+                ar = v.get("ar", 0); ap = v.get("ap", 0); crew = v.get("crew", 0)
+                reconciled = v.get("reconciled", False)
+                if ar > 0 or ap > 0:
+                    # Apply project rules to manual rows too (commission logic)
+                    rules = project_rules(item.get("name", ""))
+                    if rules["ap_pct"] is not None and ar > 0:
+                        ap = round(ar * rules["ap_pct"], 2)
+                    commission = monthly_commission(rules, ar, ap, crew)
+                    monthly_out[key] = {
+                        "crew": crew, "ar": round(ar, 2), "ap": round(ap, 2),
+                        "commission": commission,
+                        "net_gp": round(ar - ap - commission, 2),
+                        "reconciled": bool(reconciled),
+                    }
+            if not monthly_out: continue
+            keys = sorted(monthly_out.keys())
+            t_ar = sum(v["ar"]     for k, v in monthly_out.items() if k.startswith("2026"))
+            t_ap = sum(v["ap"]     for k, v in monthly_out.items() if k.startswith("2026"))
+            t_gp = sum(v["net_gp"] for k, v in monthly_out.items() if k.startswith("2026"))
+            rules = project_rules(item.get("name", ""))
+            m_num = re.search(r"\b(2\d{3})\b", item.get("name",""))
+            rows.append({
+                "name": item.get("name"),
+                "salesperson": item.get("salesperson", "Unknown"),
+                "project_number": m_num.group(1) if m_num else "",
+                "status": item.get("status", "Active"),
                 "start_date": keys[0] + "-01",
                 "end_date":   keys[-1] + "-28",
-                "base_ar": base_ar, "base_ap": base_ap, "base_crew": base_crew,
-                "commission_model": "none",
-                "commission_rate": 0,
-                "monthly": rs_monthly,
+                "base_ar": monthly_out[keys[-1]]["ar"],
+                "base_ap": monthly_out[keys[-1]]["ap"],
+                "base_crew": monthly_out[keys[-1]]["crew"],
+                "commission_model": rules["model"],
+                "commission_rate":  rules["rate"],
+                "monthly": monthly_out,
                 "total_2026": {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)},
-                "source": "rising_sun_manual",
+                "source": "manual_row",
                 "editable": True,
-            }
-            rows.append(rs_row)
-            print(f"  + Rising Sun (manual entry, {len(rs_monthly)} months)")
+            })
+            print(f"  + manual: {item.get('name','')[:55]}")
+    # Also add manual skip numbers to the dynamic skip set below
+    SKIP_NUMS_FROM_MANUAL = manual_skip_nums
 
     # Fallback for projects that have no HHH custom fields yet (e.g. no project #)
     if os.path.exists(MASTER_FILE):
@@ -614,6 +640,9 @@ def sync():
             mnum = re.search(r"\b(2\d{3})\b", p["name"])
             if mnum and mnum.group(1) in seen_project_nums:
                 continue
+            # Skip anything we're serving from manual_rows.json
+            if mnum and mnum.group(1) in manual_skip_nums:
+                continue
             if any(p["name"].lower() in r["name"].lower() for r in rows):
                 continue
             s = date.fromisoformat(p["start_date"]); e = date.fromisoformat(p["end_date"])
@@ -625,6 +654,27 @@ def sync():
                 rows.append(row); fallback_count += 1
         if fallback_count:
             print(f"  + {fallback_count} rows from master_data fallback")
+
+    # ── Apply reconciled-months snapshot (locks historical values) ──────────
+    if os.path.exists(RECONCILED_SNAPSHOT_FILE):
+        with open(RECONCILED_SNAPSHOT_FILE) as f: snap = json.load(f)
+        snap_through = snap.get("reconciled_through", "")
+        snap_rows = {sr["name"]: sr["monthly"] for sr in snap.get("rows", [])}
+        locked_cells = 0
+        for r in rows:
+            snap_monthly = snap_rows.get(r["name"])
+            if not snap_monthly: continue
+            for key, v in snap_monthly.items():
+                if key <= snap_through:
+                    r["monthly"][key] = {**dict(v), "reconciled": True}
+                    locked_cells += 1
+            # Recompute 2026 totals after lockbox override
+            t_ar = sum(v["ar"]     for k, v in r["monthly"].items() if k.startswith("2026"))
+            t_ap = sum(v["ap"]     for k, v in r["monthly"].items() if k.startswith("2026"))
+            t_gp = sum(v["net_gp"] for k, v in r["monthly"].items() if k.startswith("2026"))
+            r["total_2026"] = {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)}
+        if locked_cells:
+            print(f"  ⚑ lockbox: {locked_cells} historical cells frozen through {snap_through}")
 
     # Aggregate totals
     monthly_totals = {}
