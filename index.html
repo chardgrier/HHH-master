@@ -28,8 +28,26 @@
   header h1 { font-size: 18px; font-weight: 700; letter-spacing: .4px; }
   header h1 span { color: var(--gold); }
   #sync-info { font-size: 11px; color: #a0aec0; }
-  #refresh-btn { background: var(--gold); border: none; color: #fff; font-weight: 700; padding: 5px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; margin-left: 10px; }
-  #refresh-btn:hover { opacity: .85; }
+  #refresh-btn, #export-btn { background: var(--gold); border: none; color: #fff; font-weight: 700; padding: 5px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; margin-left: 4px; }
+  #export-btn { background: #4a5568; }
+  #refresh-btn:hover, #export-btn:hover { opacity: .85; }
+  #sync-info.stale { color: #fc8181; font-weight: 700; }
+
+  /* Health / alerts panel */
+  .health-panel { margin: 0 24px 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .health-card { background: #fff; border-left: 3px solid var(--border); padding: 10px 14px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.06); flex: 1; min-width: 200px; font-size: 12px; }
+  .health-card.warn    { border-left-color: #d69e2e; background: #fffbeb; }
+  .health-card.danger  { border-left-color: var(--closed); background: #fff5f5; }
+  .health-card.alert   { border-left-color: var(--upcoming); background: #ebf8ff; }
+  .health-card summary { cursor: pointer; font-weight: 700; list-style: none; }
+  .health-card summary::-webkit-details-marker { display: none; }
+  .health-card .count { font-size: 20px; font-weight: 700; margin-right: 6px; }
+  .health-card.warn .count   { color: #b7791f; }
+  .health-card.danger .count { color: var(--closed); }
+  .health-card.alert .count  { color: var(--upcoming); }
+  .health-card ul { list-style: none; margin-top: 8px; padding-left: 0; max-height: 200px; overflow-y: auto; }
+  .health-card li { padding: 3px 0; font-size: 11px; color: var(--muted); border-top: 1px solid var(--border); }
+  .health-card li:first-child { border-top: none; }
 
   /* ── KPI cards ── */
   .kpi-row { display: flex; gap: 10px; padding: 14px 24px 10px; flex-wrap: wrap; flex-shrink: 0; }
@@ -138,6 +156,7 @@
   <h1>🦺 <span>Hard Hat Housing</span> — Master Dashboard</h1>
   <div style="display:flex;align-items:center;gap:10px;">
     <span id="sync-info">Loading…</span>
+    <button id="export-btn" onclick="exportCSV()" title="Download current filtered view as CSV">⬇ CSV</button>
     <button id="refresh-btn" onclick="loadData()">↻ Refresh</button>
   </div>
 </header>
@@ -149,6 +168,9 @@
 
   <!-- KPI Row -->
   <div class="kpi-row" id="kpi-row"></div>
+
+  <!-- Health / alerts panel -->
+  <div class="health-panel" id="health-panel"></div>
 
   <!-- Filters -->
   <div class="filters">
@@ -222,7 +244,12 @@ async function loadData() {
     const r = await fetch('data/projects.json?t=' + Date.now());
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     DATA = await r.json();
-    document.getElementById('sync-info').textContent = 'Updated: ' + new Date(DATA.generated_at).toLocaleString();
+    // Sync-age indicator: stale if >24h since last run
+    const genAt = new Date(DATA.generated_at);
+    const ageHrs = (Date.now() - genAt.getTime()) / 3_600_000;
+    const info = document.getElementById('sync-info');
+    info.textContent = (ageHrs > 24 ? `⚠ Stale! Last sync: ` : 'Updated: ') + genAt.toLocaleString();
+    info.classList.toggle('stale', ageHrs > 24);
     render();
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
@@ -275,9 +302,72 @@ function render() {
   periodSel.value = FILTERS.period;
 
   renderKPIs();
+  renderHealthPanel();
   renderScopeTotals();
   renderCommissionTable();
   renderTable();
+}
+
+// Render the health/alerts panel
+function renderHealthPanel() {
+  const h = DATA.health || {};
+  const cards = [];
+
+  const card = (type, icon, title, items, formatter) => {
+    if (!items || items.length === 0) return;
+    const list = items.slice(0, 20).map(formatter).join('');
+    cards.push(`<details class="health-card ${type}">
+      <summary><span class="count">${items.length}</span>${icon} ${title}</summary>
+      <ul>${list}</ul>
+    </details>`);
+  };
+
+  card('danger', '🚨', `ending in 30 days`, h.ending_in_30,
+    x => `<li><b>${x.days}d</b> — ${x.name} (${x.salesperson}) · ends ${x.end_date}</li>`);
+  card('alert',  '⏰', `ending in 31-45 days`, h.ending_in_31_45,
+    x => `<li><b>${x.days}d</b> — ${x.name} (${x.salesperson}) · ends ${x.end_date}</li>`);
+  card('warn',   '⚠',  `missing A/P`, h.missing_ap,
+    x => `<li>${x.name} · A/R $${Math.round(x.ar).toLocaleString()}</li>`);
+  card('warn',   '⚠',  `missing crew size`, h.missing_crew,
+    x => `<li>${x.name} · A/R $${Math.round(x.ar).toLocaleString()}</li>`);
+  card('danger', '🚨', `A/P > A/R (check data)`, h.ap_exceeds_ar,
+    x => `<li>${x.name} · A/R $${Math.round(x.ar).toLocaleString()} / A/P $${Math.round(x.ap).toLocaleString()}</li>`);
+
+  const panel = document.getElementById('health-panel');
+  panel.innerHTML = cards.length ? cards.join('') : '';
+  panel.style.display = cards.length ? 'flex' : 'none';
+}
+
+// CSV export of the current filtered view (projects × months)
+function exportCSV() {
+  if (!DATA) return;
+  const months = DATA.months;
+  const projects = filteredProjects();
+  const header = ['Project','Salesperson','Status','Start','End','Base A/R','Base A/P','Base Crew',
+                  ...months.flatMap(m => [`${m} A/R`,`${m} A/P`,`${m} Net GP`]),
+                  'Total A/R','Total A/P','Total Net GP'];
+  const rows = projects.map(p => {
+    let tAr=0, tAp=0, tGp=0;
+    Object.values(p.monthly).forEach(mv => { tAr+=mv.ar||0; tAp+=mv.ap||0; tGp+=mv.net_gp||0; });
+    const cells = [
+      `"${p.name.replace(/"/g,'""')}"`, p.salesperson, p.status, p.start_date, p.end_date,
+      p.base_ar, p.base_ap, p.base_crew,
+      ...months.flatMap(m => {
+        const v = p.monthly[m] || {};
+        return [v.ar||0, v.ap||0, v.net_gp||0];
+      }),
+      tAr.toFixed(2), tAp.toFixed(2), tGp.toFixed(2),
+    ];
+    return cells.join(',');
+  });
+  const csv = [header.join(','), ...rows].join('\n');
+  const blob = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const stamp = new Date().toISOString().split('T')[0];
+  a.href = url; a.download = `hhh-dashboard-${stamp}.csv`;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
 }
 
 // Which months does the current period filter include?

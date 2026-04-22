@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T20:00:34.432982",
+  "generated_at": "2026-04-21T21:45:38.614196",
   "months": [
     "2025-08",
     "2025-09",
@@ -6845,5 +6845,173 @@
         "commission": 0
       }
     }
+  },
+  "health": {
+    "missing_ap": [],
+    "missing_crew": [
+      {
+        "name": "Gray Construction - Bristol, TN - Paul - 2592",
+        "ar": 2500.0
+      },
+      {
+        "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House G]",
+        "ar": 3595.0
+      },
+      {
+        "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House H]",
+        "ar": 3595.0
+      },
+      {
+        "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House I]",
+        "ar": 3595.0
+      },
+      {
+        "name": "Independence Excavating - Columbus, OH - Paul - 2509",
+        "ar": 2200.0
+      },
+      {
+        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
+        "ar": 2395.0
+      },
+      {
+        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
+        "ar": 2895.0
+      },
+      {
+        "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
+        "ar": 6900.0
+      },
+      {
+        "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 4",
+        "ar": 12000.0
+      },
+      {
+        "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
+        "ar": 2200.0
+      }
+    ],
+    "ap_exceeds_ar": [
+      {
+        "name": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
+        "ar": 15400.0,
+        "ap": 27190.0
+      },
+      {
+        "name": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+        "ar": 16650.0,
+        "ap": 22500.0
+      },
+      {
+        "name": "Gutknecht Construction - Evansville, IN - Matt - 2627",
+        "ar": 7750.0,
+        "ap": 10900.0
+      }
+    ],
+    "ending_in_30": [
+      {
+        "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
+        "end_date": "2026-04-22",
+        "days": 1,
+        "salesperson": "Logan"
+      },
+      {
+        "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Zeke"
+      },
+      {
+        "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Zeke"
+      },
+      {
+        "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Zeke"
+      },
+      {
+        "name": "Sletten - San Pablo, CA - Zeke - 2601",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Zeke"
+      },
+      {
+        "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Logan"
+      },
+      {
+        "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses A,B,C]",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Logan"
+      },
+      {
+        "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Logan"
+      },
+      {
+        "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
+        "end_date": "2026-04-30",
+        "days": 9,
+        "salesperson": "Logan"
+      },
+      {
+        "name": "Arco- Lebanon, TN - Paul - 2616",
+        "end_date": "2026-05-01",
+        "days": 10,
+        "salesperson": "Paul"
+      },
+      {
+        "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
+        "end_date": "2026-05-01",
+        "days": 10,
+        "salesperson": "Logan"
+      },
+      {
+        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
+        "end_date": "2026-05-08",
+        "days": 17,
+        "salesperson": "Paul"
+      }
+    ],
+    "ending_in_31_45": [
+      {
+        "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
+        "end_date": "2026-05-30",
+        "days": 39,
+        "salesperson": "Zeke"
+      },
+      {
+        "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
+        "end_date": "2026-05-31",
+        "days": 40,
+        "salesperson": "Paul"
+      },
+      {
+        "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
+        "end_date": "2026-05-31",
+        "days": 40,
+        "salesperson": "Matt"
+      },
+      {
+        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
+        "end_date": "2026-06-01",
+        "days": 41,
+        "salesperson": "Paul"
+      },
+      {
+        "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
+        "end_date": "2026-06-05",
+        "days": 45,
+        "salesperson": "Paul"
+      }
+    ]
   }
 }

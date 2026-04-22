@@ -610,6 +610,38 @@ def sync():
             sp_summary[r["salesperson"]][key]["ap"] += v["ap"]
             sp_summary[r["salesperson"]][key]["commission"] += v.get("commission", 0)
 
+    # ── Health / alerts metadata ─────────────────────────────────────────────
+    today = date.today()
+    def days_until(end_str):
+        try: return (date.fromisoformat(end_str) - today).days
+        except: return None
+    health = {
+        "missing_ap":      [],   # Active/Upcoming with A/R > 0 but A/P == 0
+        "missing_crew":    [],   # Active/Upcoming with A/R > 0 but crew == 0
+        "ap_exceeds_ar":   [],   # Sanity-check: A/P > A/R (parser gone wrong)
+        "ending_in_30":    [],   # Active projects ending within 30 days
+        "ending_in_31_45": [],   # Active projects ending 31-45 days out
+    }
+    for r in rows:
+        if r["status"] in ("Active", "Upcoming"):
+            if r.get("base_ar", 0) > 0 and r.get("base_ap", 0) == 0:
+                health["missing_ap"].append({"name": r["name"], "ar": r["base_ar"]})
+            if r.get("base_ar", 0) > 0 and r.get("base_crew", 0) == 0:
+                health["missing_crew"].append({"name": r["name"], "ar": r["base_ar"]})
+            if r.get("base_ap", 0) > r.get("base_ar", 0) * 1.1 and r.get("base_ar", 0) > 0:
+                health["ap_exceeds_ar"].append({"name": r["name"], "ar": r["base_ar"], "ap": r["base_ap"]})
+        if r["status"] == "Active" and r.get("end_date"):
+            d = days_until(r["end_date"])
+            if d is not None and 0 < d <= 30:
+                health["ending_in_30"].append({"name": r["name"], "end_date": r["end_date"], "days": d,
+                                                "salesperson": r.get("salesperson","")})
+            elif d is not None and 30 < d <= 45:
+                health["ending_in_31_45"].append({"name": r["name"], "end_date": r["end_date"], "days": d,
+                                                   "salesperson": r.get("salesperson","")})
+    # Sort alert lists by urgency
+    health["ending_in_30"].sort(key=lambda x: x["days"])
+    health["ending_in_31_45"].sort(key=lambda x: x["days"])
+
     out = {
         "generated_at": datetime.now().isoformat(),
         "months": [f"{y}-{m:02d}" for y, m in MONTHS],
@@ -617,6 +649,7 @@ def sync():
         "projects": rows,
         "monthly_totals": monthly_totals,
         "salesperson_summary": sp_summary,
+        "health": health,
     }
     os.makedirs("data", exist_ok=True)
     with open("data/projects.json", "w") as f:
