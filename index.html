@@ -134,6 +134,37 @@
   .scope-stat.gp  .val { color: var(--active); }
   .scope-label { padding: 8px 0; color: var(--muted); font-size: 11px; font-weight: 600; }
 
+  /* Salesperson leaderboard */
+  .sp-leaderboard { margin: 10px 24px 0; background: #fff; padding: 12px 14px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .sp-leaderboard h3 { font-size: 13px; margin-bottom: 8px; color: var(--dark); }
+  .sp-leaderboard table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .sp-leaderboard th, .sp-leaderboard td { padding: 5px 10px; border-bottom: 1px solid var(--border); text-align: right; }
+  .sp-leaderboard th { background: #f7f8fc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: .5px; }
+  .sp-leaderboard td.sp-name { text-align: left; font-weight: 700; cursor: pointer; color: var(--upcoming); }
+  .sp-leaderboard td.sp-name:hover { text-decoration: underline; }
+  .sp-leaderboard .rank { color: var(--gold); font-weight: 700; width: 40px; text-align: center; }
+
+  /* Commission statement modal (printable) */
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: none; z-index: 1000; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 20px; }
+  .modal-backdrop.open { display: flex; }
+  .modal { background: #fff; border-radius: 10px; max-width: 900px; width: 100%; padding: 30px; box-shadow: 0 10px 40px rgba(0,0,0,.3); }
+  .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
+  .modal-head h2 { font-size: 20px; color: var(--dark); }
+  .modal-head .actions button { margin-left: 8px; border: 1px solid var(--border); background: #fff; color: var(--dark); padding: 5px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; }
+  .modal-head .actions button.primary { background: var(--gold); color: #fff; border-color: var(--gold); font-weight: 700; }
+  .modal table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
+  .modal th, .modal td { padding: 6px 10px; border: 1px solid var(--border); text-align: right; }
+  .modal th { background: var(--dark); color: #fff; font-weight: 600; }
+  .modal td.left { text-align: left; }
+  .modal tfoot td { background: #f7f8fc; font-weight: 700; }
+  @media print {
+    body * { visibility: hidden; }
+    .modal, .modal * { visibility: visible; }
+    .modal { position: absolute; top: 0; left: 0; width: 100%; box-shadow: none; }
+    .modal-head .actions { display: none; }
+    .modal-backdrop { background: #fff; padding: 0; }
+  }
+
   /* Commission-by-salesperson section */
   .commission-section { margin: 10px 24px 14px; }
   .commission-section details { background: #fff; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
@@ -194,8 +225,16 @@
   <!-- Scoped totals panel -->
   <div id="scope-totals" class="scope-totals"></div>
 
+  <!-- Salesperson leaderboard -->
+  <div id="sp-leaderboard" class="sp-leaderboard"></div>
+
   <!-- Commission by salesperson per month -->
   <div id="commission-section" class="commission-section"></div>
+
+  <!-- Commission statement modal -->
+  <div class="modal-backdrop" id="stmt-modal" onclick="if(event.target===this) closeStmt()">
+    <div class="modal" id="stmt-modal-inner"></div>
+  </div>
 
   <!-- Scrollable master table -->
   <div class="scroll-wrap">
@@ -304,8 +343,123 @@ function render() {
   renderKPIs();
   renderHealthPanel();
   renderScopeTotals();
+  renderLeaderboard();
   renderCommissionTable();
   renderTable();
+}
+
+// Salesperson leaderboard — ranked by commission for current period filter
+function renderLeaderboard() {
+  const months = periodMonths();
+  const projects = filteredProjects();
+
+  const byS = {};
+  projects.forEach(p => {
+    const sp = p.salesperson || 'Unknown';
+    byS[sp] = byS[sp] || {ar:0, ap:0, commission:0, net_gp:0, projects:0};
+    byS[sp].projects += 1;
+    months.forEach(k => {
+      const mv = p.monthly[k];
+      if (!mv) return;
+      byS[sp].ar  += mv.ar || 0;
+      byS[sp].ap  += mv.ap || 0;
+      byS[sp].commission += mv.commission || 0;
+      byS[sp].net_gp += mv.net_gp || 0;
+    });
+  });
+
+  const ranked = Object.entries(byS).sort((a,b) => b[1].commission - a[1].commission);
+  if (ranked.length === 0) {
+    document.getElementById('sp-leaderboard').innerHTML = '';
+    return;
+  }
+
+  const periodLabel = FILTERS.period === 'All' ? 'all months'
+                    : FILTERS.period.length === 4 ? FILTERS.period
+                    : monthLabel(FILTERS.period);
+
+  let html = `<h3>🏆 Salesperson Leaderboard · ${periodLabel}</h3><table><thead><tr>`
+           + '<th class="rank"></th><th style="text-align:left">Salesperson</th>'
+           + '<th>Projects</th><th>A/R</th><th>A/P</th><th>Commission</th><th>Net GP</th>'
+           + '</tr></thead><tbody>';
+  ranked.forEach(([name, s], i) => {
+    html += `<tr>
+      <td class="rank">${i+1}</td>
+      <td class="sp-name" onclick="showStmt('${name.replace(/'/g,"\\'")}')">${name}</td>
+      <td>${s.projects}</td>
+      <td>${fmt$(s.ar)}</td>
+      <td>${fmt$(s.ap)}</td>
+      <td style="color:var(--gold);font-weight:700">${fmt$(s.commission)}</td>
+      <td style="color:var(--active);font-weight:700">${fmt$(s.net_gp)}</td>
+    </tr>`;
+  });
+  html += '</tbody></table><p style="font-size:10px;color:var(--muted);margin-top:8px">Click a salesperson to view their detailed commission statement for the selected period.</p>';
+  document.getElementById('sp-leaderboard').innerHTML = html;
+}
+
+// Commission statement modal for one salesperson × current period
+function showStmt(sp) {
+  const months = periodMonths();
+  const projects = filteredProjects().filter(p => p.salesperson === sp);
+  const periodLabel = FILTERS.period === 'All' ? 'All Months'
+                    : FILTERS.period.length === 4 ? FILTERS.period
+                    : monthLabel(FILTERS.period);
+
+  // Per-project totals across selected months
+  let totalAr = 0, totalAp = 0, totalComm = 0, totalGp = 0;
+  const rows = projects.map(p => {
+    let ar=0, ap=0, comm=0, gp=0;
+    months.forEach(k => {
+      const mv = p.monthly[k]; if (!mv) return;
+      ar += mv.ar||0; ap += mv.ap||0; comm += mv.commission||0; gp += mv.net_gp||0;
+    });
+    totalAr += ar; totalAp += ap; totalComm += comm; totalGp += gp;
+    return {name: p.name, status: p.status, start: p.start_date, end: p.end_date,
+            ar, ap, comm, gp};
+  }).filter(r => r.ar > 0 || r.ap > 0 || r.comm > 0);
+
+  let html = `<div class="modal-head">
+    <h2>Commission Statement · <span style="color:var(--gold)">${sp}</span><br>
+        <span style="font-size:13px;color:var(--muted);font-weight:400">${periodLabel}</span></h2>
+    <div class="actions">
+      <button class="primary" onclick="window.print()">🖨 Print</button>
+      <button onclick="closeStmt()">Close</button>
+    </div>
+  </div>`;
+
+  html += `<p style="color:var(--muted);font-size:11px;margin-bottom:14px">
+    Generated ${new Date().toLocaleString()} · ${rows.length} projects
+  </p>`;
+
+  html += '<table><thead><tr><th class="left">Project</th><th>Status</th>'
+        + '<th>Start</th><th>End</th><th>A/R</th><th>A/P</th>'
+        + '<th>Commission</th><th>Net GP</th></tr></thead><tbody>';
+  rows.forEach(r => {
+    html += `<tr>
+      <td class="left">${r.name}</td>
+      <td>${r.status}</td>
+      <td>${fmtDate(r.start)}</td>
+      <td>${fmtDate(r.end)}</td>
+      <td>${fmt$(r.ar)}</td>
+      <td>${fmt$(r.ap)}</td>
+      <td style="color:var(--gold);font-weight:700">${fmt$(r.comm)}</td>
+      <td style="color:var(--active);font-weight:700">${fmt$(r.gp)}</td>
+    </tr>`;
+  });
+  html += `</tbody><tfoot><tr>
+    <td class="left" colspan="4">TOTAL (${rows.length} projects)</td>
+    <td>${fmt$(totalAr)}</td>
+    <td>${fmt$(totalAp)}</td>
+    <td style="color:var(--gold)">${fmt$(totalComm)}</td>
+    <td style="color:var(--active)">${fmt$(totalGp)}</td>
+  </tr></tfoot></table>`;
+
+  document.getElementById('stmt-modal-inner').innerHTML = html;
+  document.getElementById('stmt-modal').classList.add('open');
+}
+
+function closeStmt() {
+  document.getElementById('stmt-modal').classList.remove('open');
 }
 
 // Render the health/alerts panel
