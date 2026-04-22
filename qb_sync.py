@@ -112,15 +112,26 @@ def normalize(s):
 
 def project_company(name):
     """Extract the construction company name from an Asana project name."""
-    # Typical: "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506"
-    # Take everything up to the first " - " (if present)
     if " - " in name:
         company = name.split(" - ")[0]
     else:
         company = name
-    # Drop parenthesised parts
     company = re.sub(r"\s*\(.*?\)\s*", " ", company)
     return normalize(company)
+
+# Invoice / bill doc_number patterns:
+#   "2506-01"         → project 2506, no house
+#   "2506-E01"        → project 2506, house E
+#   "2506-A-01"       → project 2506, house A
+#   "2506 A1"         → project 2506, house A
+DOC_NUM_RE = re.compile(r"^\s*(\d{4})[\s\-]*([A-Z])?", re.I)
+
+def parse_doc_number(doc_num):
+    """Extract (project_number, house_letter) from an invoice/bill doc number."""
+    if not doc_num: return (None, None)
+    m = DOC_NUM_RE.match(str(doc_num).strip())
+    if not m: return (None, None)
+    return (m.group(1), (m.group(2) or "").upper() or None)
 
 def status_for(invoice, today):
     """Return 'paid' | 'sent' | 'overdue' given a QB Invoice/Bill record."""
@@ -155,78 +166,116 @@ def main():
     with open("data/projects.json") as f:
         projects = json.load(f)["projects"]
 
-    # Build company→project map (heuristic)
+    # Index projects by their project number (2xxx) for DocNumber matching
+    proj_by_number = defaultdict(list)
+    for p in projects:
+        num = p.get("project_number") or ""
+        if num: proj_by_number[num].append(p)
+    # Also index by company name as a fallback for invoices without a proper doc number
     proj_by_company = defaultdict(list)
     for p in projects:
         c = project_company(p["name"])
         if c: proj_by_company[c].append(p)
 
-    # ── A/R status per project per month ──
-    ar_status = defaultdict(lambda: defaultdict(list))   # project_name → month → [invoice records]
+    def match_project(doc_number, fallback_name):
+        """Prefer DocNumber (HHH convention: 'NNNN-...' or 'NNNN-<letter><NN>').
+        Fall back to customer/vendor name match."""
+        pnum, house = parse_doc_number(doc_number)
+        if pnum and pnum in proj_by_number:
+            candidates = proj_by_number[pnum]
+            # If a house letter was parsed AND we have a row matching it, prefer that
+            if house:
+                for p in candidates:
+                    if f"[House {house}]" in p["name"] or f" — Phase" in p["name"] and house in p["name"]:
+                        return p, pnum, house
+            # Otherwise pick the first candidate for the project number
+            return candidates[0], pnum, house
+        # Fall back to company/vendor name
+        cn = normalize(fallback_name)
+        for company, projs in proj_by_company.items():
+            if company and (company in cn or cn in company):
+                return projs[0], None, None
+        return None, None, None
+
+    # ── A/R status per project per month (matched by invoice DocNumber) ──
+    ar_status = defaultdict(lambda: defaultdict(list))
     unmatched_invoices = []
     for inv in invoices:
         cust_name = (inv.get("CustomerRef") or {}).get("name", "")
-        cn = normalize(cust_name)
-        matched = None
-        for company, projs in proj_by_company.items():
-            if company and (company in cn or cn in company):
-                if len(projs) == 1:
-                    matched = projs[0]; break
-                # Ambiguous — pick by matching location/number if possible
-                matched = projs[0]; break
+        matched, pnum, house = match_project(inv.get("DocNumber"), cust_name)
         mk = month_key(inv.get("TxnDate",""))
         if matched and mk:
             ar_status[matched["name"]][mk].append({
-                "status":   status_for(inv, today),
-                "amount":   float(inv.get("TotalAmt", 0) or 0),
-                "balance":  float(inv.get("Balance",  0) or 0),
+                "status":     status_for(inv, today),
+                "amount":     float(inv.get("TotalAmt", 0) or 0),
+                "balance":    float(inv.get("Balance",  0) or 0),
                 "invoice_id": inv.get("Id"),
                 "doc_number": inv.get("DocNumber"),
-                "due_date": inv.get("DueDate"),
+                "due_date":   inv.get("DueDate"),
+                "project_number": pnum,
+                "house":      house,
             })
         else:
-            unmatched_invoices.append({"customer": cust_name, "date": inv.get("TxnDate"),
-                                        "amount": float(inv.get("TotalAmt",0) or 0),
-                                        "doc_number": inv.get("DocNumber")})
+            unmatched_invoices.append({
+                "customer": cust_name, "date": inv.get("TxnDate"),
+                "amount": float(inv.get("TotalAmt",0) or 0),
+                "doc_number": inv.get("DocNumber"),
+            })
 
-    # ── A/P status per project per month ──
-    # For vendors (homeowners), we'd need an explicit mapping between QB vendor
-    # names and specific project homeowner leases. For now, we just record the
-    # bill by vendor and leave matching for a later enhancement.
+    # ── A/P status per project per month (matched by bill DocNumber) ──
+    ap_status = defaultdict(lambda: defaultdict(list))
     ap_bills = []
+    unmatched_bills = []
     for bill in bills:
         vendor = (bill.get("VendorRef") or {}).get("name", "")
-        ap_bills.append({
-            "vendor":    vendor,
-            "amount":    float(bill.get("TotalAmt", 0) or 0),
-            "balance":   float(bill.get("Balance",  0) or 0),
-            "txn_date":  bill.get("TxnDate"),
-            "due_date":  bill.get("DueDate"),
-            "status":    status_for(bill, today),
-            "bill_id":   bill.get("Id"),
+        matched, pnum, house = match_project(bill.get("DocNumber"), vendor)
+        mk = month_key(bill.get("TxnDate",""))
+        record = {
+            "vendor":     vendor,
+            "amount":     float(bill.get("TotalAmt", 0) or 0),
+            "balance":    float(bill.get("Balance",  0) or 0),
+            "txn_date":   bill.get("TxnDate"),
+            "due_date":   bill.get("DueDate"),
+            "status":     status_for(bill, today),
+            "bill_id":    bill.get("Id"),
             "doc_number": bill.get("DocNumber"),
-        })
+            "project_number": pnum,
+            "house":      house,
+        }
+        ap_bills.append(record)
+        if matched and mk:
+            ap_status[matched["name"]][mk].append(record)
+        else:
+            unmatched_bills.append({
+                "vendor": vendor, "date": bill.get("TxnDate"),
+                "amount": float(bill.get("TotalAmt",0) or 0),
+                "doc_number": bill.get("DocNumber"),
+            })
 
     out = {
         "generated_at": datetime.now().isoformat(),
         "realm_id": REALM_ID,
         "ar_status_by_project": {k: dict(v) for k, v in ar_status.items()},
+        "ap_status_by_project": {k: dict(v) for k, v in ap_status.items()},
         "ap_bills": ap_bills,
         "unmatched_invoices": unmatched_invoices,
+        "unmatched_bills":    unmatched_bills,
         "summary": {
-            "invoices_total":      len(invoices),
-            "invoices_matched":    sum(len(v) for v in ar_status.values() for v in v.values() if isinstance(v, list)),
-            "invoices_unmatched":  len(unmatched_invoices),
-            "bills_total":         len(bills),
+            "invoices_total":     len(invoices),
+            "invoices_matched":   len(invoices) - len(unmatched_invoices),
+            "invoices_unmatched": len(unmatched_invoices),
+            "bills_total":        len(bills),
+            "bills_matched":      len(bills) - len(unmatched_bills),
+            "bills_unmatched":    len(unmatched_bills),
         },
     }
     os.makedirs("data", exist_ok=True)
     with open("data/qb_status.json","w") as f:
         json.dump(out, f, indent=2, default=str)
 
-    print(f"\n✓ A/R matched to {len(ar_status)} projects")
-    print(f"✓ {len(unmatched_invoices)} invoices couldn't be matched to a project (see qb_status.json → unmatched_invoices)")
-    print(f"✓ {len(bills)} bills recorded (homeowner→project matching TBD)")
+    print(f"\n✓ A/R matched: {len(ar_status)} projects, {len(invoices)-len(unmatched_invoices)}/{len(invoices)} invoices")
+    print(f"✓ A/P matched: {len(ap_status)} projects, {len(bills)-len(unmatched_bills)}/{len(bills)} bills")
+    print(f"  {len(unmatched_invoices)} invoices + {len(unmatched_bills)} bills unmatched (see qb_status.json)")
     print("  Output → data/qb_status.json")
 
 if __name__ == "__main__":

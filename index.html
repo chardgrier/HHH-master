@@ -721,32 +721,38 @@ function monthLabel(key) {
   return MONTH_NAMES[parseInt(m)-1] + " '" + y.slice(2);
 }
 
-// Return an icon string for the A/R invoice status for this project+month
-// Pulled from QB_STATUS (QuickBooks sync). "" if nothing on file.
-function qbStatusIcon(projectName, monthKey) {
-  if (!QB_STATUS || !QB_STATUS.ar_status_by_project) return '';
-  // Try exact match first, then fuzzy (project number + partial name)
-  let entries = QB_STATUS.ar_status_by_project[projectName];
+// Resolve a projects.json row to its QB A/R entries or A/P entries
+function qbEntriesFor(projectName, kind /* 'ar' | 'ap' */) {
+  if (!QB_STATUS) return null;
+  const map = kind === 'ar' ? QB_STATUS.ar_status_by_project : QB_STATUS.ap_status_by_project;
+  if (!map) return null;
+  let entries = map[projectName];
   if (!entries) {
     const numMatch = projectName.match(/\b(2\d{3})\b/);
     if (numMatch) {
-      for (const [k, v] of Object.entries(QB_STATUS.ar_status_by_project)) {
+      for (const [k, v] of Object.entries(map)) {
         if (k.includes(numMatch[1])) { entries = v; break; }
       }
     }
   }
+  return entries || null;
+}
+
+// Return an icon string for A/R or A/P status in this project+month
+function qbStatusIcon(projectName, monthKey, kind='ar') {
+  const entries = qbEntriesFor(projectName, kind);
   if (!entries) return '';
-  const monthInvoices = entries[monthKey];
-  if (!monthInvoices || monthInvoices.length === 0) return '';
-  // Pick worst status: overdue > sent > paid
-  const statuses = monthInvoices.map(i => i.status);
+  const monthBills = entries[monthKey];
+  if (!monthBills || monthBills.length === 0) return '';
+  const statuses = monthBills.map(i => i.status);
   let icon = '', title = '';
+  const label = kind === 'ar' ? 'invoice' : 'bill';
   if (statuses.includes('overdue')) {
-    icon = '🔴'; title = 'Overdue — invoice past due date';
+    icon = '🔴'; title = `Overdue — ${label} past due date`;
   } else if (statuses.includes('sent')) {
-    icon = '🟠'; title = 'Sent, awaiting payment';
+    icon = '🟠'; title = `${label[0].toUpperCase()+label.slice(1)} recorded, awaiting payment`;
   } else if (statuses.includes('paid')) {
-    icon = '🟢'; title = 'Paid';
+    icon = '🟢'; title = `${label[0].toUpperCase()+label.slice(1)} paid`;
   } else return '';
   return `<span title="${title}" style="margin-left:3px;font-size:9px">${icon}</span>`;
 }
@@ -817,11 +823,12 @@ function renderTable() {
             ? '<span title="Reconciled — final numbers" style="color:#38a169;margin-left:3px">✓</span>'
             : '<span title="Not yet reconciled — estimate" style="color:#dd6b20;margin-left:3px">⚠</span>';
         }
-        // QB invoice status icon next to A/R
-        const qbIcon = qbStatusIcon(p.name, key);
+        // QB status icons: invoice (A/R) and bill (A/P)
+        const arIcon = qbStatusIcon(p.name, key, 'ar');
+        const apIcon = qbStatusIcon(p.name, key, 'ap');
         body += `<td class="${cls}" title="Crew: ${mv.crew}">`;
-        body += `<div class="ar">${fmt$(mv.ar)}${mark}${qbIcon}</div>`;
-        body += `<div class="ap">${fmt$(mv.ap)}</div>`;
+        body += `<div class="ar">${fmt$(mv.ar)}${mark}${arIcon}</div>`;
+        body += `<div class="ap">${fmt$(mv.ap)}${apIcon}</div>`;
         body += `<div class="gp">${fmt$(mv.net_gp)}</div>`;
         body += '</td>';
       }
