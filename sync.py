@@ -196,10 +196,17 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
         kind  = classify(tname)
         if not kind: continue
 
-        # Skip ghost tasks — those where every HHH custom field is null. These
-        # clutter our prefix map and break merging (e.g. B/C/D/E Homeowner
-        # Leases with empty custom fields creating separate "houses").
-        if not any(cf_value(t, g) for g in (ar_gid, ap_gid, start_gid, end_gid, crew_gid)):
+        # Skip ghost tasks so they don't create spurious prefix groups:
+        #   • A LEASE task without any A/R or A/P contributes no financial data
+        #     and its presence would fragment prefix groups
+        #   • An ADDENDUM task is allowed to have only dates (for date-only
+        #     extensions), but must have either an amount or dates
+        is_lease = kind.endswith("_lease")
+        has_money = cf_value(t, ar_gid) or cf_value(t, ap_gid)
+        has_dates = cf_value(t, start_gid) or cf_value(t, end_gid)
+        if is_lease and not has_money:
+            continue
+        if not is_lease and not (has_money or has_dates):
             continue
 
         gtype = "construction" if kind.startswith("construction") else "homeowner"
