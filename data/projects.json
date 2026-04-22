@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T17:24:57.884800",
+  "generated_at": "2026-04-22T17:31:09.556875",
   "months": [
     "2025-08",
     "2025-09",
@@ -4003,7 +4003,7 @@
     },
     {
       "gid": "1212344857819012",
-      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594 \u2014 Phase 1",
+      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
       "salesperson": "Zeke",
       "project_number": "2594",
       "status": "Active",
@@ -4067,68 +4067,6 @@
         "ar": 50000.0,
         "ap": 29550.0,
         "net_gp": 16360.0
-      },
-      "source": "asana_custom_fields"
-    },
-    {
-      "gid": "1212344857819012",
-      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594 \u2014 Phase 2",
-      "salesperson": "Zeke",
-      "project_number": "2594",
-      "status": "Closed",
-      "start_date": "2025-12-26",
-      "end_date": "2026-04-10",
-      "base_ar": 10000.0,
-      "base_ap": 0,
-      "base_crew": 0,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-12": {
-          "crew": 0,
-          "ar": 2000.0,
-          "ap": 0.0,
-          "commission": 400.0,
-          "net_gp": 1600.0,
-          "reconciled": true
-        },
-        "2026-01": {
-          "crew": 0,
-          "ar": 10000.0,
-          "ap": 0.0,
-          "commission": 2000.0,
-          "net_gp": 8000.0,
-          "reconciled": true
-        },
-        "2026-02": {
-          "crew": 0,
-          "ar": 10000.0,
-          "ap": 0.0,
-          "commission": 2000.0,
-          "net_gp": 8000.0,
-          "reconciled": true
-        },
-        "2026-03": {
-          "crew": 0,
-          "ar": 10000.0,
-          "ap": 0.0,
-          "commission": 2000.0,
-          "net_gp": 8000.0,
-          "reconciled": true
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 3333.33,
-          "ap": 0.0,
-          "commission": 666.67,
-          "net_gp": 2666.66,
-          "reconciled": true
-        }
-      },
-      "total_2026": {
-        "ar": 33333.33,
-        "ap": 0.0,
-        "net_gp": 26666.66
       },
       "source": "asana_custom_fields"
     },
@@ -7320,38 +7258,38 @@
     },
     "2025-12": {
       "crew": 224,
-      "ar": 302565.66,
+      "ar": 300565.66,
       "ap": 180935.26,
-      "net_gp": 107545.32,
-      "gp_pct": 35.54
+      "net_gp": 105945.32,
+      "gp_pct": 35.25
     },
     "2026-01": {
       "crew": 253,
-      "ar": 346056.67,
+      "ar": 336056.67,
       "ap": 211877.26,
-      "net_gp": 117381.52,
-      "gp_pct": 33.92
+      "net_gp": 109381.52,
+      "gp_pct": 32.55
     },
     "2026-02": {
       "crew": 280,
-      "ar": 387417.01,
+      "ar": 377417.01,
       "ap": 238207.29,
-      "net_gp": 129266.7,
-      "gp_pct": 33.37
+      "net_gp": 121266.7,
+      "gp_pct": 32.13
     },
     "2026-03": {
       "crew": 320,
-      "ar": 483398.32,
+      "ar": 473398.32,
       "ap": 291248.34,
-      "net_gp": 163730.71,
-      "gp_pct": 33.87
+      "net_gp": 155730.71,
+      "gp_pct": 32.9
     },
     "2026-04": {
       "crew": 384,
-      "ar": 541469.76,
+      "ar": 538136.43,
       "ap": 345607.02,
-      "net_gp": 167812.68,
-      "gp_pct": 30.99
+      "net_gp": 165146.02,
+      "gp_pct": 30.69
     },
     "2026-05": {
       "crew": 366,
@@ -7664,29 +7602,29 @@
         "commission": 6698.67
       },
       "2025-12": {
-        "ar": 69983.33,
+        "ar": 67983.33,
         "ap": 36333.0,
-        "commission": 6778.07
+        "commission": 6378.07
       },
       "2026-01": {
-        "ar": 112160.0,
+        "ar": 102160.0,
         "ap": 67445.0,
-        "commission": 8991.0
+        "commission": 6991.0
       },
       "2026-02": {
-        "ar": 118515.33,
+        "ar": 108515.33,
         "ap": 72953.67,
-        "commission": 9160.33
+        "commission": 7160.33
       },
       "2026-03": {
-        "ar": 132085.0,
+        "ar": 122085.0,
         "ap": 83803.33,
-        "commission": 9704.34
+        "commission": 7704.34
       },
       "2026-04": {
-        "ar": 157910.0,
+        "ar": 154576.66999999998,
         "ap": 103688.34,
-        "commission": 10892.34
+        "commission": 10225.67
       },
       "2026-05": {
         "ar": 154550.0,
@@ -8231,7 +8169,7 @@
         "salesperson": "Zeke"
       },
       {
-        "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594 \u2014 Phase 1",
+        "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
         "end_date": "2026-05-30",
         "days": 38,
         "salesperson": "Zeke"

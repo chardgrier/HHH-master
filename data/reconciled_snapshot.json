@@ -1855,7 +1855,7 @@
       }
     },
     {
-      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594 \u2014 Phase 1",
+      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
       "monthly": {
         "2025-12": {
           "crew": 6,
@@ -1891,46 +1891,6 @@
           "ap": 5910.0,
           "commission": 818.0,
           "net_gp": 3272.0
-        }
-      }
-    },
-    {
-      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594 \u2014 Phase 2",
-      "monthly": {
-        "2025-12": {
-          "crew": 0,
-          "ar": 2000.0,
-          "ap": 0.0,
-          "commission": 400.0,
-          "net_gp": 1600.0
-        },
-        "2026-01": {
-          "crew": 0,
-          "ar": 10000.0,
-          "ap": 0.0,
-          "commission": 2000.0,
-          "net_gp": 8000.0
-        },
-        "2026-02": {
-          "crew": 0,
-          "ar": 10000.0,
-          "ap": 0.0,
-          "commission": 2000.0,
-          "net_gp": 8000.0
-        },
-        "2026-03": {
-          "crew": 0,
-          "ar": 10000.0,
-          "ap": 0.0,
-          "commission": 2000.0,
-          "net_gp": 8000.0
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 3333.33,
-          "ap": 0.0,
-          "commission": 666.67,
-          "net_gp": 2666.66
         }
       }
     },
