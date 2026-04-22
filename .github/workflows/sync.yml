@@ -23,17 +23,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Auto-populate new Asana lease/addendum custom fields from notes
-        env:
-          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
-        run: python3 populate_homeowners.py
-        continue-on-error: true
-
-      - name: Migrate / fill any remaining missing A/P values
-        env:
-          ASANA_TOKEN: ${{ secrets.ASANA_TOKEN }}
-        run: python3 fix_missing_ap.py
-        continue-on-error: true
+      # Auto-population disabled: it was clobbering manually-entered aggregate
+      # values. When a new project/phase is added, fill in the HHH custom fields
+      # directly in Asana (or ask Claude to populate from notes).
 
       - name: Read Asana → generate dashboard data
         env:

@@ -295,6 +295,20 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
         if not groups[h_pre]:
             del groups[h_pre]
 
+    # Does ANY prefix group in this project have a homeowner lease with A/P?
+    # If yes, fallback #2 (use Construction Lease's A/P) must NOT trigger for
+    # other groups, or we'd double-count (the ap from Construction + the ap
+    # from the other group's homeowner lease sum together).
+    project_has_homeowner_ap = False
+    for pre, types in groups.items():
+        hs = types.get("homeowner", {"lease": None, "addendums": []})
+        if hs["lease"] and cf_value(hs["lease"], ap_gid):
+            project_has_homeowner_ap = True; break
+        for a in hs.get("addendums", []):
+            if cf_value(a, ap_gid):
+                project_has_homeowner_ap = True; break
+        if project_has_homeowner_ap: break
+
     houses = []
     for pre, types in groups.items():
         cs = types.get("construction", {"lease": None, "addendums": []})
@@ -311,10 +325,14 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
                             "end":   ar_segs[-1]["end"],
                             "amount": float(h_amt)}]
 
-        # Fallback 2: if no homeowner lease in this group AND the construction
-        # lease has an A/P value, use it (covers ARD Phase N cases where A/P is
-        # on the Construction Lease aggregate).
-        if not ap_segs and ar_segs and cs["lease"]:
+        # Fallback 2: use Construction Lease's own A/P ONLY when the project
+        # has no homeowner A/P anywhere else (covers ARD Phase N where the
+        # aggregate is recorded on the Construction Lease Phase task). Skipping
+        # this when any homeowner has A/P prevents double-counting (Heycon,
+        # Stone and Lime where A/P is on BOTH the Construction Lease and a
+        # Homeowner Lease).
+        if (not ap_segs and ar_segs and cs["lease"]
+                and not project_has_homeowner_ap):
             c_ap = cf_value(cs["lease"], ap_gid)
             if c_ap and c_ap > 0:
                 ap_segs = [{"start": ar_segs[0]["start"],
