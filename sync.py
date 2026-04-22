@@ -196,6 +196,12 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
         kind  = classify(tname)
         if not kind: continue
 
+        # Skip ghost tasks — those where every HHH custom field is null. These
+        # clutter our prefix map and break merging (e.g. B/C/D/E Homeowner
+        # Leases with empty custom fields creating separate "houses").
+        if not any(cf_value(t, g) for g in (ar_gid, ap_gid, start_gid, end_gid, crew_gid)):
+            continue
+
         gtype = "construction" if kind.startswith("construction") else "homeowner"
         pre = prefix_of(tname)
         g = groups.setdefault(pre, {}).setdefault(gtype, {"lease": None, "addendums": []})
