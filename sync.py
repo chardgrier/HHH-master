@@ -62,10 +62,10 @@ RISING_SUN_FILE = "data/rising_sun.json"
 VOID_TASK = ("did not send","did not use","cancelled","termination","terminated",
              "back up","backup","not used","duplicate","did not")
 
-# Dashboard months: Aug 2025 → Dec 2026
+# Dashboard months: Aug 2025 → Dec 2027 (covers multi-year projects like Miller Lee's Summit C, Heycon, Power Design Savannah)
 MONTHS = []
 y, m = 2025, 8
-while (y, m) <= (2026, 12):
+while (y, m) <= (2027, 12):
     MONTHS.append((y, m)); m += 1
     if m > 12: m = 1; y += 1
 
@@ -123,32 +123,39 @@ def classify(name):
     if not n or any(v in n for v in VOID_TASK): return None
 
     # Canonical patterns (anchored)
+    # Phase suffix: "Phase 1", "Phase I", "- Phase I", etc.
+    phase_suffix = r"(?:\s*[-–]?\s*phase\s+(?:\d+|[ivxlcm]+))?"
     patterns = [
-        (r"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?construction\s+addendum(?:\s*#?\s*\d+)?\s*$", "construction_addendum"),
-        (r"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?homeowner\s+addendum(?:\s*#?\s*\d+)?\s*$",    "homeowner_addendum"),
-        # Also "Homeowner A Addendum" / "Homeowner A Addendum #1"
-        (r"^homeowner\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?\s*$", "homeowner_addendum"),
-        (r"^construction\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?\s*$", "construction_addendum"),
-        (r"^(?:[a-z]\s*:\s*)?construction\s+lease(?:\s+phase\s+\d+)?\s*$",                 "construction_lease"),
-        (r"^(?:[a-z]\s*:\s*)?homeowner\s+lease(?:\s+phase\s+\d+|\s*[-–]\s*[a-z])?\s*$",    "homeowner_lease"),
-        # Also "Homeowner A Lease" / "Construction A Lease" (letter in the middle)
-        (r"^homeowner\s+[a-z]\s+lease\s*$",    "homeowner_lease"),
-        (r"^construction\s+[a-z]\s+lease\s*$", "construction_lease"),
+        (rf"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?construction\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "construction_addendum"),
+        (rf"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?homeowner\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",    "homeowner_addendum"),
+        # "Homeowner A Addendum" / "Homeowner A Addendum #1"
+        (rf"^homeowner\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "homeowner_addendum"),
+        (rf"^construction\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "construction_addendum"),
+        (rf"^(?:[a-z]\s*:\s*)?construction\s+lease{phase_suffix}\s*$",          "construction_lease"),
+        (rf"^(?:[a-z]\s*:\s*)?homeowner\s+lease(?:{phase_suffix}|\s*[-–]\s*[a-z])?\s*$", "homeowner_lease"),
+        # "Homeowner A Lease - Phase I" etc. (letter in middle + phase suffix)
+        (rf"^homeowner\s+[a-z]\s+lease{phase_suffix}\s*$",    "homeowner_lease"),
+        (rf"^construction\s+[a-z]\s+lease{phase_suffix}\s*$", "construction_lease"),
     ]
     for pat, kind in patterns:
         if re.match(pat, n):
             return kind
     return None
 
+ROMAN = {"I":1,"II":2,"III":3,"IV":4,"V":5,"VI":6,"VII":7,"VIII":8,"IX":9,"X":10}
+
 def prefix_of(name):
     """Extract the letter/phase grouping key from a task name."""
     m = re.match(r"^([A-Z])\s*:", name)
     if m: return m.group(1).upper()
-    # "Homeowner A Lease" / "Construction A Lease" / "Homeowner A Addendum"
     m = re.match(r"^(?:homeowner|construction)\s+([A-Z])\s+(?:lease|addendum)", name, re.I)
     if m: return m.group(1).upper()
     m = re.search(r"phase\s+(\d+)", name, re.I)
     if m: return f"Phase{m.group(1)}"
+    m = re.search(r"phase\s+([IVX]+)\b", name, re.I)
+    if m:
+        roman = m.group(1).upper()
+        if roman in ROMAN: return f"Phase{ROMAN[roman]}"
     return "_main"
 
 # ─── Pro-ration ───────────────────────────────────────────────────────────────

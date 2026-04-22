@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T19:38:34.656676",
+  "generated_at": "2026-04-21T20:00:34.432982",
   "months": [
     "2025-08",
     "2025-09",
@@ -17,7 +17,19 @@
     "2026-09",
     "2026-10",
     "2026-11",
-    "2026-12"
+    "2026-12",
+    "2027-01",
+    "2027-02",
+    "2027-03",
+    "2027-04",
+    "2027-05",
+    "2027-06",
+    "2027-07",
+    "2027-08",
+    "2027-09",
+    "2027-10",
+    "2027-11",
+    "2027-12"
   ],
   "commission_rate": 0.2,
   "projects": [
@@ -27,61 +39,103 @@
       "salesperson": "Paul",
       "project_number": "2592",
       "status": "Active",
-      "start_date": "2026-02-02",
+      "start_date": "2025-02-03",
       "end_date": "2026-07-31",
-      "base_ar": 0,
-      "base_ap": 1900.0,
+      "base_ar": 2500.0,
+      "base_ap": 1950.0,
       "base_crew": 0,
       "commission_model": "percent",
       "commission_rate": 0.2,
       "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
+        },
         "2026-02": {
           "crew": 0,
-          "ar": 0.0,
-          "ap": 1710.0,
-          "commission": -342.0,
-          "net_gp": -1368.0
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
         },
         "2026-03": {
           "crew": 0,
-          "ar": 0.0,
-          "ap": 1900.0,
-          "commission": -380.0,
-          "net_gp": -1520.0
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
         },
         "2026-04": {
           "crew": 0,
-          "ar": 0.0,
-          "ap": 1900.0,
-          "commission": -380.0,
-          "net_gp": -1520.0
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
         },
         "2026-05": {
           "crew": 0,
-          "ar": 0.0,
-          "ap": 1900.0,
-          "commission": -380.0,
-          "net_gp": -1520.0
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
         },
         "2026-06": {
           "crew": 0,
-          "ar": 0.0,
-          "ap": 1900.0,
-          "commission": -380.0,
-          "net_gp": -1520.0
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
         },
         "2026-07": {
           "crew": 0,
-          "ar": 0.0,
-          "ap": 1900.0,
-          "commission": -380.0,
-          "net_gp": -1520.0
+          "ar": 2500.0,
+          "ap": 1950.0,
+          "commission": 110.0,
+          "net_gp": 440.0
         }
       },
       "total_2026": {
-        "ar": 0.0,
-        "ap": 11210.0,
-        "net_gp": -8968.0
+        "ar": 17500.0,
+        "ap": 13650.0,
+        "net_gp": 3080.0
       },
       "source": "asana_custom_fields"
     },
@@ -345,138 +399,110 @@
       "salesperson": "Paul",
       "project_number": "2506",
       "status": "Active",
-      "start_date": "2025-08-29",
+      "start_date": "2026-02-03",
       "end_date": "2027-02-02",
       "base_ar": 3595.0,
-      "base_ap": 1850.0,
+      "base_ap": 2000.0,
       "base_crew": 0,
       "commission_model": "percent",
       "commission_rate": 0.2,
       "monthly": {
-        "2025-08": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 185.0,
-          "commission": -37.0,
-          "net_gp": -148.0
-        },
-        "2025-09": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 1850.0,
-          "commission": -370.0,
-          "net_gp": -1480.0
-        },
-        "2025-10": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 1850.0,
-          "commission": -370.0,
-          "net_gp": -1480.0
-        },
-        "2025-11": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 1850.0,
-          "commission": -370.0,
-          "net_gp": -1480.0
-        },
-        "2025-12": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 1850.0,
-          "commission": -370.0,
-          "net_gp": -1480.0
-        },
-        "2026-01": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 1850.0,
-          "commission": -370.0,
-          "net_gp": -1480.0
-        },
         "2026-02": {
           "crew": 0,
           "ar": 3115.67,
-          "ap": 1850.0,
-          "commission": 253.13,
-          "net_gp": 1012.54
+          "ap": 1733.33,
+          "commission": 276.47,
+          "net_gp": 1105.87
         },
         "2026-03": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-04": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-05": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-06": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-07": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-08": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-09": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-10": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-11": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
         },
         "2026-12": {
           "crew": 0,
           "ar": 3595.0,
-          "ap": 1850.0,
-          "commission": 349.0,
-          "net_gp": 1396.0
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
+        },
+        "2027-01": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2000.0,
+          "commission": 319.0,
+          "net_gp": 1276.0
+        },
+        "2027-02": {
+          "crew": 0,
+          "ar": 239.67,
+          "ap": 133.33,
+          "commission": 21.27,
+          "net_gp": 85.07
         }
       },
       "total_2026": {
         "ar": 39065.67,
-        "ap": 22200.0,
-        "net_gp": 13492.54
+        "ap": 21733.33,
+        "net_gp": 13865.87
       },
       "source": "asana_custom_fields"
     },
@@ -570,6 +596,20 @@
           "ap": 2600.0,
           "commission": 199.0,
           "net_gp": 796.0
+        },
+        "2027-01": {
+          "crew": 0,
+          "ar": 3595.0,
+          "ap": 2600.0,
+          "commission": 199.0,
+          "net_gp": 796.0
+        },
+        "2027-02": {
+          "crew": 0,
+          "ar": 1677.67,
+          "ap": 1213.33,
+          "commission": 92.87,
+          "net_gp": 371.47
         }
       },
       "total_2026": {
@@ -706,6 +746,90 @@
           "net_gp": 1460.8
         },
         "2026-12": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-01": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-02": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-03": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-04": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-05": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-06": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-07": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-08": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-09": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-10": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-11": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2027-12": {
           "crew": 0,
           "ar": 2200.0,
           "ap": 374.0,
@@ -852,6 +976,27 @@
           "ap": 4735.76,
           "commission": 490.85,
           "net_gp": 1963.39
+        },
+        "2027-01": {
+          "crew": 4,
+          "ar": 7190.0,
+          "ap": 4735.76,
+          "commission": 490.85,
+          "net_gp": 1963.39
+        },
+        "2027-02": {
+          "crew": 4,
+          "ar": 7190.0,
+          "ap": 4735.76,
+          "commission": 490.85,
+          "net_gp": 1963.39
+        },
+        "2027-03": {
+          "crew": 4,
+          "ar": 1677.67,
+          "ap": 1105.01,
+          "commission": 114.53,
+          "net_gp": 458.13
         }
       },
       "total_2026": {
@@ -1982,7 +2127,199 @@
     },
     {
       "gid": "1211080380581292",
-      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563",
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 1",
+      "salesperson": "Matt",
+      "project_number": "2563",
+      "status": "Active",
+      "start_date": "2025-08-25",
+      "end_date": "2026-07-31",
+      "base_ar": 17300.0,
+      "base_ap": 11245.0,
+      "base_crew": 12,
+      "commission_model": "per_crew",
+      "commission_rate": 100,
+      "monthly": {
+        "2025-08": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 2356.67,
+          "commission": 0,
+          "net_gp": -2356.67
+        },
+        "2025-09": {
+          "crew": 12,
+          "ar": 16723.33,
+          "ap": 10870.16,
+          "commission": 1200,
+          "net_gp": 4653.17
+        },
+        "2025-10": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2025-11": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2025-12": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2026-01": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2026-02": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2026-03": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2026-04": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2026-05": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2026-06": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        },
+        "2026-07": {
+          "crew": 12,
+          "ar": 17300.0,
+          "ap": 11245.0,
+          "commission": 1200,
+          "net_gp": 4855.0
+        }
+      },
+      "total_2026": {
+        "ar": 121100.0,
+        "ap": 78715.0,
+        "net_gp": 33985.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211080380581292",
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 2",
+      "salesperson": "Matt",
+      "project_number": "2563",
+      "status": "Closed",
+      "start_date": "2025-09-02",
+      "end_date": "2025-12-15",
+      "base_ar": 5800.0,
+      "base_ap": 3770.0,
+      "base_crew": 0,
+      "commission_model": "per_crew",
+      "commission_rate": 100,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 5606.67,
+          "ap": 3644.34,
+          "commission": 0,
+          "net_gp": 1962.33
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 5800.0,
+          "ap": 3770.0,
+          "commission": 0,
+          "net_gp": 2030.0
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 5800.0,
+          "ap": 3770.0,
+          "commission": 0,
+          "net_gp": 2030.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2900.0,
+          "ap": 1885.0,
+          "commission": 0,
+          "net_gp": 1015.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211080380581292",
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 3",
+      "salesperson": "Matt",
+      "project_number": "2563",
+      "status": "Closed",
+      "start_date": "2025-09-14",
+      "end_date": "2025-10-14",
+      "base_ar": 1700.0,
+      "base_ap": 1105.0,
+      "base_crew": 0,
+      "commission_model": "per_crew",
+      "commission_rate": 100,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 963.33,
+          "ap": 626.16,
+          "commission": 0,
+          "net_gp": 337.17
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 793.33,
+          "ap": 515.66,
+          "commission": 0,
+          "net_gp": 277.67
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211080380581292",
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 4",
       "salesperson": "Matt",
       "project_number": "2563",
       "status": "Active",
@@ -2649,45 +2986,173 @@
       "source": "asana_custom_fields"
     },
     {
+      "gid": "1211453655814597",
+      "name": "Gutknecht Construction - Indianapolis, IN - Matt - 2575 \u2014 A, B, C, Phase 1, Phase 2",
+      "salesperson": "Matt",
+      "project_number": "2575",
+      "status": "Closed",
+      "start_date": "2025-09-29",
+      "end_date": "2025-12-15",
+      "base_ar": 13000.0,
+      "base_ap": 9100.0,
+      "base_crew": 0,
+      "commission_model": "percent",
+      "commission_rate": 0.2,
+      "monthly": {
+        "2025-09": {
+          "crew": 0,
+          "ar": 560.0,
+          "ap": 418.66,
+          "commission": 28.27,
+          "net_gp": 113.07
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 12386.67,
+          "ap": 8724.0,
+          "commission": 732.53,
+          "net_gp": 2930.14
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 13000.0,
+          "ap": 9100.0,
+          "commission": 780.0,
+          "net_gp": 3120.0
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 6500.0,
+          "ap": 4550.0,
+          "commission": 390.0,
+          "net_gp": 1560.0
+        }
+      },
+      "total_2026": {
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1211453655814597",
+      "name": "Gutknecht Construction - Indianapolis, IN - Matt - 2575 \u2014 D, Phase 3",
+      "salesperson": "Matt",
+      "project_number": "2575",
+      "status": "Closed",
+      "start_date": "2025-12-07",
+      "end_date": "2026-01-01",
+      "base_ar": 2175.0,
+      "base_ap": 1875.0,
+      "base_crew": 0,
+      "commission_model": "percent",
+      "commission_rate": 0.2,
+      "monthly": {
+        "2025-12": {
+          "crew": 0,
+          "ar": 1812.5,
+          "ap": 1562.5,
+          "commission": 50.0,
+          "net_gp": 200.0
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 72.5,
+          "ap": 62.5,
+          "commission": 2.0,
+          "net_gp": 8.0
+        }
+      },
+      "total_2026": {
+        "ar": 72.5,
+        "ap": 62.5,
+        "net_gp": 8.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
       "gid": "1211456854891625",
       "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
       "salesperson": "Paul",
       "project_number": "2576",
       "status": "Active",
-      "start_date": "2026-03-31",
+      "start_date": "2025-09-30",
       "end_date": "2026-05-31",
-      "base_ar": 0,
+      "base_ar": 11500.0,
       "base_ap": 7100.0,
-      "base_crew": 0,
+      "base_crew": 12,
       "commission_model": "percent",
       "commission_rate": 0.2,
       "monthly": {
-        "2026-03": {
-          "crew": 0,
-          "ar": 0.0,
+        "2025-09": {
+          "crew": 12,
+          "ar": 383.33,
           "ap": 236.67,
-          "commission": -47.33,
-          "net_gp": -189.34
+          "commission": 29.33,
+          "net_gp": 117.33
+        },
+        "2025-10": {
+          "crew": 12,
+          "ar": 11500.0,
+          "ap": 7100.0,
+          "commission": 880.0,
+          "net_gp": 3520.0
+        },
+        "2025-11": {
+          "crew": 12,
+          "ar": 11500.0,
+          "ap": 7100.0,
+          "commission": 880.0,
+          "net_gp": 3520.0
+        },
+        "2025-12": {
+          "crew": 12,
+          "ar": 11500.0,
+          "ap": 7100.0,
+          "commission": 880.0,
+          "net_gp": 3520.0
+        },
+        "2026-01": {
+          "crew": 12,
+          "ar": 11500.0,
+          "ap": 7100.0,
+          "commission": 880.0,
+          "net_gp": 3520.0
+        },
+        "2026-02": {
+          "crew": 12,
+          "ar": 11500.0,
+          "ap": 7100.0,
+          "commission": 880.0,
+          "net_gp": 3520.0
+        },
+        "2026-03": {
+          "crew": 12,
+          "ar": 11500.0,
+          "ap": 7100.0,
+          "commission": 880.0,
+          "net_gp": 3520.0
         },
         "2026-04": {
-          "crew": 0,
-          "ar": 0.0,
+          "crew": 12,
+          "ar": 11500.0,
           "ap": 7100.0,
-          "commission": -1420.0,
-          "net_gp": -5680.0
+          "commission": 880.0,
+          "net_gp": 3520.0
         },
         "2026-05": {
-          "crew": 0,
-          "ar": 0.0,
+          "crew": 12,
+          "ar": 11500.0,
           "ap": 7100.0,
-          "commission": -1420.0,
-          "net_gp": -5680.0
+          "commission": 880.0,
+          "net_gp": 3520.0
         }
       },
       "total_2026": {
-        "ar": 0.0,
-        "ap": 14436.67,
-        "net_gp": -11549.34
+        "ar": 57500.0,
+        "ap": 35500.0,
+        "net_gp": 17600.0
       },
       "source": "asana_custom_fields"
     },
@@ -3254,6 +3719,70 @@
         "ar": 43140.0,
         "ap": 30000.0,
         "net_gp": 10512.0
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1212344857819012",
+      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
+      "salesperson": "Zeke",
+      "project_number": "2594",
+      "status": "Active",
+      "start_date": "2025-12-28",
+      "end_date": "2026-05-30",
+      "base_ar": 10000.0,
+      "base_ap": 6910.0,
+      "base_crew": 6,
+      "commission_model": "percent",
+      "commission_rate": 0.2,
+      "monthly": {
+        "2025-12": {
+          "crew": 6,
+          "ar": 1333.33,
+          "ap": 921.33,
+          "commission": 82.4,
+          "net_gp": 329.6
+        },
+        "2026-01": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "commission": 618.0,
+          "net_gp": 2472.0
+        },
+        "2026-02": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "commission": 618.0,
+          "net_gp": 2472.0
+        },
+        "2026-03": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "commission": 618.0,
+          "net_gp": 2472.0
+        },
+        "2026-04": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "commission": 618.0,
+          "net_gp": 2472.0
+        },
+        "2026-05": {
+          "crew": 6,
+          "ar": 10000.0,
+          "ap": 6910.0,
+          "commission": 618.0,
+          "net_gp": 2472.0
+        }
+      },
+      "total_2026": {
+        "ar": 50000.0,
+        "ap": 34550.0,
+        "net_gp": 12360.0
       },
       "source": "asana_custom_fields"
     },
@@ -3839,6 +4368,20 @@
           "ap": 2350.0,
           "commission": 245.0,
           "net_gp": 980.0
+        },
+        "2027-01": {
+          "crew": 2,
+          "ar": 3575.0,
+          "ap": 2350.0,
+          "commission": 245.0,
+          "net_gp": 980.0
+        },
+        "2027-02": {
+          "crew": 2,
+          "ar": 2860.0,
+          "ap": 1880.0,
+          "commission": 196.0,
+          "net_gp": 784.0
         }
       },
       "total_2026": {
@@ -3931,6 +4474,27 @@
           "ap": 2750.0,
           "commission": 165.0,
           "net_gp": 660.0
+        },
+        "2027-01": {
+          "crew": 2,
+          "ar": 3575.0,
+          "ap": 2750.0,
+          "commission": 165.0,
+          "net_gp": 660.0
+        },
+        "2027-02": {
+          "crew": 2,
+          "ar": 3575.0,
+          "ap": 2750.0,
+          "commission": 165.0,
+          "net_gp": 660.0
+        },
+        "2027-03": {
+          "crew": 2,
+          "ar": 119.17,
+          "ap": 91.67,
+          "commission": 5.5,
+          "net_gp": 22.0
         }
       },
       "total_2026": {
@@ -3988,6 +4552,62 @@
           "ap": 3250.0,
           "commission": 380.0,
           "net_gp": 1520.0
+        },
+        "2027-01": {
+          "crew": 3,
+          "ar": 5150.0,
+          "ap": 3250.0,
+          "commission": 380.0,
+          "net_gp": 1520.0
+        },
+        "2027-02": {
+          "crew": 3,
+          "ar": 5150.0,
+          "ap": 3250.0,
+          "commission": 380.0,
+          "net_gp": 1520.0
+        },
+        "2027-03": {
+          "crew": 3,
+          "ar": 5150.0,
+          "ap": 3250.0,
+          "commission": 380.0,
+          "net_gp": 1520.0
+        },
+        "2027-04": {
+          "crew": 3,
+          "ar": 5150.0,
+          "ap": 3250.0,
+          "commission": 380.0,
+          "net_gp": 1520.0
+        },
+        "2027-05": {
+          "crew": 3,
+          "ar": 5150.0,
+          "ap": 3250.0,
+          "commission": 380.0,
+          "net_gp": 1520.0
+        },
+        "2027-06": {
+          "crew": 3,
+          "ar": 5150.0,
+          "ap": 3250.0,
+          "commission": 380.0,
+          "net_gp": 1520.0
+        },
+        "2027-07": {
+          "crew": 3,
+          "ar": 5150.0,
+          "ap": 3250.0,
+          "commission": 380.0,
+          "net_gp": 1520.0
+        },
+        "2027-08": {
+          "crew": 3,
+          "ar": 171.67,
+          "ap": 108.33,
+          "commission": 12.67,
+          "net_gp": 50.67
         }
       },
       "total_2026": {
@@ -4418,6 +5038,70 @@
       "source": "asana_custom_fields"
     },
     {
+      "gid": "1213523794178802",
+      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624",
+      "salesperson": "Matt",
+      "project_number": "2624",
+      "status": "Active",
+      "start_date": "2026-04-13",
+      "end_date": "2026-09-13",
+      "base_ar": 17500.0,
+      "base_ap": 13420.0,
+      "base_crew": 8,
+      "commission_model": "percent",
+      "commission_rate": 0.2,
+      "monthly": {
+        "2026-04": {
+          "crew": 8,
+          "ar": 10500.0,
+          "ap": 8052.0,
+          "commission": 489.6,
+          "net_gp": 1958.4
+        },
+        "2026-05": {
+          "crew": 8,
+          "ar": 17500.0,
+          "ap": 13420.0,
+          "commission": 816.0,
+          "net_gp": 3264.0
+        },
+        "2026-06": {
+          "crew": 8,
+          "ar": 17500.0,
+          "ap": 13420.0,
+          "commission": 816.0,
+          "net_gp": 3264.0
+        },
+        "2026-07": {
+          "crew": 8,
+          "ar": 17500.0,
+          "ap": 13420.0,
+          "commission": 816.0,
+          "net_gp": 3264.0
+        },
+        "2026-08": {
+          "crew": 8,
+          "ar": 17500.0,
+          "ap": 13420.0,
+          "commission": 816.0,
+          "net_gp": 3264.0
+        },
+        "2026-09": {
+          "crew": 8,
+          "ar": 7583.33,
+          "ap": 5815.33,
+          "commission": 353.6,
+          "net_gp": 1414.4
+        }
+      },
+      "total_2026": {
+        "ar": 88083.33,
+        "ap": 67547.33,
+        "net_gp": 16428.8
+      },
+      "source": "asana_custom_fields"
+    },
+    {
       "gid": "1213629324301274",
       "name": "Power Design - Tucson, AZ - Zeke - 2615",
       "salesperson": "Zeke",
@@ -4566,6 +5250,27 @@
           "net_gp": -4680.0
         },
         "2026-12": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 22500.0,
+          "commission": -1170.0,
+          "net_gp": -4680.0
+        },
+        "2027-01": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 22500.0,
+          "commission": -1170.0,
+          "net_gp": -4680.0
+        },
+        "2027-02": {
+          "crew": 18,
+          "ar": 16650.0,
+          "ap": 22500.0,
+          "commission": -1170.0,
+          "net_gp": -4680.0
+        },
+        "2027-03": {
           "crew": 18,
           "ar": 16650.0,
           "ap": 22500.0,
@@ -4837,6 +5542,27 @@
           "net_gp": 640.0
         },
         "2026-12": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "commission": 160.0,
+          "net_gp": 640.0
+        },
+        "2027-01": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "commission": 160.0,
+          "net_gp": 640.0
+        },
+        "2027-02": {
+          "crew": 2,
+          "ar": 3200.0,
+          "ap": 2400.0,
+          "commission": 160.0,
+          "net_gp": 640.0
+        },
+        "2027-03": {
           "crew": 2,
           "ar": 3200.0,
           "ap": 2400.0,
@@ -5129,141 +5855,6 @@
     },
     {
       "gid": null,
-      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624 - AB",
-      "salesperson": "Matt",
-      "project_number": "2624",
-      "status": "Active",
-      "start_date": "2026-04-13",
-      "end_date": "2026-10-15",
-      "base_ar": 12000.0,
-      "base_ap": 9400.0,
-      "base_crew": 6,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2026-04": {
-          "crew": 6,
-          "ar": 7200.0,
-          "ap": 5640.0,
-          "commission": 312.0,
-          "net_gp": 1248.0
-        },
-        "2026-05": {
-          "crew": 6,
-          "ar": 12000.0,
-          "ap": 9400.0,
-          "commission": 520.0,
-          "net_gp": 2080.0
-        },
-        "2026-06": {
-          "crew": 6,
-          "ar": 12000.0,
-          "ap": 9400.0,
-          "commission": 520.0,
-          "net_gp": 2080.0
-        },
-        "2026-07": {
-          "crew": 6,
-          "ar": 12000.0,
-          "ap": 9400.0,
-          "commission": 520.0,
-          "net_gp": 2080.0
-        },
-        "2026-08": {
-          "crew": 6,
-          "ar": 12000.0,
-          "ap": 9400.0,
-          "commission": 520.0,
-          "net_gp": 2080.0
-        },
-        "2026-09": {
-          "crew": 6,
-          "ar": 12000.0,
-          "ap": 9400.0,
-          "commission": 520.0,
-          "net_gp": 2080.0
-        },
-        "2026-10": {
-          "crew": 6,
-          "ar": 6000.0,
-          "ap": 4700.0,
-          "commission": 260.0,
-          "net_gp": 1040.0
-        }
-      },
-      "total_2026": {
-        "ar": 73200.0,
-        "ap": 57340.0,
-        "net_gp": 12688.0
-      },
-      "source": "master_sheet_fallback"
-    },
-    {
-      "gid": null,
-      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624 - CD",
-      "salesperson": "Matt",
-      "project_number": "2624",
-      "status": "Active",
-      "start_date": "2026-04-13",
-      "end_date": "2026-09-13",
-      "base_ar": 17500.0,
-      "base_ap": 13420.0,
-      "base_crew": 8,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2026-04": {
-          "crew": 8,
-          "ar": 10500.0,
-          "ap": 8052.0,
-          "commission": 489.6,
-          "net_gp": 1958.4
-        },
-        "2026-05": {
-          "crew": 8,
-          "ar": 17500.0,
-          "ap": 13420.0,
-          "commission": 816.0,
-          "net_gp": 3264.0
-        },
-        "2026-06": {
-          "crew": 8,
-          "ar": 17500.0,
-          "ap": 13420.0,
-          "commission": 816.0,
-          "net_gp": 3264.0
-        },
-        "2026-07": {
-          "crew": 8,
-          "ar": 17500.0,
-          "ap": 13420.0,
-          "commission": 816.0,
-          "net_gp": 3264.0
-        },
-        "2026-08": {
-          "crew": 8,
-          "ar": 17500.0,
-          "ap": 13420.0,
-          "commission": 816.0,
-          "net_gp": 3264.0
-        },
-        "2026-09": {
-          "crew": 8,
-          "ar": 7583.33,
-          "ap": 5815.33,
-          "commission": 353.6,
-          "net_gp": 1414.4
-        }
-      },
-      "total_2026": {
-        "ar": 88083.33,
-        "ap": 67547.33,
-        "net_gp": 16428.8
-      },
-      "source": "master_sheet_fallback"
-    },
-    {
-      "gid": null,
       "name": "Gray Construction - Bristol, TN #2 - Paul",
       "salesperson": "Paul",
       "project_number": "",
@@ -5434,70 +6025,6 @@
     },
     {
       "gid": null,
-      "name": "Scaffold Resource Phase 2 - Baton Rouge, LA - Zeke - 2594",
-      "salesperson": "Zeke",
-      "project_number": "2594",
-      "status": "Active",
-      "start_date": "2025-12-28",
-      "end_date": "2026-05-30",
-      "base_ar": 10000.0,
-      "base_ap": 6910.0,
-      "base_crew": 6,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-12": {
-          "crew": 6,
-          "ar": 1333.33,
-          "ap": 921.33,
-          "commission": 82.4,
-          "net_gp": 329.6
-        },
-        "2026-01": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "commission": 618.0,
-          "net_gp": 2472.0
-        },
-        "2026-02": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "commission": 618.0,
-          "net_gp": 2472.0
-        },
-        "2026-03": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "commission": 618.0,
-          "net_gp": 2472.0
-        },
-        "2026-04": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "commission": 618.0,
-          "net_gp": 2472.0
-        },
-        "2026-05": {
-          "crew": 6,
-          "ar": 10000.0,
-          "ap": 6910.0,
-          "commission": 618.0,
-          "net_gp": 2472.0
-        }
-      },
-      "total_2026": {
-        "ar": 50000.0,
-        "ap": 34550.0,
-        "net_gp": 12360.0
-      },
-      "source": "master_sheet_fallback"
-    },
-    {
-      "gid": null,
       "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
       "salesperson": "Matt",
       "project_number": "2622",
@@ -5543,210 +6070,354 @@
   "monthly_totals": {
     "2025-08": {
       "crew": 191,
-      "ar": 224570.66,
-      "ap": 134453.59,
-      "net_gp": 82120.66,
-      "gp_pct": 36.57
+      "ar": 227070.66,
+      "ap": 138575.26,
+      "net_gp": 80351.99,
+      "gp_pct": 35.39
     },
     "2025-09": {
-      "crew": 197,
-      "ar": 250790.15,
-      "ap": 154538.33,
-      "net_gp": 87015.62,
-      "gp_pct": 34.7
+      "crew": 221,
+      "ar": 277526.81,
+      "ap": 170434.32,
+      "net_gp": 96118.69,
+      "gp_pct": 34.63
     },
     "2025-10": {
-      "crew": 199,
-      "ar": 256502.99,
-      "ap": 158308.82,
-      "net_gp": 88547.33,
-      "gp_pct": 34.52
+      "crew": 223,
+      "ar": 306782.99,
+      "ap": 189763.48,
+      "net_gp": 104080.14,
+      "gp_pct": 33.93
     },
     "2025-11": {
-      "crew": 200,
-      "ar": 238207.33,
-      "ap": 145119.09,
-      "net_gp": 84475.42,
-      "gp_pct": 35.46
+      "crew": 224,
+      "ar": 288307.33,
+      "ap": 176434.09,
+      "net_gp": 99920.42,
+      "gp_pct": 34.66
     },
     "2025-12": {
-      "crew": 211,
-      "ar": 242784.83,
-      "ap": 148114.59,
-      "net_gp": 85763.19,
-      "gp_pct": 35.32
+      "crew": 235,
+      "ar": 285297.33,
+      "ap": 174557.09,
+      "net_gp": 98833.19,
+      "gp_pct": 34.64
     },
     "2026-01": {
-      "crew": 229,
-      "ar": 289868.33,
-      "ap": 193217.43,
-      "net_gp": 87347.71,
-      "gp_pct": 30.13
+      "crew": 253,
+      "ar": 321240.83,
+      "ap": 211724.93,
+      "net_gp": 97650.71,
+      "gp_pct": 30.4
     },
     "2026-02": {
-      "crew": 251,
-      "ar": 316795.85,
-      "ap": 209833.13,
-      "net_gp": 95458.1,
-      "gp_pct": 30.13
+      "crew": 275,
+      "ar": 348095.85,
+      "ap": 228301.46,
+      "net_gp": 105734.43,
+      "gp_pct": 30.38
     },
     "2026-03": {
-      "crew": 291,
-      "ar": 378911.65,
-      "ap": 255056.34,
-      "net_gp": 109083.99,
-      "gp_pct": 28.79
+      "crew": 315,
+      "ar": 410211.65,
+      "ap": 273364.67,
+      "net_gp": 119488.33,
+      "gp_pct": 29.13
     },
     "2026-04": {
-      "crew": 342,
-      "ar": 490162.76,
-      "ap": 345139.01,
-      "net_gp": 127130.49,
-      "gp_pct": 25.94
+      "crew": 360,
+      "ar": 514262.76,
+      "ap": 350944.01,
+      "net_gp": 141777.49,
+      "gp_pct": 27.57
     },
     "2026-05": {
-      "crew": 280,
-      "ar": 415765.34,
-      "ap": 308134.18,
-      "net_gp": 96669.68,
-      "gp_pct": 23.25
+      "crew": 298,
+      "ar": 435065.34,
+      "ap": 310179.18,
+      "net_gp": 110484.68,
+      "gp_pct": 25.39
     },
     "2026-06": {
-      "crew": 258,
-      "ar": 369570.5,
-      "ap": 267986.68,
-      "net_gp": 92106.81,
-      "gp_pct": 24.92
+      "crew": 264,
+      "ar": 377370.5,
+      "ap": 270031.68,
+      "net_gp": 96721.81,
+      "gp_pct": 25.63
     },
     "2026-07": {
-      "crew": 236,
-      "ar": 343450.0,
-      "ap": 247891.01,
-      "net_gp": 87286.94,
-      "gp_pct": 25.41
+      "crew": 242,
+      "ar": 351250.0,
+      "ap": 249936.01,
+      "net_gp": 91901.94,
+      "gp_pct": 26.16
     },
     "2026-08": {
-      "crew": 234,
-      "ar": 324329.17,
-      "ap": 234058.14,
-      "net_gp": 82375.65,
-      "gp_pct": 25.4
+      "crew": 228,
+      "ar": 312329.17,
+      "ap": 224808.14,
+      "net_gp": 80175.65,
+      "gp_pct": 25.67
     },
     "2026-09": {
-      "crew": 224,
-      "ar": 294828.83,
-      "ap": 214181.75,
-      "net_gp": 74592.66,
-      "gp_pct": 25.3
+      "crew": 218,
+      "ar": 282828.83,
+      "ap": 204931.75,
+      "net_gp": 72392.66,
+      "gp_pct": 25.6
     },
     "2026-10": {
-      "crew": 218,
-      "ar": 258276.67,
-      "ap": 190719.76,
-      "net_gp": 64120.53,
-      "gp_pct": 24.83
+      "crew": 212,
+      "ar": 252276.67,
+      "ap": 186169.76,
+      "net_gp": 62960.53,
+      "gp_pct": 24.96
     },
     "2026-11": {
       "crew": 195,
       "ar": 234135.0,
-      "ap": 175269.76,
-      "net_gp": 57167.19,
-      "gp_pct": 24.42
+      "ap": 175419.76,
+      "net_gp": 57047.19,
+      "gp_pct": 24.37
     },
     "2026-12": {
       "crew": 190,
       "ar": 222378.0,
-      "ap": 166879.76,
-      "net_gp": 54473.59,
-      "gp_pct": 24.5
+      "ap": 167029.76,
+      "net_gp": 54353.59,
+      "gp_pct": 24.44
+    },
+    "2027-01": {
+      "crew": 31,
+      "ar": 48730.0,
+      "ap": 42959.76,
+      "net_gp": 4616.19,
+      "gp_pct": 9.47
+    },
+    "2027-02": {
+      "crew": 31,
+      "ar": 42742.34,
+      "ap": 39236.42,
+      "net_gp": 2804.73,
+      "gp_pct": 6.56
+    },
+    "2027-03": {
+      "crew": 29,
+      "ar": 28996.84,
+      "ap": 29720.68,
+      "net_gp": -579.07,
+      "gp_pct": -2.0
+    },
+    "2027-04": {
+      "crew": 3,
+      "ar": 7350.0,
+      "ap": 3624.0,
+      "net_gp": 2980.8,
+      "gp_pct": 40.56
+    },
+    "2027-05": {
+      "crew": 3,
+      "ar": 7350.0,
+      "ap": 3624.0,
+      "net_gp": 2980.8,
+      "gp_pct": 40.56
+    },
+    "2027-06": {
+      "crew": 3,
+      "ar": 7350.0,
+      "ap": 3624.0,
+      "net_gp": 2980.8,
+      "gp_pct": 40.56
+    },
+    "2027-07": {
+      "crew": 3,
+      "ar": 7350.0,
+      "ap": 3624.0,
+      "net_gp": 2980.8,
+      "gp_pct": 40.56
+    },
+    "2027-08": {
+      "crew": 3,
+      "ar": 2371.67,
+      "ap": 482.33,
+      "net_gp": 1511.47,
+      "gp_pct": 63.73
+    },
+    "2027-09": {
+      "crew": 0,
+      "ar": 2200.0,
+      "ap": 374.0,
+      "net_gp": 1460.8,
+      "gp_pct": 66.4
+    },
+    "2027-10": {
+      "crew": 0,
+      "ar": 2200.0,
+      "ap": 374.0,
+      "net_gp": 1460.8,
+      "gp_pct": 66.4
+    },
+    "2027-11": {
+      "crew": 0,
+      "ar": 2200.0,
+      "ap": 374.0,
+      "net_gp": 1460.8,
+      "gp_pct": 66.4
+    },
+    "2027-12": {
+      "crew": 0,
+      "ar": 2200.0,
+      "ap": 374.0,
+      "net_gp": 1460.8,
+      "gp_pct": 66.4
     }
   },
   "salesperson_summary": {
     "Paul": {
-      "2026-02": {
-        "ar": 75456.68,
-        "ap": 52635.590000000004,
-        "commission": 4564.22
-      },
-      "2026-03": {
-        "ar": 94901.66,
-        "ap": 65389.76,
-        "commission": 5902.389999999999
-      },
-      "2026-04": {
-        "ar": 106640.67,
-        "ap": 78908.09000000001,
-        "commission": 5546.5199999999995
-      },
-      "2026-05": {
-        "ar": 130328.67,
-        "ap": 92247.93,
-        "commission": 7616.15
-      },
-      "2026-06": {
-        "ar": 123797.17,
-        "ap": 80227.09,
-        "commission": 8714.009999999998
-      },
-      "2026-07": {
-        "ar": 108025.0,
-        "ap": 70134.76000000001,
-        "commission": 7578.049999999999
-      },
       "2025-08": {
-        "ar": 38277.33,
-        "ap": 29534.260000000002,
-        "commission": 1748.6100000000001
+        "ar": 40777.33,
+        "ap": 31299.260000000002,
+        "commission": 1895.6100000000001
       },
       "2025-09": {
-        "ar": 60626.16,
-        "ap": 44151.43,
-        "commission": 3294.95
+        "ar": 63509.490000000005,
+        "ap": 44488.1,
+        "commission": 3804.2799999999997
       },
       "2025-10": {
-        "ar": 62790.990000000005,
-        "ap": 44755.03,
-        "commission": 3607.2
+        "ar": 76790.99,
+        "ap": 51955.03,
+        "commission": 4967.2
       },
       "2025-11": {
-        "ar": 57447.33,
-        "ap": 40797.26,
-        "commission": 3330.0200000000004
+        "ar": 71447.33,
+        "ap": 47997.26,
+        "commission": 4690.02
       },
       "2025-12": {
-        "ar": 67551.5,
-        "ap": 47487.26,
-        "commission": 4012.8500000000004
+        "ar": 81551.5,
+        "ap": 54687.26,
+        "commission": 5372.85
       },
       "2026-01": {
-        "ar": 68900.0,
-        "ap": 48569.76,
-        "commission": 4066.05
+        "ar": 82900.0,
+        "ap": 55769.76,
+        "commission": 5426.05
+      },
+      "2026-02": {
+        "ar": 89456.68,
+        "ap": 59858.920000000006,
+        "commission": 5919.5599999999995
+      },
+      "2026-03": {
+        "ar": 108901.66,
+        "ap": 72453.09,
+        "commission": 7289.719999999999
+      },
+      "2026-04": {
+        "ar": 120640.67,
+        "ap": 79108.09000000001,
+        "commission": 8306.52
+      },
+      "2026-05": {
+        "ar": 144328.66999999998,
+        "ap": 92447.93,
+        "commission": 10376.15
+      },
+      "2026-06": {
+        "ar": 126297.17,
+        "ap": 80427.09,
+        "commission": 9174.009999999998
+      },
+      "2026-07": {
+        "ar": 110525.0,
+        "ap": 70334.76000000001,
+        "commission": 8038.049999999999
       },
       "2026-08": {
         "ar": 98631.67,
-        "ap": 62624.76,
-        "commission": 7201.379999999999
+        "ap": 62774.76,
+        "commission": 7171.379999999999
       },
       "2026-09": {
         "ar": 90245.5,
-        "ap": 57631.420000000006,
-        "commission": 6522.82
+        "ap": 57781.420000000006,
+        "commission": 6492.82
       },
       "2026-10": {
         "ar": 78676.67,
-        "ap": 50934.76,
-        "commission": 5548.379999999999
+        "ap": 51084.76,
+        "commission": 5518.379999999999
       },
       "2026-11": {
         "ar": 65135.0,
-        "ap": 43234.76,
-        "commission": 4380.049999999999
+        "ap": 43384.76,
+        "commission": 4350.049999999999
       },
       "2026-12": {
         "ar": 55753.0,
-        "ap": 36719.76,
-        "commission": 3806.6499999999996
+        "ap": 36869.76,
+        "commission": 3776.6499999999996
+      },
+      "2027-01": {
+        "ar": 28880.0,
+        "ap": 18059.760000000002,
+        "commission": 2164.05
+      },
+      "2027-02": {
+        "ar": 22892.34,
+        "ap": 14336.42,
+        "commission": 1711.19
+      },
+      "2027-03": {
+        "ar": 9146.84,
+        "ap": 4820.68,
+        "commission": 865.23
+      },
+      "2027-04": {
+        "ar": 7350.0,
+        "ap": 3624.0,
+        "commission": 745.2
+      },
+      "2027-05": {
+        "ar": 7350.0,
+        "ap": 3624.0,
+        "commission": 745.2
+      },
+      "2027-06": {
+        "ar": 7350.0,
+        "ap": 3624.0,
+        "commission": 745.2
+      },
+      "2027-07": {
+        "ar": 7350.0,
+        "ap": 3624.0,
+        "commission": 745.2
+      },
+      "2027-08": {
+        "ar": 2371.67,
+        "ap": 482.33,
+        "commission": 377.87
+      },
+      "2027-09": {
+        "ar": 2200.0,
+        "ap": 374.0,
+        "commission": 365.2
+      },
+      "2027-10": {
+        "ar": 2200.0,
+        "ap": 374.0,
+        "commission": 365.2
+      },
+      "2027-11": {
+        "ar": 2200.0,
+        "ap": 374.0,
+        "commission": 365.2
+      },
+      "2027-12": {
+        "ar": 2200.0,
+        "ap": 374.0,
+        "commission": 365.2
       }
     },
     "Zeke": {
@@ -5834,63 +6505,93 @@
         "ar": 50550.0,
         "ap": 64460.0,
         "commission": -2782.0
+      },
+      "2027-01": {
+        "ar": 19850.0,
+        "ap": 24900.0,
+        "commission": -1010.0
+      },
+      "2027-02": {
+        "ar": 19850.0,
+        "ap": 24900.0,
+        "commission": -1010.0
+      },
+      "2027-03": {
+        "ar": 19850.0,
+        "ap": 24900.0,
+        "commission": -1010.0
       }
     },
     "Matt": {
       "2025-08": {
         "ar": 10000.0,
-        "ap": 3425.0,
+        "ap": 5781.67,
         "commission": 1315.0
       },
       "2025-09": {
-        "ar": 333.33,
-        "ap": 114.17,
-        "commission": 43.83
+        "ar": 24186.660000000003,
+        "ap": 15673.49,
+        "commission": 1272.1
       },
-      "2026-04": {
-        "ar": 51675.0,
-        "ap": 41638.25,
-        "commission": 1306.6
+      "2025-10": {
+        "ar": 36280.0,
+        "ap": 24254.66,
+        "commission": 1932.53
       },
-      "2026-05": {
-        "ar": 65075.0,
-        "ap": 51806.25,
-        "commission": 1841.0
+      "2025-11": {
+        "ar": 36100.0,
+        "ap": 24115.0,
+        "commission": 1980.0
       },
-      "2026-06": {
-        "ar": 51733.33,
-        "ap": 40984.59,
-        "commission": 1337.0
+      "2025-12": {
+        "ar": 28512.5,
+        "ap": 19242.5,
+        "commission": 1640.0
       },
-      "2026-07": {
-        "ar": 46825.0,
-        "ap": 34081.25,
-        "commission": 1736.0
-      },
-      "2026-08": {
-        "ar": 37097.5,
-        "ap": 27758.38,
-        "commission": 1736.0
+      "2026-01": {
+        "ar": 17372.5,
+        "ap": 11307.5,
+        "commission": 1202.0
       },
       "2026-02": {
-        "ar": 3727.5,
-        "ap": 2422.88,
-        "commission": 400
+        "ar": 21027.5,
+        "ap": 13667.880000000001,
+        "commission": 1600
       },
       "2026-03": {
-        "ar": 16600.0,
-        "ap": 11376.25,
-        "commission": 1072.0
+        "ar": 33900.0,
+        "ap": 22621.25,
+        "commission": 2272.0
+      },
+      "2026-04": {
+        "ar": 61775.0,
+        "ap": 47243.25,
+        "commission": 2194.6
+      },
+      "2026-05": {
+        "ar": 70375.0,
+        "ap": 53651.25,
+        "commission": 2521.0
+      },
+      "2026-06": {
+        "ar": 57033.33,
+        "ap": 42829.59,
+        "commission": 2017.0
+      },
+      "2026-07": {
+        "ar": 52125.0,
+        "ap": 35926.25,
+        "commission": 2416.0
+      },
+      "2026-08": {
+        "ar": 25097.5,
+        "ap": 18358.38,
+        "commission": 1216.0
       },
       "2026-09": {
-        "ar": 19583.33,
-        "ap": 15215.33,
-        "commission": 873.6
-      },
-      "2026-10": {
-        "ar": 6000.0,
-        "ap": 4700.0,
-        "commission": 260.0
+        "ar": 7583.33,
+        "ap": 5815.33,
+        "commission": 353.6
       }
     },
     "Logan": {
