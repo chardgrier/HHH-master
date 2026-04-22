@@ -125,14 +125,16 @@ def classify(name):
     # Canonical patterns (anchored)
     # Phase suffix: "Phase 1", "Phase I", "- Phase I", etc.
     phase_suffix = r"(?:\s*[-–]?\s*phase\s+(?:\d+|[ivxlcm]+))?"
+    # Prefix: single letter "A:", multi-letter "A, B,C:", or phase prefix
+    prefix = r"(?:[a-z](?:\s*,\s*[a-z])*\s*:\s*|phase\s+\d+\s+)?"
     patterns = [
-        (rf"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?construction\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "construction_addendum"),
-        (rf"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?homeowner\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",    "homeowner_addendum"),
+        (rf"^{prefix}construction\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "construction_addendum"),
+        (rf"^{prefix}homeowner\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",    "homeowner_addendum"),
         # "Homeowner A Addendum" / "Homeowner A Addendum #1"
         (rf"^homeowner\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "homeowner_addendum"),
         (rf"^construction\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "construction_addendum"),
-        (rf"^(?:[a-z]\s*:\s*)?construction\s+lease{phase_suffix}\s*$",          "construction_lease"),
-        (rf"^(?:[a-z]\s*:\s*)?homeowner\s+lease(?:{phase_suffix}|\s*[-–]\s*[a-z])?\s*$", "homeowner_lease"),
+        (rf"^{prefix}construction\s+lease{phase_suffix}\s*$",          "construction_lease"),
+        (rf"^{prefix}homeowner\s+lease(?:{phase_suffix}|\s*[-–]\s*[a-z])?\s*$", "homeowner_lease"),
         # "Homeowner A Lease - Phase I" etc. (letter in middle + phase suffix)
         (rf"^homeowner\s+[a-z]\s+lease{phase_suffix}\s*$",    "homeowner_lease"),
         (rf"^construction\s+[a-z]\s+lease{phase_suffix}\s*$", "construction_lease"),
@@ -146,7 +148,10 @@ ROMAN = {"I":1,"II":2,"III":3,"IV":4,"V":5,"VI":6,"VII":7,"VIII":8,"IX":9,"X":10
 
 def prefix_of(name):
     """Extract the letter/phase grouping key from a task name."""
-    m = re.match(r"^([A-Z])\s*:", name)
+    # Multi-letter prefix like "A, B,C:" — take the first letter so it groups
+    # with the other A-prefixed tasks. "A: Homeowner Lease" will still share
+    # prefix "A" with "A, B,C: Construction Lease".
+    m = re.match(r"^([A-Z])(?:\s*,\s*[A-Z])*\s*:", name)
     if m: return m.group(1).upper()
     m = re.match(r"^(?:homeowner|construction)\s+([A-Z])\s+(?:lease|addendum)", name, re.I)
     if m: return m.group(1).upper()
