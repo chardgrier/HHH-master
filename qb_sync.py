@@ -35,9 +35,21 @@ if not all([CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN, REALM_ID]):
     print("ERROR: QB_CLIENT_ID, QB_CLIENT_SECRET, QB_REFRESH_TOKEN, QB_REALM_ID required")
     sys.exit(1)
 
-TOKEN_URL = "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer"
+DISCOVERY_URL = "https://developer.api.intuit.com/.well-known/openid_configuration"
+
+def _fetch_token_endpoint():
+    """Pull the current token endpoint from Intuit's OpenID discovery document."""
+    try:
+        r = requests.get(DISCOVERY_URL, timeout=10)
+        r.raise_for_status()
+        return r.json().get("token_endpoint") or \
+               "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer"
+    except Exception:
+        return "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer"
+
+TOKEN_URL = _fetch_token_endpoint()
+
 # Dev credentials connect to sandbox companies; prod credentials connect to real companies.
-# Allow env var override so we can switch later if the user gets production keys.
 QB_ENV = os.environ.get("QB_ENV", "sandbox").lower()
 API_BASE = (
     f"https://sandbox-quickbooks.api.intuit.com/v3/company/{REALM_ID}"
@@ -78,7 +90,8 @@ def qb_query(access_token, sql):
             headers={"Authorization": f"Bearer {access_token}", "Accept":"application/json"},
             params={"query": paged}, timeout=30)
         if r.status_code >= 300:
-            print(f"  ! QB error {r.status_code}: {r.text[:200]}")
+            tid = r.headers.get("intuit_tid", "none")
+            print(f"  ! QB error {r.status_code} [intuit_tid: {tid}]: {r.text[:200]}")
             break
         d = r.json().get("QueryResponse", {})
         # QB returns data under a key named after the entity type

@@ -31,8 +31,16 @@ CLIENT_SECRET = os.environ.get("QB_CLIENT_SECRET", "")
 REDIRECT_URI  = "http://localhost:8765/callback"
 SCOPE         = "com.intuit.quickbooks.accounting"
 
-AUTH_URL  = "https://appcenter.intuit.com/connect/oauth2"
-TOKEN_URL = "https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer"
+DISCOVERY_URL = "https://developer.api.intuit.com/.well-known/openid_configuration"
+
+def fetch_endpoints():
+    """Fetch the current OAuth endpoints from Intuit's OpenID discovery document."""
+    r = requests.get(DISCOVERY_URL, timeout=10)
+    r.raise_for_status()
+    d = r.json()
+    return d["authorization_endpoint"], d["token_endpoint"]
+
+AUTH_URL, TOKEN_URL = fetch_endpoints()
 
 if not CLIENT_ID or not CLIENT_SECRET:
     print("ERROR: set QB_CLIENT_ID and QB_CLIENT_SECRET env vars before running.")
