@@ -417,8 +417,10 @@ def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
         ar = monthly_from_segments(ar_segs, yr, mo)
         ap = monthly_from_segments(ap_segs, yr, mo)
 
-        # Lexington-KY rule: A/P = 65% of A/R (overrides whatever came from leases)
-        if rules["ap_pct"] is not None and ar > 0:
+        # Lexington-KY rule: A/P = 65% of A/R — but ONLY if no explicit A/P
+        # was set on any lease/addendum. An explicit A/P (like Quality Walls
+        # 2527's \$3,300 on Construction Lease) takes precedence.
+        if rules["ap_pct"] is not None and ar > 0 and ap == 0:
             ap = round(ar * rules["ap_pct"], 2)
 
         if ar > 0 or ap > 0:
@@ -434,8 +436,8 @@ def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
                 "net_gp": round(ar - ap - commission, 2),
             }
 
-    # Override base A/P if Lexington rule applies
-    if rules["ap_pct"] is not None and base_ar > 0:
+    # Override base A/P if Lexington rule applies AND there's no explicit A/P
+    if rules["ap_pct"] is not None and base_ar > 0 and base_ap == 0:
         base_ap = round(base_ar * rules["ap_pct"], 2)
 
     t_ar = sum(v["ar"]     for k, v in monthly.items() if k.startswith("2026"))
