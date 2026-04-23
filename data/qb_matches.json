@@ -1,0 +1,7 @@
+{
+  "_comment": "Manual overrides for QB invoices/bills that qb_sync.py can't auto-match by DocNumber. Two ways to provide a match:\n\n1. By specific invoice/bill ID (highest priority — exact match):\n     invoice_overrides:  {\"<QB Invoice Id>\": \"<project_number>\"}\n     bill_overrides:     {\"<QB Bill Id>\":    \"<project_number>\"}\n\n2. By customer/vendor name pattern (fallback for whole accounts):\n     customer_project:   {\"<QB Customer name substring>\": \"<project_number>\"}\n     vendor_project:     {\"<QB Vendor name substring>\":   \"<project_number>\"}\n\nTo find the Invoice/Bill Id, open data/qb_status.json and look at the 'unmatched_invoices' and 'unmatched_bills' arrays — each entry has the info you need.",
+  "invoice_overrides": {},
+  "bill_overrides": {},
+  "customer_project": {},
+  "vendor_project": {}
+}

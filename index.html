@@ -235,6 +235,9 @@
   <!-- Weekly Asana data-quality report (if present) -->
   <div id="parse-issues" class="commission-section"></div>
 
+  <!-- QB reconciliation (unmatched invoices/bills) -->
+  <div id="qb-unmatched" class="commission-section"></div>
+
   <!-- Salesperson leaderboard -->
   <div id="sp-leaderboard" class="sp-leaderboard"></div>
 
@@ -308,6 +311,52 @@ async function loadParseIssues() {
   } catch { return null; }
 }
 
+function renderUnmatchedQB() {
+  if (!QB_STATUS) return;
+  const uInv = QB_STATUS.unmatched_invoices || [];
+  const uBil = QB_STATUS.unmatched_bills    || [];
+  if (uInv.length === 0 && uBil.length === 0) {
+    document.getElementById('qb-unmatched').innerHTML = '';
+    return;
+  }
+
+  const stamp = new Date(QB_STATUS.generated_at).toLocaleDateString();
+  const editUrl = 'https://github.com/chardgrier/HHH-master/edit/main/data/qb_matches.json';
+
+  let html = `<details><summary>🧾 QB reconciliation — ${stamp} (${uInv.length} invoices, ${uBil.length} bills not matched to a project)</summary>
+    <div class="cgrid"><div style="padding:10px">
+    <p style="font-size:11px;color:var(--muted);margin-bottom:8px">
+      These invoices and bills couldn't be auto-matched by their DocNumber or customer/vendor name. To fix:<br>
+      <b>(a)</b> Rename the invoice/bill in QuickBooks so it starts with the project number (e.g. "2506-01") — preferred long-term, or<br>
+      <b>(b)</b> <a href="${editUrl}" target="_blank" style="color:var(--gold);text-decoration:none">✎ Edit data/qb_matches.json</a> and add a mapping using the Invoice/Bill Id shown below.
+    </p>`;
+
+  const row = r => `<li style="font-family:monospace;font-size:11px;padding:3px 0;color:var(--dark)">
+    <span style="color:var(--muted)">id=${r.invoice_id || r.bill_id} doc=${r.doc_number || '—'}</span>
+    · ${r.customer || r.vendor}
+    · ${r.date || '—'}
+    · \$${(r.amount || 0).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:0})}
+    · <span style="color:${r.status==='overdue'?'var(--closed)':r.status==='sent'?'#dd6b20':'var(--active)'}">${r.status || ''}</span>
+    ${r.deposit ? `<span style="color:var(--muted)"> (+\$${r.deposit.toLocaleString()} dep)</span>` : ''}
+  </li>`;
+
+  if (uInv.length) {
+    html += `<details open><summary style="font-weight:700;margin-top:6px">▸ ${uInv.length} unmatched invoices (A/R)</summary>
+      <ul style="list-style:none;margin-top:4px;max-height:300px;overflow-y:auto">${uInv.slice(0,200).map(row).join('')}</ul>
+      ${uInv.length > 200 ? `<p style="font-size:10px;color:var(--muted)">…and ${uInv.length-200} more in data/qb_status.json</p>` : ''}
+    </details>`;
+  }
+  if (uBil.length) {
+    html += `<details><summary style="font-weight:700;margin-top:6px">▸ ${uBil.length} unmatched bills (A/P)</summary>
+      <ul style="list-style:none;margin-top:4px;max-height:300px;overflow-y:auto">${uBil.slice(0,200).map(row).join('')}</ul>
+      ${uBil.length > 200 ? `<p style="font-size:10px;color:var(--muted)">…and ${uBil.length-200} more in data/qb_status.json</p>` : ''}
+    </details>`;
+  }
+  html += '</div></div></details>';
+
+  document.getElementById('qb-unmatched').innerHTML = html;
+}
+
 async function renderParseIssues() {
   const issues = await loadParseIssues();
   if (!issues) return;
@@ -356,6 +405,7 @@ async function loadData() {
     await loadQBStatus();
     render();
     renderParseIssues();
+    renderUnmatchedQB();
   } catch(e) {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('error').style.display = 'block';

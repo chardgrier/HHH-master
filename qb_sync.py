@@ -203,20 +203,48 @@ def main():
         c = project_company(p["name"])
         if c: proj_by_company[c].append(p)
 
-    def match_project(doc_number, fallback_name):
-        """Prefer DocNumber (HHH convention: 'NNNN-...' or 'NNNN-<letter><NN>').
-        Fall back to customer/vendor name match."""
+    # Load manual overrides (highest priority)
+    overrides = {"invoice_overrides":{}, "bill_overrides":{},
+                 "customer_project":{}, "vendor_project":{}}
+    if os.path.exists("data/qb_matches.json"):
+        with open("data/qb_matches.json") as f:
+            saved = json.load(f)
+        for k in overrides:
+            if isinstance(saved.get(k), dict):
+                overrides[k] = saved[k]
+
+    def match_project(doc_number, fallback_name, record_id=None, record_kind="invoice"):
+        """Four-tier matching:
+          1. Exact record-ID override (manual: invoice_overrides / bill_overrides)
+          2. DocNumber prefix (HHH convention: 'NNNN-...' or 'NNNN-<letter><NN>')
+          3. Customer/vendor name-to-project override (manual)
+          4. Customer/vendor name heuristic (company name substring)
+        """
+        # (1) Manual record-ID override
+        id_map_key = "invoice_overrides" if record_kind == "invoice" else "bill_overrides"
+        if record_id and str(record_id) in overrides.get(id_map_key, {}):
+            pnum = str(overrides[id_map_key][str(record_id)])
+            if pnum in proj_by_number:
+                return proj_by_number[pnum][0], pnum, None
+
+        # (2) DocNumber
         pnum, house = parse_doc_number(doc_number)
         if pnum and pnum in proj_by_number:
             candidates = proj_by_number[pnum]
-            # If a house letter was parsed AND we have a row matching it, prefer that
             if house:
                 for p in candidates:
                     if f"[House {house}]" in p["name"] or f" — Phase" in p["name"] and house in p["name"]:
                         return p, pnum, house
-            # Otherwise pick the first candidate for the project number
             return candidates[0], pnum, house
-        # Fall back to company/vendor name
+
+        # (3) Manual customer/vendor name-to-project override
+        name_map_key = "customer_project" if record_kind == "invoice" else "vendor_project"
+        for pattern, pnum in overrides.get(name_map_key, {}).items():
+            if pattern and pattern.lower() in (fallback_name or "").lower():
+                if str(pnum) in proj_by_number:
+                    return proj_by_number[str(pnum)][0], str(pnum), None
+
+        # (4) Company/vendor name heuristic (fuzzy)
         cn = normalize(fallback_name)
         for company, projs in proj_by_company.items():
             if company and (company in cn or cn in company):
@@ -228,7 +256,9 @@ def main():
     unmatched_invoices = []
     for inv in invoices:
         cust_name = (inv.get("CustomerRef") or {}).get("name", "")
-        matched, pnum, house = match_project(inv.get("DocNumber"), cust_name)
+        matched, pnum, house = match_project(
+            inv.get("DocNumber"), cust_name,
+            record_id=inv.get("Id"), record_kind="invoice")
         mk = month_key(inv.get("TxnDate",""))
         rental, deposit = rental_total(inv)
         if matched and mk:
@@ -246,8 +276,14 @@ def main():
             })
         else:
             unmatched_invoices.append({
-                "customer": cust_name, "date": inv.get("TxnDate"),
-                "amount": rental, "deposit": deposit,
+                "invoice_id": inv.get("Id"),
+                "customer":   cust_name,
+                "date":       inv.get("TxnDate"),
+                "amount":     rental,
+                "deposit":    deposit,
+                "total_amt":  float(inv.get("TotalAmt", 0) or 0),
+                "balance":    float(inv.get("Balance",  0) or 0),
+                "status":     status_for(inv, today),
                 "doc_number": inv.get("DocNumber"),
             })
 
@@ -257,7 +293,9 @@ def main():
     unmatched_bills = []
     for bill in bills:
         vendor = (bill.get("VendorRef") or {}).get("name", "")
-        matched, pnum, house = match_project(bill.get("DocNumber"), vendor)
+        matched, pnum, house = match_project(
+            bill.get("DocNumber"), vendor,
+            record_id=bill.get("Id"), record_kind="bill")
         mk = month_key(bill.get("TxnDate",""))
         rental, deposit = rental_total(bill)
         record = {
@@ -279,8 +317,14 @@ def main():
             ap_status[matched["name"]][mk].append(record)
         else:
             unmatched_bills.append({
-                "vendor": vendor, "date": bill.get("TxnDate"),
-                "amount": rental, "deposit": deposit,
+                "bill_id":    bill.get("Id"),
+                "vendor":     vendor,
+                "date":       bill.get("TxnDate"),
+                "amount":     rental,
+                "deposit":    deposit,
+                "total_amt":  float(bill.get("TotalAmt", 0) or 0),
+                "balance":    float(bill.get("Balance",  0) or 0),
+                "status":     status_for(bill, today),
                 "doc_number": bill.get("DocNumber"),
             })
 
