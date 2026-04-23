@@ -206,12 +206,28 @@ def main():
     # Load manual overrides (highest priority)
     overrides = {"invoice_overrides":{}, "bill_overrides":{},
                  "customer_project":{}, "vendor_project":{}}
+    ignore = {"ignore_invoice_ids": set(), "ignore_bill_ids": set(),
+              "ignore_customer_patterns": [], "ignore_vendor_patterns": []}
     if os.path.exists("data/qb_matches.json"):
         with open("data/qb_matches.json") as f:
             saved = json.load(f)
         for k in overrides:
             if isinstance(saved.get(k), dict):
                 overrides[k] = saved[k]
+        for k in ("ignore_invoice_ids", "ignore_bill_ids"):
+            if isinstance(saved.get(k), list):
+                ignore[k] = {str(x) for x in saved[k]}
+        for k in ("ignore_customer_patterns", "ignore_vendor_patterns"):
+            if isinstance(saved.get(k), list):
+                ignore[k] = [str(p) for p in saved[k] if p]
+
+    def should_ignore(record_id, party_name, kind):
+        id_set     = ignore["ignore_invoice_ids"] if kind == "invoice" else ignore["ignore_bill_ids"]
+        patterns   = ignore["ignore_customer_patterns"] if kind == "invoice" else ignore["ignore_vendor_patterns"]
+        if record_id is not None and str(record_id) in id_set:
+            return True
+        nm = (party_name or "").lower()
+        return any(p.lower() in nm for p in patterns)
 
     def match_project(doc_number, fallback_name, record_id=None, record_kind="invoice"):
         """Four-tier matching:
@@ -254,8 +270,12 @@ def main():
     # ── A/R status per project per month (matched by invoice DocNumber) ──
     ar_status = defaultdict(lambda: defaultdict(list))
     unmatched_invoices = []
+    ignored_invoices = 0
     for inv in invoices:
         cust_name = (inv.get("CustomerRef") or {}).get("name", "")
+        if should_ignore(inv.get("Id"), cust_name, "invoice"):
+            ignored_invoices += 1
+            continue
         matched, pnum, house = match_project(
             inv.get("DocNumber"), cust_name,
             record_id=inv.get("Id"), record_kind="invoice")
@@ -291,8 +311,12 @@ def main():
     ap_status = defaultdict(lambda: defaultdict(list))
     ap_bills = []
     unmatched_bills = []
+    ignored_bills = 0
     for bill in bills:
         vendor = (bill.get("VendorRef") or {}).get("name", "")
+        if should_ignore(bill.get("Id"), vendor, "bill"):
+            ignored_bills += 1
+            continue
         matched, pnum, house = match_project(
             bill.get("DocNumber"), vendor,
             record_id=bill.get("Id"), record_kind="bill")
@@ -338,10 +362,12 @@ def main():
         "unmatched_bills":    unmatched_bills,
         "summary": {
             "invoices_total":     len(invoices),
-            "invoices_matched":   len(invoices) - len(unmatched_invoices),
+            "invoices_ignored":   ignored_invoices,
+            "invoices_matched":   len(invoices) - len(unmatched_invoices) - ignored_invoices,
             "invoices_unmatched": len(unmatched_invoices),
             "bills_total":        len(bills),
-            "bills_matched":      len(bills) - len(unmatched_bills),
+            "bills_ignored":      ignored_bills,
+            "bills_matched":      len(bills) - len(unmatched_bills) - ignored_bills,
             "bills_unmatched":    len(unmatched_bills),
         },
     }
@@ -349,8 +375,12 @@ def main():
     with open("data/qb_status.json","w") as f:
         json.dump(out, f, indent=2, default=str)
 
-    print(f"\n✓ A/R matched: {len(ar_status)} projects, {len(invoices)-len(unmatched_invoices)}/{len(invoices)} invoices")
-    print(f"✓ A/P matched: {len(ap_status)} projects, {len(bills)-len(unmatched_bills)}/{len(bills)} bills")
+    matched_inv = len(invoices) - len(unmatched_invoices) - ignored_invoices
+    matched_bill = len(bills) - len(unmatched_bills) - ignored_bills
+    print(f"\n✓ A/R matched: {len(ar_status)} projects, {matched_inv}/{len(invoices)} invoices"
+          f" ({ignored_invoices} ignored)")
+    print(f"✓ A/P matched: {len(ap_status)} projects, {matched_bill}/{len(bills)} bills"
+          f" ({ignored_bills} ignored)")
     print(f"  {len(unmatched_invoices)} invoices + {len(unmatched_bills)} bills unmatched (see qb_status.json)")
     print("  Output → data/qb_status.json")
 

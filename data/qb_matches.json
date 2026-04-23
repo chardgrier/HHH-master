@@ -1,7 +1,49 @@
 {
-  "_comment": "Manual overrides for QB invoices/bills that qb_sync.py can't auto-match by DocNumber. Two ways to provide a match:\n\n1. By specific invoice/bill ID (highest priority — exact match):\n     invoice_overrides:  {\"<QB Invoice Id>\": \"<project_number>\"}\n     bill_overrides:     {\"<QB Bill Id>\":    \"<project_number>\"}\n\n2. By customer/vendor name pattern (fallback for whole accounts):\n     customer_project:   {\"<QB Customer name substring>\": \"<project_number>\"}\n     vendor_project:     {\"<QB Vendor name substring>\":   \"<project_number>\"}\n\nTo find the Invoice/Bill Id, open data/qb_status.json and look at the 'unmatched_invoices' and 'unmatched_bills' arrays — each entry has the info you need.",
-  "invoice_overrides": {},
+  "_comment": "Manual overrides + ignore list for QB invoices/bills. qb_sync.py applies these BEFORE its heuristic matching. Use any combination:\n\n  invoice_overrides / bill_overrides  — {\"QB Invoice/Bill Id\": \"project_number\"}\n  customer_project / vendor_project   — {\"name substring\": \"project_number\"}\n  ignore_invoice_ids / ignore_bill_ids — [\"id\", ...]  (drop the record entirely from dashboard + unmatched list)\n  ignore_customer_patterns / ignore_vendor_patterns — [\"name substring\", ...]  (drop any record whose customer/vendor matches)\n\nFor 'ignore_*' entries, the invoice/bill is fully skipped — it doesn't appear on the dashboard and won't show up in the reconciliation list.",
+
+  "invoice_overrides": {
+    "6736": "2562", "5406": "2562", "5407": "2562",
+    "4913": "2562", "4914": "2562", "4621": "2562", "4620": "2562",
+    "4122": "2562", "4123": "2562", "3117": "2562", "3116": "2562",
+    "3118": "2562", "2503": "2562", "2504": "2562", "2937": "2562",
+    "2953": "2562", "2667": "2562", "2668": "2562", "2451": "2562",
+
+    "4651": "2589", "4507": "2589",
+
+    "4087": "2557", "3123": "2557", "2675": "2557", "2551": "2557",
+
+    "3584": "2519", "2929": "2519", "2555": "2519", "2482": "2519",
+    "2087": "2519", "635": "2519", "1110": "2519", "433": "2519", "395": "2519",
+
+    "3473": "2520", "2979": "2520", "2394": "2520", "2171": "2520",
+
+    "3138": "2580",
+    "2114": "2540",
+    "1527": "2543",
+    "1600": "2547",
+    "885": "2525", "478": "2525"
+  },
+
   "bill_overrides": {},
+
   "customer_project": {},
-  "vendor_project": {}
+  "vendor_project": {},
+
+  "ignore_invoice_ids": [
+    "6177", "5967",
+    "4074", "4020", "4019", "3667", "3511", "3278", "3512", "3279", "3450", "3451", "3277",
+    "3084", "3085", "3086", "2981", "2982", "2983",
+    "2930", "2931", "2932", "2764", "2765", "2568",
+    "53", "2674", "2567", "2506",
+    "2453", "2169", "2215", "1115", "176",
+    "1638", "1677", "1637", "1565", "1426", "1317",
+    "297", "102", "1029", "1043",
+    "430", "384", "11",
+    "366", "194", "95",
+    "689", "457", "1", "357", "193", "195", "160", "37"
+  ],
+  "ignore_bill_ids": [],
+
+  "ignore_customer_patterns": [],
+  "ignore_vendor_patterns": []
 }
