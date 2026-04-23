@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T20:11:28.975620",
+  "generated_at": "2026-04-23T07:30:00.252037",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
     "ARD Contracting - Eastaboga, AL - Zeke - 2537": {
@@ -40866,28 +40866,6 @@
       "doc_number": "2562-D06"
     },
     {
-      "invoice_id": "6177",
-      "customer": "Vicki Vandelaar [Security Deposit Return]",
-      "date": "2026-02-18",
-      "amount": 30.0,
-      "deposit": 1000.0,
-      "total_amt": 1030.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2560-Sec Dep return"
-    },
-    {
-      "invoice_id": "5967",
-      "customer": "[Cancelled] Layton Construction - Loxahatchee, FL - Per Diem - Peyton - 2611",
-      "date": "2026-02-10",
-      "amount": 0.0,
-      "deposit": 0.0,
-      "total_amt": 0.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1611-01"
-    },
-    {
       "invoice_id": "4913",
       "customer": "Dean Steel - Aurora, CO - Paul - 2562",
       "date": "2025-12-27",
@@ -41031,50 +41009,6 @@
       "doc_number": "2562-D03"
     },
     {
-      "invoice_id": "4074",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-11-06",
-      "amount": 2283.75,
-      "deposit": 0.0,
-      "total_amt": 2283.75,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A11"
-    },
-    {
-      "invoice_id": "4020",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-11-04",
-      "amount": 2202.55,
-      "deposit": 0.0,
-      "total_amt": 2202.55,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B10"
-    },
-    {
-      "invoice_id": "4019",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-11-04",
-      "amount": 2936.26,
-      "deposit": 0.0,
-      "total_amt": 2936.26,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A10"
-    },
-    {
-      "invoice_id": "3667",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-27",
-      "amount": 1223.08,
-      "deposit": 0.0,
-      "total_amt": 1223.08,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B09"
-    },
-    {
       "invoice_id": "3473",
       "customer": "AES- Kirksville, MO - 2520",
       "date": "2025-10-16",
@@ -41119,83 +41053,6 @@
       "doc_number": "2519-07"
     },
     {
-      "invoice_id": "3511",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-17",
-      "amount": 1631.25,
-      "deposit": 0.0,
-      "total_amt": 1631.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A09"
-    },
-    {
-      "invoice_id": "3278",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-08",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B06"
-    },
-    {
-      "invoice_id": "3512",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-17",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B08"
-    },
-    {
-      "invoice_id": "3279",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-08",
-      "amount": 489.23,
-      "deposit": 0.0,
-      "total_amt": 489.23,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-C05"
-    },
-    {
-      "invoice_id": "3450",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-13",
-      "amount": 2306.25,
-      "deposit": 0.0,
-      "total_amt": 2306.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A08"
-    },
-    {
-      "invoice_id": "3451",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-13",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B07"
-    },
-    {
-      "invoice_id": "3277",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-10-08",
-      "amount": 2306.25,
-      "deposit": 0.0,
-      "total_amt": 2306.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A07"
-    },
-    {
       "invoice_id": "2503",
       "customer": "Dean Steel - Aurora, CO - Paul - 2562",
       "date": "2025-08-22",
@@ -41216,39 +41073,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2562-B02"
-    },
-    {
-      "invoice_id": "3084",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-29",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-C04"
-    },
-    {
-      "invoice_id": "3085",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-29",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B05"
-    },
-    {
-      "invoice_id": "3086",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-29",
-      "amount": 2306.25,
-      "deposit": 0.0,
-      "total_amt": 2306.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A06"
     },
     {
       "invoice_id": "2937",
@@ -41284,39 +41108,6 @@
       "doc_number": "2557-AB03"
     },
     {
-      "invoice_id": "2981",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-28",
-      "amount": 2306.25,
-      "deposit": 0.0,
-      "total_amt": 2306.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A05"
-    },
-    {
-      "invoice_id": "2982",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-28",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B04"
-    },
-    {
-      "invoice_id": "2983",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-28",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-C03"
-    },
-    {
       "invoice_id": "2979",
       "customer": "AES- Kirksville, MO - 2520",
       "date": "2025-09-22",
@@ -41339,83 +41130,6 @@
       "doc_number": "2519-06"
     },
     {
-      "invoice_id": "2930",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-16",
-      "amount": 2306.25,
-      "deposit": 0.0,
-      "total_amt": 2306.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A04"
-    },
-    {
-      "invoice_id": "2931",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-16",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B03"
-    },
-    {
-      "invoice_id": "2932",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-16",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-C02"
-    },
-    {
-      "invoice_id": "2764",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-08",
-      "amount": 2306.25,
-      "deposit": 0.0,
-      "total_amt": 2306.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A03"
-    },
-    {
-      "invoice_id": "2765",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-08",
-      "amount": 1712.81,
-      "deposit": 0.0,
-      "total_amt": 1712.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-B02"
-    },
-    {
-      "invoice_id": "2568",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-06",
-      "amount": 1721.81,
-      "deposit": 600.0,
-      "total_amt": 2321.81,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-01C"
-    },
-    {
-      "invoice_id": "53",
-      "customer": "Taylor Marine - Chula Vista - 2504",
-      "date": "2025-01-14",
-      "amount": 2500.0,
-      "deposit": 0.0,
-      "total_amt": 2500.0,
-      "balance": 2500.0,
-      "status": "overdue",
-      "doc_number": "2504-01"
-    },
-    {
       "invoice_id": "2394",
       "customer": "AES- Kirksville, MO - 2520",
       "date": "2025-08-13",
@@ -41425,28 +41139,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2520-06"
-    },
-    {
-      "invoice_id": "2674",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-09-01",
-      "amount": 2306.25,
-      "deposit": 0.0,
-      "total_amt": 2306.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-A02"
-    },
-    {
-      "invoice_id": "2567",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-08-29",
-      "amount": 1735.31,
-      "deposit": 1500.0,
-      "total_amt": 3235.31,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-01B"
     },
     {
       "invoice_id": "2482",
@@ -41482,17 +41174,6 @@
       "doc_number": "2562-C02"
     },
     {
-      "invoice_id": "2506",
-      "customer": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
-      "date": "2025-08-25",
-      "amount": 2306.25,
-      "deposit": 1500.0,
-      "total_amt": 3806.25,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2561-01A"
-    },
-    {
       "invoice_id": "2551",
       "customer": "Newline Skateparks - State College, PA - 2557",
       "date": "2025-08-28",
@@ -41515,28 +41196,6 @@
       "doc_number": "2562-01"
     },
     {
-      "invoice_id": "2453",
-      "customer": "Newline Skateparks - State College, PA - 2557",
-      "date": "2025-08-19",
-      "amount": 2265.0,
-      "deposit": 1500.0,
-      "total_amt": 3765.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2557-B01"
-    },
-    {
-      "invoice_id": "2169",
-      "customer": "Newline Skateparks - State College, PA - 2557",
-      "date": "2025-07-31",
-      "amount": 3731.0,
-      "deposit": 1000.0,
-      "total_amt": 4731.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2557-A01"
-    },
-    {
       "invoice_id": "2087",
       "customer": "Fox Enterprises - Lubbock TX - 2519",
       "date": "2025-07-26",
@@ -41546,17 +41205,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2519-05"
-    },
-    {
-      "invoice_id": "2215",
-      "customer": "Eaton Construction - Tellahoma, TN - 2545",
-      "date": "2025-08-04",
-      "amount": 300.0,
-      "deposit": 0.0,
-      "total_amt": 300.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2545-02"
     },
     {
       "invoice_id": "2171",
@@ -41581,28 +41229,6 @@
       "doc_number": "2540-03"
     },
     {
-      "invoice_id": "1115",
-      "customer": "Builtech - Fairfield, OH - 2538",
-      "date": "2025-05-28",
-      "amount": 2400.0,
-      "deposit": 0.0,
-      "total_amt": 2400.0,
-      "balance": 2400.0,
-      "status": "overdue",
-      "doc_number": "2538-02"
-    },
-    {
-      "invoice_id": "176",
-      "customer": "Petra CPS",
-      "date": "2025-02-16",
-      "amount": 1400.0,
-      "deposit": 0.0,
-      "total_amt": 1400.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2508-02"
-    },
-    {
       "invoice_id": "9",
       "customer": "Dean Steel - San Antonio",
       "date": "2025-01-02",
@@ -41612,28 +41238,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "1018-082172SD"
-    },
-    {
-      "invoice_id": "1638",
-      "customer": "Eaton Construction - Antioch, TN - 2541",
-      "date": "2025-06-24",
-      "amount": 400.0,
-      "deposit": 0.0,
-      "total_amt": 400.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2541-02"
-    },
-    {
-      "invoice_id": "1677",
-      "customer": "Eaton Construction - Tellahoma, TN - 2545",
-      "date": "2025-06-26",
-      "amount": 1500.0,
-      "deposit": 600.0,
-      "total_amt": 2100.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2545-01"
     },
     {
       "invoice_id": "1527",
@@ -41647,17 +41251,6 @@
       "doc_number": "2543-01"
     },
     {
-      "invoice_id": "1637",
-      "customer": "Southern Roots Steel  - Altavista, VA - 2540",
-      "date": "2025-06-24",
-      "amount": 1321.0,
-      "deposit": 0.0,
-      "total_amt": 1321.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2540-02"
-    },
-    {
       "invoice_id": "635",
       "customer": "Fox Enterprises - Lubbock TX - 2519",
       "date": "2025-04-17",
@@ -41667,17 +41260,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2519-03"
-    },
-    {
-      "invoice_id": "1565",
-      "customer": "AES- Kirksville, MO - 2520",
-      "date": "2025-06-19",
-      "amount": 1895.0,
-      "deposit": 0.0,
-      "total_amt": 1895.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2520-04"
     },
     {
       "invoice_id": "1600",
@@ -41702,17 +41284,6 @@
       "doc_number": "2519-04"
     },
     {
-      "invoice_id": "1426",
-      "customer": "Eaton Construction - Antioch, TN - 2541",
-      "date": "2025-06-10",
-      "amount": 1100.0,
-      "deposit": 250.0,
-      "total_amt": 1350.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2541-01"
-    },
-    {
       "invoice_id": "433",
       "customer": "Fox Enterprises - Lubbock TX - 2519",
       "date": "2025-03-25",
@@ -41724,17 +41295,6 @@
       "doc_number": "2519-02"
     },
     {
-      "invoice_id": "1317",
-      "customer": "Southern Roots Steel  - Altavista, VA - 2540",
-      "date": "2025-06-04",
-      "amount": 4874.0,
-      "deposit": 3000.0,
-      "total_amt": 7874.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2540-01"
-    },
-    {
       "invoice_id": "395",
       "customer": "Fox Enterprises - Lubbock TX - 2519",
       "date": "2025-03-22",
@@ -41744,116 +41304,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2519-01"
-    },
-    {
-      "invoice_id": "297",
-      "customer": "Postel Erection Group",
-      "date": "2025-03-05",
-      "amount": 4395.0,
-      "deposit": 0.0,
-      "total_amt": 4395.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2500-02-04"
-    },
-    {
-      "invoice_id": "102",
-      "customer": "Postel Erection Group",
-      "date": "2025-02-04",
-      "amount": 4395.0,
-      "deposit": 0.0,
-      "total_amt": 4395.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2500-02-03"
-    },
-    {
-      "invoice_id": "1029",
-      "customer": "AES- Kirksville, MO - 2520",
-      "date": "2025-05-25",
-      "amount": 1895.0,
-      "deposit": 0.0,
-      "total_amt": 1895.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2520-03"
-    },
-    {
-      "invoice_id": "1043",
-      "customer": "Builtech - Fairfield, OH - 2538",
-      "date": "2025-05-26",
-      "amount": 0.0,
-      "deposit": 1000.0,
-      "total_amt": 1000.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2538-01"
-    },
-    {
-      "invoice_id": "430",
-      "customer": "Twin City Tile - Omaha, NE - 2517",
-      "date": "2025-03-25",
-      "amount": 0.0,
-      "deposit": 0.0,
-      "total_amt": 0.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2517-02"
-    },
-    {
-      "invoice_id": "384",
-      "customer": "Twin City Tile - Omaha, NE - 2517",
-      "date": "2025-03-19",
-      "amount": 4220.0,
-      "deposit": 0.0,
-      "total_amt": 4220.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2517-01"
-    },
-    {
-      "invoice_id": "11",
-      "customer": "Postel Erection Group - Hutto, TX - 2503",
-      "date": "2025-01-03",
-      "amount": 5795.0,
-      "deposit": 1000.0,
-      "total_amt": 6795.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1018-082175SD"
-    },
-    {
-      "invoice_id": "366",
-      "customer": "Midwest Erecting - Sibley, MO - 2507",
-      "date": "2025-03-18",
-      "amount": 1410.0,
-      "deposit": 0.0,
-      "total_amt": 1410.0,
-      "balance": 1410.0,
-      "status": "overdue",
-      "doc_number": "2507-05"
-    },
-    {
-      "invoice_id": "194",
-      "customer": "Midwest Erecting - Sibley, MO - 2507",
-      "date": "2025-02-20",
-      "amount": 1309.67,
-      "deposit": 0.0,
-      "total_amt": 1309.67,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2508-04"
-    },
-    {
-      "invoice_id": "95",
-      "customer": "Midwest Erecting - Sibley, MO - 2507",
-      "date": "2025-02-03",
-      "amount": 2900.0,
-      "deposit": 1000.0,
-      "total_amt": 3900.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2507-01"
     },
     {
       "invoice_id": "885",
@@ -41876,94 +41326,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2525-01"
-    },
-    {
-      "invoice_id": "689",
-      "customer": "AES- Kirksville, MO - 2520",
-      "date": "2025-04-28",
-      "amount": 1832.0,
-      "deposit": 0.0,
-      "total_amt": 1832.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2520-02"
-    },
-    {
-      "invoice_id": "457",
-      "customer": "AES- Kirksville, MO - 2520",
-      "date": "2025-03-27",
-      "amount": 2048.0,
-      "deposit": 500.0,
-      "total_amt": 2548.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2520-01"
-    },
-    {
-      "invoice_id": "1",
-      "customer": "Sample Customer (deleted)",
-      "date": "2025-01-09",
-      "amount": 5.0,
-      "deposit": 0.0,
-      "total_amt": 5.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1001"
-    },
-    {
-      "invoice_id": "357",
-      "customer": "SSRG",
-      "date": "2025-03-14",
-      "amount": 1278.0,
-      "deposit": 0.0,
-      "total_amt": 1278.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2515-02"
-    },
-    {
-      "invoice_id": "193",
-      "customer": "Petra CPS",
-      "date": "2025-02-20",
-      "amount": 350.0,
-      "deposit": 0.0,
-      "total_amt": 350.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2508-03"
-    },
-    {
-      "invoice_id": "195",
-      "customer": "Petra CPS",
-      "date": "2025-02-21",
-      "amount": 11549.0,
-      "deposit": 0.0,
-      "total_amt": 11549.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2508-05"
-    },
-    {
-      "invoice_id": "160",
-      "customer": "Petra CPS",
-      "date": "2025-02-08",
-      "amount": 850.0,
-      "deposit": 0.0,
-      "total_amt": 850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "25-2531-03"
-    },
-    {
-      "invoice_id": "37",
-      "customer": "Postel Erection Group",
-      "date": "2024-12-31",
-      "amount": 4395.0,
-      "deposit": 0.0,
-      "total_amt": 4395.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1018-082169SD"
     }
   ],
   "unmatched_bills": [
@@ -47184,9 +46546,11 @@
   ],
   "summary": {
     "invoices_total": 955,
+    "invoices_ignored": 58,
     "invoices_matched": 852,
-    "invoices_unmatched": 103,
+    "invoices_unmatched": 45,
     "bills_total": 1249,
+    "bills_ignored": 0,
     "bills_matched": 775,
     "bills_unmatched": 474
   }
