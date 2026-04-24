@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T20:46:09.972450",
+  "generated_at": "2026-04-24T21:09:06.161089",
   "months": [
     "2025-08",
     "2025-09",
@@ -4696,5 +4696,75 @@
         }
       }
     }
-  ]
+  ],
+  "kpis": {
+    "weekly": {},
+    "monthly": {},
+    "targets": {
+      "Paul": {
+        "weekly": {
+          "calls": 75,
+          "meetings": 4,
+          "quotes": 3,
+          "deals": 1.25,
+          "nepq": 2.5
+        },
+        "monthly": {
+          "calls": 300,
+          "meetings": 16,
+          "quotes": 12,
+          "deals": 5,
+          "nepq": 10
+        }
+      },
+      "Zeke": {
+        "weekly": {
+          "calls": 75,
+          "meetings": 4,
+          "quotes": 3,
+          "deals": 1.25,
+          "nepq": 2.5
+        },
+        "monthly": {
+          "calls": 300,
+          "meetings": 16,
+          "quotes": 12,
+          "deals": 5,
+          "nepq": 10
+        }
+      },
+      "Logan": {
+        "weekly": {
+          "calls": 75,
+          "meetings": 3,
+          "quotes": 2,
+          "deals": 1.25,
+          "nepq": 2.5
+        },
+        "monthly": {
+          "calls": 300,
+          "meetings": 12,
+          "quotes": 8,
+          "deals": 5,
+          "nepq": 10
+        }
+      },
+      "Peyton": {
+        "weekly": {
+          "calls": 50,
+          "meetings": 1,
+          "quotes": 1,
+          "deals": 0.25,
+          "nepq": 2.5
+        },
+        "monthly": {
+          "calls": 200,
+          "meetings": 4,
+          "quotes": 4,
+          "deals": 1,
+          "nepq": 10
+        }
+      }
+    }
+  }
 }
