@@ -921,6 +921,73 @@ def fetch_maintenance_tasks():
         })
     return items
 
+def compute_ar_aging(projects):
+    """A/R aging buckets per salesperson, derived from data/qb_status.json.
+
+    Buckets by days-past-due:
+      current (not yet due), 1-30, 31-60, 61-90, 90+
+    Returns: { salesperson: {bucket: {count, amount, invoices:[{...}]}} }
+    Unpaid invoices only (balance > 0). Invoices without a due_date skipped.
+    """
+    path = "data/qb_status.json"
+    if not os.path.exists(path): return {}
+    try:
+        with open(path) as f:
+            qb = json.load(f)
+    except Exception:
+        return {}
+
+    ar = qb.get("ar_status_by_project", {})
+    if not ar: return {}
+
+    today = date.today()
+    sp_by_project = {p["name"]: (p.get("salesperson") or "Unknown") for p in projects}
+
+    def bucket_for(days):
+        if days <  0: return "current"
+        if days <= 30: return "1-30"
+        if days <= 60: return "31-60"
+        if days <= 90: return "61-90"
+        return "90+"
+
+    BUCKETS = ["current", "1-30", "31-60", "61-90", "90+"]
+    aging = {}
+
+    for proj_name, months_dict in ar.items():
+        sp = sp_by_project.get(proj_name, "Unknown")
+        if sp in HIDE_FROM_SP_VIEWS: continue
+        for invoices in months_dict.values():
+            for inv in invoices:
+                bal = float(inv.get("balance", 0) or 0)
+                if bal <= 0.001: continue
+                due_str = inv.get("due_date")
+                if not due_str: continue
+                try: due = date.fromisoformat(due_str)
+                except Exception: continue
+
+                days_overdue = (today - due).days
+                bkt = bucket_for(days_overdue)
+                agent = aging.setdefault(sp, {b: {"count":0, "amount":0.0, "invoices":[]} for b in BUCKETS})
+                agent[bkt]["count"]  += 1
+                agent[bkt]["amount"] += bal
+                agent[bkt]["invoices"].append({
+                    "project":      proj_name,
+                    "invoice_id":   inv.get("invoice_id"),
+                    "doc_number":   inv.get("doc_number"),
+                    "amount":       round(bal, 2),
+                    "days_overdue": days_overdue,
+                    "due_date":     due_str,
+                })
+
+    # Round bucket totals + sort invoices within each bucket by days desc
+    for sp, bkts in aging.items():
+        for bkt in bkts.values():
+            bkt["amount"] = round(bkt["amount"], 2)
+            bkt["invoices"].sort(key=lambda x: -x["days_overdue"])
+
+    return aging
+
+
 def write_sales_view(master):
     """Write data/sales.json — leaderboard + commission-by-month for sales team.
 
@@ -943,6 +1010,7 @@ def write_sales_view(master):
                             for k, v in r.get("monthly", {}).items()},
         })
     kpis = fetch_kpi_data()
+    ar_aging = compute_ar_aging(master["projects"])
 
     out = {
         "generated_at":    master["generated_at"],
@@ -950,6 +1018,7 @@ def write_sales_view(master):
         "commission_rate": master["commission_rate"],
         "projects":        sales_projects,
         "kpis":            kpis,
+        "ar_aging":        ar_aging,
     }
     with open("data/sales.json", "w") as f:
         json.dump(out, f, indent=2, default=str)

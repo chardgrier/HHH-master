@@ -75,6 +75,27 @@
   #loading { padding: 60px; text-align: center; color: var(--muted); font-size: 16px; }
   #error { padding: 40px; text-align: center; color: #e53e3e; }
 
+  /* A/R aging */
+  .ar-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .ar-table th, .ar-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: right; font-variant-numeric: tabular-nums; }
+  .ar-table th { background: #f7f8fc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: .5px; text-align: center; }
+  .ar-table td.sp { text-align: left; font-weight: 700; color: var(--dark); }
+  .ar-table td.total { font-weight: 700; background: #f7f8fc; }
+  .ar-table tfoot td { background: #2d3748; color: #fff; font-weight: 700; }
+  .ar-table tfoot td.sp { background: #2d3748; color: #fff; }
+  .ar-cell .cnt { display: block; font-size: 10px; color: var(--muted); }
+  .ar-cell .amt { font-weight: 700; }
+  .ar-cell.zero .amt { color: #cbd5e0; }
+  .ar-cell.b30 .amt { color: #d69e2e; }
+  .ar-cell.b60 .amt { color: #c05621; }
+  .ar-cell.b90 .amt { color: #9b2c2c; }
+  .ar-cell.b90plus .amt { color: #fff; background: #e53e3e; padding: 2px 6px; border-radius: 3px; display: inline-block; }
+  .ar-invoices { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
+  .ar-invoices th, .ar-invoices td { padding: 4px 9px; border-bottom: 1px solid var(--border); text-align: right; }
+  .ar-invoices th { background: #f7f8fc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 10px; }
+  .ar-invoices td.proj { text-align: left; }
+  .ar-invoices .overdue-90 { color: #9b2c2c; font-weight: 700; }
+
   /* KPI leaderboard */
   .kpi-table { width: 100%; border-collapse: collapse; font-size: 12px; }
   .kpi-table th, .kpi-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: center; }
@@ -133,6 +154,11 @@
       <select id="kpi-month-select" onchange="renderKpiMonth()"></select>
     </div>
     <div id="kpi-monthly"></div>
+  </details>
+
+  <details class="panel" open>
+    <summary><h3 style="display:inline">💸 Accounts Receivable Aging · <span id="ar-total-label"></span></h3></summary>
+    <div id="ar-aging"></div>
   </details>
 
   <details class="panel" open>
@@ -202,6 +228,108 @@ function render() {
   populateKpiSelectors();
   renderKpiWeek();
   renderKpiMonth();
+  renderArAging();
+}
+
+// ---------- A/R aging ----------
+
+const AR_BUCKETS = [
+  {key: '1-30',  label: '1–30 days',  cls: 'b30'},
+  {key: '31-60', label: '31–60 days', cls: 'b60'},
+  {key: '61-90', label: '61–90 days', cls: 'b90'},
+  {key: '90+',   label: '90+ days',   cls: 'b90plus'},
+];
+
+function renderArAging() {
+  const aging = DATA.ar_aging || {};
+  const reps = Object.keys(aging).sort();
+  const container = document.getElementById('ar-aging');
+
+  if (reps.length === 0) {
+    container.innerHTML = '<p style="color:var(--muted);font-style:italic;padding:8px 0">No A/R aging data. (QuickBooks sync required.)</p>';
+    document.getElementById('ar-total-label').textContent = '';
+    return;
+  }
+
+  // Compute grand totals per bucket + overall
+  const totals = {}; AR_BUCKETS.forEach(b => totals[b.key] = {count:0, amount:0});
+  let grandCount = 0, grandAmount = 0;
+  reps.forEach(sp => {
+    AR_BUCKETS.forEach(b => {
+      const v = aging[sp][b.key] || {count:0, amount:0};
+      totals[b.key].count  += v.count;
+      totals[b.key].amount += v.amount;
+      grandCount  += v.count;
+      grandAmount += v.amount;
+    });
+  });
+  document.getElementById('ar-total-label').textContent =
+    `${grandCount} overdue · ${fmt$(grandAmount)}`;
+
+  // Summary table
+  let html = '<table class="ar-table"><thead><tr><th style="text-align:left">Salesperson</th>';
+  AR_BUCKETS.forEach(b => { html += `<th>${b.label}</th>`; });
+  html += '<th>Total Overdue</th></tr></thead><tbody>';
+  reps.forEach(sp => {
+    let spCount = 0, spAmount = 0;
+    html += `<tr><td class="sp">${sp}</td>`;
+    AR_BUCKETS.forEach(b => {
+      const v = aging[sp][b.key] || {count:0, amount:0};
+      spCount += v.count; spAmount += v.amount;
+      const cellCls = 'ar-cell ' + b.cls + (v.amount === 0 ? ' zero' : '');
+      html += `<td class="${cellCls}">
+        <span class="amt">${v.amount > 0 ? fmt$(v.amount) : '—'}</span>
+        ${v.count > 0 ? `<span class="cnt">${v.count} inv</span>` : ''}
+      </td>`;
+    });
+    html += `<td class="total">${fmt$(spAmount)}<br><span style="font-size:10px;color:var(--muted);font-weight:400">${spCount} inv</span></td></tr>`;
+  });
+  html += '<tr class="com-total"></tr></tbody><tfoot><tr><td class="sp">All salespeople</td>';
+  AR_BUCKETS.forEach(b => {
+    const t = totals[b.key];
+    html += `<td>${t.amount > 0 ? fmt$(t.amount) : '—'}${t.count ? `<br><span style="font-size:10px;font-weight:400">${t.count} inv</span>` : ''}</td>`;
+  });
+  html += `<td>${fmt$(grandAmount)}<br><span style="font-size:10px;font-weight:400">${grandCount} inv</span></td></tr></tfoot></table>`;
+
+  // Detail: per-bucket collapsible with invoice list (worst first)
+  html += '<div style="margin-top:14px">';
+  AR_BUCKETS.forEach(b => {
+    // Collect all invoices in this bucket across reps
+    const list = [];
+    reps.forEach(sp => {
+      const v = aging[sp][b.key]; if (!v || !v.invoices) return;
+      v.invoices.forEach(inv => list.push({sp, ...inv}));
+    });
+    if (list.length === 0) return;
+    list.sort((a, b) => b.days_overdue - a.days_overdue);
+    html += `<details style="margin-top:8px">
+      <summary style="cursor:pointer;font-weight:700;font-size:12px;color:var(--dark);padding:4px 0">
+        ▸ ${b.label} · ${list.length} invoice${list.length>1?'s':''} · ${fmt$(list.reduce((s,i)=>s+i.amount,0))}
+      </summary>
+      <table class="ar-invoices"><thead><tr>
+        <th style="text-align:left">Salesperson</th>
+        <th style="text-align:left">Project</th>
+        <th>Invoice #</th>
+        <th>Amount</th>
+        <th>Days Overdue</th>
+        <th>Due Date</th>
+      </tr></thead><tbody>`;
+    list.forEach(inv => {
+      const cls = inv.days_overdue > 90 ? 'overdue-90' : '';
+      html += `<tr>
+        <td class="proj" style="font-weight:700">${inv.sp}</td>
+        <td class="proj">${inv.project}</td>
+        <td>${inv.doc_number || inv.invoice_id || '—'}</td>
+        <td>${fmt$(inv.amount)}</td>
+        <td class="${cls}">${inv.days_overdue}d</td>
+        <td>${inv.due_date || '—'}</td>
+      </tr>`;
+    });
+    html += '</tbody></table></details>';
+  });
+  html += '</div>';
+
+  container.innerHTML = html;
 }
 
 // ---------- KPI leaderboard ----------
