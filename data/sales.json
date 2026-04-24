@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T21:09:06.161089",
+  "generated_at": "2026-04-24T21:16:47.841194",
   "months": [
     "2025-08",
     "2025-09",
@@ -4698,8 +4698,250 @@
     }
   ],
   "kpis": {
-    "weekly": {},
-    "monthly": {},
+    "weekly": {
+      "Paul": {
+        "Apr 2026 W1": {
+          "calls": 52.0,
+          "meetings": 0.0,
+          "quotes": 1.0,
+          "deals": 0.0,
+          "nepq": 2.0
+        },
+        "Apr 2026 W2": {
+          "calls": 99.0,
+          "meetings": 1.0,
+          "quotes": 3.0,
+          "deals": 1.0,
+          "nepq": 3.25
+        },
+        "Apr 2026 W3": {
+          "calls": 86.0,
+          "meetings": 1.0,
+          "quotes": 5.0,
+          "deals": 2.0,
+          "nepq": 3.0
+        },
+        "Apr 2026 W4": {
+          "calls": 77.0,
+          "meetings": 1.0,
+          "quotes": 2.0,
+          "deals": 0.0,
+          "nepq": 2.5
+        },
+        "Apr 2026 W5": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      },
+      "Zeke": {
+        "Apr 2026 W1": {
+          "calls": 26.0,
+          "meetings": 3.0,
+          "quotes": 3.0,
+          "deals": 1.0,
+          "nepq": 0.0
+        },
+        "Apr 2026 W2": {
+          "calls": 133.0,
+          "meetings": 7.0,
+          "quotes": 7.0,
+          "deals": 2.0,
+          "nepq": 4.25
+        },
+        "Apr 2026 W3": {
+          "calls": 81.0,
+          "meetings": 4.0,
+          "quotes": 8.0,
+          "deals": 2.0,
+          "nepq": 4.5
+        },
+        "Apr 2026 W4": {
+          "calls": 30.0,
+          "meetings": 5.0,
+          "quotes": 5.0,
+          "deals": 4.0,
+          "nepq": 3.75
+        },
+        "Apr 2026 W5": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      },
+      "Logan": {
+        "Apr 2026 W1": {
+          "calls": 31.0,
+          "meetings": 0.0,
+          "quotes": 1.0,
+          "deals": 0.0,
+          "nepq": 1.25
+        },
+        "Apr 2026 W2": {
+          "calls": 56.0,
+          "meetings": 3.0,
+          "quotes": 3.0,
+          "deals": 0.0,
+          "nepq": 2.0
+        },
+        "Apr 2026 W3": {
+          "calls": 42.0,
+          "meetings": 1.0,
+          "quotes": 1.0,
+          "deals": 0.0,
+          "nepq": 3.0
+        },
+        "Apr 2026 W4": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        },
+        "Apr 2026 W5": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      },
+      "Peyton": {
+        "Apr 2026 W1": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        },
+        "Apr 2026 W2": {
+          "calls": 36.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 1.0
+        },
+        "Apr 2026 W3": {
+          "calls": 56.0,
+          "meetings": 0.0,
+          "quotes": 1.0,
+          "deals": 0.0,
+          "nepq": 3.0
+        },
+        "Apr 2026 W4": {
+          "calls": 31.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        },
+        "Apr 2026 W5": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      }
+    },
+    "monthly": {
+      "Paul": {
+        "2026-04": {
+          "calls": 314.0,
+          "meetings": 3.0,
+          "quotes": 11.0,
+          "deals": 3.0,
+          "nepq": 10.75
+        },
+        "2026-05": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        },
+        "2026-06": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      },
+      "Zeke": {
+        "2026-04": {
+          "calls": 270.0,
+          "meetings": 19.0,
+          "quotes": 23.0,
+          "deals": 9.0,
+          "nepq": 12.5
+        },
+        "2026-05": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        },
+        "2026-06": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      },
+      "Logan": {
+        "2026-04": {
+          "calls": 129.0,
+          "meetings": 4.0,
+          "quotes": 5.0,
+          "deals": 0.0,
+          "nepq": 6.25
+        },
+        "2026-05": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        },
+        "2026-06": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      },
+      "Peyton": {
+        "2026-04": {
+          "calls": 123.0,
+          "meetings": 0.0,
+          "quotes": 1.0,
+          "deals": 0.0,
+          "nepq": 4.0
+        },
+        "2026-05": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        },
+        "2026-06": {
+          "calls": 0.0,
+          "meetings": 0.0,
+          "quotes": 0.0,
+          "deals": 0.0,
+          "nepq": 0.0
+        }
+      }
+    },
     "targets": {
       "Paul": {
         "weekly": {
