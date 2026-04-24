@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T07:56:44.180237",
+  "generated_at": "2026-04-24T20:33:59.467239",
   "months": [
     "2025-08",
     "2025-09",
@@ -5038,7 +5038,7 @@
       "status": "Active",
       "start_date": "2026-03-01",
       "end_date": "2026-04-30",
-      "base_ar": 6650.0,
+      "base_ar": 21800.0,
       "base_ap": 9850.0,
       "base_crew": 0,
       "commission_model": "percent",
@@ -5074,9 +5074,9 @@
       "salesperson": "Logan",
       "project_number": "2617",
       "status": "Active",
-      "start_date": "2026-03-01",
+      "start_date": "2026-03-04",
       "end_date": "2026-05-15",
-      "base_ar": 19050.0,
+      "base_ar": 3900.0,
       "base_ap": 2900.0,
       "base_crew": 0,
       "commission_model": "percent",
@@ -5110,6 +5110,35 @@
         "ar": 24805.0,
         "ap": 10376.67,
         "net_gp": 11542.66
+      },
+      "source": "asana_custom_fields"
+    },
+    {
+      "gid": "1213329022938206",
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House G]",
+      "salesperson": "Logan",
+      "project_number": "2617",
+      "status": "Closed",
+      "start_date": "2026-03-01",
+      "end_date": "2026-03-31",
+      "base_ar": 0,
+      "base_ap": 3850.0,
+      "base_crew": 0,
+      "commission_model": "percent",
+      "commission_rate": 0.2,
+      "monthly": {
+        "2026-03": {
+          "crew": 0,
+          "ar": 0.0,
+          "ap": 3850.0,
+          "commission": -770.0,
+          "net_gp": -3080.0
+        }
+      },
+      "total_2026": {
+        "ar": 0.0,
+        "ap": 3850.0,
+        "net_gp": -3080.0
       },
       "source": "asana_custom_fields"
     },
@@ -7280,9 +7309,9 @@
     "2026-03": {
       "crew": 320,
       "ar": 473398.32,
-      "ap": 290752.09,
-      "net_gp": 156226.96,
-      "gp_pct": 33.0
+      "ap": 294602.09,
+      "net_gp": 153146.96,
+      "gp_pct": 32.35
     },
     "2026-04": {
       "crew": 384,
@@ -7802,8 +7831,8 @@
       },
       "2026-03": {
         "ar": 74646.66,
-        "ap": 37795.67,
-        "commission": 7370.21
+        "ap": 41645.67,
+        "commission": 6600.21
       },
       "2026-04": {
         "ar": 70151.67,
@@ -8061,11 +8090,11 @@
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
-        "ar": 6650.0
+        "ar": 21800.0
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
-        "ar": 19050.0
+        "ar": 3900.0
       },
       {
         "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624 \u2014 A, Phase 2",
@@ -8080,13 +8109,7 @@
         "ar": 5550.0
       }
     ],
-    "ap_exceeds_ar": [
-      {
-        "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
-        "ar": 6650.0,
-        "ap": 9850.0
-      }
-    ],
+    "ap_exceeds_ar": [],
     "ending_in_30": [
       {
         "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
