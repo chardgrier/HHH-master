@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hard Hat Housing — Sales Dashboard</title>
+<style>
+  :root {
+    --gold: #F5A623; --dark: #1a1a2e; --darker: #111122;
+    --card: #ffffff; --border: #e2e8f0; --text: #2d3748; --muted: #718096;
+    --active: #38a169; --upcoming: #3182ce; --bg: #f7f8fc; --row-hover: #fffbf0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 13px; }
+
+  header { background: var(--dark); color: #fff; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 6px rgba(0,0,0,.25); position: sticky; top: 0; z-index: 200; }
+  header h1 { font-size: 18px; font-weight: 700; letter-spacing: .4px; }
+  header h1 span { color: var(--gold); }
+  #sync-info { font-size: 11px; color: #a0aec0; }
+
+  .filters { display: flex; gap: 8px; align-items: center; padding: 14px 24px 8px; flex-wrap: wrap; }
+  .filters label { font-size: 11px; font-weight: 600; color: var(--muted); margin-right: 2px; }
+  select { border: 1px solid var(--border); background: #fff; padding: 4px 10px; border-radius: 18px; font-size: 12px; }
+
+  .panel { margin: 10px 24px; background: #fff; padding: 14px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .panel h3 { font-size: 13px; color: var(--dark); margin-bottom: 10px; }
+
+  .lead table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .lead th, .lead td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: right; }
+  .lead th { background: #f7f8fc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: .5px; }
+  .lead td.sp-name { text-align: left; font-weight: 700; cursor: pointer; color: var(--upcoming); }
+  .lead td.sp-name:hover { text-decoration: underline; }
+  .lead .rank { color: var(--gold); font-weight: 700; width: 40px; text-align: center; }
+
+  .cgrid { overflow-x: auto; }
+  .cgrid table { border-collapse: collapse; font-size: 11px; width: max-content; }
+  .cgrid th, .cgrid td { padding: 5px 9px; border: 1px solid var(--border); text-align: right; font-family: 'SF Mono', monospace; white-space: nowrap; }
+  .cgrid th { background: var(--dark); color: #fff; font-weight: 600; text-align: center; }
+  .cgrid th.c-sp-name, .cgrid td.c-sp-name { text-align: left; font-weight: 700; position: sticky; left: 0; background: #fff; z-index: 2; font-family: inherit; min-width: 100px; }
+  .cgrid th.c-sp-name { background: var(--dark); color: #fff; z-index: 3; }
+  .cgrid th.this-month { background: #c05621 !important; }
+  .cgrid td.this-month { background: #fff8e1; }
+  .cgrid tr.com-total td { background: #2d3748; color: #fff; font-weight: 700; }
+  .cgrid tr.com-total td.c-sp-name { background: #2d3748; color: #fff; }
+  .cgrid td.total-col { background: #e6fffa; color: var(--dark); font-weight: 700; }
+  .cgrid th.total-col { background: #276749 !important; color: #fff !important; }
+  .zero { color: #cbd5e0; }
+
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.5); display: none; z-index: 1000; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 20px; }
+  .modal-backdrop.open { display: flex; }
+  .modal { background: #fff; border-radius: 10px; max-width: 900px; width: 100%; padding: 30px; box-shadow: 0 10px 40px rgba(0,0,0,.3); }
+  .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
+  .modal-head h2 { font-size: 20px; color: var(--dark); }
+  .modal-head .actions button { margin-left: 8px; border: 1px solid var(--border); background: #fff; color: var(--dark); padding: 5px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; }
+  .modal-head .actions button.primary { background: var(--gold); color: #fff; border-color: var(--gold); font-weight: 700; }
+  .modal table { width: 100%; border-collapse: collapse; font-size: 12px; margin-top: 12px; }
+  .modal th, .modal td { padding: 6px 10px; border: 1px solid var(--border); text-align: right; }
+  .modal th { background: var(--dark); color: #fff; font-weight: 600; }
+  .modal td.left { text-align: left; }
+  .modal tfoot td { background: #f7f8fc; font-weight: 700; }
+  @media print {
+    body * { visibility: hidden; }
+    .modal, .modal * { visibility: visible; }
+    .modal { position: absolute; top: 0; left: 0; width: 100%; box-shadow: none; }
+    .modal-head .actions { display: none; }
+    .modal-backdrop { background: #fff; padding: 0; }
+  }
+
+  #loading { padding: 60px; text-align: center; color: var(--muted); font-size: 16px; }
+  #error { padding: 40px; text-align: center; color: #e53e3e; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🦺 <span>Hard Hat Housing</span> — Sales</h1>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <span id="sync-info">Loading…</span>
+    <a href="/maintenance.html" style="color:var(--gold);font-size:12px;text-decoration:none">🔧 Maintenance</a>
+  </div>
+</header>
+
+<div id="loading">Loading sales data…</div>
+<div id="error" style="display:none"></div>
+
+<div id="app" style="display:none">
+
+  <div class="filters">
+    <label>Period:</label>
+    <select id="period-filter" onchange="FILTERS.period=this.value; render()">
+      <option value="All">All months</option>
+      <option value="2025">2025 only</option>
+      <option value="2026">2026 only</option>
+    </select>
+  </div>
+
+  <div class="panel lead">
+    <h3>🏆 Salesperson Leaderboard · <span id="period-label"></span></h3>
+    <div id="leaderboard"></div>
+  </div>
+
+  <div class="panel">
+    <h3>💰 Commission by month</h3>
+    <div class="cgrid" id="commission-table"></div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="stmt-modal" onclick="if(event.target===this)closeStmt()">
+  <div class="modal" id="stmt-modal-inner"></div>
+</div>
+
+<script>
+let DATA = null;
+const FILTERS = { period: 'All' };
+const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const TODAY_KEY = (() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`; })();
+
+function fmt$(n) { return (n === 0 || n == null) ? '—' : '$' + Math.round(n).toLocaleString(); }
+function fmtDate(s) { return s || '—'; }
+function monthLabel(k) { const [y,m] = k.split('-'); return MONTH_NAMES[+m - 1] + " '" + y.slice(2); }
+
+function periodMonths() {
+  if (FILTERS.period === 'All') return DATA.months;
+  if (FILTERS.period.length === 4) return DATA.months.filter(k => k.startsWith(FILTERS.period));
+  return DATA.months.filter(k => k === FILTERS.period);
+}
+
+function periodLabel() {
+  return FILTERS.period === 'All' ? 'all months'
+       : FILTERS.period.length === 4 ? FILTERS.period
+       : monthLabel(FILTERS.period);
+}
+
+async function loadData() {
+  try {
+    const r = await fetch('data/sales.json?' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    DATA = await r.json();
+  } catch (e) {
+    document.getElementById('loading').style.display = 'none';
+    const err = document.getElementById('error');
+    err.style.display = 'block';
+    err.textContent = 'Could not load data/sales.json: ' + e.message;
+    return;
+  }
+  const gen = new Date(DATA.generated_at);
+  document.getElementById('sync-info').textContent = 'Synced ' + gen.toLocaleString();
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+
+  // Populate period filter with individual months
+  const sel = document.getElementById('period-filter');
+  DATA.months.forEach(k => {
+    const opt = document.createElement('option');
+    opt.value = k; opt.textContent = monthLabel(k);
+    sel.appendChild(opt);
+  });
+
+  render();
+}
+
+function render() {
+  document.getElementById('period-label').textContent = periodLabel();
+  renderLeaderboard();
+  renderCommissionTable();
+}
+
+function renderLeaderboard() {
+  const months = periodMonths();
+  const byS = {};
+  DATA.projects.forEach(p => {
+    const sp = p.salesperson;
+    byS[sp] = byS[sp] || { ar:0, ap:0, commission:0, net_gp:0, projects:new Set() };
+    let anyActivity = false;
+    months.forEach(k => {
+      const mv = p.monthly[k]; if (!mv) return;
+      if ((mv.ar || mv.ap || mv.commission)) anyActivity = true;
+      byS[sp].ar += mv.ar || 0;
+      byS[sp].ap += mv.ap || 0;
+      byS[sp].commission += mv.commission || 0;
+      byS[sp].net_gp += mv.net_gp || 0;
+    });
+    if (anyActivity) byS[sp].projects.add(p.name);
+  });
+
+  const ranked = Object.entries(byS)
+    .map(([n, s]) => ({name: n, ...s, projects: s.projects.size}))
+    .filter(r => r.commission > 0 || r.ar > 0)
+    .sort((a, b) => b.commission - a.commission);
+
+  let html = '<table><thead><tr><th class="rank"></th><th style="text-align:left">Salesperson</th>'
+           + '<th>Projects</th><th>A/R</th><th>A/P</th><th>Commission</th><th>Net GP</th></tr></thead><tbody>';
+  ranked.forEach((s, i) => {
+    html += `<tr>
+      <td class="rank">${i+1}</td>
+      <td class="sp-name" onclick="showStmt('${s.name.replace(/'/g,"\\'")}')">${s.name}</td>
+      <td>${s.projects}</td>
+      <td>${fmt$(s.ar)}</td>
+      <td>${fmt$(s.ap)}</td>
+      <td style="color:var(--gold);font-weight:700">${fmt$(s.commission)}</td>
+      <td style="color:var(--active);font-weight:700">${fmt$(s.net_gp)}</td>
+    </tr>`;
+  });
+  html += '</tbody></table><p style="font-size:10px;color:var(--muted);margin-top:8px">Click a salesperson to view their detailed commission statement.</p>';
+  document.getElementById('leaderboard').innerHTML = html;
+}
+
+function renderCommissionTable() {
+  const months = DATA.months;
+  const bySp = {};
+  DATA.projects.forEach(p => {
+    const sp = p.salesperson;
+    bySp[sp] = bySp[sp] || {};
+    months.forEach(k => {
+      const mv = p.monthly[k]; if (!mv) return;
+      bySp[sp][k] = (bySp[sp][k] || 0) + (mv.commission || 0);
+    });
+  });
+  const sps = Object.keys(bySp).sort();
+
+  let html = '<table><thead><tr><th class="c-sp-name">Salesperson</th>';
+  months.forEach(k => {
+    html += `<th class="${k === TODAY_KEY ? 'this-month' : ''}">${monthLabel(k)}</th>`;
+  });
+  html += '<th class="total-col">TOTAL</th></tr></thead><tbody>';
+
+  const colTotals = {}; let grand = 0;
+  sps.forEach(sp => {
+    let rowTotal = 0;
+    html += `<tr><td class="c-sp-name">${sp}</td>`;
+    months.forEach(k => {
+      const v = bySp[sp][k] || 0;
+      colTotals[k] = (colTotals[k] || 0) + v;
+      rowTotal += v;
+      html += `<td class="${k === TODAY_KEY ? 'this-month' : ''}">${v > 0 ? fmt$(v) : '<span class="zero">—</span>'}</td>`;
+    });
+    grand += rowTotal;
+    html += `<td class="total-col">${fmt$(rowTotal)}</td></tr>`;
+  });
+  html += '<tr class="com-total"><td class="c-sp-name">All salespeople</td>';
+  months.forEach(k => { html += `<td>${fmt$(colTotals[k] || 0)}</td>`; });
+  html += `<td class="total-col" style="color:#68d391">${fmt$(grand)}</td></tr>`;
+  html += '</tbody></table>';
+
+  document.getElementById('commission-table').innerHTML = html;
+}
+
+function showStmt(sp) {
+  const months = periodMonths();
+  const projects = DATA.projects.filter(p => p.salesperson === sp);
+
+  let totalAr = 0, totalAp = 0, totalComm = 0, totalGp = 0;
+  const rows = projects.map(p => {
+    let ar=0, ap=0, comm=0, gp=0;
+    months.forEach(k => {
+      const mv = p.monthly[k]; if (!mv) return;
+      ar += mv.ar||0; ap += mv.ap||0; comm += mv.commission||0; gp += mv.net_gp||0;
+    });
+    totalAr += ar; totalAp += ap; totalComm += comm; totalGp += gp;
+    return {name: p.name, status: p.status, start: p.start_date, end: p.end_date, ar, ap, comm, gp};
+  }).filter(r => r.ar > 0 || r.ap > 0 || r.comm > 0);
+
+  let html = `<div class="modal-head">
+    <h2>Commission Statement · <span style="color:var(--gold)">${sp}</span><br>
+        <span style="font-size:13px;color:var(--muted);font-weight:400">${periodLabel()}</span></h2>
+    <div class="actions">
+      <button class="primary" onclick="window.print()">🖨 Print</button>
+      <button onclick="closeStmt()">Close</button>
+    </div>
+  </div>`;
+  html += `<p style="color:var(--muted);font-size:11px;margin-bottom:14px">Generated ${new Date().toLocaleString()} · ${rows.length} projects</p>`;
+  html += '<table><thead><tr><th class="left">Project</th><th>Status</th><th>Start</th><th>End</th>'
+        + '<th>A/R</th><th>A/P</th><th>Commission</th><th>Net GP</th></tr></thead><tbody>';
+  rows.forEach(r => {
+    html += `<tr><td class="left">${r.name}</td><td>${r.status}</td><td>${fmtDate(r.start)}</td><td>${fmtDate(r.end)}</td>
+      <td>${fmt$(r.ar)}</td><td>${fmt$(r.ap)}</td>
+      <td style="color:var(--gold);font-weight:700">${fmt$(r.comm)}</td>
+      <td style="color:var(--active);font-weight:700">${fmt$(r.gp)}</td></tr>`;
+  });
+  html += `</tbody><tfoot><tr>
+    <td class="left" colspan="4">TOTAL (${rows.length} projects)</td>
+    <td>${fmt$(totalAr)}</td><td>${fmt$(totalAp)}</td>
+    <td style="color:var(--gold)">${fmt$(totalComm)}</td>
+    <td style="color:var(--active)">${fmt$(totalGp)}</td>
+  </tr></tfoot></table>`;
+
+  document.getElementById('stmt-modal-inner').innerHTML = html;
+  document.getElementById('stmt-modal').classList.add('open');
+}
+function closeStmt() { document.getElementById('stmt-modal').classList.remove('open'); }
+
+loadData();
+</script>
+</body>
+</html>

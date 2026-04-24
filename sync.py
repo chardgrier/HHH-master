@@ -54,6 +54,21 @@ def monthly_commission(rules, ar, ap, crew):
 SALESPEOPLE = ["Paul","Zeke","Matt","Logan","David","Charlie","Peyton"]
 HHH_PROJECT_RE = re.compile(rf"\b({'|'.join(SALESPEOPLE)})\b.*?\d{{4}}", re.IGNORECASE)
 
+# Names hidden from the commissioned-sales views (leaderboard, commission table).
+# These people manage projects but aren't on commission.
+HIDE_FROM_SP_VIEWS = {"HHH", "David", "Unknown", ""}
+
+# Asana "Client Success" project — source of maintenance tickets for the staff page.
+CLIENT_SUCCESS_GID = "1211911843670288"
+MAINT_SECTION_GIDS = {
+    "1211911843670289": "General Updates",
+    "1211911843670292": "Urgent Maintenance",
+    "1211911843670291": "Emergency Maintenance",
+    "1211911843670295": "Standard Maintenance",
+}
+# House letter extracted from maintenance task names: "Unit D - Roof Leak", "A: Internet", "House B - ..."
+MAINT_HOUSE_RE = re.compile(r"^\s*(?:unit|house)?\s*([A-Z])\s*[:\-]", re.I)
+
 SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template",
               "1501 richmond", "4709 orlando", "1113 taborlake",
               # Rising Sun / RSD: all values come from data/manual_rows.json instead
@@ -745,6 +760,10 @@ def sync():
     with open("data/projects.json", "w") as f:
         json.dump(out, f, indent=2, default=str)
 
+    # ── Subpage data files (sanitized views for Cloudflare-gated pages) ──────
+    write_sales_view(out)
+    write_maintenance_view(out)
+
     active   = sum(1 for r in rows if r["status"] == "Active")
     upcoming = sum(1 for r in rows if r["status"] == "Upcoming")
     closed   = sum(1 for r in rows if r["status"] == "Closed")
@@ -753,6 +772,131 @@ def sync():
     print(f"\n✓ {len(rows)} rows · {active} active · {upcoming} upcoming · {closed} closed")
     print(f"  sources: {asana_ct} Asana · {fallback} fallback")
     print("  Output → data/projects.json")
+
+def fetch_maintenance_tasks():
+    """Pull maintenance tasks from the Asana 'Client Success' project.
+
+    Each task's membership list contains one entry per project the task lives in.
+    Severity comes from the section name inside Client Success (General Updates /
+    Urgent / Emergency / Standard). The matched construction project comes from
+    any OTHER membership. Status is a single-select custom field on the task.
+    """
+    fields = ",".join([
+        "name", "completed", "created_at", "permalink_url",
+        "custom_fields.name", "custom_fields.enum_value.name", "custom_fields.resource_subtype",
+        "memberships.section.name", "memberships.section.gid",
+        "memberships.project.name", "memberships.project.gid",
+    ])
+    try:
+        tasks = asana(f"projects/{CLIENT_SUCCESS_GID}/tasks", params={"opt_fields": fields, "limit": 100})
+    except Exception as e:
+        print(f"  ! maintenance fetch failed: {e}")
+        return []
+
+    items = []
+    for t in tasks:
+        if t.get("completed"): continue
+        severity, proj_name, proj_gid = None, None, None
+        for m in t.get("memberships", []):
+            sec  = m.get("section") or {}
+            proj = m.get("project") or {}
+            if proj.get("gid") == CLIENT_SUCCESS_GID:
+                severity = MAINT_SECTION_GIDS.get(sec.get("gid")) or severity
+            elif proj.get("gid"):
+                proj_gid = proj["gid"]; proj_name = proj.get("name")
+        if not severity:
+            continue  # Task is in Finance/Other/Templates/old-Resolved — not a maintenance ticket
+
+        status = None
+        for cf in t.get("custom_fields", []):
+            if cf.get("name") == "Status" and cf.get("resource_subtype") == "enum":
+                ev = cf.get("enum_value")
+                status = ev.get("name") if isinstance(ev, dict) else None
+                break
+
+        hm = MAINT_HOUSE_RE.match(t.get("name", "") or "")
+        house = hm.group(1).upper() if hm else None
+
+        items.append({
+            "task_id":    t.get("gid"),
+            "name":       t.get("name"),
+            "severity":   severity,
+            "status":     status or "—",
+            "project":    proj_name or "(unmatched)",
+            "project_gid": proj_gid,
+            "house":      house,
+            "created_at": t.get("created_at"),
+            "url":        t.get("permalink_url"),
+        })
+    return items
+
+def write_sales_view(master):
+    """Write data/sales.json — leaderboard + commission-by-month for sales team.
+
+    Includes per-project monthly A/R, A/P, commission, net GP — sales team is
+    allowed to see each other's numbers per Richard's call.
+    """
+    sales_projects = []
+    for r in master["projects"]:
+        sp = r.get("salesperson") or "Unknown"
+        if sp in HIDE_FROM_SP_VIEWS: continue
+        sales_projects.append({
+            "name":        r["name"],
+            "salesperson": sp,
+            "status":      r["status"],
+            "start_date":  r.get("start_date"),
+            "end_date":    r.get("end_date"),
+            "monthly":     {k: {"ar": v.get("ar",0), "ap": v.get("ap",0),
+                                "commission": v.get("commission",0),
+                                "net_gp": v.get("net_gp",0)}
+                            for k, v in r.get("monthly", {}).items()},
+        })
+    out = {
+        "generated_at":    master["generated_at"],
+        "months":          master["months"],
+        "commission_rate": master["commission_rate"],
+        "projects":        sales_projects,
+    }
+    with open("data/sales.json", "w") as f:
+        json.dump(out, f, indent=2, default=str)
+    print(f"  Output → data/sales.json  ({len(sales_projects)} projects)")
+
+def write_maintenance_view(master):
+    """Write data/maintenance.json — project list + Asana maintenance tickets.
+
+    Staff page: no financial fields. Shows active/upcoming projects, ending-soon
+    warnings, and open maintenance tickets pulled from the Asana Client Success
+    project.
+    """
+    maint_projects = []
+    for r in master["projects"]:
+        if r["status"] not in ("Active", "Upcoming"): continue
+        maint_projects.append({
+            "name":         r["name"],
+            "status":       r["status"],
+            "start_date":   r.get("start_date"),
+            "end_date":     r.get("end_date"),
+            "project_number": r.get("project_number"),
+        })
+
+    ending = []
+    for x in master["health"].get("ending_in_30", []):
+        ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "30"})
+    for x in master["health"].get("ending_in_31_45", []):
+        ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "45"})
+
+    tickets = fetch_maintenance_tasks()
+
+    out = {
+        "generated_at":      master["generated_at"],
+        "projects":          maint_projects,
+        "ending_soon":       ending,
+        "maintenance_tasks": tickets,
+    }
+    with open("data/maintenance.json", "w") as f:
+        json.dump(out, f, indent=2, default=str)
+    print(f"  Output → data/maintenance.json  ({len(maint_projects)} projects · {len(tickets)} open tickets)")
+
 
 if __name__ == "__main__":
     sync()
