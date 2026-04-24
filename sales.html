@@ -215,50 +215,53 @@ const KPI_COLS = [
   {k:'nepq',     label:'NEPQ'},
 ];
 
-function isoWeekKeyOf(date) {
-  const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
-  const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
-  const wk = Math.ceil(((d - yearStart) / 86400000 + 1) / 7);
-  return `${d.getUTCFullYear()}-W${String(wk).padStart(2,'0')}`;
-}
-function currentWeekKey()  { return isoWeekKeyOf(new Date()); }
 function currentMonthKey() { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`; }
 
-function allKpiWeeks() {
-  const kw = (DATA.kpis && DATA.kpis.weekly) || {};
-  const set = new Set();
-  Object.values(kw).forEach(o => Object.keys(o).forEach(k => set.add(k)));
-  return Array.from(set).sort().reverse();  // newest first
+// Aggregated union of keys across all reps, preserving the order rep-dicts
+// present them in (which for weeks is W1→W5 as written by sync.py).
+function kpiPeriodKeys(scope /* 'weekly' | 'monthly' */) {
+  const data = (DATA.kpis && DATA.kpis[scope]) || {};
+  const seen = new Set();
+  const order = [];
+  Object.values(data).forEach(rep => Object.keys(rep).forEach(k => {
+    if (!seen.has(k)) { seen.add(k); order.push(k); }
+  }));
+  return order;
 }
-function allKpiMonths() {
-  const km = (DATA.kpis && DATA.kpis.monthly) || {};
-  const set = new Set();
-  Object.values(km).forEach(o => Object.keys(o).forEach(k => set.add(k)));
-  return Array.from(set).sort().reverse();
+
+// Default to the LAST period that has any non-zero value (most recent with data).
+function defaultKpiPeriod(scope) {
+  const data = (DATA.kpis && DATA.kpis[scope]) || {};
+  const keys = kpiPeriodKeys(scope);
+  for (let i = keys.length - 1; i >= 0; i--) {
+    const k = keys[i];
+    const anyActivity = Object.values(data).some(rep => {
+      const v = rep[k]; if (!v) return false;
+      return Object.values(v).some(x => x > 0);
+    });
+    if (anyActivity) return k;
+  }
+  return keys[0] || '';
 }
 
 function populateKpiSelectors() {
   const wkSel = document.getElementById('kpi-week-select');
   const moSel = document.getElementById('kpi-month-select');
   wkSel.innerHTML = ''; moSel.innerHTML = '';
-  const weeks = allKpiWeeks();
-  const months = allKpiMonths();
-  const curW = currentWeekKey(), curM = currentMonthKey();
-  weeks.forEach(w => {
+  const curM = currentMonthKey();
+
+  kpiPeriodKeys('weekly').forEach(w => {
     const opt = document.createElement('option');
-    opt.value = w; opt.textContent = w + (w === curW ? ' (current)' : '');
+    opt.value = w; opt.textContent = w;
     wkSel.appendChild(opt);
   });
-  months.forEach(m => {
+  kpiPeriodKeys('monthly').forEach(m => {
     const opt = document.createElement('option');
     opt.value = m; opt.textContent = monthLabel(m) + (m === curM ? ' (current)' : '');
     moSel.appendChild(opt);
   });
-  if (weeks.includes(curW)) wkSel.value = curW;
-  else if (weeks.length) wkSel.value = weeks[0];
-  if (months.includes(curM)) moSel.value = curM;
-  else if (months.length) moSel.value = months[0];
+  wkSel.value = defaultKpiPeriod('weekly');
+  moSel.value = defaultKpiPeriod('monthly');
 }
 
 function fmtKpi(v) {

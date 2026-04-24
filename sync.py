@@ -797,56 +797,69 @@ def sync():
     print("  Output → data/projects.json")
 
 def fetch_kpi_data():
-    """Fetch daily KPI form submissions per rep, aggregate by ISO-week + month.
+    """Parse each rep's summary tables directly from their Google Sheet tab.
 
-    Returns dicts keyed rep → period → {calls, meetings, quotes, deals, nepq}.
-    Sheet is publicly readable via gviz CSV export — no auth needed.
+    Each tab has three section headers we care about:
+      - "{rep} Weekly"   — next 5 rows: Calls, 2nd Meetings, Quotes, Deals, NEPQ
+                           columns: [label, target, W1, W2, W3, W4, W5]
+      - "{rep} Monthly"  — next 5 rows: same KPIs
+                           columns: [label, target, M1, M2, M3] (current quarter)
+      - (Quarterly section is ignored — we show weekly + monthly only.)
+
+    The sheet auto-rolls: in April W1..W5 are this month's weeks; in May the
+    sheet resets. Similarly Monthly columns cover the current quarter.
     """
     import csv as _csv, io as _io
-    weekly, monthly = {}, {}
 
-    def add_to(bucket, rep, key, vals):
-        acc = bucket.setdefault(rep, {}).setdefault(key, {k: 0.0 for k in vals})
-        for k, v in vals.items():
-            acc[k] += v
+    today = date.today()
+    month_name = today.strftime("%b %Y")
+    quarter = (today.month - 1) // 3
+    q_month_keys = [f"{today.year}-{quarter*3 + i + 1:02d}" for i in range(3)]
+
+    kpi_keys = ["calls", "meetings", "quotes", "deals", "nepq"]
 
     def to_num(s):
-        try: return float((s or "").strip() or "0")
+        try: return float((s or "").replace(",", "").strip() or "0")
         except Exception: return 0.0
+
+    def section_rows(rows, marker):
+        for i, row in enumerate(rows):
+            if row and (row[0] or "").strip() == marker:
+                return rows[i+1 : i+1+len(kpi_keys)]
+        return None
+
+    def pick(row, idx):
+        return to_num(row[idx]) if row and idx < len(row) else 0.0
+
+    weekly, monthly = {}, {}
 
     for rep in KPI_TABS:
         url = (f"https://docs.google.com/spreadsheets/d/{KPI_SHEET_ID}"
-               f"/gviz/tq?tqx=out:csv&sheet={rep}")
+               f"/gviz/tq?tqx=out:csv&headers=0&sheet={rep}")
         try:
             r = requests.get(url, timeout=20)
             r.raise_for_status()
         except Exception as e:
             print(f"  ! KPI fetch failed for {rep}: {e}")
             continue
+        rows = list(_csv.reader(_io.StringIO(r.text)))
 
-        for row in _csv.reader(_io.StringIO(r.text)):
-            if len(row) <= KPI_COL_NEPQ: continue
-            if not KPI_TS_RE.match(row[0] or ""): continue
+        wk_rows = section_rows(rows, f"{rep} Weekly")
+        if wk_rows and len(wk_rows) >= len(kpi_keys):
+            weekly[rep] = {}
+            for w in range(5):  # W1..W5
+                label = f"{month_name} W{w+1}"
+                weekly[rep][label] = {
+                    kpi_keys[i]: pick(wk_rows[i], 2 + w) for i in range(len(kpi_keys))
+                }
 
-            parts = (row[KPI_COL_DATE] or "").strip().split("/")
-            try:
-                dt = date(int(parts[2]), int(parts[0]), int(parts[1]))
-            except Exception:
-                continue
-
-            iso_y, iso_w, _iso_d = dt.isocalendar()
-            wk_key = f"{iso_y}-W{iso_w:02d}"
-            mo_key = f"{dt.year}-{dt.month:02d}"
-
-            vals = {
-                "calls":    to_num(row[KPI_COL_CALLS]),
-                "meetings": to_num(row[KPI_COL_MEETINGS]),
-                "quotes":   to_num(row[KPI_COL_QUOTES]),
-                "deals":    to_num(row[KPI_COL_DEALS]),
-                "nepq":     to_num(row[KPI_COL_NEPQ]),
-            }
-            add_to(weekly,  rep, wk_key, vals)
-            add_to(monthly, rep, mo_key, vals)
+        mo_rows = section_rows(rows, f"{rep} Monthly")
+        if mo_rows and len(mo_rows) >= len(kpi_keys):
+            monthly[rep] = {}
+            for m_idx, m_key in enumerate(q_month_keys):
+                monthly[rep][m_key] = {
+                    kpi_keys[i]: pick(mo_rows[i], 2 + m_idx) for i in range(len(kpi_keys))
+                }
 
     return {"weekly": weekly, "monthly": monthly, "targets": KPI_TARGETS}
 
