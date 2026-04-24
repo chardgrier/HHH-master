@@ -69,6 +69,29 @@ MAINT_SECTION_GIDS = {
 # House letter extracted from maintenance task names: "Unit D - Roof Leak", "A: Internet", "House B - ..."
 MAINT_HOUSE_RE = re.compile(r"^\s*(?:unit|house)?\s*([A-Z])\s*[:\-]", re.I)
 
+# Google Sheet with daily KPI form submissions — one tab per rep, all publicly readable.
+KPI_SHEET_ID = "1TlJbBoxmr9p81JT4ICHsl3gmz2Ih9Sc18L9sVayR2-w"
+KPI_TABS     = ["Paul", "Zeke", "Logan", "Peyton"]
+# Column indexes in each rep's daily form tab (header row is "Timestamp | Date of Submission | Your Name | ...").
+KPI_COL_DATE     = 1
+KPI_COL_CALLS    = 3
+KPI_COL_MEETINGS = 4
+KPI_COL_QUOTES   = 5
+KPI_COL_DEALS    = 6
+KPI_COL_NEPQ     = 7
+KPI_TS_RE = re.compile(r"^\s*\d{1,2}/\d{1,2}/\d{4}\s+\d{1,2}:\d{2}")
+# Targets per rep (hard-coded from the sheet's summary tables; adjust here if goals change).
+KPI_TARGETS = {
+    "Paul":   {"weekly": {"calls":75, "meetings":4, "quotes":3, "deals":1.25, "nepq":2.5},
+               "monthly":{"calls":300,"meetings":16,"quotes":12,"deals":5, "nepq":10}},
+    "Zeke":   {"weekly": {"calls":75, "meetings":4, "quotes":3, "deals":1.25, "nepq":2.5},
+               "monthly":{"calls":300,"meetings":16,"quotes":12,"deals":5, "nepq":10}},
+    "Logan":  {"weekly": {"calls":75, "meetings":3, "quotes":2, "deals":1.25, "nepq":2.5},
+               "monthly":{"calls":300,"meetings":12,"quotes":8, "deals":5, "nepq":10}},
+    "Peyton": {"weekly": {"calls":50, "meetings":1, "quotes":1, "deals":0.25,"nepq":2.5},
+               "monthly":{"calls":200,"meetings":4, "quotes":4, "deals":1, "nepq":10}},
+}
+
 SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template",
               "1501 richmond", "4709 orlando", "1113 taborlake",
               # Rising Sun / RSD: all values come from data/manual_rows.json instead
@@ -773,6 +796,61 @@ def sync():
     print(f"  sources: {asana_ct} Asana · {fallback} fallback")
     print("  Output → data/projects.json")
 
+def fetch_kpi_data():
+    """Fetch daily KPI form submissions per rep, aggregate by ISO-week + month.
+
+    Returns dicts keyed rep → period → {calls, meetings, quotes, deals, nepq}.
+    Sheet is publicly readable via gviz CSV export — no auth needed.
+    """
+    import csv as _csv, io as _io
+    weekly, monthly = {}, {}
+
+    def add_to(bucket, rep, key, vals):
+        acc = bucket.setdefault(rep, {}).setdefault(key, {k: 0.0 for k in vals})
+        for k, v in vals.items():
+            acc[k] += v
+
+    def to_num(s):
+        try: return float((s or "").strip() or "0")
+        except Exception: return 0.0
+
+    for rep in KPI_TABS:
+        url = (f"https://docs.google.com/spreadsheets/d/{KPI_SHEET_ID}"
+               f"/gviz/tq?tqx=out:csv&sheet={rep}")
+        try:
+            r = requests.get(url, timeout=20)
+            r.raise_for_status()
+        except Exception as e:
+            print(f"  ! KPI fetch failed for {rep}: {e}")
+            continue
+
+        for row in _csv.reader(_io.StringIO(r.text)):
+            if len(row) <= KPI_COL_NEPQ: continue
+            if not KPI_TS_RE.match(row[0] or ""): continue
+
+            parts = (row[KPI_COL_DATE] or "").strip().split("/")
+            try:
+                dt = date(int(parts[2]), int(parts[0]), int(parts[1]))
+            except Exception:
+                continue
+
+            iso_y, iso_w, _iso_d = dt.isocalendar()
+            wk_key = f"{iso_y}-W{iso_w:02d}"
+            mo_key = f"{dt.year}-{dt.month:02d}"
+
+            vals = {
+                "calls":    to_num(row[KPI_COL_CALLS]),
+                "meetings": to_num(row[KPI_COL_MEETINGS]),
+                "quotes":   to_num(row[KPI_COL_QUOTES]),
+                "deals":    to_num(row[KPI_COL_DEALS]),
+                "nepq":     to_num(row[KPI_COL_NEPQ]),
+            }
+            add_to(weekly,  rep, wk_key, vals)
+            add_to(monthly, rep, mo_key, vals)
+
+    return {"weekly": weekly, "monthly": monthly, "targets": KPI_TARGETS}
+
+
 def fetch_maintenance_tasks():
     """Pull maintenance tasks from the Asana 'Client Success' project.
 
@@ -851,15 +929,19 @@ def write_sales_view(master):
                                 "net_gp": v.get("net_gp",0)}
                             for k, v in r.get("monthly", {}).items()},
         })
+    kpis = fetch_kpi_data()
+
     out = {
         "generated_at":    master["generated_at"],
         "months":          master["months"],
         "commission_rate": master["commission_rate"],
         "projects":        sales_projects,
+        "kpis":            kpis,
     }
     with open("data/sales.json", "w") as f:
         json.dump(out, f, indent=2, default=str)
-    print(f"  Output → data/sales.json  ({len(sales_projects)} projects)")
+    kpi_reps = len(kpis["weekly"])
+    print(f"  Output → data/sales.json  ({len(sales_projects)} projects · {kpi_reps} KPI reps)")
 
 def write_maintenance_view(master):
     """Write data/maintenance.json — project list + Asana maintenance tickets.
