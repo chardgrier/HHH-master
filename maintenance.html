@@ -166,18 +166,27 @@ function renderEnding() {
 }
 
 function renderCheckins() {
-  const ci = DATA.checkins || [];
+  const ci = (DATA.checkins || []).slice();
   if (ci.length === 0) {
     document.getElementById('checkins').innerHTML =
-      '<p class="empty">No check-ins in the next 14 days. (Data source not yet wired — ask Richard how check-ins are tracked in Asana.)</p>';
+      '<p class="empty">No projects starting within the next 16 days.</p>';
     return;
   }
   ci.sort((a, b) => (a.days ?? 99) - (b.days ?? 99));
-  let html = '<table><thead><tr><th>Days</th><th>Project</th><th>House</th><th>Date</th></tr></thead><tbody>';
+  let html = '<table><thead><tr><th>Days</th><th>Send Info By</th>'
+           + '<th>Project Starts</th><th>Project</th><th>House</th>'
+           + '<th>Salesperson</th></tr></thead><tbody>';
   ci.forEach(x => {
-    html += `<tr><td>${x.days}d</td><td>${x.project || '—'}</td>
-             <td>${x.house ? houseBadge(x.house) : ''}</td>
-             <td>${fmtDate(x.date)}</td></tr>`;
+    const cls = x.days < 0 ? 'd30' : (x.days <= 2 ? 'd30' : (x.days <= 7 ? 'd45' : ''));
+    const daysLabel = x.days < 0 ? `${Math.abs(x.days)}d overdue` : `${x.days}d`;
+    html += `<tr>
+      <td class="${cls}">${daysLabel}</td>
+      <td>${fmtDate(x.date)}</td>
+      <td>${fmtDate(x.start_date)}</td>
+      <td>${x.project || '—'}</td>
+      <td>${x.house ? houseBadge(x.house) : ''}</td>
+      <td>${x.salesperson || ''}</td>
+    </tr>`;
   });
   html += '</tbody></table>';
   document.getElementById('checkins').innerHTML = html;

@@ -16,7 +16,7 @@ Falls back to data/master_data.json for any project with no HHH custom fields
 populated (e.g. Rising Sun, Gray Construction Bristol — no project number).
 """
 import os, json, re, sys
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from calendar import monthrange
 
 try:
@@ -980,12 +980,40 @@ def write_maintenance_view(master):
     for x in master["health"].get("ending_in_31_45", []):
         ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "45"})
 
+    # ── Upcoming Check-ins: 48 hrs before project start, window −2 to +14 days ──
+    today = date.today()
+    checkins = []
+    for r in master["projects"]:
+        if r["status"] != "Upcoming": continue
+        sd_str = r.get("start_date")
+        if not sd_str: continue
+        try: sd = date.fromisoformat(sd_str)
+        except Exception: continue
+        checkin_date = sd - timedelta(days=2)
+        days = (checkin_date - today).days
+        if days < -2 or days > 14: continue
+
+        house_m = re.search(r"\[House\s+([A-Z])\]", r["name"])
+        house = house_m.group(1) if house_m else None
+        clean = re.sub(r"\s*\[House\s+[A-Z]\]\s*$", "", r["name"])
+
+        checkins.append({
+            "project":    clean,
+            "house":      house,
+            "start_date": sd_str,
+            "date":       checkin_date.isoformat(),
+            "days":       days,
+            "salesperson": r.get("salesperson", ""),
+        })
+    checkins.sort(key=lambda x: x["days"])
+
     tickets = fetch_maintenance_tasks()
 
     out = {
         "generated_at":      master["generated_at"],
         "projects":          maint_projects,
         "ending_soon":       ending,
+        "checkins":          checkins,
         "maintenance_tasks": tickets,
     }
     with open("data/maintenance.json", "w") as f:
