@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T21:16:47.841194",
+  "generated_at": "2026-04-24T21:33:48.184244",
   "projects": [
     {
       "name": "Gray Construction - Bristol, TN - Paul - 2592",
@@ -576,6 +576,16 @@
       "end_date": "2026-06-05",
       "days": 42,
       "urgency": "45"
+    }
+  ],
+  "checkins": [
+    {
+      "project": "Heycon, LLC - Charlotte, NC - Zeke -2625-B",
+      "house": null,
+      "start_date": "2026-05-01",
+      "date": "2026-04-29",
+      "days": 5,
+      "salesperson": "Zeke"
     }
   ],
   "maintenance_tasks": [
