@@ -1,7 +1,65 @@
 {
-  "generated_at": "2026-04-23T07:30:00.252037",
+  "generated_at": "2026-04-24T07:55:40.919128",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
+    "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604": {
+      "2026-04": [
+        {
+          "status": "overdue",
+          "amount": 1266.67,
+          "deposit": 0.0,
+          "total_amt": 1266.67,
+          "balance": 1266.67,
+          "invoice_id": "7677",
+          "doc_number": "2604-04",
+          "due_date": "2026-04-23",
+          "project_number": "2604",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "overdue",
+          "amount": 3800.0,
+          "deposit": 0.0,
+          "total_amt": 3800.0,
+          "balance": 3800.0,
+          "invoice_id": "6502",
+          "doc_number": "2604-03",
+          "due_date": "2026-03-21",
+          "project_number": "2604",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 5895.0,
+          "deposit": 0.0,
+          "total_amt": 5895.0,
+          "balance": 0.0,
+          "invoice_id": "5375",
+          "doc_number": "2604-02",
+          "due_date": "2026-03-03",
+          "project_number": "2604",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 6550.0,
+          "deposit": 500.0,
+          "total_amt": 7050.0,
+          "balance": 0.0,
+          "invoice_id": "5374",
+          "doc_number": "2604-01",
+          "due_date": "2026-01-19",
+          "project_number": "2604",
+          "house": null
+        }
+      ]
+    },
     "ARD Contracting - Eastaboga, AL - Zeke - 2537": {
       "2026-04": [
         {
@@ -4418,174 +4476,6 @@
         }
       ]
     },
-    "Calmex Engineering - San Diego, CA - Paul - 2568": {
-      "2026-04": [
-        {
-          "status": "sent",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 8495.0,
-          "invoice_id": "5458",
-          "doc_number": "2568-09",
-          "due_date": "2026-05-01",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 0.0,
-          "invoice_id": "5457",
-          "doc_number": "2568-08",
-          "due_date": "2026-04-08",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 0.0,
-          "invoice_id": "5456",
-          "doc_number": "2568-07",
-          "due_date": "2026-03-08",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "status": "sent",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 8495.0,
-          "invoice_id": "5460",
-          "doc_number": "2568-11",
-          "due_date": "2026-07-01",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 0.0,
-          "invoice_id": "5063",
-          "doc_number": "2568-06",
-          "due_date": "2026-02-08",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "sent",
-          "amount": 8211.83,
-          "deposit": 0.0,
-          "total_amt": 8211.83,
-          "balance": 8211.83,
-          "invoice_id": "5461",
-          "doc_number": "2568-12",
-          "due_date": "2026-07-31",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 8495.0,
-          "invoice_id": "5459",
-          "doc_number": "2568-10",
-          "due_date": "2026-05-31",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 0.0,
-          "invoice_id": "4642",
-          "doc_number": "2568-05",
-          "due_date": "2026-01-08",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 0.0,
-          "invoice_id": "4088",
-          "doc_number": "2568-04",
-          "due_date": "2025-12-08",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 0.0,
-          "invoice_id": "3121",
-          "doc_number": "2568-03",
-          "due_date": "2025-11-01",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 0.0,
-          "total_amt": 8495.0,
-          "balance": 0.0,
-          "invoice_id": "2696",
-          "doc_number": "2568-02",
-          "due_date": "2025-10-05",
-          "project_number": "2568",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 8495.0,
-          "deposit": 2000.0,
-          "total_amt": 10495.0,
-          "balance": 0.0,
-          "invoice_id": "2695",
-          "doc_number": "2568-01",
-          "due_date": "2025-09-05",
-          "project_number": "2568",
-          "house": null
-        }
-      ]
-    },
     "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513": {
       "2026-04": [
         {
@@ -8196,6 +8086,118 @@
         }
       ]
     },
+    "Calmex Engineering - San Diego, CA - Paul - 2568": {
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 0.0,
+          "total_amt": 8495.0,
+          "balance": 0.0,
+          "invoice_id": "5457",
+          "doc_number": "2568-08",
+          "due_date": "2026-04-08",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 0.0,
+          "total_amt": 8495.0,
+          "balance": 0.0,
+          "invoice_id": "5456",
+          "doc_number": "2568-07",
+          "due_date": "2026-03-08",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 0.0,
+          "total_amt": 8495.0,
+          "balance": 0.0,
+          "invoice_id": "5063",
+          "doc_number": "2568-06",
+          "due_date": "2026-02-08",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 0.0,
+          "total_amt": 8495.0,
+          "balance": 0.0,
+          "invoice_id": "4642",
+          "doc_number": "2568-05",
+          "due_date": "2026-01-08",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 0.0,
+          "total_amt": 8495.0,
+          "balance": 0.0,
+          "invoice_id": "4088",
+          "doc_number": "2568-04",
+          "due_date": "2025-12-08",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 0.0,
+          "total_amt": 8495.0,
+          "balance": 0.0,
+          "invoice_id": "3121",
+          "doc_number": "2568-03",
+          "due_date": "2025-11-01",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 0.0,
+          "total_amt": 8495.0,
+          "balance": 0.0,
+          "invoice_id": "2696",
+          "doc_number": "2568-02",
+          "due_date": "2025-10-05",
+          "project_number": "2568",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 8495.0,
+          "deposit": 2000.0,
+          "total_amt": 10495.0,
+          "balance": 0.0,
+          "invoice_id": "2695",
+          "doc_number": "2568-01",
+          "due_date": "2025-09-05",
+          "project_number": "2568",
+          "house": null
+        }
+      ]
+    },
     "Jones Covey Group, Inc - Eloy, AZ - Paul - 2611": {
       "2026-03": [
         {
@@ -9128,50 +9130,6 @@
           "doc_number": "2578-01",
           "due_date": "2025-10-02",
           "project_number": "2578",
-          "house": null
-        }
-      ]
-    },
-    "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604": {
-      "2026-03": [
-        {
-          "status": "overdue",
-          "amount": 3800.0,
-          "deposit": 0.0,
-          "total_amt": 3800.0,
-          "balance": 3800.0,
-          "invoice_id": "6502",
-          "doc_number": "2604-03",
-          "due_date": "2026-03-21",
-          "project_number": "2604",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 5895.0,
-          "deposit": 0.0,
-          "total_amt": 5895.0,
-          "balance": 0.0,
-          "invoice_id": "5375",
-          "doc_number": "2604-02",
-          "due_date": "2026-03-03",
-          "project_number": "2604",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 6550.0,
-          "deposit": 500.0,
-          "total_amt": 7050.0,
-          "balance": 0.0,
-          "invoice_id": "5374",
-          "doc_number": "2604-01",
-          "due_date": "2026-01-19",
-          "project_number": "2604",
           "house": null
         }
       ]
@@ -11504,170 +11462,406 @@
     }
   },
   "ap_status_by_project": {
-    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
+    "Duggan Contracting - Paducah, KY - Paul - 2620": {
       "2026-04": [
         {
-          "vendor": "Alaba G. Idowu",
-          "amount": 613.36,
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
           "deposit": 0.0,
-          "total_amt": 613.36,
+          "total_amt": 2000.0,
           "balance": 0.0,
-          "txn_date": "2026-04-22",
-          "due_date": "2026-04-22",
+          "txn_date": "2026-04-25",
+          "due_date": "2026-04-25",
           "status": "paid",
-          "bill_id": "7612",
-          "doc_number": "2607-04",
-          "project_number": "2607",
+          "bill_id": "6346",
+          "doc_number": "2620-03",
+          "project_number": "2620",
           "house": null
         }
       ],
       "2026-03": [
         {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2450.0,
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
           "deposit": 0.0,
-          "total_amt": 2450.0,
+          "total_amt": 2000.0,
           "balance": 0.0,
-          "txn_date": "2026-03-16",
-          "due_date": "2026-03-16",
+          "txn_date": "2026-03-25",
+          "due_date": "2026-03-25",
           "status": "paid",
-          "bill_id": "6711",
-          "doc_number": "2607-03",
-          "project_number": "2607",
+          "bill_id": "6345",
+          "doc_number": "2620-02",
+          "project_number": "2620",
           "house": null
         }
       ],
-      "2026-01": [
+      "2026-02": [
         {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2526.66,
-          "deposit": 0.0,
-          "total_amt": 2526.66,
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
+          "deposit": 500.0,
+          "total_amt": 2500.0,
           "balance": 0.0,
-          "txn_date": "2026-01-31",
-          "due_date": "2026-01-31",
+          "txn_date": "2026-02-24",
+          "due_date": "2026-02-24",
           "status": "paid",
-          "bill_id": "5516",
-          "doc_number": "2607-02",
-          "project_number": "2607",
-          "house": null
-        },
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2450.0,
-          "deposit": 1000.0,
-          "total_amt": 3450.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-22",
-          "due_date": "2026-01-22",
-          "status": "paid",
-          "bill_id": "5515",
-          "doc_number": "2607-01",
-          "project_number": "2607",
-          "house": null
-        }
-      ]
-    },
-    "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]": {
-      "2026-04": [
-        {
-          "vendor": "Safe Harbour Investments LLC",
-          "amount": 6250.0,
-          "deposit": 0.0,
-          "total_amt": 6250.0,
-          "balance": 6250.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "6422",
-          "doc_number": "2621-A02",
-          "project_number": "2621",
-          "house": "A"
-        }
-      ],
-      "2026-03": [
-        {
-          "vendor": "Safe Harbour Investments LLC",
-          "amount": 6250.0,
-          "deposit": 3000.0,
-          "total_amt": 9250.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6421",
-          "doc_number": "2621-01",
-          "project_number": "2621",
+          "bill_id": "6344",
+          "doc_number": "2620-01",
+          "project_number": "2620",
           "house": null
         }
       ],
-      "2026-07": [
+      "2026-10": [
         {
-          "vendor": "Safe Harbour Investments LLC",
-          "amount": 6250.0,
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2380.0,
           "deposit": 0.0,
-          "total_amt": 6250.0,
-          "balance": 6250.0,
-          "txn_date": "2026-07-31",
-          "due_date": "2026-07-31",
+          "total_amt": 2380.0,
+          "balance": 2380.0,
+          "txn_date": "2026-10-25",
+          "due_date": "2026-10-25",
           "status": "sent",
-          "bill_id": "6425",
-          "doc_number": "2621-05",
-          "project_number": "2621",
+          "bill_id": "6353",
+          "doc_number": "2620-09",
+          "project_number": "2620",
           "house": null
         }
       ],
-      "2026-06": [
+      "2026-09": [
         {
-          "vendor": "Safe Harbour Investments LLC",
-          "amount": 6250.0,
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
           "deposit": 0.0,
-          "total_amt": 6250.0,
-          "balance": 6250.0,
-          "txn_date": "2026-06-30",
-          "due_date": "2026-06-30",
+          "total_amt": 2000.0,
+          "balance": 2000.0,
+          "txn_date": "2026-09-25",
+          "due_date": "2026-09-25",
           "status": "sent",
-          "bill_id": "6424",
-          "doc_number": "2621-04",
-          "project_number": "2621",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "vendor": "Safe Harbour Investments LLC",
-          "amount": 6250.0,
-          "deposit": 0.0,
-          "total_amt": 6250.0,
-          "balance": 6250.0,
-          "txn_date": "2026-05-31",
-          "due_date": "2026-05-31",
-          "status": "sent",
-          "bill_id": "6423",
-          "doc_number": "2621-03",
-          "project_number": "2621",
+          "bill_id": "6351",
+          "doc_number": "2620-08",
+          "project_number": "2620",
           "house": null
         }
       ],
       "2026-08": [
         {
-          "vendor": "Safe Harbour Investments LLC",
-          "amount": 6375.0,
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
           "deposit": 0.0,
-          "total_amt": 6375.0,
-          "balance": 6375.0,
-          "txn_date": "2026-08-31",
-          "due_date": "2026-08-31",
+          "total_amt": 2000.0,
+          "balance": 2000.0,
+          "txn_date": "2026-08-25",
+          "due_date": "2026-08-25",
           "status": "sent",
-          "bill_id": "6426",
-          "doc_number": "2621-06",
-          "project_number": "2621",
+          "bill_id": "6350",
+          "doc_number": "2620-07",
+          "project_number": "2620",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
+          "deposit": 0.0,
+          "total_amt": 2000.0,
+          "balance": 2000.0,
+          "txn_date": "2026-07-25",
+          "due_date": "2026-07-25",
+          "status": "sent",
+          "bill_id": "6349",
+          "doc_number": "2620-06",
+          "project_number": "2620",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
+          "deposit": 0.0,
+          "total_amt": 2000.0,
+          "balance": 2000.0,
+          "txn_date": "2026-06-25",
+          "due_date": "2026-06-25",
+          "status": "sent",
+          "bill_id": "6348",
+          "doc_number": "2620-05",
+          "project_number": "2620",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "vendor": "Properties Unlimited LLC",
+          "amount": 2000.0,
+          "deposit": 0.0,
+          "total_amt": 2000.0,
+          "balance": 2000.0,
+          "txn_date": "2026-05-25",
+          "due_date": "2026-05-25",
+          "status": "sent",
+          "bill_id": "6347",
+          "doc_number": "2620-04",
+          "project_number": "2620",
+          "house": null
+        }
+      ]
+    },
+    "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604": {
+      "2026-04": [
+        {
+          "vendor": "Wendell Properties LLC",
+          "amount": 666.67,
+          "deposit": 0.0,
+          "total_amt": 666.67,
+          "balance": 0.0,
+          "txn_date": "2026-04-23",
+          "due_date": "2026-04-23",
+          "status": "paid",
+          "bill_id": "7676",
+          "doc_number": "2604-04",
+          "project_number": "2604",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Wendell Properties LLC",
+          "amount": 2000.0,
+          "deposit": 0.0,
+          "total_amt": 2000.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-21",
+          "due_date": "2026-03-21",
+          "status": "paid",
+          "bill_id": "6442",
+          "doc_number": "2604-03",
+          "project_number": "2604",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "vendor": "Wendell Properties LLC",
+          "amount": 3866.66,
+          "deposit": 0.0,
+          "total_amt": 3866.66,
+          "balance": 0.0,
+          "txn_date": "2026-02-23",
+          "due_date": "2026-02-23",
+          "status": "paid",
+          "bill_id": "5563",
+          "doc_number": "2604-02",
+          "project_number": "2604",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "vendor": "Wendell Properties LLC",
+          "amount": 4000.0,
+          "deposit": 1000.0,
+          "total_amt": 5000.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-21",
+          "due_date": "2026-01-21",
+          "status": "paid",
+          "bill_id": "5376",
+          "doc_number": "2604-01",
+          "project_number": "2604",
+          "house": null
+        }
+      ]
+    },
+    "Calmex Engineering - San Diego, CA - Paul - 2568": {
+      "2026-04": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 1167.0,
+          "deposit": 0.0,
+          "total_amt": 1167.0,
+          "balance": 1167.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "sent",
+          "bill_id": "5451",
+          "doc_number": "2568-09",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 5350.0,
+          "deposit": 0.0,
+          "total_amt": 5350.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "5450",
+          "doc_number": "2568-08",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 5350.0,
+          "deposit": 0.0,
+          "total_amt": 5350.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "5449",
+          "doc_number": "2568-07",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 5350.0,
+          "deposit": 0.0,
+          "total_amt": 5350.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5448",
+          "doc_number": "2568-06",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 5350.0,
+          "deposit": 0.0,
+          "total_amt": 5350.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-31",
+          "due_date": "2025-12-31",
+          "status": "paid",
+          "bill_id": "4860",
+          "doc_number": "2568-05",
+          "project_number": "2568",
+          "house": null
+        },
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 200.0,
+          "deposit": 0.0,
+          "total_amt": 200.0,
+          "balance": 200.0,
+          "txn_date": "2025-12-01",
+          "due_date": "2025-12-01",
+          "status": "overdue",
+          "bill_id": "4394",
+          "doc_number": "2568-04",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4156",
+          "doc_number": "2568-04",
+          "project_number": "2568",
+          "house": null
+        },
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 350.0,
+          "deposit": 0.0,
+          "total_amt": 350.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-12",
+          "due_date": "2025-11-12",
+          "status": "paid",
+          "bill_id": "4200",
+          "doc_number": "2568-EXTRA",
+          "project_number": "2568",
+          "house": "E"
+        }
+      ],
+      "2025-10": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-31",
+          "due_date": "2025-10-31",
+          "status": "paid",
+          "bill_id": "3608",
+          "doc_number": "2568-03",
+          "project_number": "2568",
+          "house": null
+        },
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 5200.0,
+          "deposit": 0.0,
+          "total_amt": 5200.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-01",
+          "due_date": "2025-10-01",
+          "status": "paid",
+          "bill_id": "3754",
+          "doc_number": "2568-02",
+          "project_number": "2568",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "vendor": "Gloria Diane Jex-Robie",
+          "amount": 3983.0,
+          "deposit": 500.0,
+          "total_amt": 4483.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-05",
+          "due_date": "2025-09-05",
+          "status": "paid",
+          "bill_id": "3362",
+          "doc_number": "2568-01",
+          "project_number": "2568",
           "house": null
         }
       ]
     },
     "ARD Contracting - Eastaboga, AL - Zeke - 2537": {
       "2026-04": [
+        {
+          "vendor": "Barber Properties",
+          "amount": 1785.19,
+          "deposit": 0.0,
+          "total_amt": 1785.19,
+          "balance": 0.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "paid",
+          "bill_id": "7605",
+          "doc_number": "2537-E12",
+          "project_number": "2537",
+          "house": "E"
+        },
         {
           "vendor": "Peyton's Homes",
           "amount": 3375.0,
@@ -11751,20 +11945,6 @@
           "doc_number": "2537-F12",
           "project_number": "2537",
           "house": "F"
-        },
-        {
-          "vendor": "Barber Properties",
-          "amount": 1831.3,
-          "deposit": 0.0,
-          "total_amt": 1831.3,
-          "balance": 1831.3,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "7605",
-          "doc_number": "2537-E12",
-          "project_number": "2537",
-          "house": "E"
         },
         {
           "vendor": "Peyton's Homes",
@@ -13299,6 +13479,168 @@
           "doc_number": "2537-E00",
           "project_number": "2537",
           "house": "E"
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
+      "2026-04": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 613.36,
+          "deposit": 0.0,
+          "total_amt": 613.36,
+          "balance": 0.0,
+          "txn_date": "2026-04-22",
+          "due_date": "2026-04-22",
+          "status": "paid",
+          "bill_id": "7612",
+          "doc_number": "2607-04",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2450.0,
+          "deposit": 0.0,
+          "total_amt": 2450.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-16",
+          "due_date": "2026-03-16",
+          "status": "paid",
+          "bill_id": "6711",
+          "doc_number": "2607-03",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2526.66,
+          "deposit": 0.0,
+          "total_amt": 2526.66,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5516",
+          "doc_number": "2607-02",
+          "project_number": "2607",
+          "house": null
+        },
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2450.0,
+          "deposit": 1000.0,
+          "total_amt": 3450.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-22",
+          "due_date": "2026-01-22",
+          "status": "paid",
+          "bill_id": "5515",
+          "doc_number": "2607-01",
+          "project_number": "2607",
+          "house": null
+        }
+      ]
+    },
+    "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]": {
+      "2026-04": [
+        {
+          "vendor": "Safe Harbour Investments LLC",
+          "amount": 6250.0,
+          "deposit": 0.0,
+          "total_amt": 6250.0,
+          "balance": 6250.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "sent",
+          "bill_id": "6422",
+          "doc_number": "2621-A02",
+          "project_number": "2621",
+          "house": "A"
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Safe Harbour Investments LLC",
+          "amount": 6250.0,
+          "deposit": 3000.0,
+          "total_amt": 9250.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6421",
+          "doc_number": "2621-01",
+          "project_number": "2621",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "vendor": "Safe Harbour Investments LLC",
+          "amount": 6250.0,
+          "deposit": 0.0,
+          "total_amt": 6250.0,
+          "balance": 6250.0,
+          "txn_date": "2026-07-31",
+          "due_date": "2026-07-31",
+          "status": "sent",
+          "bill_id": "6425",
+          "doc_number": "2621-05",
+          "project_number": "2621",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "vendor": "Safe Harbour Investments LLC",
+          "amount": 6250.0,
+          "deposit": 0.0,
+          "total_amt": 6250.0,
+          "balance": 6250.0,
+          "txn_date": "2026-06-30",
+          "due_date": "2026-06-30",
+          "status": "sent",
+          "bill_id": "6424",
+          "doc_number": "2621-04",
+          "project_number": "2621",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "vendor": "Safe Harbour Investments LLC",
+          "amount": 6250.0,
+          "deposit": 0.0,
+          "total_amt": 6250.0,
+          "balance": 6250.0,
+          "txn_date": "2026-05-31",
+          "due_date": "2026-05-31",
+          "status": "sent",
+          "bill_id": "6423",
+          "doc_number": "2621-03",
+          "project_number": "2621",
+          "house": null
+        }
+      ],
+      "2026-08": [
+        {
+          "vendor": "Safe Harbour Investments LLC",
+          "amount": 6375.0,
+          "deposit": 0.0,
+          "total_amt": 6375.0,
+          "balance": 6375.0,
+          "txn_date": "2026-08-31",
+          "due_date": "2026-08-31",
+          "status": "sent",
+          "bill_id": "6426",
+          "doc_number": "2621-06",
+          "project_number": "2621",
+          "house": null
         }
       ]
     },
@@ -15321,56 +15663,6 @@
           "doc_number": "2622-A01",
           "project_number": "2622",
           "house": "A"
-        }
-      ]
-    },
-    "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604": {
-      "2026-03": [
-        {
-          "vendor": "Wendell Properties LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-21",
-          "due_date": "2026-03-21",
-          "status": "paid",
-          "bill_id": "6442",
-          "doc_number": "2604-03",
-          "project_number": "2604",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "vendor": "Wendell Properties LLC",
-          "amount": 3866.66,
-          "deposit": 0.0,
-          "total_amt": 3866.66,
-          "balance": 0.0,
-          "txn_date": "2026-02-23",
-          "due_date": "2026-02-23",
-          "status": "paid",
-          "bill_id": "5563",
-          "doc_number": "2604-02",
-          "project_number": "2604",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "vendor": "Wendell Properties LLC",
-          "amount": 4000.0,
-          "deposit": 1000.0,
-          "total_amt": 5000.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-21",
-          "due_date": "2026-01-21",
-          "status": "paid",
-          "bill_id": "5376",
-          "doc_number": "2604-01",
-          "project_number": "2604",
-          "house": null
         }
       ]
     },
@@ -19434,242 +19726,6 @@
         }
       ]
     },
-    "Calmex Engineering - San Diego, CA - Paul - 2568": {
-      "2026-03": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "5450",
-          "doc_number": "2568-08",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "5449",
-          "doc_number": "2568-07",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-31",
-          "due_date": "2026-01-31",
-          "status": "paid",
-          "bill_id": "5448",
-          "doc_number": "2568-06",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 1183.35,
-          "deposit": 0.0,
-          "total_amt": 1183.35,
-          "balance": 1183.35,
-          "txn_date": "2026-08-31",
-          "due_date": "2026-08-31",
-          "status": "sent",
-          "bill_id": "5455",
-          "doc_number": "2568-13",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 5350.0,
-          "txn_date": "2026-07-31",
-          "due_date": "2026-07-31",
-          "status": "sent",
-          "bill_id": "5454",
-          "doc_number": "2568-12",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 5350.0,
-          "txn_date": "2026-06-30",
-          "due_date": "2026-06-30",
-          "status": "sent",
-          "bill_id": "5453",
-          "doc_number": "2568-11",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 5350.0,
-          "txn_date": "2026-05-31",
-          "due_date": "2026-05-31",
-          "status": "sent",
-          "bill_id": "5452",
-          "doc_number": "2568-10",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2026-04": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 5350.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "5451",
-          "doc_number": "2568-09",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5350.0,
-          "deposit": 0.0,
-          "total_amt": 5350.0,
-          "balance": 0.0,
-          "txn_date": "2025-12-31",
-          "due_date": "2025-12-31",
-          "status": "paid",
-          "bill_id": "4860",
-          "doc_number": "2568-05",
-          "project_number": "2568",
-          "house": null
-        },
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 200.0,
-          "deposit": 0.0,
-          "total_amt": 200.0,
-          "balance": 200.0,
-          "txn_date": "2025-12-01",
-          "due_date": "2025-12-01",
-          "status": "overdue",
-          "bill_id": "4394",
-          "doc_number": "2568-04",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2025-11": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 0.0,
-          "txn_date": "2025-11-30",
-          "due_date": "2025-11-30",
-          "status": "paid",
-          "bill_id": "4156",
-          "doc_number": "2568-04",
-          "project_number": "2568",
-          "house": null
-        },
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 350.0,
-          "deposit": 0.0,
-          "total_amt": 350.0,
-          "balance": 0.0,
-          "txn_date": "2025-11-12",
-          "due_date": "2025-11-12",
-          "status": "paid",
-          "bill_id": "4200",
-          "doc_number": "2568-EXTRA",
-          "project_number": "2568",
-          "house": "E"
-        }
-      ],
-      "2025-10": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 0.0,
-          "txn_date": "2025-10-31",
-          "due_date": "2025-10-31",
-          "status": "paid",
-          "bill_id": "3608",
-          "doc_number": "2568-03",
-          "project_number": "2568",
-          "house": null
-        },
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 5200.0,
-          "deposit": 0.0,
-          "total_amt": 5200.0,
-          "balance": 0.0,
-          "txn_date": "2025-10-01",
-          "due_date": "2025-10-01",
-          "status": "paid",
-          "bill_id": "3754",
-          "doc_number": "2568-02",
-          "project_number": "2568",
-          "house": null
-        }
-      ],
-      "2025-09": [
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 3983.0,
-          "deposit": 500.0,
-          "total_amt": 4483.0,
-          "balance": 0.0,
-          "txn_date": "2025-09-05",
-          "due_date": "2025-09-05",
-          "status": "paid",
-          "bill_id": "3362",
-          "doc_number": "2568-01",
-          "project_number": "2568",
-          "house": null
-        }
-      ]
-    },
     "Caliber 1 - Montgomery, AL - Paul - 2588": {
       "2026-03": [
         {
@@ -20841,152 +20897,6 @@
           "doc_number": "2576-A01",
           "project_number": "2576",
           "house": "A"
-        }
-      ]
-    },
-    "Duggan Contracting - Paducah, KY - Paul - 2620": {
-      "2026-03": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-25",
-          "due_date": "2026-03-25",
-          "status": "paid",
-          "bill_id": "6345",
-          "doc_number": "2620-02",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 500.0,
-          "total_amt": 2500.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-24",
-          "due_date": "2026-02-24",
-          "status": "paid",
-          "bill_id": "6344",
-          "doc_number": "2620-01",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-10": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2380.0,
-          "deposit": 0.0,
-          "total_amt": 2380.0,
-          "balance": 2380.0,
-          "txn_date": "2026-10-25",
-          "due_date": "2026-10-25",
-          "status": "sent",
-          "bill_id": "6353",
-          "doc_number": "2620-09",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-09": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 2000.0,
-          "txn_date": "2026-09-25",
-          "due_date": "2026-09-25",
-          "status": "sent",
-          "bill_id": "6351",
-          "doc_number": "2620-08",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 2000.0,
-          "txn_date": "2026-08-25",
-          "due_date": "2026-08-25",
-          "status": "sent",
-          "bill_id": "6350",
-          "doc_number": "2620-07",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 2000.0,
-          "txn_date": "2026-07-25",
-          "due_date": "2026-07-25",
-          "status": "sent",
-          "bill_id": "6349",
-          "doc_number": "2620-06",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 2000.0,
-          "txn_date": "2026-06-25",
-          "due_date": "2026-06-25",
-          "status": "sent",
-          "bill_id": "6348",
-          "doc_number": "2620-05",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 2000.0,
-          "txn_date": "2026-05-25",
-          "due_date": "2026-05-25",
-          "status": "sent",
-          "bill_id": "6347",
-          "doc_number": "2620-04",
-          "project_number": "2620",
-          "house": null
-        }
-      ],
-      "2026-04": [
-        {
-          "vendor": "Properties Unlimited LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 2000.0,
-          "txn_date": "2026-04-25",
-          "due_date": "2026-04-25",
-          "status": "sent",
-          "bill_id": "6346",
-          "doc_number": "2620-03",
-          "project_number": "2620",
-          "house": null
         }
       ]
     },
@@ -23345,6 +23255,62 @@
   },
   "ap_bills": [
     {
+      "vendor": "Properties Unlimited LLC",
+      "amount": 2000.0,
+      "deposit": 0.0,
+      "total_amt": 2000.0,
+      "balance": 0.0,
+      "txn_date": "2026-04-25",
+      "due_date": "2026-04-25",
+      "status": "paid",
+      "bill_id": "6346",
+      "doc_number": "2620-03",
+      "project_number": "2620",
+      "house": null
+    },
+    {
+      "vendor": "Wendell Properties LLC",
+      "amount": 666.67,
+      "deposit": 0.0,
+      "total_amt": 666.67,
+      "balance": 0.0,
+      "txn_date": "2026-04-23",
+      "due_date": "2026-04-23",
+      "status": "paid",
+      "bill_id": "7676",
+      "doc_number": "2604-04",
+      "project_number": "2604",
+      "house": null
+    },
+    {
+      "vendor": "Gloria Diane Jex-Robie",
+      "amount": 1167.0,
+      "deposit": 0.0,
+      "total_amt": 1167.0,
+      "balance": 1167.0,
+      "txn_date": "2026-04-30",
+      "due_date": "2026-04-30",
+      "status": "sent",
+      "bill_id": "5451",
+      "doc_number": "2568-09",
+      "project_number": "2568",
+      "house": null
+    },
+    {
+      "vendor": "Barber Properties",
+      "amount": 1785.19,
+      "deposit": 0.0,
+      "total_amt": 1785.19,
+      "balance": 0.0,
+      "txn_date": "2026-04-30",
+      "due_date": "2026-04-30",
+      "status": "paid",
+      "bill_id": "7605",
+      "doc_number": "2537-E12",
+      "project_number": "2537",
+      "house": "E"
+    },
+    {
       "vendor": "Alaba G. Idowu",
       "amount": 613.36,
       "deposit": 0.0,
@@ -23455,20 +23421,6 @@
       "doc_number": "2537-F12",
       "project_number": "2537",
       "house": "F"
-    },
-    {
-      "vendor": "Barber Properties",
-      "amount": 1831.3,
-      "deposit": 0.0,
-      "total_amt": 1831.3,
-      "balance": 1831.3,
-      "txn_date": "2026-04-30",
-      "due_date": "2026-04-30",
-      "status": "sent",
-      "bill_id": "7605",
-      "doc_number": "2537-E12",
-      "project_number": "2537",
-      "house": "E"
     },
     {
       "vendor": "Peyton's Homes",
@@ -28665,20 +28617,6 @@
       "house": null
     },
     {
-      "vendor": "Properties Unlimited LLC",
-      "amount": 2000.0,
-      "deposit": 0.0,
-      "total_amt": 2000.0,
-      "balance": 2000.0,
-      "txn_date": "2026-04-25",
-      "due_date": "2026-04-25",
-      "status": "sent",
-      "bill_id": "6346",
-      "doc_number": "2620-03",
-      "project_number": "2620",
-      "house": null
-    },
-    {
       "vendor": "GOSO GROUP LLC",
       "amount": 5200.0,
       "deposit": 2700.0,
@@ -30902,76 +30840,6 @@
       "bill_id": "4889",
       "doc_number": "2583-04",
       "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Gloria Diane Jex-Robie",
-      "amount": 1183.35,
-      "deposit": 0.0,
-      "total_amt": 1183.35,
-      "balance": 1183.35,
-      "txn_date": "2026-08-31",
-      "due_date": "2026-08-31",
-      "status": "sent",
-      "bill_id": "5455",
-      "doc_number": "2568-13",
-      "project_number": "2568",
-      "house": null
-    },
-    {
-      "vendor": "Gloria Diane Jex-Robie",
-      "amount": 5350.0,
-      "deposit": 0.0,
-      "total_amt": 5350.0,
-      "balance": 5350.0,
-      "txn_date": "2026-07-31",
-      "due_date": "2026-07-31",
-      "status": "sent",
-      "bill_id": "5454",
-      "doc_number": "2568-12",
-      "project_number": "2568",
-      "house": null
-    },
-    {
-      "vendor": "Gloria Diane Jex-Robie",
-      "amount": 5350.0,
-      "deposit": 0.0,
-      "total_amt": 5350.0,
-      "balance": 5350.0,
-      "txn_date": "2026-06-30",
-      "due_date": "2026-06-30",
-      "status": "sent",
-      "bill_id": "5453",
-      "doc_number": "2568-11",
-      "project_number": "2568",
-      "house": null
-    },
-    {
-      "vendor": "Gloria Diane Jex-Robie",
-      "amount": 5350.0,
-      "deposit": 0.0,
-      "total_amt": 5350.0,
-      "balance": 5350.0,
-      "txn_date": "2026-05-31",
-      "due_date": "2026-05-31",
-      "status": "sent",
-      "bill_id": "5452",
-      "doc_number": "2568-10",
-      "project_number": "2568",
-      "house": null
-    },
-    {
-      "vendor": "Gloria Diane Jex-Robie",
-      "amount": 5350.0,
-      "deposit": 0.0,
-      "total_amt": 5350.0,
-      "balance": 5350.0,
-      "txn_date": "2026-04-30",
-      "due_date": "2026-04-30",
-      "status": "sent",
-      "bill_id": "5451",
-      "doc_number": "2568-09",
-      "project_number": "2568",
       "house": null
     },
     {
@@ -46545,13 +46413,13 @@
     }
   ],
   "summary": {
-    "invoices_total": 955,
+    "invoices_total": 952,
     "invoices_ignored": 58,
-    "invoices_matched": 852,
+    "invoices_matched": 849,
     "invoices_unmatched": 45,
-    "bills_total": 1249,
+    "bills_total": 1246,
     "bills_ignored": 0,
-    "bills_matched": 775,
+    "bills_matched": 772,
     "bills_unmatched": 474
   }
 }
