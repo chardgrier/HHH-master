@@ -1,0 +1,682 @@
+{
+  "generated_at": "2026-04-24T20:46:09.972450",
+  "projects": [
+    {
+      "name": "Gray Construction - Bristol, TN - Paul - 2592",
+      "status": "Active",
+      "start_date": "2025-02-03",
+      "end_date": "2026-07-31",
+      "project_number": "2592"
+    },
+    {
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [Houses A,B,C,D,E,F]",
+      "status": "Active",
+      "start_date": "2025-01-20",
+      "end_date": "2026-12-27",
+      "project_number": "2506"
+    },
+    {
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House G]",
+      "status": "Active",
+      "start_date": "2025-12-14",
+      "end_date": "2026-12-31",
+      "project_number": "2506"
+    },
+    {
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House H]",
+      "status": "Active",
+      "start_date": "2026-02-03",
+      "end_date": "2027-02-02",
+      "project_number": "2506"
+    },
+    {
+      "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House I]",
+      "status": "Active",
+      "start_date": "2026-02-15",
+      "end_date": "2027-02-14",
+      "project_number": "2506"
+    },
+    {
+      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
+      "status": "Active",
+      "start_date": "2025-03-16",
+      "end_date": "2205-09-20",
+      "project_number": "2509"
+    },
+    {
+      "name": "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2027-03-07",
+      "project_number": "2513"
+    },
+    {
+      "name": "Quality Walls and Ceiling - Lexington KY - Zeke - 2527",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2026-08-31",
+      "project_number": "2527"
+    },
+    {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
+      "status": "Active",
+      "start_date": "2025-05-09",
+      "end_date": "2026-05-08",
+      "project_number": "2532"
+    },
+    {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
+      "status": "Active",
+      "start_date": "2025-06-03",
+      "end_date": "2026-06-01",
+      "project_number": "2532"
+    },
+    {
+      "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
+      "status": "Active",
+      "start_date": "2025-09-01",
+      "end_date": "2026-04-30",
+      "project_number": "2551"
+    },
+    {
+      "name": "Southern Wall Systems - Ann Arbor, MI - Logan - 2553",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2026-11-30",
+      "project_number": "2553"
+    },
+    {
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 1",
+      "status": "Active",
+      "start_date": "2025-08-25",
+      "end_date": "2026-07-31",
+      "project_number": "2563"
+    },
+    {
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 4",
+      "status": "Active",
+      "start_date": "2026-04-05",
+      "end_date": "2026-08-15",
+      "project_number": "2563"
+    },
+    {
+      "name": "Calmex Engineering - San Diego, CA - Paul - 2568",
+      "status": "Active",
+      "start_date": "2025-09-08",
+      "end_date": "2026-09-07",
+      "project_number": "2568"
+    },
+    {
+      "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
+      "status": "Active",
+      "start_date": "2025-09-11",
+      "end_date": "2026-06-12",
+      "project_number": "2570"
+    },
+    {
+      "name": "HousHak Unlimited - Lexington KY - David - 2572",
+      "status": "Active",
+      "start_date": "2025-09-20",
+      "end_date": "2026-12-31",
+      "project_number": "2572"
+    },
+    {
+      "name": "Independence Excavating - Grove City, OH - Paul -2574",
+      "status": "Active",
+      "start_date": "2025-10-01",
+      "end_date": "2026-06-30",
+      "project_number": "2574"
+    },
+    {
+      "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
+      "status": "Active",
+      "start_date": "2025-09-30",
+      "end_date": "2026-05-31",
+      "project_number": "2576"
+    },
+    {
+      "name": "DH Griffin - LaGrange, GA - Paul -2582",
+      "status": "Active",
+      "start_date": "2025-10-13",
+      "end_date": "2026-10-12",
+      "project_number": "2582"
+    },
+    {
+      "name": "Miller Pipeline - Saint Joseph, MO - Paul - 2586",
+      "status": "Active",
+      "start_date": "2025-12-01",
+      "end_date": "2026-11-30",
+      "project_number": "2586"
+    },
+    {
+      "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
+      "status": "Active",
+      "start_date": "2025-11-06",
+      "end_date": "2026-06-05",
+      "project_number": "2588"
+    },
+    {
+      "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
+      "status": "Active",
+      "start_date": "2026-01-01",
+      "end_date": "2026-04-30",
+      "project_number": "2590"
+    },
+    {
+      "name": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
+      "status": "Active",
+      "start_date": "2026-01-01",
+      "end_date": "2026-12-31",
+      "project_number": "2591"
+    },
+    {
+      "name": "Miller Pipeline - Monett, MO - Paul - 2593",
+      "status": "Active",
+      "start_date": "2025-12-13",
+      "end_date": "2026-12-31",
+      "project_number": "2593"
+    },
+    {
+      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
+      "status": "Active",
+      "start_date": "2025-12-28",
+      "end_date": "2026-05-30",
+      "project_number": "2594"
+    },
+    {
+      "name": "Sletten - San Pablo, CA - Zeke - 2601",
+      "status": "Active",
+      "start_date": "2026-01-01",
+      "end_date": "2026-04-30",
+      "project_number": "2601"
+    },
+    {
+      "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
+      "status": "Active",
+      "start_date": "2026-01-23",
+      "end_date": "2026-04-30",
+      "project_number": "2604"
+    },
+    {
+      "name": "Jones Covey Group, Inc - Ringgold, GA - Paul - 2605",
+      "status": "Active",
+      "start_date": "2026-03-03",
+      "end_date": "2026-09-20",
+      "project_number": "2605"
+    },
+    {
+      "name": "Carl Walker Construction - Lexington, KY - Matt -2606",
+      "status": "Active",
+      "start_date": "2026-02-08",
+      "end_date": "2026-08-09",
+      "project_number": "2606"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
+      "status": "Active",
+      "start_date": "2026-01-22",
+      "end_date": "2026-04-30",
+      "project_number": "2607"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
+      "status": "Active",
+      "start_date": "2026-02-15",
+      "end_date": "2026-05-03",
+      "project_number": "2613"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]",
+      "status": "Active",
+      "start_date": "2026-02-18",
+      "end_date": "2026-04-30",
+      "project_number": "2613"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
+      "status": "Active",
+      "start_date": "2026-02-19",
+      "end_date": "2026-05-31",
+      "project_number": "2613"
+    },
+    {
+      "name": "Power Design - Starbase, TX -Zeke - 2614",
+      "status": "Active",
+      "start_date": "2026-02-21",
+      "end_date": "2026-12-31",
+      "project_number": "2614"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
+      "status": "Active",
+      "start_date": "2026-02-22",
+      "end_date": "2026-05-31",
+      "project_number": "2617"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
+      "status": "Active",
+      "start_date": "2026-03-01",
+      "end_date": "2026-04-30",
+      "project_number": "2617"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
+      "status": "Active",
+      "start_date": "2026-03-04",
+      "end_date": "2026-05-15",
+      "project_number": "2617"
+    },
+    {
+      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House A]",
+      "status": "Active",
+      "start_date": "2026-02-25",
+      "end_date": "2027-02-24",
+      "project_number": "2618"
+    },
+    {
+      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House B]",
+      "status": "Active",
+      "start_date": "2026-03-02",
+      "end_date": "2027-03-01",
+      "project_number": "2618"
+    },
+    {
+      "name": "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House C]",
+      "status": "Active",
+      "start_date": "2026-04-01",
+      "end_date": "2027-08-01",
+      "project_number": "2618"
+    },
+    {
+      "name": "Arco- Lebanon, TN - Paul - 2616",
+      "status": "Active",
+      "start_date": "2026-02-20",
+      "end_date": "2026-05-01",
+      "project_number": "2616"
+    },
+    {
+      "name": "Duggan Contracting - Paducah, KY - Paul - 2620",
+      "status": "Active",
+      "start_date": "2026-02-25",
+      "end_date": "2026-11-30",
+      "project_number": "2620"
+    },
+    {
+      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
+      "status": "Active",
+      "start_date": "2026-04-01",
+      "end_date": "2026-09-30",
+      "project_number": "2621"
+    },
+    {
+      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
+      "status": "Active",
+      "start_date": "2026-04-09",
+      "end_date": "2026-06-12",
+      "project_number": "2621"
+    },
+    {
+      "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
+      "status": "Active",
+      "start_date": "2026-03-01",
+      "end_date": "2026-05-31",
+      "project_number": "2622"
+    },
+    {
+      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624 \u2014 C, Phase 1",
+      "status": "Active",
+      "start_date": "2026-04-13",
+      "end_date": "2026-09-13",
+      "project_number": "2624"
+    },
+    {
+      "name": "Gutknecht Construction - Frankfort, KY - Matt - 2624 \u2014 A, Phase 2",
+      "status": "Active",
+      "start_date": "2026-04-13",
+      "end_date": "2026-10-15",
+      "project_number": "2624"
+    },
+    {
+      "name": "Power Design - Tucson, AZ - Zeke - 2615",
+      "status": "Active",
+      "start_date": "2026-04-01",
+      "end_date": "2026-10-31",
+      "project_number": "2615"
+    },
+    {
+      "name": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+      "status": "Active",
+      "start_date": "2026-03-23",
+      "end_date": "2027-03-31",
+      "project_number": "2625"
+    },
+    {
+      "name": "Graydaze Contracting, Inc- Fairfax, IA - Paul - 2626",
+      "status": "Active",
+      "start_date": "2026-03-27",
+      "end_date": "2026-08-01",
+      "project_number": "2626"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
+      "status": "Active",
+      "start_date": "2026-04-02",
+      "end_date": "2026-05-31",
+      "project_number": "2630"
+    },
+    {
+      "name": "Gutknecht Construction - Evansville, IN - Matt - 2627",
+      "status": "Active",
+      "start_date": "2026-03-29",
+      "end_date": "2026-06-19",
+      "project_number": "2627"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
+      "status": "Active",
+      "start_date": "2026-03-31",
+      "end_date": "2026-04-30",
+      "project_number": "2628"
+    },
+    {
+      "name": "Power Design - Savannah, GA - Zeke - 2631",
+      "status": "Active",
+      "start_date": "2026-04-06",
+      "end_date": "2027-03-31",
+      "project_number": "2631"
+    },
+    {
+      "name": "Power Design - Charlotte, NC - Zeke - 2633",
+      "status": "Active",
+      "start_date": "2026-04-08",
+      "end_date": "2026-12-31",
+      "project_number": "2633"
+    },
+    {
+      "name": "BZI - Merritt Island, FL - Paul - 2634",
+      "status": "Active",
+      "start_date": "2026-04-19",
+      "end_date": "2026-07-31",
+      "project_number": "2634"
+    },
+    {
+      "name": "Graydaze Contracting Inc - Waterloo, IA - Paul - 2636",
+      "status": "Upcoming",
+      "start_date": "2026-05-30",
+      "end_date": "2026-08-30",
+      "project_number": "2636"
+    },
+    {
+      "name": "Heycon, LLC - Charlotte, NC - Zeke -2625-B",
+      "status": "Upcoming",
+      "start_date": "2026-05-01",
+      "end_date": "2027-04-30",
+      "project_number": "2625"
+    },
+    {
+      "name": "Rising Sun Developing",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2026-12-28",
+      "project_number": ""
+    },
+    {
+      "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2026-05-28",
+      "project_number": "2537"
+    },
+    {
+      "name": "Peak Event Services - Woburn, MA - Paul - 2623",
+      "status": "Active",
+      "start_date": "2026-04-01",
+      "end_date": "2026-10-28",
+      "project_number": "2623"
+    },
+    {
+      "name": "Gray Construction - Bristol, TN #2 - Paul",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2026-07-31",
+      "project_number": ""
+    },
+    {
+      "name": "Bowman Steel - Kings Mtn, NC - Paul (1 house)",
+      "status": "Active",
+      "start_date": "2026-01-01",
+      "end_date": "2026-06-21",
+      "project_number": ""
+    }
+  ],
+  "ending_soon": [
+    {
+      "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Sletten - San Pablo, CA - Zeke - 2601",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
+      "end_date": "2026-04-30",
+      "days": 6,
+      "urgency": "30"
+    },
+    {
+      "name": "Arco- Lebanon, TN - Paul - 2616",
+      "end_date": "2026-05-01",
+      "days": 7,
+      "urgency": "30"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
+      "end_date": "2026-05-03",
+      "days": 9,
+      "urgency": "30"
+    },
+    {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
+      "end_date": "2026-05-08",
+      "days": 14,
+      "urgency": "30"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
+      "end_date": "2026-05-15",
+      "days": 21,
+      "urgency": "30"
+    },
+    {
+      "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+      "end_date": "2026-05-28",
+      "days": 34,
+      "urgency": "45"
+    },
+    {
+      "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
+      "end_date": "2026-05-30",
+      "days": 36,
+      "urgency": "45"
+    },
+    {
+      "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
+      "end_date": "2026-05-31",
+      "days": 37,
+      "urgency": "45"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
+      "end_date": "2026-05-31",
+      "days": 37,
+      "urgency": "45"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
+      "end_date": "2026-05-31",
+      "days": 37,
+      "urgency": "45"
+    },
+    {
+      "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
+      "end_date": "2026-05-31",
+      "days": 37,
+      "urgency": "45"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
+      "end_date": "2026-05-31",
+      "days": 37,
+      "urgency": "45"
+    },
+    {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
+      "end_date": "2026-06-01",
+      "days": 38,
+      "urgency": "45"
+    },
+    {
+      "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
+      "end_date": "2026-06-05",
+      "days": 42,
+      "urgency": "45"
+    }
+  ],
+  "maintenance_tasks": [
+    {
+      "task_id": "1214117234957982",
+      "name": "Noise complaint",
+      "severity": "General Updates",
+      "status": "\u2014",
+      "project": "RSD - Morehead, KY - David - 2596",
+      "project_gid": "1212535977719565",
+      "house": null,
+      "created_at": "2026-04-19T13:37:52.484Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214117234957982"
+    },
+    {
+      "task_id": "1214228139561769",
+      "name": "Tenant inquiring about bringing 2 dogs",
+      "severity": "General Updates",
+      "status": "\u2014",
+      "project": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
+      "project_gid": "1212198830916907",
+      "house": null,
+      "created_at": "2026-04-23T19:56:07.354Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214228139561769"
+    },
+    {
+      "task_id": "1214104564393264",
+      "name": "Unit D - Roof Leak",
+      "severity": "Urgent Maintenance",
+      "status": "\u2014",
+      "project": "RSD - Pikeville, KY - David - 2619 ",
+      "project_gid": "1213617845456501",
+      "house": "D",
+      "created_at": "2026-04-17T02:00:07.747Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214104564393264"
+    },
+    {
+      "task_id": "1214186445447730",
+      "name": "A: Internet Issue",
+      "severity": "Standard Maintenance",
+      "status": "\u2014",
+      "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+      "project_gid": "1213633710870931",
+      "house": "A",
+      "created_at": "2026-04-22T16:45:01.112Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214186445447730"
+    },
+    {
+      "task_id": "1214186329288629",
+      "name": "H: Requesting to bring a dog ",
+      "severity": "Standard Maintenance",
+      "status": "\u2014",
+      "project": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506",
+      "project_gid": "1209169429620891",
+      "house": "H",
+      "created_at": "2026-04-22T16:29:53.646Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1209169429620891/task/1214186329288629"
+    },
+    {
+      "task_id": "1213942867794752",
+      "name": "A: Parking in the front yard",
+      "severity": "Standard Maintenance",
+      "status": "\u2014",
+      "project": "RSD - Campbellsville, KY - David - 2554",
+      "project_gid": "1211712366460736",
+      "house": "A",
+      "created_at": "2026-04-06T13:51:12.539Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211712366460736/task/1213942867794752"
+    },
+    {
+      "task_id": "1214148116563655",
+      "name": "Internet issues - connection issues",
+      "severity": "Standard Maintenance",
+      "status": "\u2014",
+      "project": "Power Design - Starbase, TX -Zeke - 2614",
+      "project_gid": "1213240216017591",
+      "house": null,
+      "created_at": "2026-04-21T21:23:03.213Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214148116563655"
+    },
+    {
+      "task_id": "1214148116563657",
+      "name": "The entrance lights don't work",
+      "severity": "Standard Maintenance",
+      "status": "\u2014",
+      "project": "RSD - Pikeville, KY - David - 2619 ",
+      "project_gid": "1213617845456501",
+      "house": null,
+      "created_at": "2026-04-21T22:09:34.555Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214148116563657"
+    },
+    {
+      "task_id": "1214089831487492",
+      "name": "Please check lockboxes are installed - ",
+      "severity": "Standard Maintenance",
+      "status": "\u2014",
+      "project": "RSD - Pikeville, KY - David - 2619 ",
+      "project_gid": "1213617845456501",
+      "house": null,
+      "created_at": "2026-04-15T21:17:36.577Z",
+      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214089831487492"
+    }
+  ]
+}
