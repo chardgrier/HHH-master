@@ -55,6 +55,23 @@
   #error { padding: 40px; text-align: center; color: var(--closed); }
   .empty { padding: 20px; color: var(--muted); font-style: italic; text-align: center; }
 
+  /* Calendar */
+  .cal-range { font-size: 11px; color: var(--muted); margin: 4px 0 10px; }
+  .cal-legend { display: inline-flex; gap: 12px; margin-left: 12px; font-size: 11px; color: var(--muted); }
+  .cal-legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
+  .cal-day-header { background: #f7f8fc; text-align: center; padding: 6px 0; font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+  .cal-day { background: #fff; min-height: 76px; padding: 4px 5px; font-size: 11px; vertical-align: top; }
+  .cal-day.past     { background: #fafbfc; }
+  .cal-day.today    { background: #fff8e1; box-shadow: inset 0 0 0 2px var(--gold); }
+  .cal-day .daynum  { font-weight: 700; font-size: 11px; color: var(--dark); margin-bottom: 3px; }
+  .cal-day.past .daynum { color: var(--muted); }
+  .cal-event { display: block; font-size: 10px; padding: 2px 5px; border-radius: 3px; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; }
+  .cal-event.checkin         { background: #feebc8; color: #9c4221; }
+  .cal-event.checkin.overdue { background: #fed7d7; color: #9b2c2c; }
+  .cal-event.ending          { background: #fed7d7; color: #9b2c2c; }
+  .cal-event.ending.d30      { background: #e53e3e; color: #fff; }
+
   /* Collapsible panels */
   details.panel > summary { cursor: pointer; list-style: none; user-select: none; padding: 2px 0 10px; }
   details.panel > summary::-webkit-details-marker { display: none; }
@@ -87,6 +104,11 @@
       <button class="filter-btn" onclick="setSevFilter('General Updates',this)">General Updates</button>
     </div>
     <div id="tickets"></div>
+  </details>
+
+  <details class="panel" open>
+    <summary><h3>📆 Calendar · Check-ins & Project Endings</h3></summary>
+    <div id="calendar"></div>
   </details>
 
   <details class="panel" open>
@@ -142,9 +164,85 @@ async function loadData() {
   document.getElementById('app').style.display = 'block';
 
   renderTickets();
+  renderCalendar();
   renderCheckins();
   renderEnding();
   renderProjects();
+}
+
+function toLocalISO(d) {
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function monthShort(d) {
+  return d.toLocaleString('en-US', { month: 'short' });
+}
+
+function renderCalendar() {
+  const today = new Date(); today.setHours(0,0,0,0);
+  const todayISO = toLocalISO(today);
+
+  // Build date → events map
+  const byDate = {};
+  (DATA.checkins || []).forEach(c => {
+    (byDate[c.date] ||= []).push({
+      type:    'checkin',
+      label:   `📞 ${c.project}${c.house ? ' ['+c.house+']' : ''}`,
+      overdue: c.days < 0,
+      title:   `Check-in: ${c.project}${c.house ? ' House '+c.house : ''} — project starts ${c.start_date}`,
+    });
+  });
+  (DATA.ending_soon || []).forEach(e => {
+    (byDate[e.end_date] ||= []).push({
+      type:  'ending',
+      label: `🏁 ${e.name.replace(/\s*-\s*\d{4}.*$/, '')}`,
+      d30:   e.urgency === '30',
+      title: `${e.name} — ends ${e.end_date} (${e.days}d)`,
+    });
+  });
+
+  // Start from Sunday of current week; show 6 weeks
+  const start = new Date(today);
+  start.setDate(start.getDate() - start.getDay());
+  const end = new Date(start);
+  end.setDate(end.getDate() + 6*7 - 1);
+
+  const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+  const rangeLbl = (start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear())
+    ? `${monthShort(start)} ${start.getDate()} – ${end.getDate()}, ${start.getFullYear()}`
+    : `${monthShort(start)} ${start.getDate()} – ${monthShort(end)} ${end.getDate()}, ${end.getFullYear()}`;
+
+  let html = `<div class="cal-range">${rangeLbl}
+    <span class="cal-legend">
+      <span><span class="sw" style="background:#feebc8"></span>Check-in (48h before start)</span>
+      <span><span class="sw" style="background:#fed7d7"></span>Project ending</span>
+      <span><span class="sw" style="background:#e53e3e"></span>Ending in ≤ 30 days</span>
+    </span>
+  </div><div class="cal-grid">`;
+  DAYS.forEach(d => { html += `<div class="cal-day-header">${d}</div>`; });
+
+  for (let i = 0; i < 6*7; i++) {
+    const cell = new Date(start);
+    cell.setDate(start.getDate() + i);
+    const iso = toLocalISO(cell);
+
+    let cls = 'cal-day';
+    if (iso === todayISO) cls += ' today';
+    else if (cell < today) cls += ' past';
+
+    html += `<div class="${cls}"><div class="daynum">${cell.getDate()}</div>`;
+    (byDate[iso] || []).forEach(ev => {
+      let evCls = 'cal-event ' + ev.type;
+      if (ev.overdue) evCls += ' overdue';
+      if (ev.d30)     evCls += ' d30';
+      html += `<span class="${evCls}" title="${ev.title.replace(/"/g,'&quot;')}">${ev.label}</span>`;
+    });
+    html += '</div>';
+  }
+  html += '</div>';
+
+  document.getElementById('calendar').innerHTML = html;
 }
 
 function renderEnding() {
