@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T21:50:56.680969",
+  "generated_at": "2026-04-25T01:44:34.339572",
   "projects": [
     {
       "name": "Gray Construction - Bristol, TN - Paul - 2592",
@@ -454,127 +454,127 @@
     {
       "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Sletten - San Pablo, CA - Zeke - 2601",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
       "end_date": "2026-04-30",
-      "days": 6,
+      "days": 5,
       "urgency": "30"
     },
     {
       "name": "Arco- Lebanon, TN - Paul - 2616",
       "end_date": "2026-05-01",
-      "days": 7,
+      "days": 6,
       "urgency": "30"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
       "end_date": "2026-05-03",
-      "days": 9,
+      "days": 8,
       "urgency": "30"
     },
     {
       "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
       "end_date": "2026-05-08",
-      "days": 14,
+      "days": 13,
       "urgency": "30"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
       "end_date": "2026-05-15",
-      "days": 21,
+      "days": 20,
       "urgency": "30"
     },
     {
       "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
       "end_date": "2026-05-28",
-      "days": 34,
+      "days": 33,
       "urgency": "45"
     },
     {
       "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
       "end_date": "2026-05-30",
-      "days": 36,
+      "days": 35,
       "urgency": "45"
     },
     {
       "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
       "end_date": "2026-05-31",
-      "days": 37,
+      "days": 36,
       "urgency": "45"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
       "end_date": "2026-05-31",
-      "days": 37,
+      "days": 36,
       "urgency": "45"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
       "end_date": "2026-05-31",
-      "days": 37,
+      "days": 36,
       "urgency": "45"
     },
     {
       "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
       "end_date": "2026-05-31",
-      "days": 37,
+      "days": 36,
       "urgency": "45"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
       "end_date": "2026-05-31",
-      "days": 37,
+      "days": 36,
       "urgency": "45"
     },
     {
       "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
       "end_date": "2026-06-01",
-      "days": 38,
+      "days": 37,
       "urgency": "45"
     },
     {
       "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
       "end_date": "2026-06-05",
-      "days": 42,
+      "days": 41,
       "urgency": "45"
     }
   ],
@@ -584,7 +584,7 @@
       "house": null,
       "start_date": "2026-05-01",
       "date": "2026-04-29",
-      "days": 5,
+      "days": 4,
       "salesperson": "Zeke"
     }
   ],
