@@ -15,7 +15,8 @@ Three jobs, run once per morning after sync.py + qb_sync.py have refreshed data:
 
   3. A/P overdue alert → arun@hardhathousing.com
      A/P bills with balance > 0 and due_date < today (any past-due bill).
-     One email per bill, sent ONCE per bill_id (state-tracked).
+     One summary email per day containing all newly-overdue bills since last run
+     (state-tracked per bill_id so we never re-alert about the same bill).
 
 First-run safety: if data/notification_state.json doesn't exist, the script
 creates it pre-seeded with all currently-overdue items WITHOUT sending email.
@@ -329,7 +330,9 @@ def send_ap_overdue_emails(state, seeding):
         return
 
     pending.sort(key=lambda b: -b["days_overdue"])
+    total = sum(float(b.get("balance") or 0) for b in pending)
 
+    rows_html = ""
     for bill in pending:
         vendor = bill.get("vendor") or "(unknown vendor)"
         bal = bill.get("balance")
@@ -337,26 +340,41 @@ def send_ap_overdue_emails(state, seeding):
         days = bill.get("days_overdue")
         doc = bill.get("doc_number") or bill.get("bill_id") or "—"
         proj = bill.get("project_number") or "—"
+        rows_html += (
+            f'<tr>'
+            f'<td style="padding:6px 10px;border-bottom:1px solid #e2e8f0;font-weight:700">{vendor}</td>'
+            f'<td style="padding:6px 10px;border-bottom:1px solid #e2e8f0">{doc}</td>'
+            f'<td style="padding:6px 10px;border-bottom:1px solid #e2e8f0;text-align:center">{proj}</td>'
+            f'<td style="padding:6px 10px;border-bottom:1px solid #e2e8f0;text-align:right">{fmt_money(bal)}</td>'
+            f'<td style="padding:6px 10px;border-bottom:1px solid #e2e8f0">{due}</td>'
+            f'<td style="padding:6px 10px;border-bottom:1px solid #e2e8f0;color:#9b2c2c;font-weight:700;text-align:center">{days}d</td>'
+            f'</tr>'
+        )
 
-        html = f"""\
+    html = f"""\
 <html><body style="font-family:-apple-system,sans-serif;color:#2d3748;font-size:14px">
-<h2 style="color:#9b2c2c">⚠️ A/P Overdue — {vendor}</h2>
-<table style="border-collapse:collapse;font-size:14px;margin:10px 0">
-  <tr><td style="padding:6px 12px;color:#718096">Vendor</td><td style="padding:6px 12px;font-weight:700">{vendor}</td></tr>
-  <tr><td style="padding:6px 12px;color:#718096">Bill #</td><td style="padding:6px 12px">{doc}</td></tr>
-  <tr><td style="padding:6px 12px;color:#718096">Project</td><td style="padding:6px 12px">{proj}</td></tr>
-  <tr><td style="padding:6px 12px;color:#718096">Balance</td><td style="padding:6px 12px;font-weight:700">{fmt_money(bal)}</td></tr>
-  <tr><td style="padding:6px 12px;color:#718096">Due Date</td><td style="padding:6px 12px">{due}</td></tr>
-  <tr><td style="padding:6px 12px;color:#718096">Days Past Due</td><td style="padding:6px 12px;color:#9b2c2c;font-weight:700">{days}d</td></tr>
+<h2 style="color:#9b2c2c">⚠️ A/P Overdue — {len(pending)} new bill(s) past due</h2>
+<p>Total newly-overdue balance: <b>{fmt_money(total)}</b>. These are bills that just crossed their due date — pay them or mark them paid in QuickBooks to clear.</p>
+<table style="border-collapse:collapse;width:100%;font-size:13px">
+  <thead><tr style="background:#f7f8fc;color:#718096;text-transform:uppercase;font-size:11px">
+    <th style="text-align:left;padding:6px 10px">Vendor</th>
+    <th style="text-align:left;padding:6px 10px">Bill #</th>
+    <th style="padding:6px 10px">Project</th>
+    <th style="text-align:right;padding:6px 10px">Balance</th>
+    <th style="text-align:left;padding:6px 10px">Due Date</th>
+    <th style="padding:6px 10px">Days Past Due</th>
+  </tr></thead>
+  <tbody>{rows_html}</tbody>
 </table>
-<p style="font-size:12px;color:#718096;margin-top:10px">One-time alert per bill. Pay it (or mark it paid in QuickBooks) and you won't hear from this bill again.</p>
+<p style="font-size:12px;color:#718096;margin-top:14px">Each bill is alerted only once. You won't hear about these again.</p>
 </body></html>"""
 
-        send_email(
-            to=ARUN_EMAIL,
-            subject=f"A/P OVERDUE: {vendor} · {fmt_money(bal)} · {days}d past due",
-            html_body=html,
-        )
+    send_email(
+        to=ARUN_EMAIL,
+        subject=f"A/P Overdue — {len(pending)} new bill(s) ({fmt_money(total)})",
+        html_body=html,
+    )
+    for bill in pending:
         sent_set.add(str(bill.get("bill_id")))
 
     state["ap_overdue_sent"] = sorted(sent_set)
