@@ -1,0 +1,38 @@
+name: Daily Notifications
+
+on:
+  schedule:
+    - cron: '7 11 * * *'   # 11:07 UTC daily (~7 AM EDT / 6 AM EST)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send daily notifications
+        env:
+          BOT_EMAIL_ADDRESS:  ${{ secrets.BOT_EMAIL_ADDRESS }}
+          BOT_EMAIL_PASSWORD: ${{ secrets.BOT_EMAIL_PASSWORD }}
+        run: python3 notifications.py
+
+      - name: Commit notification state
+        run: |
+          git config user.name  "HHH Dashboard Bot"
+          git config user.email "bot@hardhathousing.com"
+          git add data/notification_state.json
+          git diff --cached --quiet || git commit -m "notifications: update sent-state $(date -u +%Y-%m-%d)"
+          git push
