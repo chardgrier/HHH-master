@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T07:23:23.494811",
+  "generated_at": "2026-04-26T21:43:51.983631",
   "months": [
     "2025-08",
     "2025-09",
@@ -34,7 +34,40 @@
   "commission_rate": 0.2,
   "projects": [
     {
-      "name": "Gray Construction - Bristol, TN - Paul - 2592",
+      "name": "Gray Construction - Bristol, TN - Paul - 2592 [House A]",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2024-12-01",
+      "end_date": "2025-11-30",
+      "monthly": {
+        "2025-08": {
+          "ar": 0.0,
+          "ap": 1500.0,
+          "commission": -300.0,
+          "net_gp": -1200.0
+        },
+        "2025-09": {
+          "ar": 0.0,
+          "ap": 1500.0,
+          "commission": -300.0,
+          "net_gp": -1200.0
+        },
+        "2025-10": {
+          "ar": 0.0,
+          "ap": 1500.0,
+          "commission": -300.0,
+          "net_gp": -1200.0
+        },
+        "2025-11": {
+          "ar": 0.0,
+          "ap": 1500.0,
+          "commission": -300.0,
+          "net_gp": -1200.0
+        }
+      }
+    },
+    {
+      "name": "Gray Construction - Bristol, TN - Paul - 2592 [House B]",
       "salesperson": "Paul",
       "status": "Active",
       "start_date": "2025-02-03",
@@ -176,52 +209,52 @@
           "net_gp": 5376.0
         },
         "2026-05": {
-          "ar": 21870.0,
+          "ar": 43740.0,
           "ap": 15150.0,
-          "commission": 1344.0,
-          "net_gp": 5376.0
+          "commission": 5718.0,
+          "net_gp": 22872.0
         },
         "2026-06": {
-          "ar": 21870.0,
+          "ar": 43740.0,
           "ap": 15150.0,
-          "commission": 1344.0,
-          "net_gp": 5376.0
+          "commission": 5718.0,
+          "net_gp": 22872.0
         },
         "2026-07": {
-          "ar": 21870.0,
+          "ar": 43740.0,
           "ap": 15150.0,
-          "commission": 1344.0,
-          "net_gp": 5376.0
+          "commission": 5718.0,
+          "net_gp": 22872.0
         },
         "2026-08": {
-          "ar": 21870.0,
+          "ar": 43740.0,
           "ap": 15150.0,
-          "commission": 1344.0,
-          "net_gp": 5376.0
+          "commission": 5718.0,
+          "net_gp": 22872.0
         },
         "2026-09": {
-          "ar": 21870.0,
+          "ar": 43740.0,
           "ap": 15150.0,
-          "commission": 1344.0,
-          "net_gp": 5376.0
+          "commission": 5718.0,
+          "net_gp": 22872.0
         },
         "2026-10": {
-          "ar": 21870.0,
+          "ar": 43740.0,
           "ap": 15150.0,
-          "commission": 1344.0,
-          "net_gp": 5376.0
+          "commission": 5718.0,
+          "net_gp": 22872.0
         },
         "2026-11": {
-          "ar": 21870.0,
+          "ar": 43740.0,
           "ap": 15150.0,
-          "commission": 1344.0,
-          "net_gp": 5376.0
+          "commission": 5718.0,
+          "net_gp": 22872.0
         },
         "2026-12": {
-          "ar": 19683.0,
+          "ar": 39366.0,
           "ap": 13635.0,
-          "commission": 1209.6,
-          "net_gp": 4838.4
+          "commission": 5146.2,
+          "net_gp": 20584.8
         }
       }
     },
@@ -670,6 +703,21 @@
       }
     },
     {
+      "name": "Independence Excavating - Columbus, OH - Paul - 2509 [House House1]",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-07-31",
+      "end_date": "2025-08-31",
+      "monthly": {
+        "2025-08": {
+          "ar": 1100.0,
+          "ap": 1600.0,
+          "commission": -100.0,
+          "net_gp": -400.0
+        }
+      }
+    },
+    {
       "name": "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513",
       "salesperson": "Paul",
       "status": "Active",
@@ -799,6 +847,72 @@
       }
     },
     {
+      "name": "Fox Enterprises - Lubbock TX - Zeke - 2519",
+      "salesperson": "Zeke",
+      "status": "Closed",
+      "start_date": "2025-07-31",
+      "end_date": "2025-11-30",
+      "monthly": {
+        "2025-08": {
+          "ar": 0.0,
+          "ap": 2500.0,
+          "commission": -500.0,
+          "net_gp": -2000.0
+        },
+        "2025-09": {
+          "ar": 0.0,
+          "ap": 2500.0,
+          "commission": -500.0,
+          "net_gp": -2000.0
+        },
+        "2025-10": {
+          "ar": 0.0,
+          "ap": 2500.0,
+          "commission": -500.0,
+          "net_gp": -2000.0
+        },
+        "2025-11": {
+          "ar": 0.0,
+          "ap": 2500.0,
+          "commission": -500.0,
+          "net_gp": -2000.0
+        }
+      }
+    },
+    {
+      "name": "AES- Kirksville, MO - Paul - 2520",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-06-30",
+      "end_date": "2025-11-22",
+      "monthly": {
+        "2025-08": {
+          "ar": 0.0,
+          "ap": 1650.0,
+          "commission": -330.0,
+          "net_gp": -1320.0
+        },
+        "2025-09": {
+          "ar": 0.0,
+          "ap": 1650.0,
+          "commission": -330.0,
+          "net_gp": -1320.0
+        },
+        "2025-10": {
+          "ar": 46.33,
+          "ap": 1690.33,
+          "commission": -328.8,
+          "net_gp": -1315.2
+        },
+        "2025-11": {
+          "ar": 1019.33,
+          "ap": 887.33,
+          "commission": 26.4,
+          "net_gp": 105.6
+        }
+      }
+    },
+    {
       "name": "Duininck Golf - Durham, NC - Paul - 2526",
       "salesperson": "Paul",
       "status": "Closed",
@@ -810,6 +924,42 @@
           "ap": 0.0,
           "commission": 55.9,
           "net_gp": 223.6
+        }
+      }
+    },
+    {
+      "name": "ARCO/Murray - Emeryville CA - Paul - 2528",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-05-17",
+      "end_date": "2025-09-07",
+      "monthly": {
+        "2025-08": {
+          "ar": 4250.0,
+          "ap": 0.0,
+          "commission": 850.0,
+          "net_gp": 3400.0
+        },
+        "2025-09": {
+          "ar": 991.67,
+          "ap": 0.0,
+          "commission": 198.33,
+          "net_gp": 793.34
+        }
+      }
+    },
+    {
+      "name": "ARCO/Murray - Emeryville CA - Paul - 2528 [House B]",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-06-14",
+      "end_date": "2025-08-24",
+      "monthly": {
+        "2025-08": {
+          "ar": 2080.0,
+          "ap": 0.0,
+          "commission": 416.0,
+          "net_gp": 1664.0
         }
       }
     },
@@ -1090,6 +1240,81 @@
       }
     },
     {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House E]",
+      "salesperson": "Paul",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2026-06-30",
+      "monthly": {
+        "2025-08": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2025-09": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2025-10": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2025-11": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2025-12": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2026-01": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2026-02": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2026-03": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2026-04": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2026-05": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        },
+        "2026-06": {
+          "ar": 7790.0,
+          "ap": 0.0,
+          "commission": 1558.0,
+          "net_gp": 6232.0
+        }
+      }
+    },
+    {
       "name": "Arco- Lebanon, PA - Paul - 2531",
       "salesperson": "Paul",
       "status": "Closed",
@@ -1175,6 +1400,51 @@
           "ap": 10908.33,
           "commission": 733.33,
           "net_gp": 2933.34
+        }
+      }
+    },
+    {
+      "name": "Gutknecht Construction_Knoxville, TN - Matt -2546 [Houses A,B]",
+      "salesperson": "Matt",
+      "status": "Closed",
+      "start_date": "2025-06-23",
+      "end_date": "2025-08-22",
+      "monthly": {
+        "2025-08": {
+          "ar": 0.0,
+          "ap": 4455.0,
+          "commission": -891.0,
+          "net_gp": -3564.0
+        }
+      }
+    },
+    {
+      "name": "Gutknecht Construction_Knoxville, TN - Matt -2546 [House C]",
+      "salesperson": "Matt",
+      "status": "Closed",
+      "start_date": "2025-06-23",
+      "end_date": "2025-08-24",
+      "monthly": {
+        "2025-08": {
+          "ar": 0.0,
+          "ap": 1700.0,
+          "commission": -340.0,
+          "net_gp": -1360.0
+        }
+      }
+    },
+    {
+      "name": "Gutknecht Construction_Knoxville, TN - Matt -2546 [House D]",
+      "salesperson": "Matt",
+      "status": "Closed",
+      "start_date": "2025-10-14",
+      "end_date": "2025-10-24",
+      "monthly": {
+        "2025-10": {
+          "ar": 0.0,
+          "ap": 788.33,
+          "commission": -157.67,
+          "net_gp": -630.66
         }
       }
     },
@@ -1370,23 +1640,56 @@
       }
     },
     {
-      "name": "Duininck Golf - Midway, UT - Paul - 2555",
+      "name": "Duininck Golf - Midway, UT - Paul - 2555 [House A]",
       "salesperson": "Paul",
       "status": "Closed",
-      "start_date": "2025-11-30",
+      "start_date": "2025-09-01",
       "end_date": "2025-12-15",
       "monthly": {
+        "2025-09": {
+          "ar": 4695.0,
+          "ap": 2700.0,
+          "commission": 399.0,
+          "net_gp": 1596.0
+        },
+        "2025-10": {
+          "ar": 4695.0,
+          "ap": 2700.0,
+          "commission": 399.0,
+          "net_gp": 1596.0
+        },
         "2025-11": {
-          "ar": 156.5,
-          "ap": 90.0,
-          "commission": 13.3,
-          "net_gp": 53.2
+          "ar": 4695.0,
+          "ap": 2700.0,
+          "commission": 399.0,
+          "net_gp": 1596.0
         },
         "2025-12": {
           "ar": 2347.5,
           "ap": 1350.0,
           "commission": 199.5,
           "net_gp": 798.0
+        }
+      }
+    },
+    {
+      "name": "Duininck Golf - Midway, UT - Paul - 2555 [House B]",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-10-01",
+      "end_date": "2025-11-30",
+      "monthly": {
+        "2025-10": {
+          "ar": 9295.0,
+          "ap": 5700.0,
+          "commission": 719.0,
+          "net_gp": 2876.0
+        },
+        "2025-11": {
+          "ar": 9295.0,
+          "ap": 5700.0,
+          "commission": 719.0,
+          "net_gp": 2876.0
         }
       }
     },
@@ -1414,6 +1717,45 @@
           "ap": 350.0,
           "commission": 13.0,
           "net_gp": 52.0
+        }
+      }
+    },
+    {
+      "name": "Newline Skateparks - State College, PA - Paul - 2557",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-08-18",
+      "end_date": "2025-12-22",
+      "monthly": {
+        "2025-08": {
+          "ar": 3731.0,
+          "ap": 4026.67,
+          "commission": -59.13,
+          "net_gp": -236.54
+        },
+        "2025-09": {
+          "ar": 7995.0,
+          "ap": 10000.0,
+          "commission": -401.0,
+          "net_gp": -1604.0
+        },
+        "2025-10": {
+          "ar": 7995.0,
+          "ap": 10000.0,
+          "commission": -401.0,
+          "net_gp": -1604.0
+        },
+        "2025-11": {
+          "ar": 7995.0,
+          "ap": 10000.0,
+          "commission": -401.0,
+          "net_gp": -1604.0
+        },
+        "2025-12": {
+          "ar": 5863.0,
+          "ap": 7333.33,
+          "commission": -294.07,
+          "net_gp": -1176.26
         }
       }
     },
@@ -1474,6 +1816,90 @@
           "ap": 987.5,
           "commission": 37.5,
           "net_gp": 150.0
+        }
+      }
+    },
+    {
+      "name": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561",
+      "salesperson": "Zeke",
+      "status": "Closed",
+      "start_date": "2025-09-01",
+      "end_date": "2025-11-16",
+      "monthly": {
+        "2025-09": {
+          "ar": 0.0,
+          "ap": 4650.0,
+          "commission": -930.0,
+          "net_gp": -3720.0
+        },
+        "2025-10": {
+          "ar": 0.0,
+          "ap": 4650.0,
+          "commission": -930.0,
+          "net_gp": -3720.0
+        },
+        "2025-11": {
+          "ar": 0.0,
+          "ap": 2180.0,
+          "commission": -436.0,
+          "net_gp": -1744.0
+        }
+      }
+    },
+    {
+      "name": "Dean Steel - Aurora, CO - Paul - 2562",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-08-21",
+      "end_date": "2026-03-07",
+      "monthly": {
+        "2025-08": {
+          "ar": 3659.33,
+          "ap": 2035.0,
+          "commission": 324.87,
+          "net_gp": 1299.46
+        },
+        "2025-09": {
+          "ar": 9980.0,
+          "ap": 5550.0,
+          "commission": 886.0,
+          "net_gp": 3544.0
+        },
+        "2025-10": {
+          "ar": 9980.0,
+          "ap": 5550.0,
+          "commission": 886.0,
+          "net_gp": 3544.0
+        },
+        "2025-11": {
+          "ar": 9980.0,
+          "ap": 5550.0,
+          "commission": 886.0,
+          "net_gp": 3544.0
+        },
+        "2025-12": {
+          "ar": 9876.17,
+          "ap": 6140.0,
+          "commission": 747.23,
+          "net_gp": 2988.94
+        },
+        "2026-01": {
+          "ar": 9811.5,
+          "ap": 6000.0,
+          "commission": 762.3,
+          "net_gp": 3049.2
+        },
+        "2026-02": {
+          "ar": 8862.0,
+          "ap": 6000.0,
+          "commission": 572.4,
+          "net_gp": 2289.6
+        },
+        "2026-03": {
+          "ar": 2215.5,
+          "ap": 1400.0,
+          "commission": 163.1,
+          "net_gp": 652.4
         }
       }
     },
@@ -1652,6 +2078,63 @@
       }
     },
     {
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563",
+      "salesperson": "Matt",
+      "status": "Active",
+      "start_date": "2026-01-04",
+      "end_date": "2026-08-01",
+      "monthly": {
+        "2026-01": {
+          "ar": 16053.33,
+          "ap": 13813.33,
+          "commission": 0,
+          "net_gp": 2240.0
+        },
+        "2026-02": {
+          "ar": 17200.0,
+          "ap": 14800.0,
+          "commission": 0,
+          "net_gp": 2400.0
+        },
+        "2026-03": {
+          "ar": 17200.0,
+          "ap": 14800.0,
+          "commission": 0,
+          "net_gp": 2400.0
+        },
+        "2026-04": {
+          "ar": 17200.0,
+          "ap": 14800.0,
+          "commission": 0,
+          "net_gp": 2400.0
+        },
+        "2026-05": {
+          "ar": 17200.0,
+          "ap": 14800.0,
+          "commission": 0,
+          "net_gp": 2400.0
+        },
+        "2026-06": {
+          "ar": 17200.0,
+          "ap": 14800.0,
+          "commission": 0,
+          "net_gp": 2400.0
+        },
+        "2026-07": {
+          "ar": 17200.0,
+          "ap": 14800.0,
+          "commission": 0,
+          "net_gp": 2400.0
+        },
+        "2026-08": {
+          "ar": 573.33,
+          "ap": 493.33,
+          "commission": 0,
+          "net_gp": 80.0
+        }
+      }
+    },
+    {
       "name": "Quest Events - Jacksonville, FL - Zeke - 2565",
       "salesperson": "Zeke",
       "status": "Closed",
@@ -1677,7 +2160,7 @@
       "salesperson": "Zeke",
       "status": "Closed",
       "start_date": "2025-09-15",
-      "end_date": "2025-11-15",
+      "end_date": "2025-12-05",
       "monthly": {
         "2025-09": {
           "ar": 7317.33,
@@ -1696,6 +2179,12 @@
           "ap": 4505.0,
           "commission": 471.0,
           "net_gp": 1884.0
+        },
+        "2025-12": {
+          "ar": 2286.67,
+          "ap": 1501.67,
+          "commission": 157.0,
+          "net_gp": 628.0
         }
       }
     },
@@ -1982,56 +2471,17 @@
       }
     },
     {
-      "name": "Gutknecht Construction - Indianapolis, IN - Matt - 2575 \u2014 A, B, C, Phase 1, Phase 2",
+      "name": "Gutknecht Construction - Indianapolis, IN - Matt - 2575",
       "salesperson": "Matt",
       "status": "Closed",
-      "start_date": "2025-09-29",
-      "end_date": "2025-12-15",
+      "start_date": "2026-01-01",
+      "end_date": "2026-01-15",
       "monthly": {
-        "2025-09": {
-          "ar": 560.0,
-          "ap": 418.66,
-          "commission": 28.27,
-          "net_gp": 113.07
-        },
-        "2025-10": {
-          "ar": 12386.67,
-          "ap": 8724.0,
-          "commission": 732.53,
-          "net_gp": 2930.14
-        },
-        "2025-11": {
-          "ar": 13000.0,
-          "ap": 9100.0,
-          "commission": 780.0,
-          "net_gp": 3120.0
-        },
-        "2025-12": {
-          "ar": 6500.0,
-          "ap": 4550.0,
-          "commission": 390.0,
-          "net_gp": 1560.0
-        }
-      }
-    },
-    {
-      "name": "Gutknecht Construction - Indianapolis, IN - Matt - 2575 \u2014 D, Phase 3",
-      "salesperson": "Matt",
-      "status": "Closed",
-      "start_date": "2025-12-07",
-      "end_date": "2026-01-01",
-      "monthly": {
-        "2025-12": {
-          "ar": 1812.5,
-          "ap": 1562.5,
-          "commission": 50.0,
-          "net_gp": 200.0
-        },
         "2026-01": {
-          "ar": 72.5,
-          "ap": 62.5,
-          "commission": 2.0,
-          "net_gp": 8.0
+          "ar": 7587.5,
+          "ap": 5487.5,
+          "commission": 420.0,
+          "net_gp": 1680.0
         }
       }
     },
@@ -2095,6 +2545,54 @@
           "ap": 7100.0,
           "commission": 880.0,
           "net_gp": 3520.0
+        }
+      }
+    },
+    {
+      "name": "Caliber 1 - Tallahassee, FL - Paul - 2577 \u2014 Phase 1",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-09-28",
+      "end_date": "2025-11-16",
+      "monthly": {
+        "2025-09": {
+          "ar": 420.0,
+          "ap": 0.0,
+          "commission": 84.0,
+          "net_gp": 336.0
+        },
+        "2025-10": {
+          "ar": 4200.0,
+          "ap": 0.0,
+          "commission": 840.0,
+          "net_gp": 3360.0
+        },
+        "2025-11": {
+          "ar": 2240.0,
+          "ap": 0.0,
+          "commission": 448.0,
+          "net_gp": 1792.0
+        }
+      }
+    },
+    {
+      "name": "Caliber 1 - Tallahassee, FL - Paul - 2577 \u2014 Phase 2",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-10-05",
+      "end_date": "2025-11-23",
+      "monthly": {
+        "2025-10": {
+          "ar": 3690.0,
+          "ap": 0.0,
+          "commission": 738.0,
+          "net_gp": 2952.0
+        },
+        "2025-11": {
+          "ar": 3143.33,
+          "ap": 0.0,
+          "commission": 628.67,
+          "net_gp": 2514.66
         }
       }
     },
@@ -4337,6 +4835,63 @@
       }
     },
     {
+      "name": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635",
+      "salesperson": "Zeke",
+      "status": "Upcoming",
+      "start_date": "2026-05-17",
+      "end_date": "2026-12-31",
+      "monthly": {
+        "2026-05": {
+          "ar": 2600.0,
+          "ap": 0.0,
+          "commission": 520.0,
+          "net_gp": 2080.0
+        },
+        "2026-06": {
+          "ar": 5200.0,
+          "ap": 0.0,
+          "commission": 1040.0,
+          "net_gp": 4160.0
+        },
+        "2026-07": {
+          "ar": 5200.0,
+          "ap": 0.0,
+          "commission": 1040.0,
+          "net_gp": 4160.0
+        },
+        "2026-08": {
+          "ar": 5200.0,
+          "ap": 0.0,
+          "commission": 1040.0,
+          "net_gp": 4160.0
+        },
+        "2026-09": {
+          "ar": 5200.0,
+          "ap": 0.0,
+          "commission": 1040.0,
+          "net_gp": 4160.0
+        },
+        "2026-10": {
+          "ar": 5200.0,
+          "ap": 0.0,
+          "commission": 1040.0,
+          "net_gp": 4160.0
+        },
+        "2026-11": {
+          "ar": 5200.0,
+          "ap": 0.0,
+          "commission": 1040.0,
+          "net_gp": 4160.0
+        },
+        "2026-12": {
+          "ar": 5200.0,
+          "ap": 0.0,
+          "commission": 1040.0,
+          "net_gp": 4160.0
+        }
+      }
+    },
+    {
       "name": "Graydaze Contracting Inc - Waterloo, IA - Paul - 2636",
       "salesperson": "Paul",
       "status": "Upcoming",
@@ -5747,8 +6302,8 @@
     },
     "Paul": {
       "current": {
-        "count": 112,
-        "amount": 542652.33,
+        "count": 106,
+        "amount": 528552.33,
         "invoices": [
           {
             "project": "DH Griffin - LaGrange, GA - Paul -2582",
@@ -5827,22 +6382,6 @@
             "invoice_id": "5790",
             "doc_number": "2574-08",
             "amount": 2600.0,
-            "days_overdue": -5,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "Gray Construction - Bristol, TN - Paul - 2592",
-            "invoice_id": "6532",
-            "doc_number": "2592-A17",
-            "amount": 2500.0,
-            "days_overdue": -5,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "Gray Construction - Bristol, TN - Paul - 2592",
-            "invoice_id": "6535",
-            "doc_number": "2592-B17",
-            "amount": 2200.0,
             "days_overdue": -5,
             "due_date": "2026-05-01"
           },
@@ -6039,22 +6578,6 @@
             "due_date": "2026-06-01"
           },
           {
-            "project": "Gray Construction - Bristol, TN - Paul - 2592",
-            "invoice_id": "6536",
-            "doc_number": "2592-B18",
-            "amount": 2200.0,
-            "days_overdue": -36,
-            "due_date": "2026-06-01"
-          },
-          {
-            "project": "Gray Construction - Bristol, TN - Paul - 2592",
-            "invoice_id": "6533",
-            "doc_number": "2592-A18",
-            "amount": 2500.0,
-            "days_overdue": -36,
-            "due_date": "2026-06-01"
-          },
-          {
             "project": "Peak Event Services - Woburn, MA - Paul - 2623",
             "invoice_id": "7038",
             "doc_number": "2623-C03",
@@ -6139,22 +6662,6 @@
             "invoice_id": "6215",
             "doc_number": "2618-05",
             "amount": 3595.0,
-            "days_overdue": -66,
-            "due_date": "2026-07-01"
-          },
-          {
-            "project": "Gray Construction - Bristol, TN - Paul - 2592",
-            "invoice_id": "6537",
-            "doc_number": "2592-B19",
-            "amount": 2200.0,
-            "days_overdue": -66,
-            "due_date": "2026-07-01"
-          },
-          {
-            "project": "Gray Construction - Bristol, TN - Paul - 2592",
-            "invoice_id": "6534",
-            "doc_number": "2592-A19",
-            "amount": 2500.0,
             "days_overdue": -66,
             "due_date": "2026-07-01"
           },

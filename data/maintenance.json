@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-26T07:23:23.494811",
+  "generated_at": "2026-04-26T21:43:51.983631",
   "projects": [
     {
-      "name": "Gray Construction - Bristol, TN - Paul - 2592",
+      "name": "Gray Construction - Bristol, TN - Paul - 2592 [House B]",
       "status": "Active",
       "start_date": "2025-02-03",
       "end_date": "2026-07-31",
@@ -72,6 +72,13 @@
       "project_number": "2532"
     },
     {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House E]",
+      "status": "Active",
+      "start_date": "2025-08-01",
+      "end_date": "2026-06-30",
+      "project_number": "2532"
+    },
+    {
       "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
       "status": "Active",
       "start_date": "2025-09-01",
@@ -97,6 +104,13 @@
       "status": "Active",
       "start_date": "2026-04-05",
       "end_date": "2026-08-15",
+      "project_number": "2563"
+    },
+    {
+      "name": "Gutknecht Construction - Lexington, KY - Matt - 2563",
+      "status": "Active",
+      "start_date": "2026-01-04",
+      "end_date": "2026-08-01",
       "project_number": "2563"
     },
     {
@@ -399,6 +413,13 @@
       "start_date": "2026-04-19",
       "end_date": "2026-07-31",
       "project_number": "2634"
+    },
+    {
+      "name": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635",
+      "status": "Upcoming",
+      "start_date": "2026-05-17",
+      "end_date": "2026-12-31",
+      "project_number": "2635"
     },
     {
       "name": "Graydaze Contracting Inc - Waterloo, IA - Paul - 2636",
