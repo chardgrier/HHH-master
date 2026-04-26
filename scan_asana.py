@@ -13,8 +13,11 @@ Output: data/parse_issues.json — consumed by the dashboard.
 import os, json, re, sys, requests, time
 from datetime import datetime
 
+# Share classify() + VOID_TASK with sync.py so the parser and the
+# data-quality report can never drift again.
+from sync import classify, VOID_TASK
+
 TOK = os.environ.get("ASANA_TOKEN", "")
-if not TOK: print("ERROR: ASANA_TOKEN not set"); sys.exit(1)
 WS = "1203487090849714"
 BASE = "https://app.asana.com/api/1.0"
 H = {"Authorization": f"Bearer {TOK}"}
@@ -24,29 +27,22 @@ with open("data/custom_field_gids.json") as f: CF = json.load(f)
 SALESPEOPLE = ["Paul","Zeke","Matt","Logan","David","Charlie","Peyton"]
 HHH_PROJECT_RE = re.compile(rf"\b({'|'.join(SALESPEOPLE)})\b.*?\d{{4}}", re.I)
 SKIP_NAMES = ["template","general to do","xxxx","hard hat housing template","rising sun","rsd -","rsd-"]
-VOID = ("did not send","did not use","cancelled","terminated","termination","backup","back up","not used","duplicate","did not")
-
-# Canonical-match patterns (same as sync.py)
-phase_suffix = r"(?:\s*[-–]?\s*phase\s+(?:\d+|[ivxlcm]+))?"
-CANONICAL = [
-    rf"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?construction\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",
-    rf"^(?:[a-z]\s*:\s*|phase\s+\d+\s+)?homeowner\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",
-    rf"^homeowner\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",
-    rf"^construction\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",
-    rf"^(?:[a-z]\s*:\s*)?construction\s+lease{phase_suffix}\s*$",
-    rf"^(?:[a-z]\s*:\s*)?homeowner\s+lease(?:{phase_suffix}|\s*[-–]\s*[a-z])?\s*$",
-    rf"^homeowner\s+[a-z]\s+lease{phase_suffix}\s*$",
-    rf"^construction\s+[a-z]\s+lease{phase_suffix}\s*$",
-]
 
 def is_canonical(name):
-    return any(re.match(p, name.strip(), re.I) for p in CANONICAL)
+    """A task is 'canonical' iff sync.classify() will accept it."""
+    return classify(name) is not None
 
 def looks_like_lease(name):
+    """Heuristic: name mentions both a role and a kind keyword, no void words.
+
+    The only tasks that 'look like a lease but aren't classified' under the
+    current permissive classifier are ambiguous ones (mentions BOTH
+    construction & homeowner, or BOTH lease & addendum).
+    """
     low = name.lower()
+    if any(v in low for v in VOID_TASK): return False
     return (("construction" in low or "homeowner" in low)
-            and ("lease" in low or "addendum" in low)
-            and not any(v in low for v in VOID))
+            and ("lease" in low or "addendum" in low))
 
 def paginate(endpoint, params=None):
     url = f"{BASE}/{endpoint}"; out = []
@@ -60,6 +56,8 @@ def paginate(endpoint, params=None):
     return out
 
 def main():
+    if not TOK:
+        print("ERROR: ASANA_TOKEN not set"); sys.exit(1)
     print(f"=== Scanning Asana @ {datetime.now():%Y-%m-%d %H:%M} ===")
     projects = [p for p in paginate("projects", {
         "workspace": WS, "archived":"false","opt_fields":"name,permalink_url","limit":100
@@ -91,7 +89,7 @@ def main():
             name = (t.get("name") or "").strip()
             if not name: continue
             low = name.lower()
-            if any(v in low for v in VOID): continue
+            if any(v in low for v in VOID_TASK): continue
 
             is_canon = is_canonical(name)
             looks_it = looks_like_lease(name)
