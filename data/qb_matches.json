@@ -45,5 +45,8 @@
   "ignore_bill_ids": [],
 
   "ignore_customer_patterns": [],
-  "ignore_vendor_patterns": []
+  "ignore_vendor_patterns": [
+    "Charles Gulett III",
+    "David Reichley"
+  ]
 }

@@ -110,6 +110,54 @@ def qb_query(access_token, sql):
 def normalize(s):
     return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
+PROJECT_NUM_RE = re.compile(r"\b(2\d{3})\b")
+
+def extract_project_number(*name_parts):
+    """Find a 4-digit HHH project number in any of the given strings."""
+    for s in name_parts:
+        if not s: continue
+        m = PROJECT_NUM_RE.search(str(s))
+        if m: return m.group(1)
+    return None
+
+def pull_qb_lookups(token):
+    """Pull all Customers + Vendors from QBO and build id→project_number maps.
+
+    QBO sub-customers (Jobs) and Projects both live under the Customer entity.
+    Their FullyQualifiedName includes the parent's name (e.g. "Dean Steel - 2562:
+    House A"), so a single regex over FQN catches projects regardless of whether
+    the project number is on the parent, the sub, or both.
+
+    For invoices/bills whose CustomerRef/VendorRef ID matches a row here, we get
+    a project number for free — no doc-number convention or fuzzy match needed.
+    """
+    customer_to_project = {}
+    vendor_to_project   = {}
+    try:
+        customers = qb_query(token, "SELECT * FROM Customer")
+        for c in customers:
+            cid = c.get("Id")
+            fqn  = c.get("FullyQualifiedName") or ""
+            disp = c.get("DisplayName") or ""
+            comp = c.get("CompanyName") or ""
+            pnum = extract_project_number(fqn, disp, comp)
+            if cid and pnum:
+                customer_to_project[cid] = pnum
+    except Exception as e:
+        print(f"  ! failed to pull Customers: {e}")
+    try:
+        vendors = qb_query(token, "SELECT * FROM Vendor")
+        for v in vendors:
+            vid = v.get("Id")
+            disp = v.get("DisplayName") or ""
+            comp = v.get("CompanyName") or ""
+            pnum = extract_project_number(disp, comp)
+            if vid and pnum:
+                vendor_to_project[vid] = pnum
+    except Exception as e:
+        print(f"  ! failed to pull Vendors: {e}")
+    return customer_to_project, vendor_to_project
+
 def project_company(name):
     """Extract the construction company name from an Asana project name."""
     if " - " in name:
@@ -186,6 +234,9 @@ def main():
     bills    = qb_query(token, "SELECT * FROM Bill")
     print(f"✓ {len(invoices)} invoices · {len(bills)} bills loaded")
 
+    customer_to_project, vendor_to_project = pull_qb_lookups(token)
+    print(f"✓ {len(customer_to_project)} customers · {len(vendor_to_project)} vendors auto-mapped to projects")
+
     today = date.today()
 
     # Load Asana project list (for matching)
@@ -229,12 +280,14 @@ def main():
         nm = (party_name or "").lower()
         return any(p.lower() in nm for p in patterns)
 
-    def match_project(doc_number, fallback_name, record_id=None, record_kind="invoice"):
-        """Four-tier matching:
+    def match_project(doc_number, fallback_name, record_id=None, record_kind="invoice",
+                      party_id=None):
+        """Five-tier matching:
           1. Exact record-ID override (manual: invoice_overrides / bill_overrides)
           2. DocNumber prefix (HHH convention: 'NNNN-...' or 'NNNN-<letter><NN>')
           3. Customer/vendor name-to-project override (manual)
-          4. Customer/vendor name heuristic (company name substring)
+          4. QBO customer/vendor ID → project (auto from Customer/Vendor names)
+          5. Customer/vendor name heuristic (company name substring fallback)
         """
         # (1) Manual record-ID override
         id_map_key = "invoice_overrides" if record_kind == "invoice" else "bill_overrides"
@@ -260,7 +313,14 @@ def main():
                 if str(pnum) in proj_by_number:
                     return proj_by_number[str(pnum)][0], str(pnum), None
 
-        # (4) Company/vendor name heuristic (fuzzy)
+        # (4) QBO customer/vendor ID → project (auto)
+        id_map = customer_to_project if record_kind == "invoice" else vendor_to_project
+        if party_id and str(party_id) in id_map:
+            pnum = id_map[str(party_id)]
+            if pnum in proj_by_number:
+                return proj_by_number[pnum][0], pnum, None
+
+        # (5) Company/vendor name heuristic (fuzzy)
         cn = normalize(fallback_name)
         for company, projs in proj_by_company.items():
             if company and (company in cn or cn in company):
@@ -272,13 +332,16 @@ def main():
     unmatched_invoices = []
     ignored_invoices = 0
     for inv in invoices:
-        cust_name = (inv.get("CustomerRef") or {}).get("name", "")
+        cust_ref = inv.get("CustomerRef") or {}
+        cust_name = cust_ref.get("name", "")
+        cust_id   = cust_ref.get("value")
         if should_ignore(inv.get("Id"), cust_name, "invoice"):
             ignored_invoices += 1
             continue
         matched, pnum, house = match_project(
             inv.get("DocNumber"), cust_name,
-            record_id=inv.get("Id"), record_kind="invoice")
+            record_id=inv.get("Id"), record_kind="invoice",
+            party_id=cust_id)
         mk = month_key(inv.get("TxnDate",""))
         rental, deposit = rental_total(inv)
         if matched and mk:
@@ -313,13 +376,16 @@ def main():
     unmatched_bills = []
     ignored_bills = 0
     for bill in bills:
-        vendor = (bill.get("VendorRef") or {}).get("name", "")
+        v_ref = bill.get("VendorRef") or {}
+        vendor = v_ref.get("name", "")
+        v_id   = v_ref.get("value")
         if should_ignore(bill.get("Id"), vendor, "bill"):
             ignored_bills += 1
             continue
         matched, pnum, house = match_project(
             bill.get("DocNumber"), vendor,
-            record_id=bill.get("Id"), record_kind="bill")
+            record_id=bill.get("Id"), record_kind="bill",
+            party_id=v_id)
         mk = month_key(bill.get("TxnDate",""))
         rental, deposit = rental_total(bill)
         record = {
