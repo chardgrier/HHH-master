@@ -98,8 +98,11 @@ SKIP_NAMES = ["template", "general to do", "xxxx", "hard hat housing template",
               "rising sun", "rsd -", "rsd-"]
 MANUAL_ROWS_FILE = "data/manual_rows.json"
 RECONCILED_SNAPSHOT_FILE = "data/reconciled_snapshot.json"
-VOID_TASK = ("did not send","did not use","cancelled","termination","terminated",
-             "back up","backup","not used","duplicate","did not")
+VOID_TASK = ("did not send","did not use","cancelled",
+             "back up","backup","not used","duplicate","did not",
+             # Per Richard 2026-04-26: substring-match these to ignore the task.
+             # "termin" covers terminate/terminated/termination/terminating.
+             "termin","future","early","pet")
 
 # Dashboard months: Aug 2025 → Dec 2027 (covers multi-year projects like Miller Lee's Summit C, Heycon, Power Design Savannah)
 MONTHS = []
@@ -149,39 +152,44 @@ def cf_value(task, field_gid):
 
 def classify(name):
     """
-    Classify a task. Only accepts CANONICAL lease/addendum names:
-      - "Construction Lease"        (unprefixed)
-      - "A: Construction Lease"     (letter prefix)
-      - "Construction Lease Phase N"
-      - ...and same variants for Homeowner/Addendum.
+    Classify a task as construction_lease / construction_addendum /
+    homeowner_lease / homeowner_addendum, or None.
 
-    Reject variants like "Construction Lease House - 10 Telluride Dr."
-    (those are often one-off house notes, not the primary lease).
+    Permissive keyword match: any task whose name contains the pair
+    (construction|homeowner) + (lease|addendum) is classified, EXCEPT
+    those containing a VOID_TASK keyword (future/early/pet/terminate/etc.).
+
+    This covers non-canonical names Richard surfaced in the 2026-04-26 audit:
+      - "Construction Lease House - 10 Telluride Dr."
+      - "Construction Lease A" (trailing letter)
+      - "Construction Lease #1- FEMALE Unit"
+      - "Send Construction lease for House 2"
+      - "A: Homeowner Lease - Extension #1"
+      - "Construction Addendum: Extension #N"
+      - etc.
+
+    The financial safeguards in build_house_segments() filter out reminder
+    tasks (no $$ on a lease, no $$ AND no dates on an addendum), so things
+    like "Send Addendum to Homeowner - Jack Young" or "Gather ACH info..."
+    don't slip through and create phantom segments.
     """
     n = (name or "").strip().lower()
-    if not n or any(v in n for v in VOID_TASK): return None
+    if not n: return None
+    if any(v in n for v in VOID_TASK): return None
 
-    # Canonical patterns (anchored)
-    # Phase suffix: "Phase 1", "Phase I", "- Phase I", etc.
-    phase_suffix = r"(?:\s*[-–]?\s*phase\s+(?:\d+|[ivxlcm]+))?"
-    # Prefix: single letter "A:", multi-letter "A, B,C:", or phase prefix
-    prefix = r"(?:[a-z](?:\s*,\s*[a-z])*\s*:\s*|phase\s+\d+\s+)?"
-    patterns = [
-        (rf"^{prefix}construction\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "construction_addendum"),
-        (rf"^{prefix}homeowner\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$",    "homeowner_addendum"),
-        # "Homeowner A Addendum" / "Homeowner A Addendum #1"
-        (rf"^homeowner\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "homeowner_addendum"),
-        (rf"^construction\s+[a-z]\s+addendum(?:\s*#?\s*\d+)?{phase_suffix}\s*$", "construction_addendum"),
-        (rf"^{prefix}construction\s+lease{phase_suffix}\s*$",          "construction_lease"),
-        (rf"^{prefix}homeowner\s+lease(?:{phase_suffix}|\s*[-–]\s*[a-z])?\s*$", "homeowner_lease"),
-        # "Homeowner A Lease - Phase I" etc. (letter in middle + phase suffix)
-        (rf"^homeowner\s+[a-z]\s+lease{phase_suffix}\s*$",    "homeowner_lease"),
-        (rf"^construction\s+[a-z]\s+lease{phase_suffix}\s*$", "construction_lease"),
-    ]
-    for pat, kind in patterns:
-        if re.match(pat, n):
-            return kind
-    return None
+    has_construction = bool(re.search(r"\bconstruction\b", n))
+    has_homeowner    = bool(re.search(r"\bhomeowner\b", n))
+    if has_construction == has_homeowner:  # both or neither → ambiguous, reject
+        return None
+
+    has_lease    = bool(re.search(r"\blease\b", n))
+    has_addendum = bool(re.search(r"\baddendum\b", n))
+    if has_lease == has_addendum:  # both or neither → reject
+        return None
+
+    role = "construction" if has_construction else "homeowner"
+    kind = "lease"        if has_lease        else "addendum"
+    return f"{role}_{kind}"
 
 ROMAN = {"I":1,"II":2,"III":3,"IV":4,"V":5,"VI":6,"VII":7,"VIII":8,"IX":9,"X":10}
 
@@ -192,8 +200,19 @@ def prefix_of(name):
     # prefix "A" with "A, B,C: Construction Lease".
     m = re.match(r"^([A-Z])(?:\s*,\s*[A-Z])*\s*:", name)
     if m: return m.group(1).upper()
+    # "Homeowner A Lease" / "Construction A Addendum"
     m = re.match(r"^(?:homeowner|construction)\s+([A-Z])\s+(?:lease|addendum)", name, re.I)
     if m: return m.group(1).upper()
+    # Trailing letter: "Construction Lease A", "Homeowner Lease B - Lauren",
+    # "Construction Lease B: (1 Male units)"
+    m = re.match(r"^(?:homeowner|construction)\s+(?:lease|addendum)\s+([A-Z])\b", name, re.I)
+    if m: return m.group(1).upper()
+    # Quoted letter anywhere: `Lease "E"`, `House "E"`
+    m = re.search(r'"([A-Z])"', name)
+    if m: return m.group(1).upper()
+    # House N / Houses #N: "Construction Addendum House 1", "Homeowner Addendum #2 Houses #1-5"
+    m = re.search(r"\bhouses?\s*#?\s*(\d+)", name, re.I)
+    if m: return f"House{m.group(1)}"
     m = re.search(r"phase\s+(\d+)", name, re.I)
     if m: return f"Phase{m.group(1)}"
     m = re.search(r"phase\s+([IVX]+)\b", name, re.I)
