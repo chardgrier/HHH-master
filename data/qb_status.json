@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T21:16:56.110962",
+  "generated_at": "2026-04-26T07:22:26.695794",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
     "HousHak Unlimited - Lexington KY - David - 2572": {
@@ -4117,7 +4117,7 @@
     "Duggan Contracting - Paducah, KY - Paul - 2620": {
       "2026-04": [
         {
-          "status": "sent",
+          "status": "overdue",
           "amount": 2900.0,
           "deposit": 0.0,
           "total_amt": 2900.0,
@@ -21206,7 +21206,7 @@
           "balance": 2700.0,
           "txn_date": "2026-04-25",
           "due_date": "2026-04-25",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6801",
           "doc_number": "2626-02",
           "project_number": "2626",
@@ -27208,7 +27208,7 @@
       "balance": 2700.0,
       "txn_date": "2026-04-25",
       "due_date": "2026-04-25",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6801",
       "doc_number": "2626-02",
       "project_number": "2626",

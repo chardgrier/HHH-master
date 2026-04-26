@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T21:18:06.517903",
+  "generated_at": "2026-04-26T07:23:23.494811",
   "months": [
     "2025-08",
     "2025-09",
@@ -4830,8 +4830,8 @@
       "status": "Active",
       "start_date": "2026-02-19",
       "end_date": "2026-05-31",
-      "base_ar": 7825.0,
-      "base_ap": 4300.0,
+      "base_ar": 11675.0,
+      "base_ap": 6600.0,
       "base_crew": 10,
       "commission_model": "percent",
       "commission_rate": 0.2,
@@ -8114,73 +8114,73 @@
       {
         "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Zeke"
       },
       {
         "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Zeke"
       },
       {
         "name": "Sletten - San Pablo, CA - Zeke - 2601",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Zeke"
       },
       {
         "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Logan"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Logan"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Logan"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Logan"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
         "end_date": "2026-04-30",
-        "days": 5,
+        "days": 4,
         "salesperson": "Logan"
       },
       {
         "name": "Arco- Lebanon, TN - Paul - 2616",
         "end_date": "2026-05-01",
-        "days": 6,
+        "days": 5,
         "salesperson": "Paul"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
         "end_date": "2026-05-03",
-        "days": 8,
+        "days": 7,
         "salesperson": "Logan"
       },
       {
         "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
         "end_date": "2026-05-08",
-        "days": 13,
+        "days": 12,
         "salesperson": "Paul"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
         "end_date": "2026-05-15",
-        "days": 20,
+        "days": 19,
         "salesperson": "Logan"
       }
     ],
@@ -8188,55 +8188,55 @@
       {
         "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
         "end_date": "2026-05-28",
-        "days": 33,
+        "days": 32,
         "salesperson": "Zeke"
       },
       {
         "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
         "end_date": "2026-05-30",
-        "days": 35,
+        "days": 34,
         "salesperson": "Zeke"
       },
       {
         "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
         "end_date": "2026-05-31",
-        "days": 36,
+        "days": 35,
         "salesperson": "Paul"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
         "end_date": "2026-05-31",
-        "days": 36,
+        "days": 35,
         "salesperson": "Logan"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
         "end_date": "2026-05-31",
-        "days": 36,
+        "days": 35,
         "salesperson": "Logan"
       },
       {
         "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
         "end_date": "2026-05-31",
-        "days": 36,
+        "days": 35,
         "salesperson": "Matt"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
         "end_date": "2026-05-31",
-        "days": 36,
+        "days": 35,
         "salesperson": "Logan"
       },
       {
         "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
         "end_date": "2026-06-01",
-        "days": 37,
+        "days": 36,
         "salesperson": "Paul"
       },
       {
         "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
         "end_date": "2026-06-05",
-        "days": 41,
+        "days": 40,
         "salesperson": "Paul"
       }
     ]
