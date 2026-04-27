@@ -170,6 +170,27 @@ def extract_project_number(*name_parts):
         if m: return m.group(1)
     return None
 
+def extract_bill_line_customer_id(bill):
+    """Walk a Bill's line items looking for a Customer/Project reference.
+
+    QBO's Projects feature lets you tag each bill line with a customer (which
+    is itself a project under HHH's setup). The reference lives at:
+      Line[i].AccountBasedExpenseLineDetail.CustomerRef.value
+      Line[i].ItemBasedExpenseLineDetail.CustomerRef.value
+
+    Returns the first non-empty CustomerRef.value across all lines. (If a bill
+    is split across multiple projects we currently match the whole bill to the
+    first line's project — flag if split bills become a problem.)
+    """
+    for line in bill.get("Line") or []:
+        for detail_key in ("AccountBasedExpenseLineDetail", "ItemBasedExpenseLineDetail"):
+            detail = line.get(detail_key) or {}
+            cid = (detail.get("CustomerRef") or {}).get("value")
+            if cid:
+                return cid
+    return None
+
+
 def pull_qb_lookups(token):
     """Pull all Customers + Vendors from QBO and build id→project_number maps.
 
@@ -331,13 +352,14 @@ def main():
         return any(p.lower() in nm for p in patterns)
 
     def match_project(doc_number, fallback_name, record_id=None, record_kind="invoice",
-                      party_id=None):
-        """Five-tier matching:
+                      party_id=None, line_customer_id=None):
+        """Six-tier matching:
           1. Exact record-ID override (manual: invoice_overrides / bill_overrides)
           2. DocNumber prefix (HHH convention: 'NNNN-...' or 'NNNN-<letter><NN>')
           3. Customer/vendor name-to-project override (manual)
           4. QBO customer/vendor ID → project (auto from Customer/Vendor names)
-          5. Customer/vendor name heuristic (company name substring fallback)
+          5. Bill-line-level Customer/Project ID → project (QBO Projects feature)
+          6. Customer/vendor name heuristic (company name substring fallback)
         """
         # (1) Manual record-ID override
         id_map_key = "invoice_overrides" if record_kind == "invoice" else "bill_overrides"
@@ -370,7 +392,17 @@ def main():
             if pnum in proj_by_number:
                 return proj_by_number[pnum][0], pnum, None
 
-        # (5) Company/vendor name heuristic (fuzzy)
+        # (5) Bill-line Customer/Project ID → project (QBO Projects feature).
+        # Bills don't carry a project at the header — they reference one per
+        # expense line. Look up the first line's CustomerRef in the (broader)
+        # customer_to_project map regardless of whether this is an invoice or
+        # bill — line refs always point to a customer/sub-customer/project.
+        if line_customer_id and str(line_customer_id) in customer_to_project:
+            pnum = customer_to_project[str(line_customer_id)]
+            if pnum in proj_by_number:
+                return proj_by_number[pnum][0], pnum, None
+
+        # (6) Company/vendor name heuristic (fuzzy)
         cn = normalize(fallback_name)
         for company, projs in proj_by_company.items():
             if company and (company in cn or cn in company):
@@ -432,10 +464,11 @@ def main():
         if should_ignore(bill.get("Id"), vendor, "bill"):
             ignored_bills += 1
             continue
+        line_cid = extract_bill_line_customer_id(bill)
         matched, pnum, house = match_project(
             bill.get("DocNumber"), vendor,
             record_id=bill.get("Id"), record_kind="bill",
-            party_id=v_id)
+            party_id=v_id, line_customer_id=line_cid)
         mk = month_key(bill.get("TxnDate",""))
         rental, deposit = rental_total(bill)
         record = {
