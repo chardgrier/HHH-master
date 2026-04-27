@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T01:40:13.924891",
+  "generated_at": "2026-04-27T01:47:59.669254",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
     "HousHak Unlimited - Lexington KY - David - 2572": {
@@ -13053,6 +13053,20 @@
           "doc_number": "2506-C06",
           "project_number": "2506",
           "house": "C"
+        },
+        {
+          "vendor": "Beverly Lacueva",
+          "amount": 3200.0,
+          "deposit": 0.0,
+          "total_amt": 3200.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4171",
+          "doc_number": "Bill: 2506-B08",
+          "project_number": "2506",
+          "house": null
         }
       ],
       "2025-10": [
@@ -15234,6 +15248,20 @@
       "2025-11": [
         {
           "vendor": "Gloria Diane Jex-Robie",
+          "amount": 200.0,
+          "deposit": 0.0,
+          "total_amt": 200.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-25",
+          "due_date": "2025-11-25",
+          "status": "paid",
+          "bill_id": "4481",
+          "doc_number": "NovPet",
+          "project_number": "2568",
+          "house": null
+        },
+        {
+          "vendor": "Gloria Diane Jex-Robie",
           "amount": 5150.0,
           "deposit": 0.0,
           "total_amt": 5150.0,
@@ -15987,6 +16015,20 @@
           "doc_number": "2537-I01",
           "project_number": "2537",
           "house": "I"
+        },
+        {
+          "vendor": "Deann Patnode",
+          "amount": 900.0,
+          "deposit": 0.0,
+          "total_amt": 900.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-01",
+          "due_date": "2026-01-01",
+          "status": "paid",
+          "bill_id": "5029",
+          "doc_number": null,
+          "project_number": "2537",
+          "house": null
         }
       ],
       "2025-12": [
@@ -16159,6 +16201,20 @@
           "doc_number": "2537-B08",
           "project_number": "2537",
           "house": "B"
+        },
+        {
+          "vendor": "Peyton's Homes",
+          "amount": 3850.0,
+          "deposit": 0.0,
+          "total_amt": 3850.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4147",
+          "doc_number": "Bill 2537-F07",
+          "project_number": "2537",
+          "house": null
         },
         {
           "vendor": "Peyton's Homes",
@@ -16557,6 +16613,20 @@
           "doc_number": "2537-F04",
           "project_number": "2537",
           "house": "F"
+        },
+        {
+          "vendor": "Barber Properties",
+          "amount": 1562.49,
+          "deposit": 0.0,
+          "total_amt": 1562.49,
+          "balance": 0.0,
+          "txn_date": "2025-08-22",
+          "due_date": "2025-08-22",
+          "status": "paid",
+          "bill_id": "2714",
+          "doc_number": "Bill 2537-E04",
+          "project_number": "2537",
+          "house": null
         }
       ],
       "2025-07": [
@@ -16858,6 +16928,20 @@
         }
       ],
       "2025-05": [
+        {
+          "vendor": "Volodymyr Oleksiichuk",
+          "amount": 700.0,
+          "deposit": 0.0,
+          "total_amt": 700.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-30",
+          "due_date": "2025-05-30",
+          "status": "paid",
+          "bill_id": "1180",
+          "doc_number": "1467",
+          "project_number": "2537",
+          "house": null
+        },
         {
           "vendor": "Peyton's Homes",
           "amount": 1130.0,
@@ -19014,6 +19098,290 @@
           "project_number": "2592",
           "house": "A"
         }
+      ],
+      "2025-12": [
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1700.0,
+          "deposit": 0.0,
+          "total_amt": 1700.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-31",
+          "due_date": "2025-12-31",
+          "status": "paid",
+          "bill_id": "4866",
+          "doc_number": "1325-GC#2",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4162",
+          "doc_number": "1225-GC#1",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1850.0,
+          "deposit": 0.0,
+          "total_amt": 1850.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4161",
+          "doc_number": "1225-GC#2",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-01",
+          "due_date": "2025-11-01",
+          "status": "paid",
+          "bill_id": "3617",
+          "doc_number": "1125-GC#2",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1850.0,
+          "deposit": 0.0,
+          "total_amt": 1850.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-31",
+          "due_date": "2025-10-31",
+          "status": "paid",
+          "bill_id": "3616",
+          "doc_number": "1125-GC#2",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-07",
+          "due_date": "2025-10-07",
+          "status": "paid",
+          "bill_id": "3829",
+          "doc_number": "1025-GC#1",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-08",
+          "due_date": "2025-09-08",
+          "status": "paid",
+          "bill_id": "3342",
+          "doc_number": "0925-GC#1",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1850.0,
+          "deposit": 0.0,
+          "total_amt": 1850.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-29",
+          "due_date": "2025-09-29",
+          "status": "paid",
+          "bill_id": "3231",
+          "doc_number": "1025-GC#2",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-08": [
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1850.0,
+          "deposit": 0.0,
+          "total_amt": 1850.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-28",
+          "due_date": "2025-08-28",
+          "status": "paid",
+          "bill_id": "2781",
+          "doc_number": "0925-GC#2",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-05",
+          "due_date": "2025-08-05",
+          "status": "paid",
+          "bill_id": "2371",
+          "doc_number": "0825-GC#1",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 250.0,
+          "deposit": 0.0,
+          "total_amt": 250.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-13",
+          "due_date": "2025-08-13",
+          "status": "paid",
+          "bill_id": "2424",
+          "doc_number": "0825-GC#2Pet",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-07": [
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-09",
+          "due_date": "2025-07-09",
+          "status": "paid",
+          "bill_id": "1903",
+          "doc_number": "0725-GC#1",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-31",
+          "due_date": "2025-07-31",
+          "status": "paid",
+          "bill_id": "2257",
+          "doc_number": "0825-GC#2",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-01",
+          "due_date": "2025-07-01",
+          "status": "paid",
+          "bill_id": "1832",
+          "doc_number": "0725-GC#2",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-01": [
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-01-30",
+          "due_date": "2025-02-03",
+          "status": "paid",
+          "bill_id": "88",
+          "doc_number": "022025-TN#1",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-05",
+          "due_date": "2025-06-05",
+          "status": "paid",
+          "bill_id": "1468",
+          "doc_number": "0625-GC#1",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-04",
+          "due_date": "2025-06-04",
+          "status": "paid",
+          "bill_id": "1413",
+          "doc_number": "0625-GC#2",
+          "project_number": "2592",
+          "house": null
+        }
+      ],
+      "2025-05": [
+        {
+          "vendor": "Patrick Watkins",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-02",
+          "due_date": "2025-05-06",
+          "status": "paid",
+          "bill_id": "739",
+          "doc_number": "0525-GC#1",
+          "project_number": "2592",
+          "house": null
+        },
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-01",
+          "due_date": "2025-05-01",
+          "status": "paid",
+          "bill_id": "705",
+          "doc_number": "0525-GC#2",
+          "project_number": "2592",
+          "house": null
+        }
       ]
     },
     "Southern Wall Systems - Fort Worth, TX - Logan - 2570": {
@@ -21079,6 +21447,22 @@
           "house": null
         }
       ],
+      "2025-11": [
+        {
+          "vendor": "Francisco Perez",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4182",
+          "doc_number": "Bill 2582-03",
+          "project_number": "2582",
+          "house": null
+        }
+      ],
       "2025-10": [
         {
           "vendor": "Francisco Perez",
@@ -21183,6 +21567,22 @@
           "status": "paid",
           "bill_id": "5062",
           "doc_number": "2590-01",
+          "project_number": "2590",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "vendor": "M J Hill Properties LLC",
+          "amount": 0.0,
+          "deposit": 1000.0,
+          "total_amt": 1000.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-22",
+          "due_date": "2025-12-22",
+          "status": "paid",
+          "bill_id": "4902",
+          "doc_number": null,
           "project_number": "2590",
           "house": null
         }
@@ -22246,6 +22646,134 @@
         }
       ]
     },
+    "Quality Walls and Ceiling - Lexington KY - Zeke - 2527": {
+      "2026-02": [
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 18800.0,
+          "deposit": 0.0,
+          "total_amt": 18800.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-02",
+          "due_date": "2026-02-02",
+          "status": "paid",
+          "bill_id": "6092",
+          "doc_number": "Feb Rent",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 21025.0,
+          "deposit": 0.0,
+          "total_amt": 21025.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-31",
+          "due_date": "2025-12-31",
+          "status": "paid",
+          "bill_id": "5127",
+          "doc_number": "Jan Rent",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 23088.0,
+          "deposit": 0.0,
+          "total_amt": 23088.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-03",
+          "due_date": "2025-11-03",
+          "status": "paid",
+          "bill_id": "4550",
+          "doc_number": null,
+          "project_number": "2527",
+          "house": null
+        },
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 23088.0,
+          "deposit": 0.0,
+          "total_amt": 23088.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-26",
+          "due_date": "2025-11-26",
+          "status": "paid",
+          "bill_id": "4552",
+          "doc_number": null,
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-07": [
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 3300.0,
+          "deposit": 0.0,
+          "total_amt": 3300.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-09",
+          "due_date": "2025-07-09",
+          "status": "paid",
+          "bill_id": "1900",
+          "doc_number": "2527-04",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 3300.0,
+          "deposit": 0.0,
+          "total_amt": 3300.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-05",
+          "due_date": "2025-06-05",
+          "status": "paid",
+          "bill_id": "1418",
+          "doc_number": "2527-03",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-05": [
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 3200.0,
+          "deposit": 0.0,
+          "total_amt": 3200.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-01",
+          "due_date": "2025-05-01",
+          "status": "paid",
+          "bill_id": "706",
+          "doc_number": "2527-02",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-04": [
+        {
+          "vendor": "Blue Collar Lexington, LLC",
+          "amount": 1200.0,
+          "deposit": 1000.0,
+          "total_amt": 2200.0,
+          "balance": 0.0,
+          "txn_date": "2025-04-23",
+          "due_date": "2025-04-23",
+          "status": "paid",
+          "bill_id": "646",
+          "doc_number": "2527-01",
+          "project_number": "2527",
+          "house": null
+        }
+      ]
+    },
     "Aggregate Resource Industries, Inc. - Granite, WY - Logan - 2603": {
       "2026-01": [
         {
@@ -22325,7 +22853,7 @@
           "status": "paid",
           "bill_id": "5373",
           "doc_number": null,
-          "project_number": null,
+          "project_number": "2557",
           "house": null
         }
       ],
@@ -22401,6 +22929,20 @@
           "doc_number": "2557-A04",
           "project_number": "2557",
           "house": "A"
+        },
+        {
+          "vendor": "Penelope Eifrig",
+          "amount": 5000.0,
+          "deposit": 0.0,
+          "total_amt": 5000.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-01",
+          "due_date": "2025-10-01",
+          "status": "paid",
+          "bill_id": "4044",
+          "doc_number": null,
+          "project_number": "2557",
+          "house": null
         }
       ],
       "2025-09": [
@@ -22478,7 +23020,7 @@
         }
       ]
     },
-    "Arco - Groveland, FL - Paul - 2529": {
+    "Arco - Tampa, FL - Paul - 2533": {
       "2026-02": [
         {
           "vendor": "ARCO National Construction Inc",
@@ -22491,69 +23033,95 @@
           "status": "paid",
           "bill_id": "5820",
           "doc_number": null,
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-07": [
-        {
-          "vendor": "Lindsay Franklin",
-          "amount": 863.0,
-          "deposit": 0.0,
-          "total_amt": 863.0,
-          "balance": 0.0,
-          "txn_date": "2025-07-31",
-          "due_date": "2025-07-31",
-          "status": "paid",
-          "bill_id": "2260",
-          "doc_number": "2529-04",
-          "project_number": "2529",
+          "project_number": "2533",
           "house": null
         }
       ],
       "2025-06": [
         {
-          "vendor": "Lindsay Franklin",
-          "amount": 1975.0,
+          "vendor": "PLSH LLC / Lauren Serianni",
+          "amount": 280.0,
           "deposit": 0.0,
-          "total_amt": 1975.0,
+          "total_amt": 280.0,
           "balance": 0.0,
           "txn_date": "2025-06-25",
           "due_date": "2025-06-25",
           "status": "paid",
-          "bill_id": "1736",
-          "doc_number": "2529-03",
-          "project_number": "2529",
+          "bill_id": "1726",
+          "doc_number": "2533-B04",
+          "project_number": "2533",
+          "house": "B"
+        },
+        {
+          "vendor": "Eric Spell",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-25",
+          "due_date": "2025-06-25",
+          "status": "paid",
+          "bill_id": "1724",
+          "doc_number": "2533-A04",
+          "project_number": "2533",
+          "house": "A"
+        },
+        {
+          "vendor": "Eric Spell",
+          "amount": 1850.0,
+          "deposit": 0.0,
+          "total_amt": 1850.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-17",
+          "due_date": "2025-06-17",
+          "status": "paid",
+          "bill_id": "1486",
+          "doc_number": "2533-03",
+          "project_number": "2533",
           "house": null
         },
         {
-          "vendor": "Lindsay Franklin",
-          "amount": 1975.0,
+          "vendor": "PLSH LLC / Lauren Serianni",
+          "amount": 2800.0,
           "deposit": 0.0,
-          "total_amt": 1975.0,
+          "total_amt": 2800.0,
           "balance": 0.0,
           "txn_date": "2025-06-02",
           "due_date": "2025-06-02",
           "status": "paid",
-          "bill_id": "1204",
-          "doc_number": "2529-02",
-          "project_number": "2529",
-          "house": null
+          "bill_id": "1208",
+          "doc_number": "2533-B03",
+          "project_number": "2533",
+          "house": "B"
         }
       ],
       "2025-05": [
         {
-          "vendor": "Lindsay Franklin",
-          "amount": 1540.0,
-          "deposit": 0.0,
-          "total_amt": 1540.0,
+          "vendor": "Eric Spell",
+          "amount": 152.0,
+          "deposit": 600.0,
+          "total_amt": 752.0,
           "balance": 0.0,
           "txn_date": "2025-05-06",
           "due_date": "2025-05-06",
           "status": "paid",
-          "bill_id": "901",
-          "doc_number": "2529-01",
-          "project_number": "2529",
+          "bill_id": "788",
+          "doc_number": "2533-01",
+          "project_number": "2533",
+          "house": null
+        },
+        {
+          "vendor": "PLSH LLC / Lauren Serianni",
+          "amount": 953.0,
+          "deposit": 1000.0,
+          "total_amt": 1953.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-23",
+          "due_date": "2025-05-23",
+          "status": "paid",
+          "bill_id": "1022",
+          "doc_number": "2533-01",
+          "project_number": "2533",
           "house": null
         }
       ]
@@ -23255,6 +23823,22 @@
       ]
     },
     "Orion (TJ Shellenberger) - Surprise, AZ - Paul - 2595": {
+      "2026-01": [
+        {
+          "vendor": "TJ Shellenberger [sec dep return]",
+          "amount": 0.0,
+          "deposit": 700.0,
+          "total_amt": 700.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-05",
+          "due_date": "2026-01-05",
+          "status": "paid",
+          "bill_id": "5128",
+          "doc_number": null,
+          "project_number": "2595",
+          "house": null
+        }
+      ],
       "2025-12": [
         {
           "vendor": "Victor Hutchings",
@@ -23287,6 +23871,20 @@
           "doc_number": "2573-EX3",
           "project_number": "2573",
           "house": "E"
+        },
+        {
+          "vendor": "Marilyn Martin",
+          "amount": 931.63,
+          "deposit": 0.0,
+          "total_amt": 931.63,
+          "balance": 0.0,
+          "txn_date": "2025-12-04",
+          "due_date": "2025-12-04",
+          "status": "paid",
+          "bill_id": "4604",
+          "doc_number": "5273-EX2",
+          "project_number": "2573",
+          "house": null
         }
       ],
       "2025-11": [
@@ -23570,6 +24168,20 @@
         }
       ],
       "2025-08": [
+        {
+          "vendor": "Lindsay Franklin",
+          "amount": 740.0,
+          "deposit": 800.0,
+          "total_amt": 1540.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-18",
+          "due_date": "2025-08-18",
+          "status": "paid",
+          "bill_id": "2707",
+          "doc_number": null,
+          "project_number": "2559",
+          "house": null
+        },
         {
           "vendor": "Lindsay Franklin",
           "amount": 1850.0,
@@ -24083,6 +24695,20 @@
           "house": "A"
         },
         {
+          "vendor": "Renewal Properties, LLC",
+          "amount": 1902.95,
+          "deposit": 0.0,
+          "total_amt": 1902.95,
+          "balance": 0.0,
+          "txn_date": "2025-06-03",
+          "due_date": "2025-06-03",
+          "status": "paid",
+          "bill_id": "1404",
+          "doc_number": "Bill 2519-D04",
+          "project_number": "2519",
+          "house": null
+        },
+        {
           "vendor": "Marshall Miles",
           "amount": 2000.0,
           "deposit": 0.0,
@@ -24501,6 +25127,20 @@
           "doc_number": "2520-01",
           "project_number": "2520",
           "house": null
+        },
+        {
+          "vendor": "Brandon Berlin",
+          "amount": 200.0,
+          "deposit": 0.0,
+          "total_amt": 200.0,
+          "balance": 0.0,
+          "txn_date": "2025-04-01",
+          "due_date": "2025-04-02",
+          "status": "paid",
+          "bill_id": "482",
+          "doc_number": "033125",
+          "project_number": "2520",
+          "house": null
         }
       ],
       "2025-05": [
@@ -24735,6 +25375,22 @@
           "status": "paid",
           "bill_id": "3247",
           "doc_number": "2556-03",
+          "project_number": "2556",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "vendor": "Jessica Nguyen",
+          "amount": 3500.0,
+          "deposit": 0.0,
+          "total_amt": 3500.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-02",
+          "due_date": "2025-09-02",
+          "status": "paid",
+          "bill_id": "3042",
+          "doc_number": null,
           "project_number": "2556",
           "house": null
         }
@@ -25243,6 +25899,34 @@
     "Quest Events - Chicago, IL - Zeke - 2549": {
       "2025-08": [
         {
+          "vendor": "Blaine Kosek",
+          "amount": 2300.0,
+          "deposit": 0.0,
+          "total_amt": 2300.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-01",
+          "due_date": "2025-08-01",
+          "status": "paid",
+          "bill_id": "2349",
+          "doc_number": "Bill 2549-D02",
+          "project_number": "2549",
+          "house": null
+        },
+        {
+          "vendor": "Ruth Mendez",
+          "amount": 1967.0,
+          "deposit": 0.0,
+          "total_amt": 1967.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-01",
+          "due_date": "2025-08-01",
+          "status": "paid",
+          "bill_id": "2348",
+          "doc_number": "Bill 2549-C02",
+          "project_number": "2549",
+          "house": null
+        },
+        {
           "vendor": "Diversey Finance LLC",
           "amount": 1967.0,
           "deposit": 0.0,
@@ -25405,6 +26089,70 @@
           "doc_number": "2528-B01",
           "project_number": "2528",
           "house": "B"
+        }
+      ]
+    },
+    "Arco - Groveland, FL - Paul - 2529": {
+      "2025-07": [
+        {
+          "vendor": "Lindsay Franklin",
+          "amount": 863.0,
+          "deposit": 0.0,
+          "total_amt": 863.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-31",
+          "due_date": "2025-07-31",
+          "status": "paid",
+          "bill_id": "2260",
+          "doc_number": "2529-04",
+          "project_number": "2529",
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "vendor": "Lindsay Franklin",
+          "amount": 1975.0,
+          "deposit": 0.0,
+          "total_amt": 1975.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-25",
+          "due_date": "2025-06-25",
+          "status": "paid",
+          "bill_id": "1736",
+          "doc_number": "2529-03",
+          "project_number": "2529",
+          "house": null
+        },
+        {
+          "vendor": "Lindsay Franklin",
+          "amount": 1975.0,
+          "deposit": 0.0,
+          "total_amt": 1975.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-02",
+          "due_date": "2025-06-02",
+          "status": "paid",
+          "bill_id": "1204",
+          "doc_number": "2529-02",
+          "project_number": "2529",
+          "house": null
+        }
+      ],
+      "2025-05": [
+        {
+          "vendor": "Lindsay Franklin",
+          "amount": 1540.0,
+          "deposit": 0.0,
+          "total_amt": 1540.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-06",
+          "due_date": "2025-05-06",
+          "status": "paid",
+          "bill_id": "901",
+          "doc_number": "2529-01",
+          "project_number": "2529",
+          "house": null
         }
       ]
     },
@@ -25650,162 +26398,6 @@
           "bill_id": "2099",
           "doc_number": "2552-01",
           "project_number": "2552",
-          "house": null
-        }
-      ]
-    },
-    "Quality Walls and Ceiling - Lexington KY - Zeke - 2527": {
-      "2025-07": [
-        {
-          "vendor": "Blue Collar Lexington, LLC",
-          "amount": 3300.0,
-          "deposit": 0.0,
-          "total_amt": 3300.0,
-          "balance": 0.0,
-          "txn_date": "2025-07-09",
-          "due_date": "2025-07-09",
-          "status": "paid",
-          "bill_id": "1900",
-          "doc_number": "2527-04",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-06": [
-        {
-          "vendor": "Blue Collar Lexington, LLC",
-          "amount": 3300.0,
-          "deposit": 0.0,
-          "total_amt": 3300.0,
-          "balance": 0.0,
-          "txn_date": "2025-06-05",
-          "due_date": "2025-06-05",
-          "status": "paid",
-          "bill_id": "1418",
-          "doc_number": "2527-03",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-05": [
-        {
-          "vendor": "Blue Collar Lexington, LLC",
-          "amount": 3200.0,
-          "deposit": 0.0,
-          "total_amt": 3200.0,
-          "balance": 0.0,
-          "txn_date": "2025-05-01",
-          "due_date": "2025-05-01",
-          "status": "paid",
-          "bill_id": "706",
-          "doc_number": "2527-02",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-04": [
-        {
-          "vendor": "Blue Collar Lexington, LLC",
-          "amount": 1200.0,
-          "deposit": 1000.0,
-          "total_amt": 2200.0,
-          "balance": 0.0,
-          "txn_date": "2025-04-23",
-          "due_date": "2025-04-23",
-          "status": "paid",
-          "bill_id": "646",
-          "doc_number": "2527-01",
-          "project_number": "2527",
-          "house": null
-        }
-      ]
-    },
-    "Arco - Tampa, FL - Paul - 2533": {
-      "2025-06": [
-        {
-          "vendor": "PLSH LLC / Lauren Serianni",
-          "amount": 280.0,
-          "deposit": 0.0,
-          "total_amt": 280.0,
-          "balance": 0.0,
-          "txn_date": "2025-06-25",
-          "due_date": "2025-06-25",
-          "status": "paid",
-          "bill_id": "1726",
-          "doc_number": "2533-B04",
-          "project_number": "2533",
-          "house": "B"
-        },
-        {
-          "vendor": "Eric Spell",
-          "amount": 1500.0,
-          "deposit": 0.0,
-          "total_amt": 1500.0,
-          "balance": 0.0,
-          "txn_date": "2025-06-25",
-          "due_date": "2025-06-25",
-          "status": "paid",
-          "bill_id": "1724",
-          "doc_number": "2533-A04",
-          "project_number": "2533",
-          "house": "A"
-        },
-        {
-          "vendor": "Eric Spell",
-          "amount": 1850.0,
-          "deposit": 0.0,
-          "total_amt": 1850.0,
-          "balance": 0.0,
-          "txn_date": "2025-06-17",
-          "due_date": "2025-06-17",
-          "status": "paid",
-          "bill_id": "1486",
-          "doc_number": "2533-03",
-          "project_number": "2533",
-          "house": null
-        },
-        {
-          "vendor": "PLSH LLC / Lauren Serianni",
-          "amount": 2800.0,
-          "deposit": 0.0,
-          "total_amt": 2800.0,
-          "balance": 0.0,
-          "txn_date": "2025-06-02",
-          "due_date": "2025-06-02",
-          "status": "paid",
-          "bill_id": "1208",
-          "doc_number": "2533-B03",
-          "project_number": "2533",
-          "house": "B"
-        }
-      ],
-      "2025-05": [
-        {
-          "vendor": "Eric Spell",
-          "amount": 152.0,
-          "deposit": 600.0,
-          "total_amt": 752.0,
-          "balance": 0.0,
-          "txn_date": "2025-05-06",
-          "due_date": "2025-05-06",
-          "status": "paid",
-          "bill_id": "788",
-          "doc_number": "2533-01",
-          "project_number": "2533",
-          "house": null
-        },
-        {
-          "vendor": "PLSH LLC / Lauren Serianni",
-          "amount": 953.0,
-          "deposit": 1000.0,
-          "total_amt": 1953.0,
-          "balance": 0.0,
-          "txn_date": "2025-05-23",
-          "due_date": "2025-05-23",
-          "status": "paid",
-          "bill_id": "1022",
-          "doc_number": "2533-01",
-          "project_number": "2533",
           "house": null
         }
       ]
@@ -32051,7 +32643,7 @@
       "status": "paid",
       "bill_id": "6092",
       "doc_number": "Feb Rent",
-      "project_number": null,
+      "project_number": "2527",
       "house": null
     },
     {
@@ -32639,7 +33231,7 @@
       "status": "paid",
       "bill_id": "5820",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2533",
       "house": null
     },
     {
@@ -32793,7 +33385,7 @@
       "status": "paid",
       "bill_id": "5373",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2557",
       "house": null
     },
     {
@@ -33885,7 +34477,7 @@
       "status": "paid",
       "bill_id": "4866",
       "doc_number": "1325-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -34011,7 +34603,7 @@
       "status": "paid",
       "bill_id": "5127",
       "doc_number": "Jan Rent",
-      "project_number": null,
+      "project_number": "2527",
       "house": null
     },
     {
@@ -34067,7 +34659,7 @@
       "status": "paid",
       "bill_id": "5128",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2595",
       "house": null
     },
     {
@@ -34165,7 +34757,7 @@
       "status": "paid",
       "bill_id": "5029",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2537",
       "house": null
     },
     {
@@ -34711,7 +35303,7 @@
       "status": "paid",
       "bill_id": "4902",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2590",
       "house": null
     },
     {
@@ -34837,7 +35429,7 @@
       "status": "paid",
       "bill_id": "4550",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2527",
       "house": null
     },
     {
@@ -34907,7 +35499,7 @@
       "status": "paid",
       "bill_id": "4182",
       "doc_number": "Bill 2582-03",
-      "project_number": null,
+      "project_number": "2582",
       "house": null
     },
     {
@@ -34977,7 +35569,7 @@
       "status": "paid",
       "bill_id": "4604",
       "doc_number": "5273-EX2",
-      "project_number": null,
+      "project_number": "2573",
       "house": null
     },
     {
@@ -35005,7 +35597,7 @@
       "status": "paid",
       "bill_id": "4162",
       "doc_number": "1225-GC#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -35089,7 +35681,7 @@
       "status": "paid",
       "bill_id": "4552",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2527",
       "house": null
     },
     {
@@ -35173,7 +35765,7 @@
       "status": "paid",
       "bill_id": "4161",
       "doc_number": "1225-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -35523,7 +36115,7 @@
       "status": "paid",
       "bill_id": "4481",
       "doc_number": "NovPet",
-      "project_number": null,
+      "project_number": "2568",
       "house": null
     },
     {
@@ -35537,7 +36129,7 @@
       "status": "paid",
       "bill_id": "4147",
       "doc_number": "Bill 2537-F07",
-      "project_number": null,
+      "project_number": "2537",
       "house": null
     },
     {
@@ -35733,7 +36325,7 @@
       "status": "paid",
       "bill_id": "4171",
       "doc_number": "Bill: 2506-B08",
-      "project_number": null,
+      "project_number": "2506",
       "house": null
     },
     {
@@ -36335,7 +36927,7 @@
       "status": "paid",
       "bill_id": "3616",
       "doc_number": "1125-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -36685,7 +37277,7 @@
       "status": "paid",
       "bill_id": "4044",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2557",
       "house": null
     },
     {
@@ -36923,7 +37515,7 @@
       "status": "paid",
       "bill_id": "3617",
       "doc_number": "1125-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -37119,7 +37711,7 @@
       "status": "paid",
       "bill_id": "3829",
       "doc_number": "1025-GC#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -37763,7 +38355,7 @@
       "status": "paid",
       "bill_id": "3342",
       "doc_number": "0925-GC#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -37973,7 +38565,7 @@
       "status": "paid",
       "bill_id": "3231",
       "doc_number": "1025-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -38211,7 +38803,7 @@
       "status": "paid",
       "bill_id": "3042",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2556",
       "house": null
     },
     {
@@ -38281,7 +38873,7 @@
       "status": "paid",
       "bill_id": "2707",
       "doc_number": null,
-      "project_number": null,
+      "project_number": "2559",
       "house": null
     },
     {
@@ -38337,7 +38929,7 @@
       "status": "paid",
       "bill_id": "2781",
       "doc_number": "0925-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -38351,7 +38943,7 @@
       "status": "paid",
       "bill_id": "2371",
       "doc_number": "0825-GC#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -38785,7 +39377,7 @@
       "status": "paid",
       "bill_id": "2714",
       "doc_number": "Bill 2537-E04",
-      "project_number": null,
+      "project_number": "2537",
       "house": null
     },
     {
@@ -38925,7 +39517,7 @@
       "status": "paid",
       "bill_id": "2424",
       "doc_number": "0825-GC#2Pet",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -38981,7 +39573,7 @@
       "status": "paid",
       "bill_id": "1903",
       "doc_number": "0725-GC#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -39107,7 +39699,7 @@
       "status": "paid",
       "bill_id": "2349",
       "doc_number": "Bill 2549-D02",
-      "project_number": null,
+      "project_number": "2549",
       "house": null
     },
     {
@@ -39121,7 +39713,7 @@
       "status": "paid",
       "bill_id": "2348",
       "doc_number": "Bill 2549-C02",
-      "project_number": null,
+      "project_number": "2549",
       "house": null
     },
     {
@@ -39289,7 +39881,7 @@
       "status": "paid",
       "bill_id": "2257",
       "doc_number": "0825-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -39863,7 +40455,7 @@
       "status": "paid",
       "bill_id": "88",
       "doc_number": "022025-TN#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -40241,7 +40833,7 @@
       "status": "paid",
       "bill_id": "1832",
       "doc_number": "0725-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -40423,7 +41015,7 @@
       "status": "paid",
       "bill_id": "1468",
       "doc_number": "0625-GC#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -40983,7 +41575,7 @@
       "status": "paid",
       "bill_id": "739",
       "doc_number": "0525-GC#1",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -40997,7 +41589,7 @@
       "status": "paid",
       "bill_id": "705",
       "doc_number": "0525-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -41655,7 +42247,7 @@
       "status": "paid",
       "bill_id": "1413",
       "doc_number": "0625-GC#2",
-      "project_number": null,
+      "project_number": "2592",
       "house": null
     },
     {
@@ -41669,7 +42261,7 @@
       "status": "paid",
       "bill_id": "1404",
       "doc_number": "Bill 2519-D04",
-      "project_number": null,
+      "project_number": "2519",
       "house": null
     },
     {
@@ -41753,7 +42345,7 @@
       "status": "paid",
       "bill_id": "1180",
       "doc_number": "1467",
-      "project_number": null,
+      "project_number": "2537",
       "house": null
     },
     {
@@ -43041,7 +43633,7 @@
       "status": "paid",
       "bill_id": "482",
       "doc_number": "033125",
-      "project_number": null,
+      "project_number": "2520",
       "house": null
     },
     {
@@ -44300,17 +44892,6 @@
       "doc_number": "2554-04 [Camp]"
     },
     {
-      "bill_id": "6092",
-      "vendor": "Blue Collar Lexington, LLC",
-      "date": "2026-02-02",
-      "amount": 18800.0,
-      "deposit": 0.0,
-      "total_amt": 18800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Feb Rent"
-    },
-    {
       "bill_id": "6089",
       "vendor": "Wise Builders Rentals LLC",
       "date": "2026-02-02",
@@ -44520,17 +45101,6 @@
       "doc_number": null
     },
     {
-      "bill_id": "4866",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-12-31",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1325-GC#2"
-    },
-    {
       "bill_id": "5233",
       "vendor": "Keshia Acree",
       "date": "2026-01-07",
@@ -44564,28 +45134,6 @@
       "doc_number": "3.0-A04"
     },
     {
-      "bill_id": "5127",
-      "vendor": "Blue Collar Lexington, LLC",
-      "date": "2025-12-31",
-      "amount": 21025.0,
-      "deposit": 0.0,
-      "total_amt": 21025.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Jan Rent"
-    },
-    {
-      "bill_id": "5128",
-      "vendor": "TJ Shellenberger [sec dep return]",
-      "date": "2026-01-05",
-      "amount": 0.0,
-      "deposit": 700.0,
-      "total_amt": 700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
-    },
-    {
       "bill_id": "4888",
       "vendor": "Heather McPeek",
       "date": "2025-12-31",
@@ -44595,17 +45143,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2571-05"
-    },
-    {
-      "bill_id": "5029",
-      "vendor": "Deann Patnode",
-      "date": "2026-01-01",
-      "amount": 900.0,
-      "deposit": 0.0,
-      "total_amt": 900.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
     },
     {
       "bill_id": "4987",
@@ -44696,28 +45233,6 @@
       "doc_number": "2554-01 [Camp]"
     },
     {
-      "bill_id": "4902",
-      "vendor": "M J Hill Properties LLC",
-      "date": "2025-12-22",
-      "amount": 0.0,
-      "deposit": 1000.0,
-      "total_amt": 1000.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
-    },
-    {
-      "bill_id": "4550",
-      "vendor": "Blue Collar Lexington, LLC",
-      "date": "2025-11-03",
-      "amount": 23088.0,
-      "deposit": 0.0,
-      "total_amt": 23088.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
-    },
-    {
       "bill_id": "4286",
       "vendor": "Stanley Stays LLC",
       "date": "2025-12-16",
@@ -44740,39 +45255,6 @@
       "doc_number": "2583-03"
     },
     {
-      "bill_id": "4182",
-      "vendor": "Francisco Perez",
-      "date": "2025-11-30",
-      "amount": 1800.0,
-      "deposit": 0.0,
-      "total_amt": 1800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill 2582-03"
-    },
-    {
-      "bill_id": "4604",
-      "vendor": "Marilyn Martin",
-      "date": "2025-12-04",
-      "amount": 931.63,
-      "deposit": 0.0,
-      "total_amt": 931.63,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "5273-EX2"
-    },
-    {
-      "bill_id": "4162",
-      "vendor": "Patrick Watkins",
-      "date": "2025-11-30",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1225-GC#1"
-    },
-    {
       "bill_id": "4155",
       "vendor": "Jeremiah Moore",
       "date": "2025-11-30",
@@ -44782,17 +45264,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "1225-BNC#2"
-    },
-    {
-      "bill_id": "4552",
-      "vendor": "Blue Collar Lexington, LLC",
-      "date": "2025-11-26",
-      "amount": 23088.0,
-      "deposit": 0.0,
-      "total_amt": 23088.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
     },
     {
       "bill_id": "4470",
@@ -44848,17 +45319,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2571-04"
-    },
-    {
-      "bill_id": "4161",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-11-30",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1225-GC#2"
     },
     {
       "bill_id": "4288",
@@ -44925,39 +45385,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "RSD-CYNTH"
-    },
-    {
-      "bill_id": "4481",
-      "vendor": "Gloria Diane Jex-Robie",
-      "date": "2025-11-25",
-      "amount": 200.0,
-      "deposit": 0.0,
-      "total_amt": 200.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "NovPet"
-    },
-    {
-      "bill_id": "4147",
-      "vendor": "Peyton's Homes",
-      "date": "2025-11-30",
-      "amount": 3850.0,
-      "deposit": 0.0,
-      "total_amt": 3850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill 2537-F07"
-    },
-    {
-      "bill_id": "4171",
-      "vendor": "Beverly Lacueva",
-      "date": "2025-11-30",
-      "amount": 3200.0,
-      "deposit": 0.0,
-      "total_amt": 3200.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill: 2506-B08"
     },
     {
       "bill_id": "4306",
@@ -45048,17 +45475,6 @@
       "doc_number": "1125-BNC#1"
     },
     {
-      "bill_id": "3616",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-10-31",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1125-GC#2"
-    },
-    {
       "bill_id": "3601",
       "vendor": "Jeremiah Moore",
       "date": "2025-10-31",
@@ -45123,17 +45539,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2579-A01"
-    },
-    {
-      "bill_id": "4044",
-      "vendor": "Penelope Eifrig",
-      "date": "2025-10-01",
-      "amount": 5000.0,
-      "deposit": 0.0,
-      "total_amt": 5000.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
     },
     {
       "bill_id": "3821",
@@ -45224,17 +45629,6 @@
       "doc_number": "2554-05"
     },
     {
-      "bill_id": "3617",
-      "vendor": "Patrick Watkins",
-      "date": "2025-11-01",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1125-GC#2"
-    },
-    {
       "bill_id": "3979",
       "vendor": "Heather McPeek",
       "date": "2025-10-31",
@@ -45244,17 +45638,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2571-03"
-    },
-    {
-      "bill_id": "3829",
-      "vendor": "Patrick Watkins",
-      "date": "2025-10-07",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1025-GC#1"
     },
     {
       "bill_id": "3812",
@@ -45378,17 +45761,6 @@
       "doc_number": "RSD - Barboursville 1"
     },
     {
-      "bill_id": "3342",
-      "vendor": "Patrick Watkins",
-      "date": "2025-09-08",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0925-GC#1"
-    },
-    {
       "bill_id": "3307",
       "vendor": "Jack Young",
       "date": "2025-09-29",
@@ -45398,17 +45770,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2501-10"
-    },
-    {
-      "bill_id": "3231",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-09-29",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1025-GC#2"
     },
     {
       "bill_id": "3218",
@@ -45444,28 +45805,6 @@
       "doc_number": "2560-02"
     },
     {
-      "bill_id": "3042",
-      "vendor": "Jessica Nguyen",
-      "date": "2025-09-02",
-      "amount": 3500.0,
-      "deposit": 0.0,
-      "total_amt": 3500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
-    },
-    {
-      "bill_id": "2707",
-      "vendor": "Lindsay Franklin",
-      "date": "2025-08-18",
-      "amount": 740.0,
-      "deposit": 800.0,
-      "total_amt": 1540.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
-    },
-    {
       "bill_id": "2341",
       "vendor": "Sparrow Investments",
       "date": "2025-08-01",
@@ -45486,28 +45825,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2554-01"
-    },
-    {
-      "bill_id": "2781",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-08-28",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0925-GC#2"
-    },
-    {
-      "bill_id": "2371",
-      "vendor": "Patrick Watkins",
-      "date": "2025-08-05",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0825-GC#1"
     },
     {
       "bill_id": "2791",
@@ -45576,17 +45893,6 @@
       "doc_number": "0925-BNC#2"
     },
     {
-      "bill_id": "2714",
-      "vendor": "Barber Properties",
-      "date": "2025-08-22",
-      "amount": 1562.49,
-      "deposit": 0.0,
-      "total_amt": 1562.49,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill 2537-E04"
-    },
-    {
       "bill_id": "2391",
       "vendor": "Jack Young",
       "date": "2025-08-05",
@@ -45631,28 +45937,6 @@
       "doc_number": "2560-01"
     },
     {
-      "bill_id": "2424",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-08-13",
-      "amount": 250.0,
-      "deposit": 0.0,
-      "total_amt": 250.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0825-GC#2Pet"
-    },
-    {
-      "bill_id": "1903",
-      "vendor": "Patrick Watkins",
-      "date": "2025-07-09",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0725-GC#1"
-    },
-    {
       "bill_id": "1868",
       "vendor": "Allen Crabtree",
       "date": "2025-07-01",
@@ -45686,28 +45970,6 @@
       "doc_number": "0825-RSD-Camp#A"
     },
     {
-      "bill_id": "2349",
-      "vendor": "Blaine Kosek",
-      "date": "2025-08-01",
-      "amount": 2300.0,
-      "deposit": 0.0,
-      "total_amt": 2300.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill 2549-D02"
-    },
-    {
-      "bill_id": "2348",
-      "vendor": "Ruth Mendez",
-      "date": "2025-08-01",
-      "amount": 1967.0,
-      "deposit": 0.0,
-      "total_amt": 1967.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill 2549-C02"
-    },
-    {
       "bill_id": "2344",
       "vendor": "Patrina Alison Stacy A",
       "date": "2025-08-01",
@@ -45739,17 +46001,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "0825-RSD-Camp#B"
-    },
-    {
-      "bill_id": "2257",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-07-31",
-      "amount": 1800.0,
-      "deposit": 0.0,
-      "total_amt": 1800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0825-GC#2"
     },
     {
       "bill_id": "2245",
@@ -45906,17 +46157,6 @@
       "doc_number": "022025-TN#2"
     },
     {
-      "bill_id": "88",
-      "vendor": "Patrick Watkins",
-      "date": "2025-01-30",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "022025-TN#1"
-    },
-    {
       "bill_id": "84",
       "vendor": "Kyle Kopytchak",
       "date": "2025-01-30",
@@ -46049,17 +46289,6 @@
       "doc_number": "0725-RSD-Camp#B"
     },
     {
-      "bill_id": "1832",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-07-01",
-      "amount": 1800.0,
-      "deposit": 0.0,
-      "total_amt": 1800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0725-GC#2"
-    },
-    {
       "bill_id": "1820",
       "vendor": "Penny Weaver",
       "date": "2025-06-30",
@@ -46113,17 +46342,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "0725-BNC#2"
-    },
-    {
-      "bill_id": "1468",
-      "vendor": "Patrick Watkins",
-      "date": "2025-06-05",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0625-GC#1"
     },
     {
       "bill_id": "547",
@@ -46311,28 +46529,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": null
-    },
-    {
-      "bill_id": "739",
-      "vendor": "Patrick Watkins",
-      "date": "2025-05-02",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0525-GC#1"
-    },
-    {
-      "bill_id": "705",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-05-01",
-      "amount": 1800.0,
-      "deposit": 0.0,
-      "total_amt": 1800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0525-GC#2"
     },
     {
       "bill_id": "738",
@@ -46599,28 +46795,6 @@
       "doc_number": "2502-06"
     },
     {
-      "bill_id": "1413",
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "date": "2025-06-04",
-      "amount": 1800.0,
-      "deposit": 0.0,
-      "total_amt": 1800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0625-GC#2"
-    },
-    {
-      "bill_id": "1404",
-      "vendor": "Renewal Properties, LLC",
-      "date": "2025-06-03",
-      "amount": 1902.95,
-      "deposit": 0.0,
-      "total_amt": 1902.95,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill 2519-D04"
-    },
-    {
       "bill_id": "1402",
       "vendor": "Bradley Bryant",
       "date": "2025-06-02",
@@ -46641,17 +46815,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "0425-GC#2"
-    },
-    {
-      "bill_id": "1180",
-      "vendor": "Volodymyr Oleksiichuk",
-      "date": "2025-05-30",
-      "amount": 700.0,
-      "deposit": 0.0,
-      "total_amt": 700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1467"
     },
     {
       "bill_id": "708",
@@ -47105,17 +47268,6 @@
       "doc_number": "032025-Murray"
     },
     {
-      "bill_id": "482",
-      "vendor": "Brandon Berlin",
-      "date": "2025-04-01",
-      "amount": 200.0,
-      "deposit": 0.0,
-      "total_amt": 200.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "033125"
-    },
-    {
       "bill_id": "67",
       "vendor": "Mariela Solorzano",
       "date": "2025-01-24",
@@ -47442,7 +47594,7 @@
     "invoices_unmatched": 6,
     "bills_total": 1265,
     "bills_ignored": 7,
-    "bills_matched": 906,
-    "bills_unmatched": 352
+    "bills_matched": 946,
+    "bills_unmatched": 312
   }
 }
