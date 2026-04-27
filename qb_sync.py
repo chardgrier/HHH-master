@@ -349,7 +349,8 @@ def main():
     overrides = {"invoice_overrides":{}, "bill_overrides":{},
                  "customer_project":{}, "vendor_project":{}}
     ignore = {"ignore_invoice_ids": set(), "ignore_bill_ids": set(),
-              "ignore_customer_patterns": [], "ignore_vendor_patterns": []}
+              "ignore_customer_patterns": [], "ignore_vendor_patterns": [],
+              "ignore_project_numbers": set()}
     if os.path.exists("data/qb_matches.json"):
         with open("data/qb_matches.json") as f:
             saved = json.load(f)
@@ -362,6 +363,8 @@ def main():
         for k in ("ignore_customer_patterns", "ignore_vendor_patterns"):
             if isinstance(saved.get(k), list):
                 ignore[k] = [str(p) for p in saved[k] if p]
+        if isinstance(saved.get("ignore_project_numbers"), list):
+            ignore["ignore_project_numbers"] = {str(x) for x in saved["ignore_project_numbers"]}
 
     def should_ignore(record_id, party_name, kind):
         id_set     = ignore["ignore_invoice_ids"] if kind == "invoice" else ignore["ignore_bill_ids"]
@@ -370,6 +373,20 @@ def main():
             return True
         nm = (party_name or "").lower()
         return any(p.lower() in nm for p in patterns)
+
+    def project_in_ignore_set(doc_number, party_id, line_customer_id, kind):
+        """Skip records whose detected project number is in ignore_project_numbers."""
+        block = ignore["ignore_project_numbers"]
+        if not block: return False
+        # Doc number prefix
+        pnum, _ = parse_doc_number(doc_number)
+        if pnum and pnum in block: return True
+        # Auto customer/vendor map
+        id_map = customer_to_project if kind == "invoice" else vendor_to_project
+        if party_id and id_map.get(str(party_id)) in block: return True
+        # Bill line-level customer ref
+        if line_customer_id and customer_to_project.get(str(line_customer_id)) in block: return True
+        return False
 
     def match_project(doc_number, fallback_name, record_id=None, record_kind="invoice",
                       party_id=None, line_customer_id=None):
@@ -446,7 +463,8 @@ def main():
         cust_ref = inv.get("CustomerRef") or {}
         cust_name = cust_ref.get("name", "")
         cust_id   = cust_ref.get("value")
-        if should_ignore(inv.get("Id"), cust_name, "invoice"):
+        if should_ignore(inv.get("Id"), cust_name, "invoice") or \
+           project_in_ignore_set(inv.get("DocNumber"), cust_id, None, "invoice"):
             ignored_invoices += 1
             continue
         matched, pnum, house = match_project(
@@ -490,10 +508,11 @@ def main():
         v_ref = bill.get("VendorRef") or {}
         vendor = v_ref.get("name", "")
         v_id   = v_ref.get("value")
-        if should_ignore(bill.get("Id"), vendor, "bill"):
+        line_cid = extract_bill_line_customer_id(bill)
+        if should_ignore(bill.get("Id"), vendor, "bill") or \
+           project_in_ignore_set(bill.get("DocNumber"), v_id, line_cid, "bill"):
             ignored_bills += 1
             continue
-        line_cid = extract_bill_line_customer_id(bill)
         matched, pnum, house = match_project(
             bill.get("DocNumber"), vendor,
             record_id=bill.get("Id"), record_kind="bill",

@@ -1,5 +1,5 @@
 {
-  "_comment": "Manual overrides + ignore list for QB invoices/bills. qb_sync.py applies these BEFORE its heuristic matching. Use any combination:\n\n  invoice_overrides / bill_overrides  — {\"QB Invoice/Bill Id\": \"project_number\"}\n  customer_project / vendor_project   — {\"name substring\": \"project_number\"}\n  ignore_invoice_ids / ignore_bill_ids — [\"id\", ...]  (drop the record entirely from dashboard + unmatched list)\n  ignore_customer_patterns / ignore_vendor_patterns — [\"name substring\", ...]  (drop any record whose customer/vendor matches)\n\nFor 'ignore_*' entries, the invoice/bill is fully skipped — it doesn't appear on the dashboard and won't show up in the reconciliation list.",
+  "_comment": "Manual overrides + ignore list for QB invoices/bills. qb_sync.py applies these BEFORE its heuristic matching. Use any combination:\n\n  invoice_overrides / bill_overrides  — {\"QB Invoice/Bill Id\": \"project_number\"}\n  customer_project / vendor_project   — {\"name substring\": \"project_number\"}\n  ignore_invoice_ids / ignore_bill_ids — [\"id\", ...]  (drop the record entirely from dashboard + unmatched list)\n  ignore_customer_patterns / ignore_vendor_patterns — [\"name substring\", ...]  (drop any record whose customer/vendor matches)\n  ignore_project_numbers — [\"2501\", ...]  (drop every invoice/bill that maps to this project number, by any detection method)\n\nFor 'ignore_*' entries, the invoice/bill is fully skipped — it doesn't appear on the dashboard and won't show up in the reconciliation list.",
 
   "invoice_overrides": {
     "6736": "2562", "5406": "2562", "5407": "2562",
@@ -48,5 +48,8 @@
   "ignore_vendor_patterns": [
     "Charles Gulett III",
     "David Reichley"
+  ],
+  "ignore_project_numbers": [
+    "2501"
   ]
 }
