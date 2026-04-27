@@ -415,12 +415,20 @@ def main():
                         return p, pnum, house
             return candidates[0], pnum, house
 
-        # (3) Manual customer/vendor name-to-project override
+        # (3) Manual customer/vendor name-to-project override.
+        # The map's value can be either a project number ("2616") OR a project
+        # name substring ("Bowman Steel - Kings Mtn") — useful for projects
+        # without a 4-digit number assigned in Asana.
         name_map_key = "customer_project" if record_kind == "invoice" else "vendor_project"
-        for pattern, pnum in overrides.get(name_map_key, {}).items():
+        for pattern, target in overrides.get(name_map_key, {}).items():
             if pattern and pattern.lower() in (fallback_name or "").lower():
-                if str(pnum) in proj_by_number:
-                    return proj_by_number[str(pnum)][0], str(pnum), None
+                target = str(target).strip()
+                if target in proj_by_number:
+                    return proj_by_number[target][0], target, None
+                # Fall back to project-name substring match
+                for p in projects:
+                    if target.lower() in p["name"].lower():
+                        return p, p.get("project_number") or None, None
 
         # (4) QBO customer/vendor ID → project (auto)
         # Invoice path: also route RSD customers to the consolidated Rising Sun row.

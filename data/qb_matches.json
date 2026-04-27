@@ -27,7 +27,11 @@
   "bill_overrides": {},
 
   "customer_project": {},
-  "vendor_project": {},
+  "vendor_project": {
+    "Jeremiah Moore":           "Bowman Steel - Kings Mtn",
+    "Hasson":                   "Bowman Steel - Kings Mtn",
+    "Vicki Vandelaar":          "2616"
+  },
 
   "ignore_invoice_ids": [
     "6177", "5967",
@@ -47,7 +51,10 @@
   "ignore_customer_patterns": [],
   "ignore_vendor_patterns": [
     "Charles Gulett III",
-    "David Reichley"
+    "David Reichley",
+    "Airbnb",
+    "Culture Index",
+    "Richard W. Grier"
   ],
   "ignore_project_numbers": [
     "2501"
