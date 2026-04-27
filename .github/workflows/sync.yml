@@ -29,11 +29,12 @@ jobs:
 
       - name: Pull QuickBooks invoice + bill status
         env:
-          QB_CLIENT_ID:     ${{ secrets.QB_CLIENT_ID }}
-          QB_CLIENT_SECRET: ${{ secrets.QB_CLIENT_SECRET }}
-          QB_REFRESH_TOKEN: ${{ secrets.QB_REFRESH_TOKEN }}
-          QB_REALM_ID:      ${{ secrets.QB_REALM_ID }}
-          QB_ENV:           ${{ secrets.QB_ENV }}
+          QB_CLIENT_ID:      ${{ secrets.QB_CLIENT_ID }}
+          QB_CLIENT_SECRET:  ${{ secrets.QB_CLIENT_SECRET }}
+          QB_REFRESH_TOKEN:  ${{ secrets.QB_REFRESH_TOKEN }}
+          QB_REALM_ID:       ${{ secrets.QB_REALM_ID }}
+          QB_ENV:            ${{ secrets.QB_ENV }}
+          QB_TOKEN_ENC_KEY:  ${{ secrets.QB_TOKEN_ENC_KEY }}
         run: python3 qb_sync.py
         continue-on-error: true
 
@@ -47,5 +48,7 @@ jobs:
           git config user.name  "HHH Dashboard Bot"
           git config user.email "bot@hardhathousing.com"
           git add data/projects.json data/qb_status.json data/sales.json data/maintenance.json
+          # qb_refresh_token.enc only exists once auto-rotation is enabled (QB_TOKEN_ENC_KEY set)
+          [ -f data/qb_refresh_token.enc ] && git add data/qb_refresh_token.enc || true
           git diff --cached --quiet || git commit -m "sync: update project data $(date -u +%Y-%m-%d)"
           git push

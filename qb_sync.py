@@ -28,8 +28,43 @@ except ImportError:
 
 CLIENT_ID     = os.environ.get("QB_CLIENT_ID", "")
 CLIENT_SECRET = os.environ.get("QB_CLIENT_SECRET", "")
-REFRESH_TOKEN = os.environ.get("QB_REFRESH_TOKEN", "")
 REALM_ID      = os.environ.get("QB_REALM_ID", "")
+ENC_KEY       = os.environ.get("QB_TOKEN_ENC_KEY", "").strip()
+TOKEN_FILE    = "data/qb_refresh_token.enc"
+
+# ─── Encrypted refresh-token store ───────────────────────────────────────────
+# Intuit rotates the refresh token on each use. To keep the chain alive across
+# runs without manual intervention, we encrypt the current token to a file in
+# the repo using QB_TOKEN_ENC_KEY (a stable Fernet key set as a GitHub secret).
+# Each successful sync decrypts → uses → encrypts the new one back. The repo
+# only ever sees the ciphertext; the key never leaves GitHub secrets.
+
+def _load_persisted_token():
+    if not ENC_KEY or not os.path.exists(TOKEN_FILE):
+        return None
+    try:
+        from cryptography.fernet import Fernet
+        with open(TOKEN_FILE, "rb") as fh:
+            return Fernet(ENC_KEY.encode()).decrypt(fh.read()).decode().strip()
+    except Exception as e:
+        print(f"  ! could not decrypt {TOKEN_FILE}: {e}")
+        return None
+
+def _save_persisted_token(token):
+    if not ENC_KEY:
+        return False
+    try:
+        from cryptography.fernet import Fernet
+        os.makedirs(os.path.dirname(TOKEN_FILE), exist_ok=True)
+        with open(TOKEN_FILE, "wb") as fh:
+            fh.write(Fernet(ENC_KEY.encode()).encrypt(token.encode()))
+        return True
+    except Exception as e:
+        print(f"  ! could not write {TOKEN_FILE}: {e}")
+        return False
+
+# Persisted (rotated) token wins over the env-var bootstrap.
+REFRESH_TOKEN = _load_persisted_token() or os.environ.get("QB_REFRESH_TOKEN", "")
 
 if not all([CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN, REALM_ID]):
     print("ERROR: QB_CLIENT_ID, QB_CLIENT_SECRET, QB_REFRESH_TOKEN, QB_REALM_ID required")
@@ -69,12 +104,16 @@ def get_access_token():
         timeout=30)
     r.raise_for_status()
     t = r.json()
-    # Note: Intuit issues a new refresh_token with each access_token response.
-    # We don't persist it here since GitHub secrets can't be updated from within
-    # the workflow. Refresh tokens remain valid as long as they're used within
-    # 100 days, so the nightly run keeps ours alive.
-    if t.get("refresh_token") and t["refresh_token"] != REFRESH_TOKEN:
-        print(f"  (note: received a new refresh token from Intuit — first 12 chars: {t['refresh_token'][:12]}…)")
+    # Intuit rotates the refresh token on every successful exchange. Persist
+    # the new value to data/qb_refresh_token.enc so the next run uses it.
+    # Without this the chain dies after enough rotations and we get locked out.
+    new_rt = t.get("refresh_token")
+    if new_rt and new_rt != REFRESH_TOKEN:
+        if _save_persisted_token(new_rt):
+            print(f"  ✓ persisted rotated refresh token (first 12 chars: {new_rt[:12]}…)")
+        else:
+            print("  ! Intuit issued a new refresh token but it could NOT be persisted — "
+                  "set QB_TOKEN_ENC_KEY secret to enable auto-rotation.")
     return t["access_token"]
 
 # ─── QB query helper ─────────────────────────────────────────────────────────
