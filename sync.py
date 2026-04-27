@@ -543,8 +543,17 @@ def sync():
             if item.get("skip_asana_match"):
                 manual_skip_nums.add(str(item["skip_asana_match"]))
 
-    # Find HHH-pattern projects
+    # Find HHH-pattern projects. We also remember the Asana gid for any project
+    # whose number appears in manual_skip_nums — that way manual_rows entries
+    # (ARD 2537, etc.) can still get hyperlinked to the right Asana project on
+    # the staff/maintenance dashboard, even though sync.py doesn't pull their
+    # financial data from Asana.
     all_projects = {}
+    manual_gid_by_number = {}
+    def _record_manual_gid(gid, name):
+        for num in manual_skip_nums:
+            if num in name:
+                manual_gid_by_number.setdefault(num, gid); return
     if ASANA_TOKEN:
         for p in asana("projects", {
             "workspace": WORKSPACE_GID, "archived":"false",
@@ -553,13 +562,15 @@ def sync():
             name = p.get("name","")
             if not HHH_PROJECT_RE.search(name): continue
             if any(s in name.lower() for s in SKIP_NAMES): continue
-            if any(num in name for num in manual_skip_nums): continue  # handled by manual_rows
+            if any(num in name for num in manual_skip_nums):
+                _record_manual_gid(p["gid"], name); continue  # handled by manual_rows
             all_projects[p["gid"]] = p
         for pgid in ("1206746778121935", "1207604445018695"):
             for p in asana(f"portfolios/{pgid}/items", {"opt_fields":"name"}):
                 if p["gid"] in all_projects: continue
                 if any(s in p["name"].lower() for s in SKIP_NAMES): continue
-                if any(num in p["name"] for num in manual_skip_nums): continue
+                if any(num in p["name"] for num in manual_skip_nums):
+                    _record_manual_gid(p["gid"], p["name"]); continue
                 all_projects[p["gid"]] = p
         print(f"Scanning {len(all_projects)} HHH-pattern projects (skipping {len(manual_skip_nums)} manual)…")
 
@@ -666,10 +677,15 @@ def sync():
             t_gp = sum(v["net_gp"] for k, v in monthly_out.items() if k.startswith("2026"))
             rules = project_rules(item.get("name", ""))
             m_num = re.search(r"\b(2\d{3})\b", item.get("name",""))
+            pnum = m_num.group(1) if m_num else ""
+            # Prefer an explicit asana_gid in manual_rows.json; fall back to the
+            # gid we captured during the Asana scan for this project number.
+            row_gid = item.get("asana_gid") or manual_gid_by_number.get(str(item.get("skip_asana_match") or pnum))
             rows.append({
+                "gid": row_gid,
                 "name": item.get("name"),
                 "salesperson": item.get("salesperson", "Unknown"),
-                "project_number": m_num.group(1) if m_num else "",
+                "project_number": pnum,
                 "status": item.get("status", "Active"),
                 "start_date": keys[0] + "-01",
                 "end_date":   keys[-1] + "-28",
