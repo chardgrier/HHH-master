@@ -104,16 +104,27 @@ def get_access_token():
         timeout=30)
     r.raise_for_status()
     t = r.json()
-    # Intuit rotates the refresh token on every successful exchange. Persist
-    # the new value to data/qb_refresh_token.enc so the next run uses it.
-    # Without this the chain dies after enough rotations and we get locked out.
+    # Intuit rotates the refresh token periodically (not on every call). When
+    # the response carries a different one, persist it so the next run uses it.
+    # Also bootstrap: on the first run after QB_TOKEN_ENC_KEY is set, save
+    # whatever token we just used so the file exists before Intuit rotates.
     new_rt = t.get("refresh_token")
-    if new_rt and new_rt != REFRESH_TOKEN:
-        if _save_persisted_token(new_rt):
+    rotated = bool(new_rt and new_rt != REFRESH_TOKEN)
+    bootstrapping = bool(ENC_KEY and not os.path.exists(TOKEN_FILE))
+    token_to_save = new_rt if rotated else REFRESH_TOKEN
+    if rotated:
+        if _save_persisted_token(token_to_save):
             print(f"  ✓ persisted rotated refresh token (first 12 chars: {new_rt[:12]}…)")
         else:
-            print("  ! Intuit issued a new refresh token but it could NOT be persisted — "
-                  "set QB_TOKEN_ENC_KEY secret to enable auto-rotation.")
+            print("  ! Intuit rotated the refresh token but it could NOT be persisted — "
+                  "check QB_TOKEN_ENC_KEY format.")
+    elif bootstrapping and token_to_save:
+        if _save_persisted_token(token_to_save):
+            print(f"  ✓ bootstrapped {TOKEN_FILE} with current refresh token (Intuit didn't rotate this call)")
+        else:
+            print(f"  ! could not bootstrap {TOKEN_FILE} — check QB_TOKEN_ENC_KEY format.")
+    elif ENC_KEY:
+        print("  · refresh token unchanged this run (Intuit didn't rotate)")
     return t["access_token"]
 
 # ─── QB query helper ─────────────────────────────────────────────────────────
