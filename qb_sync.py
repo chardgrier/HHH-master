@@ -191,6 +191,8 @@ def extract_bill_line_customer_id(bill):
     return None
 
 
+RSD_RE = re.compile(r"\b(rsd|rising\s*sun)\b", re.I)
+
 def pull_qb_lookups(token):
     """Pull all Customers + Vendors from QBO and build id→project_number maps.
 
@@ -199,11 +201,17 @@ def pull_qb_lookups(token):
     House A"), so a single regex over FQN catches projects regardless of whether
     the project number is on the parent, the sub, or both.
 
-    For invoices/bills whose CustomerRef/VendorRef ID matches a row here, we get
-    a project number for free — no doc-number convention or fuzzy match needed.
+    Returns:
+      customer_to_project:  {customer_id: project_number}
+      vendor_to_project:    {vendor_id:   project_number}
+      rsd_customer_ids:     set of customer IDs whose name flags them as Rising
+                            Sun / RSD — those route to the consolidated
+                            "Rising Sun Developing" dashboard row regardless of
+                            their per-job 4-digit number.
     """
     customer_to_project = {}
     vendor_to_project   = {}
+    rsd_customer_ids    = set()
     try:
         customers = qb_query(token, "SELECT * FROM Customer")
         for c in customers:
@@ -211,6 +219,8 @@ def pull_qb_lookups(token):
             fqn  = c.get("FullyQualifiedName") or ""
             disp = c.get("DisplayName") or ""
             comp = c.get("CompanyName") or ""
+            if cid and (RSD_RE.search(fqn) or RSD_RE.search(disp) or RSD_RE.search(comp)):
+                rsd_customer_ids.add(cid)
             pnum = extract_project_number(fqn, disp, comp)
             if cid and pnum:
                 customer_to_project[cid] = pnum
@@ -227,7 +237,7 @@ def pull_qb_lookups(token):
                 vendor_to_project[vid] = pnum
     except Exception as e:
         print(f"  ! failed to pull Vendors: {e}")
-    return customer_to_project, vendor_to_project
+    return customer_to_project, vendor_to_project, rsd_customer_ids
 
 def project_company(name):
     """Extract the construction company name from an Asana project name."""
@@ -305,8 +315,9 @@ def main():
     bills    = qb_query(token, "SELECT * FROM Bill")
     print(f"✓ {len(invoices)} invoices · {len(bills)} bills loaded")
 
-    customer_to_project, vendor_to_project = pull_qb_lookups(token)
-    print(f"✓ {len(customer_to_project)} customers · {len(vendor_to_project)} vendors auto-mapped to projects")
+    customer_to_project, vendor_to_project, rsd_customer_ids = pull_qb_lookups(token)
+    print(f"✓ {len(customer_to_project)} customers · {len(vendor_to_project)} vendors auto-mapped to projects "
+          f"({len(rsd_customer_ids)} RSD customers flagged for Rising Sun consolidation)")
 
     today = date.today()
 
@@ -324,6 +335,15 @@ def main():
     for p in projects:
         c = project_company(p["name"])
         if c: proj_by_company[c].append(p)
+
+    # Find the consolidated Rising Sun row (all RSD jobs roll up to this one).
+    rising_sun_project = next(
+        (p for p in projects if RSD_RE.search(p["name"])),
+        None,
+    )
+    if rsd_customer_ids and not rising_sun_project:
+        print("  ! warning: RSD customers found in QBO but no 'Rising Sun' row in projects.json — "
+              "those bills will fall through to the fuzzy matcher")
 
     # Load manual overrides (highest priority)
     overrides = {"invoice_overrides":{}, "bill_overrides":{},
@@ -386,6 +406,9 @@ def main():
                     return proj_by_number[str(pnum)][0], str(pnum), None
 
         # (4) QBO customer/vendor ID → project (auto)
+        # Invoice path: also route RSD customers to the consolidated Rising Sun row.
+        if record_kind == "invoice" and party_id and str(party_id) in rsd_customer_ids and rising_sun_project:
+            return rising_sun_project, None, None
         id_map = customer_to_project if record_kind == "invoice" else vendor_to_project
         if party_id and str(party_id) in id_map:
             pnum = id_map[str(party_id)]
@@ -397,10 +420,16 @@ def main():
         # expense line. Look up the first line's CustomerRef in the (broader)
         # customer_to_project map regardless of whether this is an invoice or
         # bill — line refs always point to a customer/sub-customer/project.
-        if line_customer_id and str(line_customer_id) in customer_to_project:
-            pnum = customer_to_project[str(line_customer_id)]
-            if pnum in proj_by_number:
-                return proj_by_number[pnum][0], pnum, None
+        if line_customer_id:
+            cid = str(line_customer_id)
+            # RSD customers (any "RSD" or "Rising Sun" job) consolidate under the
+            # single Rising Sun row in the dashboard, regardless of per-job number.
+            if cid in rsd_customer_ids and rising_sun_project:
+                return rising_sun_project, None, None
+            if cid in customer_to_project:
+                pnum = customer_to_project[cid]
+                if pnum in proj_by_number:
+                    return proj_by_number[pnum][0], pnum, None
 
         # (6) Company/vendor name heuristic (fuzzy)
         cn = normalize(fallback_name)
