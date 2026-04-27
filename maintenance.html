@@ -66,7 +66,9 @@
   .cal-day.today    { background: #fff8e1; box-shadow: inset 0 0 0 2px var(--gold); }
   .cal-day .daynum  { font-weight: 700; font-size: 11px; color: var(--dark); margin-bottom: 3px; }
   .cal-day.past .daynum { color: var(--muted); }
-  .cal-event { display: block; font-size: 10px; padding: 2px 5px; border-radius: 3px; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; }
+  .cal-event { display: block; font-size: 10px; padding: 2px 5px; border-radius: 3px; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: default; text-decoration: none; }
+  a.cal-event { cursor: pointer; }
+  a.cal-event:hover { filter: brightness(0.92); text-decoration: underline; }
   .cal-event.checkin         { background: #feebc8; color: #9c4221; }
   .cal-event.checkin.overdue { background: #fed7d7; color: #9b2c2c; }
   .cal-event.ending          { background: #fed7d7; color: #9b2c2c; }
@@ -184,20 +186,26 @@ function renderCalendar() {
 
   // Build date → events map
   const byDate = {};
+  const asanaUrl = (gid) => gid ? `https://app.asana.com/0/${gid}/overview` : null;
+
   (DATA.checkins || []).forEach(c => {
+    const num   = c.project_number ? ` · ${c.project_number}` : '';
+    const house = c.house ? ' ['+c.house+']' : '';
     (byDate[c.date] ||= []).push({
       type:    'checkin',
-      label:   `📞 ${c.project}${c.house ? ' ['+c.house+']' : ''}`,
+      label:   `📞 ${c.project}${house}${num}`,
       overdue: c.days < 0,
       title:   `Check-in: ${c.project}${c.house ? ' House '+c.house : ''} — project starts ${c.start_date}`,
+      url:     asanaUrl(c.gid),
     });
   });
   (DATA.ending_soon || []).forEach(e => {
     (byDate[e.end_date] ||= []).push({
       type:  'ending',
-      label: `🏁 ${e.name.replace(/\s*-\s*\d{4}.*$/, '')}`,
+      label: `🏁 ${e.name}`,
       d30:   e.urgency === '30',
       title: `${e.name} — ends ${e.end_date} (${e.days}d)`,
+      url:   asanaUrl(e.gid),
     });
   });
 
@@ -236,7 +244,13 @@ function renderCalendar() {
       let evCls = 'cal-event ' + ev.type;
       if (ev.overdue) evCls += ' overdue';
       if (ev.d30)     evCls += ' d30';
-      html += `<span class="${evCls}" title="${ev.title.replace(/"/g,'&quot;')}">${ev.label}</span>`;
+      const titleEsc = ev.title.replace(/"/g,'&quot;');
+      const labelEsc = ev.label.replace(/</g,'&lt;');
+      if (ev.url) {
+        html += `<a class="${evCls}" href="${ev.url}" target="_blank" rel="noopener" title="${titleEsc}">${labelEsc}</a>`;
+      } else {
+        html += `<span class="${evCls}" title="${titleEsc}">${labelEsc}</span>`;
+      }
     });
     html += '</div>';
   }

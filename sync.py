@@ -781,10 +781,14 @@ def sync():
             d = days_until(r["end_date"])
             if d is not None and 0 < d <= 30:
                 health["ending_in_30"].append({"name": r["name"], "end_date": r["end_date"], "days": d,
-                                                "salesperson": r.get("salesperson","")})
+                                                "salesperson": r.get("salesperson",""),
+                                                "gid": r.get("gid"),
+                                                "project_number": r.get("project_number")})
             elif d is not None and 30 < d <= 45:
                 health["ending_in_31_45"].append({"name": r["name"], "end_date": r["end_date"], "days": d,
-                                                   "salesperson": r.get("salesperson","")})
+                                                   "salesperson": r.get("salesperson",""),
+                                                   "gid": r.get("gid"),
+                                                   "project_number": r.get("project_number")})
     # Sort alert lists by urgency
     health["ending_in_30"].sort(key=lambda x: x["days"])
     health["ending_in_31_45"].sort(key=lambda x: x["days"])
@@ -1064,9 +1068,11 @@ def write_maintenance_view(master):
 
     ending = []
     for x in master["health"].get("ending_in_30", []):
-        ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "30"})
+        ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "30",
+                       "gid": x.get("gid"), "project_number": x.get("project_number")})
     for x in master["health"].get("ending_in_31_45", []):
-        ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "45"})
+        ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "45",
+                       "gid": x.get("gid"), "project_number": x.get("project_number")})
 
     # ── Upcoming Check-ins: 48 hrs before project start, window −2 to +14 days ──
     today = date.today()
@@ -1092,6 +1098,8 @@ def write_maintenance_view(master):
             "date":       checkin_date.isoformat(),
             "days":       days,
             "salesperson": r.get("salesperson", ""),
+            "gid":           r.get("gid"),
+            "project_number": r.get("project_number"),
         })
     checkins.sort(key=lambda x: x["days"])
 
