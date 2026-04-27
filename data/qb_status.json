@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T15:15:44.869246",
+  "generated_at": "2026-04-27T17:14:06.211778",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
     "HousHak Unlimited - Lexington KY - David - 2572": {
@@ -4018,18 +4018,6 @@
         }
       ],
       "2025-01": [
-        {
-          "status": "paid",
-          "amount": 2495.0,
-          "deposit": 0.0,
-          "total_amt": 2495.0,
-          "balance": 0.0,
-          "invoice_id": "6",
-          "doc_number": "2501-02",
-          "due_date": "2025-01-31",
-          "project_number": null,
-          "house": null
-        },
         {
           "status": "paid",
           "amount": 1995.0,
@@ -8781,113 +8769,7 @@
           "house": null
         }
       ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 825.0,
-          "deposit": 0.0,
-          "total_amt": 825.0,
-          "balance": 0.0,
-          "invoice_id": "4408",
-          "doc_number": "2501-13",
-          "due_date": "2025-11-23",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 412.5,
-          "deposit": 0.0,
-          "total_amt": 412.5,
-          "balance": 0.0,
-          "invoice_id": "4079",
-          "doc_number": "2501-12",
-          "due_date": "2025-11-16",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 1237.5,
-          "deposit": 0.0,
-          "total_amt": 1237.5,
-          "balance": 0.0,
-          "invoice_id": "3588",
-          "doc_number": "2501-11",
-          "due_date": "2025-11-01",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "2978",
-          "doc_number": "2501-10",
-          "due_date": "2025-10-01",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-08": [
-        {
-          "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "2483",
-          "doc_number": "2501-09",
-          "due_date": "2025-09-19",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "2207",
-          "doc_number": "2501-08",
-          "due_date": "2025-09-03",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-05": [
-        {
-          "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "1109",
-          "doc_number": "2501-07",
-          "due_date": "2025-06-27",
-          "project_number": null,
-          "house": null
-        }
-      ],
       "2025-04": [
-        {
-          "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "423",
-          "doc_number": "2501-06",
-          "due_date": "2025-05-15",
-          "project_number": null,
-          "house": null
-        },
         {
           "status": "paid",
           "amount": 420.0,
@@ -8904,30 +8786,6 @@
       "2025-03": [
         {
           "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "422",
-          "doc_number": "2501-005",
-          "due_date": "2025-04-23",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "213",
-          "doc_number": "2501-03",
-          "due_date": "2025-03-31",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
           "amount": 2100.0,
           "deposit": 0.0,
           "total_amt": 2100.0,
@@ -8935,44 +8793,6 @@
           "invoice_id": "421",
           "doc_number": "2505-03",
           "due_date": "2025-04-23",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-01": [
-        {
-          "status": "paid",
-          "amount": 2475.0,
-          "deposit": 0.0,
-          "total_amt": 2475.0,
-          "balance": 0.0,
-          "invoice_id": "13",
-          "doc_number": "2501-04",
-          "due_date": "2025-02-14",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 1567.5,
-          "deposit": 750.0,
-          "total_amt": 2317.5,
-          "balance": 0.0,
-          "invoice_id": "10",
-          "doc_number": "2501-01",
-          "due_date": "2025-01-16",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 2100.0,
-          "deposit": 300.0,
-          "total_amt": 2400.0,
-          "balance": 0.0,
-          "invoice_id": "57",
-          "doc_number": "2505-01",
-          "due_date": "2025-02-11",
           "project_number": null,
           "house": null
         }
@@ -8987,6 +8807,20 @@
           "invoice_id": "177",
           "doc_number": "2505-02",
           "due_date": "2025-03-25",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-01": [
+        {
+          "status": "paid",
+          "amount": 2100.0,
+          "deposit": 300.0,
+          "total_amt": 2400.0,
+          "balance": 0.0,
+          "invoice_id": "57",
+          "doc_number": "2505-01",
+          "due_date": "2025-02-11",
           "project_number": null,
           "house": null
         }
@@ -9728,18 +9562,6 @@
           "balance": 0.0,
           "invoice_id": "12",
           "doc_number": "1018-082161SD",
-          "due_date": "2024-12-31",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 1198.66,
-          "deposit": 0.0,
-          "total_amt": 1198.66,
-          "balance": 0.0,
-          "invoice_id": "33",
-          "doc_number": "2501-05",
           "due_date": "2024-12-31",
           "project_number": null,
           "house": null
@@ -19976,6 +19798,68 @@
           "project_number": "2616",
           "house": null
         }
+      ],
+      "2025-10": [
+        {
+          "vendor": "Vicki Vandelaar",
+          "amount": 1200.0,
+          "deposit": 0.0,
+          "total_amt": 1200.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-31",
+          "due_date": "2025-10-31",
+          "status": "paid",
+          "bill_id": "3598",
+          "doc_number": "2560-04",
+          "project_number": "2616",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "vendor": "Vicki Vandelaar",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-29",
+          "due_date": "2025-09-29",
+          "status": "paid",
+          "bill_id": "3218",
+          "doc_number": "2560-03",
+          "project_number": "2616",
+          "house": null
+        },
+        {
+          "vendor": "Vicki Vandelaar",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-02",
+          "due_date": "2025-09-02",
+          "status": "paid",
+          "bill_id": "3043",
+          "doc_number": "2560-02",
+          "project_number": "2616",
+          "house": null
+        }
+      ],
+      "2025-08": [
+        {
+          "vendor": "Vicki Vandelaar",
+          "amount": 1220.0,
+          "deposit": 1000.0,
+          "total_amt": 2220.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-13",
+          "due_date": "2025-08-13",
+          "status": "paid",
+          "bill_id": "2422",
+          "doc_number": "2560-01",
+          "project_number": "2616",
+          "house": null
+        }
       ]
     },
     "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House A]": {
@@ -22523,6 +22407,418 @@
           "doc_number": "2532-A01",
           "project_number": "2532",
           "house": "A"
+        }
+      ]
+    },
+    "Bowman Steel - Kings Mtn, NC - Paul (1 house)": {
+      "2026-03": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6832",
+          "doc_number": "0426-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1095.0,
+          "deposit": 0.0,
+          "total_amt": 1095.0,
+          "balance": 1095.0,
+          "txn_date": "2026-05-31",
+          "due_date": "2026-05-31",
+          "status": "sent",
+          "bill_id": "6834",
+          "doc_number": "0626-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2026-04": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 1500.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "sent",
+          "bill_id": "6833",
+          "doc_number": "0526-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "5560",
+          "doc_number": "1525-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5559",
+          "doc_number": "1425-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-31",
+          "due_date": "2025-12-31",
+          "status": "paid",
+          "bill_id": "4859",
+          "doc_number": "1325-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4155",
+          "doc_number": "1225-BNC#2",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 990.0,
+          "deposit": 0.0,
+          "total_amt": 990.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-01",
+          "due_date": "2025-11-01",
+          "status": "paid",
+          "bill_id": "3600",
+          "doc_number": "1125-BNC#1",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-31",
+          "due_date": "2025-10-31",
+          "status": "paid",
+          "bill_id": "3601",
+          "doc_number": "1125-BNC#2",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-08",
+          "due_date": "2025-10-08",
+          "status": "paid",
+          "bill_id": "3812",
+          "doc_number": "1025-BNC#1",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-08": [
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-29",
+          "due_date": "2025-08-29",
+          "status": "paid",
+          "bill_id": "2762",
+          "doc_number": "0925-BNC#1",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-29",
+          "due_date": "2025-08-29",
+          "status": "paid",
+          "bill_id": "2761",
+          "doc_number": "0925-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-29",
+          "due_date": "2025-09-29",
+          "status": "paid",
+          "bill_id": "3213",
+          "doc_number": "1025-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-07": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-31",
+          "due_date": "2025-07-31",
+          "status": "paid",
+          "bill_id": "2245",
+          "doc_number": "Bill 0825-BNC#2",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-31",
+          "due_date": "2025-07-31",
+          "status": "paid",
+          "bill_id": "2244",
+          "doc_number": "0825-BNC#1",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-01",
+          "due_date": "2025-07-01",
+          "status": "paid",
+          "bill_id": "1790",
+          "doc_number": "0725-BNC#1",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-01",
+          "due_date": "2025-07-01",
+          "status": "paid",
+          "bill_id": "1791",
+          "doc_number": "0725-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-02": [
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-02-28",
+          "due_date": "2025-02-28",
+          "status": "paid",
+          "bill_id": "274",
+          "doc_number": "0325-BNC#1",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-02-28",
+          "due_date": "2025-02-28",
+          "status": "paid",
+          "bill_id": "275",
+          "doc_number": "0325-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-05",
+          "due_date": "2025-06-05",
+          "status": "paid",
+          "bill_id": "1417",
+          "doc_number": "0625-BNC#1",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-05",
+          "due_date": "2025-06-05",
+          "status": "paid",
+          "bill_id": "1455",
+          "doc_number": "0625-BNC#2",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-04": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-04-01",
+          "due_date": "2025-04-01",
+          "status": "paid",
+          "bill_id": "541",
+          "doc_number": "0425-BNC#2",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-04-01",
+          "due_date": "2025-04-01",
+          "status": "paid",
+          "bill_id": "540",
+          "doc_number": "0425-BNC#1",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-05": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-01",
+          "due_date": "2025-05-01",
+          "status": "paid",
+          "bill_id": "700",
+          "doc_number": "0525-BNC#2",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-01",
+          "due_date": "2025-05-01",
+          "status": "paid",
+          "bill_id": "699",
+          "doc_number": "0525-BNC#1",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-01": [
+        {
+          "vendor": "Jeremiah Moore",
+          "amount": 1500.0,
+          "deposit": 0.0,
+          "total_amt": 1500.0,
+          "balance": 0.0,
+          "txn_date": "2025-01-30",
+          "due_date": "2025-02-03",
+          "status": "paid",
+          "bill_id": "83",
+          "doc_number": "022025-NC#2",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "vendor": "Hasson &  Ditecha Trent",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2025-01-30",
+          "due_date": "2025-01-30",
+          "status": "paid",
+          "bill_id": "82",
+          "doc_number": "022025-NC#1",
+          "project_number": null,
+          "house": null
         }
       ]
     },
@@ -34861,20 +35157,6 @@
       "house": null
     },
     {
-      "vendor": "Culture Index, Inc.",
-      "amount": 7200.0,
-      "deposit": 0.0,
-      "total_amt": 7200.0,
-      "balance": 0.0,
-      "txn_date": "2026-02-16",
-      "due_date": "2026-02-16",
-      "status": "paid",
-      "bill_id": "6071",
-      "doc_number": "25-6428A",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "SIG Holding, LLC",
       "amount": 1790.0,
       "deposit": 0.0,
@@ -37871,20 +38153,6 @@
       "house": null
     },
     {
-      "vendor": "Jack Young",
-      "amount": 396.67,
-      "deposit": 0.0,
-      "total_amt": 396.67,
-      "balance": 0.0,
-      "txn_date": "2025-12-01",
-      "due_date": "2025-12-01",
-      "status": "paid",
-      "bill_id": "4470",
-      "doc_number": "2501-13",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "F&J Rentals LLC",
       "amount": 900.0,
       "deposit": 0.0,
@@ -38049,20 +38317,6 @@
       "status": "paid",
       "bill_id": "4288",
       "doc_number": "2554-06",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Jack Young",
-      "amount": 566.67,
-      "deposit": 0.0,
-      "total_amt": 566.67,
-      "balance": 0.0,
-      "txn_date": "2025-11-30",
-      "due_date": "2025-11-30",
-      "status": "paid",
-      "bill_id": "4469",
-      "doc_number": "2501-12",
       "project_number": null,
       "house": null
     },
@@ -38543,20 +38797,6 @@
       "house": null
     },
     {
-      "vendor": "Jack Young",
-      "amount": 284.0,
-      "deposit": 0.0,
-      "total_amt": 284.0,
-      "balance": 0.0,
-      "txn_date": "2025-11-13",
-      "due_date": "2025-11-13",
-      "status": "paid",
-      "bill_id": "4211",
-      "doc_number": "2501-12",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Hunter Sandlin",
       "amount": 3480.0,
       "deposit": 0.0,
@@ -38639,20 +38879,6 @@
       "doc_number": "2519-D09",
       "project_number": "2519",
       "house": "D"
-    },
-    {
-      "vendor": "Jack Young",
-      "amount": 907.0,
-      "deposit": 0.0,
-      "total_amt": 907.0,
-      "balance": 0.0,
-      "txn_date": "2025-11-01",
-      "due_date": "2025-11-01",
-      "status": "paid",
-      "bill_id": "3615",
-      "doc_number": "2501-11",
-      "project_number": null,
-      "house": null
     },
     {
       "vendor": "Renewal Properties, LLC",
@@ -39239,7 +39465,7 @@
       "status": "paid",
       "bill_id": "3598",
       "doc_number": "2560-04",
-      "project_number": null,
+      "project_number": "2616",
       "house": null
     },
     {
@@ -39339,20 +39565,6 @@
       "doc_number": "2568-EXTRA",
       "project_number": "2568",
       "house": "E"
-    },
-    {
-      "vendor": "Richard W. Grier",
-      "amount": 8000.0,
-      "deposit": 0.0,
-      "total_amt": 8000.0,
-      "balance": 0.0,
-      "txn_date": "2025-11-11",
-      "due_date": "2025-11-11",
-      "status": "paid",
-      "bill_id": "4144",
-      "doc_number": null,
-      "project_number": null,
-      "house": null
     },
     {
       "vendor": "Peggy Goldman",
@@ -40587,20 +40799,6 @@
       "house": "B"
     },
     {
-      "vendor": "Jack Young",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "txn_date": "2025-09-29",
-      "due_date": "2025-09-29",
-      "status": "paid",
-      "bill_id": "3307",
-      "doc_number": "2501-10",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Lindsay Franklin",
       "amount": 310.0,
       "deposit": 0.0,
@@ -40821,7 +41019,7 @@
       "status": "paid",
       "bill_id": "3218",
       "doc_number": "2560-03",
-      "project_number": null,
+      "project_number": "2616",
       "house": null
     },
     {
@@ -40975,7 +41173,7 @@
       "status": "paid",
       "bill_id": "3043",
       "doc_number": "2560-02",
-      "project_number": null,
+      "project_number": "2616",
       "house": null
     },
     {
@@ -41427,20 +41625,6 @@
       "house": "C"
     },
     {
-      "vendor": "Jack Young",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "txn_date": "2025-08-28",
-      "due_date": "2025-08-28",
-      "status": "paid",
-      "bill_id": "2763",
-      "doc_number": "2501-09",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Jeremiah Moore",
       "amount": 1500.0,
       "deposit": 0.0,
@@ -41609,34 +41793,6 @@
       "house": "B"
     },
     {
-      "vendor": "Jack Young",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "txn_date": "2025-08-05",
-      "due_date": "2025-08-05",
-      "status": "paid",
-      "bill_id": "2391",
-      "doc_number": "2501-09",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Jack Young",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "txn_date": "2025-07-05",
-      "due_date": "2025-07-05",
-      "status": "paid",
-      "bill_id": "2390",
-      "doc_number": "2501-08",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Patrina Alison Stacy A",
       "amount": 389.0,
       "deposit": 1000.0,
@@ -41661,7 +41817,7 @@
       "status": "paid",
       "bill_id": "2422",
       "doc_number": "2560-01",
-      "project_number": null,
+      "project_number": "2616",
       "house": null
     },
     {
@@ -42505,20 +42661,6 @@
       "house": null
     },
     {
-      "vendor": "Jack Young",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "txn_date": "2025-02-28",
-      "due_date": "2025-02-28",
-      "status": "paid",
-      "bill_id": "276",
-      "doc_number": "2501-03",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Jesus Saenz",
       "amount": 1600.0,
       "deposit": 0.0,
@@ -42571,20 +42713,6 @@
       "status": "paid",
       "bill_id": "205",
       "doc_number": "2511#3-01-Receipt",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Airbnb, Inc",
-      "amount": 2502.32,
-      "deposit": 0.0,
-      "total_amt": 2502.32,
-      "balance": 0.0,
-      "txn_date": "2025-02-21",
-      "due_date": "2025-02-21",
-      "status": "paid",
-      "bill_id": "207",
-      "doc_number": "RC28NDHJYJ",
       "project_number": null,
       "house": null
     },
@@ -44143,20 +44271,6 @@
       "house": null
     },
     {
-      "vendor": "Richard W. Grier",
-      "amount": 225.83,
-      "deposit": 0.0,
-      "total_amt": 225.83,
-      "balance": 0.0,
-      "txn_date": "2025-04-04",
-      "due_date": "2025-04-04",
-      "status": "paid",
-      "bill_id": "538",
-      "doc_number": "040425",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Donna Bias",
       "amount": 2300.0,
       "deposit": 125.0,
@@ -44167,20 +44281,6 @@
       "status": "paid",
       "bill_id": "93",
       "doc_number": "012025-Charlotte",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Richard W. Grier",
-      "amount": 3455.4,
-      "deposit": 0.0,
-      "total_amt": 3455.4,
-      "balance": 0.0,
-      "txn_date": "2025-02-06",
-      "due_date": "2025-02-26",
-      "status": "paid",
-      "bill_id": "218",
-      "doc_number": "020625",
       "project_number": null,
       "house": null
     },
@@ -44367,20 +44467,6 @@
       "house": "C"
     },
     {
-      "vendor": "Jack Young",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "txn_date": "2025-06-05",
-      "due_date": "2025-06-05",
-      "status": "paid",
-      "bill_id": "1415",
-      "doc_number": "2501-07",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Blue Collar Lexington, LLC",
       "amount": 3300.0,
       "deposit": 0.0,
@@ -44549,34 +44635,6 @@
       "house": null
     },
     {
-      "vendor": "Airbnb, Inc",
-      "amount": 247.99,
-      "deposit": 0.0,
-      "total_amt": 247.99,
-      "balance": 0.0,
-      "txn_date": "2025-02-24",
-      "due_date": "2025-02-25",
-      "status": "paid",
-      "bill_id": "202",
-      "doc_number": "RCMC25SZQK",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Airbnb, Inc",
-      "amount": 2617.52,
-      "deposit": 0.0,
-      "total_amt": 2617.52,
-      "balance": 0.0,
-      "txn_date": "2025-02-21",
-      "due_date": "2025-02-25",
-      "status": "paid",
-      "bill_id": "206",
-      "doc_number": "RCJ92HWKDC",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Susie Trettel",
       "amount": 1800.0,
       "deposit": 0.0,
@@ -44587,34 +44645,6 @@
       "status": "paid",
       "bill_id": "546",
       "doc_number": "2514-02",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Airbnb, Inc",
-      "amount": 1322.2,
-      "deposit": 0.0,
-      "total_amt": 1322.2,
-      "balance": 0.0,
-      "txn_date": "2025-02-14",
-      "due_date": "2025-02-24",
-      "status": "paid",
-      "bill_id": "201",
-      "doc_number": "RCMF2Y94WH",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Airbnb, Inc",
-      "amount": 495.04,
-      "deposit": 0.0,
-      "total_amt": 495.04,
-      "balance": 0.0,
-      "txn_date": "2025-02-08",
-      "due_date": "2025-02-20",
-      "status": "paid",
-      "bill_id": "192",
-      "doc_number": "RCZXPSYA3N",
       "project_number": null,
       "house": null
     },
@@ -45361,48 +45391,6 @@
       "house": "E"
     },
     {
-      "vendor": "Jack Young",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "txn_date": "2025-05-04",
-      "due_date": "2025-05-04",
-      "status": "paid",
-      "bill_id": "733",
-      "doc_number": "2501-06",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Jack Young",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "txn_date": "2025-01-30",
-      "due_date": "2025-02-03",
-      "status": "paid",
-      "bill_id": "85",
-      "doc_number": "2501-02",
-      "project_number": null,
-      "house": null
-    },
-    {
-      "vendor": "Jack Young",
-      "amount": 1077.0,
-      "deposit": 1500.0,
-      "total_amt": 2577.0,
-      "balance": 0.0,
-      "txn_date": "2025-01-01",
-      "due_date": "2025-01-01",
-      "status": "paid",
-      "bill_id": "25",
-      "doc_number": "2501-01",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Lindsay Franklin",
       "amount": 1540.0,
       "deposit": 0.0,
@@ -46019,20 +46007,6 @@
       "house": null
     },
     {
-      "vendor": "Culture Index, Inc.",
-      "amount": 1447.69,
-      "deposit": 0.0,
-      "total_amt": 1447.69,
-      "balance": 0.0,
-      "txn_date": "2025-03-25",
-      "due_date": "2025-03-26",
-      "status": "paid",
-      "bill_id": "441",
-      "doc_number": "25-2124T",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Gloria Chimal",
       "amount": 250.0,
       "deposit": 0.0,
@@ -46341,303 +46315,6 @@
   ],
   "unmatched_bills": [
     {
-      "bill_id": "6832",
-      "vendor": "Jeremiah Moore",
-      "date": "2026-03-31",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0426-BNC#2"
-    },
-    {
-      "bill_id": "6834",
-      "vendor": "Jeremiah Moore",
-      "date": "2026-05-31",
-      "amount": 1095.0,
-      "deposit": 0.0,
-      "total_amt": 1095.0,
-      "balance": 1095.0,
-      "status": "sent",
-      "doc_number": "0626-BNC#2"
-    },
-    {
-      "bill_id": "6833",
-      "vendor": "Jeremiah Moore",
-      "date": "2026-04-30",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 1500.0,
-      "status": "sent",
-      "doc_number": "0526-BNC#2"
-    },
-    {
-      "bill_id": "5560",
-      "vendor": "Jeremiah Moore",
-      "date": "2026-02-28",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1525-BNC#2"
-    },
-    {
-      "bill_id": "6071",
-      "vendor": "Culture Index, Inc.",
-      "date": "2026-02-16",
-      "amount": 7200.0,
-      "deposit": 0.0,
-      "total_amt": 7200.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "25-6428A"
-    },
-    {
-      "bill_id": "5559",
-      "vendor": "Jeremiah Moore",
-      "date": "2026-01-31",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1425-BNC#2"
-    },
-    {
-      "bill_id": "4859",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-12-31",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1325-BNC#2"
-    },
-    {
-      "bill_id": "4155",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-11-30",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1225-BNC#2"
-    },
-    {
-      "bill_id": "4470",
-      "vendor": "Jack Young",
-      "date": "2025-12-01",
-      "amount": 396.67,
-      "deposit": 0.0,
-      "total_amt": 396.67,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-13"
-    },
-    {
-      "bill_id": "4469",
-      "vendor": "Jack Young",
-      "date": "2025-11-30",
-      "amount": 566.67,
-      "deposit": 0.0,
-      "total_amt": 566.67,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-12"
-    },
-    {
-      "bill_id": "4211",
-      "vendor": "Jack Young",
-      "date": "2025-11-13",
-      "amount": 284.0,
-      "deposit": 0.0,
-      "total_amt": 284.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-12"
-    },
-    {
-      "bill_id": "3615",
-      "vendor": "Jack Young",
-      "date": "2025-11-01",
-      "amount": 907.0,
-      "deposit": 0.0,
-      "total_amt": 907.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-11"
-    },
-    {
-      "bill_id": "3600",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-11-01",
-      "amount": 990.0,
-      "deposit": 0.0,
-      "total_amt": 990.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1125-BNC#1"
-    },
-    {
-      "bill_id": "3601",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-10-31",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1125-BNC#2"
-    },
-    {
-      "bill_id": "3598",
-      "vendor": "Vicki Vandelaar",
-      "date": "2025-10-31",
-      "amount": 1200.0,
-      "deposit": 0.0,
-      "total_amt": 1200.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2560-04"
-    },
-    {
-      "bill_id": "4144",
-      "vendor": "Richard W. Grier",
-      "date": "2025-11-11",
-      "amount": 8000.0,
-      "deposit": 0.0,
-      "total_amt": 8000.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": null
-    },
-    {
-      "bill_id": "3812",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-10-08",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1025-BNC#1"
-    },
-    {
-      "bill_id": "2762",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-08-29",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0925-BNC#1"
-    },
-    {
-      "bill_id": "3307",
-      "vendor": "Jack Young",
-      "date": "2025-09-29",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-10"
-    },
-    {
-      "bill_id": "3218",
-      "vendor": "Vicki Vandelaar",
-      "date": "2025-09-29",
-      "amount": 1800.0,
-      "deposit": 0.0,
-      "total_amt": 1800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2560-03"
-    },
-    {
-      "bill_id": "3213",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-09-29",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "1025-BNC#2"
-    },
-    {
-      "bill_id": "3043",
-      "vendor": "Vicki Vandelaar",
-      "date": "2025-09-02",
-      "amount": 1800.0,
-      "deposit": 0.0,
-      "total_amt": 1800.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2560-02"
-    },
-    {
-      "bill_id": "2763",
-      "vendor": "Jack Young",
-      "date": "2025-08-28",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-09"
-    },
-    {
-      "bill_id": "2761",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-08-29",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0925-BNC#2"
-    },
-    {
-      "bill_id": "2391",
-      "vendor": "Jack Young",
-      "date": "2025-08-05",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-09"
-    },
-    {
-      "bill_id": "2390",
-      "vendor": "Jack Young",
-      "date": "2025-07-05",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-08"
-    },
-    {
-      "bill_id": "2422",
-      "vendor": "Vicki Vandelaar",
-      "date": "2025-08-13",
-      "amount": 1220.0,
-      "deposit": 1000.0,
-      "total_amt": 2220.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2560-01"
-    },
-    {
       "bill_id": "2364",
       "vendor": "Mike Johnson",
       "date": "2025-08-05",
@@ -46647,28 +46324,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "0825-RSD-Cyn"
-    },
-    {
-      "bill_id": "2245",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-07-31",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "Bill 0825-BNC#2"
-    },
-    {
-      "bill_id": "2244",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-07-31",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0825-BNC#1"
     },
     {
       "bill_id": "241",
@@ -46682,28 +46337,6 @@
       "doc_number": "2510-02"
     },
     {
-      "bill_id": "274",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-02-28",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0325-BNC#1"
-    },
-    {
-      "bill_id": "276",
-      "vendor": "Jack Young",
-      "date": "2025-02-28",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-03"
-    },
-    {
       "bill_id": "277",
       "vendor": "Jesus Saenz",
       "date": "2025-02-28",
@@ -46713,17 +46346,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2505-03"
-    },
-    {
-      "bill_id": "275",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-02-28",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0325-BNC#2"
     },
     {
       "bill_id": "278",
@@ -46746,17 +46368,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2511#3-01-Receipt"
-    },
-    {
-      "bill_id": "207",
-      "vendor": "Airbnb, Inc",
-      "date": "2025-02-21",
-      "amount": 2502.32,
-      "deposit": 0.0,
-      "total_amt": 2502.32,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "RC28NDHJYJ"
     },
     {
       "bill_id": "158",
@@ -46878,28 +46489,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2536-03"
-    },
-    {
-      "bill_id": "1790",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-07-01",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0725-BNC#1"
-    },
-    {
-      "bill_id": "1791",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-07-01",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0725-BNC#2"
     },
     {
       "bill_id": "547",
@@ -47111,17 +46700,6 @@
       "doc_number": "2524-02"
     },
     {
-      "bill_id": "1417",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-06-05",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0625-BNC#1"
-    },
-    {
       "bill_id": "1491",
       "vendor": "Lamis Abdo",
       "date": "2025-06-05",
@@ -47177,17 +46755,6 @@
       "doc_number": "PEG-TX"
     },
     {
-      "bill_id": "541",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-04-01",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0425-BNC#2"
-    },
-    {
       "bill_id": "299",
       "vendor": "Andrew Blackston",
       "date": "2025-02-21",
@@ -47199,17 +46766,6 @@
       "doc_number": "02.21.25"
     },
     {
-      "bill_id": "538",
-      "vendor": "Richard W. Grier",
-      "date": "2025-04-04",
-      "amount": 225.83,
-      "deposit": 0.0,
-      "total_amt": 225.83,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "040425"
-    },
-    {
       "bill_id": "93",
       "vendor": "Donna Bias",
       "date": "2025-01-24",
@@ -47219,17 +46775,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "012025-Charlotte"
-    },
-    {
-      "bill_id": "218",
-      "vendor": "Richard W. Grier",
-      "date": "2025-02-06",
-      "amount": 3455.4,
-      "deposit": 0.0,
-      "total_amt": 3455.4,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "020625"
     },
     {
       "bill_id": "156",
@@ -47254,17 +46799,6 @@
       "doc_number": "RSD-MSU03"
     },
     {
-      "bill_id": "540",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-04-01",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0425-BNC#1"
-    },
-    {
       "bill_id": "1439",
       "vendor": "Sparrow Investments",
       "date": "2025-06-05",
@@ -47274,28 +46808,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "0625-RSD-TN"
-    },
-    {
-      "bill_id": "1455",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-06-05",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0625-BNC#2"
-    },
-    {
-      "bill_id": "1415",
-      "vendor": "Jack Young",
-      "date": "2025-06-05",
-      "amount": 1700.0,
-      "deposit": 0.0,
-      "total_amt": 1700.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-07"
     },
     {
       "bill_id": "1416",
@@ -47342,28 +46854,6 @@
       "doc_number": "052025-RSD-Adair"
     },
     {
-      "bill_id": "202",
-      "vendor": "Airbnb, Inc",
-      "date": "2025-02-24",
-      "amount": 247.99,
-      "deposit": 0.0,
-      "total_amt": 247.99,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "RCMC25SZQK"
-    },
-    {
-      "bill_id": "206",
-      "vendor": "Airbnb, Inc",
-      "date": "2025-02-21",
-      "amount": 2617.52,
-      "deposit": 0.0,
-      "total_amt": 2617.52,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "RCJ92HWKDC"
-    },
-    {
       "bill_id": "546",
       "vendor": "Susie Trettel",
       "date": "2025-03-28",
@@ -47373,28 +46863,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2514-02"
-    },
-    {
-      "bill_id": "201",
-      "vendor": "Airbnb, Inc",
-      "date": "2025-02-14",
-      "amount": 1322.2,
-      "deposit": 0.0,
-      "total_amt": 1322.2,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "RCMF2Y94WH"
-    },
-    {
-      "bill_id": "192",
-      "vendor": "Airbnb, Inc",
-      "date": "2025-02-08",
-      "amount": 495.04,
-      "deposit": 0.0,
-      "total_amt": 495.04,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "RCZXPSYA3N"
     },
     {
       "bill_id": "1027",
@@ -47538,39 +47006,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "2507-01"
-    },
-    {
-      "bill_id": "733",
-      "vendor": "Jack Young",
-      "date": "2025-05-04",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-06"
-    },
-    {
-      "bill_id": "85",
-      "vendor": "Jack Young",
-      "date": "2025-01-30",
-      "amount": 1850.0,
-      "deposit": 0.0,
-      "total_amt": 1850.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-02"
-    },
-    {
-      "bill_id": "25",
-      "vendor": "Jack Young",
-      "date": "2025-01-01",
-      "amount": 1077.0,
-      "deposit": 1500.0,
-      "total_amt": 2577.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "2501-01"
     },
     {
       "bill_id": "629",
@@ -47727,50 +47162,6 @@
       "doc_number": "54172"
     },
     {
-      "bill_id": "700",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-05-01",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0525-BNC#2"
-    },
-    {
-      "bill_id": "699",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-05-01",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "0525-BNC#1"
-    },
-    {
-      "bill_id": "83",
-      "vendor": "Jeremiah Moore",
-      "date": "2025-01-30",
-      "amount": 1500.0,
-      "deposit": 0.0,
-      "total_amt": 1500.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "022025-NC#2"
-    },
-    {
-      "bill_id": "82",
-      "vendor": "Hasson &  Ditecha Trent",
-      "date": "2025-01-30",
-      "amount": 1950.0,
-      "deposit": 0.0,
-      "total_amt": 1950.0,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "022025-NC#1"
-    },
-    {
       "bill_id": "354",
       "vendor": "Leana Colegrove",
       "date": "2025-03-14",
@@ -47901,17 +47292,6 @@
       "balance": 0.0,
       "status": "paid",
       "doc_number": "022025-Harrison"
-    },
-    {
-      "bill_id": "441",
-      "vendor": "Culture Index, Inc.",
-      "date": "2025-03-25",
-      "amount": 1447.69,
-      "deposit": 0.0,
-      "total_amt": 1447.69,
-      "balance": 0.0,
-      "status": "paid",
-      "doc_number": "25-2124T"
     },
     {
       "bill_id": "440",
@@ -48092,12 +47472,12 @@
   ],
   "summary": {
     "invoices_total": 952,
-    "invoices_ignored": 58,
-    "invoices_matched": 888,
+    "invoices_ignored": 72,
+    "invoices_matched": 874,
     "invoices_unmatched": 6,
     "bills_total": 1265,
-    "bills_ignored": 7,
-    "bills_matched": 1099,
-    "bills_unmatched": 159
+    "bills_ignored": 30,
+    "bills_matched": 1130,
+    "bills_unmatched": 105
   }
 }
