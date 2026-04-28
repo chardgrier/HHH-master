@@ -48,6 +48,60 @@
       }
     },
     {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532",
+      "salesperson": "Paul",
+      "skip_asana_match": "2532",
+      "start_date": "2025-05-09",
+      "end_date":   "2026-06-01",
+      "_note": "5 houses A-E, manual aggregate. A: 5/9/25-5/8/26 $2500/$2000 (active). B: 5/9/25-8/31/25 $2395/$1615 (terminated, addendum). C: 5/9/25-8/9/25 $2400/$1900 (closed). D: 6/3/25-6/1/26 $2895/$2545 (active). E: 8/29/25-6/1/26 $2645/$1925 (active). Auto-parser was getting house labels and amounts crossed.",
+      "house_starts": [
+        {"prefix": "A", "start_date": "2025-05-09"},
+        {"prefix": "B", "start_date": "2025-05-09"},
+        {"prefix": "C", "start_date": "2025-05-09"},
+        {"prefix": "D", "start_date": "2025-06-03"},
+        {"prefix": "E", "start_date": "2025-08-29"}
+      ],
+      "monthly": {
+        "2025-05": {"ar": 5411,  "ap": 4091, "crew": 0, "reconciled": true},
+        "2025-06": {"ar": 9997,  "ap": 7890, "crew": 0, "reconciled": true},
+        "2025-07": {"ar": 10190, "ap": 8060, "crew": 0, "reconciled": true},
+        "2025-08": {"ar": 8743,  "ap": 6898, "crew": 0, "reconciled": true},
+        "2025-09": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": true},
+        "2025-10": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": true},
+        "2025-11": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": true},
+        "2025-12": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": true},
+        "2026-01": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": true},
+        "2026-02": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": true},
+        "2026-03": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": true},
+        "2026-04": {"ar": 8040,  "ap": 6470, "crew": 0, "reconciled": false},
+        "2026-05": {"ar": 6185,  "ap": 4986, "crew": 0, "reconciled": false},
+        "2026-06": {"ar": 185,   "ap": 149,  "crew": 0, "reconciled": false}
+      }
+    },
+    {
+      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
+      "salesperson": "Paul",
+      "skip_asana_match": "2509",
+      "start_date": "2025-02-17",
+      "end_date":   "2025-10-17",
+      "_note": "2 houses, project closed 10/17/25. House 1: 2/17/25-10/17/25 $2200/$1850. House 2: 3/16/25-6/30/25 $2200/$1850. Manual row because Asana data had a typo (year 2205 instead of 2025).",
+      "house_starts": [
+        {"prefix": "1", "start_date": "2025-02-17"},
+        {"prefix": "2", "start_date": "2025-03-16"}
+      ],
+      "monthly": {
+        "2025-02": {"ar": 943,  "ap": 793,  "crew": 0, "reconciled": true},
+        "2025-03": {"ar": 3335, "ap": 2805, "crew": 0, "reconciled": true},
+        "2025-04": {"ar": 4400, "ap": 3700, "crew": 0, "reconciled": true},
+        "2025-05": {"ar": 4400, "ap": 3700, "crew": 0, "reconciled": true},
+        "2025-06": {"ar": 4400, "ap": 3700, "crew": 0, "reconciled": true},
+        "2025-07": {"ar": 2200, "ap": 1850, "crew": 0, "reconciled": true},
+        "2025-08": {"ar": 2200, "ap": 1850, "crew": 0, "reconciled": true},
+        "2025-09": {"ar": 2200, "ap": 1850, "crew": 0, "reconciled": true},
+        "2025-10": {"ar": 1206, "ap": 1015, "crew": 0, "reconciled": true}
+      }
+    },
+    {
       "name": "Peak Event Services - Woburn, MA - Paul - 2623",
       "salesperson": "Paul",
       "status": "Active",

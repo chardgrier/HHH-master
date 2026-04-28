@@ -700,22 +700,36 @@ def sync():
             # If house_starts is provided, prefer the earliest house move-in
             # as the project's start_date — more accurate than the first month's
             # day-1 (which was a placeholder for partial-month aggregations).
+            # Both start_date and end_date can be overridden explicitly.
             hstarts = item.get("house_starts") or []
-            if hstarts:
+            if item.get("start_date"):
+                project_start = item["start_date"]
+            elif hstarts:
                 try:
                     project_start = min(h["start_date"] for h in hstarts if h.get("start_date"))
                 except (ValueError, KeyError):
                     project_start = keys[0] + "-01"
             else:
                 project_start = keys[0] + "-01"
+            project_end = item.get("end_date") or (keys[-1] + "-28")
+            row_status = item.get("status")
+            if not row_status:
+                # Auto-derive: Closed if end is past, Upcoming if start is future, else Active
+                try:
+                    sd = date.fromisoformat(project_start)
+                    ed = date.fromisoformat(project_end)
+                    today_d = date.today()
+                    row_status = "Closed" if ed < today_d else ("Upcoming" if sd > today_d else "Active")
+                except Exception:
+                    row_status = "Active"
             rows.append({
                 "gid": row_gid,
                 "name": item.get("name"),
                 "salesperson": item.get("salesperson", "Unknown"),
                 "project_number": pnum,
-                "status": item.get("status", "Active"),
+                "status": row_status,
                 "start_date": project_start,
-                "end_date":   keys[-1] + "-28",
+                "end_date":   project_end,
                 "base_ar": monthly_out[keys[-1]]["ar"],
                 "base_ap": monthly_out[keys[-1]]["ap"],
                 "base_crew": monthly_out[keys[-1]]["crew"],
