@@ -714,6 +714,10 @@ def sync():
                 "total_2026": {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)},
                 "source": "manual_row",
                 "editable": True,
+                # Optional per-house move-in dates so the maintenance check-in
+                # logic can fire one event per house even though the financials
+                # are aggregated. Each entry: {"prefix": "A", "start_date": "..."}.
+                "house_starts": item.get("house_starts") or [],
             })
             print(f"  + manual: {item.get('name','')[:55]}")
     # Also add manual skip numbers to the dynamic skip set below

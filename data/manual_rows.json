@@ -53,6 +53,13 @@
       "status": "Active",
       "skip_asana_match": "2623",
       "_note": "Consolidated aggregate row. A/R $47,795 = sum of 5 house construction leases (A $8,100 + B $11,500 + C $8,495 + D $8,500 + E $11,200). A/P $27,450 is user-confirmed aggregate.",
+      "house_starts": [
+        {"prefix": "A", "start_date": "2026-05-01"},
+        {"prefix": "B", "start_date": "2026-05-01"},
+        {"prefix": "C", "start_date": "2026-04-15"},
+        {"prefix": "D", "start_date": "2026-05-01"},
+        {"prefix": "E", "start_date": "2026-05-01"}
+      ],
       "monthly": {
         "2026-04": {"ar": 4531, "ap": 2599, "crew": 30, "reconciled": false},
         "2026-05": {"ar": 47795, "ap": 27450, "crew": 30, "reconciled": false},
