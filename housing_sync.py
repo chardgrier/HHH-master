@@ -59,7 +59,7 @@ SECTION_TO_STATUS = {
     "1214035378782183": "Future",                      # Future Housing Searches
     "1209609481747495": "Pending",                     # Housing Search - pending approval
     "1209643393837736": "Closed",                      # Closed Housing Search
-    "1210747825601111": "Converted to Project",        # Closed Housing Search - Moved to Projects
+    "1210747825601111": "Converted to a Project",      # Closed Housing Search - Moved to Projects
     "1211582188924066": "Closed",                      # Add to Database (housekeeping)
 }
 
@@ -69,7 +69,7 @@ CF_CLOSE_REASON   = "Close Reason"
 CF_PROJECT_NUMBER = "Project Number"
 
 # Status display order (matches sheet scoreboard rows).
-STATUS_ORDER = ["Total Housing Searches", "Converted to Project", "Closed", "Pending", "Still Open", "Future"]
+STATUS_ORDER = ["Total Housing Searches", "Converted to a Project", "Closed", "Pending", "Still Open", "Future"]
 
 MONTH_NAMES = ["January","February","March","April","May","June",
                "July","August","September","October","November","December"]
@@ -449,6 +449,10 @@ def build_records(tasks, form_rows, projects):
             continue
 
         company, location = parse_task_title(t.get("name") or "")
+        # Skip junk tasks whose name doesn't follow the standard pattern —
+        # they pollute the monthly tabs with blank/Unknown rows.
+        if not company:
+            continue
         city, state = parse_city_state(location)
 
         created = parse_iso(t.get("created_at"))
@@ -469,7 +473,7 @@ def build_records(tasks, form_rows, projects):
 
         # Try to link converted searches back to a master-dashboard project
         linked_project = None
-        if status == "Converted to Project":
+        if status == "Converted to a Project":
             p = find_project_for_search(projects, project_number, company, city)
             if p:
                 linked_project = {
@@ -484,7 +488,7 @@ def build_records(tasks, form_rows, projects):
         bucket = created.date().isoformat()[:7] if created else None
 
         # Days open / time-in-status
-        if status in ("Closed", "Converted to Project"):
+        if status in ("Closed", "Converted to a Project"):
             days_open = (completed_on - created.date()).days if completed and created else None
         else:
             days_open = (today - created.date()).days if created else None
@@ -571,7 +575,7 @@ def build_conversion(records, key):
             continue
         by.setdefault(k, {"total": 0, "converted": 0, "closed": 0, "pending": 0, "still_open": 0, "future": 0})
         by[k]["total"] += 1
-        if r["status"] == "Converted to Project":
+        if r["status"] == "Converted to a Project":
             by[k]["converted"] += 1
         elif r["status"] == "Closed":
             by[k]["closed"] += 1
@@ -623,7 +627,7 @@ def build_geo(records):
 
 def build_avg_days_to_close(records):
     """Mean days from creation to outcome, by outcome."""
-    buckets = {"Converted to Project": [], "Closed": []}
+    buckets = {"Converted to a Project": [], "Closed": []}
     for r in records:
         if r["status"] in buckets and r.get("days_open") is not None:
             buckets[r["status"]].append(r["days_open"])
@@ -650,10 +654,15 @@ def write_back_master_sheet(gc, records):
         return
 
     # ─── Monthly tabs ────────────────────────────────────────────────────────
+    # Skip "Future" status from monthly tabs — they're forward-looking and
+    # the existing data validation only allows Still Open/Pending/Closed/
+    # Converted to a Project.
     by_month = {}
     for r in records:
         m = r.get("month_bucket")
         if not m:
+            continue
+        if r.get("status") == "Future":
             continue
         by_month.setdefault(m, []).append(r)
 
@@ -688,6 +697,7 @@ def write_back_master_sheet(gc, records):
             ws.batch_clear([f"A2:J{max(len(body) + 50, 100)}"])
             if body:
                 ws.update(values=body, range_name=f"A2:J{1 + len(body)}", value_input_option="USER_ENTERED")
+                apply_status_styling(ws, body)
             months_written += 1
         except Exception as e:
             print(f"  ! failed writing {tab_name}: {e}")
@@ -729,6 +739,75 @@ def write_back_master_sheet(gc, records):
         print(f"  ✓ wrote scoreboard ({len(months)} months × {len(STATUS_ORDER)} status rows)")
     except Exception as e:
         print(f"  ! failed writing scoreboard: {e}")
+
+
+STATUS_COLORS = {
+    "Closed":                  {"red": 0.95, "green": 0.72, "blue": 0.72},
+    "Converted to a Project":  {"red": 0.72, "green": 0.92, "blue": 0.78},
+    "Pending":                 {"red": 1.00, "green": 0.95, "blue": 0.70},
+    "Still Open":              {"red": 0.78, "green": 0.88, "blue": 1.00},
+}
+ALLOWED_SHEET_STATUSES = ["Still Open", "Pending", "Closed", "Converted to a Project"]
+
+
+def apply_status_styling(ws, body):
+    """Apply data validation + per-row background color to the Status column (I).
+
+    Validation: dropdown limited to the 4 statuses the team uses on the sheet.
+    Coloring: each row's status cell gets a background matching its value, so
+    new rows look the same as the rows that already had conditional formatting
+    on the original sheet.
+    """
+    sheet_id = ws._properties["sheetId"]
+    n_rows = len(body)
+    if n_rows == 0:
+        return
+
+    requests = [{
+        "setDataValidation": {
+            "range": {
+                "sheetId": sheet_id,
+                "startRowIndex": 1,
+                "endRowIndex": n_rows + 1,
+                "startColumnIndex": 8,   # column I (0-indexed)
+                "endColumnIndex": 9,
+            },
+            "rule": {
+                "condition": {
+                    "type": "ONE_OF_LIST",
+                    "values": [{"userEnteredValue": v} for v in ALLOWED_SHEET_STATUSES],
+                },
+                "showCustomUi": True,
+                "strict": True,
+            },
+        }
+    }]
+
+    # Per-row background color based on the status value in column I (index 8).
+    for i, row in enumerate(body):
+        status = row[8] if len(row) > 8 else ""
+        color = STATUS_COLORS.get(status)
+        if not color:
+            continue
+        requests.append({
+            "repeatCell": {
+                "range": {
+                    "sheetId": sheet_id,
+                    "startRowIndex": i + 1,    # body starts at sheet row 2
+                    "endRowIndex": i + 2,
+                    "startColumnIndex": 8,
+                    "endColumnIndex": 9,
+                },
+                "cell": {"userEnteredFormat": {"backgroundColor": color}},
+                "fields": "userEnteredFormat.backgroundColor",
+            }
+        })
+
+    # One round-trip per tab covering validation + all colors.
+    try:
+        ws.spreadsheet.batch_update({"requests": requests})
+    except Exception as e:
+        print(f"  ! styling failed for {ws.title}: {e}")
 
 
 def _short_date(iso_str):
@@ -815,7 +894,7 @@ def main():
             "all": len(records),
             "still_open": sum(1 for r in records if r["status"] == "Still Open"),
             "pending":    sum(1 for r in records if r["status"] == "Pending"),
-            "converted":  sum(1 for r in records if r["status"] == "Converted to Project"),
+            "converted":  sum(1 for r in records if r["status"] == "Converted to a Project"),
             "closed":     sum(1 for r in records if r["status"] == "Closed"),
             "future":     sum(1 for r in records if r["status"] == "Future"),
         },

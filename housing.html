@@ -156,7 +156,7 @@
     <button class="filter-btn" onclick="setFilter('status','Still Open',this)">Still Open</button>
     <button class="filter-btn" onclick="setFilter('status','Pending',this)">Pending</button>
     <button class="filter-btn" onclick="setFilter('status','Future',this)">Future</button>
-    <button class="filter-btn" onclick="setFilter('status','Converted to Project',this)">Converted</button>
+    <button class="filter-btn" onclick="setFilter('status','Converted to a Project',this)">Converted</button>
     <button class="filter-btn" onclick="setFilter('status','Closed',this)">Closed</button>
     &nbsp;&nbsp;
     <label>Salesperson:</label>
@@ -234,7 +234,7 @@ let FILTERS = { status: 'All', sp: 'All', rep: 'All', q: '' };
 const STATUS_BADGE_CLASS = {
   'Still Open': 'StillOpen',
   'Pending': 'Pending',
-  'Converted to Project': 'Converted',
+  'Converted to a Project': 'Converted',
   'Closed': 'Closed',
   'Future': 'Future',
 };
@@ -293,7 +293,7 @@ function filtered() {
     }
     return true;
   }).sort((a, b) => {
-    const order = {'Still Open': 0, 'Pending': 1, 'Future': 2, 'Converted to Project': 3, 'Closed': 4};
+    const order = {'Still Open': 0, 'Pending': 1, 'Future': 2, 'Converted to a Project': 3, 'Closed': 4};
     if (order[a.status] !== order[b.status]) return order[a.status] - order[b.status];
     return (b.days_open || 0) - (a.days_open || 0);
   });
@@ -342,7 +342,7 @@ function renderScoreboard() {
   months.forEach(m => html += `<th>${labelOf(m)}</th>`);
   html += '<th class="total-col">Total</th></tr></thead><tbody>';
 
-  ['Total Housing Searches','Converted to Project','Closed','Pending','Still Open','Future'].forEach(s => {
+  ['Total Housing Searches','Converted to a Project','Closed','Pending','Still Open','Future'].forEach(s => {
     const isTotal = s === 'Total Housing Searches';
     html += `<tr${isTotal ? ' class="total-row"' : ''}><td>${s}</td>`;
     months.forEach(m => {
@@ -461,7 +461,7 @@ function renderGeo() {
 
 function renderTTC() {
   const t = DATA.avg_days_to_close || {};
-  const conv = t['Converted to Project'];
+  const conv = t['Converted to a Project'];
   const closed = t['Closed'];
   document.getElementById('ttc').innerHTML = `
     <div style="display:flex;gap:14px;flex-wrap:wrap">
