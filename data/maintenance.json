@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T21:16:21.802886",
+  "generated_at": "2026-04-28T21:55:07.185357",
   "projects": [
     {
       "name": "Gray Construction - Bristol, TN - Paul - 2592 [House B]",
@@ -452,7 +452,7 @@
     {
       "name": "Peak Event Services - Woburn, MA - Paul - 2623",
       "status": "Active",
-      "start_date": "2026-04-01",
+      "start_date": "2026-04-15",
       "end_date": "2026-10-28",
       "project_number": "2623"
     },
@@ -660,7 +660,7 @@
   "checkins": [
     {
       "project": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617",
-      "house": "F",
+      "house": null,
       "start_date": "2026-04-30",
       "date": "2026-04-28",
       "days": 0,
@@ -677,6 +677,16 @@
       "salesperson": "Zeke",
       "gid": "1214149488100030",
       "project_number": "2625"
+    },
+    {
+      "project": "Peak Event Services - Woburn, MA - Paul - 2623",
+      "house": "A,B,D,E",
+      "start_date": "2026-05-01",
+      "date": "2026-04-29",
+      "days": 1,
+      "salesperson": "Paul",
+      "gid": "1213483695669834",
+      "project_number": "2623"
     },
     {
       "project": "Power Design - Starbase, TX -Zeke - 2614",
