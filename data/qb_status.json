@@ -1,7 +1,203 @@
 {
-  "generated_at": "2026-04-28T08:16:20.569590",
+  "generated_at": "2026-04-28T21:15:03.415353",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
+    "Heycon, LLC - Charlotte, NC - Zeke -2625": {
+      "2026-03": [
+        {
+          "status": "overdue",
+          "amount": 0.0,
+          "deposit": 8325.0,
+          "total_amt": 8325.0,
+          "balance": 75.0,
+          "invoice_id": "6713",
+          "doc_number": "2625-Sec Dep",
+          "due_date": "2026-03-17",
+          "project_number": "2625",
+          "house": "S"
+        },
+        {
+          "status": "paid",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 0.0,
+          "invoice_id": "6714",
+          "doc_number": "2625-01",
+          "due_date": "2026-03-17",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "status": "sent",
+          "amount": 22300.0,
+          "deposit": 0.0,
+          "total_amt": 22300.0,
+          "balance": 22300.0,
+          "invoice_id": "7019",
+          "doc_number": "2625-04",
+          "due_date": "2026-06-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 25945.0,
+          "deposit": 0.0,
+          "total_amt": 25945.0,
+          "balance": 25945.0,
+          "invoice_id": "7018",
+          "doc_number": "2625-03",
+          "due_date": "2026-05-20",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 0.0,
+          "invoice_id": "7017",
+          "doc_number": "2625-02",
+          "due_date": "2026-04-20",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2027-03": [
+        {
+          "status": "sent",
+          "amount": 5550.0,
+          "deposit": 0.0,
+          "total_amt": 5550.0,
+          "balance": 5550.0,
+          "invoice_id": "7028",
+          "doc_number": "2625-13",
+          "due_date": "2027-03-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2027-02": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7027",
+          "doc_number": "2625-12",
+          "due_date": "2027-02-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2027-01": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7026",
+          "doc_number": "2625-11",
+          "due_date": "2027-01-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-12": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7025",
+          "doc_number": "2625-10",
+          "due_date": "2026-12-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-11": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7024",
+          "doc_number": "2625-09",
+          "due_date": "2026-11-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-10": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7023",
+          "doc_number": "2625-08",
+          "due_date": "2026-10-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-09": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7022",
+          "doc_number": "2625-07",
+          "due_date": "2026-09-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-08": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7021",
+          "doc_number": "2625-06",
+          "due_date": "2026-08-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "status": "sent",
+          "amount": 16650.0,
+          "deposit": 0.0,
+          "total_amt": 16650.0,
+          "balance": 16650.0,
+          "invoice_id": "7020",
+          "doc_number": "2625-05",
+          "due_date": "2026-07-16",
+          "project_number": "2625",
+          "house": null
+        }
+      ]
+    },
     "Orion Marine - Sabine Pass, TX - Paul - 2558": {
       "2026-03": [
         {
@@ -3314,202 +3510,6 @@
           "doc_number": "2582-01",
           "due_date": "2025-10-09",
           "project_number": "2582",
-          "house": null
-        }
-      ]
-    },
-    "Heycon, LLC - Charlotte, NC - Zeke -2625": {
-      "2026-04": [
-        {
-          "status": "paid",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 0.0,
-          "invoice_id": "7017",
-          "doc_number": "2625-02",
-          "due_date": "2026-04-20",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2027-03": [
-        {
-          "status": "sent",
-          "amount": 5550.0,
-          "deposit": 0.0,
-          "total_amt": 5550.0,
-          "balance": 5550.0,
-          "invoice_id": "7028",
-          "doc_number": "2625-13",
-          "due_date": "2027-03-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2027-02": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7027",
-          "doc_number": "2625-12",
-          "due_date": "2027-02-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2027-01": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7026",
-          "doc_number": "2625-11",
-          "due_date": "2027-01-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-12": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7025",
-          "doc_number": "2625-10",
-          "due_date": "2026-12-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-11": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7024",
-          "doc_number": "2625-09",
-          "due_date": "2026-11-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-10": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7023",
-          "doc_number": "2625-08",
-          "due_date": "2026-10-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-09": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7022",
-          "doc_number": "2625-07",
-          "due_date": "2026-09-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7021",
-          "doc_number": "2625-06",
-          "due_date": "2026-08-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7020",
-          "doc_number": "2625-05",
-          "due_date": "2026-07-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7019",
-          "doc_number": "2625-04",
-          "due_date": "2026-06-16",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 16650.0,
-          "invoice_id": "7018",
-          "doc_number": "2625-03",
-          "due_date": "2026-05-20",
-          "project_number": "2625",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "overdue",
-          "amount": 0.0,
-          "deposit": 8325.0,
-          "total_amt": 8325.0,
-          "balance": 75.0,
-          "invoice_id": "6713",
-          "doc_number": "2625-Sec Dep",
-          "due_date": "2026-03-17",
-          "project_number": "2625",
-          "house": "S"
-        },
-        {
-          "status": "paid",
-          "amount": 16650.0,
-          "deposit": 0.0,
-          "total_amt": 16650.0,
-          "balance": 0.0,
-          "invoice_id": "6714",
-          "doc_number": "2625-01",
-          "due_date": "2026-03-17",
-          "project_number": "2625",
           "house": null
         }
       ]

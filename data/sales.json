@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T08:17:20.819820",
+  "generated_at": "2026-04-28T21:16:21.802886",
   "months": [
     "2025-08",
     "2025-09",
@@ -3672,52 +3672,52 @@
           "net_gp": 1736.0
         },
         "2026-05": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-06": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-07": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-08": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-09": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-10": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-11": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-12": {
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         }
       }
     },
@@ -5284,11 +5284,11 @@
           "nepq": 2.5
         },
         "Apr 2026 W5": {
-          "calls": 0.0,
+          "calls": 27.0,
           "meetings": 0.0,
           "quotes": 0.0,
           "deals": 0.0,
-          "nepq": 0.0
+          "nepq": 0.5
         }
       },
       "Zeke": {
@@ -5406,11 +5406,11 @@
     "monthly": {
       "Paul": {
         "2026-04": {
-          "calls": 318.0,
+          "calls": 345.0,
           "meetings": 3.0,
           "quotes": 11.0,
           "deals": 3.0,
-          "nepq": 10.75
+          "nepq": 11.25
         },
         "2026-05": {
           "calls": 0.0,
@@ -5565,6 +5565,590 @@
     }
   },
   "ar_aging": {
+    "Zeke": {
+      "current": {
+        "count": 61,
+        "amount": 533221.0,
+        "invoices": [
+          {
+            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+            "invoice_id": "7601",
+            "doc_number": "2537-E12",
+            "amount": 3000.0,
+            "days_overdue": -3,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+            "invoice_id": "7600",
+            "doc_number": "2537-IKL5",
+            "amount": 16200.0,
+            "days_overdue": -3,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+            "invoice_id": "7599",
+            "doc_number": "2537-FGH12",
+            "amount": 13750.0,
+            "days_overdue": -3,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+            "invoice_id": "7598",
+            "doc_number": "2537-12",
+            "amount": 22000.0,
+            "days_overdue": -3,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "Quality Walls and Ceiling - Lexington KY - Zeke - 2527",
+            "invoice_id": "7096",
+            "doc_number": "2527-14",
+            "amount": 3600.0,
+            "days_overdue": -3,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
+            "invoice_id": "6416",
+            "doc_number": "2621-02",
+            "amount": 11571.0,
+            "days_overdue": -3,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
+            "invoice_id": "7092",
+            "doc_number": "2591-05",
+            "amount": 6750.0,
+            "days_overdue": -3,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7496",
+            "doc_number": "2631-02",
+            "amount": 3200.0,
+            "days_overdue": -8,
+            "due_date": "2026-05-06"
+          },
+          {
+            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
+            "invoice_id": "7429",
+            "doc_number": "2621-B02",
+            "amount": 11571.0,
+            "days_overdue": -15,
+            "due_date": "2026-05-13"
+          },
+          {
+            "project": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
+            "invoice_id": "7439",
+            "doc_number": "2594-03",
+            "amount": 7000.0,
+            "days_overdue": -19,
+            "due_date": "2026-05-17"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7018",
+            "doc_number": "2625-03",
+            "amount": 25945.0,
+            "days_overdue": -22,
+            "due_date": "2026-05-20"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "6317",
+            "doc_number": "2614-04",
+            "amount": 12000.0,
+            "days_overdue": -23,
+            "due_date": "2026-05-21"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7550",
+            "doc_number": "2614-B02",
+            "amount": 4800.0,
+            "days_overdue": -29,
+            "due_date": "2026-05-27"
+          },
+          {
+            "project": "Power Design - Charlotte, NC - Zeke - 2633",
+            "invoice_id": "7230",
+            "doc_number": "2633-03",
+            "amount": 3300.0,
+            "days_overdue": -34,
+            "due_date": "2026-06-01"
+          },
+          {
+            "project": "Quality Walls and Ceiling - Lexington KY - Zeke - 2527",
+            "invoice_id": "7495",
+            "doc_number": "2527-15",
+            "amount": 3600.0,
+            "days_overdue": -34,
+            "due_date": "2026-06-01"
+          },
+          {
+            "project": "Power Design - Tucson, AZ - Zeke - 2615",
+            "invoice_id": "7461",
+            "doc_number": "2615-03",
+            "amount": 4600.0,
+            "days_overdue": -34,
+            "due_date": "2026-06-01"
+          },
+          {
+            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
+            "invoice_id": "6417",
+            "doc_number": "2621-03",
+            "amount": 11571.0,
+            "days_overdue": -34,
+            "due_date": "2026-06-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7497",
+            "doc_number": "2631-03",
+            "amount": 3200.0,
+            "days_overdue": -39,
+            "due_date": "2026-06-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7019",
+            "doc_number": "2625-04",
+            "amount": 22300.0,
+            "days_overdue": -49,
+            "due_date": "2026-06-16"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "6318",
+            "doc_number": "2614-05",
+            "amount": 12000.0,
+            "days_overdue": -54,
+            "due_date": "2026-06-21"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7551",
+            "doc_number": "2614-B03",
+            "amount": 4800.0,
+            "days_overdue": -60,
+            "due_date": "2026-06-27"
+          },
+          {
+            "project": "Power Design - Charlotte, NC - Zeke - 2633",
+            "invoice_id": "7231",
+            "doc_number": "2633-04",
+            "amount": 3300.0,
+            "days_overdue": -64,
+            "due_date": "2026-07-01"
+          },
+          {
+            "project": "Power Design - Tucson, AZ - Zeke - 2615",
+            "invoice_id": "7462",
+            "doc_number": "2615-04",
+            "amount": 4600.0,
+            "days_overdue": -64,
+            "due_date": "2026-07-01"
+          },
+          {
+            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
+            "invoice_id": "6418",
+            "doc_number": "2621-04",
+            "amount": 11571.0,
+            "days_overdue": -64,
+            "due_date": "2026-07-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7498",
+            "doc_number": "2631-04",
+            "amount": 3200.0,
+            "days_overdue": -69,
+            "due_date": "2026-07-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7020",
+            "doc_number": "2625-05",
+            "amount": 16650.0,
+            "days_overdue": -79,
+            "due_date": "2026-07-16"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "6319",
+            "doc_number": "2614-06",
+            "amount": 12000.0,
+            "days_overdue": -84,
+            "due_date": "2026-07-21"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7552",
+            "doc_number": "2614-B04",
+            "amount": 4800.0,
+            "days_overdue": -90,
+            "due_date": "2026-07-27"
+          },
+          {
+            "project": "Power Design - Charlotte, NC - Zeke - 2633",
+            "invoice_id": "7232",
+            "doc_number": "2633-05",
+            "amount": 3300.0,
+            "days_overdue": -95,
+            "due_date": "2026-08-01"
+          },
+          {
+            "project": "Power Design - Tucson, AZ - Zeke - 2615",
+            "invoice_id": "7463",
+            "doc_number": "2615-05",
+            "amount": 4600.0,
+            "days_overdue": -95,
+            "due_date": "2026-08-01"
+          },
+          {
+            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
+            "invoice_id": "6419",
+            "doc_number": "2621-05",
+            "amount": 11571.0,
+            "days_overdue": -95,
+            "due_date": "2026-08-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7499",
+            "doc_number": "2631-05",
+            "amount": 3200.0,
+            "days_overdue": -100,
+            "due_date": "2026-08-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7021",
+            "doc_number": "2625-06",
+            "amount": 16650.0,
+            "days_overdue": -110,
+            "due_date": "2026-08-16"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "6320",
+            "doc_number": "2614-07",
+            "amount": 12000.0,
+            "days_overdue": -115,
+            "due_date": "2026-08-21"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7553",
+            "doc_number": "2614-B05",
+            "amount": 4800.0,
+            "days_overdue": -121,
+            "due_date": "2026-08-27"
+          },
+          {
+            "project": "Power Design - Charlotte, NC - Zeke - 2633",
+            "invoice_id": "7233",
+            "doc_number": "2633-06",
+            "amount": 3300.0,
+            "days_overdue": -126,
+            "due_date": "2026-09-01"
+          },
+          {
+            "project": "Power Design - Tucson, AZ - Zeke - 2615",
+            "invoice_id": "7464",
+            "doc_number": "2615-06",
+            "amount": 4600.0,
+            "days_overdue": -126,
+            "due_date": "2026-09-01"
+          },
+          {
+            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
+            "invoice_id": "6420",
+            "doc_number": "2621-06",
+            "amount": 11571.0,
+            "days_overdue": -126,
+            "due_date": "2026-09-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7500",
+            "doc_number": "2631-06",
+            "amount": 3200.0,
+            "days_overdue": -131,
+            "due_date": "2026-09-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7022",
+            "doc_number": "2625-07",
+            "amount": 16650.0,
+            "days_overdue": -141,
+            "due_date": "2026-09-16"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "6321",
+            "doc_number": "2614-08",
+            "amount": 12000.0,
+            "days_overdue": -146,
+            "due_date": "2026-09-21"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7554",
+            "doc_number": "2614-B06",
+            "amount": 4800.0,
+            "days_overdue": -152,
+            "due_date": "2026-09-27"
+          },
+          {
+            "project": "Power Design - Charlotte, NC - Zeke - 2633",
+            "invoice_id": "7234",
+            "doc_number": "2633-07",
+            "amount": 3300.0,
+            "days_overdue": -156,
+            "due_date": "2026-10-01"
+          },
+          {
+            "project": "Power Design - Tucson, AZ - Zeke - 2615",
+            "invoice_id": "7465",
+            "doc_number": "2615-07",
+            "amount": 4600.0,
+            "days_overdue": -156,
+            "due_date": "2026-10-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7501",
+            "doc_number": "2631-07",
+            "amount": 3200.0,
+            "days_overdue": -161,
+            "due_date": "2026-10-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7023",
+            "doc_number": "2625-08",
+            "amount": 16650.0,
+            "days_overdue": -171,
+            "due_date": "2026-10-16"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "6322",
+            "doc_number": "2614-09",
+            "amount": 12000.0,
+            "days_overdue": -176,
+            "due_date": "2026-10-21"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7555",
+            "doc_number": "2614-B07",
+            "amount": 4800.0,
+            "days_overdue": -182,
+            "due_date": "2026-10-27"
+          },
+          {
+            "project": "Power Design - Charlotte, NC - Zeke - 2633",
+            "invoice_id": "7235",
+            "doc_number": "2633-08",
+            "amount": 3300.0,
+            "days_overdue": -187,
+            "due_date": "2026-11-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7502",
+            "doc_number": "2631-08",
+            "amount": 3200.0,
+            "days_overdue": -192,
+            "due_date": "2026-11-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7024",
+            "doc_number": "2625-09",
+            "amount": 16650.0,
+            "days_overdue": -202,
+            "due_date": "2026-11-16"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "6323",
+            "doc_number": "2614-10",
+            "amount": 16400.0,
+            "days_overdue": -207,
+            "due_date": "2026-11-21"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7556",
+            "doc_number": "2614-B08",
+            "amount": 5600.0,
+            "days_overdue": -213,
+            "due_date": "2026-11-27"
+          },
+          {
+            "project": "Power Design - Charlotte, NC - Zeke - 2633",
+            "invoice_id": "7236",
+            "doc_number": "2633-09",
+            "amount": 3300.0,
+            "days_overdue": -217,
+            "due_date": "2026-12-01"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7503",
+            "doc_number": "2631-09",
+            "amount": 3200.0,
+            "days_overdue": -222,
+            "due_date": "2026-12-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7025",
+            "doc_number": "2625-10",
+            "amount": 16650.0,
+            "days_overdue": -232,
+            "due_date": "2026-12-16"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7504",
+            "doc_number": "2631-10",
+            "amount": 3200.0,
+            "days_overdue": -253,
+            "due_date": "2027-01-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7026",
+            "doc_number": "2625-11",
+            "amount": 16650.0,
+            "days_overdue": -263,
+            "due_date": "2027-01-16"
+          },
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7505",
+            "doc_number": "2631-11",
+            "amount": 3200.0,
+            "days_overdue": -284,
+            "due_date": "2027-02-06"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7027",
+            "doc_number": "2625-12",
+            "amount": 16650.0,
+            "days_overdue": -294,
+            "due_date": "2027-02-16"
+          },
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "7028",
+            "doc_number": "2625-13",
+            "amount": 5550.0,
+            "days_overdue": -322,
+            "due_date": "2027-03-16"
+          }
+        ]
+      },
+      "1-30": {
+        "count": 5,
+        "amount": 37684.33,
+        "invoices": [
+          {
+            "project": "Power Design - Savannah, GA - Zeke - 2631",
+            "invoice_id": "7080",
+            "doc_number": "2631-01",
+            "amount": 4800.0,
+            "days_overdue": 26,
+            "due_date": "2026-04-02"
+          },
+          {
+            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+            "invoice_id": "5417",
+            "doc_number": "2537-IKL4",
+            "amount": 7083.33,
+            "days_overdue": 15,
+            "due_date": "2026-04-13"
+          },
+          {
+            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
+            "invoice_id": "7428",
+            "doc_number": "2621-B01",
+            "amount": 13601.0,
+            "days_overdue": 12,
+            "due_date": "2026-04-16"
+          },
+          {
+            "project": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
+            "invoice_id": "7438",
+            "doc_number": "2594-02",
+            "amount": 5000.0,
+            "days_overdue": 11,
+            "due_date": "2026-04-17"
+          },
+          {
+            "project": "Power Design - Starbase, TX -Zeke - 2614",
+            "invoice_id": "7511",
+            "doc_number": "2614-B01",
+            "amount": 7200.0,
+            "days_overdue": 8,
+            "due_date": "2026-04-20"
+          }
+        ]
+      },
+      "31-60": {
+        "count": 1,
+        "amount": 75.0,
+        "invoices": [
+          {
+            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
+            "invoice_id": "6713",
+            "doc_number": "2625-Sec Dep",
+            "amount": 75.0,
+            "days_overdue": 42,
+            "due_date": "2026-03-17"
+          }
+        ]
+      },
+      "61-90": {
+        "count": 1,
+        "amount": 800.0,
+        "invoices": [
+          {
+            "project": "Miami Marine Services - Las Vegas, NV -Zeke -2612",
+            "invoice_id": "6010",
+            "doc_number": "2612-01",
+            "amount": 800.0,
+            "days_overdue": 75,
+            "due_date": "2026-02-12"
+          }
+        ]
+      },
+      "90+": {
+        "count": 1,
+        "amount": 6000.0,
+        "invoices": [
+          {
+            "project": "XpertBuild - Fremont, CA - Zeke - 2564",
+            "invoice_id": "2585",
+            "doc_number": "2564-01",
+            "amount": 6000.0,
+            "days_overdue": 242,
+            "due_date": "2025-08-29"
+          }
+        ]
+      }
+    },
     "Paul": {
       "current": {
         "count": 112,
@@ -6665,590 +7249,6 @@
         "count": 0,
         "amount": 0.0,
         "invoices": []
-      }
-    },
-    "Zeke": {
-      "current": {
-        "count": 61,
-        "amount": 518276.0,
-        "invoices": [
-          {
-            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
-            "invoice_id": "7601",
-            "doc_number": "2537-E12",
-            "amount": 3000.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
-            "invoice_id": "7600",
-            "doc_number": "2537-IKL5",
-            "amount": 16200.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
-            "invoice_id": "7599",
-            "doc_number": "2537-FGH12",
-            "amount": 13750.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
-            "invoice_id": "7598",
-            "doc_number": "2537-12",
-            "amount": 22000.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "Quality Walls and Ceiling - Lexington KY - Zeke - 2527",
-            "invoice_id": "7096",
-            "doc_number": "2527-14",
-            "amount": 3600.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
-            "invoice_id": "6416",
-            "doc_number": "2621-02",
-            "amount": 11571.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
-            "invoice_id": "7092",
-            "doc_number": "2591-05",
-            "amount": 6750.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7496",
-            "doc_number": "2631-02",
-            "amount": 3200.0,
-            "days_overdue": -8,
-            "due_date": "2026-05-06"
-          },
-          {
-            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
-            "invoice_id": "7429",
-            "doc_number": "2621-B02",
-            "amount": 11571.0,
-            "days_overdue": -15,
-            "due_date": "2026-05-13"
-          },
-          {
-            "project": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
-            "invoice_id": "7439",
-            "doc_number": "2594-03",
-            "amount": 7000.0,
-            "days_overdue": -19,
-            "due_date": "2026-05-17"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7018",
-            "doc_number": "2625-03",
-            "amount": 16650.0,
-            "days_overdue": -22,
-            "due_date": "2026-05-20"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "6317",
-            "doc_number": "2614-04",
-            "amount": 12000.0,
-            "days_overdue": -23,
-            "due_date": "2026-05-21"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7550",
-            "doc_number": "2614-B02",
-            "amount": 4800.0,
-            "days_overdue": -29,
-            "due_date": "2026-05-27"
-          },
-          {
-            "project": "Power Design - Charlotte, NC - Zeke - 2633",
-            "invoice_id": "7230",
-            "doc_number": "2633-03",
-            "amount": 3300.0,
-            "days_overdue": -34,
-            "due_date": "2026-06-01"
-          },
-          {
-            "project": "Quality Walls and Ceiling - Lexington KY - Zeke - 2527",
-            "invoice_id": "7495",
-            "doc_number": "2527-15",
-            "amount": 3600.0,
-            "days_overdue": -34,
-            "due_date": "2026-06-01"
-          },
-          {
-            "project": "Power Design - Tucson, AZ - Zeke - 2615",
-            "invoice_id": "7461",
-            "doc_number": "2615-03",
-            "amount": 4600.0,
-            "days_overdue": -34,
-            "due_date": "2026-06-01"
-          },
-          {
-            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
-            "invoice_id": "6417",
-            "doc_number": "2621-03",
-            "amount": 11571.0,
-            "days_overdue": -34,
-            "due_date": "2026-06-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7497",
-            "doc_number": "2631-03",
-            "amount": 3200.0,
-            "days_overdue": -39,
-            "due_date": "2026-06-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7019",
-            "doc_number": "2625-04",
-            "amount": 16650.0,
-            "days_overdue": -49,
-            "due_date": "2026-06-16"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "6318",
-            "doc_number": "2614-05",
-            "amount": 12000.0,
-            "days_overdue": -54,
-            "due_date": "2026-06-21"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7551",
-            "doc_number": "2614-B03",
-            "amount": 4800.0,
-            "days_overdue": -60,
-            "due_date": "2026-06-27"
-          },
-          {
-            "project": "Power Design - Charlotte, NC - Zeke - 2633",
-            "invoice_id": "7231",
-            "doc_number": "2633-04",
-            "amount": 3300.0,
-            "days_overdue": -64,
-            "due_date": "2026-07-01"
-          },
-          {
-            "project": "Power Design - Tucson, AZ - Zeke - 2615",
-            "invoice_id": "7462",
-            "doc_number": "2615-04",
-            "amount": 4600.0,
-            "days_overdue": -64,
-            "due_date": "2026-07-01"
-          },
-          {
-            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
-            "invoice_id": "6418",
-            "doc_number": "2621-04",
-            "amount": 11571.0,
-            "days_overdue": -64,
-            "due_date": "2026-07-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7498",
-            "doc_number": "2631-04",
-            "amount": 3200.0,
-            "days_overdue": -69,
-            "due_date": "2026-07-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7020",
-            "doc_number": "2625-05",
-            "amount": 16650.0,
-            "days_overdue": -79,
-            "due_date": "2026-07-16"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "6319",
-            "doc_number": "2614-06",
-            "amount": 12000.0,
-            "days_overdue": -84,
-            "due_date": "2026-07-21"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7552",
-            "doc_number": "2614-B04",
-            "amount": 4800.0,
-            "days_overdue": -90,
-            "due_date": "2026-07-27"
-          },
-          {
-            "project": "Power Design - Charlotte, NC - Zeke - 2633",
-            "invoice_id": "7232",
-            "doc_number": "2633-05",
-            "amount": 3300.0,
-            "days_overdue": -95,
-            "due_date": "2026-08-01"
-          },
-          {
-            "project": "Power Design - Tucson, AZ - Zeke - 2615",
-            "invoice_id": "7463",
-            "doc_number": "2615-05",
-            "amount": 4600.0,
-            "days_overdue": -95,
-            "due_date": "2026-08-01"
-          },
-          {
-            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
-            "invoice_id": "6419",
-            "doc_number": "2621-05",
-            "amount": 11571.0,
-            "days_overdue": -95,
-            "due_date": "2026-08-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7499",
-            "doc_number": "2631-05",
-            "amount": 3200.0,
-            "days_overdue": -100,
-            "due_date": "2026-08-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7021",
-            "doc_number": "2625-06",
-            "amount": 16650.0,
-            "days_overdue": -110,
-            "due_date": "2026-08-16"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "6320",
-            "doc_number": "2614-07",
-            "amount": 12000.0,
-            "days_overdue": -115,
-            "due_date": "2026-08-21"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7553",
-            "doc_number": "2614-B05",
-            "amount": 4800.0,
-            "days_overdue": -121,
-            "due_date": "2026-08-27"
-          },
-          {
-            "project": "Power Design - Charlotte, NC - Zeke - 2633",
-            "invoice_id": "7233",
-            "doc_number": "2633-06",
-            "amount": 3300.0,
-            "days_overdue": -126,
-            "due_date": "2026-09-01"
-          },
-          {
-            "project": "Power Design - Tucson, AZ - Zeke - 2615",
-            "invoice_id": "7464",
-            "doc_number": "2615-06",
-            "amount": 4600.0,
-            "days_overdue": -126,
-            "due_date": "2026-09-01"
-          },
-          {
-            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House A]",
-            "invoice_id": "6420",
-            "doc_number": "2621-06",
-            "amount": 11571.0,
-            "days_overdue": -126,
-            "due_date": "2026-09-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7500",
-            "doc_number": "2631-06",
-            "amount": 3200.0,
-            "days_overdue": -131,
-            "due_date": "2026-09-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7022",
-            "doc_number": "2625-07",
-            "amount": 16650.0,
-            "days_overdue": -141,
-            "due_date": "2026-09-16"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "6321",
-            "doc_number": "2614-08",
-            "amount": 12000.0,
-            "days_overdue": -146,
-            "due_date": "2026-09-21"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7554",
-            "doc_number": "2614-B06",
-            "amount": 4800.0,
-            "days_overdue": -152,
-            "due_date": "2026-09-27"
-          },
-          {
-            "project": "Power Design - Charlotte, NC - Zeke - 2633",
-            "invoice_id": "7234",
-            "doc_number": "2633-07",
-            "amount": 3300.0,
-            "days_overdue": -156,
-            "due_date": "2026-10-01"
-          },
-          {
-            "project": "Power Design - Tucson, AZ - Zeke - 2615",
-            "invoice_id": "7465",
-            "doc_number": "2615-07",
-            "amount": 4600.0,
-            "days_overdue": -156,
-            "due_date": "2026-10-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7501",
-            "doc_number": "2631-07",
-            "amount": 3200.0,
-            "days_overdue": -161,
-            "due_date": "2026-10-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7023",
-            "doc_number": "2625-08",
-            "amount": 16650.0,
-            "days_overdue": -171,
-            "due_date": "2026-10-16"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "6322",
-            "doc_number": "2614-09",
-            "amount": 12000.0,
-            "days_overdue": -176,
-            "due_date": "2026-10-21"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7555",
-            "doc_number": "2614-B07",
-            "amount": 4800.0,
-            "days_overdue": -182,
-            "due_date": "2026-10-27"
-          },
-          {
-            "project": "Power Design - Charlotte, NC - Zeke - 2633",
-            "invoice_id": "7235",
-            "doc_number": "2633-08",
-            "amount": 3300.0,
-            "days_overdue": -187,
-            "due_date": "2026-11-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7502",
-            "doc_number": "2631-08",
-            "amount": 3200.0,
-            "days_overdue": -192,
-            "due_date": "2026-11-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7024",
-            "doc_number": "2625-09",
-            "amount": 16650.0,
-            "days_overdue": -202,
-            "due_date": "2026-11-16"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "6323",
-            "doc_number": "2614-10",
-            "amount": 16400.0,
-            "days_overdue": -207,
-            "due_date": "2026-11-21"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7556",
-            "doc_number": "2614-B08",
-            "amount": 5600.0,
-            "days_overdue": -213,
-            "due_date": "2026-11-27"
-          },
-          {
-            "project": "Power Design - Charlotte, NC - Zeke - 2633",
-            "invoice_id": "7236",
-            "doc_number": "2633-09",
-            "amount": 3300.0,
-            "days_overdue": -217,
-            "due_date": "2026-12-01"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7503",
-            "doc_number": "2631-09",
-            "amount": 3200.0,
-            "days_overdue": -222,
-            "due_date": "2026-12-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7025",
-            "doc_number": "2625-10",
-            "amount": 16650.0,
-            "days_overdue": -232,
-            "due_date": "2026-12-16"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7504",
-            "doc_number": "2631-10",
-            "amount": 3200.0,
-            "days_overdue": -253,
-            "due_date": "2027-01-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7026",
-            "doc_number": "2625-11",
-            "amount": 16650.0,
-            "days_overdue": -263,
-            "due_date": "2027-01-16"
-          },
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7505",
-            "doc_number": "2631-11",
-            "amount": 3200.0,
-            "days_overdue": -284,
-            "due_date": "2027-02-06"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7027",
-            "doc_number": "2625-12",
-            "amount": 16650.0,
-            "days_overdue": -294,
-            "due_date": "2027-02-16"
-          },
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "7028",
-            "doc_number": "2625-13",
-            "amount": 5550.0,
-            "days_overdue": -322,
-            "due_date": "2027-03-16"
-          }
-        ]
-      },
-      "1-30": {
-        "count": 5,
-        "amount": 37684.33,
-        "invoices": [
-          {
-            "project": "Power Design - Savannah, GA - Zeke - 2631",
-            "invoice_id": "7080",
-            "doc_number": "2631-01",
-            "amount": 4800.0,
-            "days_overdue": 26,
-            "due_date": "2026-04-02"
-          },
-          {
-            "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
-            "invoice_id": "5417",
-            "doc_number": "2537-IKL4",
-            "amount": 7083.33,
-            "days_overdue": 15,
-            "due_date": "2026-04-13"
-          },
-          {
-            "project": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
-            "invoice_id": "7428",
-            "doc_number": "2621-B01",
-            "amount": 13601.0,
-            "days_overdue": 12,
-            "due_date": "2026-04-16"
-          },
-          {
-            "project": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
-            "invoice_id": "7438",
-            "doc_number": "2594-02",
-            "amount": 5000.0,
-            "days_overdue": 11,
-            "due_date": "2026-04-17"
-          },
-          {
-            "project": "Power Design - Starbase, TX -Zeke - 2614",
-            "invoice_id": "7511",
-            "doc_number": "2614-B01",
-            "amount": 7200.0,
-            "days_overdue": 8,
-            "due_date": "2026-04-20"
-          }
-        ]
-      },
-      "31-60": {
-        "count": 1,
-        "amount": 75.0,
-        "invoices": [
-          {
-            "project": "Heycon, LLC - Charlotte, NC - Zeke -2625",
-            "invoice_id": "6713",
-            "doc_number": "2625-Sec Dep",
-            "amount": 75.0,
-            "days_overdue": 42,
-            "due_date": "2026-03-17"
-          }
-        ]
-      },
-      "61-90": {
-        "count": 1,
-        "amount": 800.0,
-        "invoices": [
-          {
-            "project": "Miami Marine Services - Las Vegas, NV -Zeke -2612",
-            "invoice_id": "6010",
-            "doc_number": "2612-01",
-            "amount": 800.0,
-            "days_overdue": 75,
-            "due_date": "2026-02-12"
-          }
-        ]
-      },
-      "90+": {
-        "count": 1,
-        "amount": 6000.0,
-        "invoices": [
-          {
-            "project": "XpertBuild - Fremont, CA - Zeke - 2564",
-            "invoice_id": "2585",
-            "doc_number": "2564-01",
-            "amount": 6000.0,
-            "days_overdue": 242,
-            "due_date": "2025-08-29"
-          }
-        ]
       }
     },
     "Logan": {

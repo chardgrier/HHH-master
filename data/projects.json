@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T08:17:20.819820",
+  "generated_at": "2026-04-28T21:16:21.802886",
   "months": [
     "2025-08",
     "2025-09",
@@ -81,7 +81,8 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1208641143232831",
@@ -187,7 +188,13 @@
         "ap": 13650.0,
         "net_gp": 3080.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2025-02-03"
+        }
+      ]
     },
     {
       "gid": "1209169429620891",
@@ -337,7 +344,37 @@
         "ap": 180285.0,
         "net_gp": 202192.8
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2025-07-19"
+        },
+        {
+          "prefix": "B",
+          "start_date": "2025-05-13"
+        },
+        {
+          "prefix": "C",
+          "start_date": "2025-08-10"
+        },
+        {
+          "prefix": "D",
+          "start_date": "2025-08-13"
+        },
+        {
+          "prefix": "E",
+          "start_date": "2025-10-01"
+        },
+        {
+          "prefix": "F",
+          "start_date": "2025-10-28"
+        },
+        {
+          "prefix": null,
+          "start_date": "2025-08-01"
+        }
+      ]
     },
     {
       "gid": "1209169429620891",
@@ -455,7 +492,13 @@
         "ap": 32100.0,
         "net_gp": 8832.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "G",
+          "start_date": "2025-12-14"
+        }
+      ]
     },
     {
       "gid": "1209169429620891",
@@ -571,7 +614,13 @@
         "ap": 21733.33,
         "net_gp": 13865.87
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "H",
+          "start_date": "2026-02-03"
+        }
+      ]
     },
     {
       "gid": "1209169429620891",
@@ -687,7 +736,13 @@
         "ap": 27213.33,
         "net_gp": 8331.47
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "I",
+          "start_date": "2026-02-15"
+        }
+      ]
     },
     {
       "gid": "1209360353419933",
@@ -921,7 +976,13 @@
         "ap": 4488.0,
         "net_gp": 17529.6
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-15"
+        }
+      ]
     },
     {
       "gid": "1209360353419933",
@@ -950,7 +1011,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "House1",
+          "start_date": "2025-07-31"
+        }
+      ]
     },
     {
       "gid": "1209518084230355",
@@ -1121,7 +1188,13 @@
         "ap": 56829.12,
         "net_gp": 23560.68
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-01"
+        }
+      ]
     },
     {
       "gid": "1209733087840223",
@@ -1171,7 +1244,8 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1209783110684124",
@@ -1221,7 +1295,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-10-31"
+        }
+      ]
     },
     {
       "gid": "1209864394478328",
@@ -1251,7 +1331,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-04-08"
+        }
+      ]
     },
     {
       "gid": "1209951377881879",
@@ -1287,7 +1373,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-05-17"
+        }
+      ]
     },
     {
       "gid": "1209951377881879",
@@ -1316,7 +1408,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2025-06-14"
+        }
+      ]
     },
     {
       "gid": "1209953181968936",
@@ -1438,7 +1536,13 @@
         "ap": 26400.0,
         "net_gp": 0.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-01"
+        }
+      ]
     },
     {
       "gid": "1210012515088541",
@@ -1468,7 +1572,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-05-17"
+        }
+      ]
     },
     {
       "gid": "1210036500330349",
@@ -1498,7 +1608,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-05-20"
+        }
+      ]
     },
     {
       "gid": "1210056931565763",
@@ -1599,7 +1715,13 @@
         "ap": 6890.67,
         "net_gp": 2662.4
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2025-05-09"
+        }
+      ]
     },
     {
       "gid": "1210056931565763",
@@ -1629,7 +1751,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "C",
+          "start_date": "2025-05-09"
+        }
+      ]
     },
     {
       "gid": "1210056931565763",
@@ -1737,7 +1865,13 @@
         "ap": 12809.83,
         "net_gp": 1409.34
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "D",
+          "start_date": "2025-06-03"
+        }
+      ]
     },
     {
       "gid": "1210056931565763",
@@ -1836,7 +1970,13 @@
         "ap": 0.0,
         "net_gp": 37392.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "E",
+          "start_date": "2025-08-01"
+        }
+      ]
     },
     {
       "gid": "1210058724192730",
@@ -1866,7 +2006,8 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1210083238259355",
@@ -1896,7 +2037,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-05-25"
+        }
+      ]
     },
     {
       "gid": "1210083740093755",
@@ -1917,7 +2064,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-05-25"
+        }
+      ]
     },
     {
       "gid": "1210403204610002",
@@ -1947,7 +2100,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-06-08"
+        }
+      ]
     },
     {
       "gid": "1210559671986831",
@@ -1985,7 +2144,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-06-22"
+        }
+      ]
     },
     {
       "gid": "1210592941592441",
@@ -2015,7 +2180,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-07-13"
+        }
+      ]
     },
     {
       "gid": "1210594344450375",
@@ -2044,7 +2215,8 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1210594344450375",
@@ -2073,7 +2245,8 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1210594344450375",
@@ -2102,7 +2275,8 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1210711315831289",
@@ -2140,7 +2314,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-07-07"
+        }
+      ]
     },
     {
       "gid": "1210751935671855",
@@ -2226,7 +2406,13 @@
         "ap": 17000.0,
         "net_gp": 11680.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-01"
+        }
+      ]
     },
     {
       "gid": "1210834959269420",
@@ -2247,7 +2433,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-07-20"
+        }
+      ]
     },
     {
       "gid": "1210847624719714",
@@ -2390,7 +2582,13 @@
         "ap": 20625.0,
         "net_gp": 4400.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-01"
+        }
+      ]
     },
     {
       "gid": "1210884304533957",
@@ -2440,7 +2638,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2025-09-01"
+        }
+      ]
     },
     {
       "gid": "1210884304533957",
@@ -2476,7 +2680,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2025-10-01"
+        }
+      ]
     },
     {
       "gid": "1210892056522705",
@@ -2522,7 +2732,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-04"
+        }
+      ]
     },
     {
       "gid": "1210921570020300",
@@ -2579,7 +2795,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-18"
+        }
+      ]
     },
     {
       "gid": "1210992137957471",
@@ -2617,7 +2839,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-02"
+        }
+      ]
     },
     {
       "gid": "1210992137957479",
@@ -2679,7 +2907,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-20"
+        }
+      ]
     },
     {
       "gid": "1211048918429780",
@@ -2722,7 +2956,8 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1211066498376008",
@@ -2800,7 +3035,13 @@
         "ap": 13400.0,
         "net_gp": 5991.2
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-21"
+        }
+      ]
     },
     {
       "gid": "1211080380581292",
@@ -2915,7 +3156,13 @@
         "ap": 70700.0,
         "net_gp": 42000.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase1",
+          "start_date": "2025-09-02"
+        }
+      ]
     },
     {
       "gid": "1211080380581292",
@@ -2969,7 +3216,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase2",
+          "start_date": "2025-09-02"
+        }
+      ]
     },
     {
       "gid": "1211080380581292",
@@ -3007,7 +3260,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase3",
+          "start_date": "2025-09-14"
+        }
+      ]
     },
     {
       "gid": "1211080380581292",
@@ -3065,7 +3324,13 @@
         "ap": 43230.0,
         "net_gp": 9170.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase4",
+          "start_date": "2026-04-05"
+        }
+      ]
     },
     {
       "gid": "1211080380581292",
@@ -3143,7 +3408,13 @@
         "ap": 103106.66,
         "net_gp": 16720.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-04"
+        }
+      ]
     },
     {
       "gid": "1211164220268151",
@@ -3181,7 +3452,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-11"
+        }
+      ]
     },
     {
       "gid": "1211164220268157",
@@ -3234,7 +3511,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-15"
+        }
+      ]
     },
     {
       "gid": "1211164494308713",
@@ -3280,7 +3563,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-08-31"
+        }
+      ]
     },
     {
       "gid": "1211177547809199",
@@ -3310,7 +3599,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-02"
+        }
+      ]
     },
     {
       "gid": "1211213718360953",
@@ -3431,7 +3726,13 @@
         "ap": 42813.33,
         "net_gp": 21703.07
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-08"
+        }
+      ]
     },
     {
       "gid": "1211269009738648",
@@ -3531,7 +3832,13 @@
         "ap": 9576.66,
         "net_gp": 1842.67
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-12"
+        }
+      ]
     },
     {
       "gid": "1211395610493059",
@@ -3673,7 +3980,13 @@
         "ap": 38400.0,
         "net_gp": 0.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-20"
+        }
+      ]
     },
     {
       "gid": "1211397768178812",
@@ -3711,7 +4024,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-09-19"
+        }
+      ]
     },
     {
       "gid": "1211427273217469",
@@ -3803,7 +4122,13 @@
         "ap": 11700.0,
         "net_gp": 3120.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-10-06"
+        }
+      ]
     },
     {
       "gid": "1211453655814597",
@@ -3832,7 +4157,21 @@
         "ap": 5487.5,
         "net_gp": 1680.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase1",
+          "start_date": "2026-01-01"
+        },
+        {
+          "prefix": "Phase2",
+          "start_date": "2026-01-01"
+        },
+        {
+          "prefix": "Phase3",
+          "start_date": "2026-01-01"
+        }
+      ]
     },
     {
       "gid": "1211456854891625",
@@ -3925,7 +4264,13 @@
         "ap": 35500.0,
         "net_gp": 17600.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase1",
+          "start_date": "2025-09-30"
+        }
+      ]
     },
     {
       "gid": "1211473311597290",
@@ -3968,7 +4313,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase1",
+          "start_date": "2025-09-28"
+        }
+      ]
     },
     {
       "gid": "1211473311597290",
@@ -4004,7 +4355,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase2",
+          "start_date": "2025-10-05"
+        }
+      ]
     },
     {
       "gid": "1211480429883350",
@@ -4074,7 +4431,13 @@
         "ap": 12900.0,
         "net_gp": 5274.66
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-10-19"
+        }
+      ]
     },
     {
       "gid": "1211534274175903",
@@ -4112,7 +4475,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-10-04"
+        }
+      ]
     },
     {
       "gid": "1211579601941971",
@@ -4232,7 +4601,13 @@
         "ap": 16920.0,
         "net_gp": 6768.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-10-13"
+        }
+      ]
     },
     {
       "gid": "1211697715124635",
@@ -4343,7 +4718,13 @@
         "ap": 33000.0,
         "net_gp": 11396.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-12-01"
+        }
+      ]
     },
     {
       "gid": "1211797010017729",
@@ -4381,7 +4762,13 @@
         "ap": 0,
         "net_gp": 0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-11-03"
+        }
+      ]
     },
     {
       "gid": "1211939568903452",
@@ -4465,7 +4852,13 @@
         "ap": 9687.5,
         "net_gp": 4133.34
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-11-06"
+        }
+      ]
     },
     {
       "gid": "1212023042586559",
@@ -4519,7 +4912,13 @@
         "ap": 12600.0,
         "net_gp": 9120.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-01"
+        }
+      ]
     },
     {
       "gid": "1212047788893501",
@@ -4555,7 +4954,8 @@
         "ap": 4700.0,
         "net_gp": -3760.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1212198830916907",
@@ -4665,7 +5065,13 @@
         "ap": 163140.0,
         "net_gp": 17328.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-01"
+        }
+      ]
     },
     {
       "gid": "1212312491124751",
@@ -4783,7 +5189,13 @@
         "ap": 30000.0,
         "net_gp": 10512.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-12-14"
+        }
+      ]
     },
     {
       "gid": "1212344857819012",
@@ -4852,7 +5264,13 @@
         "ap": 29550.0,
         "net_gp": 16360.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase1",
+          "start_date": "2025-12-28"
+        }
+      ]
     },
     {
       "gid": "1212423691472124",
@@ -4890,7 +5308,13 @@
         "ap": 830.0,
         "net_gp": 280.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2025-12-13"
+        }
+      ]
     },
     {
       "gid": "1212557289225412",
@@ -4936,7 +5360,13 @@
         "ap": 6933.33,
         "net_gp": 5546.67
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-27"
+        }
+      ]
     },
     {
       "gid": "1212571157696151",
@@ -4990,7 +5420,13 @@
         "ap": 8800.0,
         "net_gp": 1600.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-01"
+        }
+      ]
     },
     {
       "gid": "1212605287294257",
@@ -5036,7 +5472,13 @@
         "ap": 7861.33,
         "net_gp": 4932.27
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-01"
+        }
+      ]
     },
     {
       "gid": "1212606733510112",
@@ -5090,7 +5532,13 @@
         "ap": 6166.67,
         "net_gp": 2286.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-05"
+        }
+      ]
     },
     {
       "gid": "1212793467092033",
@@ -5144,7 +5592,13 @@
         "ap": 6600.0,
         "net_gp": -1125.34
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-03-21"
+        }
+      ]
     },
     {
       "gid": "1212813348194340",
@@ -5217,7 +5671,13 @@
         "ap": 18241.66,
         "net_gp": 12736.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-03-03"
+        }
+      ]
     },
     {
       "gid": "1212842897797009",
@@ -5291,7 +5751,13 @@
         "ap": 18900.0,
         "net_gp": 10250.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-08"
+        }
+      ]
     },
     {
       "gid": "1212860002456293",
@@ -5345,7 +5811,13 @@
         "ap": 7666.67,
         "net_gp": 5666.66
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-01-22"
+        }
+      ]
     },
     {
       "gid": "1212876182730983",
@@ -5383,7 +5855,13 @@
         "ap": 4399.16,
         "net_gp": 1472.68
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-04"
+        }
+      ]
     },
     {
       "gid": "1213202318450029",
@@ -5421,7 +5899,13 @@
         "ap": 2561.67,
         "net_gp": 1546.66
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-11"
+        }
+      ]
     },
     {
       "gid": "1213229664713550",
@@ -5467,7 +5951,13 @@
         "ap": 10233.34,
         "net_gp": 9407.32
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-16"
+        }
+      ]
     },
     {
       "gid": "1213233693750259",
@@ -5505,7 +5995,13 @@
         "ap": 1870.0,
         "net_gp": 1073.6
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-16"
+        }
+      ]
     },
     {
       "gid": "1213240184667434",
@@ -5558,7 +6054,13 @@
         "ap": 821.33,
         "net_gp": 10636.27
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-02-15"
+        }
+      ]
     },
     {
       "gid": "1213240184667434",
@@ -5604,7 +6106,13 @@
         "ap": 5325.0,
         "net_gp": 3029.34
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2026-02-18"
+        }
+      ]
     },
     {
       "gid": "1213240184667434",
@@ -5657,7 +6165,21 @@
         "ap": 20206.66,
         "net_gp": 12548.01
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "C",
+          "start_date": "2026-02-19"
+        },
+        {
+          "prefix": "D",
+          "start_date": "2026-04-26"
+        },
+        {
+          "prefix": "E",
+          "start_date": "2026-05-03"
+        }
+      ]
     },
     {
       "gid": "1213240216017591",
@@ -5699,67 +6221,81 @@
         },
         "2026-05": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-06": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-07": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-08": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-09": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-10": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-11": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         },
         "2026-12": {
           "crew": 10,
-          "ar": 16800.0,
+          "ar": 20400.0,
           "ap": 20940.0,
-          "commission": -828.0,
-          "net_gp": -3312.0
+          "commission": -108.0,
+          "net_gp": -432.0
         }
       },
       "total_2026": {
-        "ar": 162240.0,
+        "ar": 191040.0,
         "ap": 191252.0,
-        "net_gp": -23209.6
+        "net_gp": -169.6
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-21"
+        },
+        {
+          "prefix": "Phase2",
+          "start_date": "2026-04-27"
+        },
+        {
+          "prefix": "Phase3",
+          "start_date": "2026-05-02"
+        }
+      ]
     },
     {
       "gid": "1213329022938206",
@@ -5812,7 +6348,13 @@
         "ap": 12253.33,
         "net_gp": 4177.34
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-03-15"
+        }
+      ]
     },
     {
       "gid": "1213329022938206",
@@ -5850,7 +6392,21 @@
         "ap": 19931.67,
         "net_gp": 4509.33
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2026-03-01"
+        },
+        {
+          "prefix": null,
+          "start_date": "2026-03-01"
+        },
+        {
+          "prefix": "E",
+          "start_date": "2026-03-15"
+        }
+      ]
     },
     {
       "gid": "1213329022938206",
@@ -5895,7 +6451,13 @@
         "ap": 10376.67,
         "net_gp": 11542.66
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "F",
+          "start_date": "2026-04-30"
+        }
+      ]
     },
     {
       "gid": "1213329022938206",
@@ -5924,7 +6486,8 @@
         "ap": 3850.0,
         "net_gp": -3080.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": []
     },
     {
       "gid": "1213344941093825",
@@ -6040,7 +6603,13 @@
         "ap": 23813.33,
         "net_gp": 9930.67
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-02-25"
+        }
+      ]
     },
     {
       "gid": "1213344941093825",
@@ -6155,7 +6724,13 @@
         "ap": 27500.0,
         "net_gp": 6600.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2026-03-02"
+        }
+      ]
     },
     {
       "gid": "1213344941093825",
@@ -6297,7 +6872,13 @@
         "ap": 29250.0,
         "net_gp": -2800.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "C",
+          "start_date": "2026-08-02"
+        }
+      ]
     },
     {
       "gid": "1213348375076263",
@@ -6350,7 +6931,13 @@
         "ap": 4375.0,
         "net_gp": 2100.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-20"
+        }
+      ]
     },
     {
       "gid": "1213407803351544",
@@ -6445,7 +7032,13 @@
         "ap": 18266.67,
         "net_gp": 6576.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-02-25"
+        }
+      ]
     },
     {
       "gid": "1213423592821387",
@@ -6510,7 +7103,13 @@
         "ap": 37500.0,
         "net_gp": 24720.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-04-01"
+        }
+      ]
     },
     {
       "gid": "1213423592821387",
@@ -6554,7 +7153,13 @@
         "ap": 12406.67,
         "net_gp": 8314.66
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "B",
+          "start_date": "2026-04-13"
+        }
+      ]
     },
     {
       "gid": "1213439679118236",
@@ -6599,7 +7204,13 @@
         "ap": 20475.0,
         "net_gp": 8820.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-03-01"
+        }
+      ]
     },
     {
       "gid": "1213523794178802",
@@ -6664,7 +7275,13 @@
         "ap": 67547.33,
         "net_gp": 16428.8
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase1",
+          "start_date": "2026-04-13"
+        }
+      ]
     },
     {
       "gid": "1213523794178802",
@@ -6736,7 +7353,13 @@
         "ap": 57340.0,
         "net_gp": 12688.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "Phase2",
+          "start_date": "2026-04-13"
+        }
+      ]
     },
     {
       "gid": "1213629324301274",
@@ -6808,7 +7431,13 @@
         "ap": 21350.0,
         "net_gp": 8680.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-04-01"
+        }
+      ]
     },
     {
       "gid": "1213633710870931",
@@ -6923,7 +7552,13 @@
         "ap": 104625.0,
         "net_gp": 40176.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-03-23"
+        }
+      ]
     },
     {
       "gid": "1213692562297147",
@@ -6989,7 +7624,13 @@
         "ap": 11340.0,
         "net_gp": 6720.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-03-27"
+        }
+      ]
     },
     {
       "gid": "1213807211139673",
@@ -7026,7 +7667,13 @@
         "ap": 13895.0,
         "net_gp": 6348.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-04-02"
+        }
+      ]
     },
     {
       "gid": "1213812028376221",
@@ -7078,7 +7725,13 @@
         "ap": 14896.67,
         "net_gp": 5029.33
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-03-29"
+        }
+      ]
     },
     {
       "gid": "1213864449534720",
@@ -7116,7 +7769,13 @@
         "ap": 4422.67,
         "net_gp": 2744.53
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-03-31"
+        }
+      ]
     },
     {
       "gid": "1213884891926150",
@@ -7223,7 +7882,13 @@
         "ap": 21200.0,
         "net_gp": 5653.34
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-04-06"
+        }
+      ]
     },
     {
       "gid": "1213942879454294",
@@ -7309,7 +7974,13 @@
         "ap": 16656.67,
         "net_gp": 9818.66
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-04-08"
+        }
+      ]
     },
     {
       "gid": "1214058325010950",
@@ -7360,7 +8031,13 @@
         "ap": 15130.0,
         "net_gp": 9112.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-04-19"
+        }
+      ]
     },
     {
       "gid": "1214062281144643",
@@ -7438,7 +8115,13 @@
         "ap": 0.0,
         "net_gp": 31200.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-05-17"
+        }
+      ]
     },
     {
       "gid": "1214068113981856",
@@ -7488,7 +8171,13 @@
         "ap": 6440.0,
         "net_gp": 4649.06
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2026-05-30"
+        }
+      ]
     },
     {
       "gid": "1214149488100030",
@@ -7594,7 +8283,13 @@
         "ap": 30000.0,
         "net_gp": 11520.0
       },
-      "source": "asana_custom_fields"
+      "source": "asana_custom_fields",
+      "house_starts": [
+        {
+          "prefix": null,
+          "start_date": "2026-05-01"
+        }
+      ]
     },
     {
       "gid": null,
@@ -8050,7 +8745,8 @@
         "ap": 12600.0,
         "net_gp": 2240.0
       },
-      "source": "master_sheet_fallback"
+      "source": "master_sheet_fallback",
+      "house_starts": []
     },
     {
       "gid": null,
@@ -8118,7 +8814,8 @@
         "ap": 7695.0,
         "net_gp": 2941.2
       },
-      "source": "master_sheet_fallback"
+      "source": "master_sheet_fallback",
+      "house_starts": []
     }
   ],
   "monthly_totals": {
@@ -8187,59 +8884,59 @@
     },
     "2026-05": {
       "crew": 376,
-      "ar": 607296.67,
+      "ar": 610896.67,
       "ap": 384704.93,
-      "net_gp": 188808.39,
-      "gp_pct": 31.09
+      "net_gp": 191688.39,
+      "gp_pct": 31.38
     },
     "2026-06": {
       "crew": 284,
-      "ar": 475375.5,
+      "ar": 478975.5,
       "ap": 298108.76,
-      "net_gp": 152823.4,
-      "gp_pct": 32.15
+      "net_gp": 155703.4,
+      "gp_pct": 32.51
     },
     "2026-07": {
       "crew": 259,
-      "ar": 441465.0,
+      "ar": 445065.0,
       "ap": 283714.76,
-      "net_gp": 137210.19,
-      "gp_pct": 31.08
+      "net_gp": 140090.19,
+      "gp_pct": 31.48
     },
     "2026-08": {
       "crew": 245,
-      "ar": 385917.5,
+      "ar": 389517.5,
       "ap": 241343.09,
-      "net_gp": 125451.03,
-      "gp_pct": 32.51
+      "net_gp": 128331.03,
+      "gp_pct": 32.95
     },
     "2026-09": {
       "crew": 235,
-      "ar": 351848.83,
+      "ar": 355448.83,
       "ap": 216956.75,
-      "net_gp": 117988.66,
-      "gp_pct": 33.53
+      "net_gp": 120868.66,
+      "gp_pct": 34.0
     },
     "2026-10": {
       "crew": 227,
-      "ar": 315830.0,
+      "ar": 319430.0,
       "ap": 193314.76,
-      "net_gp": 108087.19,
-      "gp_pct": 34.22
+      "net_gp": 110967.19,
+      "gp_pct": 34.74
     },
     "2026-11": {
       "crew": 202,
-      "ar": 271555.0,
+      "ar": 275155.0,
       "ap": 164794.76,
-      "net_gp": 95483.19,
-      "gp_pct": 35.16
+      "net_gp": 98363.19,
+      "gp_pct": 35.75
     },
     "2026-12": {
       "crew": 197,
-      "ar": 257611.0,
+      "ar": 261211.0,
       "ap": 156404.76,
-      "net_gp": 91039.99,
-      "gp_pct": 35.34
+      "net_gp": 93919.99,
+      "gp_pct": 35.96
     },
     "2027-01": {
       "crew": 31,
@@ -8521,44 +9218,44 @@
         "commission": 10225.67
       },
       "2026-05": {
-        "ar": 157150.0,
+        "ar": 160750.0,
         "ap": 112125.0,
-        "commission": 9245.0
+        "commission": 9965.0
       },
       "2026-06": {
-        "ar": 90260.0,
+        "ar": 93860.0,
         "ap": 68755.0,
-        "commission": 4541.0
+        "commission": 5261.0
       },
       "2026-07": {
-        "ar": 85700.0,
+        "ar": 89300.0,
         "ap": 66435.0,
-        "commission": 4093.0
+        "commission": 4813.0
       },
       "2026-08": {
-        "ar": 85700.0,
+        "ar": 89300.0,
         "ap": 66435.0,
-        "commission": 4093.0
+        "commission": 4813.0
       },
       "2026-09": {
-        "ar": 82100.0,
+        "ar": 85700.0,
         "ap": 63135.0,
-        "commission": 3793.0
+        "commission": 4513.0
       },
       "2026-10": {
-        "ar": 70700.0,
+        "ar": 74300.0,
         "ap": 56885.0,
-        "commission": 2763.0
+        "commission": 3483.0
       },
       "2026-11": {
-        "ar": 66100.0,
+        "ar": 69700.0,
         "ap": 53835.0,
-        "commission": 2453.0
+        "commission": 3173.0
       },
       "2026-12": {
-        "ar": 66100.0,
+        "ar": 69700.0,
         "ap": 53835.0,
-        "commission": 2453.0
+        "commission": 3173.0
       },
       "2027-01": {
         "ar": 25400.0,
