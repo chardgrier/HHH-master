@@ -452,7 +452,7 @@ def monthly_from_segments(segs, yr, mo):
 
 # ─── Build a dashboard row for a project ─────────────────────────────────────
 
-def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
+def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None, house_starts=None):
     if not ar_segs and not ap_segs:
         return None
 
@@ -517,6 +517,7 @@ def make_row(name, salesperson, ar_segs, ap_segs, crew, *, source, gid=None):
         "monthly": monthly,
         "total_2026": {"ar": round(t_ar,2), "ap": round(t_ap,2), "net_gp": round(t_gp,2)},
         "source": source,
+        "house_starts": house_starts or [],
     }
 
 # ─── Main sync ───────────────────────────────────────────────────────────────
@@ -612,13 +613,27 @@ def sync():
         for h in houses:
             by_end.setdefault(house_end(h), []).append(h)
 
+        def starts_for(hs_list):
+            """[{prefix, start_date}, ...] — earliest A/R-segment start per house."""
+            out = []
+            for h in hs_list:
+                if not h["ar_segs"]:
+                    continue
+                pre = h["prefix"] if (h["prefix"] and h["prefix"] != "_main") else None
+                out.append({
+                    "prefix": pre,
+                    "start_date": min(s["start"] for s in h["ar_segs"]).isoformat(),
+                })
+            return out
+
         if len(by_end) == 1:
             hs = list(by_end.values())[0]
             ar_segs = [s for h in hs for s in h["ar_segs"]]
             ap_segs = [s for h in hs for s in h["ap_segs"]]
             crew_tot = sum(h["crew"] for h in hs)
             row = make_row(pname, sp, ar_segs, ap_segs, crew_tot,
-                           source="asana_custom_fields", gid=pgid)
+                           source="asana_custom_fields", gid=pgid,
+                           house_starts=starts_for(hs))
             if row: rows.append(row)
         else:
             for end_key, hs in by_end.items():
@@ -635,7 +650,8 @@ def sync():
                 ap_segs = [s for h in hs for s in h["ap_segs"]]
                 crew_tot = sum(h["crew"] for h in hs)
                 row = make_row(pname + suffix, sp, ar_segs, ap_segs, crew_tot,
-                               source="asana_custom_fields", gid=pgid)
+                               source="asana_custom_fields", gid=pgid,
+                               house_starts=starts_for(hs))
                 if row: rows.append(row)
 
         m = re.search(r"\b(2\d{3})\b", pname)
@@ -1090,33 +1106,60 @@ def write_maintenance_view(master):
         ending.append({"name": x["name"], "end_date": x["end_date"], "days": x["days"], "urgency": "45",
                        "gid": x.get("gid"), "project_number": x.get("project_number")})
 
-    # ── Upcoming Check-ins: 48 hrs before project start, window −2 to +14 days ──
+    # ── Upcoming Check-ins: 48 hrs before each house's start date ──
+    # We iterate per-house starts (not just the project's overall start_date) so
+    # multi-house projects with staggered move-ins generate one check-in per
+    # house. Falls back to the project-level start_date for older rows that
+    # don't have house_starts populated.
     today = date.today()
     checkins = []
-    for r in master["projects"]:
-        if r["status"] != "Upcoming": continue
-        sd_str = r.get("start_date")
-        if not sd_str: continue
-        try: sd = date.fromisoformat(sd_str)
-        except Exception: continue
+    seen_keys = set()   # de-dupe (gid, house_prefix, date)
+
+    def add_checkin(name, gid, project_number, salesperson, start_iso, house):
+        try:
+            sd = date.fromisoformat(start_iso)
+        except Exception:
+            return
         checkin_date = sd - timedelta(days=2)
         days = (checkin_date - today).days
-        if days < -2 or days > 14: continue
-
-        house_m = re.search(r"\[House\s+([A-Z])\]", r["name"])
-        house = house_m.group(1) if house_m else None
-        clean = re.sub(r"\s*\[House\s+[A-Z]\]\s*$", "", r["name"])
-
+        if days < -2 or days > 14:
+            return
+        # Strip any [House X] suffix from the project name — we'll display the
+        # house separately so the calendar/list reads cleanly.
+        clean = re.sub(r"\s*\[Houses?\s+[^\]]+\]\s*$", "", name)
+        key = (gid, house, checkin_date.isoformat())
+        if key in seen_keys:
+            return
+        seen_keys.add(key)
         checkins.append({
             "project":    clean,
             "house":      house,
-            "start_date": sd_str,
+            "start_date": start_iso,
             "date":       checkin_date.isoformat(),
             "days":       days,
-            "salesperson": r.get("salesperson", ""),
-            "gid":           r.get("gid"),
-            "project_number": r.get("project_number"),
+            "salesperson": salesperson or "",
+            "gid":           gid,
+            "project_number": project_number,
         })
+
+    for r in master["projects"]:
+        gid = r.get("gid")
+        pname = r["name"]
+        pnum  = r.get("project_number")
+        sp    = r.get("salesperson", "")
+
+        # Fallback house letter from name suffix (used when house_starts is empty)
+        name_house_m = re.search(r"\[House\s+([A-Z])\]", pname)
+        name_house = name_house_m.group(1) if name_house_m else None
+
+        houses = r.get("house_starts") or []
+        if houses:
+            for h in houses:
+                add_checkin(pname, gid, pnum, sp, h.get("start_date"), h.get("prefix") or name_house)
+        elif r["status"] == "Upcoming" and r.get("start_date"):
+            # Legacy path: row has no house_starts (manual rows etc.) — only fire
+            # check-ins for Upcoming, matching the previous behaviour.
+            add_checkin(pname, gid, pnum, sp, r["start_date"], name_house)
     checkins.sort(key=lambda x: x["days"])
 
     tickets = fetch_maintenance_tasks()
