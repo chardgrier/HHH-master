@@ -1,2 +1,5 @@
 requests>=2.31.0
 cryptography>=42.0.0
+gspread>=6.0.0
+google-auth>=2.27.0
+rapidfuzz>=3.6.0

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hard Hat Housing — Housing Searches Dashboard</title>
+<style>
+  :root {
+    --gold: #F5A623;
+    --dark: #1a1a2e;
+    --darker: #111122;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --text: #2d3748;
+    --muted: #718096;
+    --bg: #f7f8fc;
+    --hit: #38a169;
+    --near: #d69e2e;
+    --under: #e53e3e;
+    --upcoming: #3182ce;
+    --row-hover: #fffbf0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 13px; min-height: 100vh; }
+
+  header { background: var(--dark); color: #fff; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 6px rgba(0,0,0,.25); position: sticky; top: 0; z-index: 200; }
+  header h1 { font-size: 18px; font-weight: 700; letter-spacing: .4px; }
+  header h1 span { color: var(--gold); }
+  #sync-info { font-size: 11px; color: #a0aec0; }
+  #sync-info.stale { color: #fc8181; font-weight: 700; }
+  header a.nav { color: var(--gold); font-size: 12px; text-decoration: none; margin-left: 12px; }
+  header a.nav:hover { text-decoration: underline; }
+
+  /* KPI row */
+  .kpi-row { display: flex; gap: 10px; padding: 14px 24px 6px; flex-wrap: wrap; }
+  .kpi { background: var(--card); border-radius: 8px; padding: 10px 14px; flex: 1; min-width: 140px; border-left: 3px solid var(--gold); box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+  .kpi label { font-size: 10px; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); font-weight: 600; }
+  .kpi .val { font-size: 22px; font-weight: 700; margin-top: 2px; }
+  .kpi .val.green   { color: var(--hit); }
+  .kpi .val.blue    { color: var(--upcoming); }
+  .kpi .val.orange  { color: #c05621; }
+  .kpi .val.red     { color: var(--under); }
+  .kpi .val.gold    { color: var(--gold); }
+
+  /* Section card */
+  .panel { margin: 10px 24px; background: #fff; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.06); padding: 14px 18px; }
+  .panel h2 { font-size: 14px; color: var(--dark); margin-bottom: 10px; letter-spacing: .3px; }
+  .panel h2 small { font-weight: 400; color: var(--muted); font-size: 11px; }
+
+  /* Tables */
+  table { border-collapse: collapse; width: 100%; font-size: 12px; }
+  th, td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: left; }
+  th { background: #f7f8fc; color: var(--muted); text-transform: uppercase; font-size: 10px; letter-spacing: .5px; font-weight: 600; }
+  tbody tr:hover td { background: var(--row-hover); }
+  td.num, th.num { text-align: right; font-family: 'SF Mono', monospace; }
+  td.ctr, th.ctr { text-align: center; }
+
+  /* Status badges */
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+  .badge-StillOpen  { background: #bee3f8; color: #2a69ac; }
+  .badge-Pending    { background: #fefcbf; color: #975a16; }
+  .badge-Converted  { background: #c6f6d5; color: #276749; }
+  .badge-Closed     { background: #fed7d7; color: #9b2c2c; }
+  .badge-Future     { background: #e2e8f0; color: #4a5568; }
+
+  /* Scoreboard */
+  .scoreboard { overflow-x: auto; }
+  .scoreboard table { width: max-content; min-width: 100%; }
+  .scoreboard th, .scoreboard td { text-align: right; padding: 6px 12px; border-right: 1px solid var(--border); white-space: nowrap; font-family: 'SF Mono', monospace; font-size: 12px; }
+  .scoreboard th:first-child, .scoreboard td:first-child { text-align: left; font-family: inherit; font-weight: 700; position: sticky; left: 0; background: #fff; z-index: 2; min-width: 200px; }
+  .scoreboard thead th { background: var(--darker); color: #fff; text-transform: none; font-size: 11px; }
+  .scoreboard thead th:first-child { background: var(--darker); color: var(--gold); }
+  .scoreboard tr.total-row td { background: var(--dark); color: #fff; font-weight: 700; border-top: 2px solid var(--gold); }
+  .scoreboard tr.total-row td:first-child { background: var(--dark); color: var(--gold); }
+  .scoreboard td.total-col { background: #e6fffa; font-weight: 700; }
+  .scoreboard tr.total-row td.total-col { background: #276749; color: #fff; }
+
+  /* Conversion grid */
+  .conv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 900px) { .conv-grid { grid-template-columns: 1fr; } }
+  .conv-cell { padding: 6px 10px; border-radius: 6px; text-align: center; font-weight: 700; }
+  .conv-cell.hit    { background: #c6f6d5; color: #276749; }
+  .conv-cell.near   { background: #fefcbf; color: #975a16; }
+  .conv-cell.under  { background: #fed7d7; color: #9b2c2c; }
+  .conv-cell.empty  { background: #f7f8fc; color: var(--muted); }
+
+  /* Attention panel */
+  .attn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 900px) { .attn-grid { grid-template-columns: 1fr; } }
+  .attn-card { background: #fff5f5; border-left: 3px solid var(--under); padding: 10px 14px; border-radius: 6px; }
+  .attn-card.warn { background: #fffaf0; border-left-color: #d69e2e; }
+  .attn-card .count { font-size: 22px; font-weight: 700; color: var(--under); }
+  .attn-card.warn .count { color: #b7791f; }
+  .attn-card h3 { font-size: 13px; color: var(--dark); margin-bottom: 6px; }
+  .attn-card ul { list-style: none; max-height: 200px; overflow-y: auto; }
+  .attn-card li { font-size: 11px; padding: 3px 0; border-top: 1px solid var(--border); color: var(--muted); }
+  .attn-card li:first-child { border-top: none; }
+  .attn-card a { color: var(--upcoming); text-decoration: none; }
+  .attn-card a:hover { text-decoration: underline; }
+
+  /* Filters */
+  .filters { display: flex; gap: 8px; align-items: center; padding: 0 24px 10px; flex-wrap: wrap; }
+  .filters label { font-size: 11px; font-weight: 600; color: var(--muted); }
+  .filter-btn { border: 1px solid var(--border); background: #fff; padding: 4px 11px; border-radius: 18px; cursor: pointer; font-size: 12px; }
+  .filter-btn.active { background: var(--gold); color: #fff; border-color: var(--gold); font-weight: 700; }
+  select, input[type=search] { border: 1px solid var(--border); background: #fff; padding: 4px 10px; border-radius: 18px; font-size: 12px; }
+
+  /* Pipeline table */
+  .pipeline-table { max-height: 480px; overflow-y: auto; }
+  .pipeline-table thead th { position: sticky; top: 0; z-index: 1; }
+
+  /* Geo panels */
+  .geo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 900px) { .geo-grid { grid-template-columns: 1fr; } }
+
+  /* Loading / error */
+  #loading { padding: 60px; text-align: center; color: var(--muted); font-size: 16px; }
+  #error   { padding: 40px; text-align: center; color: var(--under); }
+
+  a.tasklink { color: var(--upcoming); text-decoration: none; }
+  a.tasklink:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏠 <span>Hard Hat Housing</span> — Housing Searches</h1>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <span id="sync-info">Loading…</span>
+    <a href="index.html" class="nav">Master</a>
+    <a href="sales.html" class="nav">Sales</a>
+    <a href="maintenance.html" class="nav">Maintenance</a>
+  </div>
+</header>
+
+<div id="loading">Loading housing searches…</div>
+<div id="error" style="display:none"></div>
+
+<div id="app" style="display:none">
+
+  <div class="kpi-row" id="kpi-row"></div>
+
+  <div class="panel">
+    <h2>📊 Scoreboard <small>— total searches by status × month</small></h2>
+    <div class="scoreboard" id="scoreboard"></div>
+  </div>
+
+  <div class="panel">
+    <h2>🚨 Needs attention <small>— Still Open ≥ 7 days · Pending ≥ 5 days past presentation</small></h2>
+    <div class="attn-grid" id="attention"></div>
+  </div>
+
+  <div class="filters">
+    <label>Status:</label>
+    <button class="filter-btn active" onclick="setFilter('status','All',this)">All</button>
+    <button class="filter-btn" onclick="setFilter('status','Still Open',this)">Still Open</button>
+    <button class="filter-btn" onclick="setFilter('status','Pending',this)">Pending</button>
+    <button class="filter-btn" onclick="setFilter('status','Future',this)">Future</button>
+    <button class="filter-btn" onclick="setFilter('status','Converted to Project',this)">Converted</button>
+    <button class="filter-btn" onclick="setFilter('status','Closed',this)">Closed</button>
+    &nbsp;&nbsp;
+    <label>Salesperson:</label>
+    <select id="sp-filter" onchange="setFilter('sp',this.value,this)"><option value="All">All</option></select>
+    <label>Housing rep:</label>
+    <select id="rep-filter" onchange="setFilter('rep',this.value,this)"><option value="All">All</option></select>
+    <input type="search" id="search-input" placeholder="Search company / city…" oninput="setFilter('q',this.value,this)">
+  </div>
+
+  <div class="panel">
+    <h2>📋 Active pipeline <small>— click a row to open the Asana task</small></h2>
+    <div class="pipeline-table">
+      <table id="pipeline">
+        <thead><tr>
+          <th>Status</th>
+          <th>Company</th>
+          <th>City, State</th>
+          <th>Salesperson</th>
+          <th>Housing rep</th>
+          <th class="num">Crew</th>
+          <th>Budget</th>
+          <th>Start</th>
+          <th>End</th>
+          <th class="ctr">Days open</th>
+          <th>Options due</th>
+          <th>Reason / Project #</th>
+        </tr></thead>
+        <tbody id="pipeline-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>🎯 Conversion rate</h2>
+    <div class="conv-grid">
+      <div>
+        <h3 style="font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">By salesperson</h3>
+        <table id="conv-sp"></table>
+      </div>
+      <div>
+        <h3 style="font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">By housing rep</h3>
+        <table id="conv-rep"></table>
+      </div>
+    </div>
+    <p style="font-size:10px;color:var(--muted);margin-top:8px">
+      Conversion % = converted ÷ (converted + closed). Pending / Still Open / Future are excluded since they aren't decided yet.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h2>📍 Where the demand is</h2>
+    <div class="geo-grid">
+      <div>
+        <h3 style="font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">Top cities</h3>
+        <table id="geo-cities"></table>
+      </div>
+      <div>
+        <h3 style="font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">Top states</h3>
+        <table id="geo-states"></table>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>⏱ Time to outcome</h2>
+    <div id="ttc"></div>
+  </div>
+
+</div>
+
+<script>
+let DATA = null;
+let FILTERS = { status: 'All', sp: 'All', rep: 'All', q: '' };
+
+const STATUS_BADGE_CLASS = {
+  'Still Open': 'StillOpen',
+  'Pending': 'Pending',
+  'Converted to Project': 'Converted',
+  'Closed': 'Closed',
+  'Future': 'Future',
+};
+
+function fmtDate(s) {
+  if (!s) return '—';
+  const [y, m, d] = s.split('-');
+  return `${parseInt(m)}/${parseInt(d)}/${y.slice(2)}`;
+}
+
+function convClass(pct) {
+  if (pct === null || pct === undefined) return 'empty';
+  if (pct >= 50) return 'hit';
+  if (pct >= 25) return 'near';
+  return 'under';
+}
+
+async function loadData() {
+  document.getElementById('loading').style.display = 'block';
+  document.getElementById('app').style.display = 'none';
+  try {
+    const r = await fetch('data/housing.json?t=' + Date.now());
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    DATA = await r.json();
+    const genAt = new Date(DATA.generated_at);
+    const ageHrs = (Date.now() - genAt.getTime()) / 3_600_000;
+    const info = document.getElementById('sync-info');
+    info.textContent = (ageHrs > 24 ? '⚠ Stale! Last sync: ' : 'Updated: ') + genAt.toLocaleString();
+    info.classList.toggle('stale', ageHrs > 24);
+    render();
+  } catch (e) {
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('error').style.display = 'block';
+    document.getElementById('error').innerHTML = `<b>Could not load data.</b><br>${e.message}`;
+  }
+}
+
+function setFilter(k, v, el) {
+  FILTERS[k] = v;
+  if (el && el.tagName === 'BUTTON') {
+    el.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+  }
+  renderPipeline();
+}
+
+function filtered() {
+  const q = (FILTERS.q || '').toLowerCase().trim();
+  return (DATA.records || []).filter(r => {
+    if (FILTERS.status !== 'All' && r.status !== FILTERS.status) return false;
+    if (FILTERS.sp !== 'All' && r.salesperson !== FILTERS.sp) return false;
+    if (FILTERS.rep !== 'All' && r.housing_rep !== FILTERS.rep) return false;
+    if (q) {
+      const hay = `${r.company || ''} ${r.location || ''} ${r.city || ''} ${r.state || ''}`.toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  }).sort((a, b) => {
+    const order = {'Still Open': 0, 'Pending': 1, 'Future': 2, 'Converted to Project': 3, 'Closed': 4};
+    if (order[a.status] !== order[b.status]) return order[a.status] - order[b.status];
+    return (b.days_open || 0) - (a.days_open || 0);
+  });
+}
+
+function render() {
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('app').style.display = 'block';
+  renderKPIs();
+  renderScoreboard();
+  renderAttention();
+  populateFilterDropdowns();
+  renderPipeline();
+  renderConversion();
+  renderGeo();
+  renderTTC();
+}
+
+function renderKPIs() {
+  const t = DATA.totals || {};
+  document.getElementById('kpi-row').innerHTML = `
+    <div class="kpi"><label>Total Searches</label><div class="val">${t.all || 0}</div></div>
+    <div class="kpi"><label>Still Open</label><div class="val blue">${t.still_open || 0}</div></div>
+    <div class="kpi"><label>Pending</label><div class="val gold">${t.pending || 0}</div></div>
+    <div class="kpi"><label>Converted</label><div class="val green">${t.converted || 0}</div></div>
+    <div class="kpi"><label>Closed</label><div class="val red">${t.closed || 0}</div></div>
+    <div class="kpi"><label>Future</label><div class="val">${t.future || 0}</div></div>
+  `;
+}
+
+function renderScoreboard() {
+  const sb = DATA.scoreboard || {};
+  const months = sb.months || [];
+  const rows = sb.rows || {};
+  const totals = sb.totals || {};
+  if (!months.length) {
+    document.getElementById('scoreboard').innerHTML = '<p style="color:var(--muted)">No searches yet.</p>';
+    return;
+  }
+  const labelOf = key => {
+    const [y, m] = key.split('-');
+    const NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${NAMES[parseInt(m)-1]} '${y.slice(2)}`;
+  };
+  let html = '<table><thead><tr><th>Status</th>';
+  months.forEach(m => html += `<th>${labelOf(m)}</th>`);
+  html += '<th class="total-col">Total</th></tr></thead><tbody>';
+
+  ['Total Housing Searches','Converted to Project','Closed','Pending','Still Open','Future'].forEach(s => {
+    const isTotal = s === 'Total Housing Searches';
+    html += `<tr${isTotal ? ' class="total-row"' : ''}><td>${s}</td>`;
+    months.forEach(m => {
+      const v = (rows[s] || {})[m] || 0;
+      html += `<td>${v || ''}</td>`;
+    });
+    html += `<td class="total-col">${totals[s] || 0}</td></tr>`;
+  });
+  html += '</tbody></table>';
+  document.getElementById('scoreboard').innerHTML = html;
+}
+
+function renderAttention() {
+  const att = DATA.attention || {};
+  const so = att.stale_still_open || [];
+  const sp = att.stale_pending   || [];
+
+  const fmtItem = (r, badge) => `
+    <li><b>${badge}</b> · <a href="${r.url}" target="_blank">${r.company || '(unknown)'}</a>
+      <span style="color:var(--muted)"> — ${r.location || '—'} · ${r.salesperson || 'Unknown SP'} · rep: ${r.housing_rep || '—'}</span>
+    </li>`;
+
+  const card1 = `<div class="attn-card warn">
+    <div class="count">${so.length}</div>
+    <h3>Still Open ≥ 7 days</h3>
+    <ul>${so.length ? so.map(r => fmtItem(r, `${r.days_open}d`)).join('') : '<li style="color:var(--muted)">No stale opens.</li>'}</ul>
+  </div>`;
+  const card2 = `<div class="attn-card">
+    <div class="count">${sp.length}</div>
+    <h3>Pending ≥ 5 days past presentation</h3>
+    <ul>${sp.length ? sp.map(r => fmtItem(r, `+${r.days_past_due}d`)).join('') : '<li style="color:var(--muted)">No stale pending.</li>'}</ul>
+  </div>`;
+  document.getElementById('attention').innerHTML = card1 + card2;
+}
+
+function populateFilterDropdowns() {
+  const sps = [...new Set(DATA.records.map(r => r.salesperson).filter(s => s && s !== 'Unknown'))].sort();
+  const reps = [...new Set(DATA.records.map(r => r.housing_rep).filter(Boolean))].sort();
+  document.getElementById('sp-filter').innerHTML = '<option value="All">All</option>' +
+    sps.map(s => `<option ${FILTERS.sp === s ? 'selected' : ''}>${s}</option>`).join('');
+  document.getElementById('rep-filter').innerHTML = '<option value="All">All</option>' +
+    reps.map(r => `<option ${FILTERS.rep === r ? 'selected' : ''}>${r}</option>`).join('');
+}
+
+function renderPipeline() {
+  const rows = filtered();
+  const body = rows.map(r => {
+    const cls = STATUS_BADGE_CLASS[r.status] || 'Future';
+    const reasonOrProj = r.linked_project
+      ? `<a href="index.html" class="tasklink" title="${r.linked_project.name}">#${r.linked_project.project_number || '—'}</a>`
+      : (r.project_number ? `#${r.project_number}` : (r.close_reason || ''));
+    const days = r.days_open !== null && r.days_open !== undefined ? r.days_open + 'd' : '—';
+    const due = r.due_on ? `${fmtDate(r.due_on)}${r.days_past_due > 0 ? ` <span style="color:var(--under)">(+${r.days_past_due}d)</span>` : ''}` : '—';
+    return `<tr onclick="window.open('${r.url}','_blank')" style="cursor:pointer">
+      <td><span class="badge badge-${cls}">${r.status}</span></td>
+      <td><b>${r.company || '—'}</b></td>
+      <td>${r.location || '—'}</td>
+      <td>${r.salesperson || '—'}</td>
+      <td>${r.housing_rep || '—'}</td>
+      <td class="num">${r.crew || ''}</td>
+      <td>${r.budget || ''}</td>
+      <td>${fmtDate(r.start_date)}</td>
+      <td>${fmtDate(r.end_date)}</td>
+      <td class="ctr">${days}</td>
+      <td>${due}</td>
+      <td>${reasonOrProj}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('pipeline-body').innerHTML = body || `<tr><td colspan="12" style="text-align:center;padding:30px;color:var(--muted)">No searches match these filters.</td></tr>`;
+}
+
+function renderConversion() {
+  const renderTable = (data, idAttr) => {
+    const ranked = Object.entries(data).sort((a, b) => (b[1].conversion_pct || 0) - (a[1].conversion_pct || 0));
+    let html = '<thead><tr><th>Name</th><th class="num">Total</th><th class="num">Conv</th><th class="num">Closed</th><th class="num">Pending</th><th class="num">Open</th><th class="ctr">Conv %</th></tr></thead><tbody>';
+    if (!ranked.length) {
+      html += '<tr><td colspan="7" style="color:var(--muted);text-align:center;padding:14px">No data yet.</td></tr>';
+    } else {
+      ranked.forEach(([name, s]) => {
+        const pct = s.conversion_pct;
+        const cell = pct === null ? '<span class="conv-cell empty">—</span>' :
+                     `<span class="conv-cell ${convClass(pct)}">${pct}%</span>`;
+        html += `<tr>
+          <td><b>${name}</b></td>
+          <td class="num">${s.total}</td>
+          <td class="num" style="color:var(--hit)">${s.converted}</td>
+          <td class="num" style="color:var(--under)">${s.closed}</td>
+          <td class="num" style="color:#975a16">${s.pending}</td>
+          <td class="num" style="color:var(--upcoming)">${s.still_open}</td>
+          <td class="ctr">${cell}</td>
+        </tr>`;
+      });
+    }
+    html += '</tbody>';
+    return html;
+  };
+  document.getElementById('conv-sp').innerHTML  = renderTable(DATA.conversion_by_salesperson || {});
+  document.getElementById('conv-rep').innerHTML = renderTable(DATA.conversion_by_housing_rep || {});
+}
+
+function renderGeo() {
+  const geo = DATA.geo || {};
+  const cities = geo.top_cities || [];
+  const states = geo.top_states || [];
+  const renderList = (rows, keyName) => {
+    if (!rows.length) return '<thead><tr><th>—</th></tr></thead><tbody><tr><td>None yet</td></tr></tbody>';
+    let html = `<thead><tr><th>${keyName}</th><th class="num">Searches</th></tr></thead><tbody>`;
+    rows.forEach(r => {
+      html += `<tr><td>${r[keyName.toLowerCase()]}</td><td class="num">${r.count}</td></tr>`;
+    });
+    return html + '</tbody>';
+  };
+  document.getElementById('geo-cities').innerHTML = renderList(cities, 'City');
+  document.getElementById('geo-states').innerHTML = renderList(states, 'State');
+}
+
+function renderTTC() {
+  const t = DATA.avg_days_to_close || {};
+  const conv = t['Converted to Project'];
+  const closed = t['Closed'];
+  document.getElementById('ttc').innerHTML = `
+    <div style="display:flex;gap:14px;flex-wrap:wrap">
+      <div class="kpi" style="border-color:var(--hit);min-width:200px">
+        <label>Avg days to convert</label>
+        <div class="val green">${conv !== null && conv !== undefined ? conv + 'd' : '—'}</div>
+      </div>
+      <div class="kpi" style="border-color:var(--under);min-width:200px">
+        <label>Avg days to close</label>
+        <div class="val red">${closed !== null && closed !== undefined ? closed + 'd' : '—'}</div>
+      </div>
+    </div>`;
+}
+
+loadData();
+</script>
+</body>
+</html>
