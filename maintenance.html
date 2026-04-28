@@ -72,6 +72,8 @@
   a.cal-event:hover { filter: brightness(0.92); text-decoration: underline; }
   .cal-event.checkin         { background: #feebc8; color: #9c4221; }
   .cal-event.checkin.overdue { background: #fed7d7; color: #9b2c2c; }
+  .cal-event.movein          { background: #c6f6d5; color: #276749; }
+  .cal-event.checkout-call   { background: #fefcbf; color: #975a16; }
   .cal-event.ending          { background: #fed7d7; color: #9b2c2c; }
   .cal-event.ending.d30      { background: #e53e3e; color: #fff; }
 
@@ -194,23 +196,47 @@ function renderCalendar() {
   const byDate = {};
   const asanaUrl = (gid) => gid ? `https://app.asana.com/0/${gid}/overview` : null;
 
+  // Helper: ISO date offset by N days (negative for earlier).
+  const offsetISO = (iso, deltaDays) => {
+    const d = new Date(iso);
+    d.setDate(d.getDate() + deltaDays);
+    return toLocalISO(d);
+  };
+
   (DATA.checkins || []).forEach(c => {
     const num   = c.project_number ? ` · ${c.project_number}` : '';
     const house = c.house ? ' ['+c.house+']' : '';
+    // 1) Call-reminder bubble at 48h before move-in (this is the existing
+    //    checkin.date in the data — start_date - 2 days).
     (byDate[c.date] ||= []).push({
       type:    'checkin',
-      label:   `📞 ${c.project}${house}${num}`,
+      label:   `📞 Call · ${c.project}${house}${num}`,
       overdue: c.days < 0,
-      title:   `Check-in: ${c.project}${c.house ? ' House '+c.house : ''} — project starts ${c.start_date}`,
+      title:   `Call reminder (48h ahead) — ${c.project}${c.house ? ' House '+c.house : ''} moves in ${c.start_date}`,
       url:     asanaUrl(c.gid),
+    });
+    // 2) Actual move-in bubble at the real start_date.
+    (byDate[c.start_date] ||= []).push({
+      type:  'movein',
+      label: `🔑 Move-in · ${c.project}${house}${num}`,
+      title: `Move-in: ${c.project}${c.house ? ' House '+c.house : ''}`,
+      url:   asanaUrl(c.gid),
     });
   });
   (DATA.ending_soon || []).forEach(e => {
+    // 1) Call-reminder bubble at 48h before move-out.
+    (byDate[offsetISO(e.end_date, -2)] ||= []).push({
+      type:  'checkout-call',
+      label: `📞 Call · ${e.name}`,
+      title: `Call reminder (48h ahead) — ${e.name} moves out ${e.end_date}`,
+      url:   asanaUrl(e.gid),
+    });
+    // 2) Actual move-out bubble at end_date.
     (byDate[e.end_date] ||= []).push({
       type:  'ending',
-      label: `🏁 ${e.name}`,
+      label: `🏁 Move-out · ${e.name}`,
       d30:   e.urgency === '30',
-      title: `${e.name} — ends ${e.end_date} (${e.days}d)`,
+      title: `Move-out: ${e.name} (${e.days}d)`,
       url:   asanaUrl(e.gid),
     });
   });
@@ -229,9 +255,11 @@ function renderCalendar() {
 
   let html = `<div class="cal-range">${rangeLbl}
     <span class="cal-legend">
-      <span><span class="sw" style="background:#feebc8"></span>Check-in (48h before start)</span>
-      <span><span class="sw" style="background:#fed7d7"></span>Project ending</span>
-      <span><span class="sw" style="background:#e53e3e"></span>Ending in ≤ 30 days</span>
+      <span><span class="sw" style="background:#feebc8"></span>📞 Call (48h before move-in)</span>
+      <span><span class="sw" style="background:#c6f6d5"></span>🔑 Move-in</span>
+      <span><span class="sw" style="background:#fefcbf"></span>📞 Call (48h before move-out)</span>
+      <span><span class="sw" style="background:#fed7d7"></span>🏁 Move-out</span>
+      <span><span class="sw" style="background:#e53e3e"></span>Move-out ≤ 30 days</span>
     </span>
   </div><div class="cal-wrap"><div class="cal-grid">`;
   DAYS.forEach(d => { html += `<div class="cal-day-header">${d}</div>`; });
