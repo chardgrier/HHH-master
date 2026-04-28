@@ -71,6 +71,12 @@ CF_PROJECT_NUMBER = "Project Number"
 # Status display order (matches sheet scoreboard rows).
 STATUS_ORDER = ["Total Housing Searches", "Converted to a Project", "Closed", "Pending", "Still Open", "Future"]
 
+# Salesperson name normalization — handles aliases / nicknames.
+# Keys are lowercase first-name; values are the canonical display name.
+SALESPERSON_ALIASES = {
+    "pablo": "Paul",
+}
+
 MONTH_NAMES = ["January","February","March","April","May","June",
                "July","August","September","October","November","December"]
 
@@ -462,6 +468,7 @@ def build_records(tasks, form_rows, projects):
         form = best_form_match(form_rows, company, city, t.get("created_at"))
         salesperson = form_get(form, "Sales Person Name", "Salesperson") or "Unknown"
         salesperson_first = salesperson.strip().split()[0] if salesperson and salesperson != "Unknown" else "Unknown"
+        salesperson_first = SALESPERSON_ALIASES.get(salesperson_first.lower(), salesperson_first)
 
         start_date = parse_form_date(form_get(form, "Estimated Start Date"))
         end_date   = parse_form_date(form_get(form, "Estimated End Date"))

@@ -46,6 +46,15 @@
   .panel { margin: 10px 24px; background: #fff; border-radius: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.06); padding: 14px 18px; }
   .panel h2 { font-size: 14px; color: var(--dark); margin-bottom: 10px; letter-spacing: .3px; }
   .panel h2 small { font-weight: 400; color: var(--muted); font-size: 11px; }
+  /* Collapsible panel via <details>/<summary> */
+  details.panel summary { cursor: pointer; font-size: 14px; color: var(--dark); font-weight: 700; letter-spacing: .3px; list-style: none; user-select: none; padding: 2px 0; }
+  details.panel summary::-webkit-details-marker { display: none; }
+  details.panel summary::before { content: '▾ '; color: var(--gold); display: inline-block; width: 16px; }
+  details.panel:not([open]) summary::before { content: '▸ '; }
+  details.panel:not([open]) summary { margin-bottom: 0; }
+  details.panel[open] summary { margin-bottom: 10px; }
+  details.panel summary small { font-weight: 400; color: var(--muted); font-size: 11px; }
+  details.panel summary:hover { color: var(--gold); }
 
   /* Tables */
   table { border-collapse: collapse; width: 100%; font-size: 12px; }
@@ -140,34 +149,33 @@
 
   <div class="kpi-row" id="kpi-row"></div>
 
-  <div class="panel">
-    <h2>📊 Scoreboard <small>— total searches by status × month</small></h2>
+  <details class="panel" open>
+    <summary>📊 Scoreboard <small>— total searches by status × month</small></summary>
     <div class="scoreboard" id="scoreboard"></div>
-  </div>
+  </details>
 
   <div class="panel">
     <h2>🚨 Needs attention <small>— Still Open ≥ 7 days · Pending ≥ 5 days past presentation</small></h2>
     <div class="attn-grid" id="attention"></div>
   </div>
 
-  <div class="filters">
-    <label>Status:</label>
-    <button class="filter-btn active" onclick="setFilter('status','All',this)">All</button>
-    <button class="filter-btn" onclick="setFilter('status','Still Open',this)">Still Open</button>
-    <button class="filter-btn" onclick="setFilter('status','Pending',this)">Pending</button>
-    <button class="filter-btn" onclick="setFilter('status','Future',this)">Future</button>
-    <button class="filter-btn" onclick="setFilter('status','Converted to a Project',this)">Converted</button>
-    <button class="filter-btn" onclick="setFilter('status','Closed',this)">Closed</button>
-    &nbsp;&nbsp;
-    <label>Salesperson:</label>
-    <select id="sp-filter" onchange="setFilter('sp',this.value,this)"><option value="All">All</option></select>
-    <label>Housing rep:</label>
-    <select id="rep-filter" onchange="setFilter('rep',this.value,this)"><option value="All">All</option></select>
-    <input type="search" id="search-input" placeholder="Search company / city…" oninput="setFilter('q',this.value,this)">
-  </div>
-
-  <div class="panel">
-    <h2>📋 Active pipeline <small>— click a row to open the Asana task</small></h2>
+  <details class="panel" open>
+    <summary>📋 Active pipeline <small>— click a row to open the Asana task</small></summary>
+    <div class="filters" style="padding: 0 0 10px;">
+      <label>Status:</label>
+      <button class="filter-btn active" onclick="setFilter('status','All',this)">All</button>
+      <button class="filter-btn" onclick="setFilter('status','Still Open',this)">Still Open</button>
+      <button class="filter-btn" onclick="setFilter('status','Pending',this)">Pending</button>
+      <button class="filter-btn" onclick="setFilter('status','Future',this)">Future</button>
+      <button class="filter-btn" onclick="setFilter('status','Converted to a Project',this)">Converted</button>
+      <button class="filter-btn" onclick="setFilter('status','Closed',this)">Closed</button>
+      &nbsp;&nbsp;
+      <label>Salesperson:</label>
+      <select id="sp-filter" onchange="setFilter('sp',this.value,this)"><option value="All">All</option></select>
+      <label>Housing rep:</label>
+      <select id="rep-filter" onchange="setFilter('rep',this.value,this)"><option value="All">All</option></select>
+      <input type="search" id="search-input" placeholder="Search company / city…" oninput="setFilter('q',this.value,this)">
+    </div>
     <div class="pipeline-table">
       <table id="pipeline">
         <thead><tr>
@@ -187,10 +195,10 @@
         <tbody id="pipeline-body"></tbody>
       </table>
     </div>
-  </div>
+  </details>
 
-  <div class="panel">
-    <h2>🎯 Conversion rate</h2>
+  <details class="panel">
+    <summary>🎯 Conversion rate <small>— by salesperson + by housing rep</small></summary>
     <div class="conv-grid">
       <div>
         <h3 style="font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">By salesperson</h3>
@@ -204,10 +212,10 @@
     <p style="font-size:10px;color:var(--muted);margin-top:8px">
       Conversion % = converted ÷ (converted + closed). Pending / Still Open / Future are excluded since they aren't decided yet.
     </p>
-  </div>
+  </details>
 
-  <div class="panel">
-    <h2>📍 Where the demand is</h2>
+  <details class="panel">
+    <summary>📍 Where the demand is <small>— top cities + states</small></summary>
     <div class="geo-grid">
       <div>
         <h3 style="font-size:12px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px">Top cities</h3>
@@ -218,12 +226,12 @@
         <table id="geo-states"></table>
       </div>
     </div>
-  </div>
+  </details>
 
-  <div class="panel">
-    <h2>⏱ Time to outcome</h2>
+  <details class="panel">
+    <summary>⏱ Time to outcome <small>— avg days from creation</small></summary>
     <div id="ttc"></div>
-  </div>
+  </details>
 
 </div>
 
