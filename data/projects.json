@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T17:15:57.089502",
+  "generated_at": "2026-04-28T08:17:20.819820",
   "months": [
     "2025-08",
     "2025-09",
@@ -5668,7 +5668,7 @@
       "start_date": "2026-02-21",
       "end_date": "2026-12-31",
       "base_ar": 16800.0,
-      "base_ap": 10470.0,
+      "base_ap": 20940.0,
       "base_crew": 10,
       "commission_model": "percent",
       "commission_rate": 0.2,
@@ -5700,64 +5700,64 @@
         "2026-05": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         },
         "2026-06": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         },
         "2026-07": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         },
         "2026-08": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         },
         "2026-09": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         },
         "2026-10": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         },
         "2026-11": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         },
         "2026-12": {
           "crew": 10,
           "ar": 16800.0,
-          "ap": 10470.0,
-          "commission": 1266.0,
-          "net_gp": 5064.0
+          "ap": 20940.0,
+          "commission": -828.0,
+          "net_gp": -3312.0
         }
       },
       "total_2026": {
         "ar": 162240.0,
-        "ap": 107492.0,
-        "net_gp": 43798.4
+        "ap": 191252.0,
+        "net_gp": -23209.6
       },
       "source": "asana_custom_fields"
     },
@@ -8188,58 +8188,58 @@
     "2026-05": {
       "crew": 376,
       "ar": 607296.67,
-      "ap": 374234.93,
-      "net_gp": 197184.39,
-      "gp_pct": 32.47
+      "ap": 384704.93,
+      "net_gp": 188808.39,
+      "gp_pct": 31.09
     },
     "2026-06": {
       "crew": 284,
       "ar": 475375.5,
-      "ap": 287638.76,
-      "net_gp": 161199.4,
-      "gp_pct": 33.91
+      "ap": 298108.76,
+      "net_gp": 152823.4,
+      "gp_pct": 32.15
     },
     "2026-07": {
       "crew": 259,
       "ar": 441465.0,
-      "ap": 273244.76,
-      "net_gp": 145586.19,
-      "gp_pct": 32.98
+      "ap": 283714.76,
+      "net_gp": 137210.19,
+      "gp_pct": 31.08
     },
     "2026-08": {
       "crew": 245,
       "ar": 385917.5,
-      "ap": 230873.09,
-      "net_gp": 133827.03,
-      "gp_pct": 34.68
+      "ap": 241343.09,
+      "net_gp": 125451.03,
+      "gp_pct": 32.51
     },
     "2026-09": {
       "crew": 235,
       "ar": 351848.83,
-      "ap": 206486.75,
-      "net_gp": 126364.66,
-      "gp_pct": 35.91
+      "ap": 216956.75,
+      "net_gp": 117988.66,
+      "gp_pct": 33.53
     },
     "2026-10": {
       "crew": 227,
       "ar": 315830.0,
-      "ap": 182844.76,
-      "net_gp": 116463.19,
-      "gp_pct": 36.88
+      "ap": 193314.76,
+      "net_gp": 108087.19,
+      "gp_pct": 34.22
     },
     "2026-11": {
       "crew": 202,
       "ar": 271555.0,
-      "ap": 154324.76,
-      "net_gp": 103859.19,
-      "gp_pct": 38.25
+      "ap": 164794.76,
+      "net_gp": 95483.19,
+      "gp_pct": 35.16
     },
     "2026-12": {
       "crew": 197,
       "ar": 257611.0,
-      "ap": 145934.76,
-      "net_gp": 99415.99,
-      "gp_pct": 38.59
+      "ap": 156404.76,
+      "net_gp": 91039.99,
+      "gp_pct": 35.34
     },
     "2027-01": {
       "crew": 31,
@@ -8522,43 +8522,43 @@
       },
       "2026-05": {
         "ar": 157150.0,
-        "ap": 101655.0,
-        "commission": 11339.0
+        "ap": 112125.0,
+        "commission": 9245.0
       },
       "2026-06": {
         "ar": 90260.0,
-        "ap": 58285.0,
-        "commission": 6635.0
+        "ap": 68755.0,
+        "commission": 4541.0
       },
       "2026-07": {
         "ar": 85700.0,
-        "ap": 55965.0,
-        "commission": 6187.0
+        "ap": 66435.0,
+        "commission": 4093.0
       },
       "2026-08": {
         "ar": 85700.0,
-        "ap": 55965.0,
-        "commission": 6187.0
+        "ap": 66435.0,
+        "commission": 4093.0
       },
       "2026-09": {
         "ar": 82100.0,
-        "ap": 52665.0,
-        "commission": 5887.0
+        "ap": 63135.0,
+        "commission": 3793.0
       },
       "2026-10": {
         "ar": 70700.0,
-        "ap": 46415.0,
-        "commission": 4857.0
+        "ap": 56885.0,
+        "commission": 2763.0
       },
       "2026-11": {
         "ar": 66100.0,
-        "ap": 43365.0,
-        "commission": 4547.0
+        "ap": 53835.0,
+        "commission": 2453.0
       },
       "2026-12": {
         "ar": 66100.0,
-        "ap": 43365.0,
-        "commission": 4547.0
+        "ap": 53835.0,
+        "commission": 2453.0
       },
       "2027-01": {
         "ar": 25400.0,
@@ -8991,12 +8991,18 @@
         "ar": 5550.0
       }
     ],
-    "ap_exceeds_ar": [],
+    "ap_exceeds_ar": [
+      {
+        "name": "Power Design - Starbase, TX -Zeke - 2614",
+        "ar": 16800.0,
+        "ap": 20940.0
+      }
+    ],
     "ending_in_30": [
       {
         "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Zeke",
         "gid": "1210751935671855",
         "project_number": "2551"
@@ -9004,7 +9010,7 @@
       {
         "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Zeke",
         "gid": "1212023042586559",
         "project_number": "2590"
@@ -9012,7 +9018,7 @@
       {
         "name": "Sletten - San Pablo, CA - Zeke - 2601",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Zeke",
         "gid": "1212571157696151",
         "project_number": "2601"
@@ -9020,7 +9026,7 @@
       {
         "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Logan",
         "gid": "1212793467092033",
         "project_number": "2604"
@@ -9028,7 +9034,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Logan",
         "gid": "1212860002456293",
         "project_number": "2607"
@@ -9036,7 +9042,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
@@ -9044,7 +9050,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
@@ -9052,7 +9058,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
         "end_date": "2026-04-30",
-        "days": 3,
+        "days": 2,
         "salesperson": "Logan",
         "gid": "1213864449534720",
         "project_number": "2628"
@@ -9060,7 +9066,7 @@
       {
         "name": "Arco- Lebanon, TN - Paul - 2616",
         "end_date": "2026-05-01",
-        "days": 4,
+        "days": 3,
         "salesperson": "Paul",
         "gid": "1213348375076263",
         "project_number": "2616"
@@ -9068,7 +9074,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
         "end_date": "2026-05-03",
-        "days": 6,
+        "days": 5,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
@@ -9076,7 +9082,7 @@
       {
         "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
         "end_date": "2026-05-08",
-        "days": 11,
+        "days": 10,
         "salesperson": "Paul",
         "gid": "1210056931565763",
         "project_number": "2532"
@@ -9084,25 +9090,25 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
         "end_date": "2026-05-15",
-        "days": 18,
+        "days": 17,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
+      },
+      {
+        "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+        "end_date": "2026-05-28",
+        "days": 30,
+        "salesperson": "Zeke",
+        "gid": "1210240026827411",
+        "project_number": "2537"
       }
     ],
     "ending_in_31_45": [
       {
-        "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
-        "end_date": "2026-05-28",
-        "days": 31,
-        "salesperson": "Zeke",
-        "gid": "1210240026827411",
-        "project_number": "2537"
-      },
-      {
         "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
         "end_date": "2026-05-30",
-        "days": 33,
+        "days": 32,
         "salesperson": "Zeke",
         "gid": "1212344857819012",
         "project_number": "2594"
@@ -9110,7 +9116,7 @@
       {
         "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
         "end_date": "2026-05-31",
-        "days": 34,
+        "days": 33,
         "salesperson": "Paul",
         "gid": "1211456854891625",
         "project_number": "2576"
@@ -9118,7 +9124,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
         "end_date": "2026-05-31",
-        "days": 34,
+        "days": 33,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
@@ -9126,7 +9132,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
         "end_date": "2026-05-31",
-        "days": 34,
+        "days": 33,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
@@ -9134,7 +9140,7 @@
       {
         "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
         "end_date": "2026-05-31",
-        "days": 34,
+        "days": 33,
         "salesperson": "Matt",
         "gid": "1213439679118236",
         "project_number": "2622"
@@ -9142,7 +9148,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
         "end_date": "2026-05-31",
-        "days": 34,
+        "days": 33,
         "salesperson": "Logan",
         "gid": "1213807211139673",
         "project_number": "2630"
@@ -9150,7 +9156,7 @@
       {
         "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
         "end_date": "2026-06-01",
-        "days": 35,
+        "days": 34,
         "salesperson": "Paul",
         "gid": "1210056931565763",
         "project_number": "2532"
@@ -9158,10 +9164,26 @@
       {
         "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
         "end_date": "2026-06-05",
-        "days": 39,
+        "days": 38,
         "salesperson": "Paul",
         "gid": "1211939568903452",
         "project_number": "2588"
+      },
+      {
+        "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
+        "end_date": "2026-06-12",
+        "days": 45,
+        "salesperson": "Logan",
+        "gid": "1211269009738648",
+        "project_number": "2570"
+      },
+      {
+        "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
+        "end_date": "2026-06-12",
+        "days": 45,
+        "salesperson": "Zeke",
+        "gid": "1213423592821387",
+        "project_number": "2621"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T17:15:57.089502",
+  "generated_at": "2026-04-28T08:17:20.819820",
   "projects": [
     {
       "name": "Gray Construction - Bristol, TN - Paul - 2592 [House B]",
@@ -475,7 +475,7 @@
     {
       "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1210751935671855",
       "project_number": "2551"
@@ -483,7 +483,7 @@
     {
       "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1212023042586559",
       "project_number": "2590"
@@ -491,7 +491,7 @@
     {
       "name": "Sletten - San Pablo, CA - Zeke - 2601",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1212571157696151",
       "project_number": "2601"
@@ -499,7 +499,7 @@
     {
       "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1212793467092033",
       "project_number": "2604"
@@ -507,7 +507,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1212860002456293",
       "project_number": "2607"
@@ -515,7 +515,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1213240184667434",
       "project_number": "2613"
@@ -523,7 +523,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1213329022938206",
       "project_number": "2617"
@@ -531,7 +531,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
       "end_date": "2026-04-30",
-      "days": 3,
+      "days": 2,
       "urgency": "30",
       "gid": "1213864449534720",
       "project_number": "2628"
@@ -539,7 +539,7 @@
     {
       "name": "Arco- Lebanon, TN - Paul - 2616",
       "end_date": "2026-05-01",
-      "days": 4,
+      "days": 3,
       "urgency": "30",
       "gid": "1213348375076263",
       "project_number": "2616"
@@ -547,7 +547,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
       "end_date": "2026-05-03",
-      "days": 6,
+      "days": 5,
       "urgency": "30",
       "gid": "1213240184667434",
       "project_number": "2613"
@@ -555,7 +555,7 @@
     {
       "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
       "end_date": "2026-05-08",
-      "days": 11,
+      "days": 10,
       "urgency": "30",
       "gid": "1210056931565763",
       "project_number": "2532"
@@ -563,7 +563,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
       "end_date": "2026-05-15",
-      "days": 18,
+      "days": 17,
       "urgency": "30",
       "gid": "1213329022938206",
       "project_number": "2617"
@@ -571,15 +571,15 @@
     {
       "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
       "end_date": "2026-05-28",
-      "days": 31,
-      "urgency": "45",
+      "days": 30,
+      "urgency": "30",
       "gid": "1210240026827411",
       "project_number": "2537"
     },
     {
       "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
       "end_date": "2026-05-30",
-      "days": 33,
+      "days": 32,
       "urgency": "45",
       "gid": "1212344857819012",
       "project_number": "2594"
@@ -587,7 +587,7 @@
     {
       "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
       "end_date": "2026-05-31",
-      "days": 34,
+      "days": 33,
       "urgency": "45",
       "gid": "1211456854891625",
       "project_number": "2576"
@@ -595,7 +595,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
       "end_date": "2026-05-31",
-      "days": 34,
+      "days": 33,
       "urgency": "45",
       "gid": "1213240184667434",
       "project_number": "2613"
@@ -603,7 +603,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
       "end_date": "2026-05-31",
-      "days": 34,
+      "days": 33,
       "urgency": "45",
       "gid": "1213329022938206",
       "project_number": "2617"
@@ -611,7 +611,7 @@
     {
       "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
       "end_date": "2026-05-31",
-      "days": 34,
+      "days": 33,
       "urgency": "45",
       "gid": "1213439679118236",
       "project_number": "2622"
@@ -619,7 +619,7 @@
     {
       "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
       "end_date": "2026-05-31",
-      "days": 34,
+      "days": 33,
       "urgency": "45",
       "gid": "1213807211139673",
       "project_number": "2630"
@@ -627,7 +627,7 @@
     {
       "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
       "end_date": "2026-06-01",
-      "days": 35,
+      "days": 34,
       "urgency": "45",
       "gid": "1210056931565763",
       "project_number": "2532"
@@ -635,10 +635,26 @@
     {
       "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
       "end_date": "2026-06-05",
-      "days": 39,
+      "days": 38,
       "urgency": "45",
       "gid": "1211939568903452",
       "project_number": "2588"
+    },
+    {
+      "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
+      "end_date": "2026-06-12",
+      "days": 45,
+      "urgency": "45",
+      "gid": "1211269009738648",
+      "project_number": "2570"
+    },
+    {
+      "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
+      "end_date": "2026-06-12",
+      "days": 45,
+      "urgency": "45",
+      "gid": "1213423592821387",
+      "project_number": "2621"
     }
   ],
   "checkins": [
@@ -647,35 +663,13 @@
       "house": null,
       "start_date": "2026-05-01",
       "date": "2026-04-29",
-      "days": 2,
+      "days": 1,
       "salesperson": "Zeke",
       "gid": "1214149488100030",
       "project_number": "2625"
     }
   ],
   "maintenance_tasks": [
-    {
-      "task_id": "1214117234957982",
-      "name": "Noise complaint",
-      "severity": "General Updates",
-      "status": "\u2014",
-      "project": "RSD - Morehead, KY - David - 2596",
-      "project_gid": "1212535977719565",
-      "house": null,
-      "created_at": "2026-04-19T13:37:52.484Z",
-      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214117234957982"
-    },
-    {
-      "task_id": "1214228139561769",
-      "name": "Tenant inquiring about bringing 2 dogs",
-      "severity": "General Updates",
-      "status": "\u2014",
-      "project": "Stone and Lime - Baton Rouge, LA - Zeke - 2591",
-      "project_gid": "1212198830916907",
-      "house": null,
-      "created_at": "2026-04-23T19:56:07.354Z",
-      "url": "https://app.asana.com/1/1203487090849714/project/1211911843670288/task/1214228139561769"
-    },
     {
       "task_id": "1214104564393264",
       "name": "Unit D - Roof Leak",
@@ -708,17 +702,6 @@
       "house": "H",
       "created_at": "2026-04-22T16:29:53.646Z",
       "url": "https://app.asana.com/1/1203487090849714/project/1209169429620891/task/1214186329288629"
-    },
-    {
-      "task_id": "1213942867794752",
-      "name": "A: Parking in the front yard",
-      "severity": "Standard Maintenance",
-      "status": "\u2014",
-      "project": "RSD - Campbellsville, KY - David - 2554",
-      "project_gid": "1211712366460736",
-      "house": "A",
-      "created_at": "2026-04-06T13:51:12.539Z",
-      "url": "https://app.asana.com/1/1203487090849714/project/1211712366460736/task/1213942867794752"
     },
     {
       "task_id": "1214148116563655",
