@@ -419,7 +419,7 @@ def build_records(tasks, form_rows, projects):
         completed = parse_iso(t.get("completed_at"))
         completed_on = completed.date() if completed else None
 
-        form = best_form_match(form_rows, company, location, t.get("created_at"))
+        form = best_form_match(form_rows, company, city, t.get("created_at"))
         salesperson = form_get(form, "Sales Person Name", "Salesperson") or "Unknown"
         salesperson_first = salesperson.strip().split()[0] if salesperson and salesperson != "Unknown" else "Unknown"
 
