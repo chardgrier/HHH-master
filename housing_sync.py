@@ -186,14 +186,31 @@ def open_sheets_client():
 
 
 def read_form_responses(gc):
-    """Return list of dicts from the form response sheet's first tab."""
+    """Return list of dicts from the form response sheet's first tab.
+
+    Uses get_all_values() rather than get_all_records() so we tolerate blank
+    or duplicate header columns (Google Forms response sheets often have a
+    trailing 'Column N' or empty extras from manual edits).
+    """
     if not gc or not FORM_SHEET_ID:
         print("  ! HOUSING_FORM_SHEET_ID not set — no salesperson/budget enrichment")
         return []
     try:
         sh = gc.open_by_key(FORM_SHEET_ID)
         ws = sh.sheet1   # form responses always live on the first tab
-        rows = ws.get_all_records()
+        values = ws.get_all_values()
+        if len(values) < 2:
+            print("  · form sheet has no data rows yet")
+            return []
+        headers = values[0]
+        rows = []
+        for raw in values[1:]:
+            d = {}
+            for i, h in enumerate(headers):
+                if not h or not h.strip() or h in d:
+                    continue   # skip blank/duplicate headers
+                d[h] = raw[i] if i < len(raw) else ""
+            rows.append(d)
         print(f"  ✓ read {len(rows)} form responses")
         return rows
     except Exception as e:
@@ -389,6 +406,11 @@ def build_records(tasks, form_rows, projects):
         status = SECTION_TO_STATUS.get(sec_gid)
         if not status:
             continue   # skip tasks not in a known section
+
+        # Only include searches created in 2026+ (per Richard: start fresh Jan 1, 2026)
+        created_iso = t.get("created_at") or ""
+        if created_iso and created_iso < "2026-01-01":
+            continue
 
         company, location = parse_task_title(t.get("name") or "")
         city, state = parse_city_state(location)
@@ -620,7 +642,7 @@ def write_back_master_sheet(gc, records):
         try:
             ws.batch_clear([f"A2:J{max(len(body) + 50, 100)}"])
             if body:
-                ws.update(f"A2:J{1 + len(body)}", body, value_input_option="USER_ENTERED")
+                ws.update(values=body, range_name=f"A2:J{1 + len(body)}", value_input_option="USER_ENTERED")
             months_written += 1
         except Exception as e:
             print(f"  ! failed writing {tab_name}: {e}")
@@ -656,7 +678,7 @@ def write_back_master_sheet(gc, records):
     cols_letter = _col_letter(len(header))
     try:
         scoreboard_ws.batch_clear([f"A1:{cols_letter}{len(body) + 20}"])
-        scoreboard_ws.update(f"A1:{cols_letter}{len(body)}", body, value_input_option="USER_ENTERED")
+        scoreboard_ws.update(values=body, range_name=f"A1:{cols_letter}{len(body)}", value_input_option="USER_ENTERED")
         print(f"  ✓ wrote scoreboard ({len(months)} months × {len(STATUS_ORDER)} status rows)")
     except Exception as e:
         print(f"  ! failed writing scoreboard: {e}")

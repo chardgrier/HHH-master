@@ -6,6 +6,7 @@ Reads BOT_EMAIL_ADDRESS + BOT_EMAIL_PASSWORD from env (Gmail SMTP via app
 password). Use send_email() from notification scripts.
 """
 import os
+import re
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -42,6 +43,8 @@ def send_email(to, subject, html_body, cc=None, text_body=None):
     recipients = to + cc
     with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as s:
         s.starttls()
-        s.login(sender, password.replace(" ", ""))  # Gmail app passwords often shown with spaces
+        # Gmail app passwords often shown with spaces — strip ALL whitespace
+        # including non-breaking spaces (\xa0) which sneak in via copy-paste.
+        s.login(sender, re.sub(r"\s+", "", password))
         s.sendmail(sender, recipients, msg.as_string())
     print(f"  ✉ sent to {', '.join(recipients)}: {subject}")

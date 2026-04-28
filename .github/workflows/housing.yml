@@ -30,12 +30,6 @@ jobs:
           HOUSING_FORM_SHEET_ID:     ${{ secrets.HOUSING_FORM_SHEET_ID }}
         run: python3 housing_sync.py
 
-      - name: Send daily digest to housing team
-        env:
-          BOT_EMAIL_ADDRESS:  ${{ secrets.BOT_EMAIL_ADDRESS }}
-          BOT_EMAIL_PASSWORD: ${{ secrets.BOT_EMAIL_PASSWORD }}
-        run: python3 housing_notifications.py
-
       - name: Commit refreshed housing.json
         run: |
           git config user.name  "HHH Dashboard Bot"
@@ -43,3 +37,9 @@ jobs:
           git add data/housing.json
           git diff --cached --quiet || git commit -m "housing: refresh $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Send daily digest to housing team
+        env:
+          BOT_EMAIL_ADDRESS:  ${{ secrets.BOT_EMAIL_ADDRESS }}
+          BOT_EMAIL_PASSWORD: ${{ secrets.BOT_EMAIL_PASSWORD }}
+        run: python3 housing_notifications.py
