@@ -272,23 +272,26 @@ def best_form_match(form_rows, company, city, asana_created_at):
 
     candidates = []
     for r in form_rows:
-        row_co = normalize_company(r.get("Company Name") or "")
-        row_city = normalize_city(r.get("Project City") or "")
+        row_co = normalize_company(form_get(r, "Company Name") or "")
+        row_city = normalize_city(form_get(r, "Project City") or "")
         if not row_co:
             continue
         co_score = fuzz.token_set_ratio(target_co, row_co)
-        if co_score < 75:
+        if co_score < 70:
             continue
         # City must match if both sides have one (otherwise lots of false joins for
         # companies with multiple simultaneous searches like Power Design).
         if target_city and row_city and target_city != row_city:
-            # Allow fuzzy on city too — Birmingham/Birminham typos
-            city_score = fuzz.ratio(target_city, row_city)
-            if city_score < 80:
-                continue
+            # Allow fuzzy on city too — Birmingham/Birminham typos, or substring matches
+            if target_city in row_city or row_city in target_city:
+                pass
+            else:
+                city_score = fuzz.ratio(target_city, row_city)
+                if city_score < 75:
+                    continue
         # Time proximity: form fills before Asana task is created (by Zapier).
         ts_score = 0
-        ts = parse_form_timestamp(r.get("Timestamp"))
+        ts = parse_form_timestamp(form_get(r, "Timestamp"))
         if ts and asana_dt:
             delta_days = abs((asana_dt - ts).total_seconds()) / 86400
             ts_score = max(0, 100 - int(delta_days * 10))   # 10 pts per day
@@ -729,6 +732,31 @@ def main():
     records = build_records(tasks, form_rows, projects)
     matched = sum(1 for r in records if r["form_matched"])
     print(f"  ✓ {len(records)} records ({matched} joined to form rows)")
+
+    # Diagnostic: if 0 form joins despite having form rows + records, dump info
+    if matched == 0 and form_rows and records:
+        print("· DIAGNOSTIC — 0 joins despite data on both sides:")
+        sample_row = form_rows[0]
+        print(f"  · form row keys ({len(sample_row)}): {list(sample_row.keys())[:10]}")
+        co_key_sample = form_get(sample_row, "Company Name")
+        city_key_sample = form_get(sample_row, "Project City")
+        print(f"  · sample form Company Name: {co_key_sample!r}")
+        print(f"  · sample form Project City: {city_key_sample!r}")
+        sample_rec = records[0]
+        print(f"  · sample Asana company={sample_rec['company']!r} city={sample_rec['city']!r}")
+        # Try a manual match to see what's happening
+        try:
+            from rapidfuzz import fuzz
+            for r in form_rows[:3]:
+                co = form_get(r, "Company Name") or ""
+                cy = form_get(r, "Project City") or ""
+                ts = form_get(r, "Timestamp")
+                score = fuzz.token_set_ratio(
+                    normalize_company(sample_rec['company'] or ""),
+                    normalize_company(co))
+                print(f"    form: co={co!r:30} city={cy!r:20} ts={ts!r:25} score_vs_first_asana={score}")
+        except Exception as e:
+            print(f"  · diag failed: {e}")
 
     payload = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
