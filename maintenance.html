@@ -59,9 +59,10 @@
   .cal-range { font-size: 11px; color: var(--muted); margin: 4px 0 10px; }
   .cal-legend { display: inline-flex; gap: 12px; margin-left: 12px; font-size: 11px; color: var(--muted); }
   .cal-legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
-  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; }
-  .cal-day-header { background: #f7f8fc; text-align: center; padding: 6px 0; font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
-  .cal-day { background: #fff; min-height: 76px; padding: 4px 5px; font-size: 11px; vertical-align: top; }
+  .cal-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, minmax(120px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow: hidden; min-width: 840px; }
+  .cal-day-header { background: #f7f8fc; text-align: center; padding: 5px 0; font-size: 10px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+  .cal-day { background: #fff; min-height: 70px; padding: 3px 4px; font-size: 11px; vertical-align: top; }
   .cal-day.past     { background: #fafbfc; }
   .cal-day.today    { background: #fff8e1; box-shadow: inset 0 0 0 2px var(--gold); }
   .cal-day .daynum  { font-weight: 700; font-size: 11px; color: var(--dark); margin-bottom: 3px; }
@@ -232,7 +233,7 @@ function renderCalendar() {
       <span><span class="sw" style="background:#fed7d7"></span>Project ending</span>
       <span><span class="sw" style="background:#e53e3e"></span>Ending in ≤ 30 days</span>
     </span>
-  </div><div class="cal-grid">`;
+  </div><div class="cal-wrap"><div class="cal-grid">`;
   DAYS.forEach(d => { html += `<div class="cal-day-header">${d}</div>`; });
 
   for (let i = 0; i < 6*7; i++) {
@@ -259,7 +260,7 @@ function renderCalendar() {
     });
     html += '</div>';
   }
-  html += '</div>';
+  html += '</div></div>';
 
   document.getElementById('calendar').innerHTML = html;
 }
