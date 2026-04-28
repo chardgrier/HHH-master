@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T16:03:49.222641Z",
+  "generated_at": "2026-04-28T16:50:12.309886Z",
   "records": [
     {
       "gid": "1214321152920067",
@@ -19,10 +19,10 @@
       "days_open": 1,
       "days_past_due": -2,
       "month_bucket": "2026-04",
-      "salesperson": "Pablo",
+      "salesperson": "Paul",
       "salesperson_full": "Pablo Foley",
-      "housing_rep": "May Javelona",
-      "housing_rep_email": "may@hardhathousing.com",
+      "housing_rep": "Carrie Mink",
+      "housing_rep_email": "carrie@hardhathousing.com",
       "start_date": "2026-05-04",
       "end_date": "2026-08-03",
       "crew": "5",
@@ -4453,14 +4453,14 @@
     }
   },
   "conversion_by_salesperson": {
-    "Pablo": {
-      "total": 1,
-      "converted": 0,
-      "closed": 0,
-      "pending": 0,
-      "still_open": 1,
-      "future": 0,
-      "conversion_pct": null
+    "Paul": {
+      "total": 34,
+      "converted": 3,
+      "closed": 19,
+      "pending": 3,
+      "still_open": 4,
+      "future": 5,
+      "conversion_pct": 13.6
     },
     "David": {
       "total": 7,
@@ -4479,15 +4479,6 @@
       "still_open": 3,
       "future": 0,
       "conversion_pct": 31.1
-    },
-    "Paul": {
-      "total": 33,
-      "converted": 3,
-      "closed": 19,
-      "pending": 3,
-      "still_open": 3,
-      "future": 5,
-      "conversion_pct": 13.6
     },
     "Peyton": {
       "total": 8,
@@ -4527,14 +4518,14 @@
     }
   },
   "conversion_by_housing_rep": {
-    "May Javelona": {
-      "total": 2,
-      "converted": 1,
+    "Carrie Mink": {
+      "total": 1,
+      "converted": 0,
       "closed": 0,
       "pending": 0,
       "still_open": 1,
       "future": 0,
-      "conversion_pct": 100.0
+      "conversion_pct": null
     },
     "David Reichley": {
       "total": 10,
@@ -4616,6 +4607,15 @@
       "still_open": 0,
       "future": 0,
       "conversion_pct": 0.0
+    },
+    "May Javelona": {
+      "total": 1,
+      "converted": 1,
+      "closed": 0,
+      "pending": 0,
+      "still_open": 0,
+      "future": 0,
+      "conversion_pct": 100.0
     }
   },
   "attention": {
