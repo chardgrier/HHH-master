@@ -539,8 +539,17 @@ def build_records(tasks, form_rows, projects):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def build_scoreboard(records):
-    """Status × month matrix matching the sheet's scoreboard tab."""
-    months = sorted({r["month_bucket"] for r in records if r["month_bucket"]})
+    """Status × month matrix matching the sheet's scoreboard tab.
+
+    For any year that has at least one record, include ALL 12 months — so the
+    scorecard always shows future months as empty cells (matches the layout
+    the housing team is used to).
+    """
+    years_with_data = sorted({r["month_bucket"][:4] for r in records if r["month_bucket"]})
+    months = []
+    for y in years_with_data:
+        for m in range(1, 13):
+            months.append(f"{y}-{m:02d}")
     scoreboard = {s: {m: 0 for m in months} for s in STATUS_ORDER}
     for r in records:
         m = r["month_bucket"]
@@ -713,7 +722,9 @@ def write_back_master_sheet(gc, records):
 
     cols_letter = _col_letter(len(header))
     try:
-        scoreboard_ws.batch_clear([f"A1:{cols_letter}{len(body) + 20}"])
+        # Clear a generous range so we wipe any leftover columns/rows from a
+        # previous layout (e.g., months that are no longer in the data).
+        scoreboard_ws.batch_clear(["A1:Z100"])
         scoreboard_ws.update(values=body, range_name=f"A1:{cols_letter}{len(body)}", value_input_option="USER_ENTERED")
         print(f"  ✓ wrote scoreboard ({len(months)} months × {len(STATUS_ORDER)} status rows)")
     except Exception as e:
