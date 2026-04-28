@@ -197,7 +197,11 @@ def read_form_responses(gc):
         return []
     try:
         sh = gc.open_by_key(FORM_SHEET_ID)
-        ws = sh.sheet1   # form responses always live on the first tab
+        ws = _find_form_responses_tab(sh)
+        if ws is None:
+            print("  ! could not locate the form responses tab in this sheet")
+            return []
+        print(f"  · using tab: {ws.title!r}")
         values = ws.get_all_values()
         if len(values) < 2:
             print("  · form sheet has no data rows yet")
@@ -216,6 +220,35 @@ def read_form_responses(gc):
     except Exception as e:
         print(f"  ! could not read form sheet: {e}")
         return []
+
+
+def _find_form_responses_tab(sh):
+    """Find the worksheet that's actually the Google Form responses.
+
+    Strategy: prefer a tab literally named 'Form Responses 1' (Google Forms
+    default), then any tab whose row-1 contains both 'Timestamp' and a
+    'Sales Person Name'-style header. Falls through to None if nothing matches.
+    """
+    try:
+        worksheets = sh.worksheets()
+    except Exception:
+        return None
+
+    # First pass — exact-name match
+    for ws in worksheets:
+        if (ws.title or "").strip().lower().startswith("form responses"):
+            return ws
+
+    # Second pass — header sniffing
+    for ws in worksheets:
+        try:
+            row1 = ws.row_values(1) or []
+        except Exception:
+            continue
+        joined = " | ".join(row1).lower()
+        if "timestamp" in joined and "sales person name" in joined:
+            return ws
+    return None
 
 
 def form_get(row, *needles):
