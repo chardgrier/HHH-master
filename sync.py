@@ -697,13 +697,24 @@ def sync():
             # Prefer an explicit asana_gid in manual_rows.json; fall back to the
             # gid we captured during the Asana scan for this project number.
             row_gid = item.get("asana_gid") or manual_gid_by_number.get(str(item.get("skip_asana_match") or pnum))
+            # If house_starts is provided, prefer the earliest house move-in
+            # as the project's start_date — more accurate than the first month's
+            # day-1 (which was a placeholder for partial-month aggregations).
+            hstarts = item.get("house_starts") or []
+            if hstarts:
+                try:
+                    project_start = min(h["start_date"] for h in hstarts if h.get("start_date"))
+                except (ValueError, KeyError):
+                    project_start = keys[0] + "-01"
+            else:
+                project_start = keys[0] + "-01"
             rows.append({
                 "gid": row_gid,
                 "name": item.get("name"),
                 "salesperson": item.get("salesperson", "Unknown"),
                 "project_number": pnum,
                 "status": item.get("status", "Active"),
-                "start_date": keys[0] + "-01",
+                "start_date": project_start,
                 "end_date":   keys[-1] + "-28",
                 "base_ar": monthly_out[keys[-1]]["ar"],
                 "base_ap": monthly_out[keys[-1]]["ap"],
@@ -1111,15 +1122,19 @@ def write_maintenance_view(master):
                        "gid": x.get("gid"), "project_number": x.get("project_number")})
 
     # ── Upcoming Check-ins: 48 hrs before each house's start date ──
-    # We iterate per-house starts (not just the project's overall start_date) so
-    # multi-house projects with staggered move-ins generate one check-in per
-    # house. Falls back to the project-level start_date for older rows that
-    # don't have house_starts populated.
+    # Per-house starts get bucketed by (project, check-in date). When a
+    # project's houses all share the same check-in date, the calendar shows
+    # ONE entry for the project (no house letter). When houses have
+    # different check-in dates, we emit one entry per distinct date — and
+    # if only some of the project's houses fall on that date, we list those
+    # house letters in the label.
     today = date.today()
-    checkins = []
-    seen_keys = set()   # de-dupe (gid, house_prefix, date)
 
-    def add_checkin(name, gid, project_number, salesperson, start_iso, house):
+    # bucket: (gid, checkin_date_iso) -> {"houses":[..], "start_iso":..., "meta":{}}
+    buckets = {}
+    project_total_houses = {}    # gid -> number of houses on the project (for "all" detection)
+
+    def bucket_checkin(gid, name, pnum, sp, start_iso, house):
         try:
             sd = date.fromisoformat(start_iso)
         except Exception:
@@ -1128,23 +1143,17 @@ def write_maintenance_view(master):
         days = (checkin_date - today).days
         if days < -2 or days > 14:
             return
-        # Strip any [House X] suffix from the project name — we'll display the
-        # house separately so the calendar/list reads cleanly.
         clean = re.sub(r"\s*\[Houses?\s+[^\]]+\]\s*$", "", name)
-        key = (gid, house, checkin_date.isoformat())
-        if key in seen_keys:
-            return
-        seen_keys.add(key)
-        checkins.append({
-            "project":    clean,
-            "house":      house,
-            "start_date": start_iso,
-            "date":       checkin_date.isoformat(),
-            "days":       days,
-            "salesperson": salesperson or "",
-            "gid":           gid,
-            "project_number": project_number,
+        key = (gid, checkin_date.isoformat())
+        b = buckets.setdefault(key, {
+            "houses": set(),
+            "start_iso": start_iso,
+            "days": days,
+            "meta": {"project": clean, "salesperson": sp or "",
+                     "gid": gid, "project_number": pnum},
         })
+        if house:
+            b["houses"].add(house)
 
     for r in master["projects"]:
         gid = r.get("gid")
@@ -1152,18 +1161,43 @@ def write_maintenance_view(master):
         pnum  = r.get("project_number")
         sp    = r.get("salesperson", "")
 
-        # Fallback house letter from name suffix (used when house_starts is empty)
         name_house_m = re.search(r"\[House\s+([A-Z])\]", pname)
         name_house = name_house_m.group(1) if name_house_m else None
 
         houses = r.get("house_starts") or []
         if houses:
+            project_total_houses[gid] = len(houses)
             for h in houses:
-                add_checkin(pname, gid, pnum, sp, h.get("start_date"), h.get("prefix") or name_house)
+                bucket_checkin(gid, pname, pnum, sp,
+                               h.get("start_date"),
+                               h.get("prefix") or name_house)
         elif r["status"] == "Upcoming" and r.get("start_date"):
-            # Legacy path: row has no house_starts (manual rows etc.) — only fire
-            # check-ins for Upcoming, matching the previous behaviour.
-            add_checkin(pname, gid, pnum, sp, r["start_date"], name_house)
+            project_total_houses[gid] = 1
+            bucket_checkin(gid, pname, pnum, sp, r["start_date"], name_house)
+
+    checkins = []
+    for (gid, cd_iso), b in buckets.items():
+        houses_in_bucket = sorted(h for h in b["houses"] if h)
+        total = project_total_houses.get(gid, 1)
+        # If every house lands in this bucket, drop the house label entirely.
+        if len(houses_in_bucket) == 0 or len(houses_in_bucket) >= total:
+            house_label = None
+        elif len(houses_in_bucket) == 1:
+            house_label = houses_in_bucket[0]
+        else:
+            house_label = ",".join(houses_in_bucket)
+
+        meta = b["meta"]
+        checkins.append({
+            "project":        meta["project"],
+            "house":          house_label,
+            "start_date":     b["start_iso"],
+            "date":           cd_iso,
+            "days":           b["days"],
+            "salesperson":    meta["salesperson"],
+            "gid":            meta["gid"],
+            "project_number": meta["project_number"],
+        })
     checkins.sort(key=lambda x: x["days"])
 
     tickets = fetch_maintenance_tasks()
