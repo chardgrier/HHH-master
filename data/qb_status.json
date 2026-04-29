@@ -1,7 +1,2727 @@
 {
-  "generated_at": "2026-04-29T08:08:46.953200",
+  "generated_at": "2026-04-29T19:03:00.378513",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
+    "Quality Walls and Ceiling - Lexington KY - Zeke - 2527": {
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "7096",
+          "doc_number": "2527-14",
+          "due_date": "2026-05-01",
+          "project_number": "2527",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "7095",
+          "doc_number": "2527-13",
+          "due_date": "2026-04-02",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 3600.0,
+          "invoice_id": "7495",
+          "doc_number": "2527-15",
+          "due_date": "2026-06-01",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 4800.0,
+          "deposit": 0.0,
+          "total_amt": 4800.0,
+          "balance": 0.0,
+          "invoice_id": "5986",
+          "doc_number": "2527-12",
+          "due_date": "2026-02-22",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "5902",
+          "doc_number": "2527-11",
+          "due_date": "2026-02-05",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "4903",
+          "doc_number": "2527-10",
+          "due_date": "2025-12-22",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "3510",
+          "doc_number": "2527-09",
+          "due_date": "2025-11-22",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "status": "paid",
+          "amount": 2400.0,
+          "deposit": 0.0,
+          "total_amt": 2400.0,
+          "balance": 0.0,
+          "invoice_id": "2987",
+          "doc_number": "2527-07",
+          "due_date": "2025-10-23",
+          "project_number": "2527",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "3034",
+          "doc_number": "2527-08",
+          "due_date": "2025-10-22",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-08": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "2463",
+          "doc_number": "2527-06",
+          "due_date": "2025-09-18",
+          "project_number": "2527",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "2214",
+          "doc_number": "2527-05",
+          "due_date": "2025-09-03",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "1616",
+          "doc_number": "2527-04",
+          "due_date": "2025-07-20",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-05": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "1108",
+          "doc_number": "2527-03",
+          "due_date": "2025-06-27",
+          "project_number": "2527",
+          "house": null
+        }
+      ],
+      "2025-04": [
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "645",
+          "doc_number": "2527-02",
+          "due_date": "2025-05-21",
+          "project_number": "2527",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 1200.0,
+          "deposit": 1000.0,
+          "total_amt": 2200.0,
+          "balance": 0.0,
+          "invoice_id": "644",
+          "doc_number": "2527-01",
+          "due_date": "2025-04-21",
+          "project_number": "2527",
+          "house": null
+        }
+      ]
+    },
+    "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House G]": {
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "7146",
+          "doc_number": "2506-G05",
+          "due_date": "2026-04-14",
+          "project_number": "2506",
+          "house": "G"
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6496",
+          "doc_number": "2506-G04",
+          "due_date": "2026-03-14",
+          "project_number": "2506",
+          "house": "G"
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5748",
+          "doc_number": "2506-G03",
+          "due_date": "2026-02-14",
+          "project_number": "2506",
+          "house": "G"
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5078",
+          "doc_number": "2506-G02",
+          "due_date": "2026-01-14",
+          "project_number": "2506",
+          "house": "G"
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "4640",
+          "doc_number": "2506-G01",
+          "due_date": "2025-12-14",
+          "project_number": "2506",
+          "house": "G"
+        }
+      ]
+    },
+    "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [Houses A,B,C,D,E,F]": {
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "7145",
+          "doc_number": "2506-F07",
+          "due_date": "2026-05-01",
+          "project_number": "2506",
+          "house": "F"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "7144",
+          "doc_number": "2506-E08",
+          "due_date": "2026-05-01",
+          "project_number": "2506",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "7143",
+          "doc_number": "2506-D10",
+          "due_date": "2026-05-01",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "7142",
+          "doc_number": "2506-C10",
+          "due_date": "2026-05-01",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "7141",
+          "doc_number": "2506-B15",
+          "due_date": "2026-05-01",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "7140",
+          "doc_number": "2506-A17",
+          "due_date": "2026-05-01",
+          "project_number": "2506",
+          "house": "A"
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6490",
+          "doc_number": "2506-A16",
+          "due_date": "2026-04-01",
+          "project_number": "2506",
+          "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6495",
+          "doc_number": "2506-F06",
+          "due_date": "2026-04-01",
+          "project_number": "2506",
+          "house": "F"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6494",
+          "doc_number": "2506-E07",
+          "due_date": "2026-04-01",
+          "project_number": "2506",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6493",
+          "doc_number": "2506-D09",
+          "due_date": "2026-04-01",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6492",
+          "doc_number": "2506-C09",
+          "due_date": "2026-04-01",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "6491",
+          "doc_number": "2506-B14",
+          "due_date": "2026-04-01",
+          "project_number": "2506",
+          "house": "B"
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5745",
+          "doc_number": "2506-D08",
+          "due_date": "2026-03-01",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5744",
+          "doc_number": "2506-C08",
+          "due_date": "2026-03-01",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5742",
+          "doc_number": "2506-A15",
+          "due_date": "2026-03-01",
+          "project_number": "2506",
+          "house": "A"
+        },
+        {
+          "status": "overdue",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 3895.0,
+          "invoice_id": "5743",
+          "doc_number": "2506-B13",
+          "due_date": "2026-03-01",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5747",
+          "doc_number": "2506-F05",
+          "due_date": "2026-02-27",
+          "project_number": "2506",
+          "house": "F"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5746",
+          "doc_number": "2506-E06",
+          "due_date": "2026-03-01",
+          "project_number": "2506",
+          "house": "E"
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5072",
+          "doc_number": "2506-A14",
+          "due_date": "2026-02-01",
+          "project_number": "2506",
+          "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5077",
+          "doc_number": "2506-F04",
+          "due_date": "2026-01-27",
+          "project_number": "2506",
+          "house": "F"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5076",
+          "doc_number": "2506-E05",
+          "due_date": "2026-02-01",
+          "project_number": "2506",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5075",
+          "doc_number": "2506-D07",
+          "due_date": "2026-02-01",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5074",
+          "doc_number": "2506-C07",
+          "due_date": "2026-02-01",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "5073",
+          "doc_number": "2506-B12",
+          "due_date": "2026-02-01",
+          "project_number": "2506",
+          "house": "B"
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4637",
+          "doc_number": "2506-D06",
+          "due_date": "2026-01-01",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4636",
+          "doc_number": "2506-C06",
+          "due_date": "2026-01-01",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "4635",
+          "doc_number": "2506-B11",
+          "due_date": "2026-01-01",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4634",
+          "doc_number": "2506-A13",
+          "due_date": "2026-01-01",
+          "project_number": "2506",
+          "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4639",
+          "doc_number": "2506-F03",
+          "due_date": "2025-12-27",
+          "project_number": "2506",
+          "house": "F"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4638",
+          "doc_number": "2506-E04",
+          "due_date": "2026-01-06",
+          "project_number": "2506",
+          "house": "E"
+        }
+      ],
+      "2025-04": [
+        {
+          "status": "paid",
+          "amount": 2467.0,
+          "deposit": 2000.0,
+          "total_amt": 4467.0,
+          "balance": 0.0,
+          "invoice_id": "682",
+          "doc_number": "2506-B01",
+          "due_date": "2025-04-25",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 257.5,
+          "deposit": 0.0,
+          "total_amt": 257.5,
+          "balance": 0.0,
+          "invoice_id": "684",
+          "doc_number": "2506-B00",
+          "due_date": "2025-04-25",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "641",
+          "doc_number": "2506-05",
+          "due_date": "2025-05-17",
+          "project_number": "2506",
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "4128",
+          "doc_number": "2506-B10",
+          "due_date": "2025-12-01",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4132",
+          "doc_number": "2506-F02",
+          "due_date": "2025-11-27",
+          "project_number": "2506",
+          "house": "F"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4131",
+          "doc_number": "2506-E03",
+          "due_date": "2025-12-01",
+          "project_number": "2506",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 2157.0,
+          "deposit": 0.0,
+          "total_amt": 2157.0,
+          "balance": 0.0,
+          "invoice_id": "4130",
+          "doc_number": "2506-D05",
+          "due_date": "2025-12-13",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 2516.5,
+          "deposit": 0.0,
+          "total_amt": 2516.5,
+          "balance": 0.0,
+          "invoice_id": "4129",
+          "doc_number": "2506-C05",
+          "due_date": "2025-12-09",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 1318.0,
+          "deposit": 0.0,
+          "total_amt": 1318.0,
+          "balance": 0.0,
+          "invoice_id": "4127",
+          "doc_number": "2506-A12",
+          "due_date": "2025-12-20",
+          "project_number": "2506",
+          "house": "A"
+        }
+      ],
+      "2025-10": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "3586",
+          "doc_number": "2506-F01",
+          "due_date": "2025-10-24",
+          "project_number": "2506",
+          "house": "F"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "3487",
+          "doc_number": "2506-D04",
+          "due_date": "2025-11-13",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "3486",
+          "doc_number": "2506-C04",
+          "due_date": "2025-11-10",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "3485",
+          "doc_number": "2506-B09",
+          "due_date": "2025-11-01",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "3484",
+          "doc_number": "2506-A11",
+          "due_date": "2025-11-18",
+          "project_number": "2506",
+          "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "3143",
+          "doc_number": "2506-E02",
+          "due_date": "2025-11-01",
+          "project_number": "2506",
+          "house": "E"
+        }
+      ],
+      "2025-05": [
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "1106",
+          "doc_number": "2506-B02",
+          "due_date": "2025-06-27",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "1105",
+          "doc_number": "2506-A06",
+          "due_date": "2025-06-27",
+          "project_number": "2506",
+          "house": "A"
+        }
+      ],
+      "2025-09": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "2946",
+          "doc_number": "2506-E01",
+          "due_date": "2025-10-01",
+          "project_number": "2506",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "2945",
+          "doc_number": "2506-D03",
+          "due_date": "2025-10-13",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "2944",
+          "doc_number": "2506-C03",
+          "due_date": "2025-10-10",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "2943",
+          "doc_number": "2506-B08",
+          "due_date": "2025-10-01",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "2942",
+          "doc_number": "2506-A10",
+          "due_date": "2025-10-20",
+          "project_number": "2506",
+          "house": "A"
+        }
+      ],
+      "2025-08": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "2217",
+          "doc_number": "2506-D01",
+          "due_date": "2025-08-13",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "2487",
+          "doc_number": "2506-D02",
+          "due_date": "2025-09-19",
+          "project_number": "2506",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "2486",
+          "doc_number": "2506-C02",
+          "due_date": "2025-09-19",
+          "project_number": "2506",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "2485",
+          "doc_number": "2506-B07",
+          "due_date": "2025-09-19",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "2484",
+          "doc_number": "2506-A09",
+          "due_date": "2025-09-19",
+          "project_number": "2506",
+          "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "2216",
+          "doc_number": "2506-C01",
+          "due_date": "2025-08-13",
+          "project_number": "2506",
+          "house": "C"
+        }
+      ],
+      "2025-07": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "2126",
+          "doc_number": "2506-A08",
+          "due_date": "2025-08-28",
+          "project_number": "2506",
+          "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "2125",
+          "doc_number": "2506-B06",
+          "due_date": "2025-08-28",
+          "project_number": "2506",
+          "house": "B"
+        }
+      ],
+      "2025-01": [
+        {
+          "status": "paid",
+          "amount": 4797.0,
+          "deposit": 0.0,
+          "total_amt": 4797.0,
+          "balance": 0.0,
+          "invoice_id": "59",
+          "doc_number": "2506-02",
+          "due_date": "2025-02-16",
+          "project_number": "2506",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 2000.0,
+          "total_amt": 5595.0,
+          "balance": 0.0,
+          "invoice_id": "58",
+          "doc_number": "2506-01",
+          "due_date": "2025-02-16",
+          "project_number": "2506",
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "1615",
+          "doc_number": "2506-B03",
+          "due_date": "2025-07-20",
+          "project_number": "2506",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "1614",
+          "doc_number": "2506-A07",
+          "due_date": "2025-07-20",
+          "project_number": "2506",
+          "house": "A"
+        }
+      ],
+      "2025-03": [
+        {
+          "status": "paid",
+          "amount": 3895.0,
+          "deposit": 0.0,
+          "total_amt": 3895.0,
+          "balance": 0.0,
+          "invoice_id": "429",
+          "doc_number": "2506-04",
+          "due_date": "2025-04-24",
+          "project_number": "2506",
+          "house": null
+        }
+      ],
+      "2025-02": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "208",
+          "doc_number": "2506-02.20",
+          "due_date": "2025-03-27",
+          "project_number": "2506",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "210",
+          "doc_number": "2506-03",
+          "due_date": "2025-03-22",
+          "project_number": "2506",
+          "house": null
+        }
+      ]
+    },
+    "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House C]": {
+      "2026-08": [
+        {
+          "status": "paid",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 0.0,
+          "invoice_id": "6758",
+          "doc_number": "2618-C02",
+          "due_date": "2026-08-31",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2027-07": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6768",
+          "doc_number": "2618-C12",
+          "due_date": "2027-08-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2027-05": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6767",
+          "doc_number": "2618-C11",
+          "due_date": "2027-06-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2027-04": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6766",
+          "doc_number": "2618-C10",
+          "due_date": "2027-05-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2027-03": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6765",
+          "doc_number": "2618-C09",
+          "due_date": "2027-04-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2027-02": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6764",
+          "doc_number": "2618-C08",
+          "due_date": "2027-03-03",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2027-01": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6763",
+          "doc_number": "2618-C07",
+          "due_date": "2027-01-31",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2026-12": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6762",
+          "doc_number": "2618-C06",
+          "due_date": "2027-01-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2026-11": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6761",
+          "doc_number": "2618-C05",
+          "due_date": "2026-12-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2026-10": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6760",
+          "doc_number": "2618-C04",
+          "due_date": "2026-11-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2026-09": [
+        {
+          "status": "sent",
+          "amount": 5150.0,
+          "deposit": 0.0,
+          "total_amt": 5150.0,
+          "balance": 5150.0,
+          "invoice_id": "6759",
+          "doc_number": "2618-C03",
+          "due_date": "2026-10-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ],
+      "2026-07": [
+        {
+          "status": "paid",
+          "amount": 5150.0,
+          "deposit": 1500.0,
+          "total_amt": 6650.0,
+          "balance": 0.0,
+          "invoice_id": "6756",
+          "doc_number": "2618-C01",
+          "due_date": "2026-07-01",
+          "project_number": "2618",
+          "house": "C"
+        }
+      ]
+    },
+    "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House I]": {
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6498",
+          "doc_number": "2506-I02",
+          "due_date": "2026-03-14",
+          "project_number": "2506",
+          "house": "I"
+        }
+      ],
+      "2026-04": [
+        {
+          "status": "overdue",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "7148",
+          "doc_number": "2506-I03",
+          "due_date": "2026-04-15",
+          "project_number": "2506",
+          "house": "I"
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "5969",
+          "doc_number": "2506-I01",
+          "due_date": "2026-02-11",
+          "project_number": "2506",
+          "house": "I"
+        }
+      ]
+    },
+    "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House B]": {
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6429",
+          "doc_number": "2618-B03",
+          "due_date": "2026-05-01",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6428",
+          "doc_number": "2618-B02",
+          "due_date": "2026-04-02",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "6427",
+          "doc_number": "2618-B01",
+          "due_date": "2026-02-26",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2027-01": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6438",
+          "doc_number": "2618-B12",
+          "due_date": "2027-01-31",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-12": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6437",
+          "doc_number": "2618-B11",
+          "due_date": "2026-12-31",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-11": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6436",
+          "doc_number": "2618-B10",
+          "due_date": "2026-12-01",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-10": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6435",
+          "doc_number": "2618-B09",
+          "due_date": "2026-10-31",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-09": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6434",
+          "doc_number": "2618-B08",
+          "due_date": "2026-10-01",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-08": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6433",
+          "doc_number": "2618-B07",
+          "due_date": "2026-08-31",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-07": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6432",
+          "doc_number": "2618-B06",
+          "due_date": "2026-07-31",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-06": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6431",
+          "doc_number": "2618-B05",
+          "due_date": "2026-07-01",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ],
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6430",
+          "doc_number": "2618-B04",
+          "due_date": "2026-05-31",
+          "project_number": "2618",
+          "house": "B"
+        }
+      ]
+    },
+    "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House A]": {
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6213",
+          "doc_number": "2618-03",
+          "due_date": "2026-05-01",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "6212",
+          "doc_number": "2618-02",
+          "due_date": "2026-03-25",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 1500.0,
+          "total_amt": 5095.0,
+          "balance": 0.0,
+          "invoice_id": "6211",
+          "doc_number": "2618-01",
+          "due_date": "2026-02-20",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2027-01": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6222",
+          "doc_number": "2618-12",
+          "due_date": "2027-01-31",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-12": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6221",
+          "doc_number": "2618-11",
+          "due_date": "2026-12-31",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-11": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6220",
+          "doc_number": "2618-10",
+          "due_date": "2026-12-01",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-10": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6219",
+          "doc_number": "2618-09",
+          "due_date": "2026-10-31",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-09": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6218",
+          "doc_number": "2618-08",
+          "due_date": "2026-10-01",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-08": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6217",
+          "doc_number": "2618-07",
+          "due_date": "2026-08-31",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6216",
+          "doc_number": "2618-06",
+          "due_date": "2026-07-31",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6215",
+          "doc_number": "2618-05",
+          "due_date": "2026-07-01",
+          "project_number": "2618",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "6214",
+          "doc_number": "2618-04",
+          "due_date": "2026-05-31",
+          "project_number": "2618",
+          "house": null
+        }
+      ]
+    },
+    "Miller Pipeline - Saint Joseph, MO - Paul - 2586": {
+      "2026-05": [
+        {
+          "status": "paid",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 0.0,
+          "invoice_id": "6132",
+          "doc_number": "2586-07",
+          "due_date": "2026-05-31",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 0.0,
+          "invoice_id": "6131",
+          "doc_number": "2586-06",
+          "due_date": "2026-05-01",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 0.0,
+          "invoice_id": "6130",
+          "doc_number": "2586-05",
+          "due_date": "2026-03-31",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 0.0,
+          "invoice_id": "5710",
+          "doc_number": "2586-04",
+          "due_date": "2026-03-01",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 0.0,
+          "invoice_id": "4649",
+          "doc_number": "2586-02",
+          "due_date": "2026-01-01",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 0.0,
+          "invoice_id": "5083",
+          "doc_number": "2586-03",
+          "due_date": "2026-02-01",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-10": [
+        {
+          "status": "sent",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 4295.0,
+          "invoice_id": "6137",
+          "doc_number": "2586-12",
+          "due_date": "2026-10-31",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-09": [
+        {
+          "status": "sent",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 4295.0,
+          "invoice_id": "6136",
+          "doc_number": "2586-11",
+          "due_date": "2026-10-01",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-08": [
+        {
+          "status": "sent",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 4295.0,
+          "invoice_id": "6135",
+          "doc_number": "2586-10",
+          "due_date": "2026-08-31",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "status": "sent",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 4295.0,
+          "invoice_id": "6134",
+          "doc_number": "2586-09",
+          "due_date": "2026-08-01",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "status": "sent",
+          "amount": 4295.0,
+          "deposit": 0.0,
+          "total_amt": 4295.0,
+          "balance": 4295.0,
+          "invoice_id": "6133",
+          "doc_number": "2586-08",
+          "due_date": "2026-07-01",
+          "project_number": "2586",
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "status": "paid",
+          "amount": 4295.0,
+          "deposit": 1500.0,
+          "total_amt": 5795.0,
+          "balance": 0.0,
+          "invoice_id": "3589",
+          "doc_number": "2586-01",
+          "due_date": "2025-10-24",
+          "project_number": "2586",
+          "house": null
+        }
+      ]
+    },
+    "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513": {
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "5999",
+          "doc_number": "2513-14",
+          "due_date": "2026-04-07",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-04": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6000",
+          "doc_number": "2513-15",
+          "due_date": "2026-05-01",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "5929",
+          "doc_number": "2513-13",
+          "due_date": "2026-03-08",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2027-01": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6121",
+          "doc_number": "2513-24",
+          "due_date": "2027-01-31",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-12": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6120",
+          "doc_number": "2513-23",
+          "due_date": "2026-12-31",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-11": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6119",
+          "doc_number": "2513-22",
+          "due_date": "2026-12-01",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-10": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6118",
+          "doc_number": "2513-21",
+          "due_date": "2026-10-31",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-09": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6117",
+          "doc_number": "2513-20",
+          "due_date": "2026-10-01",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-08": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6116",
+          "doc_number": "2513-19",
+          "due_date": "2026-08-31",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6115",
+          "doc_number": "2513-18",
+          "due_date": "2026-07-31",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6114",
+          "doc_number": "2513-17",
+          "due_date": "2026-07-01",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 7190.0,
+          "invoice_id": "6113",
+          "doc_number": "2513-16",
+          "due_date": "2026-05-31",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "5087",
+          "doc_number": "2513-12",
+          "due_date": "2026-02-09",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "4630",
+          "doc_number": "2513-11",
+          "due_date": "2026-01-05",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "3130",
+          "doc_number": "2513-09",
+          "due_date": "2025-11-02",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "4085",
+          "doc_number": "2513-10",
+          "due_date": "2025-12-09",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "2941",
+          "doc_number": "2513-08",
+          "due_date": "2025-10-09",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-08": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "2488",
+          "doc_number": "2513-07",
+          "due_date": "2025-09-19",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-07": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "2086",
+          "doc_number": "2513-06",
+          "due_date": "2025-08-25",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "1613",
+          "doc_number": "2513-05",
+          "due_date": "2025-07-20",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-05": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "1104",
+          "doc_number": "2513-04",
+          "due_date": "2025-06-27",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-04": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "640",
+          "doc_number": "2513-03",
+          "due_date": "2025-05-17",
+          "project_number": "2513",
+          "house": null
+        }
+      ],
+      "2025-03": [
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 0.0,
+          "total_amt": 7190.0,
+          "balance": 0.0,
+          "invoice_id": "428",
+          "doc_number": "2513-02",
+          "due_date": "2025-04-24",
+          "project_number": "2513",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 7190.0,
+          "deposit": 4000.0,
+          "total_amt": 11190.0,
+          "balance": 0.0,
+          "invoice_id": "296",
+          "doc_number": "2513-01",
+          "due_date": "2025-04-04",
+          "project_number": "2513",
+          "house": null
+        }
+      ]
+    },
+    "Miller Pipeline - Monett, MO - Paul - 2593": {
+      "2026-04": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5824",
+          "doc_number": "2593-06",
+          "due_date": "2026-05-01",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5823",
+          "doc_number": "2593-05",
+          "due_date": "2026-04-01",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5822",
+          "doc_number": "2593-04",
+          "due_date": "2026-03-01",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-11": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "5831",
+          "doc_number": "2593-13",
+          "due_date": "2026-12-01",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-10": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "5830",
+          "doc_number": "2593-12",
+          "due_date": "2026-10-31",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-09": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "5829",
+          "doc_number": "2593-11",
+          "due_date": "2026-10-01",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-08": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "5828",
+          "doc_number": "2593-10",
+          "due_date": "2026-08-31",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "5827",
+          "doc_number": "2593-09",
+          "due_date": "2026-07-31",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "5826",
+          "doc_number": "2593-08",
+          "due_date": "2026-07-01",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 3595.0,
+          "invoice_id": "5825",
+          "doc_number": "2593-07",
+          "due_date": "2026-05-31",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "5068",
+          "doc_number": "2593-03",
+          "due_date": "2026-02-01",
+          "project_number": "2593",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 3595.0,
+          "deposit": 0.0,
+          "total_amt": 3595.0,
+          "balance": 0.0,
+          "invoice_id": "4915",
+          "doc_number": "2593-02",
+          "due_date": "2026-01-01",
+          "project_number": "2593",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 1437.96,
+          "deposit": 1500.0,
+          "total_amt": 2937.96,
+          "balance": 0.0,
+          "invoice_id": "4719",
+          "doc_number": "2593-01",
+          "due_date": "2025-12-15",
+          "project_number": "2593",
+          "house": null
+        }
+      ]
+    },
+    "Rising Sun Developing": {
+      "2026-04": [
+        {
+          "status": "sent",
+          "amount": 101212.48,
+          "deposit": 3537.0,
+          "total_amt": 104749.48,
+          "balance": 104749.48,
+          "invoice_id": "7722",
+          "doc_number": "2600-05",
+          "due_date": "2026-04-29",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 111522.92,
+          "deposit": 0.0,
+          "total_amt": 111522.92,
+          "balance": 0.0,
+          "invoice_id": "6929",
+          "doc_number": "2600-04",
+          "due_date": "2026-03-29",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 0.0,
+          "deposit": 1000.0,
+          "total_amt": 1000.0,
+          "balance": 0.0,
+          "invoice_id": "6688",
+          "doc_number": "2619-01",
+          "due_date": "2026-03-13",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 114793.75,
+          "deposit": 0.0,
+          "total_amt": 114793.75,
+          "balance": 0.0,
+          "invoice_id": "6367",
+          "doc_number": "2600-03",
+          "due_date": "2026-02-27",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 117800.0,
+          "deposit": 0.0,
+          "total_amt": 117800.0,
+          "balance": 0.0,
+          "invoice_id": "5627",
+          "doc_number": "2600-02",
+          "due_date": "2026-03-04",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "status": "paid",
+          "amount": 119750.0,
+          "deposit": 0.0,
+          "total_amt": 119750.0,
+          "balance": 0.0,
+          "invoice_id": "4096",
+          "doc_number": "110125",
+          "due_date": "2025-11-30",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "status": "paid",
+          "amount": 126750.0,
+          "deposit": 0.0,
+          "total_amt": 126750.0,
+          "balance": 0.0,
+          "invoice_id": "4917",
+          "doc_number": "2600-01",
+          "due_date": "2026-01-01",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "status": "paid",
+          "amount": 125550.0,
+          "deposit": 0.0,
+          "total_amt": 125550.0,
+          "balance": 0.0,
+          "invoice_id": "4406",
+          "doc_number": "2500-12",
+          "due_date": "2025-12-01",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-07": [
+        {
+          "status": "paid",
+          "amount": 2400.0,
+          "deposit": 0.0,
+          "total_amt": 2400.0,
+          "balance": 0.0,
+          "invoice_id": "2869",
+          "doc_number": "070925",
+          "due_date": "2025-07-31",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 107100.0,
+          "deposit": 0.0,
+          "total_amt": 107100.0,
+          "balance": 0.0,
+          "invoice_id": "2141",
+          "doc_number": "080125",
+          "due_date": "2025-07-31",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "status": "paid",
+          "amount": 0.0,
+          "deposit": 4500.0,
+          "total_amt": 4500.0,
+          "balance": 0.0,
+          "invoice_id": "4117",
+          "doc_number": "101725",
+          "due_date": "2025-09-27",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 900.0,
+          "deposit": 0.0,
+          "total_amt": 900.0,
+          "balance": 0.0,
+          "invoice_id": "4116",
+          "doc_number": "101525",
+          "due_date": "2025-10-27",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 1200.0,
+          "deposit": 0.0,
+          "total_amt": 1200.0,
+          "balance": 0.0,
+          "invoice_id": "4115",
+          "doc_number": "101625",
+          "due_date": "2025-10-27",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 0.0,
+          "deposit": 3600.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "4109",
+          "doc_number": "092625",
+          "due_date": "2025-10-27",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 113400.0,
+          "deposit": 0.0,
+          "total_amt": 113400.0,
+          "balance": 0.0,
+          "invoice_id": "4095",
+          "doc_number": "100125",
+          "due_date": "2025-09-30",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 4500.0,
+          "deposit": 0.0,
+          "total_amt": 4500.0,
+          "balance": 0.0,
+          "invoice_id": "4105",
+          "doc_number": "090925",
+          "due_date": "2025-09-12",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-01": [
+        {
+          "status": "paid",
+          "amount": 78150.0,
+          "deposit": 0.0,
+          "total_amt": 78150.0,
+          "balance": 0.0,
+          "invoice_id": "96",
+          "doc_number": "JAN0125",
+          "due_date": "2025-01-31",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-02": [
+        {
+          "status": "paid",
+          "amount": 77850.0,
+          "deposit": 0.0,
+          "total_amt": 77850.0,
+          "balance": 0.0,
+          "invoice_id": "245",
+          "doc_number": "030125",
+          "due_date": "2025-03-03",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-03": [
+        {
+          "status": "paid",
+          "amount": 89700.0,
+          "deposit": 0.0,
+          "total_amt": 89700.0,
+          "balance": 0.0,
+          "invoice_id": "436",
+          "doc_number": "040125",
+          "due_date": "2025-03-31",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 3600.0,
+          "deposit": 0.0,
+          "total_amt": 3600.0,
+          "balance": 0.0,
+          "invoice_id": "1141",
+          "doc_number": "031025",
+          "due_date": "2025-03-10",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-04": [
+        {
+          "status": "paid",
+          "amount": 98100.0,
+          "deposit": 0.0,
+          "total_amt": 98100.0,
+          "balance": 0.0,
+          "invoice_id": "798",
+          "doc_number": "050125",
+          "due_date": "2025-05-01",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-06": [
+        {
+          "status": "paid",
+          "amount": 99900.0,
+          "deposit": 0.0,
+          "total_amt": 99900.0,
+          "balance": 0.0,
+          "invoice_id": "1136",
+          "doc_number": "060125",
+          "due_date": "2025-07-01",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-08": [
+        {
+          "status": "paid",
+          "amount": 5775.0,
+          "deposit": 0.0,
+          "total_amt": 5775.0,
+          "balance": 0.0,
+          "invoice_id": "2325",
+          "doc_number": "080325",
+          "due_date": "2025-08-08",
+          "project_number": null,
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 110700.0,
+          "deposit": 2500.0,
+          "total_amt": 113200.0,
+          "balance": 0.0,
+          "invoice_id": "2625",
+          "doc_number": "090125",
+          "due_date": "2025-08-31",
+          "project_number": null,
+          "house": null
+        }
+      ]
+    },
+    "FHG Marine Engineering - Chula Vista, CA - David - 2589": {
+      "2025-12": [
+        {
+          "status": "overdue",
+          "amount": 7350.0,
+          "deposit": 0.0,
+          "total_amt": 7350.0,
+          "balance": 7350.0,
+          "invoice_id": "4651",
+          "doc_number": "2589-02",
+          "due_date": "2026-01-01",
+          "project_number": "2589",
+          "house": null
+        }
+      ],
+      "2025-11": [
+        {
+          "status": "paid",
+          "amount": 7350.0,
+          "deposit": 1000.0,
+          "total_amt": 8350.0,
+          "balance": 0.0,
+          "invoice_id": "4507",
+          "doc_number": "2589-01",
+          "due_date": "2025-12-28",
+          "project_number": "2589",
+          "house": null
+        }
+      ]
+    },
+    "FHG Marine Engineering Inc. - Port Angeles, WA - Logan- 2610": {
+      "2026-02": [
+        {
+          "status": "overdue",
+          "amount": 4650.0,
+          "deposit": 0.0,
+          "total_amt": 4650.0,
+          "balance": 4650.0,
+          "invoice_id": "5965",
+          "doc_number": "2610-01",
+          "due_date": "2026-02-10",
+          "project_number": "2610",
+          "house": null
+        }
+      ]
+    },
     "Heycon, LLC - Charlotte, NC - Zeke -2625": {
       "2026-03": [
         {
@@ -1940,210 +4660,6 @@
         }
       ]
     },
-    "Quality Walls and Ceiling - Lexington KY - Zeke - 2527": {
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 3600.0,
-          "invoice_id": "7495",
-          "doc_number": "2527-15",
-          "due_date": "2026-06-01",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2026-04": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "7095",
-          "doc_number": "2527-13",
-          "due_date": "2026-04-02",
-          "project_number": "2527",
-          "house": null
-        },
-        {
-          "status": "sent",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 3600.0,
-          "invoice_id": "7096",
-          "doc_number": "2527-14",
-          "due_date": "2026-05-01",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 4800.0,
-          "deposit": 0.0,
-          "total_amt": 4800.0,
-          "balance": 0.0,
-          "invoice_id": "5986",
-          "doc_number": "2527-12",
-          "due_date": "2026-02-22",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "5902",
-          "doc_number": "2527-11",
-          "due_date": "2026-02-05",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "4903",
-          "doc_number": "2527-10",
-          "due_date": "2025-12-22",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "3510",
-          "doc_number": "2527-09",
-          "due_date": "2025-11-22",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 2400.0,
-          "deposit": 0.0,
-          "total_amt": 2400.0,
-          "balance": 0.0,
-          "invoice_id": "2987",
-          "doc_number": "2527-07",
-          "due_date": "2025-10-23",
-          "project_number": "2527",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "3034",
-          "doc_number": "2527-08",
-          "due_date": "2025-10-22",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-08": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "2463",
-          "doc_number": "2527-06",
-          "due_date": "2025-09-18",
-          "project_number": "2527",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "2214",
-          "doc_number": "2527-05",
-          "due_date": "2025-09-03",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-06": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "1616",
-          "doc_number": "2527-04",
-          "due_date": "2025-07-20",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-05": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "1108",
-          "doc_number": "2527-03",
-          "due_date": "2025-06-27",
-          "project_number": "2527",
-          "house": null
-        }
-      ],
-      "2025-04": [
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "645",
-          "doc_number": "2527-02",
-          "due_date": "2025-05-21",
-          "project_number": "2527",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 1200.0,
-          "deposit": 1000.0,
-          "total_amt": 2200.0,
-          "balance": 0.0,
-          "invoice_id": "644",
-          "doc_number": "2527-01",
-          "due_date": "2025-04-21",
-          "project_number": "2527",
-          "house": null
-        }
-      ]
-    },
     "Power Design - Tucson, AZ - Zeke - 2615": {
       "2026-04": [
         {
@@ -2755,176 +5271,6 @@
           "due_date": "2026-06-01",
           "project_number": "2623",
           "house": "B"
-        }
-      ]
-    },
-    "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House C]": {
-      "2027-07": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6768",
-          "doc_number": "2618-C12",
-          "due_date": "2027-08-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2027-05": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6767",
-          "doc_number": "2618-C11",
-          "due_date": "2027-06-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2027-04": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6766",
-          "doc_number": "2618-C10",
-          "due_date": "2027-05-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2027-03": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6765",
-          "doc_number": "2618-C09",
-          "due_date": "2027-04-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2027-02": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6764",
-          "doc_number": "2618-C08",
-          "due_date": "2027-03-03",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2027-01": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6763",
-          "doc_number": "2618-C07",
-          "due_date": "2027-01-31",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2026-12": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6762",
-          "doc_number": "2618-C06",
-          "due_date": "2027-01-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2026-11": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6761",
-          "doc_number": "2618-C05",
-          "due_date": "2026-12-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2026-10": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6760",
-          "doc_number": "2618-C04",
-          "due_date": "2026-11-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2026-09": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6759",
-          "doc_number": "2618-C03",
-          "due_date": "2026-10-01",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2026-08": [
-        {
-          "status": "sent",
-          "amount": 5150.0,
-          "deposit": 0.0,
-          "total_amt": 5150.0,
-          "balance": 5150.0,
-          "invoice_id": "6758",
-          "doc_number": "2618-C02",
-          "due_date": "2026-08-31",
-          "project_number": "2618",
-          "house": "C"
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "paid",
-          "amount": 5150.0,
-          "deposit": 1500.0,
-          "total_amt": 6650.0,
-          "balance": 0.0,
-          "invoice_id": "6756",
-          "doc_number": "2618-C01",
-          "due_date": "2026-07-01",
-          "project_number": "2618",
-          "house": "C"
         }
       ]
     },
@@ -4380,310 +6726,6 @@
         }
       ]
     },
-    "Rising Sun Developing": {
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 111522.92,
-          "deposit": 0.0,
-          "total_amt": 111522.92,
-          "balance": 0.0,
-          "invoice_id": "6929",
-          "doc_number": "2600-04",
-          "due_date": "2026-03-29",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 0.0,
-          "deposit": 1000.0,
-          "total_amt": 1000.0,
-          "balance": 0.0,
-          "invoice_id": "6688",
-          "doc_number": "2619-01",
-          "due_date": "2026-03-13",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 114793.75,
-          "deposit": 0.0,
-          "total_amt": 114793.75,
-          "balance": 0.0,
-          "invoice_id": "6367",
-          "doc_number": "2600-03",
-          "due_date": "2026-02-27",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 117800.0,
-          "deposit": 0.0,
-          "total_amt": 117800.0,
-          "balance": 0.0,
-          "invoice_id": "5627",
-          "doc_number": "2600-02",
-          "due_date": "2026-03-04",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 119750.0,
-          "deposit": 0.0,
-          "total_amt": 119750.0,
-          "balance": 0.0,
-          "invoice_id": "4096",
-          "doc_number": "110125",
-          "due_date": "2025-11-30",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 126750.0,
-          "deposit": 0.0,
-          "total_amt": 126750.0,
-          "balance": 0.0,
-          "invoice_id": "4917",
-          "doc_number": "2600-01",
-          "due_date": "2026-01-01",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 125550.0,
-          "deposit": 0.0,
-          "total_amt": 125550.0,
-          "balance": 0.0,
-          "invoice_id": "4406",
-          "doc_number": "2500-12",
-          "due_date": "2025-12-01",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-07": [
-        {
-          "status": "paid",
-          "amount": 2400.0,
-          "deposit": 0.0,
-          "total_amt": 2400.0,
-          "balance": 0.0,
-          "invoice_id": "2869",
-          "doc_number": "070925",
-          "due_date": "2025-07-31",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 107100.0,
-          "deposit": 0.0,
-          "total_amt": 107100.0,
-          "balance": 0.0,
-          "invoice_id": "2141",
-          "doc_number": "080125",
-          "due_date": "2025-07-31",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 0.0,
-          "deposit": 4500.0,
-          "total_amt": 4500.0,
-          "balance": 0.0,
-          "invoice_id": "4117",
-          "doc_number": "101725",
-          "due_date": "2025-09-27",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 900.0,
-          "deposit": 0.0,
-          "total_amt": 900.0,
-          "balance": 0.0,
-          "invoice_id": "4116",
-          "doc_number": "101525",
-          "due_date": "2025-10-27",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 1200.0,
-          "deposit": 0.0,
-          "total_amt": 1200.0,
-          "balance": 0.0,
-          "invoice_id": "4115",
-          "doc_number": "101625",
-          "due_date": "2025-10-27",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 0.0,
-          "deposit": 3600.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "4109",
-          "doc_number": "092625",
-          "due_date": "2025-10-27",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 113400.0,
-          "deposit": 0.0,
-          "total_amt": 113400.0,
-          "balance": 0.0,
-          "invoice_id": "4095",
-          "doc_number": "100125",
-          "due_date": "2025-09-30",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 4500.0,
-          "deposit": 0.0,
-          "total_amt": 4500.0,
-          "balance": 0.0,
-          "invoice_id": "4105",
-          "doc_number": "090925",
-          "due_date": "2025-09-12",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-01": [
-        {
-          "status": "paid",
-          "amount": 78150.0,
-          "deposit": 0.0,
-          "total_amt": 78150.0,
-          "balance": 0.0,
-          "invoice_id": "96",
-          "doc_number": "JAN0125",
-          "due_date": "2025-01-31",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-02": [
-        {
-          "status": "paid",
-          "amount": 77850.0,
-          "deposit": 0.0,
-          "total_amt": 77850.0,
-          "balance": 0.0,
-          "invoice_id": "245",
-          "doc_number": "030125",
-          "due_date": "2025-03-03",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-03": [
-        {
-          "status": "paid",
-          "amount": 89700.0,
-          "deposit": 0.0,
-          "total_amt": 89700.0,
-          "balance": 0.0,
-          "invoice_id": "436",
-          "doc_number": "040125",
-          "due_date": "2025-03-31",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 3600.0,
-          "deposit": 0.0,
-          "total_amt": 3600.0,
-          "balance": 0.0,
-          "invoice_id": "1141",
-          "doc_number": "031025",
-          "due_date": "2025-03-10",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-04": [
-        {
-          "status": "paid",
-          "amount": 98100.0,
-          "deposit": 0.0,
-          "total_amt": 98100.0,
-          "balance": 0.0,
-          "invoice_id": "798",
-          "doc_number": "050125",
-          "due_date": "2025-05-01",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-06": [
-        {
-          "status": "paid",
-          "amount": 99900.0,
-          "deposit": 0.0,
-          "total_amt": 99900.0,
-          "balance": 0.0,
-          "invoice_id": "1136",
-          "doc_number": "060125",
-          "due_date": "2025-07-01",
-          "project_number": null,
-          "house": null
-        }
-      ],
-      "2025-08": [
-        {
-          "status": "paid",
-          "amount": 5775.0,
-          "deposit": 0.0,
-          "total_amt": 5775.0,
-          "balance": 0.0,
-          "invoice_id": "2325",
-          "doc_number": "080325",
-          "due_date": "2025-08-08",
-          "project_number": null,
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 110700.0,
-          "deposit": 2500.0,
-          "total_amt": 113200.0,
-          "balance": 0.0,
-          "invoice_id": "2625",
-          "doc_number": "090125",
-          "due_date": "2025-08-31",
-          "project_number": null,
-          "house": null
-        }
-      ]
-    },
     "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]": {
       "2026-03": [
         {
@@ -4800,342 +6842,6 @@
           "doc_number": "2617-01",
           "due_date": "2026-02-19",
           "project_number": "2617",
-          "house": null
-        }
-      ]
-    },
-    "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513": {
-      "2026-04": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6000",
-          "doc_number": "2513-15",
-          "due_date": "2026-05-01",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "overdue",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "5999",
-          "doc_number": "2513-14",
-          "due_date": "2026-04-07",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "5929",
-          "doc_number": "2513-13",
-          "due_date": "2026-03-08",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2027-01": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6121",
-          "doc_number": "2513-24",
-          "due_date": "2027-01-31",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-12": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6120",
-          "doc_number": "2513-23",
-          "due_date": "2026-12-31",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-11": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6119",
-          "doc_number": "2513-22",
-          "due_date": "2026-12-01",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-10": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6118",
-          "doc_number": "2513-21",
-          "due_date": "2026-10-31",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-09": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6117",
-          "doc_number": "2513-20",
-          "due_date": "2026-10-01",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6116",
-          "doc_number": "2513-19",
-          "due_date": "2026-08-31",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6115",
-          "doc_number": "2513-18",
-          "due_date": "2026-07-31",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6114",
-          "doc_number": "2513-17",
-          "due_date": "2026-07-01",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 7190.0,
-          "invoice_id": "6113",
-          "doc_number": "2513-16",
-          "due_date": "2026-05-31",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "5087",
-          "doc_number": "2513-12",
-          "due_date": "2026-02-09",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "4630",
-          "doc_number": "2513-11",
-          "due_date": "2026-01-05",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "3130",
-          "doc_number": "2513-09",
-          "due_date": "2025-11-02",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "4085",
-          "doc_number": "2513-10",
-          "due_date": "2025-12-09",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "2941",
-          "doc_number": "2513-08",
-          "due_date": "2025-10-09",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-08": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "2488",
-          "doc_number": "2513-07",
-          "due_date": "2025-09-19",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-07": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "2086",
-          "doc_number": "2513-06",
-          "due_date": "2025-08-25",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-06": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "1613",
-          "doc_number": "2513-05",
-          "due_date": "2025-07-20",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-05": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "1104",
-          "doc_number": "2513-04",
-          "due_date": "2025-06-27",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-04": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "640",
-          "doc_number": "2513-03",
-          "due_date": "2025-05-17",
-          "project_number": "2513",
-          "house": null
-        }
-      ],
-      "2025-03": [
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 0.0,
-          "total_amt": 7190.0,
-          "balance": 0.0,
-          "invoice_id": "428",
-          "doc_number": "2513-02",
-          "due_date": "2025-04-24",
-          "project_number": "2513",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 7190.0,
-          "deposit": 4000.0,
-          "total_amt": 11190.0,
-          "balance": 0.0,
-          "invoice_id": "296",
-          "doc_number": "2513-01",
-          "due_date": "2025-04-04",
-          "project_number": "2513",
           "house": null
         }
       ]
@@ -5852,346 +7558,6 @@
         }
       ]
     },
-    "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House B]": {
-      "2026-04": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6429",
-          "doc_number": "2618-B03",
-          "due_date": "2026-05-01",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "6428",
-          "doc_number": "2618-B02",
-          "due_date": "2026-04-02",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "6427",
-          "doc_number": "2618-B01",
-          "due_date": "2026-02-26",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2027-01": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6438",
-          "doc_number": "2618-B12",
-          "due_date": "2027-01-31",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-12": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6437",
-          "doc_number": "2618-B11",
-          "due_date": "2026-12-31",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-11": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6436",
-          "doc_number": "2618-B10",
-          "due_date": "2026-12-01",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-10": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6435",
-          "doc_number": "2618-B09",
-          "due_date": "2026-10-31",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-09": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6434",
-          "doc_number": "2618-B08",
-          "due_date": "2026-10-01",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-08": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6433",
-          "doc_number": "2618-B07",
-          "due_date": "2026-08-31",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6432",
-          "doc_number": "2618-B06",
-          "due_date": "2026-07-31",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-06": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6431",
-          "doc_number": "2618-B05",
-          "due_date": "2026-07-01",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ],
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6430",
-          "doc_number": "2618-B04",
-          "due_date": "2026-05-31",
-          "project_number": "2618",
-          "house": "B"
-        }
-      ]
-    },
-    "Miller Pipeline - Lee's Summit, MO - Paul - 2618 [House A]": {
-      "2026-04": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6213",
-          "doc_number": "2618-03",
-          "due_date": "2026-05-01",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "6212",
-          "doc_number": "2618-02",
-          "due_date": "2026-03-25",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "6211",
-          "doc_number": "2618-01",
-          "due_date": "2026-02-20",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2027-01": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6222",
-          "doc_number": "2618-12",
-          "due_date": "2027-01-31",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-12": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6221",
-          "doc_number": "2618-11",
-          "due_date": "2026-12-31",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-11": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6220",
-          "doc_number": "2618-10",
-          "due_date": "2026-12-01",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-10": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6219",
-          "doc_number": "2618-09",
-          "due_date": "2026-10-31",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-09": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6218",
-          "doc_number": "2618-08",
-          "due_date": "2026-10-01",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6217",
-          "doc_number": "2618-07",
-          "due_date": "2026-08-31",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6216",
-          "doc_number": "2618-06",
-          "due_date": "2026-07-31",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6215",
-          "doc_number": "2618-05",
-          "due_date": "2026-07-01",
-          "project_number": "2618",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6214",
-          "doc_number": "2618-04",
-          "due_date": "2026-05-31",
-          "project_number": "2618",
-          "house": null
-        }
-      ]
-    },
     "Independence Excavating - Grove City, OH - Paul -2574": {
       "2026-04": [
         {
@@ -6832,50 +8198,6 @@
         }
       ]
     },
-    "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House I]": {
-      "2026-04": [
-        {
-          "status": "overdue",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "7148",
-          "doc_number": "2506-I03",
-          "due_date": "2026-04-15",
-          "project_number": "2506",
-          "house": "I"
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "overdue",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6498",
-          "doc_number": "2506-I02",
-          "due_date": "2026-03-14",
-          "project_number": "2506",
-          "house": "I"
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "5969",
-          "doc_number": "2506-I01",
-          "due_date": "2026-02-11",
-          "project_number": "2506",
-          "house": "I"
-        }
-      ]
-    },
     "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House H]": {
       "2026-04": [
         {
@@ -6929,1098 +8251,6 @@
           "due_date": "2026-02-02",
           "project_number": "2506",
           "house": "H"
-        }
-      ]
-    },
-    "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House G]": {
-      "2026-04": [
-        {
-          "status": "overdue",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "7146",
-          "doc_number": "2506-G05",
-          "due_date": "2026-04-14",
-          "project_number": "2506",
-          "house": "G"
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "6496",
-          "doc_number": "2506-G04",
-          "due_date": "2026-03-14",
-          "project_number": "2506",
-          "house": "G"
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5748",
-          "doc_number": "2506-G03",
-          "due_date": "2026-02-14",
-          "project_number": "2506",
-          "house": "G"
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5078",
-          "doc_number": "2506-G02",
-          "due_date": "2026-01-14",
-          "project_number": "2506",
-          "house": "G"
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "4640",
-          "doc_number": "2506-G01",
-          "due_date": "2025-12-14",
-          "project_number": "2506",
-          "house": "G"
-        }
-      ]
-    },
-    "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [Houses A,B,C,D,E,F]": {
-      "2026-04": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "7145",
-          "doc_number": "2506-F07",
-          "due_date": "2026-05-01",
-          "project_number": "2506",
-          "house": "F"
-        },
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "7144",
-          "doc_number": "2506-E08",
-          "due_date": "2026-05-01",
-          "project_number": "2506",
-          "house": "E"
-        },
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "7143",
-          "doc_number": "2506-D10",
-          "due_date": "2026-05-01",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "7142",
-          "doc_number": "2506-C10",
-          "due_date": "2026-05-01",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "sent",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 3895.0,
-          "invoice_id": "7141",
-          "doc_number": "2506-B15",
-          "due_date": "2026-05-01",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "7140",
-          "doc_number": "2506-A17",
-          "due_date": "2026-05-01",
-          "project_number": "2506",
-          "house": "A"
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "6495",
-          "doc_number": "2506-F06",
-          "due_date": "2026-04-01",
-          "project_number": "2506",
-          "house": "F"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "6494",
-          "doc_number": "2506-E07",
-          "due_date": "2026-04-01",
-          "project_number": "2506",
-          "house": "E"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "6493",
-          "doc_number": "2506-D09",
-          "due_date": "2026-04-01",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "6492",
-          "doc_number": "2506-C09",
-          "due_date": "2026-04-01",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "6491",
-          "doc_number": "2506-B14",
-          "due_date": "2026-04-01",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "overdue",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "6490",
-          "doc_number": "2506-A16",
-          "due_date": "2026-04-01",
-          "project_number": "2506",
-          "house": "A"
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5745",
-          "doc_number": "2506-D08",
-          "due_date": "2026-03-01",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5744",
-          "doc_number": "2506-C08",
-          "due_date": "2026-03-01",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5742",
-          "doc_number": "2506-A15",
-          "due_date": "2026-03-01",
-          "project_number": "2506",
-          "house": "A"
-        },
-        {
-          "status": "overdue",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 3895.0,
-          "invoice_id": "5743",
-          "doc_number": "2506-B13",
-          "due_date": "2026-03-01",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5747",
-          "doc_number": "2506-F05",
-          "due_date": "2026-02-27",
-          "project_number": "2506",
-          "house": "F"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5746",
-          "doc_number": "2506-E06",
-          "due_date": "2026-03-01",
-          "project_number": "2506",
-          "house": "E"
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5072",
-          "doc_number": "2506-A14",
-          "due_date": "2026-02-01",
-          "project_number": "2506",
-          "house": "A"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5077",
-          "doc_number": "2506-F04",
-          "due_date": "2026-01-27",
-          "project_number": "2506",
-          "house": "F"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5076",
-          "doc_number": "2506-E05",
-          "due_date": "2026-02-01",
-          "project_number": "2506",
-          "house": "E"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5075",
-          "doc_number": "2506-D07",
-          "due_date": "2026-02-01",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5074",
-          "doc_number": "2506-C07",
-          "due_date": "2026-02-01",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "5073",
-          "doc_number": "2506-B12",
-          "due_date": "2026-02-01",
-          "project_number": "2506",
-          "house": "B"
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4637",
-          "doc_number": "2506-D06",
-          "due_date": "2026-01-01",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4636",
-          "doc_number": "2506-C06",
-          "due_date": "2026-01-01",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "4635",
-          "doc_number": "2506-B11",
-          "due_date": "2026-01-01",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4634",
-          "doc_number": "2506-A13",
-          "due_date": "2026-01-01",
-          "project_number": "2506",
-          "house": "A"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4639",
-          "doc_number": "2506-F03",
-          "due_date": "2025-12-27",
-          "project_number": "2506",
-          "house": "F"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4638",
-          "doc_number": "2506-E04",
-          "due_date": "2026-01-06",
-          "project_number": "2506",
-          "house": "E"
-        }
-      ],
-      "2025-04": [
-        {
-          "status": "paid",
-          "amount": 2467.0,
-          "deposit": 2000.0,
-          "total_amt": 4467.0,
-          "balance": 0.0,
-          "invoice_id": "682",
-          "doc_number": "2506-B01",
-          "due_date": "2025-04-25",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 257.5,
-          "deposit": 0.0,
-          "total_amt": 257.5,
-          "balance": 0.0,
-          "invoice_id": "684",
-          "doc_number": "2506-B00",
-          "due_date": "2025-04-25",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "641",
-          "doc_number": "2506-05",
-          "due_date": "2025-05-17",
-          "project_number": "2506",
-          "house": null
-        }
-      ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "4128",
-          "doc_number": "2506-B10",
-          "due_date": "2025-12-01",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4132",
-          "doc_number": "2506-F02",
-          "due_date": "2025-11-27",
-          "project_number": "2506",
-          "house": "F"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4131",
-          "doc_number": "2506-E03",
-          "due_date": "2025-12-01",
-          "project_number": "2506",
-          "house": "E"
-        },
-        {
-          "status": "paid",
-          "amount": 2157.0,
-          "deposit": 0.0,
-          "total_amt": 2157.0,
-          "balance": 0.0,
-          "invoice_id": "4130",
-          "doc_number": "2506-D05",
-          "due_date": "2025-12-13",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 2516.5,
-          "deposit": 0.0,
-          "total_amt": 2516.5,
-          "balance": 0.0,
-          "invoice_id": "4129",
-          "doc_number": "2506-C05",
-          "due_date": "2025-12-09",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 1318.0,
-          "deposit": 0.0,
-          "total_amt": 1318.0,
-          "balance": 0.0,
-          "invoice_id": "4127",
-          "doc_number": "2506-A12",
-          "due_date": "2025-12-20",
-          "project_number": "2506",
-          "house": "A"
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "3586",
-          "doc_number": "2506-F01",
-          "due_date": "2025-10-24",
-          "project_number": "2506",
-          "house": "F"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "3487",
-          "doc_number": "2506-D04",
-          "due_date": "2025-11-13",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "3486",
-          "doc_number": "2506-C04",
-          "due_date": "2025-11-10",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "3485",
-          "doc_number": "2506-B09",
-          "due_date": "2025-11-01",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "3484",
-          "doc_number": "2506-A11",
-          "due_date": "2025-11-18",
-          "project_number": "2506",
-          "house": "A"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "3143",
-          "doc_number": "2506-E02",
-          "due_date": "2025-11-01",
-          "project_number": "2506",
-          "house": "E"
-        }
-      ],
-      "2025-05": [
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "1106",
-          "doc_number": "2506-B02",
-          "due_date": "2025-06-27",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "1105",
-          "doc_number": "2506-A06",
-          "due_date": "2025-06-27",
-          "project_number": "2506",
-          "house": "A"
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "2946",
-          "doc_number": "2506-E01",
-          "due_date": "2025-10-01",
-          "project_number": "2506",
-          "house": "E"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "2945",
-          "doc_number": "2506-D03",
-          "due_date": "2025-10-13",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "2944",
-          "doc_number": "2506-C03",
-          "due_date": "2025-10-10",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "2943",
-          "doc_number": "2506-B08",
-          "due_date": "2025-10-01",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "2942",
-          "doc_number": "2506-A10",
-          "due_date": "2025-10-20",
-          "project_number": "2506",
-          "house": "A"
-        }
-      ],
-      "2025-08": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "2217",
-          "doc_number": "2506-D01",
-          "due_date": "2025-08-13",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "2487",
-          "doc_number": "2506-D02",
-          "due_date": "2025-09-19",
-          "project_number": "2506",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "2486",
-          "doc_number": "2506-C02",
-          "due_date": "2025-09-19",
-          "project_number": "2506",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "2485",
-          "doc_number": "2506-B07",
-          "due_date": "2025-09-19",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "2484",
-          "doc_number": "2506-A09",
-          "due_date": "2025-09-19",
-          "project_number": "2506",
-          "house": "A"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 1500.0,
-          "total_amt": 5095.0,
-          "balance": 0.0,
-          "invoice_id": "2216",
-          "doc_number": "2506-C01",
-          "due_date": "2025-08-13",
-          "project_number": "2506",
-          "house": "C"
-        }
-      ],
-      "2025-07": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "2126",
-          "doc_number": "2506-A08",
-          "due_date": "2025-08-28",
-          "project_number": "2506",
-          "house": "A"
-        },
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "2125",
-          "doc_number": "2506-B06",
-          "due_date": "2025-08-28",
-          "project_number": "2506",
-          "house": "B"
-        }
-      ],
-      "2025-01": [
-        {
-          "status": "paid",
-          "amount": 4797.0,
-          "deposit": 0.0,
-          "total_amt": 4797.0,
-          "balance": 0.0,
-          "invoice_id": "59",
-          "doc_number": "2506-02",
-          "due_date": "2025-02-16",
-          "project_number": "2506",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 2000.0,
-          "total_amt": 5595.0,
-          "balance": 0.0,
-          "invoice_id": "58",
-          "doc_number": "2506-01",
-          "due_date": "2025-02-16",
-          "project_number": "2506",
-          "house": null
-        }
-      ],
-      "2025-06": [
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "1615",
-          "doc_number": "2506-B03",
-          "due_date": "2025-07-20",
-          "project_number": "2506",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "1614",
-          "doc_number": "2506-A07",
-          "due_date": "2025-07-20",
-          "project_number": "2506",
-          "house": "A"
-        }
-      ],
-      "2025-03": [
-        {
-          "status": "paid",
-          "amount": 3895.0,
-          "deposit": 0.0,
-          "total_amt": 3895.0,
-          "balance": 0.0,
-          "invoice_id": "429",
-          "doc_number": "2506-04",
-          "due_date": "2025-04-24",
-          "project_number": "2506",
-          "house": null
-        }
-      ],
-      "2025-02": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "208",
-          "doc_number": "2506-02.20",
-          "due_date": "2025-03-27",
-          "project_number": "2506",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "210",
-          "doc_number": "2506-03",
-          "due_date": "2025-03-22",
-          "project_number": "2506",
-          "house": null
-        }
-      ]
-    },
-    "Miller Pipeline - Monett, MO - Paul - 2593": {
-      "2026-04": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5824",
-          "doc_number": "2593-06",
-          "due_date": "2026-05-01",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5823",
-          "doc_number": "2593-05",
-          "due_date": "2026-04-01",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5822",
-          "doc_number": "2593-04",
-          "due_date": "2026-03-01",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-11": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5831",
-          "doc_number": "2593-13",
-          "due_date": "2026-12-01",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-10": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5830",
-          "doc_number": "2593-12",
-          "due_date": "2026-10-31",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-09": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5829",
-          "doc_number": "2593-11",
-          "due_date": "2026-10-01",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5828",
-          "doc_number": "2593-10",
-          "due_date": "2026-08-31",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5827",
-          "doc_number": "2593-09",
-          "due_date": "2026-07-31",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5826",
-          "doc_number": "2593-08",
-          "due_date": "2026-07-01",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 3595.0,
-          "invoice_id": "5825",
-          "doc_number": "2593-07",
-          "due_date": "2026-05-31",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "5068",
-          "doc_number": "2593-03",
-          "due_date": "2026-02-01",
-          "project_number": "2593",
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 3595.0,
-          "deposit": 0.0,
-          "total_amt": 3595.0,
-          "balance": 0.0,
-          "invoice_id": "4915",
-          "doc_number": "2593-02",
-          "due_date": "2026-01-01",
-          "project_number": "2593",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 1437.96,
-          "deposit": 1500.0,
-          "total_amt": 2937.96,
-          "balance": 0.0,
-          "invoice_id": "4719",
-          "doc_number": "2593-01",
-          "due_date": "2025-12-15",
-          "project_number": "2593",
-          "house": null
         }
       ]
     },
@@ -8674,176 +8904,6 @@
         }
       ]
     },
-    "Miller Pipeline - Saint Joseph, MO - Paul - 2586": {
-      "2026-04": [
-        {
-          "status": "paid",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 0.0,
-          "invoice_id": "6131",
-          "doc_number": "2586-06",
-          "due_date": "2026-05-01",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 0.0,
-          "invoice_id": "6130",
-          "doc_number": "2586-05",
-          "due_date": "2026-03-31",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 0.0,
-          "invoice_id": "5710",
-          "doc_number": "2586-04",
-          "due_date": "2026-03-01",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 0.0,
-          "invoice_id": "4649",
-          "doc_number": "2586-02",
-          "due_date": "2026-01-01",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 0.0,
-          "invoice_id": "5083",
-          "doc_number": "2586-03",
-          "due_date": "2026-02-01",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-10": [
-        {
-          "status": "sent",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 4295.0,
-          "invoice_id": "6137",
-          "doc_number": "2586-12",
-          "due_date": "2026-10-31",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-09": [
-        {
-          "status": "sent",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 4295.0,
-          "invoice_id": "6136",
-          "doc_number": "2586-11",
-          "due_date": "2026-10-01",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "status": "sent",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 4295.0,
-          "invoice_id": "6135",
-          "doc_number": "2586-10",
-          "due_date": "2026-08-31",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "status": "sent",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 4295.0,
-          "invoice_id": "6134",
-          "doc_number": "2586-09",
-          "due_date": "2026-08-01",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-06": [
-        {
-          "status": "sent",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 4295.0,
-          "invoice_id": "6133",
-          "doc_number": "2586-08",
-          "due_date": "2026-07-01",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2026-05": [
-        {
-          "status": "sent",
-          "amount": 4295.0,
-          "deposit": 0.0,
-          "total_amt": 4295.0,
-          "balance": 4295.0,
-          "invoice_id": "6132",
-          "doc_number": "2586-07",
-          "due_date": "2026-05-31",
-          "project_number": "2586",
-          "house": null
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 4295.0,
-          "deposit": 1500.0,
-          "total_amt": 5795.0,
-          "balance": 0.0,
-          "invoice_id": "3589",
-          "doc_number": "2586-01",
-          "due_date": "2025-10-24",
-          "project_number": "2586",
-          "house": null
-        }
-      ]
-    },
     "Engelke - Fort Lauderdale, FL- Per Diem- Paul - 2608": {
       "2026-03": [
         {
@@ -9272,22 +9332,6 @@
           "doc_number": "2578-01",
           "due_date": "2025-10-02",
           "project_number": "2578",
-          "house": null
-        }
-      ]
-    },
-    "FHG Marine Engineering Inc. - Port Angeles, WA - Logan- 2610": {
-      "2026-02": [
-        {
-          "status": "overdue",
-          "amount": 4650.0,
-          "deposit": 750.0,
-          "total_amt": 5400.0,
-          "balance": 5400.0,
-          "invoice_id": "5965",
-          "doc_number": "2610-01",
-          "due_date": "2026-02-10",
-          "project_number": "2610",
           "house": null
         }
       ]
@@ -10270,36 +10314,6 @@
           "doc_number": "2534-01",
           "due_date": "2025-05-07",
           "project_number": null,
-          "house": null
-        }
-      ]
-    },
-    "FHG Marine Engineering - Chula Vista, CA - David - 2589": {
-      "2025-12": [
-        {
-          "status": "overdue",
-          "amount": 7350.0,
-          "deposit": 0.0,
-          "total_amt": 7350.0,
-          "balance": 7350.0,
-          "invoice_id": "4651",
-          "doc_number": "2589-02",
-          "due_date": "2026-01-01",
-          "project_number": "2589",
-          "house": null
-        }
-      ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 7350.0,
-          "deposit": 1000.0,
-          "total_amt": 8350.0,
-          "balance": 0.0,
-          "invoice_id": "4507",
-          "doc_number": "2589-01",
-          "due_date": "2025-12-28",
-          "project_number": "2589",
           "house": null
         }
       ]
@@ -11832,6 +11846,202 @@
     }
   },
   "ap_status_by_project": {
+    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
+      "2026-04": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 614.0,
+          "deposit": 0.0,
+          "total_amt": 614.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-29",
+          "due_date": "2026-04-29",
+          "status": "paid",
+          "bill_id": "7721",
+          "doc_number": "2607-05",
+          "project_number": "2607",
+          "house": null
+        },
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 613.36,
+          "deposit": 0.0,
+          "total_amt": 613.36,
+          "balance": 0.0,
+          "txn_date": "2026-04-22",
+          "due_date": "2026-04-22",
+          "status": "paid",
+          "bill_id": "7612",
+          "doc_number": "2607-04",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2450.0,
+          "deposit": 0.0,
+          "total_amt": 2450.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-16",
+          "due_date": "2026-03-16",
+          "status": "paid",
+          "bill_id": "6711",
+          "doc_number": "2607-03",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2526.66,
+          "deposit": 0.0,
+          "total_amt": 2526.66,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5516",
+          "doc_number": "2607-02",
+          "project_number": "2607",
+          "house": null
+        },
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2450.0,
+          "deposit": 1000.0,
+          "total_amt": 3450.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-22",
+          "due_date": "2026-01-22",
+          "status": "paid",
+          "bill_id": "5515",
+          "doc_number": "2607-01",
+          "project_number": "2607",
+          "house": null
+        }
+      ]
+    },
+    "Gutknecht Construction - Frankfort, KY - Matt - 2624 \u2014 C, Phase 1": {
+      "2026-04": [
+        {
+          "vendor": "Warford Hospitality Co LLC",
+          "amount": 880.0,
+          "deposit": 0.0,
+          "total_amt": 880.0,
+          "balance": 880.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "sent",
+          "bill_id": "7680",
+          "doc_number": "2624-D02",
+          "project_number": "2624",
+          "house": "D"
+        },
+        {
+          "vendor": "Casey Lodging, LLC",
+          "amount": 10000.0,
+          "deposit": 0.0,
+          "total_amt": 10000.0,
+          "balance": 10000.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "sent",
+          "bill_id": "7683",
+          "doc_number": "2624-C02",
+          "project_number": "2624",
+          "house": "C"
+        },
+        {
+          "vendor": "Property Transitions LLC",
+          "amount": 5200.0,
+          "deposit": 0.0,
+          "total_amt": 5200.0,
+          "balance": 5200.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "sent",
+          "bill_id": "7682",
+          "doc_number": "2624-B02",
+          "project_number": "2624",
+          "house": "B"
+        },
+        {
+          "vendor": "Adam Mats",
+          "amount": 4200.0,
+          "deposit": 0.0,
+          "total_amt": 4200.0,
+          "balance": 4200.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "sent",
+          "bill_id": "7681",
+          "doc_number": "2624-A02",
+          "project_number": "2624",
+          "house": "A"
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Warford Hospitality Co LLC",
+          "amount": 3420.0,
+          "deposit": 2000.0,
+          "total_amt": 5420.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6822",
+          "doc_number": "2624-D01",
+          "project_number": "2624",
+          "house": "D"
+        },
+        {
+          "vendor": "Casey Lodging, LLC",
+          "amount": 10000.0,
+          "deposit": 5000.0,
+          "total_amt": 15000.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6741",
+          "doc_number": "2624-C01",
+          "project_number": "2624",
+          "house": "C"
+        },
+        {
+          "vendor": "Adam Mats",
+          "amount": 4200.0,
+          "deposit": 4200.0,
+          "total_amt": 8400.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6739",
+          "doc_number": "2624-A01",
+          "project_number": "2624",
+          "house": "A"
+        },
+        {
+          "vendor": "Property Transitions LLC",
+          "amount": 5200.0,
+          "deposit": 2000.0,
+          "total_amt": 7200.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6740",
+          "doc_number": "2624-B01",
+          "project_number": "2624",
+          "house": "B"
+        }
+      ]
+    },
     "Southern Wall Systems - Ann Arbor, MI - Logan - 2553": {
       "2026-04": [
         {
@@ -17095,20 +17305,6 @@
           "doc_number": "2568-05",
           "project_number": "2568",
           "house": null
-        },
-        {
-          "vendor": "Gloria Diane Jex-Robie",
-          "amount": 200.0,
-          "deposit": 0.0,
-          "total_amt": 200.0,
-          "balance": 200.0,
-          "txn_date": "2025-12-01",
-          "due_date": "2025-12-01",
-          "status": "overdue",
-          "bill_id": "4394",
-          "doc_number": "2568-04",
-          "project_number": "2568",
-          "house": null
         }
       ],
       "2025-11": [
@@ -21422,124 +21618,6 @@
         }
       ]
     },
-    "Gutknecht Construction - Frankfort, KY - Matt - 2624 \u2014 C, Phase 1": {
-      "2026-04": [
-        {
-          "vendor": "Casey Lodging, LLC",
-          "amount": 10000.0,
-          "deposit": 0.0,
-          "total_amt": 10000.0,
-          "balance": 10000.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "7683",
-          "doc_number": "2624-C02",
-          "project_number": "2624",
-          "house": "C"
-        },
-        {
-          "vendor": "Property Transitions LLC",
-          "amount": 5200.0,
-          "deposit": 0.0,
-          "total_amt": 5200.0,
-          "balance": 5200.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "7682",
-          "doc_number": "2624-B02",
-          "project_number": "2624",
-          "house": "B"
-        },
-        {
-          "vendor": "Warford Hospitality Co LLC",
-          "amount": 3420.0,
-          "deposit": 0.0,
-          "total_amt": 3420.0,
-          "balance": 3420.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "7680",
-          "doc_number": "2624-D02",
-          "project_number": "2624",
-          "house": "D"
-        },
-        {
-          "vendor": "Adam Mats",
-          "amount": 4200.0,
-          "deposit": 0.0,
-          "total_amt": 4200.0,
-          "balance": 4200.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "7681",
-          "doc_number": "2624-A02",
-          "project_number": "2624",
-          "house": "A"
-        }
-      ],
-      "2026-03": [
-        {
-          "vendor": "Warford Hospitality Co LLC",
-          "amount": 3420.0,
-          "deposit": 2000.0,
-          "total_amt": 5420.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6822",
-          "doc_number": "2624-D01",
-          "project_number": "2624",
-          "house": "D"
-        },
-        {
-          "vendor": "Casey Lodging, LLC",
-          "amount": 10000.0,
-          "deposit": 5000.0,
-          "total_amt": 15000.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6741",
-          "doc_number": "2624-C01",
-          "project_number": "2624",
-          "house": "C"
-        },
-        {
-          "vendor": "Adam Mats",
-          "amount": 4200.0,
-          "deposit": 4200.0,
-          "total_amt": 8400.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6739",
-          "doc_number": "2624-A01",
-          "project_number": "2624",
-          "house": "A"
-        },
-        {
-          "vendor": "Property Transitions LLC",
-          "amount": 5200.0,
-          "deposit": 2000.0,
-          "total_amt": 7200.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6740",
-          "doc_number": "2624-B01",
-          "project_number": "2624",
-          "house": "B"
-        }
-      ]
-    },
     "Duggan Contracting - Paducah, KY - Paul - 2620": {
       "2026-04": [
         {
@@ -21748,70 +21826,6 @@
           "bill_id": "5376",
           "doc_number": "2604-01",
           "project_number": "2604",
-          "house": null
-        }
-      ]
-    },
-    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
-      "2026-04": [
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 613.36,
-          "deposit": 0.0,
-          "total_amt": 613.36,
-          "balance": 0.0,
-          "txn_date": "2026-04-22",
-          "due_date": "2026-04-22",
-          "status": "paid",
-          "bill_id": "7612",
-          "doc_number": "2607-04",
-          "project_number": "2607",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2450.0,
-          "deposit": 0.0,
-          "total_amt": 2450.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-16",
-          "due_date": "2026-03-16",
-          "status": "paid",
-          "bill_id": "6711",
-          "doc_number": "2607-03",
-          "project_number": "2607",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2526.66,
-          "deposit": 0.0,
-          "total_amt": 2526.66,
-          "balance": 0.0,
-          "txn_date": "2026-01-31",
-          "due_date": "2026-01-31",
-          "status": "paid",
-          "bill_id": "5516",
-          "doc_number": "2607-02",
-          "project_number": "2607",
-          "house": null
-        },
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2450.0,
-          "deposit": 1000.0,
-          "total_amt": 3450.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-22",
-          "due_date": "2026-01-22",
-          "status": "paid",
-          "bill_id": "5515",
-          "doc_number": "2607-01",
-          "project_number": "2607",
           "house": null
         }
       ]
@@ -28889,6 +28903,34 @@
   },
   "ap_bills": [
     {
+      "vendor": "Alaba G. Idowu",
+      "amount": 614.0,
+      "deposit": 0.0,
+      "total_amt": 614.0,
+      "balance": 0.0,
+      "txn_date": "2026-04-29",
+      "due_date": "2026-04-29",
+      "status": "paid",
+      "bill_id": "7721",
+      "doc_number": "2607-05",
+      "project_number": "2607",
+      "house": null
+    },
+    {
+      "vendor": "Warford Hospitality Co LLC",
+      "amount": 880.0,
+      "deposit": 0.0,
+      "total_amt": 880.0,
+      "balance": 880.0,
+      "txn_date": "2026-04-30",
+      "due_date": "2026-04-30",
+      "status": "sent",
+      "bill_id": "7680",
+      "doc_number": "2624-D02",
+      "project_number": "2624",
+      "house": "D"
+    },
+    {
       "vendor": "Nell Oakley",
       "amount": 1875.0,
       "deposit": 0.0,
@@ -29755,20 +29797,6 @@
       "doc_number": "2624-B02",
       "project_number": "2624",
       "house": "B"
-    },
-    {
-      "vendor": "Warford Hospitality Co LLC",
-      "amount": 3420.0,
-      "deposit": 0.0,
-      "total_amt": 3420.0,
-      "balance": 3420.0,
-      "txn_date": "2026-04-30",
-      "due_date": "2026-04-30",
-      "status": "sent",
-      "bill_id": "7680",
-      "doc_number": "2624-D02",
-      "project_number": "2624",
-      "house": "D"
     },
     {
       "vendor": "Adam Mats",
@@ -38294,20 +38322,6 @@
       "bill_id": "4543",
       "doc_number": "2573-02",
       "project_number": "2573",
-      "house": null
-    },
-    {
-      "vendor": "Gloria Diane Jex-Robie",
-      "amount": 200.0,
-      "deposit": 0.0,
-      "total_amt": 200.0,
-      "balance": 200.0,
-      "txn_date": "2025-12-01",
-      "due_date": "2025-12-01",
-      "status": "overdue",
-      "bill_id": "4394",
-      "doc_number": "2568-04",
-      "project_number": "2568",
       "house": null
     },
     {
@@ -47419,9 +47433,9 @@
     }
   ],
   "summary": {
-    "invoices_total": 952,
+    "invoices_total": 953,
     "invoices_ignored": 72,
-    "invoices_matched": 874,
+    "invoices_matched": 875,
     "invoices_unmatched": 6,
     "bills_total": 1266,
     "bills_ignored": 30,
