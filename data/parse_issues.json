@@ -1,151 +1,6 @@
 {
-  "generated_at": "2026-04-27T14:57:47.864027",
-  "unmatched_names": [
-    {
-      "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
-      "task": "Homeowner F +G Leases",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210240026827411",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210240026827411/task/1210620027428849"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum #2 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1211477215871920"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum # 3 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1211899420286175"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum # 4 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1212693014887599"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum # 5 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213345945676694"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum # 6 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213422154772684"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum # 7 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213516243686266"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum # 8 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213774438760609"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Construction Addendum # 9 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213942917230453"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #2 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1211477215871927"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #3 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1211899420286179"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #4 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1212693014887602"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #5 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213345945676697"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #6 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213422154772688"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #7 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213516243686270"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #8 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213774438760612"
-    },
-    {
-      "project": "Orion Marine - Sabine Pass, TX - Paul - 2558",
-      "task": "Homeowner Addendum #9 - Lease Extension",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210992137957471/task/1213942917230456"
-    },
-    {
-      "project": "J Paredes Welding LLC - Montgomery, AL - Zeke - 2561 ",
-      "task": "A - Construction Lease Addendum 1",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1211048918429780",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1211048918429780/task/1211141419353464"
-    },
-    {
-      "project": "Calmex Engineering - San Diego, CA - Paul - 2568",
-      "task": "Construction Lease Addendum #1",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1211213718360953",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1211213718360953/task/1212693014887605"
-    },
-    {
-      "project": "Calmex Engineering - San Diego, CA - Paul - 2568",
-      "task": "Homeowner Lease Addendum #1",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1211213718360953",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1211213718360953/task/1212693014887608"
-    },
-    {
-      "project": "Gutknecht Construction - Indianapolis, IN - Matt - 2575",
-      "task": "Prepare and send Constructions and Homeowners addendums'",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1211453655814597",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1211453655814597/task/1212618887700005"
-    },
-    {
-      "project": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
-      "task": "Construction Lease: Phase I & II - Addendum #1",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1212344857819012",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1212344857819012/task/1212497438808973"
-    },
-    {
-      "project": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
-      "task": "Construction Lease: Phase I & II - Addendum #2",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1212344857819012",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1212344857819012/task/1212653541286346"
-    },
-    {
-      "project": "Miller Pipeline - Lee's Summit, MO - Paul - 2618",
-      "task": "Construction Addendum - Amend Dates of Lease Agreement",
-      "project_link": "https://app.asana.com/1/1203487090849714/project/1213344941093825",
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1213344941093825/task/1213832205217324"
-    }
-  ],
+  "generated_at": "2026-04-29T19:05:47.682551",
+  "unmatched_names": [],
   "missing_fields": [
     {
       "project": "Gray Construction - Bristol, TN - Paul - 2592",
@@ -570,14 +425,6 @@
     },
     {
       "project": "Independence Excavating - Richmond, VA - Paul - 2532",
-      "task": "A: Construction Lease",
-      "missing": [
-        "A/R"
-      ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210056931565763/task/1210062449628709"
-    },
-    {
-      "project": "Independence Excavating - Richmond, VA - Paul - 2532",
       "task": "B: Construction Lease",
       "missing": [
         "Crew Size"
@@ -594,6 +441,14 @@
     },
     {
       "project": "Independence Excavating - Richmond, VA - Paul - 2532",
+      "task": "D: Construction Lease",
+      "missing": [
+        "Crew Size"
+      ],
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1210056931565763/task/1210412741314705"
+    },
+    {
+      "project": "Independence Excavating - Richmond, VA - Paul - 2532",
       "task": "A: Homeowner Lease",
       "missing": [
         "Start Date",
@@ -603,15 +458,7 @@
     },
     {
       "project": "Independence Excavating - Richmond, VA - Paul - 2532",
-      "task": "D: Construction Lease",
-      "missing": [
-        "Crew Size"
-      ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1210056931565763/task/1210412741314705"
-    },
-    {
-      "project": "Independence Excavating - Richmond, VA - Paul - 2532",
-      "task": "Homeowner Lease \"E\"",
+      "task": "E: Homeowner Lease",
       "missing": [
         "A/P"
       ],
@@ -713,6 +560,16 @@
         "A/P"
       ],
       "task_link": "https://app.asana.com/1/1203487090849714/project/1210240026827411/task/1210323212567270"
+    },
+    {
+      "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
+      "task": "Homeowner F +G Leases",
+      "missing": [
+        "A/P",
+        "Start Date",
+        "End Date"
+      ],
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1210240026827411/task/1210620027428849"
     },
     {
       "project": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
@@ -1703,6 +1560,17 @@
       "task_link": "https://app.asana.com/1/1203487090849714/project/1212842897797009/task/1213057033011618"
     },
     {
+      "project": "Carl Walker Construction - Lexington, KY - Matt -2606",
+      "task": "Phase II - Construction Lease",
+      "missing": [
+        "A/R",
+        "Start Date",
+        "End Date",
+        "Crew Size"
+      ],
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1212842897797009/task/1214401585331962"
+    },
+    {
       "project": "Engelke - Fort Lauderdale, FL- Per Diem- Paul - 2608",
       "task": "Construction Lease",
       "missing": [
@@ -1813,6 +1681,14 @@
     },
     {
       "project": "Power Design - Starbase, TX -Zeke - 2614",
+      "task": "Construction Lease Phase 3",
+      "missing": [
+        "Crew Size"
+      ],
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1213240216017591/task/1214357969784942"
+    },
+    {
+      "project": "Power Design - Starbase, TX -Zeke - 2614",
       "task": "A: Homeowner Lease",
       "missing": [
         "A/P"
@@ -1842,6 +1718,14 @@
         "A/P"
       ],
       "task_link": "https://app.asana.com/1/1203487090849714/project/1213240216017591/task/1214055003095272"
+    },
+    {
+      "project": "Power Design - Starbase, TX -Zeke - 2614",
+      "task": "D: Homeowner Addendum",
+      "missing": [
+        "End Date"
+      ],
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1213240216017591/task/1214321130919038"
     },
     {
       "project": "Power Design - Starbase, TX -Zeke - 2614",
@@ -2121,6 +2005,14 @@
     },
     {
       "project": "Gutknecht Construction - Frankfort, KY - Matt - 2624",
+      "task": "Construction Phase II Addendum - Property Change",
+      "missing": [
+        "End Date"
+      ],
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1213523794178802/task/1214358354563783"
+    },
+    {
+      "project": "Gutknecht Construction - Frankfort, KY - Matt - 2624",
       "task": "B: Homeowner Lease",
       "missing": [
         "A/P"
@@ -2352,7 +2244,7 @@
     },
     {
       "project": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635 ",
-      "task": "Construction Lease (Low Voltage)",
+      "task": "A: Construction Lease (Low Voltage)",
       "missing": [
         "Crew Size"
       ],
@@ -2369,11 +2261,11 @@
     },
     {
       "project": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635 ",
-      "task": "Homeowner Lease",
+      "task": "A: Homeowner Lease",
       "missing": [
         "A/P"
       ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1214062281144643/task/1214070180803779"
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1214062281144643/task/1214059261443660"
     },
     {
       "project": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635 ",
@@ -2381,7 +2273,7 @@
       "missing": [
         "A/P"
       ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1214062281144643/task/1214059261443660"
+      "task_link": "https://app.asana.com/1/1203487090849714/project/1214062281144643/task/1214070180803779"
     },
     {
       "project": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635 ",
@@ -2457,43 +2349,6 @@
         "End Date"
       ],
       "task_link": "https://app.asana.com/1/1203487090849714/project/1214149488100030/task/1214169229958885"
-    },
-    {
-      "project": "Power Design - Austin, TX - Zeke - 2637",
-      "task": "Construction Lease",
-      "missing": [
-        "A/R",
-        "Start Date",
-        "End Date",
-        "Crew Size"
-      ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1214178948440270/task/1214225486447803"
-    },
-    {
-      "project": "Power Design - Austin, TX - Zeke - 2637",
-      "task": "Homeowner Lease",
-      "missing": [
-        "A/P",
-        "Start Date",
-        "End Date"
-      ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1214178948440270/task/1214225486447811"
-    },
-    {
-      "project": "Power Design - Austin, TX - Zeke - 2637",
-      "task": "Construction Addendum",
-      "missing": [
-        "End Date"
-      ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1214178948440270/task/1214225173914962"
-    },
-    {
-      "project": "Power Design - Austin, TX - Zeke - 2637",
-      "task": "Homeowner Addendum",
-      "missing": [
-        "End Date"
-      ],
-      "task_link": "https://app.asana.com/1/1203487090849714/project/1214178948440270/task/1214225173914966"
     }
   ]
 }
