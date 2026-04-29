@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T22:03:38.038567",
+  "generated_at": "2026-04-29T00:01:43.181694",
   "months": [
     "2025-08",
     "2025-09",
@@ -520,204 +520,6 @@
       }
     },
     {
-      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
-      "salesperson": "Paul",
-      "status": "Active",
-      "start_date": "2025-03-16",
-      "end_date": "2205-09-20",
-      "monthly": {
-        "2025-08": {
-          "ar": 1246.67,
-          "ap": 1600.0,
-          "commission": -70.67,
-          "net_gp": -282.66
-        },
-        "2025-09": {
-          "ar": 2200.0,
-          "ap": 1600.0,
-          "commission": 120.0,
-          "net_gp": 480.0
-        },
-        "2025-10": {
-          "ar": 2200.0,
-          "ap": 754.27,
-          "commission": 289.15,
-          "net_gp": 1156.58
-        },
-        "2025-11": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2025-12": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-01": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-02": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-03": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-04": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-05": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-06": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-07": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-08": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-09": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-10": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-11": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-12": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-01": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-02": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-03": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-04": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-05": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-06": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-07": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-08": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-09": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-10": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-11": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-12": {
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        }
-      }
-    },
-    {
-      "name": "Independence Excavating - Columbus, OH - Paul - 2509 [House House1]",
-      "salesperson": "Paul",
-      "status": "Closed",
-      "start_date": "2025-07-31",
-      "end_date": "2025-08-31",
-      "monthly": {
-        "2025-08": {
-          "ar": 1100.0,
-          "ap": 1600.0,
-          "commission": -100.0,
-          "net_gp": -400.0
-        }
-      }
-    },
-    {
       "name": "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513",
       "salesperson": "Paul",
       "status": "Active",
@@ -1077,240 +879,6 @@
           "ap": 987.5,
           "commission": 37.5,
           "net_gp": 150.0
-        }
-      }
-    },
-    {
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
-      "salesperson": "Paul",
-      "status": "Active",
-      "start_date": "2025-05-09",
-      "end_date": "2026-05-08",
-      "monthly": {
-        "2025-08": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2025-09": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2025-10": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2025-11": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2025-12": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2026-01": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2026-02": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2026-03": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2026-04": {
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0
-        },
-        "2026-05": {
-          "ar": 638.67,
-          "ap": 430.67,
-          "commission": 41.6,
-          "net_gp": 166.4
-        }
-      }
-    },
-    {
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House C]",
-      "salesperson": "Paul",
-      "status": "Closed",
-      "start_date": "2025-05-09",
-      "end_date": "2025-08-09",
-      "monthly": {
-        "2025-08": {
-          "ar": 720.0,
-          "ap": 570.0,
-          "commission": 30.0,
-          "net_gp": 120.0
-        }
-      }
-    },
-    {
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
-      "salesperson": "Paul",
-      "status": "Active",
-      "start_date": "2025-06-03",
-      "end_date": "2026-06-01",
-      "monthly": {
-        "2025-08": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2025-09": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2025-10": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2025-11": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2025-12": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2026-01": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2026-02": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2026-03": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2026-04": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2026-05": {
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2026-06": {
-          "ar": 96.5,
-          "ap": 84.83,
-          "commission": 2.33,
-          "net_gp": 9.34
-        }
-      }
-    },
-    {
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House E]",
-      "salesperson": "Paul",
-      "status": "Active",
-      "start_date": "2025-08-01",
-      "end_date": "2026-06-30",
-      "monthly": {
-        "2025-08": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-09": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-10": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-11": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-12": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-01": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-02": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-03": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-04": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-05": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-06": {
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
         }
       }
     },
@@ -5075,6 +4643,198 @@
       }
     },
     {
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532",
+      "salesperson": "Paul",
+      "status": "Active",
+      "start_date": "2025-05-09",
+      "end_date": "2026-06-01",
+      "monthly": {
+        "2025-05": {
+          "ar": 5411,
+          "ap": 4091,
+          "commission": 264.0,
+          "net_gp": 1056.0
+        },
+        "2025-06": {
+          "ar": 9997,
+          "ap": 7890,
+          "commission": 421.4,
+          "net_gp": 1685.6
+        },
+        "2025-07": {
+          "ar": 10190,
+          "ap": 8060,
+          "commission": 426.0,
+          "net_gp": 1704.0
+        },
+        "2025-08": {
+          "ar": 8743,
+          "ap": 6898,
+          "commission": 369.0,
+          "net_gp": 1476.0
+        },
+        "2025-09": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2025-10": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2025-11": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2025-12": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2026-01": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2026-02": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2026-03": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2026-04": {
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0
+        },
+        "2026-05": {
+          "ar": 6185,
+          "ap": 4986,
+          "commission": 239.8,
+          "net_gp": 959.2
+        },
+        "2026-06": {
+          "ar": 185,
+          "ap": 149,
+          "commission": 7.2,
+          "net_gp": 28.8
+        }
+      }
+    },
+    {
+      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
+      "salesperson": "Paul",
+      "status": "Closed",
+      "start_date": "2025-02-17",
+      "end_date": "2025-10-17",
+      "monthly": {
+        "2025-02": {
+          "ar": 943,
+          "ap": 793,
+          "commission": 30.0,
+          "net_gp": 120.0
+        },
+        "2025-03": {
+          "ar": 3335,
+          "ap": 2805,
+          "commission": 106.0,
+          "net_gp": 424.0
+        },
+        "2025-04": {
+          "ar": 4400,
+          "ap": 3700,
+          "commission": 140.0,
+          "net_gp": 560.0
+        },
+        "2025-05": {
+          "ar": 4400,
+          "ap": 3700,
+          "commission": 140.0,
+          "net_gp": 560.0
+        },
+        "2025-06": {
+          "ar": 4400,
+          "ap": 3700,
+          "commission": 140.0,
+          "net_gp": 560.0
+        },
+        "2025-07": {
+          "ar": 2200,
+          "ap": 1850,
+          "commission": 70.0,
+          "net_gp": 280.0
+        },
+        "2025-08": {
+          "ar": 1246.67,
+          "ap": 1600.0,
+          "commission": -70.67,
+          "net_gp": -282.66
+        },
+        "2025-09": {
+          "ar": 2200.0,
+          "ap": 1600.0,
+          "commission": 120.0,
+          "net_gp": 480.0
+        },
+        "2025-10": {
+          "ar": 2200.0,
+          "ap": 754.27,
+          "commission": 289.15,
+          "net_gp": 1156.58
+        },
+        "2025-11": {
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2025-12": {
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2026-01": {
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2026-02": {
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2026-03": {
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        },
+        "2026-04": {
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8
+        }
+      }
+    },
+    {
       "name": "Peak Event Services - Woburn, MA - Paul - 2623",
       "salesperson": "Paul",
       "status": "Active",
@@ -5395,7 +5155,7 @@
           "nepq": 0.0
         },
         "Apr 2026 W5": {
-          "calls": 0.0,
+          "calls": 6.0,
           "meetings": 0.0,
           "quotes": 0.0,
           "deals": 0.0,
@@ -5475,7 +5235,7 @@
       },
       "Peyton": {
         "2026-04": {
-          "calls": 123.0,
+          "calls": 129.0,
           "meetings": 0.0,
           "quotes": 1.0,
           "deals": 0.0,
@@ -5575,7 +5335,7 @@
             "invoice_id": "7601",
             "doc_number": "2537-E12",
             "amount": 3000.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -5583,7 +5343,7 @@
             "invoice_id": "7600",
             "doc_number": "2537-IKL5",
             "amount": 16200.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -5591,7 +5351,7 @@
             "invoice_id": "7599",
             "doc_number": "2537-FGH12",
             "amount": 13750.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -5599,7 +5359,7 @@
             "invoice_id": "7598",
             "doc_number": "2537-12",
             "amount": 22000.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -5607,7 +5367,7 @@
             "invoice_id": "7096",
             "doc_number": "2527-14",
             "amount": 3600.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -5615,7 +5375,7 @@
             "invoice_id": "6416",
             "doc_number": "2621-02",
             "amount": 11571.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -5623,7 +5383,7 @@
             "invoice_id": "7092",
             "doc_number": "2591-05",
             "amount": 6750.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -5631,7 +5391,7 @@
             "invoice_id": "7496",
             "doc_number": "2631-02",
             "amount": 3200.0,
-            "days_overdue": -8,
+            "days_overdue": -7,
             "due_date": "2026-05-06"
           },
           {
@@ -5639,7 +5399,7 @@
             "invoice_id": "7429",
             "doc_number": "2621-B02",
             "amount": 11571.0,
-            "days_overdue": -15,
+            "days_overdue": -14,
             "due_date": "2026-05-13"
           },
           {
@@ -5647,7 +5407,7 @@
             "invoice_id": "7439",
             "doc_number": "2594-03",
             "amount": 7000.0,
-            "days_overdue": -19,
+            "days_overdue": -18,
             "due_date": "2026-05-17"
           },
           {
@@ -5655,7 +5415,7 @@
             "invoice_id": "7018",
             "doc_number": "2625-03",
             "amount": 25945.0,
-            "days_overdue": -22,
+            "days_overdue": -21,
             "due_date": "2026-05-20"
           },
           {
@@ -5663,7 +5423,7 @@
             "invoice_id": "6317",
             "doc_number": "2614-04",
             "amount": 12000.0,
-            "days_overdue": -23,
+            "days_overdue": -22,
             "due_date": "2026-05-21"
           },
           {
@@ -5671,7 +5431,7 @@
             "invoice_id": "7550",
             "doc_number": "2614-B02",
             "amount": 4800.0,
-            "days_overdue": -29,
+            "days_overdue": -28,
             "due_date": "2026-05-27"
           },
           {
@@ -5679,7 +5439,7 @@
             "invoice_id": "7230",
             "doc_number": "2633-03",
             "amount": 3300.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -5687,7 +5447,7 @@
             "invoice_id": "7495",
             "doc_number": "2527-15",
             "amount": 3600.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -5695,7 +5455,7 @@
             "invoice_id": "7461",
             "doc_number": "2615-03",
             "amount": 4600.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -5703,7 +5463,7 @@
             "invoice_id": "6417",
             "doc_number": "2621-03",
             "amount": 11571.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -5711,7 +5471,7 @@
             "invoice_id": "7497",
             "doc_number": "2631-03",
             "amount": 3200.0,
-            "days_overdue": -39,
+            "days_overdue": -38,
             "due_date": "2026-06-06"
           },
           {
@@ -5719,7 +5479,7 @@
             "invoice_id": "7019",
             "doc_number": "2625-04",
             "amount": 22300.0,
-            "days_overdue": -49,
+            "days_overdue": -48,
             "due_date": "2026-06-16"
           },
           {
@@ -5727,7 +5487,7 @@
             "invoice_id": "6318",
             "doc_number": "2614-05",
             "amount": 12000.0,
-            "days_overdue": -54,
+            "days_overdue": -53,
             "due_date": "2026-06-21"
           },
           {
@@ -5735,7 +5495,7 @@
             "invoice_id": "7551",
             "doc_number": "2614-B03",
             "amount": 4800.0,
-            "days_overdue": -60,
+            "days_overdue": -59,
             "due_date": "2026-06-27"
           },
           {
@@ -5743,7 +5503,7 @@
             "invoice_id": "7231",
             "doc_number": "2633-04",
             "amount": 3300.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -5751,7 +5511,7 @@
             "invoice_id": "7462",
             "doc_number": "2615-04",
             "amount": 4600.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -5759,7 +5519,7 @@
             "invoice_id": "6418",
             "doc_number": "2621-04",
             "amount": 11571.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -5767,7 +5527,7 @@
             "invoice_id": "7498",
             "doc_number": "2631-04",
             "amount": 3200.0,
-            "days_overdue": -69,
+            "days_overdue": -68,
             "due_date": "2026-07-06"
           },
           {
@@ -5775,7 +5535,7 @@
             "invoice_id": "7020",
             "doc_number": "2625-05",
             "amount": 16650.0,
-            "days_overdue": -79,
+            "days_overdue": -78,
             "due_date": "2026-07-16"
           },
           {
@@ -5783,7 +5543,7 @@
             "invoice_id": "6319",
             "doc_number": "2614-06",
             "amount": 12000.0,
-            "days_overdue": -84,
+            "days_overdue": -83,
             "due_date": "2026-07-21"
           },
           {
@@ -5791,7 +5551,7 @@
             "invoice_id": "7552",
             "doc_number": "2614-B04",
             "amount": 4800.0,
-            "days_overdue": -90,
+            "days_overdue": -89,
             "due_date": "2026-07-27"
           },
           {
@@ -5799,7 +5559,7 @@
             "invoice_id": "7232",
             "doc_number": "2633-05",
             "amount": 3300.0,
-            "days_overdue": -95,
+            "days_overdue": -94,
             "due_date": "2026-08-01"
           },
           {
@@ -5807,7 +5567,7 @@
             "invoice_id": "7463",
             "doc_number": "2615-05",
             "amount": 4600.0,
-            "days_overdue": -95,
+            "days_overdue": -94,
             "due_date": "2026-08-01"
           },
           {
@@ -5815,7 +5575,7 @@
             "invoice_id": "6419",
             "doc_number": "2621-05",
             "amount": 11571.0,
-            "days_overdue": -95,
+            "days_overdue": -94,
             "due_date": "2026-08-01"
           },
           {
@@ -5823,7 +5583,7 @@
             "invoice_id": "7499",
             "doc_number": "2631-05",
             "amount": 3200.0,
-            "days_overdue": -100,
+            "days_overdue": -99,
             "due_date": "2026-08-06"
           },
           {
@@ -5831,7 +5591,7 @@
             "invoice_id": "7021",
             "doc_number": "2625-06",
             "amount": 16650.0,
-            "days_overdue": -110,
+            "days_overdue": -109,
             "due_date": "2026-08-16"
           },
           {
@@ -5839,7 +5599,7 @@
             "invoice_id": "6320",
             "doc_number": "2614-07",
             "amount": 12000.0,
-            "days_overdue": -115,
+            "days_overdue": -114,
             "due_date": "2026-08-21"
           },
           {
@@ -5847,7 +5607,7 @@
             "invoice_id": "7553",
             "doc_number": "2614-B05",
             "amount": 4800.0,
-            "days_overdue": -121,
+            "days_overdue": -120,
             "due_date": "2026-08-27"
           },
           {
@@ -5855,7 +5615,7 @@
             "invoice_id": "7233",
             "doc_number": "2633-06",
             "amount": 3300.0,
-            "days_overdue": -126,
+            "days_overdue": -125,
             "due_date": "2026-09-01"
           },
           {
@@ -5863,7 +5623,7 @@
             "invoice_id": "7464",
             "doc_number": "2615-06",
             "amount": 4600.0,
-            "days_overdue": -126,
+            "days_overdue": -125,
             "due_date": "2026-09-01"
           },
           {
@@ -5871,7 +5631,7 @@
             "invoice_id": "6420",
             "doc_number": "2621-06",
             "amount": 11571.0,
-            "days_overdue": -126,
+            "days_overdue": -125,
             "due_date": "2026-09-01"
           },
           {
@@ -5879,7 +5639,7 @@
             "invoice_id": "7500",
             "doc_number": "2631-06",
             "amount": 3200.0,
-            "days_overdue": -131,
+            "days_overdue": -130,
             "due_date": "2026-09-06"
           },
           {
@@ -5887,7 +5647,7 @@
             "invoice_id": "7022",
             "doc_number": "2625-07",
             "amount": 16650.0,
-            "days_overdue": -141,
+            "days_overdue": -140,
             "due_date": "2026-09-16"
           },
           {
@@ -5895,7 +5655,7 @@
             "invoice_id": "6321",
             "doc_number": "2614-08",
             "amount": 12000.0,
-            "days_overdue": -146,
+            "days_overdue": -145,
             "due_date": "2026-09-21"
           },
           {
@@ -5903,7 +5663,7 @@
             "invoice_id": "7554",
             "doc_number": "2614-B06",
             "amount": 4800.0,
-            "days_overdue": -152,
+            "days_overdue": -151,
             "due_date": "2026-09-27"
           },
           {
@@ -5911,7 +5671,7 @@
             "invoice_id": "7234",
             "doc_number": "2633-07",
             "amount": 3300.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -5919,7 +5679,7 @@
             "invoice_id": "7465",
             "doc_number": "2615-07",
             "amount": 4600.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -5927,7 +5687,7 @@
             "invoice_id": "7501",
             "doc_number": "2631-07",
             "amount": 3200.0,
-            "days_overdue": -161,
+            "days_overdue": -160,
             "due_date": "2026-10-06"
           },
           {
@@ -5935,7 +5695,7 @@
             "invoice_id": "7023",
             "doc_number": "2625-08",
             "amount": 16650.0,
-            "days_overdue": -171,
+            "days_overdue": -170,
             "due_date": "2026-10-16"
           },
           {
@@ -5943,7 +5703,7 @@
             "invoice_id": "6322",
             "doc_number": "2614-09",
             "amount": 12000.0,
-            "days_overdue": -176,
+            "days_overdue": -175,
             "due_date": "2026-10-21"
           },
           {
@@ -5951,7 +5711,7 @@
             "invoice_id": "7555",
             "doc_number": "2614-B07",
             "amount": 4800.0,
-            "days_overdue": -182,
+            "days_overdue": -181,
             "due_date": "2026-10-27"
           },
           {
@@ -5959,7 +5719,7 @@
             "invoice_id": "7235",
             "doc_number": "2633-08",
             "amount": 3300.0,
-            "days_overdue": -187,
+            "days_overdue": -186,
             "due_date": "2026-11-01"
           },
           {
@@ -5967,7 +5727,7 @@
             "invoice_id": "7502",
             "doc_number": "2631-08",
             "amount": 3200.0,
-            "days_overdue": -192,
+            "days_overdue": -191,
             "due_date": "2026-11-06"
           },
           {
@@ -5975,7 +5735,7 @@
             "invoice_id": "7024",
             "doc_number": "2625-09",
             "amount": 16650.0,
-            "days_overdue": -202,
+            "days_overdue": -201,
             "due_date": "2026-11-16"
           },
           {
@@ -5983,7 +5743,7 @@
             "invoice_id": "6323",
             "doc_number": "2614-10",
             "amount": 16400.0,
-            "days_overdue": -207,
+            "days_overdue": -206,
             "due_date": "2026-11-21"
           },
           {
@@ -5991,7 +5751,7 @@
             "invoice_id": "7556",
             "doc_number": "2614-B08",
             "amount": 5600.0,
-            "days_overdue": -213,
+            "days_overdue": -212,
             "due_date": "2026-11-27"
           },
           {
@@ -5999,7 +5759,7 @@
             "invoice_id": "7236",
             "doc_number": "2633-09",
             "amount": 3300.0,
-            "days_overdue": -217,
+            "days_overdue": -216,
             "due_date": "2026-12-01"
           },
           {
@@ -6007,7 +5767,7 @@
             "invoice_id": "7503",
             "doc_number": "2631-09",
             "amount": 3200.0,
-            "days_overdue": -222,
+            "days_overdue": -221,
             "due_date": "2026-12-06"
           },
           {
@@ -6015,7 +5775,7 @@
             "invoice_id": "7025",
             "doc_number": "2625-10",
             "amount": 16650.0,
-            "days_overdue": -232,
+            "days_overdue": -231,
             "due_date": "2026-12-16"
           },
           {
@@ -6023,7 +5783,7 @@
             "invoice_id": "7504",
             "doc_number": "2631-10",
             "amount": 3200.0,
-            "days_overdue": -253,
+            "days_overdue": -252,
             "due_date": "2027-01-06"
           },
           {
@@ -6031,7 +5791,7 @@
             "invoice_id": "7026",
             "doc_number": "2625-11",
             "amount": 16650.0,
-            "days_overdue": -263,
+            "days_overdue": -262,
             "due_date": "2027-01-16"
           },
           {
@@ -6039,7 +5799,7 @@
             "invoice_id": "7505",
             "doc_number": "2631-11",
             "amount": 3200.0,
-            "days_overdue": -284,
+            "days_overdue": -283,
             "due_date": "2027-02-06"
           },
           {
@@ -6047,7 +5807,7 @@
             "invoice_id": "7027",
             "doc_number": "2625-12",
             "amount": 16650.0,
-            "days_overdue": -294,
+            "days_overdue": -293,
             "due_date": "2027-02-16"
           },
           {
@@ -6055,7 +5815,7 @@
             "invoice_id": "7028",
             "doc_number": "2625-13",
             "amount": 5550.0,
-            "days_overdue": -322,
+            "days_overdue": -321,
             "due_date": "2027-03-16"
           }
         ]
@@ -6069,7 +5829,7 @@
             "invoice_id": "7080",
             "doc_number": "2631-01",
             "amount": 4800.0,
-            "days_overdue": 26,
+            "days_overdue": 27,
             "due_date": "2026-04-02"
           },
           {
@@ -6077,7 +5837,7 @@
             "invoice_id": "5417",
             "doc_number": "2537-IKL4",
             "amount": 7083.33,
-            "days_overdue": 15,
+            "days_overdue": 16,
             "due_date": "2026-04-13"
           },
           {
@@ -6085,7 +5845,7 @@
             "invoice_id": "7428",
             "doc_number": "2621-B01",
             "amount": 13601.0,
-            "days_overdue": 12,
+            "days_overdue": 13,
             "due_date": "2026-04-16"
           },
           {
@@ -6093,7 +5853,7 @@
             "invoice_id": "7438",
             "doc_number": "2594-02",
             "amount": 5000.0,
-            "days_overdue": 11,
+            "days_overdue": 12,
             "due_date": "2026-04-17"
           },
           {
@@ -6101,7 +5861,7 @@
             "invoice_id": "7511",
             "doc_number": "2614-B01",
             "amount": 7200.0,
-            "days_overdue": 8,
+            "days_overdue": 9,
             "due_date": "2026-04-20"
           }
         ]
@@ -6115,7 +5875,7 @@
             "invoice_id": "6713",
             "doc_number": "2625-Sec Dep",
             "amount": 75.0,
-            "days_overdue": 42,
+            "days_overdue": 43,
             "due_date": "2026-03-17"
           }
         ]
@@ -6129,7 +5889,7 @@
             "invoice_id": "6010",
             "doc_number": "2612-01",
             "amount": 800.0,
-            "days_overdue": 75,
+            "days_overdue": 76,
             "due_date": "2026-02-12"
           }
         ]
@@ -6143,7 +5903,7 @@
             "invoice_id": "2585",
             "doc_number": "2564-01",
             "amount": 6000.0,
-            "days_overdue": 242,
+            "days_overdue": 243,
             "due_date": "2025-08-29"
           }
         ]
@@ -6151,15 +5911,15 @@
     },
     "Paul": {
       "current": {
-        "count": 112,
-        "amount": 542652.33,
+        "count": 111,
+        "amount": 542064.33,
         "invoices": [
           {
             "project": "DH Griffin - LaGrange, GA - Paul -2582",
             "invoice_id": "5801",
             "doc_number": "2582-08",
             "amount": 2781.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6167,7 +5927,7 @@
             "invoice_id": "6830",
             "doc_number": "0526-BNC#2",
             "amount": 1995.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6175,7 +5935,7 @@
             "invoice_id": "6808",
             "doc_number": "2576-B08",
             "amount": 5750.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6183,7 +5943,7 @@
             "invoice_id": "6806",
             "doc_number": "2576-A08",
             "amount": 5750.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6191,7 +5951,7 @@
             "invoice_id": "6000",
             "doc_number": "2513-15",
             "amount": 7190.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6199,15 +5959,7 @@
             "invoice_id": "6304",
             "doc_number": "2616-03",
             "amount": 1200.0,
-            "days_overdue": -3,
-            "due_date": "2026-05-01"
-          },
-          {
-            "project": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
-            "invoice_id": "5783",
-            "doc_number": "2532-A13",
-            "amount": 588.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6215,7 +5967,7 @@
             "invoice_id": "6429",
             "doc_number": "2618-B03",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6223,7 +5975,7 @@
             "invoice_id": "6213",
             "doc_number": "2618-03",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6231,7 +5983,7 @@
             "invoice_id": "5790",
             "doc_number": "2574-08",
             "amount": 2600.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6239,7 +5991,7 @@
             "invoice_id": "6532",
             "doc_number": "2592-A17",
             "amount": 2500.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6247,7 +5999,7 @@
             "invoice_id": "6535",
             "doc_number": "2592-B17",
             "amount": 2200.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6255,7 +6007,7 @@
             "invoice_id": "7147",
             "doc_number": "2506-H04",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6263,7 +6015,7 @@
             "invoice_id": "7145",
             "doc_number": "2506-F07",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6271,7 +6023,7 @@
             "invoice_id": "7144",
             "doc_number": "2506-E08",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6279,7 +6031,7 @@
             "invoice_id": "7143",
             "doc_number": "2506-D10",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6287,7 +6039,7 @@
             "invoice_id": "7142",
             "doc_number": "2506-C10",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6295,7 +6047,7 @@
             "invoice_id": "7141",
             "doc_number": "2506-B15",
             "amount": 3895.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6303,7 +6055,7 @@
             "invoice_id": "7140",
             "doc_number": "2506-A17",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6311,7 +6063,7 @@
             "invoice_id": "5824",
             "doc_number": "2593-06",
             "amount": 3595.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -6319,7 +6071,7 @@
             "invoice_id": "7037",
             "doc_number": "2623-C02",
             "amount": 8495.0,
-            "days_overdue": -18,
+            "days_overdue": -17,
             "due_date": "2026-05-16"
           },
           {
@@ -6327,7 +6079,7 @@
             "invoice_id": "5818",
             "doc_number": "2588-07",
             "amount": 1917.0,
-            "days_overdue": -18,
+            "days_overdue": -17,
             "due_date": "2026-05-16"
           },
           {
@@ -6335,7 +6087,7 @@
             "invoice_id": "7388",
             "doc_number": "2634-02",
             "amount": 7800.0,
-            "days_overdue": -21,
+            "days_overdue": -20,
             "due_date": "2026-05-19"
           },
           {
@@ -6343,7 +6095,7 @@
             "invoice_id": "6307",
             "doc_number": "2620-04",
             "amount": 2900.0,
-            "days_overdue": -27,
+            "days_overdue": -26,
             "due_date": "2026-05-25"
           },
           {
@@ -6351,7 +6103,7 @@
             "invoice_id": "6006",
             "doc_number": "2605-04",
             "amount": 5150.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6359,7 +6111,7 @@
             "invoice_id": "6719",
             "doc_number": "2626-03",
             "amount": 4700.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6367,7 +6119,7 @@
             "invoice_id": "5802",
             "doc_number": "2582-09",
             "amount": 2781.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6375,7 +6127,7 @@
             "invoice_id": "6113",
             "doc_number": "2513-16",
             "amount": 7190.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6383,7 +6135,7 @@
             "invoice_id": "6430",
             "doc_number": "2618-B04",
             "amount": 3595.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6391,7 +6143,7 @@
             "invoice_id": "6214",
             "doc_number": "2618-04",
             "amount": 3595.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6399,7 +6151,7 @@
             "invoice_id": "5791",
             "doc_number": "2574-09",
             "amount": 2600.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6407,7 +6159,7 @@
             "invoice_id": "5825",
             "doc_number": "2593-07",
             "amount": 3595.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6415,7 +6167,7 @@
             "invoice_id": "6132",
             "doc_number": "2586-07",
             "amount": 4295.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -6423,7 +6175,7 @@
             "invoice_id": "6872",
             "doc_number": "2623-A02",
             "amount": 8100.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -6431,7 +6183,7 @@
             "invoice_id": "6839",
             "doc_number": "2623-B02",
             "amount": 11500.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -6439,7 +6191,7 @@
             "invoice_id": "6831",
             "doc_number": "0626-BNC#2",
             "amount": 1396.5,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -6447,7 +6199,7 @@
             "invoice_id": "6533",
             "doc_number": "2592-A18",
             "amount": 2500.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -6455,7 +6207,7 @@
             "invoice_id": "6536",
             "doc_number": "2592-B18",
             "amount": 2200.0,
-            "days_overdue": -34,
+            "days_overdue": -33,
             "due_date": "2026-06-01"
           },
           {
@@ -6463,7 +6215,7 @@
             "invoice_id": "7038",
             "doc_number": "2623-C03",
             "amount": 8495.0,
-            "days_overdue": -49,
+            "days_overdue": -48,
             "due_date": "2026-06-16"
           },
           {
@@ -6471,7 +6223,7 @@
             "invoice_id": "7389",
             "doc_number": "2634-03",
             "amount": 11180.0,
-            "days_overdue": -52,
+            "days_overdue": -51,
             "due_date": "2026-06-19"
           },
           {
@@ -6479,7 +6231,7 @@
             "invoice_id": "6308",
             "doc_number": "2620-05",
             "amount": 2900.0,
-            "days_overdue": -58,
+            "days_overdue": -57,
             "due_date": "2026-06-25"
           },
           {
@@ -6487,7 +6239,7 @@
             "invoice_id": "6720",
             "doc_number": "2626-04",
             "amount": 5483.33,
-            "days_overdue": -60,
+            "days_overdue": -59,
             "due_date": "2026-06-27"
           },
           {
@@ -6495,7 +6247,7 @@
             "invoice_id": "6007",
             "doc_number": "2605-05",
             "amount": 5150.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6503,7 +6255,7 @@
             "invoice_id": "6873",
             "doc_number": "2623-A03",
             "amount": 8100.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6511,7 +6263,7 @@
             "invoice_id": "6840",
             "doc_number": "2623-B03",
             "amount": 11500.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6519,7 +6271,7 @@
             "invoice_id": "5803",
             "doc_number": "2582-10",
             "amount": 2781.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6527,7 +6279,7 @@
             "invoice_id": "6114",
             "doc_number": "2513-17",
             "amount": 7190.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6535,7 +6287,7 @@
             "invoice_id": "6431",
             "doc_number": "2618-B05",
             "amount": 3595.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6543,7 +6295,7 @@
             "invoice_id": "6215",
             "doc_number": "2618-05",
             "amount": 3595.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6551,7 +6303,7 @@
             "invoice_id": "6534",
             "doc_number": "2592-A19",
             "amount": 2500.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6559,7 +6311,7 @@
             "invoice_id": "6537",
             "doc_number": "2592-B19",
             "amount": 2200.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6567,7 +6319,7 @@
             "invoice_id": "5826",
             "doc_number": "2593-08",
             "amount": 3595.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6575,7 +6327,7 @@
             "invoice_id": "6133",
             "doc_number": "2586-08",
             "amount": 4295.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -6583,7 +6335,7 @@
             "invoice_id": "7039",
             "doc_number": "2623-C04",
             "amount": 8495.0,
-            "days_overdue": -79,
+            "days_overdue": -78,
             "due_date": "2026-07-16"
           },
           {
@@ -6591,7 +6343,7 @@
             "invoice_id": "6309",
             "doc_number": "2620-06",
             "amount": 2900.0,
-            "days_overdue": -88,
+            "days_overdue": -87,
             "due_date": "2026-07-25"
           },
           {
@@ -6599,7 +6351,7 @@
             "invoice_id": "6008",
             "doc_number": "2605-06",
             "amount": 5150.0,
-            "days_overdue": -94,
+            "days_overdue": -93,
             "due_date": "2026-07-31"
           },
           {
@@ -6607,7 +6359,7 @@
             "invoice_id": "5804",
             "doc_number": "2582-11",
             "amount": 2781.0,
-            "days_overdue": -94,
+            "days_overdue": -93,
             "due_date": "2026-07-31"
           },
           {
@@ -6615,7 +6367,7 @@
             "invoice_id": "6115",
             "doc_number": "2513-18",
             "amount": 7190.0,
-            "days_overdue": -94,
+            "days_overdue": -93,
             "due_date": "2026-07-31"
           },
           {
@@ -6623,7 +6375,7 @@
             "invoice_id": "6432",
             "doc_number": "2618-B06",
             "amount": 3595.0,
-            "days_overdue": -94,
+            "days_overdue": -93,
             "due_date": "2026-07-31"
           },
           {
@@ -6631,7 +6383,7 @@
             "invoice_id": "6216",
             "doc_number": "2618-06",
             "amount": 3595.0,
-            "days_overdue": -94,
+            "days_overdue": -93,
             "due_date": "2026-07-31"
           },
           {
@@ -6639,7 +6391,7 @@
             "invoice_id": "5827",
             "doc_number": "2593-09",
             "amount": 3595.0,
-            "days_overdue": -94,
+            "days_overdue": -93,
             "due_date": "2026-07-31"
           },
           {
@@ -6647,7 +6399,7 @@
             "invoice_id": "6874",
             "doc_number": "2623-A04",
             "amount": 8100.0,
-            "days_overdue": -95,
+            "days_overdue": -94,
             "due_date": "2026-08-01"
           },
           {
@@ -6655,7 +6407,7 @@
             "invoice_id": "6841",
             "doc_number": "2623-B04",
             "amount": 11500.0,
-            "days_overdue": -95,
+            "days_overdue": -94,
             "due_date": "2026-08-01"
           },
           {
@@ -6663,7 +6415,7 @@
             "invoice_id": "6134",
             "doc_number": "2586-09",
             "amount": 4295.0,
-            "days_overdue": -95,
+            "days_overdue": -94,
             "due_date": "2026-08-01"
           },
           {
@@ -6671,7 +6423,7 @@
             "invoice_id": "7040",
             "doc_number": "2623-C05",
             "amount": 8495.0,
-            "days_overdue": -110,
+            "days_overdue": -109,
             "due_date": "2026-08-16"
           },
           {
@@ -6679,7 +6431,7 @@
             "invoice_id": "6310",
             "doc_number": "2620-07",
             "amount": 2900.0,
-            "days_overdue": -119,
+            "days_overdue": -118,
             "due_date": "2026-08-25"
           },
           {
@@ -6687,7 +6439,7 @@
             "invoice_id": "6009",
             "doc_number": "2605-07",
             "amount": 3090.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6695,7 +6447,7 @@
             "invoice_id": "6758",
             "doc_number": "2618-C02",
             "amount": 5150.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6703,7 +6455,7 @@
             "invoice_id": "5805",
             "doc_number": "2582-12",
             "amount": 2781.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6711,7 +6463,7 @@
             "invoice_id": "6116",
             "doc_number": "2513-19",
             "amount": 7190.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6719,7 +6471,7 @@
             "invoice_id": "6433",
             "doc_number": "2618-B07",
             "amount": 3595.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6727,7 +6479,7 @@
             "invoice_id": "6217",
             "doc_number": "2618-07",
             "amount": 3595.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6735,7 +6487,7 @@
             "invoice_id": "5828",
             "doc_number": "2593-10",
             "amount": 3595.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6743,7 +6495,7 @@
             "invoice_id": "6135",
             "doc_number": "2586-10",
             "amount": 4295.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -6751,7 +6503,7 @@
             "invoice_id": "6875",
             "doc_number": "2623-A05",
             "amount": 8100.0,
-            "days_overdue": -126,
+            "days_overdue": -125,
             "due_date": "2026-09-01"
           },
           {
@@ -6759,7 +6511,7 @@
             "invoice_id": "6842",
             "doc_number": "2623-B05",
             "amount": 11500.0,
-            "days_overdue": -126,
+            "days_overdue": -125,
             "due_date": "2026-09-01"
           },
           {
@@ -6767,7 +6519,7 @@
             "invoice_id": "7041",
             "doc_number": "2623-C06",
             "amount": 8495.0,
-            "days_overdue": -141,
+            "days_overdue": -140,
             "due_date": "2026-09-16"
           },
           {
@@ -6775,7 +6527,7 @@
             "invoice_id": "6311",
             "doc_number": "2620-08",
             "amount": 2900.0,
-            "days_overdue": -150,
+            "days_overdue": -149,
             "due_date": "2026-09-25"
           },
           {
@@ -6783,7 +6535,7 @@
             "invoice_id": "6876",
             "doc_number": "2623-A06",
             "amount": 8100.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6791,7 +6543,7 @@
             "invoice_id": "6843",
             "doc_number": "2623-B06",
             "amount": 11500.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6799,7 +6551,7 @@
             "invoice_id": "6759",
             "doc_number": "2618-C03",
             "amount": 5150.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6807,7 +6559,7 @@
             "invoice_id": "6117",
             "doc_number": "2513-20",
             "amount": 7190.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6815,7 +6567,7 @@
             "invoice_id": "6434",
             "doc_number": "2618-B08",
             "amount": 3595.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6823,7 +6575,7 @@
             "invoice_id": "6218",
             "doc_number": "2618-08",
             "amount": 3595.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6831,7 +6583,7 @@
             "invoice_id": "5829",
             "doc_number": "2593-11",
             "amount": 3595.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6839,7 +6591,7 @@
             "invoice_id": "6136",
             "doc_number": "2586-11",
             "amount": 4295.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -6847,7 +6599,7 @@
             "invoice_id": "7042",
             "doc_number": "2623-C07",
             "amount": 4247.5,
-            "days_overdue": -171,
+            "days_overdue": -170,
             "due_date": "2026-10-16"
           },
           {
@@ -6855,7 +6607,7 @@
             "invoice_id": "6312",
             "doc_number": "2620-09",
             "amount": 3480.0,
-            "days_overdue": -180,
+            "days_overdue": -179,
             "due_date": "2026-10-25"
           },
           {
@@ -6863,7 +6615,7 @@
             "invoice_id": "6118",
             "doc_number": "2513-21",
             "amount": 7190.0,
-            "days_overdue": -186,
+            "days_overdue": -185,
             "due_date": "2026-10-31"
           },
           {
@@ -6871,7 +6623,7 @@
             "invoice_id": "6435",
             "doc_number": "2618-B09",
             "amount": 3595.0,
-            "days_overdue": -186,
+            "days_overdue": -185,
             "due_date": "2026-10-31"
           },
           {
@@ -6879,7 +6631,7 @@
             "invoice_id": "6219",
             "doc_number": "2618-09",
             "amount": 3595.0,
-            "days_overdue": -186,
+            "days_overdue": -185,
             "due_date": "2026-10-31"
           },
           {
@@ -6887,7 +6639,7 @@
             "invoice_id": "5830",
             "doc_number": "2593-12",
             "amount": 3595.0,
-            "days_overdue": -186,
+            "days_overdue": -185,
             "due_date": "2026-10-31"
           },
           {
@@ -6895,7 +6647,7 @@
             "invoice_id": "6137",
             "doc_number": "2586-12",
             "amount": 4295.0,
-            "days_overdue": -186,
+            "days_overdue": -185,
             "due_date": "2026-10-31"
           },
           {
@@ -6903,7 +6655,7 @@
             "invoice_id": "6760",
             "doc_number": "2618-C04",
             "amount": 5150.0,
-            "days_overdue": -187,
+            "days_overdue": -186,
             "due_date": "2026-11-01"
           },
           {
@@ -6911,7 +6663,7 @@
             "invoice_id": "6761",
             "doc_number": "2618-C05",
             "amount": 5150.0,
-            "days_overdue": -217,
+            "days_overdue": -216,
             "due_date": "2026-12-01"
           },
           {
@@ -6919,7 +6671,7 @@
             "invoice_id": "6119",
             "doc_number": "2513-22",
             "amount": 7190.0,
-            "days_overdue": -217,
+            "days_overdue": -216,
             "due_date": "2026-12-01"
           },
           {
@@ -6927,7 +6679,7 @@
             "invoice_id": "6436",
             "doc_number": "2618-B10",
             "amount": 3595.0,
-            "days_overdue": -217,
+            "days_overdue": -216,
             "due_date": "2026-12-01"
           },
           {
@@ -6935,7 +6687,7 @@
             "invoice_id": "6220",
             "doc_number": "2618-10",
             "amount": 3595.0,
-            "days_overdue": -217,
+            "days_overdue": -216,
             "due_date": "2026-12-01"
           },
           {
@@ -6943,7 +6695,7 @@
             "invoice_id": "5831",
             "doc_number": "2593-13",
             "amount": 3595.0,
-            "days_overdue": -217,
+            "days_overdue": -216,
             "due_date": "2026-12-01"
           },
           {
@@ -6951,7 +6703,7 @@
             "invoice_id": "6120",
             "doc_number": "2513-23",
             "amount": 7190.0,
-            "days_overdue": -247,
+            "days_overdue": -246,
             "due_date": "2026-12-31"
           },
           {
@@ -6959,7 +6711,7 @@
             "invoice_id": "6437",
             "doc_number": "2618-B11",
             "amount": 3595.0,
-            "days_overdue": -247,
+            "days_overdue": -246,
             "due_date": "2026-12-31"
           },
           {
@@ -6967,7 +6719,7 @@
             "invoice_id": "6221",
             "doc_number": "2618-11",
             "amount": 3595.0,
-            "days_overdue": -247,
+            "days_overdue": -246,
             "due_date": "2026-12-31"
           },
           {
@@ -6975,7 +6727,7 @@
             "invoice_id": "6762",
             "doc_number": "2618-C06",
             "amount": 5150.0,
-            "days_overdue": -248,
+            "days_overdue": -247,
             "due_date": "2027-01-01"
           },
           {
@@ -6983,7 +6735,7 @@
             "invoice_id": "6763",
             "doc_number": "2618-C07",
             "amount": 5150.0,
-            "days_overdue": -278,
+            "days_overdue": -277,
             "due_date": "2027-01-31"
           },
           {
@@ -6991,7 +6743,7 @@
             "invoice_id": "6121",
             "doc_number": "2513-24",
             "amount": 7190.0,
-            "days_overdue": -278,
+            "days_overdue": -277,
             "due_date": "2027-01-31"
           },
           {
@@ -6999,7 +6751,7 @@
             "invoice_id": "6438",
             "doc_number": "2618-B12",
             "amount": 3595.0,
-            "days_overdue": -278,
+            "days_overdue": -277,
             "due_date": "2027-01-31"
           },
           {
@@ -7007,7 +6759,7 @@
             "invoice_id": "6222",
             "doc_number": "2618-12",
             "amount": 3595.0,
-            "days_overdue": -278,
+            "days_overdue": -277,
             "due_date": "2027-01-31"
           },
           {
@@ -7015,7 +6767,7 @@
             "invoice_id": "6764",
             "doc_number": "2618-C08",
             "amount": 5150.0,
-            "days_overdue": -309,
+            "days_overdue": -308,
             "due_date": "2027-03-03"
           },
           {
@@ -7023,7 +6775,7 @@
             "invoice_id": "6765",
             "doc_number": "2618-C09",
             "amount": 5150.0,
-            "days_overdue": -338,
+            "days_overdue": -337,
             "due_date": "2027-04-01"
           },
           {
@@ -7031,7 +6783,7 @@
             "invoice_id": "6766",
             "doc_number": "2618-C10",
             "amount": 5150.0,
-            "days_overdue": -368,
+            "days_overdue": -367,
             "due_date": "2027-05-01"
           },
           {
@@ -7039,7 +6791,7 @@
             "invoice_id": "6767",
             "doc_number": "2618-C11",
             "amount": 5150.0,
-            "days_overdue": -399,
+            "days_overdue": -398,
             "due_date": "2027-06-01"
           },
           {
@@ -7047,7 +6799,7 @@
             "invoice_id": "6768",
             "doc_number": "2618-C12",
             "amount": 5150.0,
-            "days_overdue": -460,
+            "days_overdue": -459,
             "due_date": "2027-08-01"
           }
         ]
@@ -7061,7 +6813,7 @@
             "invoice_id": "6821",
             "doc_number": "2558-10",
             "amount": 4853.38,
-            "days_overdue": 27,
+            "days_overdue": 28,
             "due_date": "2026-04-01"
           },
           {
@@ -7069,7 +6821,7 @@
             "invoice_id": "6829",
             "doc_number": "0426-BNC#2",
             "amount": 1995.0,
-            "days_overdue": 27,
+            "days_overdue": 28,
             "due_date": "2026-04-01"
           },
           {
@@ -7077,7 +6829,7 @@
             "invoice_id": "6807",
             "doc_number": "2576-B07",
             "amount": 5750.0,
-            "days_overdue": 27,
+            "days_overdue": 28,
             "due_date": "2026-04-01"
           },
           {
@@ -7085,7 +6837,7 @@
             "invoice_id": "6805",
             "doc_number": "2576-A07",
             "amount": 5750.0,
-            "days_overdue": 27,
+            "days_overdue": 28,
             "due_date": "2026-04-01"
           },
           {
@@ -7093,7 +6845,7 @@
             "invoice_id": "6490",
             "doc_number": "2506-A16",
             "amount": 3595.0,
-            "days_overdue": 27,
+            "days_overdue": 28,
             "due_date": "2026-04-01"
           },
           {
@@ -7101,7 +6853,7 @@
             "invoice_id": "7098",
             "doc_number": "2623-D01",
             "amount": 10500.0,
-            "days_overdue": 26,
+            "days_overdue": 27,
             "due_date": "2026-04-02"
           },
           {
@@ -7109,7 +6861,7 @@
             "invoice_id": "5999",
             "doc_number": "2513-14",
             "amount": 7190.0,
-            "days_overdue": 21,
+            "days_overdue": 22,
             "due_date": "2026-04-07"
           },
           {
@@ -7117,7 +6869,7 @@
             "invoice_id": "7214",
             "doc_number": "2558-11",
             "amount": 3466.7,
-            "days_overdue": 15,
+            "days_overdue": 16,
             "due_date": "2026-04-13"
           },
           {
@@ -7125,7 +6877,7 @@
             "invoice_id": "7146",
             "doc_number": "2506-G05",
             "amount": 3595.0,
-            "days_overdue": 14,
+            "days_overdue": 15,
             "due_date": "2026-04-14"
           },
           {
@@ -7133,7 +6885,7 @@
             "invoice_id": "7148",
             "doc_number": "2506-I03",
             "amount": 3595.0,
-            "days_overdue": 13,
+            "days_overdue": 14,
             "due_date": "2026-04-15"
           },
           {
@@ -7141,7 +6893,7 @@
             "invoice_id": "7466",
             "doc_number": "2623-E01",
             "amount": 14450.0,
-            "days_overdue": 11,
+            "days_overdue": 12,
             "due_date": "2026-04-17"
           },
           {
@@ -7149,7 +6901,7 @@
             "invoice_id": "7510",
             "doc_number": "2636-01",
             "amount": 4995.0,
-            "days_overdue": 8,
+            "days_overdue": 9,
             "due_date": "2026-04-20"
           },
           {
@@ -7157,7 +6909,7 @@
             "invoice_id": "7480",
             "doc_number": "2602-05",
             "amount": 99.17,
-            "days_overdue": 8,
+            "days_overdue": 9,
             "due_date": "2026-04-20"
           },
           {
@@ -7165,7 +6917,7 @@
             "invoice_id": "6306",
             "doc_number": "2620-03",
             "amount": 2900.0,
-            "days_overdue": 3,
+            "days_overdue": 4,
             "due_date": "2026-04-25"
           }
         ]
@@ -7179,7 +6931,7 @@
             "invoice_id": "6194",
             "doc_number": "2616-01",
             "amount": 4000.0,
-            "days_overdue": 59,
+            "days_overdue": 60,
             "due_date": "2026-02-28"
           },
           {
@@ -7187,7 +6939,7 @@
             "invoice_id": "5558",
             "doc_number": "2576-B06",
             "amount": 5750.0,
-            "days_overdue": 58,
+            "days_overdue": 59,
             "due_date": "2026-03-01"
           },
           {
@@ -7195,7 +6947,7 @@
             "invoice_id": "5743",
             "doc_number": "2506-B13",
             "amount": 3895.0,
-            "days_overdue": 58,
+            "days_overdue": 59,
             "due_date": "2026-03-01"
           },
           {
@@ -7203,7 +6955,7 @@
             "invoice_id": "5557",
             "doc_number": "2576-A06",
             "amount": 5750.0,
-            "days_overdue": 56,
+            "days_overdue": 57,
             "due_date": "2026-03-03"
           },
           {
@@ -7211,7 +6963,7 @@
             "invoice_id": "6551",
             "doc_number": "2558-09",
             "amount": 346.67,
-            "days_overdue": 48,
+            "days_overdue": 49,
             "due_date": "2026-03-11"
           },
           {
@@ -7219,7 +6971,7 @@
             "invoice_id": "6498",
             "doc_number": "2506-I02",
             "amount": 3595.0,
-            "days_overdue": 45,
+            "days_overdue": 46,
             "due_date": "2026-03-14"
           },
           {
@@ -7227,7 +6979,7 @@
             "invoice_id": "6684",
             "doc_number": "2608-03",
             "amount": 500.0,
-            "days_overdue": 42,
+            "days_overdue": 43,
             "due_date": "2026-03-17"
           },
           {
@@ -7235,7 +6987,7 @@
             "invoice_id": "6303",
             "doc_number": "2616-02",
             "amount": 3000.0,
-            "days_overdue": 39,
+            "days_overdue": 40,
             "due_date": "2026-03-20"
           }
         ]
@@ -7261,7 +7013,7 @@
             "invoice_id": "7385",
             "doc_number": "2613-04",
             "amount": 555.0,
-            "days_overdue": -2,
+            "days_overdue": -1,
             "due_date": "2026-04-30"
           },
           {
@@ -7269,7 +7021,7 @@
             "invoice_id": "7457",
             "doc_number": "2613-C04",
             "amount": 7825.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -7277,7 +7029,7 @@
             "invoice_id": "5764",
             "doc_number": "2553-11",
             "amount": 2375.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -7285,7 +7037,7 @@
             "invoice_id": "5765",
             "doc_number": "2553-12",
             "amount": 2375.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           },
           {
@@ -7293,7 +7045,7 @@
             "invoice_id": "5766",
             "doc_number": "2553-13",
             "amount": 2375.0,
-            "days_overdue": -94,
+            "days_overdue": -93,
             "due_date": "2026-07-31"
           },
           {
@@ -7301,7 +7053,7 @@
             "invoice_id": "5767",
             "doc_number": "2553-14",
             "amount": 2375.0,
-            "days_overdue": -125,
+            "days_overdue": -124,
             "due_date": "2026-08-31"
           },
           {
@@ -7309,7 +7061,7 @@
             "invoice_id": "5768",
             "doc_number": "2553-15",
             "amount": 2375.0,
-            "days_overdue": -156,
+            "days_overdue": -155,
             "due_date": "2026-10-01"
           },
           {
@@ -7317,7 +7069,7 @@
             "invoice_id": "5769",
             "doc_number": "2553-16",
             "amount": 2375.0,
-            "days_overdue": -186,
+            "days_overdue": -185,
             "due_date": "2026-10-31"
           }
         ]
@@ -7331,7 +7083,7 @@
             "invoice_id": "7460",
             "doc_number": "2613-E01",
             "amount": 6633.33,
-            "days_overdue": 11,
+            "days_overdue": 12,
             "due_date": "2026-04-17"
           },
           {
@@ -7339,7 +7091,7 @@
             "invoice_id": "7459",
             "doc_number": "2613-D01",
             "amount": 5492.0,
-            "days_overdue": 11,
+            "days_overdue": 12,
             "due_date": "2026-04-17"
           },
           {
@@ -7347,7 +7099,7 @@
             "invoice_id": "7677",
             "doc_number": "2604-04",
             "amount": 1266.67,
-            "days_overdue": 5,
+            "days_overdue": 6,
             "due_date": "2026-04-23"
           }
         ]
@@ -7361,7 +7113,7 @@
             "invoice_id": "6052",
             "doc_number": "2613-02",
             "amount": 5500.0,
-            "days_overdue": 43,
+            "days_overdue": 44,
             "due_date": "2026-03-16"
           },
           {
@@ -7369,7 +7121,7 @@
             "invoice_id": "6502",
             "doc_number": "2604-03",
             "amount": 3800.0,
-            "days_overdue": 38,
+            "days_overdue": 39,
             "due_date": "2026-03-21"
           }
         ]
@@ -7383,7 +7135,7 @@
             "invoice_id": "5965",
             "doc_number": "2610-01",
             "amount": 5400.0,
-            "days_overdue": 77,
+            "days_overdue": 78,
             "due_date": "2026-02-10"
           }
         ]
@@ -7396,23 +7148,15 @@
     },
     "Matt": {
       "current": {
-        "count": 9,
-        "amount": 93888.33,
+        "count": 8,
+        "amount": 86138.33,
         "invoices": [
-          {
-            "project": "Gutknecht Construction - Evansville, IN - Matt - 2627",
-            "invoice_id": "6878",
-            "doc_number": "2627-02",
-            "amount": 7750.0,
-            "days_overdue": -1,
-            "due_date": "2026-04-29"
-          },
           {
             "project": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 1",
             "invoice_id": "7151",
             "doc_number": "2563-D02",
             "amount": 12000.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -7420,7 +7164,7 @@
             "invoice_id": "7150",
             "doc_number": "2563-09",
             "amount": 17100.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -7428,7 +7172,7 @@
             "invoice_id": "6441",
             "doc_number": "2622-03",
             "amount": 10850.0,
-            "days_overdue": -3,
+            "days_overdue": -2,
             "due_date": "2026-05-01"
           },
           {
@@ -7436,7 +7180,7 @@
             "invoice_id": "7082",
             "doc_number": "2624-CD02",
             "amount": 17500.0,
-            "days_overdue": -15,
+            "days_overdue": -14,
             "due_date": "2026-05-13"
           },
           {
@@ -7444,7 +7188,7 @@
             "invoice_id": "7081",
             "doc_number": "2624-02",
             "amount": 12000.0,
-            "days_overdue": -15,
+            "days_overdue": -14,
             "due_date": "2026-05-13"
           },
           {
@@ -7452,7 +7196,7 @@
             "invoice_id": "6879",
             "doc_number": "2627-03",
             "amount": 5683.33,
-            "days_overdue": -31,
+            "days_overdue": -30,
             "due_date": "2026-05-29"
           },
           {
@@ -7460,7 +7204,7 @@
             "invoice_id": "5733",
             "doc_number": "2606-05",
             "amount": 5325.0,
-            "days_overdue": -33,
+            "days_overdue": -32,
             "due_date": "2026-05-31"
           },
           {
@@ -7468,15 +7212,24 @@
             "invoice_id": "5734",
             "doc_number": "2606-06",
             "amount": 5680.0,
-            "days_overdue": -64,
+            "days_overdue": -63,
             "due_date": "2026-07-01"
           }
         ]
       },
       "1-30": {
-        "count": 0,
-        "amount": 0.0,
-        "invoices": []
+        "count": 1,
+        "amount": 7750.0,
+        "invoices": [
+          {
+            "project": "Gutknecht Construction - Evansville, IN - Matt - 2627",
+            "invoice_id": "6878",
+            "doc_number": "2627-02",
+            "amount": 7750.0,
+            "days_overdue": 0,
+            "due_date": "2026-04-29"
+          }
+        ]
       },
       "31-60": {
         "count": 0,

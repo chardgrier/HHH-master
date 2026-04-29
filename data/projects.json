@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T22:03:38.038567",
+  "generated_at": "2026-04-29T00:01:43.181694",
   "months": [
     "2025-08",
     "2025-09",
@@ -745,281 +745,6 @@
       ]
     },
     {
-      "gid": "1209360353419933",
-      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
-      "salesperson": "Paul",
-      "project_number": "2509",
-      "status": "Active",
-      "start_date": "2025-03-16",
-      "end_date": "2205-09-20",
-      "base_ar": 2200.0,
-      "base_ap": 374.0,
-      "base_crew": 0,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-08": {
-          "crew": 0,
-          "ar": 1246.67,
-          "ap": 1600.0,
-          "commission": -70.67,
-          "net_gp": -282.66,
-          "reconciled": true
-        },
-        "2025-09": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 1600.0,
-          "commission": 120.0,
-          "net_gp": 480.0,
-          "reconciled": true
-        },
-        "2025-10": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 754.27,
-          "commission": 289.15,
-          "net_gp": 1156.58,
-          "reconciled": true
-        },
-        "2025-11": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2025-12": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-01": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-02": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-03": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-05": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-06": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-07": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-08": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-09": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-10": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-11": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2026-12": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-01": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-02": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-03": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-04": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-05": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-06": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-07": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-08": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-09": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-10": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-11": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        },
-        "2027-12": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8
-        }
-      },
-      "total_2026": {
-        "ar": 26400.0,
-        "ap": 4488.0,
-        "net_gp": 17529.6
-      },
-      "source": "asana_custom_fields",
-      "house_starts": [
-        {
-          "prefix": null,
-          "start_date": "2025-08-15"
-        }
-      ]
-    },
-    {
-      "gid": "1209360353419933",
-      "name": "Independence Excavating - Columbus, OH - Paul - 2509 [House House1]",
-      "salesperson": "Paul",
-      "project_number": "2509",
-      "status": "Closed",
-      "start_date": "2025-07-31",
-      "end_date": "2025-08-31",
-      "base_ar": 2200.0,
-      "base_ap": 1600.0,
-      "base_crew": 0,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-08": {
-          "crew": 0,
-          "ar": 1100.0,
-          "ap": 1600.0,
-          "commission": -100.0,
-          "net_gp": -400.0
-        }
-      },
-      "total_2026": {
-        "ar": 0,
-        "ap": 0,
-        "net_gp": 0
-      },
-      "source": "asana_custom_fields",
-      "house_starts": [
-        {
-          "prefix": "House1",
-          "start_date": "2025-07-31"
-        }
-      ]
-    },
-    {
       "gid": "1209518084230355",
       "name": "Miller Pipeline (Artera) - Greenville, MS - Paul - 2513",
       "salesperson": "Paul",
@@ -1613,368 +1338,6 @@
         {
           "prefix": null,
           "start_date": "2025-05-20"
-        }
-      ]
-    },
-    {
-      "gid": "1210056931565763",
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
-      "salesperson": "Paul",
-      "project_number": "2532",
-      "status": "Active",
-      "start_date": "2025-05-09",
-      "end_date": "2026-05-08",
-      "base_ar": 2395.0,
-      "base_ap": 1615.0,
-      "base_crew": 0,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-08": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2025-09": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2025-10": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2025-11": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2025-12": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2026-01": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2026-02": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2026-03": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 2395.0,
-          "ap": 1615.0,
-          "commission": 156.0,
-          "net_gp": 624.0,
-          "reconciled": true
-        },
-        "2026-05": {
-          "crew": 0,
-          "ar": 638.67,
-          "ap": 430.67,
-          "commission": 41.6,
-          "net_gp": 166.4
-        }
-      },
-      "total_2026": {
-        "ar": 10218.67,
-        "ap": 6890.67,
-        "net_gp": 2662.4
-      },
-      "source": "asana_custom_fields",
-      "house_starts": [
-        {
-          "prefix": "B",
-          "start_date": "2025-05-09"
-        }
-      ]
-    },
-    {
-      "gid": "1210056931565763",
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House C]",
-      "salesperson": "Paul",
-      "project_number": "2532",
-      "status": "Closed",
-      "start_date": "2025-05-09",
-      "end_date": "2025-08-09",
-      "base_ar": 2400.0,
-      "base_ap": 1900.0,
-      "base_crew": 0,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-08": {
-          "crew": 0,
-          "ar": 720.0,
-          "ap": 570.0,
-          "commission": 30.0,
-          "net_gp": 120.0,
-          "reconciled": true
-        }
-      },
-      "total_2026": {
-        "ar": 0,
-        "ap": 0,
-        "net_gp": 0
-      },
-      "source": "asana_custom_fields",
-      "house_starts": [
-        {
-          "prefix": "C",
-          "start_date": "2025-05-09"
-        }
-      ]
-    },
-    {
-      "gid": "1210056931565763",
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
-      "salesperson": "Paul",
-      "project_number": "2532",
-      "status": "Active",
-      "start_date": "2025-06-03",
-      "end_date": "2026-06-01",
-      "base_ar": 2895.0,
-      "base_ap": 2545.0,
-      "base_crew": 0,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-08": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2025-09": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2025-10": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2025-11": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2025-12": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2026-01": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2026-02": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2026-03": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0,
-          "reconciled": true
-        },
-        "2026-05": {
-          "crew": 0,
-          "ar": 2895.0,
-          "ap": 2545.0,
-          "commission": 70.0,
-          "net_gp": 280.0
-        },
-        "2026-06": {
-          "crew": 0,
-          "ar": 96.5,
-          "ap": 84.83,
-          "commission": 2.33,
-          "net_gp": 9.34
-        }
-      },
-      "total_2026": {
-        "ar": 14571.5,
-        "ap": 12809.83,
-        "net_gp": 1409.34
-      },
-      "source": "asana_custom_fields",
-      "house_starts": [
-        {
-          "prefix": "D",
-          "start_date": "2025-06-03"
-        }
-      ]
-    },
-    {
-      "gid": "1210056931565763",
-      "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House E]",
-      "salesperson": "Paul",
-      "project_number": "2532",
-      "status": "Active",
-      "start_date": "2025-08-01",
-      "end_date": "2026-06-30",
-      "base_ar": 7790.0,
-      "base_ap": 0,
-      "base_crew": 3,
-      "commission_model": "percent",
-      "commission_rate": 0.2,
-      "monthly": {
-        "2025-08": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-09": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-10": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-11": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2025-12": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-01": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-02": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-03": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-04": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-05": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        },
-        "2026-06": {
-          "crew": 3,
-          "ar": 7790.0,
-          "ap": 0.0,
-          "commission": 1558.0,
-          "net_gp": 6232.0
-        }
-      },
-      "total_2026": {
-        "ar": 46740.0,
-        "ap": 0.0,
-        "net_gp": 37392.0
-      },
-      "source": "asana_custom_fields",
-      "house_starts": [
-        {
-          "prefix": "E",
-          "start_date": "2025-08-01"
         }
       ]
     },
@@ -8556,6 +7919,316 @@
       "house_starts": []
     },
     {
+      "gid": "1210056931565763",
+      "name": "Independence Excavating - Richmond, VA - Paul - 2532",
+      "salesperson": "Paul",
+      "project_number": "2532",
+      "status": "Active",
+      "start_date": "2025-05-09",
+      "end_date": "2026-06-01",
+      "base_ar": 185,
+      "base_ap": 149,
+      "base_crew": 0,
+      "commission_model": "percent",
+      "commission_rate": 0.2,
+      "monthly": {
+        "2025-05": {
+          "crew": 0,
+          "ar": 5411,
+          "ap": 4091,
+          "commission": 264.0,
+          "net_gp": 1056.0,
+          "reconciled": true
+        },
+        "2025-06": {
+          "crew": 0,
+          "ar": 9997,
+          "ap": 7890,
+          "commission": 421.4,
+          "net_gp": 1685.6,
+          "reconciled": true
+        },
+        "2025-07": {
+          "crew": 0,
+          "ar": 10190,
+          "ap": 8060,
+          "commission": 426.0,
+          "net_gp": 1704.0,
+          "reconciled": true
+        },
+        "2025-08": {
+          "crew": 0,
+          "ar": 8743,
+          "ap": 6898,
+          "commission": 369.0,
+          "net_gp": 1476.0,
+          "reconciled": true
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": true
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": true
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": true
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": true
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": true
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": true
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": true
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 8040,
+          "ap": 6470,
+          "commission": 314.0,
+          "net_gp": 1256.0,
+          "reconciled": false
+        },
+        "2026-05": {
+          "crew": 0,
+          "ar": 6185,
+          "ap": 4986,
+          "commission": 239.8,
+          "net_gp": 959.2,
+          "reconciled": false
+        },
+        "2026-06": {
+          "crew": 0,
+          "ar": 185,
+          "ap": 149,
+          "commission": 7.2,
+          "net_gp": 28.8,
+          "reconciled": false
+        }
+      },
+      "total_2026": {
+        "ar": 38530,
+        "ap": 31015,
+        "net_gp": 6012.0
+      },
+      "source": "manual_row",
+      "editable": true,
+      "house_starts": [
+        {
+          "prefix": "A",
+          "start_date": "2025-05-09"
+        },
+        {
+          "prefix": "B",
+          "start_date": "2025-05-09"
+        },
+        {
+          "prefix": "C",
+          "start_date": "2025-05-09"
+        },
+        {
+          "prefix": "D",
+          "start_date": "2025-06-03"
+        },
+        {
+          "prefix": "E",
+          "start_date": "2025-08-29"
+        }
+      ]
+    },
+    {
+      "gid": "1209360353419933",
+      "name": "Independence Excavating - Columbus, OH - Paul - 2509",
+      "salesperson": "Paul",
+      "project_number": "2509",
+      "status": "Closed",
+      "start_date": "2025-02-17",
+      "end_date": "2025-10-17",
+      "base_ar": 1206,
+      "base_ap": 1015,
+      "base_crew": 0,
+      "commission_model": "percent",
+      "commission_rate": 0.2,
+      "monthly": {
+        "2025-02": {
+          "crew": 0,
+          "ar": 943,
+          "ap": 793,
+          "commission": 30.0,
+          "net_gp": 120.0,
+          "reconciled": true
+        },
+        "2025-03": {
+          "crew": 0,
+          "ar": 3335,
+          "ap": 2805,
+          "commission": 106.0,
+          "net_gp": 424.0,
+          "reconciled": true
+        },
+        "2025-04": {
+          "crew": 0,
+          "ar": 4400,
+          "ap": 3700,
+          "commission": 140.0,
+          "net_gp": 560.0,
+          "reconciled": true
+        },
+        "2025-05": {
+          "crew": 0,
+          "ar": 4400,
+          "ap": 3700,
+          "commission": 140.0,
+          "net_gp": 560.0,
+          "reconciled": true
+        },
+        "2025-06": {
+          "crew": 0,
+          "ar": 4400,
+          "ap": 3700,
+          "commission": 140.0,
+          "net_gp": 560.0,
+          "reconciled": true
+        },
+        "2025-07": {
+          "crew": 0,
+          "ar": 2200,
+          "ap": 1850,
+          "commission": 70.0,
+          "net_gp": 280.0,
+          "reconciled": true
+        },
+        "2025-08": {
+          "crew": 0,
+          "ar": 1246.67,
+          "ap": 1600.0,
+          "commission": -70.67,
+          "net_gp": -282.66,
+          "reconciled": true
+        },
+        "2025-09": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 1600.0,
+          "commission": 120.0,
+          "net_gp": 480.0,
+          "reconciled": true
+        },
+        "2025-10": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 754.27,
+          "commission": 289.15,
+          "net_gp": 1156.58,
+          "reconciled": true
+        },
+        "2025-11": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8,
+          "reconciled": true
+        },
+        "2025-12": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8,
+          "reconciled": true
+        },
+        "2026-01": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8,
+          "reconciled": true
+        },
+        "2026-02": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8,
+          "reconciled": true
+        },
+        "2026-03": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8,
+          "reconciled": true
+        },
+        "2026-04": {
+          "crew": 0,
+          "ar": 2200.0,
+          "ap": 374.0,
+          "commission": 365.2,
+          "net_gp": 1460.8,
+          "reconciled": true
+        }
+      },
+      "total_2026": {
+        "ar": 8800.0,
+        "ap": 1496.0,
+        "net_gp": 5843.2
+      },
+      "source": "manual_row",
+      "editable": true,
+      "house_starts": [
+        {
+          "prefix": "1",
+          "start_date": "2025-02-17"
+        },
+        {
+          "prefix": "2",
+          "start_date": "2025-03-16"
+        }
+      ]
+    },
+    {
       "gid": "1213483695669834",
       "name": "Peak Event Services - Woburn, MA - Paul - 2623",
       "salesperson": "Paul",
@@ -8844,355 +8517,365 @@
   ],
   "monthly_totals": {
     "2025-08": {
-      "crew": 183,
-      "ar": 249680.99,
-      "ap": 156265.93,
-      "net_gp": 84095.71,
-      "gp_pct": 33.68
+      "crew": 180,
+      "ar": 243523.99,
+      "ap": 156833.93,
+      "net_gp": 78715.71,
+      "gp_pct": 32.32
     },
     "2025-09": {
-      "crew": 213,
-      "ar": 308838.48,
-      "ap": 197415.67,
-      "net_gp": 99265.75,
-      "gp_pct": 32.14
+      "crew": 210,
+      "ar": 303798.48,
+      "ap": 199725.67,
+      "net_gp": 93385.75,
+      "gp_pct": 30.74
     },
     "2025-10": {
-      "crew": 215,
-      "ar": 346807.65,
-      "ap": 217953.15,
-      "net_gp": 113359.6,
-      "gp_pct": 32.69
+      "crew": 212,
+      "ar": 341767.65,
+      "ap": 220263.15,
+      "net_gp": 107479.6,
+      "gp_pct": 31.45
     },
     "2025-11": {
-      "crew": 216,
-      "ar": 334458.49,
-      "ap": 204257.09,
-      "net_gp": 114397.94,
-      "gp_pct": 34.2
+      "crew": 213,
+      "ar": 329418.49,
+      "ap": 206567.09,
+      "net_gp": 108517.94,
+      "gp_pct": 32.94
     },
     "2025-12": {
-      "crew": 227,
-      "ar": 318069.0,
-      "ap": 194877.76,
-      "net_gp": 108718.0,
-      "gp_pct": 34.18
+      "crew": 224,
+      "ar": 313029.0,
+      "ap": 197187.76,
+      "net_gp": 102838.0,
+      "gp_pct": 32.85
     },
     "2026-01": {
-      "crew": 256,
-      "ar": 377226.5,
-      "ap": 241630.59,
-      "net_gp": 118999.72,
-      "gp_pct": 31.55
+      "crew": 253,
+      "ar": 372186.5,
+      "ap": 243940.59,
+      "net_gp": 113119.72,
+      "gp_pct": 30.39
     },
     "2026-02": {
-      "crew": 283,
-      "ar": 411269.01,
-      "ap": 258604.41,
-      "net_gp": 132591.18,
-      "gp_pct": 32.24
+      "crew": 280,
+      "ar": 406229.01,
+      "ap": 260914.41,
+      "net_gp": 126711.18,
+      "gp_pct": 31.19
     },
     "2026-03": {
-      "crew": 323,
-      "ar": 500603.82,
-      "ap": 310802.09,
-      "net_gp": 162431.36,
-      "gp_pct": 32.45
+      "crew": 320,
+      "ar": 495563.82,
+      "ap": 313112.09,
+      "net_gp": 156551.36,
+      "gp_pct": 31.59
     },
     "2026-04": {
-      "crew": 387,
-      "ar": 563126.43,
-      "ap": 361730.77,
-      "net_gp": 172454.27,
-      "gp_pct": 30.62
+      "crew": 384,
+      "ar": 558086.43,
+      "ap": 364040.77,
+      "net_gp": 166574.27,
+      "gp_pct": 29.85
     },
     "2026-05": {
-      "crew": 376,
-      "ar": 610896.67,
-      "ap": 384704.93,
-      "net_gp": 191688.39,
-      "gp_pct": 31.38
+      "crew": 373,
+      "ar": 603558.0,
+      "ap": 386341.26,
+      "net_gp": 184508.39,
+      "gp_pct": 30.57
     },
     "2026-06": {
-      "crew": 284,
-      "ar": 478975.5,
-      "ap": 298108.76,
-      "net_gp": 155703.4,
-      "gp_pct": 32.51
+      "crew": 281,
+      "ar": 469074.0,
+      "ap": 297798.93,
+      "net_gp": 148030.06,
+      "gp_pct": 31.56
     },
     "2026-07": {
       "crew": 259,
-      "ar": 445065.0,
-      "ap": 283714.76,
-      "net_gp": 140090.19,
-      "gp_pct": 31.48
+      "ar": 442865.0,
+      "ap": 283340.76,
+      "net_gp": 138629.39,
+      "gp_pct": 31.3
     },
     "2026-08": {
       "crew": 245,
-      "ar": 389517.5,
-      "ap": 241343.09,
-      "net_gp": 128331.03,
-      "gp_pct": 32.95
+      "ar": 387317.5,
+      "ap": 240969.09,
+      "net_gp": 126870.23,
+      "gp_pct": 32.76
     },
     "2026-09": {
       "crew": 235,
-      "ar": 355448.83,
-      "ap": 216956.75,
-      "net_gp": 120868.66,
-      "gp_pct": 34.0
+      "ar": 353248.83,
+      "ap": 216582.75,
+      "net_gp": 119407.86,
+      "gp_pct": 33.8
     },
     "2026-10": {
       "crew": 227,
-      "ar": 319430.0,
-      "ap": 193314.76,
-      "net_gp": 110967.19,
-      "gp_pct": 34.74
+      "ar": 317230.0,
+      "ap": 192940.76,
+      "net_gp": 109506.39,
+      "gp_pct": 34.52
     },
     "2026-11": {
       "crew": 202,
-      "ar": 275155.0,
-      "ap": 164794.76,
-      "net_gp": 98363.19,
-      "gp_pct": 35.75
+      "ar": 272955.0,
+      "ap": 164420.76,
+      "net_gp": 96902.39,
+      "gp_pct": 35.5
     },
     "2026-12": {
       "crew": 197,
-      "ar": 261211.0,
-      "ap": 156404.76,
-      "net_gp": 93919.99,
-      "gp_pct": 35.96
+      "ar": 259011.0,
+      "ap": 156030.76,
+      "net_gp": 92459.19,
+      "gp_pct": 35.7
     },
     "2027-01": {
       "crew": 31,
-      "ar": 54280.0,
-      "ap": 35459.76,
-      "net_gp": 15056.19,
-      "gp_pct": 27.74
+      "ar": 52080.0,
+      "ap": 35085.76,
+      "net_gp": 13595.39,
+      "gp_pct": 26.1
     },
     "2027-02": {
       "crew": 31,
-      "ar": 48292.34,
-      "ap": 31736.42,
-      "net_gp": 13244.73,
-      "gp_pct": 27.43
+      "ar": 46092.34,
+      "ap": 31362.42,
+      "net_gp": 11783.93,
+      "gp_pct": 25.57
     },
     "2027-03": {
       "crew": 29,
-      "ar": 34546.84,
-      "ap": 22220.68,
-      "net_gp": 9860.93,
-      "gp_pct": 28.54
+      "ar": 32346.84,
+      "ap": 21846.68,
+      "net_gp": 8400.13,
+      "gp_pct": 25.97
     },
     "2027-04": {
       "crew": 3,
-      "ar": 12900.0,
-      "ap": 7374.0,
-      "net_gp": 4420.8,
-      "gp_pct": 34.27
+      "ar": 10700.0,
+      "ap": 7000.0,
+      "net_gp": 2960.0,
+      "gp_pct": 27.66
     },
     "2027-05": {
       "crew": 3,
-      "ar": 7350.0,
-      "ap": 3624.0,
-      "net_gp": 2980.8,
-      "gp_pct": 40.56
+      "ar": 5150.0,
+      "ap": 3250.0,
+      "net_gp": 1520.0,
+      "gp_pct": 29.51
     },
     "2027-06": {
       "crew": 3,
-      "ar": 7350.0,
-      "ap": 3624.0,
-      "net_gp": 2980.8,
-      "gp_pct": 40.56
+      "ar": 5150.0,
+      "ap": 3250.0,
+      "net_gp": 1520.0,
+      "gp_pct": 29.51
     },
     "2027-07": {
       "crew": 3,
-      "ar": 7350.0,
-      "ap": 3624.0,
-      "net_gp": 2980.8,
-      "gp_pct": 40.56
+      "ar": 5150.0,
+      "ap": 3250.0,
+      "net_gp": 1520.0,
+      "gp_pct": 29.51
     },
     "2027-08": {
       "crew": 3,
-      "ar": 2371.67,
-      "ap": 482.33,
-      "net_gp": 1511.47,
-      "gp_pct": 63.73
+      "ar": 171.67,
+      "ap": 108.33,
+      "net_gp": 50.67,
+      "gp_pct": 29.52
     },
     "2027-09": {
       "crew": 0,
-      "ar": 2200.0,
-      "ap": 374.0,
-      "net_gp": 1460.8,
-      "gp_pct": 66.4
+      "ar": 0,
+      "ap": 0,
+      "net_gp": 0,
+      "gp_pct": 0
     },
     "2027-10": {
       "crew": 0,
-      "ar": 2200.0,
-      "ap": 374.0,
-      "net_gp": 1460.8,
-      "gp_pct": 66.4
+      "ar": 0,
+      "ap": 0,
+      "net_gp": 0,
+      "gp_pct": 0
     },
     "2027-11": {
       "crew": 0,
-      "ar": 2200.0,
-      "ap": 374.0,
-      "net_gp": 1460.8,
-      "gp_pct": 66.4
+      "ar": 0,
+      "ap": 0,
+      "net_gp": 0,
+      "gp_pct": 0
     },
     "2027-12": {
       "crew": 0,
-      "ar": 2200.0,
-      "ap": 374.0,
-      "net_gp": 1460.8,
-      "gp_pct": 66.4
+      "ar": 0,
+      "ap": 0,
+      "net_gp": 0,
+      "gp_pct": 0
     }
   },
   "salesperson_summary": {
     "Paul": {
       "2025-08": {
-        "ar": 63387.66,
-        "ap": 42110.93,
-        "commission": 4255.35
+        "ar": 57230.659999999996,
+        "ap": 42678.93,
+        "commission": 2910.35
       },
       "2025-09": {
-        "ar": 95381.16,
-        "ap": 65888.1,
-        "commission": 5898.609999999999
+        "ar": 90341.16,
+        "ap": 68198.1,
+        "commission": 4428.61
       },
       "2025-10": {
-        "ar": 126255.65000000001,
-        "ap": 80587.03,
-        "commission": 9096.4
+        "ar": 121215.65000000001,
+        "ap": 82897.03,
+        "commission": 7626.4
       },
       "2025-11": {
-        "ar": 117638.49,
-        "ap": 74264.59,
-        "commission": 8670.79
+        "ar": 112598.49,
+        "ap": 76574.59,
+        "commission": 7200.79
       },
       "2025-12": {
-        "ar": 106949.0,
-        "ap": 69408.09,
-        "commission": 7508.17
+        "ar": 101909.0,
+        "ap": 71718.09,
+        "commission": 6038.169999999999
       },
       "2026-01": {
-        "ar": 104359.0,
-        "ap": 64114.76,
-        "commission": 8048.85
+        "ar": 99319.0,
+        "ap": 66424.76000000001,
+        "commission": 6578.849999999999
       },
       "2026-02": {
-        "ar": 117099.51,
-        "ap": 72044.75,
-        "commission": 9010.96
+        "ar": 112059.51,
+        "ap": 74354.75,
+        "commission": 7540.96
       },
       "2026-03": {
-        "ar": 136697.16,
-        "ap": 83273.09000000001,
-        "commission": 10684.82
+        "ar": 131657.16,
+        "ap": 85583.09000000001,
+        "commission": 9214.820000000002
       },
       "2026-04": {
-        "ar": 134229.34,
-        "ap": 85502.1,
-        "commission": 9745.449999999999
+        "ar": 129189.34,
+        "ap": 87812.1,
+        "commission": 8275.45
       },
       "2026-05": {
-        "ar": 193854.99999999997,
-        "ap": 106937.93,
-        "commission": 17383.420000000002
+        "ar": 186516.33000000002,
+        "ap": 108574.26000000001,
+        "commission": 15588.42
       },
       "2026-06": {
-        "ar": 179552.16999999998,
-        "ap": 96877.09,
-        "commission": 16535.01
+        "ar": 169650.66999999998,
+        "ap": 96567.26000000001,
+        "commission": 14616.68
       },
       "2026-07": {
-        "ar": 155990.0,
-        "ap": 88934.76000000001,
-        "commission": 13411.05
+        "ar": 153790.0,
+        "ap": 88560.76000000001,
+        "commission": 13045.85
       },
       "2026-08": {
-        "ar": 144096.66999999998,
-        "ap": 78124.76000000001,
-        "commission": 13194.38
+        "ar": 141896.66999999998,
+        "ap": 77750.76000000001,
+        "commission": 12829.18
       },
       "2026-09": {
-        "ar": 131715.5,
-        "ap": 71031.42000000001,
-        "commission": 12136.82
+        "ar": 129515.5,
+        "ap": 70657.42000000001,
+        "commission": 11771.62
       },
       "2026-10": {
-        "ar": 120680.0,
-        "ap": 64154.76,
-        "commission": 11305.05
+        "ar": 118480.0,
+        "ap": 63780.76,
+        "commission": 10939.85
       },
       "2026-11": {
-        "ar": 87005.0,
-        "ap": 43384.76,
-        "commission": 8724.05
+        "ar": 84805.0,
+        "ap": 43010.76,
+        "commission": 8358.85
       },
       "2026-12": {
-        "ar": 75436.0,
-        "ap": 36869.76,
-        "commission": 7713.25
+        "ar": 73236.0,
+        "ap": 36495.76,
+        "commission": 7348.05
       },
       "2027-01": {
-        "ar": 28880.0,
-        "ap": 18059.760000000002,
-        "commission": 2164.05
+        "ar": 26680.0,
+        "ap": 17685.760000000002,
+        "commission": 1798.85
       },
       "2027-02": {
-        "ar": 22892.34,
-        "ap": 14336.42,
-        "commission": 1711.19
+        "ar": 20692.34,
+        "ap": 13962.42,
+        "commission": 1345.99
       },
       "2027-03": {
-        "ar": 9146.84,
-        "ap": 4820.68,
-        "commission": 865.23
+        "ar": 6946.84,
+        "ap": 4446.68,
+        "commission": 500.03
       },
       "2027-04": {
-        "ar": 7350.0,
-        "ap": 3624.0,
-        "commission": 745.2
+        "ar": 5150.0,
+        "ap": 3250.0,
+        "commission": 380.0
       },
       "2027-05": {
-        "ar": 7350.0,
-        "ap": 3624.0,
-        "commission": 745.2
+        "ar": 5150.0,
+        "ap": 3250.0,
+        "commission": 380.0
       },
       "2027-06": {
-        "ar": 7350.0,
-        "ap": 3624.0,
-        "commission": 745.2
+        "ar": 5150.0,
+        "ap": 3250.0,
+        "commission": 380.0
       },
       "2027-07": {
-        "ar": 7350.0,
-        "ap": 3624.0,
-        "commission": 745.2
+        "ar": 5150.0,
+        "ap": 3250.0,
+        "commission": 380.0
       },
       "2027-08": {
-        "ar": 2371.67,
-        "ap": 482.33,
-        "commission": 377.87
+        "ar": 171.67,
+        "ap": 108.33,
+        "commission": 12.67
       },
-      "2027-09": {
-        "ar": 2200.0,
-        "ap": 374.0,
-        "commission": 365.2
+      "2025-05": {
+        "ar": 9811,
+        "ap": 7791,
+        "commission": 404.0
       },
-      "2027-10": {
-        "ar": 2200.0,
-        "ap": 374.0,
-        "commission": 365.2
+      "2025-06": {
+        "ar": 14397,
+        "ap": 11590,
+        "commission": 561.4
       },
-      "2027-11": {
-        "ar": 2200.0,
-        "ap": 374.0,
-        "commission": 365.2
+      "2025-07": {
+        "ar": 12390,
+        "ap": 9910,
+        "commission": 496.0
       },
-      "2027-12": {
-        "ar": 2200.0,
-        "ap": 374.0,
-        "commission": 365.2
+      "2025-02": {
+        "ar": 943,
+        "ap": 793,
+        "commission": 30.0
+      },
+      "2025-03": {
+        "ar": 3335,
+        "ap": 2805,
+        "commission": 106.0
+      },
+      "2025-04": {
+        "ar": 4400,
+        "ap": 3700,
+        "commission": 140.0
       }
     },
     "Zeke": {
@@ -9634,10 +9317,6 @@
   "health": {
     "missing_ap": [
       {
-        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House E]",
-        "ar": 7790.0
-      },
-      {
         "name": "Power Design - Low Voltage - Starbase, TX -Zeke - 2635",
         "ar": 5200.0
       }
@@ -9658,18 +9337,6 @@
       {
         "name": "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House I]",
         "ar": 3595.0
-      },
-      {
-        "name": "Independence Excavating - Columbus, OH - Paul - 2509",
-        "ar": 2200.0
-      },
-      {
-        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
-        "ar": 2395.0
-      },
-      {
-        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
-        "ar": 2895.0
       },
       {
         "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
@@ -9710,6 +9377,10 @@
       {
         "name": "Heycon, LLC - Charlotte, NC - Zeke -2625-B",
         "ar": 5550.0
+      },
+      {
+        "name": "Independence Excavating - Richmond, VA - Paul - 2532",
+        "ar": 185
       }
     ],
     "ap_exceeds_ar": [
@@ -9723,7 +9394,7 @@
       {
         "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Zeke",
         "gid": "1210751935671855",
         "project_number": "2551"
@@ -9731,7 +9402,7 @@
       {
         "name": "Benco Construction Services - Anderson, IN - Zeke - 2590",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Zeke",
         "gid": "1212023042586559",
         "project_number": "2590"
@@ -9739,7 +9410,7 @@
       {
         "name": "Sletten - San Pablo, CA - Zeke - 2601",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Zeke",
         "gid": "1212571157696151",
         "project_number": "2601"
@@ -9747,7 +9418,7 @@
       {
         "name": "Core Insulation Contractors, LLC - Tyler, TX - Logan - 2604",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Logan",
         "gid": "1212793467092033",
         "project_number": "2604"
@@ -9755,7 +9426,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Logan",
         "gid": "1212860002456293",
         "project_number": "2607"
@@ -9763,7 +9434,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
@@ -9771,7 +9442,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses B,C,E]",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
@@ -9779,7 +9450,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628",
         "end_date": "2026-04-30",
-        "days": 2,
+        "days": 1,
         "salesperson": "Logan",
         "gid": "1213864449534720",
         "project_number": "2628"
@@ -9787,7 +9458,7 @@
       {
         "name": "Arco- Lebanon, TN - Paul - 2616",
         "end_date": "2026-05-01",
-        "days": 3,
+        "days": 2,
         "salesperson": "Paul",
         "gid": "1213348375076263",
         "project_number": "2616"
@@ -9795,23 +9466,15 @@
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
         "end_date": "2026-05-03",
-        "days": 5,
+        "days": 4,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
       },
       {
-        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House B]",
-        "end_date": "2026-05-08",
-        "days": 10,
-        "salesperson": "Paul",
-        "gid": "1210056931565763",
-        "project_number": "2532"
-      },
-      {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,F]",
         "end_date": "2026-05-15",
-        "days": 17,
+        "days": 16,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
@@ -9819,7 +9482,7 @@
       {
         "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
         "end_date": "2026-05-28",
-        "days": 30,
+        "days": 29,
         "salesperson": "Zeke",
         "gid": "1210240026827411",
         "project_number": "2537"
@@ -9829,7 +9492,7 @@
       {
         "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
         "end_date": "2026-05-30",
-        "days": 32,
+        "days": 31,
         "salesperson": "Zeke",
         "gid": "1212344857819012",
         "project_number": "2594"
@@ -9837,7 +9500,7 @@
       {
         "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
         "end_date": "2026-05-31",
-        "days": 33,
+        "days": 32,
         "salesperson": "Paul",
         "gid": "1211456854891625",
         "project_number": "2576"
@@ -9845,7 +9508,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
         "end_date": "2026-05-31",
-        "days": 33,
+        "days": 32,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
@@ -9853,7 +9516,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
         "end_date": "2026-05-31",
-        "days": 33,
+        "days": 32,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
@@ -9861,7 +9524,7 @@
       {
         "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
         "end_date": "2026-05-31",
-        "days": 33,
+        "days": 32,
         "salesperson": "Matt",
         "gid": "1213439679118236",
         "project_number": "2622"
@@ -9869,15 +9532,15 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
         "end_date": "2026-05-31",
-        "days": 33,
+        "days": 32,
         "salesperson": "Logan",
         "gid": "1213807211139673",
         "project_number": "2630"
       },
       {
-        "name": "Independence Excavating - Richmond, VA - Paul - 2532 [House D]",
+        "name": "Independence Excavating - Richmond, VA - Paul - 2532",
         "end_date": "2026-06-01",
-        "days": 34,
+        "days": 33,
         "salesperson": "Paul",
         "gid": "1210056931565763",
         "project_number": "2532"
@@ -9885,7 +9548,7 @@
       {
         "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
         "end_date": "2026-06-05",
-        "days": 38,
+        "days": 37,
         "salesperson": "Paul",
         "gid": "1211939568903452",
         "project_number": "2588"
@@ -9893,7 +9556,7 @@
       {
         "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
         "end_date": "2026-06-12",
-        "days": 45,
+        "days": 44,
         "salesperson": "Logan",
         "gid": "1211269009738648",
         "project_number": "2570"
@@ -9901,7 +9564,7 @@
       {
         "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
         "end_date": "2026-06-12",
-        "days": 45,
+        "days": 44,
         "salesperson": "Zeke",
         "gid": "1213423592821387",
         "project_number": "2621"
