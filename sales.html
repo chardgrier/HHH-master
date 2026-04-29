@@ -97,6 +97,21 @@
   .ar-invoices .overdue-90 { color: #9b2c2c; font-weight: 700; }
 
   /* KPI leaderboard */
+  /* Quarterly KPIs */
+  .qrocks { padding: 8px 12px; background: #fffbeb; border-left: 3px solid var(--gold); border-radius: 4px; font-size: 12px; margin-bottom: 12px; }
+  .qrocks .rock { display: inline-block; background: #fff; border: 1px solid var(--gold); border-radius: 12px; padding: 2px 10px; margin: 0 4px 2px 0; font-weight: 600; color: var(--dark); }
+  .qtable { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 14px; }
+  .qtable th { background: #f7f8fc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: .5px; padding: 6px 10px; text-align: center; border-bottom: 1px solid var(--border); }
+  .qtable th:first-child { text-align: left; }
+  .qtable td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
+  .qtable td.qlabel { text-align: left; font-weight: 700; color: var(--dark); }
+  .qcell .qval { font-weight: 700; font-size: 13px; }
+  .qcell .qgoal { font-size: 10px; color: var(--muted); margin-top: 1px; }
+  .qcell.hit   .qval { color: #276749; }
+  .qcell.near  .qval { color: #b7791f; }
+  .qcell.under .qval { color: #9b2c2c; }
+  .qsection { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; font-weight: 700; margin: 14px 0 6px; }
+
   .kpi-table { width: 100%; border-collapse: collapse; font-size: 12px; }
   .kpi-table th, .kpi-table td { padding: 6px 10px; border-bottom: 1px solid var(--border); text-align: center; }
   .kpi-table th { background: #f7f8fc; color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 10px; letter-spacing: .5px; }
@@ -157,6 +172,15 @@
     <div id="kpi-monthly"></div>
   </details>
 
+  <details class="panel">
+    <summary><h3 style="display:inline">📅 Quarterly KPIs · <span id="quarterly-label"></span></h3></summary>
+    <div class="filters" style="padding:8px 0 8px 0;">
+      <label>Quarter:</label>
+      <select id="quarterly-select" onchange="renderQuarterly()"></select>
+    </div>
+    <div id="quarterly-kpis"></div>
+  </details>
+
   <details class="panel" open>
     <summary><h3 style="display:inline">🎯 Quote → Close Conversion · <span id="conv-label"></span></h3></summary>
     <div class="filters" style="padding:8px 0 8px 0;">
@@ -208,6 +232,8 @@ function periodLabel() {
        : monthLabel(FILTERS.period);
 }
 
+let QUARTERLY = null;
+
 async function loadData() {
   try {
     const r = await fetch('data/sales.json?' + Date.now());
@@ -220,6 +246,11 @@ async function loadData() {
     err.textContent = 'Could not load data/sales.json: ' + e.message;
     return;
   }
+  // Load quarterly KPIs (optional — panel hides cleanly if missing).
+  try {
+    const qr = await fetch('data/quarterly_kpis.json?' + Date.now());
+    if (qr.ok) QUARTERLY = await qr.json();
+  } catch { QUARTERLY = null; }
   const gen = new Date(DATA.generated_at);
   document.getElementById('sync-info').textContent = 'Synced ' + gen.toLocaleString();
   document.getElementById('loading').style.display = 'none';
@@ -243,9 +274,127 @@ function render() {
   populateKpiSelectors();
   renderKpiWeek();
   renderKpiMonth();
+  populateQuarterlySelector();
+  renderQuarterly();
   populateConvSelector();
   renderConversion();
   renderArAging();
+}
+
+// ---------- Quarterly KPIs ----------
+
+function populateQuarterlySelector() {
+  const sel = document.getElementById('quarterly-select');
+  if (!sel || sel.options.length) return;
+  if (!QUARTERLY || !QUARTERLY.quarters || !QUARTERLY.quarters.length) return;
+  QUARTERLY.quarters.forEach((q, i) => {
+    const opt = document.createElement('option');
+    opt.value = i; opt.textContent = q.quarter;
+    sel.appendChild(opt);
+  });
+}
+
+function fmtPct(actual, goal) {
+  if (!goal || goal === 0) return '—';
+  return (actual / goal * 100).toFixed(1) + '%';
+}
+
+function pctClass(actual, goal) {
+  if (!goal || goal === 0) return '';
+  const pct = actual / goal * 100;
+  if (pct >= 100) return 'hit';
+  if (pct >= 80)  return 'near';
+  return 'under';
+}
+
+function renderQuarterly() {
+  const container = document.getElementById('quarterly-kpis');
+  const labelEl = document.getElementById('quarterly-label');
+  if (!QUARTERLY || !QUARTERLY.quarters || !QUARTERLY.quarters.length) {
+    container.innerHTML = '<p style="color:var(--muted);font-style:italic">No quarterly data available.</p>';
+    if (labelEl) labelEl.textContent = '—';
+    return;
+  }
+  const sel = document.getElementById('quarterly-select');
+  const idx = sel ? parseInt(sel.value || 0) : 0;
+  const q = QUARTERLY.quarters[idx] || QUARTERLY.quarters[0];
+  if (labelEl) labelEl.textContent = q.quarter;
+
+  const $$ = (n) => '$' + Math.round(n || 0).toLocaleString('en-US');
+  const cell = (actual, goal, money) => {
+    const cls = pctClass(actual, goal);
+    const a = money ? $$(actual) : actual;
+    const g = money ? $$(goal)   : goal;
+    return `<td class="qcell ${cls}"><div class="qval">${a}</div><div class="qgoal">goal ${g} · ${fmtPct(actual, goal)}</div></td>`;
+  };
+
+  let html = '';
+
+  // Rocks
+  if (q.rocks && q.rocks.length) {
+    html += '<div class="qrocks"><b>🪨 Rocks:</b> ' + q.rocks.map(r => `<span class="rock">${r}</span>`).join(' ') + '</div>';
+  }
+
+  // Company / Rising Sun / Total summary
+  html += '<table class="qtable"><thead><tr><th></th><th>Closed Deals</th><th>Revenue</th><th>Gross Profit</th></tr></thead><tbody>';
+  const dealsRow = (label, obj, hasDeals) => {
+    let row = `<tr><td class="qlabel">${label}</td>`;
+    if (hasDeals) row += cell(obj.closed_deals.actual, obj.closed_deals.goal, false);
+    else row += '<td class="qcell"><div class="qval" style="color:var(--muted)">—</div></td>';
+    row += cell(obj.revenue.actual, obj.revenue.goal, true);
+    row += cell(obj.gross_profit.actual, obj.gross_profit.goal, true);
+    return row + '</tr>';
+  };
+  if (q.company)     html += dealsRow('HHH (excl. Rising Sun)', q.company,     true);
+  if (q.rising_sun)  html += dealsRow('Rising Sun',             q.rising_sun,  false);
+  if (q.total)       html += dealsRow('Combined Total',         q.total,       false);
+  html += '</tbody></table>';
+
+  // Monthly breakdown
+  if (q.monthly) {
+    html += '<h4 class="qsection">Monthly</h4>';
+    html += '<table class="qtable"><thead><tr><th>Month</th>'
+         + '<th>Calls</th><th>Meetings</th><th>Quotes</th><th>Closed</th><th>NEPQ</th>'
+         + '<th>Revenue</th><th>GP</th></tr></thead><tbody>';
+    Object.entries(q.monthly).forEach(([m, k]) => {
+      html += `<tr><td class="qlabel">${m}</td>`;
+      html += cell(k.calls.actual, k.calls.goal, false);
+      html += cell(k.meetings.actual, k.meetings.goal, false);
+      html += cell(k.quotes.actual, k.quotes.goal, false);
+      html += cell(k.closed_deals.actual, k.closed_deals.goal, false);
+      html += cell(k.nepq.actual, k.nepq.goal, false);
+      html += cell(k.revenue.actual, k.revenue.goal, true);
+      html += cell(k.gross_profit.actual, k.gross_profit.goal, true);
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+  }
+
+  // Per-rep breakdown
+  if (q.by_rep) {
+    html += '<h4 class="qsection">By salesperson</h4>';
+    html += '<table class="qtable"><thead><tr><th>Rep</th>'
+         + '<th>Closed Deals</th><th>Revenue</th><th>Gross Profit</th></tr></thead><tbody>';
+    Object.entries(q.by_rep).forEach(([rep, k]) => {
+      html += `<tr><td class="qlabel">${rep}</td>`;
+      html += cell(k.closed_deals.actual, k.closed_deals.goal, false);
+      html += cell(k.revenue.actual, k.revenue.goal, true);
+      html += cell(k.gross_profit.actual, k.gross_profit.goal, true);
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+  }
+
+  // Footer % to goal/incentive
+  if (q.summary) {
+    const s = q.summary;
+    html += `<p style="font-size:11px;color:var(--muted);margin-top:10px">
+      Revenue: <b>${s.revenue_pct_to_goal}%</b> of goal · <b>${s.revenue_pct_to_incentive}%</b> of incentive ·
+      GP: <b>${s.gp_pct_to_goal}%</b> of goal · <b>${s.gp_pct_to_incentive}%</b> of incentive
+    </p>`;
+  }
+
+  container.innerHTML = html;
 }
 
 // ---------- A/R aging ----------

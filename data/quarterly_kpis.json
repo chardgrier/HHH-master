@@ -1,0 +1,85 @@
+{
+  "_comment": "Manual quarterly KPI summary. Append a new entry to 'quarters' for each new quarter. The dashboard renders the most recent quarter automatically.",
+  "_source_sheet": "https://docs.google.com/spreadsheets/d/1h73nzDHvjDFsfrun4_l1Pm1BvpoAqRs2MJzj57uEqSE/edit",
+  "quarters": [
+    {
+      "quarter": "Q1 2026",
+      "rocks": [
+        "$1,160,438 Revenue",
+        "$406,153 Gross Profit",
+        "Sales Manual / Playbook",
+        "5 New Sales people hired & trained"
+      ],
+      "summary": {
+        "revenue_pct_to_goal":      91.35,
+        "gp_pct_to_goal":           76.53,
+        "revenue_pct_to_incentive": 109.42,
+        "gp_pct_to_incentive":      96.75
+      },
+      "company": {
+        "closed_deals":  {"actual": 39,      "goal": 35},
+        "revenue":       {"actual": 917183,  "goal": 1000000},
+        "gross_profit":  {"actual": 233893,  "goal": 333500}
+      },
+      "rising_sun": {
+        "revenue":      {"actual": 352525, "goal": 390000},
+        "gross_profit": {"actual": 159075, "goal": 180000}
+      },
+      "total": {
+        "revenue":      {"actual": 1269708, "goal": 1390000},
+        "gross_profit": {"actual": 392968,  "goal": 513500}
+      },
+      "monthly": {
+        "January": {
+          "calls":         {"actual": 577,    "goal": 700},
+          "meetings":      {"actual": 22,     "goal": 48},
+          "quotes":        {"actual": 14,     "goal": 36},
+          "closed_deals":  {"actual": 10,     "goal": 15},
+          "nepq":          {"actual": 6.75,   "goal": 40},
+          "revenue":       {"actual": 235987, "goal": 333000},
+          "gross_profit":  {"actual": 62354,  "goal": 110000}
+        },
+        "February": {
+          "calls":         {"actual": 861,    "goal": 700},
+          "meetings":      {"actual": 38,     "goal": 48},
+          "quotes":        {"actual": 31,     "goal": 36},
+          "closed_deals":  {"actual": 16,     "goal": 15},
+          "nepq":          {"actual": 28,     "goal": 40},
+          "revenue":       {"actual": 255353, "goal": 333000},
+          "gross_profit":  {"actual": 65418,  "goal": 110000}
+        },
+        "March": {
+          "calls":         {"actual": 956,    "goal": 700},
+          "meetings":      {"actual": 36,     "goal": 48},
+          "quotes":        {"actual": 42,     "goal": 36},
+          "closed_deals":  {"actual": 13,     "goal": 15},
+          "nepq":          {"actual": 41.75,  "goal": 40},
+          "revenue":       {"actual": 332294, "goal": 333000},
+          "gross_profit":  {"actual": 86147,  "goal": 110000}
+        }
+      },
+      "by_rep": {
+        "Paul": {
+          "closed_deals":  {"actual": 13,     "goal": 10},
+          "revenue":       {"actual": 353944, "goal": 450000},
+          "gross_profit":  {"actual": 93133,  "goal": 150000}
+        },
+        "Zeke": {
+          "closed_deals":  {"actual": 15,     "goal": 10},
+          "revenue":       {"actual": 349935, "goal": 450000},
+          "gross_profit":  {"actual": 82389,  "goal": 150000}
+        },
+        "Logan": {
+          "closed_deals":  {"actual": 15,     "goal": 10},
+          "revenue":       {"actual": 119755, "goal": 75000},
+          "gross_profit":  {"actual": 38796,  "goal": 25000}
+        },
+        "Peyton": {
+          "closed_deals":  {"actual": 0,    "goal": 5},
+          "revenue":       {"actual": 0,    "goal": 25000},
+          "gross_profit":  {"actual": 0,    "goal": 8500}
+        }
+      }
+    }
+  ]
+}
