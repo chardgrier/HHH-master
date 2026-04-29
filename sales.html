@@ -188,6 +188,7 @@
       <select id="conv-scope" onchange="onConvScopeChange()">
         <option value="weekly">Weekly</option>
         <option value="monthly" selected>Monthly</option>
+        <option value="quarterly">Quarterly</option>
       </select>
       <label style="margin-left:12px">Period:</label>
       <select id="conv-period" onchange="renderConversion()"></select>
@@ -616,6 +617,16 @@ function populateConvSelector() {
   const scope = document.getElementById('conv-scope').value;
   const sel = document.getElementById('conv-period');
   sel.innerHTML = '';
+  if (scope === 'quarterly') {
+    if (!QUARTERLY || !QUARTERLY.quarters || !QUARTERLY.quarters.length) return;
+    QUARTERLY.quarters.forEach((q, i) => {
+      const opt = document.createElement('option');
+      opt.value = i; opt.textContent = q.quarter;
+      sel.appendChild(opt);
+    });
+    sel.value = QUARTERLY.quarters.length - 1;   // most recent
+    return;
+  }
   kpiPeriodKeys(scope).forEach(k => {
     const opt = document.createElement('option');
     opt.value = k;
@@ -640,15 +651,41 @@ function convCellClass(quotes, pct) {
 function renderConversion() {
   const scope = document.getElementById('conv-scope').value;
   const period = document.getElementById('conv-period').value;
-  if (!period) {
+  if (!period && period !== '0') {
     document.getElementById('conversion').innerHTML = '<p style="color:var(--muted);font-style:italic">No KPI data.</p>';
     document.getElementById('conv-label').textContent = '';
     return;
   }
-  document.getElementById('conv-label').textContent =
-    scope === 'monthly' ? monthLabel(period) : period;
 
-  const data = (DATA.kpis && DATA.kpis[scope]) || {};
+  // Build a uniform { rep -> {quotes, deals} } map regardless of scope.
+  let perRep = {};
+  let labelText = '';
+  if (scope === 'quarterly') {
+    const idx = parseInt(period);
+    const q = (QUARTERLY && QUARTERLY.quarters && QUARTERLY.quarters[idx]) || null;
+    if (!q) {
+      document.getElementById('conversion').innerHTML = '<p style="color:var(--muted);font-style:italic">No quarterly data.</p>';
+      document.getElementById('conv-label').textContent = '';
+      return;
+    }
+    labelText = q.quarter;
+    Object.entries(q.by_rep || {}).forEach(([rep, k]) => {
+      perRep[rep] = {
+        quotes: (k.quotes && k.quotes.actual) || 0,
+        deals:  (k.closed_deals && k.closed_deals.actual) || 0,
+      };
+    });
+  } else {
+    labelText = scope === 'monthly' ? monthLabel(period) : period;
+    const data = (DATA.kpis && DATA.kpis[scope]) || {};
+    KPI_REPS.forEach(rep => {
+      const v = (data[rep] && data[rep][period]) || {};
+      perRep[rep] = { quotes: v.quotes || 0, deals: v.deals || 0 };
+    });
+  }
+  document.getElementById('conv-label').textContent = labelText;
+
+  const reps = Object.keys(perRep).sort();
   let totQ = 0, totD = 0;
 
   let html = '<table class="kpi-table"><thead><tr>'
@@ -656,8 +693,8 @@ function renderConversion() {
            + '<th>Quotes</th><th>Closed Deals</th><th>Conversion</th>'
            + '</tr></thead><tbody>';
 
-  KPI_REPS.forEach(rep => {
-    const v = (data[rep] && data[rep][period]) || {};
+  reps.forEach(rep => {
+    const v = perRep[rep];
     const q = v.quotes || 0, d = v.deals || 0;
     const pct = q > 0 ? (d / q * 100) : 0;
     totQ += q; totD += d;
