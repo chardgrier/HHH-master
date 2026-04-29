@@ -182,13 +182,17 @@ def classify(name):
     if has_construction == has_homeowner:  # both or neither → ambiguous, reject
         return None
 
-    has_lease    = bool(re.search(r"\blease\b", n))
-    has_addendum = bool(re.search(r"\baddendum\b", n))
-    if has_lease == has_addendum:  # both or neither → reject
+    has_lease    = bool(re.search(r"\bleases?\b", n))
+    has_addendum = bool(re.search(r"\baddendums?\b", n))
+    if not has_lease and not has_addendum:  # neither → reject
         return None
 
+    # If both 'lease' and 'addendum' appear, treat as addendum. This handles
+    # legitimate addendum tasks that mention 'Lease' in the title — e.g.,
+    # "Construction Lease Addendum #1", "Construction Addendum - Lease Extension",
+    # "Construction Lease: Phase I & II - Addendum #2".
     role = "construction" if has_construction else "homeowner"
-    kind = "lease"        if has_lease        else "addendum"
+    kind = "addendum"     if has_addendum     else "lease"
     return f"{role}_{kind}"
 
 ROMAN = {"I":1,"II":2,"III":3,"IV":4,"V":5,"VI":6,"VII":7,"VIII":8,"IX":9,"X":10}

@@ -1,0 +1,6 @@
+{
+  "_comment": "Tasks Richard has reviewed and confirmed are OK / noise — they should be suppressed from the master dashboard's Asana data-quality report. Match is exact-name (case-insensitive). To dismiss a flagged task, add its full task name to the 'dismissed_tasks' array. To undo a dismissal, just delete the line.",
+  "dismissed_tasks": [
+    "Prepare and send Constructions and Homeowners addendums'"
+  ]
+}

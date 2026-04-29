@@ -28,6 +28,17 @@ SALESPEOPLE = ["Paul","Zeke","Matt","Logan","David","Charlie","Peyton"]
 HHH_PROJECT_RE = re.compile(rf"\b({'|'.join(SALESPEOPLE)})\b.*?\d{{4}}", re.I)
 SKIP_NAMES = ["template","general to do","xxxx","hard hat housing template","rising sun","rsd -","rsd-"]
 
+# Dismissed tasks — names Richard has manually reviewed and confirmed OK or noise.
+# Edit data/asana_dismissed.json to add or remove entries.
+DISMISSED_FILE = "data/asana_dismissed.json"
+DISMISSED_NAMES = set()
+if os.path.exists(DISMISSED_FILE):
+    try:
+        with open(DISMISSED_FILE) as f:
+            DISMISSED_NAMES = {n.strip().lower() for n in (json.load(f).get("dismissed_tasks") or [])}
+    except Exception as e:
+        print(f"  ! could not read {DISMISSED_FILE}: {e}")
+
 def is_canonical(name):
     """A task is 'canonical' iff sync.classify() will accept it."""
     return classify(name) is not None
@@ -90,6 +101,7 @@ def main():
             if not name: continue
             low = name.lower()
             if any(v in low for v in VOID_TASK): continue
+            if low in DISMISSED_NAMES: continue   # explicitly dismissed by Richard
 
             is_canon = is_canonical(name)
             looks_it = looks_like_lease(name)
