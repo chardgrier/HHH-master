@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T00:00:34.729117",
+  "generated_at": "2026-04-29T08:08:46.953200",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
     "Heycon, LLC - Charlotte, NC - Zeke -2625": {
@@ -5184,7 +5184,7 @@
         }
       ]
     },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House B]": {
+    "Independence Excavating - Richmond, VA - Paul - 2532": {
       "2026-04": [
         {
           "status": "sent",
@@ -5216,6 +5216,18 @@
       "2026-02": [
         {
           "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "5771",
+          "doc_number": "2532-D10",
+          "due_date": "2026-03-01",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
+          "status": "paid",
           "amount": 2500.0,
           "deposit": 0.0,
           "total_amt": 2500.0,
@@ -5225,9 +5237,45 @@
           "due_date": "2026-03-01",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 0.0,
+          "deposit": 0.0,
+          "total_amt": 0.0,
+          "balance": 0.0,
+          "invoice_id": "5772",
+          "doc_number": "2532-E07",
+          "due_date": "2026-03-01",
+          "project_number": "2532",
+          "house": "E"
         }
       ],
       "2026-01": [
+        {
+          "status": "paid",
+          "amount": 2645.0,
+          "deposit": 0.0,
+          "total_amt": 2645.0,
+          "balance": 0.0,
+          "invoice_id": "5081",
+          "doc_number": "2532-E06",
+          "due_date": "2026-02-01",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "5080",
+          "doc_number": "2532-D09",
+          "due_date": "2026-02-01",
+          "project_number": "2532",
+          "house": "D"
+        },
         {
           "status": "paid",
           "amount": 2500.0,
@@ -5244,6 +5292,30 @@
       "2025-12": [
         {
           "status": "paid",
+          "amount": 2645.0,
+          "deposit": 0.0,
+          "total_amt": 2645.0,
+          "balance": 0.0,
+          "invoice_id": "4629",
+          "doc_number": "2532-E05",
+          "due_date": "2026-01-01",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "4628",
+          "doc_number": "2532-D08",
+          "due_date": "2026-01-01",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
+          "status": "paid",
           "amount": 2500.0,
           "deposit": 0.0,
           "total_amt": 2500.0,
@@ -5256,6 +5328,30 @@
         }
       ],
       "2025-11": [
+        {
+          "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "4084",
+          "doc_number": "2532-D07",
+          "due_date": "2025-12-01",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 2645.0,
+          "deposit": 0.0,
+          "total_amt": 2645.0,
+          "balance": 0.0,
+          "invoice_id": "4083",
+          "doc_number": "2532-E04",
+          "due_date": "2025-12-01",
+          "project_number": "2532",
+          "house": "E"
+        },
         {
           "status": "paid",
           "amount": 2500.0,
@@ -5272,6 +5368,30 @@
       "2025-10": [
         {
           "status": "paid",
+          "amount": 2645.0,
+          "deposit": 0.0,
+          "total_amt": 2645.0,
+          "balance": 0.0,
+          "invoice_id": "3126",
+          "doc_number": "2532-E03",
+          "due_date": "2025-11-01",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "3125",
+          "doc_number": "2532-D06",
+          "due_date": "2025-11-01",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
+          "status": "paid",
           "amount": 2500.0,
           "deposit": 0.0,
           "total_amt": 2500.0,
@@ -5283,7 +5403,57 @@
           "house": "A"
         }
       ],
+      "2025-09": [
+        {
+          "status": "paid",
+          "amount": 2645.0,
+          "deposit": 0.0,
+          "total_amt": 2645.0,
+          "balance": 0.0,
+          "invoice_id": "2672",
+          "doc_number": "2532-E02",
+          "due_date": "2025-10-01",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "2671",
+          "doc_number": "2532-D05",
+          "due_date": "2025-10-01",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
+          "status": "paid",
+          "amount": 2500.0,
+          "deposit": 0.0,
+          "total_amt": 2500.0,
+          "balance": 0.0,
+          "invoice_id": "2669",
+          "doc_number": "2532-A06",
+          "due_date": "2025-10-01",
+          "project_number": "2532",
+          "house": "A"
+        }
+      ],
       "2025-08": [
+        {
+          "status": "paid",
+          "amount": 2815.65,
+          "deposit": 900.0,
+          "total_amt": 3715.65,
+          "balance": 0.0,
+          "invoice_id": "2548",
+          "doc_number": "2532-E01",
+          "due_date": "2025-08-28",
+          "project_number": "2532",
+          "house": "E"
+        },
         {
           "status": "paid",
           "amount": 2395.0,
@@ -5295,6 +5465,18 @@
           "due_date": "2025-08-31",
           "project_number": "2532",
           "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "2213",
+          "doc_number": "2532-D03",
+          "due_date": "2025-09-03",
+          "project_number": "2532",
+          "house": "D"
         },
         {
           "status": "paid",
@@ -5310,6 +5492,18 @@
         },
         {
           "status": "paid",
+          "amount": 2895.0,
+          "deposit": 0.0,
+          "total_amt": 2895.0,
+          "balance": 0.0,
+          "invoice_id": "2547",
+          "doc_number": "2532-D04",
+          "due_date": "2025-09-27",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
+          "status": "paid",
           "amount": 2500.0,
           "deposit": 0.0,
           "total_amt": 2500.0,
@@ -5321,21 +5515,19 @@
           "house": "A"
         }
       ],
-      "2025-09": [
+      "2025-06": [
         {
           "status": "paid",
-          "amount": 2500.0,
+          "amount": 2895.0,
           "deposit": 0.0,
-          "total_amt": 2500.0,
+          "total_amt": 2895.0,
           "balance": 0.0,
-          "invoice_id": "2669",
-          "doc_number": "2532-A06",
-          "due_date": "2025-10-01",
+          "invoice_id": "1612",
+          "doc_number": "2532-D02",
+          "due_date": "2025-07-20",
           "project_number": "2532",
-          "house": "A"
-        }
-      ],
-      "2025-06": [
+          "house": "D"
+        },
         {
           "status": "paid",
           "amount": 2395.0,
@@ -5359,6 +5551,30 @@
           "due_date": "2025-07-20",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 720.0,
+          "deposit": 0.0,
+          "total_amt": 720.0,
+          "balance": 0.0,
+          "invoice_id": "2091",
+          "doc_number": "2532-C02",
+          "due_date": "2025-07-01",
+          "project_number": "2532",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 2702.0,
+          "deposit": 1000.0,
+          "total_amt": 3702.0,
+          "balance": 0.0,
+          "invoice_id": "1220",
+          "doc_number": "2532-D01",
+          "due_date": "2025-06-01",
+          "project_number": "2532",
+          "house": "D"
         }
       ],
       "2025-05": [
@@ -5385,6 +5601,18 @@
           "due_date": "2025-06-27",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "status": "paid",
+          "amount": 1840.0,
+          "deposit": 1000.0,
+          "total_amt": 2840.0,
+          "balance": 0.0,
+          "invoice_id": "852",
+          "doc_number": "2532-C01",
+          "due_date": "2025-05-09",
+          "project_number": "2532",
+          "house": "C"
         },
         {
           "status": "paid",
@@ -6088,6 +6316,34 @@
           "doc_number": "2574-02",
           "due_date": "2025-11-01",
           "project_number": "2574",
+          "house": null
+        }
+      ],
+      "2025-01": [
+        {
+          "status": "paid",
+          "amount": 1073.33,
+          "deposit": 0.0,
+          "total_amt": 1073.33,
+          "balance": 0.0,
+          "invoice_id": "36",
+          "doc_number": "1018-082171SD",
+          "due_date": "2025-01-31",
+          "project_number": null,
+          "house": null
+        }
+      ],
+      "2025-02": [
+        {
+          "status": "paid",
+          "amount": 2300.0,
+          "deposit": 0.0,
+          "total_amt": 2300.0,
+          "balance": 0.0,
+          "invoice_id": "101",
+          "doc_number": "2500-02-02",
+          "due_date": "2025-02-19",
+          "project_number": null,
           "house": null
         }
       ]
@@ -8418,144 +8674,6 @@
         }
       ]
     },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House D]": {
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "5771",
-          "doc_number": "2532-D10",
-          "due_date": "2026-03-01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "5080",
-          "doc_number": "2532-D09",
-          "due_date": "2026-02-01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "4628",
-          "doc_number": "2532-D08",
-          "due_date": "2026-01-01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "4084",
-          "doc_number": "2532-D07",
-          "due_date": "2025-12-01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "3125",
-          "doc_number": "2532-D06",
-          "due_date": "2025-11-01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-08": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "2213",
-          "doc_number": "2532-D03",
-          "due_date": "2025-09-03",
-          "project_number": "2532",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "2547",
-          "doc_number": "2532-D04",
-          "due_date": "2025-09-27",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "2671",
-          "doc_number": "2532-D05",
-          "due_date": "2025-10-01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-06": [
-        {
-          "status": "paid",
-          "amount": 2895.0,
-          "deposit": 0.0,
-          "total_amt": 2895.0,
-          "balance": 0.0,
-          "invoice_id": "1612",
-          "doc_number": "2532-D02",
-          "due_date": "2025-07-20",
-          "project_number": "2532",
-          "house": "D"
-        },
-        {
-          "status": "paid",
-          "amount": 2702.0,
-          "deposit": 1000.0,
-          "total_amt": 3702.0,
-          "balance": 0.0,
-          "invoice_id": "1220",
-          "doc_number": "2532-D01",
-          "due_date": "2025-06-01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ]
-    },
     "Miller Pipeline - Saint Joseph, MO - Paul - 2586": {
       "2026-04": [
         {
@@ -9158,106 +9276,6 @@
         }
       ]
     },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House E]": {
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 0.0,
-          "deposit": 0.0,
-          "total_amt": 0.0,
-          "balance": 0.0,
-          "invoice_id": "5772",
-          "doc_number": "2532-E07",
-          "due_date": "2026-03-01",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 2645.0,
-          "deposit": 0.0,
-          "total_amt": 2645.0,
-          "balance": 0.0,
-          "invoice_id": "5081",
-          "doc_number": "2532-E06",
-          "due_date": "2026-02-01",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-12": [
-        {
-          "status": "paid",
-          "amount": 2645.0,
-          "deposit": 0.0,
-          "total_amt": 2645.0,
-          "balance": 0.0,
-          "invoice_id": "4629",
-          "doc_number": "2532-E05",
-          "due_date": "2026-01-01",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-11": [
-        {
-          "status": "paid",
-          "amount": 2645.0,
-          "deposit": 0.0,
-          "total_amt": 2645.0,
-          "balance": 0.0,
-          "invoice_id": "4083",
-          "doc_number": "2532-E04",
-          "due_date": "2025-12-01",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-10": [
-        {
-          "status": "paid",
-          "amount": 2645.0,
-          "deposit": 0.0,
-          "total_amt": 2645.0,
-          "balance": 0.0,
-          "invoice_id": "3126",
-          "doc_number": "2532-E03",
-          "due_date": "2025-11-01",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-09": [
-        {
-          "status": "paid",
-          "amount": 2645.0,
-          "deposit": 0.0,
-          "total_amt": 2645.0,
-          "balance": 0.0,
-          "invoice_id": "2672",
-          "doc_number": "2532-E02",
-          "due_date": "2025-10-01",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-08": [
-        {
-          "status": "paid",
-          "amount": 2815.65,
-          "deposit": 900.0,
-          "total_amt": 3715.65,
-          "balance": 0.0,
-          "invoice_id": "2548",
-          "doc_number": "2532-E01",
-          "due_date": "2025-08-28",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ]
-    },
     "FHG Marine Engineering Inc. - Port Angeles, WA - Logan- 2610": {
       "2026-02": [
         {
@@ -9721,20 +9739,6 @@
           "house": "A"
         }
       ],
-      "2025-01": [
-        {
-          "status": "paid",
-          "amount": 1073.33,
-          "deposit": 0.0,
-          "total_amt": 1073.33,
-          "balance": 0.0,
-          "invoice_id": "36",
-          "doc_number": "1018-082171SD",
-          "due_date": "2025-01-31",
-          "project_number": null,
-          "house": null
-        }
-      ],
       "2025-04": [
         {
           "status": "paid",
@@ -9834,18 +9838,6 @@
           "doc_number": "2509-01",
           "due_date": "2025-03-12",
           "project_number": "2509",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 2300.0,
-          "deposit": 0.0,
-          "total_amt": 2300.0,
-          "balance": 0.0,
-          "invoice_id": "101",
-          "doc_number": "2500-02-02",
-          "due_date": "2025-02-19",
-          "project_number": null,
           "house": null
         }
       ]
@@ -11819,36 +11811,6 @@
           "due_date": "2025-07-28",
           "project_number": "2552",
           "house": null
-        }
-      ]
-    },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House C]": {
-      "2025-06": [
-        {
-          "status": "paid",
-          "amount": 720.0,
-          "deposit": 0.0,
-          "total_amt": 720.0,
-          "balance": 0.0,
-          "invoice_id": "2091",
-          "doc_number": "2532-C02",
-          "due_date": "2025-07-01",
-          "project_number": "2532",
-          "house": "C"
-        }
-      ],
-      "2025-05": [
-        {
-          "status": "paid",
-          "amount": 1840.0,
-          "deposit": 1000.0,
-          "total_amt": 2840.0,
-          "balance": 0.0,
-          "invoice_id": "852",
-          "doc_number": "2532-C01",
-          "due_date": "2025-05-09",
-          "project_number": "2532",
-          "house": "C"
         }
       ]
     },
@@ -16524,7 +16486,7 @@
         }
       ]
     },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House B]": {
+    "Independence Excavating - Richmond, VA - Paul - 2532": {
       "2026-04": [
         {
           "vendor": "Zahida Parveen",
@@ -16559,6 +16521,34 @@
       ],
       "2026-02": [
         {
+          "vendor": "Estrada Property LLC",
+          "amount": 1950.0,
+          "deposit": 0.0,
+          "total_amt": 1950.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "6447",
+          "doc_number": "2532-E07",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "5776",
+          "doc_number": "2532-D09",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
           "vendor": "Zahida Parveen",
           "amount": 1300.0,
           "deposit": 0.0,
@@ -16587,6 +16577,34 @@
           "doc_number": "2532-A10",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "vendor": "Estrada Property LLC",
+          "amount": 2075.0,
+          "deposit": 0.0,
+          "total_amt": 2075.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5578",
+          "doc_number": "2532-E06",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5577",
+          "doc_number": "2532-D08",
+          "project_number": "2532",
+          "house": "D"
         }
       ],
       "2025-12": [
@@ -16603,6 +16621,34 @@
           "doc_number": "2532-A09",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "vendor": "Estrada Property LLC",
+          "amount": 2075.0,
+          "deposit": 0.0,
+          "total_amt": 2075.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-31",
+          "due_date": "2025-12-31",
+          "status": "paid",
+          "bill_id": "4869",
+          "doc_number": "2532-E05",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-31",
+          "due_date": "2025-12-31",
+          "status": "paid",
+          "bill_id": "4868",
+          "doc_number": "2532-D07",
+          "project_number": "2532",
+          "house": "D"
         }
       ],
       "2025-11": [
@@ -16619,9 +16665,65 @@
           "doc_number": "2532-A08",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "vendor": "Estrada Property LLC",
+          "amount": 2075.0,
+          "deposit": 0.0,
+          "total_amt": 2075.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4168",
+          "doc_number": "2532-E04",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2025-11-30",
+          "due_date": "2025-11-30",
+          "status": "paid",
+          "bill_id": "4167",
+          "doc_number": "2532-D06",
+          "project_number": "2532",
+          "house": "D"
         }
       ],
       "2025-10": [
+        {
+          "vendor": "Estrada Property LLC",
+          "amount": 2075.0,
+          "deposit": 0.0,
+          "total_amt": 2075.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-31",
+          "due_date": "2025-10-31",
+          "status": "paid",
+          "bill_id": "3640",
+          "doc_number": "2532-E03",
+          "project_number": "2532",
+          "house": "E"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-31",
+          "due_date": "2025-10-31",
+          "status": "paid",
+          "bill_id": "3639",
+          "doc_number": "2532-D05",
+          "project_number": "2532",
+          "house": "D"
+        },
         {
           "vendor": "Zahida Parveen",
           "amount": 2000.0,
@@ -16681,6 +16783,20 @@
           "house": "B"
         },
         {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-31",
+          "due_date": "2025-07-31",
+          "status": "paid",
+          "bill_id": "2247",
+          "doc_number": "2532-D03",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
           "vendor": "Zahida Parveen",
           "amount": 2000.0,
           "deposit": 0.0,
@@ -16693,6 +16809,20 @@
           "doc_number": "2532-A03",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2025-07-01",
+          "due_date": "2025-07-01",
+          "status": "paid",
+          "bill_id": "1839",
+          "doc_number": "2532-D02",
+          "project_number": "2532",
+          "house": "D"
         }
       ],
       "2025-09": [
@@ -16709,9 +16839,51 @@
           "doc_number": "2532-A06",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-29",
+          "due_date": "2025-09-29",
+          "status": "paid",
+          "bill_id": "3262",
+          "doc_number": "2532-D05",
+          "project_number": "2532",
+          "house": "D"
+        },
+        {
+          "vendor": "Estrada Property LLC",
+          "amount": 1800.0,
+          "deposit": 0.0,
+          "total_amt": 1800.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-29",
+          "due_date": "2025-09-29",
+          "status": "paid",
+          "bill_id": "3253",
+          "doc_number": "2532-E02",
+          "project_number": "2532",
+          "house": "E"
         }
       ],
       "2025-08": [
+        {
+          "vendor": "Susan Propst",
+          "amount": 2545.0,
+          "deposit": 0.0,
+          "total_amt": 2545.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-28",
+          "due_date": "2025-08-28",
+          "status": "paid",
+          "bill_id": "2783",
+          "doc_number": "2532-D04",
+          "project_number": "2532",
+          "house": "D"
+        },
         {
           "vendor": "Zahida Parveen",
           "amount": 2000.0,
@@ -16725,9 +16897,37 @@
           "doc_number": "2532-A05",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "vendor": "Estrada Property LLC",
+          "amount": 2130.0,
+          "deposit": 900.0,
+          "total_amt": 3030.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-28",
+          "due_date": "2025-08-28",
+          "status": "paid",
+          "bill_id": "2749",
+          "doc_number": "2532-E01",
+          "project_number": "2532",
+          "house": "E"
         }
       ],
       "2025-06": [
+        {
+          "vendor": "KP & SL LLC",
+          "amount": 540.0,
+          "deposit": 0.0,
+          "total_amt": 540.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-02",
+          "due_date": "2025-06-02",
+          "status": "paid",
+          "bill_id": "1233",
+          "doc_number": "2532-C02",
+          "project_number": "2532",
+          "house": "C"
+        },
         {
           "vendor": "Zahida Parveen",
           "amount": 2000.0,
@@ -16741,6 +16941,20 @@
           "doc_number": "2532-A02",
           "project_number": "2532",
           "house": "A"
+        },
+        {
+          "vendor": "Susan Propst",
+          "amount": 2235.0,
+          "deposit": 500.0,
+          "total_amt": 2735.0,
+          "balance": 0.0,
+          "txn_date": "2025-06-02",
+          "due_date": "2025-06-02",
+          "status": "paid",
+          "bill_id": "1403",
+          "doc_number": "2532-D01",
+          "project_number": "2532",
+          "house": "D"
         },
         {
           "vendor": "Zahra Ihsan",
@@ -16758,6 +16972,20 @@
         }
       ],
       "2025-05": [
+        {
+          "vendor": "KP & SL LLC",
+          "amount": 1130.0,
+          "deposit": 1000.0,
+          "total_amt": 2130.0,
+          "balance": 0.0,
+          "txn_date": "2025-05-06",
+          "due_date": "2025-05-06",
+          "status": "paid",
+          "bill_id": "898",
+          "doc_number": "2532-C01",
+          "project_number": "2532",
+          "house": "C"
+        },
         {
           "vendor": "Zahra Ihsan",
           "amount": 1265.0,
@@ -24868,280 +25096,6 @@
         }
       ]
     },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House E]": {
-      "2026-02": [
-        {
-          "vendor": "Estrada Property LLC",
-          "amount": 1950.0,
-          "deposit": 0.0,
-          "total_amt": 1950.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "6447",
-          "doc_number": "2532-E07",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2026-01": [
-        {
-          "vendor": "Estrada Property LLC",
-          "amount": 2075.0,
-          "deposit": 0.0,
-          "total_amt": 2075.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-31",
-          "due_date": "2026-01-31",
-          "status": "paid",
-          "bill_id": "5578",
-          "doc_number": "2532-E06",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-12": [
-        {
-          "vendor": "Estrada Property LLC",
-          "amount": 2075.0,
-          "deposit": 0.0,
-          "total_amt": 2075.0,
-          "balance": 0.0,
-          "txn_date": "2025-12-31",
-          "due_date": "2025-12-31",
-          "status": "paid",
-          "bill_id": "4869",
-          "doc_number": "2532-E05",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-11": [
-        {
-          "vendor": "Estrada Property LLC",
-          "amount": 2075.0,
-          "deposit": 0.0,
-          "total_amt": 2075.0,
-          "balance": 0.0,
-          "txn_date": "2025-11-30",
-          "due_date": "2025-11-30",
-          "status": "paid",
-          "bill_id": "4168",
-          "doc_number": "2532-E04",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-10": [
-        {
-          "vendor": "Estrada Property LLC",
-          "amount": 2075.0,
-          "deposit": 0.0,
-          "total_amt": 2075.0,
-          "balance": 0.0,
-          "txn_date": "2025-10-31",
-          "due_date": "2025-10-31",
-          "status": "paid",
-          "bill_id": "3640",
-          "doc_number": "2532-E03",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-09": [
-        {
-          "vendor": "Estrada Property LLC",
-          "amount": 1800.0,
-          "deposit": 0.0,
-          "total_amt": 1800.0,
-          "balance": 0.0,
-          "txn_date": "2025-09-29",
-          "due_date": "2025-09-29",
-          "status": "paid",
-          "bill_id": "3253",
-          "doc_number": "2532-E02",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ],
-      "2025-08": [
-        {
-          "vendor": "Estrada Property LLC",
-          "amount": 2130.0,
-          "deposit": 900.0,
-          "total_amt": 3030.0,
-          "balance": 0.0,
-          "txn_date": "2025-08-28",
-          "due_date": "2025-08-28",
-          "status": "paid",
-          "bill_id": "2749",
-          "doc_number": "2532-E01",
-          "project_number": "2532",
-          "house": "E"
-        }
-      ]
-    },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House D]": {
-      "2026-02": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "5776",
-          "doc_number": "2532-D09",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2026-01": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-31",
-          "due_date": "2026-01-31",
-          "status": "paid",
-          "bill_id": "5577",
-          "doc_number": "2532-D08",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-12": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2025-12-31",
-          "due_date": "2025-12-31",
-          "status": "paid",
-          "bill_id": "4868",
-          "doc_number": "2532-D07",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-11": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2025-11-30",
-          "due_date": "2025-11-30",
-          "status": "paid",
-          "bill_id": "4167",
-          "doc_number": "2532-D06",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-10": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2025-10-31",
-          "due_date": "2025-10-31",
-          "status": "paid",
-          "bill_id": "3639",
-          "doc_number": "2532-D05",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-09": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2025-09-29",
-          "due_date": "2025-09-29",
-          "status": "paid",
-          "bill_id": "3262",
-          "doc_number": "2532-D05",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-08": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2025-08-28",
-          "due_date": "2025-08-28",
-          "status": "paid",
-          "bill_id": "2783",
-          "doc_number": "2532-D04",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-07": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2025-07-31",
-          "due_date": "2025-07-31",
-          "status": "paid",
-          "bill_id": "2247",
-          "doc_number": "2532-D03",
-          "project_number": "2532",
-          "house": "D"
-        },
-        {
-          "vendor": "Susan Propst",
-          "amount": 2545.0,
-          "deposit": 0.0,
-          "total_amt": 2545.0,
-          "balance": 0.0,
-          "txn_date": "2025-07-01",
-          "due_date": "2025-07-01",
-          "status": "paid",
-          "bill_id": "1839",
-          "doc_number": "2532-D02",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ],
-      "2025-06": [
-        {
-          "vendor": "Susan Propst",
-          "amount": 2235.0,
-          "deposit": 500.0,
-          "total_amt": 2735.0,
-          "balance": 0.0,
-          "txn_date": "2025-06-02",
-          "due_date": "2025-06-02",
-          "status": "paid",
-          "bill_id": "1403",
-          "doc_number": "2532-D01",
-          "project_number": "2532",
-          "house": "D"
-        }
-      ]
-    },
     "Quality Walls and Ceiling - Lexington KY - Zeke - 2527": {
       "2026-02": [
         {
@@ -28895,40 +28849,6 @@
           "doc_number": "2552-01",
           "project_number": "2552",
           "house": null
-        }
-      ]
-    },
-    "Independence Excavating - Richmond, VA - Paul - 2532 [House C]": {
-      "2025-06": [
-        {
-          "vendor": "KP & SL LLC",
-          "amount": 540.0,
-          "deposit": 0.0,
-          "total_amt": 540.0,
-          "balance": 0.0,
-          "txn_date": "2025-06-02",
-          "due_date": "2025-06-02",
-          "status": "paid",
-          "bill_id": "1233",
-          "doc_number": "2532-C02",
-          "project_number": "2532",
-          "house": "C"
-        }
-      ],
-      "2025-05": [
-        {
-          "vendor": "KP & SL LLC",
-          "amount": 1130.0,
-          "deposit": 1000.0,
-          "total_amt": 2130.0,
-          "balance": 0.0,
-          "txn_date": "2025-05-06",
-          "due_date": "2025-05-06",
-          "status": "paid",
-          "bill_id": "898",
-          "doc_number": "2532-C01",
-          "project_number": "2532",
-          "house": "C"
         }
       ]
     },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T00:01:43.181694",
+  "generated_at": "2026-04-29T08:09:45.057477",
   "months": [
     "2025-08",
     "2025-09",
@@ -5911,8 +5911,8 @@
     },
     "Paul": {
       "current": {
-        "count": 111,
-        "amount": 542064.33,
+        "count": 112,
+        "amount": 542652.33,
         "invoices": [
           {
             "project": "DH Griffin - LaGrange, GA - Paul -2582",
@@ -5959,6 +5959,14 @@
             "invoice_id": "6304",
             "doc_number": "2616-03",
             "amount": 1200.0,
+            "days_overdue": -2,
+            "due_date": "2026-05-01"
+          },
+          {
+            "project": "Independence Excavating - Richmond, VA - Paul - 2532",
+            "invoice_id": "5783",
+            "doc_number": "2532-A13",
+            "amount": 588.0,
             "days_overdue": -2,
             "due_date": "2026-05-01"
           },
