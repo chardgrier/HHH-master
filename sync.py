@@ -285,7 +285,15 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
             g["lease"] = t
 
     def build_segments(lease, addendums, amt_gid):
-        """Returns a list of non-overlapping segments."""
+        """Returns a list of non-overlapping segments.
+
+        Rule: each addendum's [start, end] OVERRIDES whatever the lease (or any
+        earlier addendum) had for that date range. When an addendum has both
+        an amount and dates, we trim/drop ALL existing segments that overlap
+        — not just the last one — so two segments can never represent the
+        same calendar month. Adjacent segments with the same amount are then
+        merged so the result is the minimal non-overlapping list.
+        """
         segments = []
         # Start with the lease
         if lease:
@@ -308,6 +316,18 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
                 except ValueError: pass
         ads.sort(key=lambda x: x[1])
 
+        def merge_adjacent(segs):
+            """Merge contiguous segments that share the same amount."""
+            segs = sorted(segs, key=lambda s: s["start"])
+            out = []
+            for seg in segs:
+                if out and abs(out[-1]["amount"] - seg["amount"]) < 0.01 \
+                   and out[-1]["end"] + timedelta(days=1) >= seg["start"]:
+                    out[-1]["end"] = max(out[-1]["end"], seg["end"])
+                else:
+                    out.append(dict(seg))
+            return out
+
         for add, a_start in ads:
             a_amt_raw = cf_value(add, amt_gid)
             a_end_s   = cf_value(add, end_gid)
@@ -316,20 +336,30 @@ def build_house_segments(tasks, ar_gid, ap_gid, start_gid, end_gid, crew_gid):
             except ValueError: continue
 
             if not a_amt_raw or a_amt_raw == 0:
-                # Date-only extension: extend latest segment's end
+                # Date-only extension: extend the segment that ends latest.
                 if segments:
-                    segments[-1]["end"] = max(segments[-1]["end"], a_end)
+                    last = max(segments, key=lambda s: s["end"])
+                    if a_end > last["end"]:
+                        last["end"] = a_end
                 continue
 
             a_amt = float(a_amt_raw)
-            # Same rate as latest? Just extend end date.
-            if segments and abs(segments[-1]["amount"] - a_amt) < 0.01:
-                segments[-1]["end"] = max(segments[-1]["end"], a_end)
-            else:
-                # Different rate: trim previous if it overlaps, then append new segment
-                if segments and segments[-1]["end"] >= a_start:
-                    segments[-1]["end"] = a_start - timedelta(days=1)
-                segments.append({"start": a_start, "end": a_end, "amount": a_amt})
+            # Trim or drop every existing segment that overlaps [a_start, a_end].
+            new_segments = []
+            for seg in segments:
+                if seg["end"] < a_start or seg["start"] > a_end:
+                    new_segments.append(seg)                                          # no overlap
+                elif seg["start"] < a_start and seg["end"] > a_end:
+                    # Addendum is fully contained inside this segment — split into two.
+                    new_segments.append({**seg, "end":   a_start - timedelta(days=1)})
+                    new_segments.append({**seg, "start": a_end   + timedelta(days=1)})
+                elif seg["start"] < a_start:
+                    new_segments.append({**seg, "end":   a_start - timedelta(days=1)}) # trim right
+                elif seg["end"] > a_end:
+                    new_segments.append({**seg, "start": a_end   + timedelta(days=1)}) # trim left
+                # else: segment fully covered by addendum → drop
+            new_segments.append({"start": a_start, "end": a_end, "amount": a_amt})
+            segments = merge_adjacent(new_segments)
 
         return segments
 
