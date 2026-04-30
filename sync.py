@@ -818,10 +818,21 @@ def sync():
         for r in rows:
             snap_monthly = snap_rows.get(r["name"])
             if not snap_monthly: continue
+            # Determine the project's current active window so we don't inject
+            # snapshot rows for months the project no longer covers (e.g. when
+            # an Asana lease's start date shifts later, the old earlier months
+            # would otherwise persist as ghost reconciled cells).
+            row_start_ym = (r.get("start_date") or "")[:7] or None
+            row_end_ym   = (r.get("end_date")   or "")[:7] or None
             for key, v in snap_monthly.items():
-                if key <= snap_through:
-                    r["monthly"][key] = {**dict(v), "reconciled": True}
-                    locked_cells += 1
+                if key > snap_through:
+                    continue
+                if row_start_ym and key < row_start_ym:
+                    continue
+                if row_end_ym and key > row_end_ym:
+                    continue
+                r["monthly"][key] = {**dict(v), "reconciled": True}
+                locked_cells += 1
             # Recompute 2026 totals after lockbox override
             t_ar = sum(v["ar"]     for k, v in r["monthly"].items() if k.startswith("2026"))
             t_ap = sum(v["ap"]     for k, v in r["monthly"].items() if k.startswith("2026"))
