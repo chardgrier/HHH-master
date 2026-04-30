@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T14:17:45.182911",
+  "generated_at": "2026-04-30T15:09:12.574149",
   "months": [
     "2025-08",
     "2025-09",
@@ -1690,11 +1690,11 @@
       "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
       "salesperson": "Zeke",
       "project_number": "2551",
-      "status": "Active",
+      "status": "Closed",
       "start_date": "2025-09-01",
-      "end_date": "2026-05-31",
-      "base_ar": 6900.0,
-      "base_ap": 3750.0,
+      "end_date": "2026-03-31",
+      "base_ar": 17800.0,
+      "base_ap": 9500.0,
       "base_crew": 0,
       "commission_model": "percent",
       "commission_rate": 0.2,
@@ -1754,27 +1754,12 @@
           "commission": 630.0,
           "net_gp": 2520.0,
           "reconciled": true
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 6900.0,
-          "ap": 3750.0,
-          "commission": 630.0,
-          "net_gp": 2520.0,
-          "reconciled": true
-        },
-        "2026-05": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 5750.0,
-          "commission": -1150.0,
-          "net_gp": -4600.0
         }
       },
       "total_2026": {
-        "ar": 31600.0,
-        "ap": 22750.0,
-        "net_gp": 7080.0
+        "ar": 24700.0,
+        "ap": 13250.0,
+        "net_gp": 9160.0
       },
       "source": "asana_custom_fields",
       "house_starts": [
@@ -4869,20 +4854,12 @@
           "commission": 578.0,
           "net_gp": 2312.0,
           "reconciled": true
-        },
-        "2026-03": {
-          "crew": 0,
-          "ar": 876.67,
-          "ap": 491.33,
-          "commission": 77.07,
-          "net_gp": 308.27,
-          "reconciled": true
         }
       },
       "total_2026": {
-        "ar": 14026.67,
-        "ap": 7861.33,
-        "net_gp": 4932.27
+        "ar": 13150.0,
+        "ap": 7370.0,
+        "net_gp": 4624.0
       },
       "source": "asana_custom_fields",
       "house_starts": [
@@ -6248,20 +6225,12 @@
           "ap": 108.33,
           "commission": 12.67,
           "net_gp": 50.67
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 0.0,
-          "ap": 3250.0,
-          "commission": -650.0,
-          "net_gp": -2600.0,
-          "reconciled": true
         }
       },
       "total_2026": {
         "ar": 25750.0,
-        "ap": 19500.0,
-        "net_gp": 5000.0
+        "ap": 16250.0,
+        "net_gp": 7600.0
       },
       "source": "asana_custom_fields",
       "house_starts": [
@@ -8188,60 +8157,12 @@
           "commission": 289.15,
           "net_gp": 1156.58,
           "reconciled": true
-        },
-        "2025-11": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2025-12": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-01": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-02": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-03": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
-        },
-        "2026-04": {
-          "crew": 0,
-          "ar": 2200.0,
-          "ap": 374.0,
-          "commission": 365.2,
-          "net_gp": 1460.8,
-          "reconciled": true
         }
       },
       "total_2026": {
-        "ar": 8800.0,
-        "ap": 1496.0,
-        "net_gp": 5843.2
+        "ar": 0,
+        "ap": 0,
+        "net_gp": 0
       },
       "source": "manual_row",
       "editable": true,
@@ -8567,52 +8488,52 @@
     },
     "2025-11": {
       "crew": 213,
-      "ar": 339818.49,
-      "ap": 213047.09,
-      "net_gp": 111653.94,
-      "gp_pct": 32.86
+      "ar": 337618.49,
+      "ap": 212673.09,
+      "net_gp": 110193.14,
+      "gp_pct": 32.64
     },
     "2025-12": {
       "crew": 224,
-      "ar": 323429.0,
-      "ap": 203667.76,
-      "net_gp": 105974.0,
-      "gp_pct": 32.77
+      "ar": 321229.0,
+      "ap": 203293.76,
+      "net_gp": 104513.2,
+      "gp_pct": 32.54
     },
     "2026-01": {
       "crew": 253,
-      "ar": 382270.0,
-      "ap": 250420.59,
-      "net_gp": 116002.52,
-      "gp_pct": 30.35
+      "ar": 380070.0,
+      "ap": 250046.59,
+      "net_gp": 114541.72,
+      "gp_pct": 30.14
     },
     "2026-02": {
       "crew": 280,
-      "ar": 417262.01,
-      "ap": 267394.41,
-      "net_gp": 130353.58,
-      "gp_pct": 31.24
+      "ar": 415062.01,
+      "ap": 267020.41,
+      "net_gp": 128892.78,
+      "gp_pct": 31.05
     },
     "2026-03": {
       "crew": 320,
-      "ar": 505963.82,
-      "ap": 319592.09,
-      "net_gp": 159687.36,
-      "gp_pct": 31.56
+      "ar": 502887.15,
+      "ap": 318726.76,
+      "net_gp": 157918.29,
+      "gp_pct": 31.4
     },
     "2026-04": {
       "crew": 384,
-      "ar": 566059.76,
-      "ap": 369008.77,
-      "net_gp": 168978.53,
-      "gp_pct": 29.85
+      "ar": 556959.76,
+      "ap": 361634.77,
+      "net_gp": 167597.73,
+      "gp_pct": 30.09
     },
     "2026-05": {
       "crew": 373,
       "ar": 603558.0,
-      "ap": 388841.26,
-      "net_gp": 182508.39,
-      "gp_pct": 30.24
+      "ap": 383091.26,
+      "net_gp": 187108.39,
+      "gp_pct": 31.0
     },
     "2026-06": {
       "crew": 281,
@@ -8766,34 +8687,34 @@
         "commission": 7626.4
       },
       "2025-11": {
-        "ar": 122998.49,
-        "ap": 83054.59,
-        "commission": 7984.79
+        "ar": 120798.49,
+        "ap": 82680.59,
+        "commission": 7619.59
       },
       "2025-12": {
-        "ar": 112309.0,
-        "ap": 78198.09,
-        "commission": 6822.169999999999
+        "ar": 110109.0,
+        "ap": 77824.09,
+        "commission": 6456.969999999999
       },
       "2026-01": {
-        "ar": 109402.5,
-        "ap": 72904.76000000001,
-        "commission": 7299.55
+        "ar": 107202.5,
+        "ap": 72530.76000000001,
+        "commission": 6934.35
       },
       "2026-02": {
-        "ar": 123092.51,
-        "ap": 80834.75,
-        "commission": 8451.560000000001
+        "ar": 120892.51,
+        "ap": 80460.75,
+        "commission": 8086.360000000001
       },
       "2026-03": {
-        "ar": 142057.16,
-        "ap": 92063.09,
-        "commission": 9998.820000000002
+        "ar": 139857.16,
+        "ap": 91689.09,
+        "commission": 9633.62
       },
       "2026-04": {
-        "ar": 137162.66999999998,
-        "ap": 92780.1,
-        "commission": 8876.52
+        "ar": 134962.66999999998,
+        "ap": 89156.1,
+        "commission": 9161.32
       },
       "2026-05": {
         "ar": 186516.33000000002,
@@ -8948,14 +8869,14 @@
         "commission": 7704.34
       },
       "2026-04": {
-        "ar": 154576.66999999998,
-        "ap": 104648.34,
-        "commission": 10225.67
+        "ar": 147676.66999999998,
+        "ap": 100898.34,
+        "commission": 9595.67
       },
       "2026-05": {
         "ar": 160750.0,
-        "ap": 117875.0,
-        "commission": 8815.0
+        "ap": 112125.0,
+        "commission": 9965.0
       },
       "2026-06": {
         "ar": 93860.0,
@@ -9127,9 +9048,9 @@
         "commission": 2302.13
       },
       "2026-03": {
-        "ar": 74646.66,
-        "ap": 41645.67,
-        "commission": 6600.21
+        "ar": 73769.99,
+        "ap": 41154.34,
+        "commission": 6523.14
       },
       "2026-04": {
         "ar": 70151.67,
@@ -9367,10 +9288,6 @@
         "ar": 3595.0
       },
       {
-        "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
-        "ar": 6900.0
-      },
-      {
         "name": "Gutknecht Construction - Lexington, KY - Matt - 2563 \u2014 Phase 4",
         "ar": 12000.0
       },
@@ -9466,14 +9383,6 @@
       }
     ],
     "ending_in_31_45": [
-      {
-        "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
-        "end_date": "2026-05-31",
-        "days": 31,
-        "salesperson": "Zeke",
-        "gid": "1210751935671855",
-        "project_number": "2551"
-      },
       {
         "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
         "end_date": "2026-05-31",

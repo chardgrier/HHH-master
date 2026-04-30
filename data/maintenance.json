@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T14:17:45.182911",
+  "generated_at": "2026-04-30T15:09:12.574149",
   "projects": [
     {
       "name": "Gray Construction - Bristol, TN - Paul - 2592 [House B]",
@@ -49,13 +49,6 @@
       "start_date": "2025-08-01",
       "end_date": "2026-08-31",
       "project_number": "2527"
-    },
-    {
-      "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
-      "status": "Active",
-      "start_date": "2025-09-01",
-      "end_date": "2026-05-31",
-      "project_number": "2551"
     },
     {
       "name": "Southern Wall Systems - Ann Arbor, MI - Logan - 2553",
@@ -490,14 +483,6 @@
       "urgency": "30",
       "gid": "1212344857819012",
       "project_number": "2594"
-    },
-    {
-      "name": "Benco Construction Services - St Peters, MO - Zeke - 2551",
-      "end_date": "2026-05-31",
-      "days": 31,
-      "urgency": "45",
-      "gid": "1210751935671855",
-      "project_number": "2551"
     },
     {
       "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
