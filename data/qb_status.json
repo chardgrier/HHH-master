@@ -1,7 +1,309 @@
 {
-  "generated_at": "2026-04-30T15:08:13.056763",
+  "generated_at": "2026-05-01T08:07:11.961382",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
+    "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]": {
+      "2026-04": [
+        {
+          "status": "overdue",
+          "amount": 23255.33,
+          "deposit": 2500.0,
+          "total_amt": 25755.33,
+          "balance": 25755.33,
+          "invoice_id": "7385",
+          "doc_number": "2613-04",
+          "due_date": "2026-04-30",
+          "project_number": "2613",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 2750.0,
+          "deposit": 0.0,
+          "total_amt": 2750.0,
+          "balance": 0.0,
+          "invoice_id": "6698",
+          "doc_number": "2613-03",
+          "due_date": "2026-04-15",
+          "project_number": "2613",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 7825.0,
+          "deposit": 0.0,
+          "total_amt": 7825.0,
+          "balance": 0.0,
+          "invoice_id": "6700",
+          "doc_number": "2613-C03",
+          "due_date": "2026-03-31",
+          "project_number": "2613",
+          "house": "C"
+        },
+        {
+          "status": "overdue",
+          "amount": 5500.0,
+          "deposit": 0.0,
+          "total_amt": 5500.0,
+          "balance": 5500.0,
+          "invoice_id": "6052",
+          "doc_number": "2613-02",
+          "due_date": "2026-03-16",
+          "project_number": "2613",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 3391.0,
+          "deposit": 0.0,
+          "total_amt": 3391.0,
+          "balance": 0.0,
+          "invoice_id": "6182",
+          "doc_number": "2613-C02",
+          "due_date": "2026-03-19",
+          "project_number": "2613",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 7825.0,
+          "deposit": 4300.0,
+          "total_amt": 12125.0,
+          "balance": 0.0,
+          "invoice_id": "6181",
+          "doc_number": "2613-C01",
+          "due_date": "2026-02-18",
+          "project_number": "2613",
+          "house": "C"
+        },
+        {
+          "status": "paid",
+          "amount": 5500.0,
+          "deposit": 1500.0,
+          "total_amt": 7000.0,
+          "balance": 0.0,
+          "invoice_id": "6051",
+          "doc_number": "2613-01",
+          "due_date": "2026-02-13",
+          "project_number": "2613",
+          "house": null
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]": {
+      "2026-04": [
+        {
+          "status": "sent",
+          "amount": 17750.0,
+          "deposit": 0.0,
+          "total_amt": 17750.0,
+          "balance": 17750.0,
+          "invoice_id": "7769",
+          "doc_number": "2617-04",
+          "due_date": "2026-05-15",
+          "project_number": "2617",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 6850.0,
+          "deposit": 0.0,
+          "total_amt": 6850.0,
+          "balance": 0.0,
+          "invoice_id": "6697",
+          "doc_number": "2617-03",
+          "due_date": "2026-03-31",
+          "project_number": "2617",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 15150.0,
+          "deposit": 0.0,
+          "total_amt": 15150.0,
+          "balance": 0.0,
+          "invoice_id": "6696",
+          "doc_number": "2617-BCD02",
+          "due_date": "2026-03-31",
+          "project_number": "2617",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 9825.0,
+          "deposit": 2000.0,
+          "total_amt": 11825.0,
+          "balance": 0.0,
+          "invoice_id": "6689",
+          "doc_number": "2617-E01",
+          "due_date": "2026-03-13",
+          "project_number": "2617",
+          "house": "E"
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 2512.0,
+          "deposit": 0.0,
+          "total_amt": 2512.0,
+          "balance": 0.0,
+          "invoice_id": "6299",
+          "doc_number": "2617-02",
+          "due_date": "2026-03-21",
+          "project_number": "2617",
+          "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 15150.0,
+          "deposit": 6000.0,
+          "total_amt": 21150.0,
+          "balance": 0.0,
+          "invoice_id": "6413",
+          "doc_number": "2617-BCD01",
+          "due_date": "2026-02-26",
+          "project_number": "2617",
+          "house": "B"
+        },
+        {
+          "status": "paid",
+          "amount": 6850.0,
+          "deposit": 1000.0,
+          "total_amt": 7850.0,
+          "balance": 0.0,
+          "invoice_id": "6198",
+          "doc_number": "2617-01",
+          "due_date": "2026-02-19",
+          "project_number": "2617",
+          "house": null
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628": {
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 3800.0,
+          "deposit": 0.0,
+          "total_amt": 3800.0,
+          "balance": 3800.0,
+          "invoice_id": "7774",
+          "doc_number": "2628-02",
+          "due_date": "2026-05-01",
+          "project_number": "2628",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 7600.0,
+          "deposit": 2000.0,
+          "total_amt": 9600.0,
+          "balance": 0.0,
+          "invoice_id": "7000",
+          "doc_number": "2628-01",
+          "due_date": "2026-03-30",
+          "project_number": "2628",
+          "house": null
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630": {
+      "2026-05": [
+        {
+          "status": "sent",
+          "amount": 11100.0,
+          "deposit": 0.0,
+          "total_amt": 11100.0,
+          "balance": 11100.0,
+          "invoice_id": "7775",
+          "doc_number": "2630-02",
+          "due_date": "2026-05-01",
+          "project_number": "2630",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 11100.0,
+          "deposit": 2000.0,
+          "total_amt": 13100.0,
+          "balance": 0.0,
+          "invoice_id": "7029",
+          "doc_number": "2630-01",
+          "due_date": "2026-03-31",
+          "project_number": "2630",
+          "house": null
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
+      "2026-04": [
+        {
+          "status": "overdue",
+          "amount": 2360.0,
+          "deposit": 0.0,
+          "total_amt": 2360.0,
+          "balance": 2360.0,
+          "invoice_id": "7771",
+          "doc_number": "2607-04",
+          "due_date": "2026-04-23",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "status": "paid",
+          "amount": 4425.0,
+          "deposit": 0.0,
+          "total_amt": 4425.0,
+          "balance": 0.0,
+          "invoice_id": "6686",
+          "doc_number": "2607-03",
+          "due_date": "2026-03-22",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "status": "paid",
+          "amount": 4572.5,
+          "deposit": 0.0,
+          "total_amt": 4572.5,
+          "balance": 0.0,
+          "invoice_id": "5519",
+          "doc_number": "2607-02",
+          "due_date": "2026-02-22",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "status": "paid",
+          "amount": 4425.0,
+          "deposit": 1000.0,
+          "total_amt": 5425.0,
+          "balance": 0.0,
+          "invoice_id": "5511",
+          "doc_number": "2607-01",
+          "due_date": "2026-01-21",
+          "project_number": "2607",
+          "house": null
+        }
+      ]
+    },
     "Quality Walls and Ceiling - Lexington KY - Zeke - 2527": {
       "2026-04": [
         {
@@ -4760,150 +5062,6 @@
         }
       ]
     },
-    "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630": {
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 11100.0,
-          "deposit": 2000.0,
-          "total_amt": 13100.0,
-          "balance": 0.0,
-          "invoice_id": "7029",
-          "doc_number": "2630-01",
-          "due_date": "2026-03-31",
-          "project_number": "2630",
-          "house": null
-        }
-      ]
-    },
-    "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]": {
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 2750.0,
-          "deposit": 0.0,
-          "total_amt": 2750.0,
-          "balance": 0.0,
-          "invoice_id": "6698",
-          "doc_number": "2613-03",
-          "due_date": "2026-04-15",
-          "project_number": "2613",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 7825.0,
-          "deposit": 0.0,
-          "total_amt": 7825.0,
-          "balance": 0.0,
-          "invoice_id": "6700",
-          "doc_number": "2613-C03",
-          "due_date": "2026-03-31",
-          "project_number": "2613",
-          "house": "C"
-        },
-        {
-          "status": "overdue",
-          "amount": 5500.0,
-          "deposit": 0.0,
-          "total_amt": 5500.0,
-          "balance": 5500.0,
-          "invoice_id": "6052",
-          "doc_number": "2613-02",
-          "due_date": "2026-03-16",
-          "project_number": "2613",
-          "house": null
-        }
-      ],
-      "2026-04": [
-        {
-          "status": "overdue",
-          "amount": 5133.33,
-          "deposit": 1500.0,
-          "total_amt": 6633.33,
-          "balance": 6633.33,
-          "invoice_id": "7460",
-          "doc_number": "2613-E01",
-          "due_date": "2026-04-17",
-          "project_number": "2613",
-          "house": "E"
-        },
-        {
-          "status": "overdue",
-          "amount": 4492.0,
-          "deposit": 1000.0,
-          "total_amt": 5492.0,
-          "balance": 5492.0,
-          "invoice_id": "7459",
-          "doc_number": "2613-D01",
-          "due_date": "2026-04-17",
-          "project_number": "2613",
-          "house": "D"
-        },
-        {
-          "status": "sent",
-          "amount": 7825.0,
-          "deposit": 0.0,
-          "total_amt": 7825.0,
-          "balance": 7825.0,
-          "invoice_id": "7457",
-          "doc_number": "2613-C04",
-          "due_date": "2026-05-01",
-          "project_number": "2613",
-          "house": "C"
-        },
-        {
-          "status": "sent",
-          "amount": 555.0,
-          "deposit": 0.0,
-          "total_amt": 555.0,
-          "balance": 555.0,
-          "invoice_id": "7385",
-          "doc_number": "2613-04",
-          "due_date": "2026-04-30",
-          "project_number": "2613",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 3391.0,
-          "deposit": 0.0,
-          "total_amt": 3391.0,
-          "balance": 0.0,
-          "invoice_id": "6182",
-          "doc_number": "2613-C02",
-          "due_date": "2026-03-19",
-          "project_number": "2613",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 7825.0,
-          "deposit": 4300.0,
-          "total_amt": 12125.0,
-          "balance": 0.0,
-          "invoice_id": "6181",
-          "doc_number": "2613-C01",
-          "due_date": "2026-02-18",
-          "project_number": "2613",
-          "house": "C"
-        },
-        {
-          "status": "paid",
-          "amount": 5500.0,
-          "deposit": 1500.0,
-          "total_amt": 7000.0,
-          "balance": 0.0,
-          "invoice_id": "6051",
-          "doc_number": "2613-01",
-          "due_date": "2026-02-13",
-          "project_number": "2613",
-          "house": null
-        }
-      ]
-    },
     "Jones Covey Group, Inc - Ringgold, GA - Paul - 2605": {
       "2026-04": [
         {
@@ -5860,22 +6018,6 @@
         }
       ]
     },
-    "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628": {
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 7600.0,
-          "deposit": 2000.0,
-          "total_amt": 9600.0,
-          "balance": 0.0,
-          "invoice_id": "7000",
-          "doc_number": "2628-01",
-          "due_date": "2026-03-30",
-          "project_number": "2628",
-          "house": null
-        }
-      ]
-    },
     "Benco Construction Services - St Peters, MO - Zeke - 2551": {
       "2026-02": [
         {
@@ -6554,50 +6696,6 @@
         }
       ]
     },
-    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 4425.0,
-          "deposit": 0.0,
-          "total_amt": 4425.0,
-          "balance": 0.0,
-          "invoice_id": "6686",
-          "doc_number": "2607-03",
-          "due_date": "2026-03-22",
-          "project_number": "2607",
-          "house": null
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 4572.5,
-          "deposit": 0.0,
-          "total_amt": 4572.5,
-          "balance": 0.0,
-          "invoice_id": "5519",
-          "doc_number": "2607-02",
-          "due_date": "2026-02-22",
-          "project_number": "2607",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "status": "paid",
-          "amount": 4425.0,
-          "deposit": 1000.0,
-          "total_amt": 5425.0,
-          "balance": 0.0,
-          "invoice_id": "5511",
-          "doc_number": "2607-01",
-          "due_date": "2026-01-21",
-          "project_number": "2607",
-          "house": null
-        }
-      ]
-    },
     "Duggan Contracting - Paducah, KY - Paul - 2620": {
       "2026-04": [
         {
@@ -6765,84 +6863,6 @@
           "due_date": "2026-02-17",
           "project_number": "2613",
           "house": "B"
-        }
-      ]
-    },
-    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]": {
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 6850.0,
-          "deposit": 0.0,
-          "total_amt": 6850.0,
-          "balance": 0.0,
-          "invoice_id": "6697",
-          "doc_number": "2617-03",
-          "due_date": "2026-03-31",
-          "project_number": "2617",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 15150.0,
-          "deposit": 0.0,
-          "total_amt": 15150.0,
-          "balance": 0.0,
-          "invoice_id": "6696",
-          "doc_number": "2617-BCD02",
-          "due_date": "2026-03-31",
-          "project_number": "2617",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 9825.0,
-          "deposit": 2000.0,
-          "total_amt": 11825.0,
-          "balance": 0.0,
-          "invoice_id": "6689",
-          "doc_number": "2617-E01",
-          "due_date": "2026-03-13",
-          "project_number": "2617",
-          "house": "E"
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 2512.0,
-          "deposit": 0.0,
-          "total_amt": 2512.0,
-          "balance": 0.0,
-          "invoice_id": "6299",
-          "doc_number": "2617-02",
-          "due_date": "2026-03-21",
-          "project_number": "2617",
-          "house": null
-        },
-        {
-          "status": "paid",
-          "amount": 15150.0,
-          "deposit": 6000.0,
-          "total_amt": 21150.0,
-          "balance": 0.0,
-          "invoice_id": "6413",
-          "doc_number": "2617-BCD01",
-          "due_date": "2026-02-26",
-          "project_number": "2617",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 6850.0,
-          "deposit": 1000.0,
-          "total_amt": 7850.0,
-          "balance": 0.0,
-          "invoice_id": "6198",
-          "doc_number": "2617-01",
-          "due_date": "2026-02-19",
-          "project_number": "2617",
-          "house": null
         }
       ]
     },
@@ -11846,85 +11866,23 @@
     }
   },
   "ap_status_by_project": {
-    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
-      "2026-04": [
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 614.0,
-          "deposit": 0.0,
-          "total_amt": 614.0,
-          "balance": 0.0,
-          "txn_date": "2026-04-29",
-          "due_date": "2026-04-29",
-          "status": "paid",
-          "bill_id": "7721",
-          "doc_number": "2607-05",
-          "project_number": "2607",
-          "house": null
-        },
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 613.36,
-          "deposit": 0.0,
-          "total_amt": 613.36,
-          "balance": 0.0,
-          "txn_date": "2026-04-22",
-          "due_date": "2026-04-22",
-          "status": "paid",
-          "bill_id": "7612",
-          "doc_number": "2607-04",
-          "project_number": "2607",
-          "house": null
-        }
-      ],
-      "2026-03": [
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2450.0,
-          "deposit": 0.0,
-          "total_amt": 2450.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-16",
-          "due_date": "2026-03-16",
-          "status": "paid",
-          "bill_id": "6711",
-          "doc_number": "2607-03",
-          "project_number": "2607",
-          "house": null
-        }
-      ],
-      "2026-01": [
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2526.66,
-          "deposit": 0.0,
-          "total_amt": 2526.66,
-          "balance": 0.0,
-          "txn_date": "2026-01-31",
-          "due_date": "2026-01-31",
-          "status": "paid",
-          "bill_id": "5516",
-          "doc_number": "2607-02",
-          "project_number": "2607",
-          "house": null
-        },
-        {
-          "vendor": "Alaba G. Idowu",
-          "amount": 2450.0,
-          "deposit": 1000.0,
-          "total_amt": 3450.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-22",
-          "due_date": "2026-01-22",
-          "status": "paid",
-          "bill_id": "5515",
-          "doc_number": "2607-01",
-          "project_number": "2607",
-          "house": null
-        }
-      ]
-    },
     "Gutknecht Construction - Frankfort, KY - Matt - 2624 \u2014 C, Phase 1": {
+      "2026-05": [
+        {
+          "vendor": "Warford Hospitality Co LLC",
+          "amount": 3420.0,
+          "deposit": 0.0,
+          "total_amt": 3420.0,
+          "balance": 0.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "paid",
+          "bill_id": "7785",
+          "doc_number": "2624-E01",
+          "project_number": "2624",
+          "house": "E"
+        }
+      ],
       "2026-04": [
         {
           "vendor": "Warford Hospitality Co LLC",
@@ -11934,7 +11892,7 @@
           "balance": 880.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7680",
           "doc_number": "2624-D02",
           "project_number": "2624",
@@ -11948,7 +11906,7 @@
           "balance": 10000.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7683",
           "doc_number": "2624-C02",
           "project_number": "2624",
@@ -11962,7 +11920,7 @@
           "balance": 5200.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7682",
           "doc_number": "2624-B02",
           "project_number": "2624",
@@ -11976,7 +11934,7 @@
           "balance": 4200.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7681",
           "doc_number": "2624-A02",
           "project_number": "2624",
@@ -12042,262 +12000,570 @@
         }
       ]
     },
-    "Southern Wall Systems - Ann Arbor, MI - Logan - 2553": {
+    "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]": {
+      "2026-05": [
+        {
+          "vendor": "Rising V Ventures, LLC",
+          "amount": 2800.0,
+          "deposit": 1500.0,
+          "total_amt": 4300.0,
+          "balance": 4300.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "sent",
+          "bill_id": "7784",
+          "doc_number": "2613-F01",
+          "project_number": "2613",
+          "house": "F"
+        }
+      ],
       "2026-04": [
         {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
+          "vendor": "Currie's Property Rentals",
+          "amount": 4300.0,
           "deposit": 0.0,
-          "total_amt": 1875.0,
+          "total_amt": 4300.0,
           "balance": 0.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
           "status": "paid",
-          "bill_id": "5755",
-          "doc_number": "2553-11",
-          "project_number": "2553",
+          "bill_id": "7569",
+          "doc_number": "2613-C04",
+          "project_number": "2613",
+          "house": "C"
+        },
+        {
+          "vendor": "APS Acquisitions, LLC",
+          "amount": 320.0,
+          "deposit": 0.0,
+          "total_amt": 320.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "paid",
+          "bill_id": "7568",
+          "doc_number": "2613-04",
+          "project_number": "2613",
+          "house": null
+        },
+        {
+          "vendor": "Karina Kislitsyna",
+          "amount": 3087.1,
+          "deposit": 1000.0,
+          "total_amt": 4087.1,
+          "balance": 0.0,
+          "txn_date": "2026-04-21",
+          "due_date": "2026-04-21",
+          "status": "paid",
+          "bill_id": "7570",
+          "doc_number": "2613-E01",
+          "project_number": "2613",
+          "house": "E"
+        },
+        {
+          "vendor": "Cayetano Saucedo",
+          "amount": 2845.0,
+          "deposit": 0.0,
+          "total_amt": 2845.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-20",
+          "due_date": "2026-04-20",
+          "status": "paid",
+          "bill_id": "7540",
+          "doc_number": "2613-D01",
+          "project_number": "2613",
+          "house": "D"
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "APS Acquisitions, LLC",
+          "amount": 1600.0,
+          "deposit": 0.0,
+          "total_amt": 1600.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "7015",
+          "doc_number": "2613-03",
+          "project_number": "2613",
+          "house": null
+        },
+        {
+          "vendor": "Currie's Property Rentals",
+          "amount": 4600.0,
+          "deposit": 0.0,
+          "total_amt": 4600.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-30",
+          "due_date": "2026-03-30",
+          "status": "paid",
+          "bill_id": "7002",
+          "doc_number": "2613-C03",
+          "project_number": "2613",
+          "house": "C"
+        }
+      ],
+      "2026-02": [
+        {
+          "vendor": "APS Acquisitions, LLC",
+          "amount": 3400.0,
+          "deposit": 0.0,
+          "total_amt": 3400.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "6050",
+          "doc_number": "2613-02",
+          "project_number": "2613",
+          "house": null
+        },
+        {
+          "vendor": "Currie's Property Rentals",
+          "amount": 1720.0,
+          "deposit": 0.0,
+          "total_amt": 1720.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "6193",
+          "doc_number": "2613-C02",
+          "project_number": "2613",
+          "house": "C"
+        },
+        {
+          "vendor": "APS Acquisitions, LLC",
+          "amount": 3200.0,
+          "deposit": 3200.0,
+          "total_amt": 6400.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-13",
+          "due_date": "2026-02-13",
+          "status": "paid",
+          "bill_id": "6049",
+          "doc_number": "2613-01",
+          "project_number": "2613",
+          "house": null
+        },
+        {
+          "vendor": "Currie's Property Rentals",
+          "amount": 4300.0,
+          "deposit": 0.0,
+          "total_amt": 4300.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-19",
+          "due_date": "2026-02-19",
+          "status": "paid",
+          "bill_id": "6192",
+          "doc_number": "2613-C01",
+          "project_number": "2613",
+          "house": "C"
+        },
+        {
+          "vendor": "Currie's Property Rentals",
+          "amount": 0.0,
+          "deposit": 4300.0,
+          "total_amt": 4300.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-19",
+          "due_date": "2026-02-19",
+          "status": "paid",
+          "bill_id": "6191",
+          "doc_number": "2613-C01 [sec]",
+          "project_number": "2613",
+          "house": "C"
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]": {
+      "2026-05": [
+        {
+          "vendor": "Ross Suites LLC",
+          "amount": 2000.0,
+          "deposit": 0.0,
+          "total_amt": 2000.0,
+          "balance": 0.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "paid",
+          "bill_id": "7781",
+          "doc_number": "2617-F01",
+          "project_number": "2617",
+          "house": "F"
+        },
+        {
+          "vendor": "Irma Solis",
+          "amount": 1450.0,
+          "deposit": 0.0,
+          "total_amt": 1450.0,
+          "balance": 0.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "paid",
+          "bill_id": "7780",
+          "doc_number": "2617-D03",
+          "project_number": "2617",
+          "house": "D"
+        },
+        {
+          "vendor": "Amber Randall",
+          "amount": 1650.0,
+          "deposit": 0.0,
+          "total_amt": 1650.0,
+          "balance": 0.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "paid",
+          "bill_id": "7779",
+          "doc_number": "2617-B03",
+          "project_number": "2617",
+          "house": "B"
+        }
+      ],
+      "2026-04": [
+        {
+          "vendor": "HTM Group, LLC",
+          "amount": 3850.0,
+          "deposit": 0.0,
+          "total_amt": 3850.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "paid",
+          "bill_id": "7767",
+          "doc_number": "2617-A04",
+          "project_number": "2617",
+          "house": "A"
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Ross Suites LLC",
+          "amount": 2000.0,
+          "deposit": 0.0,
+          "total_amt": 2000.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6662",
+          "doc_number": "2617-E02",
+          "project_number": "2617",
+          "house": "E"
+        },
+        {
+          "vendor": "Irma Solis",
+          "amount": 2713.42,
+          "deposit": 0.0,
+          "total_amt": 2713.42,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6815",
+          "doc_number": "2617-D02",
+          "project_number": "2617",
+          "house": "D"
+        },
+        {
+          "vendor": "Vanessa Pacheco",
+          "amount": 3125.0,
+          "deposit": 0.0,
+          "total_amt": 3125.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6725",
+          "doc_number": "2617-C02",
+          "project_number": "2617",
+          "house": "C"
+        },
+        {
+          "vendor": "Amber Randall",
+          "amount": 3200.0,
+          "deposit": 0.0,
+          "total_amt": 3200.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6816",
+          "doc_number": "2617-B02",
+          "project_number": "2617",
+          "house": "B"
+        },
+        {
+          "vendor": "Irma Solis",
+          "amount": 3100.0,
+          "deposit": 1500.0,
+          "total_amt": 4600.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-04",
+          "due_date": "2026-03-04",
+          "status": "paid",
+          "bill_id": "6548",
+          "doc_number": "2617-D01",
+          "project_number": "2617",
+          "house": "D"
+        },
+        {
+          "vendor": "HTM Group, LLC",
+          "amount": 3850.0,
+          "deposit": 0.0,
+          "total_amt": 3850.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "6747",
+          "doc_number": "2617-A03",
+          "project_number": "2617",
+          "house": "A"
+        },
+        {
+          "vendor": "Ross Suites LLC",
+          "amount": 4150.0,
+          "deposit": 500.0,
+          "total_amt": 4650.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-13",
+          "due_date": "2026-03-13",
+          "status": "paid",
+          "bill_id": "6661",
+          "doc_number": "2617-E01",
+          "project_number": "2617",
+          "house": "E"
+        }
+      ],
+      "2026-02": [
+        {
+          "vendor": "HTM Group, LLC",
+          "amount": 1320.0,
+          "deposit": 0.0,
+          "total_amt": 1320.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "6300",
+          "doc_number": "2617-02",
+          "project_number": "2617",
+          "house": null
+        },
+        {
+          "vendor": "HTM Group, LLC",
+          "amount": 3850.0,
+          "deposit": 500.0,
+          "total_amt": 4350.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-20",
+          "due_date": "2026-02-20",
+          "status": "paid",
+          "bill_id": "6256",
+          "doc_number": "2617-01",
+          "project_number": "2617",
+          "house": null
+        },
+        {
+          "vendor": "Vanessa Pacheco",
+          "amount": 3325.0,
+          "deposit": 250.0,
+          "total_amt": 3575.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-27",
+          "due_date": "2026-02-27",
+          "status": "paid",
+          "bill_id": "6463",
+          "doc_number": "2617-C01",
+          "project_number": "2617",
+          "house": "C"
+        },
+        {
+          "vendor": "Amber Randall",
+          "amount": 3350.0,
+          "deposit": 1500.0,
+          "total_amt": 4850.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-27",
+          "due_date": "2026-02-27",
+          "status": "paid",
+          "bill_id": "6462",
+          "doc_number": "2617-B01",
+          "project_number": "2617",
+          "house": "B"
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628": {
+      "2026-05": [
+        {
+          "vendor": "Joshua Aldama",
+          "amount": 2000.0,
+          "deposit": 0.0,
+          "total_amt": 2000.0,
+          "balance": 0.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "paid",
+          "bill_id": "7783",
+          "doc_number": "2628-02",
+          "project_number": "2628",
           "house": null
         }
       ],
       "2026-03": [
         {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
+          "vendor": "Joshua Aldama",
+          "amount": 4280.0,
+          "deposit": 1350.0,
+          "total_amt": 5630.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-30",
+          "due_date": "2026-03-30",
+          "status": "paid",
+          "bill_id": "7001",
+          "doc_number": "2628-01",
+          "project_number": "2628",
+          "house": null
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House G]": {
+      "2026-05": [
+        {
+          "vendor": "Vanessa Pacheco",
+          "amount": 2075.0,
           "deposit": 0.0,
-          "total_amt": 1875.0,
+          "total_amt": 2075.0,
+          "balance": 0.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "paid",
+          "bill_id": "7782",
+          "doc_number": "2617-G01",
+          "project_number": "2617",
+          "house": "G"
+        }
+      ]
+    },
+    "Gray Construction - Bristol, TN - Paul - 2592 [House B]": {
+      "2026-04": [
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1900.0,
+          "deposit": 0.0,
+          "total_amt": 1900.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "paid",
+          "bill_id": "6109",
+          "doc_number": "2592-B17",
+          "project_number": "2592",
+          "house": "B"
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1900.0,
+          "deposit": 0.0,
+          "total_amt": 1900.0,
           "balance": 0.0,
           "txn_date": "2026-03-31",
           "due_date": "2026-03-31",
           "status": "paid",
-          "bill_id": "5754",
-          "doc_number": "2553-10",
-          "project_number": "2553",
-          "house": null
+          "bill_id": "6108",
+          "doc_number": "2592-B16",
+          "project_number": "2592",
+          "house": "B"
         }
       ],
       "2026-02": [
         {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1900.0,
           "deposit": 0.0,
-          "total_amt": 1875.0,
+          "total_amt": 1900.0,
           "balance": 0.0,
           "txn_date": "2026-02-28",
           "due_date": "2026-02-28",
           "status": "paid",
-          "bill_id": "5753",
-          "doc_number": "2553-09",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2026-10": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 1875.0,
-          "txn_date": "2026-10-31",
-          "due_date": "2026-10-31",
-          "status": "sent",
-          "bill_id": "5761",
-          "doc_number": "2553-17",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2026-09": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 1875.0,
-          "txn_date": "2026-09-30",
-          "due_date": "2026-09-30",
-          "status": "sent",
-          "bill_id": "5760",
-          "doc_number": "2553-16",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2026-08": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 1875.0,
-          "txn_date": "2026-08-31",
-          "due_date": "2026-08-31",
-          "status": "sent",
-          "bill_id": "5759",
-          "doc_number": "2553-15",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2026-07": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 1875.0,
-          "txn_date": "2026-07-31",
-          "due_date": "2026-07-31",
-          "status": "sent",
-          "bill_id": "5758",
-          "doc_number": "2553-14",
-          "project_number": "2553",
-          "house": null
+          "bill_id": "6107",
+          "doc_number": "2592-B15",
+          "project_number": "2592",
+          "house": "B"
         }
       ],
       "2026-06": [
         {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1900.0,
           "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 1875.0,
+          "total_amt": 1900.0,
+          "balance": 1900.0,
           "txn_date": "2026-06-30",
           "due_date": "2026-06-30",
           "status": "sent",
-          "bill_id": "5757",
-          "doc_number": "2553-13",
-          "project_number": "2553",
-          "house": null
+          "bill_id": "6111",
+          "doc_number": "2592-B19",
+          "project_number": "2592",
+          "house": "B"
         }
       ],
       "2026-05": [
         {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1900.0,
           "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 1875.0,
+          "total_amt": 1900.0,
+          "balance": 1900.0,
           "txn_date": "2026-05-31",
           "due_date": "2026-05-31",
           "status": "sent",
-          "bill_id": "5756",
-          "doc_number": "2553-12",
-          "project_number": "2553",
-          "house": null
+          "bill_id": "6110",
+          "doc_number": "2592-B18",
+          "project_number": "2592",
+          "house": "B"
         }
       ],
       "2026-01": [
         {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
+          "vendor": "Jesse & Sarah Hunniecutt",
+          "amount": 1900.0,
           "deposit": 0.0,
-          "total_amt": 1875.0,
+          "total_amt": 1900.0,
           "balance": 0.0,
           "txn_date": "2026-01-31",
           "due_date": "2026-01-31",
           "status": "paid",
-          "bill_id": "5587",
-          "doc_number": "2553-08",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2025-12": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 0.0,
-          "txn_date": "2025-12-31",
-          "due_date": "2025-12-31",
-          "status": "paid",
-          "bill_id": "4883",
-          "doc_number": "2553-07",
-          "project_number": "2553",
-          "house": null
-        },
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 0.0,
-          "txn_date": "2025-12-01",
-          "due_date": "2025-12-01",
-          "status": "paid",
-          "bill_id": "4468",
-          "doc_number": "2553-06",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2025-10": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 0.0,
-          "txn_date": "2025-10-31",
-          "due_date": "2025-10-31",
-          "status": "paid",
-          "bill_id": "3652",
-          "doc_number": "2553-05",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2025-09": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 675.0,
-          "deposit": 0.0,
-          "total_amt": 675.0,
-          "balance": 0.0,
-          "txn_date": "2025-09-02",
-          "due_date": "2025-09-02",
-          "status": "paid",
-          "bill_id": "3060",
-          "doc_number": "2553-02",
-          "project_number": "2553",
-          "house": null
-        },
-        {
-          "vendor": "Nell Oakley",
-          "amount": 1875.0,
-          "deposit": 0.0,
-          "total_amt": 1875.0,
-          "balance": 0.0,
-          "txn_date": "2025-09-29",
-          "due_date": "2025-09-29",
-          "status": "paid",
-          "bill_id": "3235",
-          "doc_number": "2553-04",
-          "project_number": "2553",
-          "house": null
-        }
-      ],
-      "2025-08": [
-        {
-          "vendor": "Nell Oakley",
-          "amount": 2375.0,
-          "deposit": 875.0,
-          "total_amt": 3250.0,
-          "balance": 0.0,
-          "txn_date": "2025-08-01",
-          "due_date": "2025-08-01",
-          "status": "paid",
-          "bill_id": "2228",
-          "doc_number": "2553-01",
-          "project_number": "2553",
-          "house": null
+          "bill_id": "5574",
+          "doc_number": "2592-B14",
+          "project_number": "2592",
+          "house": "B"
         }
       ]
     },
     "Rising Sun Developing": {
       "2026-04": [
+        {
+          "vendor": "Scott Miller Lakeside LLC",
+          "amount": 3620.0,
+          "deposit": 0.0,
+          "total_amt": 3620.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "paid",
+          "bill_id": "7206",
+          "doc_number": "2632-A02",
+          "project_number": null,
+          "house": null
+        },
         {
           "vendor": "Abode Appalachia",
           "amount": 2500.0,
@@ -12355,20 +12621,6 @@
           "house": null
         },
         {
-          "vendor": "Scott Miller Lakeside LLC",
-          "amount": 3620.0,
-          "deposit": 0.0,
-          "total_amt": 3620.0,
-          "balance": 3620.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "7206",
-          "doc_number": "2632-A02",
-          "project_number": null,
-          "house": null
-        },
-        {
           "vendor": "Giovanni Dattalo",
           "amount": 1700.0,
           "deposit": 0.0,
@@ -12376,7 +12628,7 @@
           "balance": 1700.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7273",
           "doc_number": "2632-B02",
           "project_number": null,
@@ -12474,7 +12726,7 @@
           "balance": 416.66,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6278",
           "doc_number": "2579-C08",
           "project_number": null,
@@ -12488,7 +12740,7 @@
           "balance": 750.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6275",
           "doc_number": "2579-B08",
           "project_number": null,
@@ -12502,7 +12754,7 @@
           "balance": 680.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6272",
           "doc_number": "2579-A08",
           "project_number": null,
@@ -14482,6 +14734,338 @@
         }
       ]
     },
+    "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607": {
+      "2026-04": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 614.0,
+          "deposit": 0.0,
+          "total_amt": 614.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-29",
+          "due_date": "2026-04-29",
+          "status": "paid",
+          "bill_id": "7721",
+          "doc_number": "2607-05",
+          "project_number": "2607",
+          "house": null
+        },
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 613.36,
+          "deposit": 0.0,
+          "total_amt": 613.36,
+          "balance": 0.0,
+          "txn_date": "2026-04-22",
+          "due_date": "2026-04-22",
+          "status": "paid",
+          "bill_id": "7612",
+          "doc_number": "2607-04",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2450.0,
+          "deposit": 0.0,
+          "total_amt": 2450.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-16",
+          "due_date": "2026-03-16",
+          "status": "paid",
+          "bill_id": "6711",
+          "doc_number": "2607-03",
+          "project_number": "2607",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2526.66,
+          "deposit": 0.0,
+          "total_amt": 2526.66,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5516",
+          "doc_number": "2607-02",
+          "project_number": "2607",
+          "house": null
+        },
+        {
+          "vendor": "Alaba G. Idowu",
+          "amount": 2450.0,
+          "deposit": 1000.0,
+          "total_amt": 3450.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-22",
+          "due_date": "2026-01-22",
+          "status": "paid",
+          "bill_id": "5515",
+          "doc_number": "2607-01",
+          "project_number": "2607",
+          "house": null
+        }
+      ]
+    },
+    "Southern Wall Systems - Ann Arbor, MI - Logan - 2553": {
+      "2026-04": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "paid",
+          "bill_id": "5755",
+          "doc_number": "2553-11",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-03": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2026-03-31",
+          "due_date": "2026-03-31",
+          "status": "paid",
+          "bill_id": "5754",
+          "doc_number": "2553-10",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-02": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "5753",
+          "doc_number": "2553-09",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-10": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 1875.0,
+          "txn_date": "2026-10-31",
+          "due_date": "2026-10-31",
+          "status": "sent",
+          "bill_id": "5761",
+          "doc_number": "2553-17",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-09": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 1875.0,
+          "txn_date": "2026-09-30",
+          "due_date": "2026-09-30",
+          "status": "sent",
+          "bill_id": "5760",
+          "doc_number": "2553-16",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-08": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 1875.0,
+          "txn_date": "2026-08-31",
+          "due_date": "2026-08-31",
+          "status": "sent",
+          "bill_id": "5759",
+          "doc_number": "2553-15",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-07": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 1875.0,
+          "txn_date": "2026-07-31",
+          "due_date": "2026-07-31",
+          "status": "sent",
+          "bill_id": "5758",
+          "doc_number": "2553-14",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-06": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 1875.0,
+          "txn_date": "2026-06-30",
+          "due_date": "2026-06-30",
+          "status": "sent",
+          "bill_id": "5757",
+          "doc_number": "2553-13",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-05": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 1875.0,
+          "txn_date": "2026-05-31",
+          "due_date": "2026-05-31",
+          "status": "sent",
+          "bill_id": "5756",
+          "doc_number": "2553-12",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2026-01": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2026-01-31",
+          "due_date": "2026-01-31",
+          "status": "paid",
+          "bill_id": "5587",
+          "doc_number": "2553-08",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2025-12": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-31",
+          "due_date": "2025-12-31",
+          "status": "paid",
+          "bill_id": "4883",
+          "doc_number": "2553-07",
+          "project_number": "2553",
+          "house": null
+        },
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2025-12-01",
+          "due_date": "2025-12-01",
+          "status": "paid",
+          "bill_id": "4468",
+          "doc_number": "2553-06",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2025-10": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2025-10-31",
+          "due_date": "2025-10-31",
+          "status": "paid",
+          "bill_id": "3652",
+          "doc_number": "2553-05",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2025-09": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 675.0,
+          "deposit": 0.0,
+          "total_amt": 675.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-02",
+          "due_date": "2025-09-02",
+          "status": "paid",
+          "bill_id": "3060",
+          "doc_number": "2553-02",
+          "project_number": "2553",
+          "house": null
+        },
+        {
+          "vendor": "Nell Oakley",
+          "amount": 1875.0,
+          "deposit": 0.0,
+          "total_amt": 1875.0,
+          "balance": 0.0,
+          "txn_date": "2025-09-29",
+          "due_date": "2025-09-29",
+          "status": "paid",
+          "bill_id": "3235",
+          "doc_number": "2553-04",
+          "project_number": "2553",
+          "house": null
+        }
+      ],
+      "2025-08": [
+        {
+          "vendor": "Nell Oakley",
+          "amount": 2375.0,
+          "deposit": 875.0,
+          "total_amt": 3250.0,
+          "balance": 0.0,
+          "txn_date": "2025-08-01",
+          "due_date": "2025-08-01",
+          "status": "paid",
+          "bill_id": "2228",
+          "doc_number": "2553-01",
+          "project_number": "2553",
+          "house": null
+        }
+      ]
+    },
     "Power Design - Tucson, AZ - Zeke - 2615": {
       "2026-04": [
         {
@@ -16300,7 +16884,7 @@
           "balance": 4750.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7223",
           "doc_number": "2623-C02",
           "project_number": "2623",
@@ -18046,7 +18630,7 @@
           "balance": 2600.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7694",
           "doc_number": "2506-E08",
           "project_number": "2506",
@@ -20644,168 +21228,6 @@
         }
       ]
     },
-    "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]": {
-      "2026-04": [
-        {
-          "vendor": "Currie's Property Rentals",
-          "amount": 4300.0,
-          "deposit": 0.0,
-          "total_amt": 4300.0,
-          "balance": 0.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "paid",
-          "bill_id": "7569",
-          "doc_number": "2613-C04",
-          "project_number": "2613",
-          "house": "C"
-        },
-        {
-          "vendor": "APS Acquisitions, LLC",
-          "amount": 320.0,
-          "deposit": 0.0,
-          "total_amt": 320.0,
-          "balance": 0.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "paid",
-          "bill_id": "7568",
-          "doc_number": "2613-04",
-          "project_number": "2613",
-          "house": null
-        },
-        {
-          "vendor": "Karina Kislitsyna",
-          "amount": 3087.1,
-          "deposit": 1000.0,
-          "total_amt": 4087.1,
-          "balance": 0.0,
-          "txn_date": "2026-04-21",
-          "due_date": "2026-04-21",
-          "status": "paid",
-          "bill_id": "7570",
-          "doc_number": "2613-E01",
-          "project_number": "2613",
-          "house": "E"
-        },
-        {
-          "vendor": "Cayetano Saucedo",
-          "amount": 2845.0,
-          "deposit": 0.0,
-          "total_amt": 2845.0,
-          "balance": 0.0,
-          "txn_date": "2026-04-20",
-          "due_date": "2026-04-20",
-          "status": "paid",
-          "bill_id": "7540",
-          "doc_number": "2613-D01",
-          "project_number": "2613",
-          "house": "D"
-        }
-      ],
-      "2026-03": [
-        {
-          "vendor": "APS Acquisitions, LLC",
-          "amount": 1600.0,
-          "deposit": 0.0,
-          "total_amt": 1600.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "7015",
-          "doc_number": "2613-03",
-          "project_number": "2613",
-          "house": null
-        },
-        {
-          "vendor": "Currie's Property Rentals",
-          "amount": 4600.0,
-          "deposit": 0.0,
-          "total_amt": 4600.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-30",
-          "due_date": "2026-03-30",
-          "status": "paid",
-          "bill_id": "7002",
-          "doc_number": "2613-C03",
-          "project_number": "2613",
-          "house": "C"
-        }
-      ],
-      "2026-02": [
-        {
-          "vendor": "APS Acquisitions, LLC",
-          "amount": 3400.0,
-          "deposit": 0.0,
-          "total_amt": 3400.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "6050",
-          "doc_number": "2613-02",
-          "project_number": "2613",
-          "house": null
-        },
-        {
-          "vendor": "Currie's Property Rentals",
-          "amount": 1720.0,
-          "deposit": 0.0,
-          "total_amt": 1720.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "6193",
-          "doc_number": "2613-C02",
-          "project_number": "2613",
-          "house": "C"
-        },
-        {
-          "vendor": "APS Acquisitions, LLC",
-          "amount": 3200.0,
-          "deposit": 3200.0,
-          "total_amt": 6400.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-13",
-          "due_date": "2026-02-13",
-          "status": "paid",
-          "bill_id": "6049",
-          "doc_number": "2613-01",
-          "project_number": "2613",
-          "house": null
-        },
-        {
-          "vendor": "Currie's Property Rentals",
-          "amount": 4300.0,
-          "deposit": 0.0,
-          "total_amt": 4300.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-19",
-          "due_date": "2026-02-19",
-          "status": "paid",
-          "bill_id": "6192",
-          "doc_number": "2613-C01",
-          "project_number": "2613",
-          "house": "C"
-        },
-        {
-          "vendor": "Currie's Property Rentals",
-          "amount": 0.0,
-          "deposit": 4300.0,
-          "total_amt": 4300.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-19",
-          "due_date": "2026-02-19",
-          "status": "paid",
-          "bill_id": "6191",
-          "doc_number": "2613-C01 [sec]",
-          "project_number": "2613",
-          "house": "C"
-        }
-      ]
-    },
     "Miller Pipeline (Artera) - Saint Peters, MO - Paul - 2506 [House H]": {
       "2026-04": [
         {
@@ -21038,7 +21460,7 @@
           "balance": 2600.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7697",
           "doc_number": "2506-I04",
           "project_number": "2506",
@@ -21102,7 +21524,7 @@
           "balance": 2675.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7695",
           "doc_number": "2506-G06",
           "project_number": "2506",
@@ -21212,7 +21634,7 @@
           "balance": 1902.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7688",
           "doc_number": "2633-02",
           "project_number": "2633",
@@ -21260,7 +21682,7 @@
           "balance": 4350.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "5989",
           "doc_number": "2513-15",
           "project_number": "2513",
@@ -21854,7 +22276,7 @@
           "balance": 5400.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6336",
           "doc_number": "2614-B04",
           "project_number": "2614",
@@ -21868,7 +22290,7 @@
           "balance": 2350.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6354",
           "doc_number": "2614-C04",
           "project_number": "2614",
@@ -21882,7 +22304,7 @@
           "balance": 2870.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6327",
           "doc_number": "2614-A04",
           "project_number": "2614",
@@ -22986,7 +23408,7 @@
           "balance": 6175.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7427",
           "doc_number": "2621-B02",
           "project_number": "2621",
@@ -23018,7 +23440,7 @@
           "balance": 4450.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "7390",
           "doc_number": "2634-02",
           "project_number": "2634",
@@ -23418,7 +23840,7 @@
           "balance": 1950.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "6540",
           "doc_number": "2592-A17",
           "project_number": "2592",
@@ -23760,166 +24182,6 @@
         }
       ]
     },
-    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]": {
-      "2026-03": [
-        {
-          "vendor": "Ross Suites LLC",
-          "amount": 2000.0,
-          "deposit": 0.0,
-          "total_amt": 2000.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6662",
-          "doc_number": "2617-E02",
-          "project_number": "2617",
-          "house": "E"
-        },
-        {
-          "vendor": "Irma Solis",
-          "amount": 2713.42,
-          "deposit": 0.0,
-          "total_amt": 2713.42,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6815",
-          "doc_number": "2617-D02",
-          "project_number": "2617",
-          "house": "D"
-        },
-        {
-          "vendor": "Vanessa Pacheco",
-          "amount": 3125.0,
-          "deposit": 0.0,
-          "total_amt": 3125.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6725",
-          "doc_number": "2617-C02",
-          "project_number": "2617",
-          "house": "C"
-        },
-        {
-          "vendor": "Amber Randall",
-          "amount": 3200.0,
-          "deposit": 0.0,
-          "total_amt": 3200.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6816",
-          "doc_number": "2617-B02",
-          "project_number": "2617",
-          "house": "B"
-        },
-        {
-          "vendor": "Irma Solis",
-          "amount": 3100.0,
-          "deposit": 1500.0,
-          "total_amt": 4600.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-04",
-          "due_date": "2026-03-04",
-          "status": "paid",
-          "bill_id": "6548",
-          "doc_number": "2617-D01",
-          "project_number": "2617",
-          "house": "D"
-        },
-        {
-          "vendor": "HTM Group, LLC",
-          "amount": 3850.0,
-          "deposit": 0.0,
-          "total_amt": 3850.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6747",
-          "doc_number": "2617-A03",
-          "project_number": "2617",
-          "house": "A"
-        },
-        {
-          "vendor": "Ross Suites LLC",
-          "amount": 4150.0,
-          "deposit": 500.0,
-          "total_amt": 4650.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-13",
-          "due_date": "2026-03-13",
-          "status": "paid",
-          "bill_id": "6661",
-          "doc_number": "2617-E01",
-          "project_number": "2617",
-          "house": "E"
-        }
-      ],
-      "2026-02": [
-        {
-          "vendor": "HTM Group, LLC",
-          "amount": 1320.0,
-          "deposit": 0.0,
-          "total_amt": 1320.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "6300",
-          "doc_number": "2617-02",
-          "project_number": "2617",
-          "house": null
-        },
-        {
-          "vendor": "HTM Group, LLC",
-          "amount": 3850.0,
-          "deposit": 500.0,
-          "total_amt": 4350.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-20",
-          "due_date": "2026-02-20",
-          "status": "paid",
-          "bill_id": "6256",
-          "doc_number": "2617-01",
-          "project_number": "2617",
-          "house": null
-        },
-        {
-          "vendor": "Vanessa Pacheco",
-          "amount": 3325.0,
-          "deposit": 250.0,
-          "total_amt": 3575.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-27",
-          "due_date": "2026-02-27",
-          "status": "paid",
-          "bill_id": "6463",
-          "doc_number": "2617-C01",
-          "project_number": "2617",
-          "house": "C"
-        },
-        {
-          "vendor": "Amber Randall",
-          "amount": 3350.0,
-          "deposit": 1500.0,
-          "total_amt": 4850.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-27",
-          "due_date": "2026-02-27",
-          "status": "paid",
-          "bill_id": "6462",
-          "doc_number": "2617-B01",
-          "project_number": "2617",
-          "house": "B"
-        }
-      ]
-    },
     "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]": {
       "2026-04": [
         {
@@ -23964,104 +24226,6 @@
           "bill_id": "6159",
           "doc_number": "2613-B01",
           "project_number": "2613",
-          "house": "B"
-        }
-      ]
-    },
-    "Gray Construction - Bristol, TN - Paul - 2592 [House B]": {
-      "2026-03": [
-        {
-          "vendor": "Jesse & Sarah Hunniecutt",
-          "amount": 1900.0,
-          "deposit": 0.0,
-          "total_amt": 1900.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-31",
-          "due_date": "2026-03-31",
-          "status": "paid",
-          "bill_id": "6108",
-          "doc_number": "2592-B16",
-          "project_number": "2592",
-          "house": "B"
-        }
-      ],
-      "2026-02": [
-        {
-          "vendor": "Jesse & Sarah Hunniecutt",
-          "amount": 1900.0,
-          "deposit": 0.0,
-          "total_amt": 1900.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "6107",
-          "doc_number": "2592-B15",
-          "project_number": "2592",
-          "house": "B"
-        }
-      ],
-      "2026-06": [
-        {
-          "vendor": "Jesse & Sarah Hunniecutt",
-          "amount": 1900.0,
-          "deposit": 0.0,
-          "total_amt": 1900.0,
-          "balance": 1900.0,
-          "txn_date": "2026-06-30",
-          "due_date": "2026-06-30",
-          "status": "sent",
-          "bill_id": "6111",
-          "doc_number": "2592-B19",
-          "project_number": "2592",
-          "house": "B"
-        }
-      ],
-      "2026-05": [
-        {
-          "vendor": "Jesse & Sarah Hunniecutt",
-          "amount": 1900.0,
-          "deposit": 0.0,
-          "total_amt": 1900.0,
-          "balance": 1900.0,
-          "txn_date": "2026-05-31",
-          "due_date": "2026-05-31",
-          "status": "sent",
-          "bill_id": "6110",
-          "doc_number": "2592-B18",
-          "project_number": "2592",
-          "house": "B"
-        }
-      ],
-      "2026-04": [
-        {
-          "vendor": "Jesse & Sarah Hunniecutt",
-          "amount": 1900.0,
-          "deposit": 0.0,
-          "total_amt": 1900.0,
-          "balance": 1900.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "sent",
-          "bill_id": "6109",
-          "doc_number": "2592-B17",
-          "project_number": "2592",
-          "house": "B"
-        }
-      ],
-      "2026-01": [
-        {
-          "vendor": "Jesse & Sarah Hunniecutt",
-          "amount": 1900.0,
-          "deposit": 0.0,
-          "total_amt": 1900.0,
-          "balance": 0.0,
-          "txn_date": "2026-01-31",
-          "due_date": "2026-01-31",
-          "status": "paid",
-          "bill_id": "5574",
-          "doc_number": "2592-B14",
-          "project_number": "2592",
           "house": "B"
         }
       ]
@@ -24444,7 +24608,7 @@
           "balance": 3000.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "5738",
           "doc_number": "2606-04",
           "project_number": "2606",
@@ -24508,7 +24672,7 @@
           "balance": 1200.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "5813",
           "doc_number": "2588-07",
           "project_number": "2588",
@@ -24670,7 +24834,7 @@
           "balance": 1800.0,
           "txn_date": "2026-04-30",
           "due_date": "2026-04-30",
-          "status": "sent",
+          "status": "overdue",
           "bill_id": "5808",
           "doc_number": "2582-08",
           "project_number": "2582",
@@ -24846,24 +25010,6 @@
           "bill_id": "4902",
           "doc_number": null,
           "project_number": "2590",
-          "house": null
-        }
-      ]
-    },
-    "Aggregate Resource Industries, Inc. - Las Vegas, NV - Logan - 2628": {
-      "2026-03": [
-        {
-          "vendor": "Joshua Aldama",
-          "amount": 4280.0,
-          "deposit": 1350.0,
-          "total_amt": 5630.0,
-          "balance": 0.0,
-          "txn_date": "2026-03-30",
-          "due_date": "2026-03-30",
-          "status": "paid",
-          "bill_id": "7001",
-          "doc_number": "2628-01",
-          "project_number": "2628",
           "house": null
         }
       ]
@@ -28903,6 +29049,146 @@
   },
   "ap_bills": [
     {
+      "vendor": "Warford Hospitality Co LLC",
+      "amount": 3420.0,
+      "deposit": 0.0,
+      "total_amt": 3420.0,
+      "balance": 0.0,
+      "txn_date": "2026-05-01",
+      "due_date": "2026-05-01",
+      "status": "paid",
+      "bill_id": "7785",
+      "doc_number": "2624-E01",
+      "project_number": "2624",
+      "house": "E"
+    },
+    {
+      "vendor": "Rising V Ventures, LLC",
+      "amount": 2800.0,
+      "deposit": 1500.0,
+      "total_amt": 4300.0,
+      "balance": 4300.0,
+      "txn_date": "2026-05-01",
+      "due_date": "2026-05-01",
+      "status": "sent",
+      "bill_id": "7784",
+      "doc_number": "2613-F01",
+      "project_number": "2613",
+      "house": "F"
+    },
+    {
+      "vendor": "Ross Suites LLC",
+      "amount": 2000.0,
+      "deposit": 0.0,
+      "total_amt": 2000.0,
+      "balance": 0.0,
+      "txn_date": "2026-05-01",
+      "due_date": "2026-05-01",
+      "status": "paid",
+      "bill_id": "7781",
+      "doc_number": "2617-F01",
+      "project_number": "2617",
+      "house": "F"
+    },
+    {
+      "vendor": "HTM Group, LLC",
+      "amount": 3850.0,
+      "deposit": 0.0,
+      "total_amt": 3850.0,
+      "balance": 0.0,
+      "txn_date": "2026-04-30",
+      "due_date": "2026-04-30",
+      "status": "paid",
+      "bill_id": "7767",
+      "doc_number": "2617-A04",
+      "project_number": "2617",
+      "house": "A"
+    },
+    {
+      "vendor": "Irma Solis",
+      "amount": 1450.0,
+      "deposit": 0.0,
+      "total_amt": 1450.0,
+      "balance": 0.0,
+      "txn_date": "2026-05-01",
+      "due_date": "2026-05-01",
+      "status": "paid",
+      "bill_id": "7780",
+      "doc_number": "2617-D03",
+      "project_number": "2617",
+      "house": "D"
+    },
+    {
+      "vendor": "Joshua Aldama",
+      "amount": 2000.0,
+      "deposit": 0.0,
+      "total_amt": 2000.0,
+      "balance": 0.0,
+      "txn_date": "2026-05-01",
+      "due_date": "2026-05-01",
+      "status": "paid",
+      "bill_id": "7783",
+      "doc_number": "2628-02",
+      "project_number": "2628",
+      "house": null
+    },
+    {
+      "vendor": "Vanessa Pacheco",
+      "amount": 2075.0,
+      "deposit": 0.0,
+      "total_amt": 2075.0,
+      "balance": 0.0,
+      "txn_date": "2026-05-01",
+      "due_date": "2026-05-01",
+      "status": "paid",
+      "bill_id": "7782",
+      "doc_number": "2617-G01",
+      "project_number": "2617",
+      "house": "G"
+    },
+    {
+      "vendor": "Amber Randall",
+      "amount": 1650.0,
+      "deposit": 0.0,
+      "total_amt": 1650.0,
+      "balance": 0.0,
+      "txn_date": "2026-05-01",
+      "due_date": "2026-05-01",
+      "status": "paid",
+      "bill_id": "7779",
+      "doc_number": "2617-B03",
+      "project_number": "2617",
+      "house": "B"
+    },
+    {
+      "vendor": "Jesse & Sarah Hunniecutt",
+      "amount": 1900.0,
+      "deposit": 0.0,
+      "total_amt": 1900.0,
+      "balance": 0.0,
+      "txn_date": "2026-04-30",
+      "due_date": "2026-04-30",
+      "status": "paid",
+      "bill_id": "6109",
+      "doc_number": "2592-B17",
+      "project_number": "2592",
+      "house": "B"
+    },
+    {
+      "vendor": "Scott Miller Lakeside LLC",
+      "amount": 3620.0,
+      "deposit": 0.0,
+      "total_amt": 3620.0,
+      "balance": 0.0,
+      "txn_date": "2026-04-30",
+      "due_date": "2026-04-30",
+      "status": "paid",
+      "bill_id": "7206",
+      "doc_number": "2632-A02",
+      "project_number": null,
+      "house": null
+    },
+    {
       "vendor": "Alaba G. Idowu",
       "amount": 614.0,
       "deposit": 0.0,
@@ -28924,7 +29210,7 @@
       "balance": 880.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7680",
       "doc_number": "2624-D02",
       "project_number": "2624",
@@ -29617,20 +29903,6 @@
       "house": null
     },
     {
-      "vendor": "Scott Miller Lakeside LLC",
-      "amount": 3620.0,
-      "deposit": 0.0,
-      "total_amt": 3620.0,
-      "balance": 3620.0,
-      "txn_date": "2026-04-30",
-      "due_date": "2026-04-30",
-      "status": "sent",
-      "bill_id": "7206",
-      "doc_number": "2632-A02",
-      "project_number": null,
-      "house": null
-    },
-    {
       "vendor": "Giovanni Dattalo",
       "amount": 1700.0,
       "deposit": 0.0,
@@ -29638,7 +29910,7 @@
       "balance": 1700.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7273",
       "doc_number": "2632-B02",
       "project_number": null,
@@ -29666,7 +29938,7 @@
       "balance": 2600.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7697",
       "doc_number": "2506-I04",
       "project_number": "2506",
@@ -29680,7 +29952,7 @@
       "balance": 2675.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7695",
       "doc_number": "2506-G06",
       "project_number": "2506",
@@ -29694,7 +29966,7 @@
       "balance": 2600.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7694",
       "doc_number": "2506-E08",
       "project_number": "2506",
@@ -29708,7 +29980,7 @@
       "balance": 1902.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7688",
       "doc_number": "2633-02",
       "project_number": "2633",
@@ -29722,7 +29994,7 @@
       "balance": 4750.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7223",
       "doc_number": "2623-C02",
       "project_number": "2623",
@@ -29750,7 +30022,7 @@
       "balance": 4350.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "5989",
       "doc_number": "2513-15",
       "project_number": "2513",
@@ -29778,7 +30050,7 @@
       "balance": 10000.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7683",
       "doc_number": "2624-C02",
       "project_number": "2624",
@@ -29792,7 +30064,7 @@
       "balance": 5200.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7682",
       "doc_number": "2624-B02",
       "project_number": "2624",
@@ -29806,7 +30078,7 @@
       "balance": 4200.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7681",
       "doc_number": "2624-A02",
       "project_number": "2624",
@@ -30422,7 +30694,7 @@
       "balance": 6175.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7427",
       "doc_number": "2621-B02",
       "project_number": "2621",
@@ -30464,7 +30736,7 @@
       "balance": 4450.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "7390",
       "doc_number": "2634-02",
       "project_number": "2634",
@@ -33530,7 +33802,7 @@
       "balance": 1950.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6540",
       "doc_number": "2592-A17",
       "project_number": "2592",
@@ -34468,7 +34740,7 @@
       "balance": 5400.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6336",
       "doc_number": "2614-B04",
       "project_number": "2614",
@@ -34496,7 +34768,7 @@
       "balance": 2350.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6354",
       "doc_number": "2614-C04",
       "project_number": "2614",
@@ -34692,7 +34964,7 @@
       "balance": 2870.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6327",
       "doc_number": "2614-A04",
       "project_number": "2614",
@@ -34720,7 +34992,7 @@
       "balance": 416.66,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6278",
       "doc_number": "2579-C08",
       "project_number": null,
@@ -34734,7 +35006,7 @@
       "balance": 750.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6275",
       "doc_number": "2579-B08",
       "project_number": null,
@@ -34748,7 +35020,7 @@
       "balance": 680.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "6272",
       "doc_number": "2579-A08",
       "project_number": null,
@@ -35101,20 +35373,6 @@
       "status": "sent",
       "bill_id": "6110",
       "doc_number": "2592-B18",
-      "project_number": "2592",
-      "house": "B"
-    },
-    {
-      "vendor": "Jesse & Sarah Hunniecutt",
-      "amount": 1900.0,
-      "deposit": 0.0,
-      "total_amt": 1900.0,
-      "balance": 1900.0,
-      "txn_date": "2026-04-30",
-      "due_date": "2026-04-30",
-      "status": "sent",
-      "bill_id": "6109",
-      "doc_number": "2592-B17",
       "project_number": "2592",
       "house": "B"
     },
@@ -35868,7 +36126,7 @@
       "balance": 1200.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "5813",
       "doc_number": "2588-07",
       "project_number": "2588",
@@ -35938,7 +36196,7 @@
       "balance": 1800.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "5808",
       "doc_number": "2582-08",
       "project_number": "2582",
@@ -36190,7 +36448,7 @@
       "balance": 3000.0,
       "txn_date": "2026-04-30",
       "due_date": "2026-04-30",
-      "status": "sent",
+      "status": "overdue",
       "bill_id": "5738",
       "doc_number": "2606-04",
       "project_number": "2606",
@@ -47433,13 +47691,13 @@
     }
   ],
   "summary": {
-    "invoices_total": 953,
+    "invoices_total": 954,
     "invoices_ignored": 72,
-    "invoices_matched": 875,
+    "invoices_matched": 876,
     "invoices_unmatched": 6,
-    "bills_total": 1266,
+    "bills_total": 1274,
     "bills_ignored": 30,
-    "bills_matched": 1131,
+    "bills_matched": 1139,
     "bills_unmatched": 105
   }
 }
