@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T08:08:05.718749",
+  "generated_at": "2026-05-01T17:58:29.411559",
   "projects": [
     {
       "name": "Gray Construction - Bristol, TN - Paul - 2592 [House B]",
@@ -168,6 +168,13 @@
       "start_date": "2026-02-08",
       "end_date": "2026-08-09",
       "project_number": "2606"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
+      "status": "Active",
+      "start_date": "2026-01-22",
+      "end_date": "2026-05-08",
+      "project_number": "2607"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
@@ -409,6 +416,14 @@
       "urgency": "30",
       "gid": "1213240184667434",
       "project_number": "2613"
+    },
+    {
+      "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
+      "end_date": "2026-05-08",
+      "days": 7,
+      "urgency": "30",
+      "gid": "1212860002456293",
+      "project_number": "2607"
     },
     {
       "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,G]",

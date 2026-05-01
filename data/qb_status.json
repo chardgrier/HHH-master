@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T08:07:11.961382",
+  "generated_at": "2026-05-01T17:57:40.195625",
   "realm_id": "9341453766306267",
   "ar_status_by_project": {
     "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]": {
@@ -43,6 +43,18 @@
           "house": "C"
         },
         {
+          "status": "paid",
+          "amount": 3850.0,
+          "deposit": 0.0,
+          "total_amt": 3850.0,
+          "balance": 0.0,
+          "invoice_id": "6699",
+          "doc_number": "2613-B03",
+          "due_date": "2026-03-31",
+          "project_number": "2613",
+          "house": "B"
+        },
+        {
           "status": "overdue",
           "amount": 5500.0,
           "deposit": 0.0,
@@ -70,6 +82,18 @@
         },
         {
           "status": "paid",
+          "amount": 1796.67,
+          "deposit": 0.0,
+          "total_amt": 1796.67,
+          "balance": 0.0,
+          "invoice_id": "6106",
+          "doc_number": "2613-B02",
+          "due_date": "2026-03-18",
+          "project_number": "2613",
+          "house": "B"
+        },
+        {
+          "status": "paid",
           "amount": 7825.0,
           "deposit": 4300.0,
           "total_amt": 12125.0,
@@ -91,6 +115,18 @@
           "due_date": "2026-02-13",
           "project_number": "2613",
           "house": null
+        },
+        {
+          "status": "paid",
+          "amount": 3850.0,
+          "deposit": 1000.0,
+          "total_amt": 4850.0,
+          "balance": 0.0,
+          "invoice_id": "6105",
+          "doc_number": "2613-B01",
+          "due_date": "2026-02-17",
+          "project_number": "2613",
+          "house": "B"
         }
       ]
     },
@@ -6824,48 +6860,6 @@
         }
       ]
     },
-    "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]": {
-      "2026-03": [
-        {
-          "status": "paid",
-          "amount": 3850.0,
-          "deposit": 0.0,
-          "total_amt": 3850.0,
-          "balance": 0.0,
-          "invoice_id": "6699",
-          "doc_number": "2613-B03",
-          "due_date": "2026-03-31",
-          "project_number": "2613",
-          "house": "B"
-        }
-      ],
-      "2026-02": [
-        {
-          "status": "paid",
-          "amount": 1796.67,
-          "deposit": 0.0,
-          "total_amt": 1796.67,
-          "balance": 0.0,
-          "invoice_id": "6106",
-          "doc_number": "2613-B02",
-          "due_date": "2026-03-18",
-          "project_number": "2613",
-          "house": "B"
-        },
-        {
-          "status": "paid",
-          "amount": 3850.0,
-          "deposit": 1000.0,
-          "total_amt": 4850.0,
-          "balance": 0.0,
-          "invoice_id": "6105",
-          "doc_number": "2613-B01",
-          "due_date": "2026-02-17",
-          "project_number": "2613",
-          "house": "B"
-        }
-      ]
-    },
     "Arco- Lebanon, TN - Paul - 2616": {
       "2026-04": [
         {
@@ -12073,6 +12067,20 @@
           "doc_number": "2613-D01",
           "project_number": "2613",
           "house": "D"
+        },
+        {
+          "vendor": "Lance Powell",
+          "amount": 2500.0,
+          "deposit": 0.0,
+          "total_amt": 2500.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-01",
+          "due_date": "2026-04-01",
+          "status": "paid",
+          "bill_id": "7073",
+          "doc_number": "2613-B03",
+          "project_number": "2613",
+          "house": "B"
         }
       ],
       "2026-03": [
@@ -12121,6 +12129,20 @@
           "house": null
         },
         {
+          "vendor": "Lance Powell",
+          "amount": 1125.0,
+          "deposit": 0.0,
+          "total_amt": 1125.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-28",
+          "due_date": "2026-02-28",
+          "status": "paid",
+          "bill_id": "6208",
+          "doc_number": "2613-B02",
+          "project_number": "2613",
+          "house": "B"
+        },
+        {
           "vendor": "Currie's Property Rentals",
           "amount": 1720.0,
           "deposit": 0.0,
@@ -12133,6 +12155,20 @@
           "doc_number": "2613-C02",
           "project_number": "2613",
           "house": "C"
+        },
+        {
+          "vendor": "Lance Powell",
+          "amount": 2250.0,
+          "deposit": 1000.0,
+          "total_amt": 3250.0,
+          "balance": 0.0,
+          "txn_date": "2026-02-18",
+          "due_date": "2026-02-18",
+          "status": "paid",
+          "bill_id": "6159",
+          "doc_number": "2613-B01",
+          "project_number": "2613",
+          "house": "B"
         },
         {
           "vendor": "APS Acquisitions, LLC",
@@ -12178,7 +12214,7 @@
         }
       ]
     },
-    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]": {
+    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House F]": {
       "2026-05": [
         {
           "vendor": "Ross Suites LLC",
@@ -12193,7 +12229,27 @@
           "doc_number": "2617-F01",
           "project_number": "2617",
           "house": "F"
-        },
+        }
+      ]
+    },
+    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]": {
+      "2026-04": [
+        {
+          "vendor": "HTM Group, LLC",
+          "amount": 3850.0,
+          "deposit": 0.0,
+          "total_amt": 3850.0,
+          "balance": 0.0,
+          "txn_date": "2026-04-30",
+          "due_date": "2026-04-30",
+          "status": "paid",
+          "bill_id": "7767",
+          "doc_number": "2617-A04",
+          "project_number": "2617",
+          "house": "A"
+        }
+      ],
+      "2026-05": [
         {
           "vendor": "Irma Solis",
           "amount": 1450.0,
@@ -12209,6 +12265,20 @@
           "house": "D"
         },
         {
+          "vendor": "Vanessa Pacheco",
+          "amount": 2075.0,
+          "deposit": 0.0,
+          "total_amt": 2075.0,
+          "balance": 0.0,
+          "txn_date": "2026-05-01",
+          "due_date": "2026-05-01",
+          "status": "paid",
+          "bill_id": "7782",
+          "doc_number": "2617-G01",
+          "project_number": "2617",
+          "house": "G"
+        },
+        {
           "vendor": "Amber Randall",
           "amount": 1650.0,
           "deposit": 0.0,
@@ -12221,22 +12291,6 @@
           "doc_number": "2617-B03",
           "project_number": "2617",
           "house": "B"
-        }
-      ],
-      "2026-04": [
-        {
-          "vendor": "HTM Group, LLC",
-          "amount": 3850.0,
-          "deposit": 0.0,
-          "total_amt": 3850.0,
-          "balance": 0.0,
-          "txn_date": "2026-04-30",
-          "due_date": "2026-04-30",
-          "status": "paid",
-          "bill_id": "7767",
-          "doc_number": "2617-A04",
-          "project_number": "2617",
-          "house": "A"
         }
       ],
       "2026-03": [
@@ -12429,24 +12483,6 @@
           "doc_number": "2628-01",
           "project_number": "2628",
           "house": null
-        }
-      ]
-    },
-    "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House G]": {
-      "2026-05": [
-        {
-          "vendor": "Vanessa Pacheco",
-          "amount": 2075.0,
-          "deposit": 0.0,
-          "total_amt": 2075.0,
-          "balance": 0.0,
-          "txn_date": "2026-05-01",
-          "due_date": "2026-05-01",
-          "status": "paid",
-          "bill_id": "7782",
-          "doc_number": "2617-G01",
-          "project_number": "2617",
-          "house": "G"
         }
       ]
     },
@@ -24179,54 +24215,6 @@
           "doc_number": "2570",
           "project_number": "2570",
           "house": null
-        }
-      ]
-    },
-    "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House B]": {
-      "2026-04": [
-        {
-          "vendor": "Lance Powell",
-          "amount": 2500.0,
-          "deposit": 0.0,
-          "total_amt": 2500.0,
-          "balance": 0.0,
-          "txn_date": "2026-04-01",
-          "due_date": "2026-04-01",
-          "status": "paid",
-          "bill_id": "7073",
-          "doc_number": "2613-B03",
-          "project_number": "2613",
-          "house": "B"
-        }
-      ],
-      "2026-02": [
-        {
-          "vendor": "Lance Powell",
-          "amount": 1125.0,
-          "deposit": 0.0,
-          "total_amt": 1125.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-28",
-          "due_date": "2026-02-28",
-          "status": "paid",
-          "bill_id": "6208",
-          "doc_number": "2613-B02",
-          "project_number": "2613",
-          "house": "B"
-        },
-        {
-          "vendor": "Lance Powell",
-          "amount": 2250.0,
-          "deposit": 1000.0,
-          "total_amt": 3250.0,
-          "balance": 0.0,
-          "txn_date": "2026-02-18",
-          "due_date": "2026-02-18",
-          "status": "paid",
-          "bill_id": "6159",
-          "doc_number": "2613-B01",
-          "project_number": "2613",
-          "house": "B"
         }
       ]
     },

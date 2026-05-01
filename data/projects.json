@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T08:08:05.718749",
+  "generated_at": "2026-05-01T17:58:29.411559",
   "months": [
     "2025-08",
     "2025-09",
@@ -5153,9 +5153,9 @@
       "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
       "salesperson": "Logan",
       "project_number": "2607",
-      "status": "Closed",
+      "status": "Active",
       "start_date": "2026-01-22",
-      "end_date": "2026-04-30",
+      "end_date": "2026-05-08",
       "base_ar": 4425.0,
       "base_ap": 2300.0,
       "base_crew": 3,
@@ -5193,12 +5193,19 @@
           "commission": 425.0,
           "net_gp": 1700.0,
           "reconciled": true
+        },
+        "2026-05": {
+          "crew": 3,
+          "ar": 1180.0,
+          "ap": 613.33,
+          "commission": 113.33,
+          "net_gp": 453.34
         }
       },
       "total_2026": {
-        "ar": 14750.0,
-        "ap": 7666.67,
-        "net_gp": 5666.66
+        "ar": 15930.0,
+        "ap": 8280.0,
+        "net_gp": 6120.0
       },
       "source": "asana_custom_fields",
       "house_starts": [
@@ -8538,11 +8545,11 @@
       "gp_pct": 29.07
     },
     "2026-05": {
-      "crew": 376,
-      "ar": 608258.0,
-      "ap": 386966.26,
-      "net_gp": 187768.39,
-      "gp_pct": 30.87
+      "crew": 379,
+      "ar": 609438.0,
+      "ap": 387579.59,
+      "net_gp": 188221.73,
+      "gp_pct": 30.88
     },
     "2026-06": {
       "crew": 284,
@@ -9067,9 +9074,9 @@
         "commission": 3401.33
       },
       "2026-05": {
-        "ar": 46716.67,
-        "ap": 30772.0,
-        "commission": 3188.93
+        "ar": 47896.67,
+        "ap": 31385.33,
+        "commission": 3302.2599999999998
       },
       "2026-06": {
         "ar": 9905.0,
@@ -9344,6 +9351,14 @@
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
+      },
+      {
+        "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
+        "end_date": "2026-05-08",
+        "days": 7,
+        "salesperson": "Logan",
+        "gid": "1212860002456293",
+        "project_number": "2607"
       },
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,G]",

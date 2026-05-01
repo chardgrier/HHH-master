@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T08:08:05.718749",
+  "generated_at": "2026-05-01T17:58:29.411559",
   "months": [
     "2025-08",
     "2025-09",
@@ -3025,9 +3025,9 @@
     {
       "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
       "salesperson": "Logan",
-      "status": "Closed",
+      "status": "Active",
       "start_date": "2026-01-22",
-      "end_date": "2026-04-30",
+      "end_date": "2026-05-08",
       "monthly": {
         "2026-01": {
           "ar": 1475.0,
@@ -3052,6 +3052,12 @@
           "ap": 2300.0,
           "commission": 425.0,
           "net_gp": 1700.0
+        },
+        "2026-05": {
+          "ar": 1180.0,
+          "ap": 613.33,
+          "commission": 113.33,
+          "net_gp": 453.34
         }
       }
     },
