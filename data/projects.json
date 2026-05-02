@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T17:58:29.411559",
+  "generated_at": "2026-05-02T07:26:45.571189",
   "months": [
     "2025-08",
     "2025-09",
@@ -5582,7 +5582,7 @@
       "status": "Active",
       "start_date": "2026-02-21",
       "end_date": "2026-12-31",
-      "base_ar": 16800.0,
+      "base_ar": 20400.0,
       "base_ap": 20940.0,
       "base_crew": 10,
       "commission_model": "percent",
@@ -6261,7 +6261,7 @@
       "name": "Arco- Lebanon, TN - Paul - 2616",
       "salesperson": "Paul",
       "project_number": "2616",
-      "status": "Active",
+      "status": "Closed",
       "start_date": "2026-02-20",
       "end_date": "2026-05-01",
       "base_ar": 3000.0,
@@ -9336,18 +9336,12 @@
         "ar": 185
       }
     ],
-    "ap_exceeds_ar": [
-      {
-        "name": "Power Design - Starbase, TX -Zeke - 2614",
-        "ar": 16800.0,
-        "ap": 20940.0
-      }
-    ],
+    "ap_exceeds_ar": [],
     "ending_in_30": [
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [House A]",
         "end_date": "2026-05-03",
-        "days": 2,
+        "days": 1,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
@@ -9355,7 +9349,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Fort Sumner, NM - Logan - 2607",
         "end_date": "2026-05-08",
-        "days": 7,
+        "days": 6,
         "salesperson": "Logan",
         "gid": "1212860002456293",
         "project_number": "2607"
@@ -9363,7 +9357,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [Houses D,G]",
         "end_date": "2026-05-15",
-        "days": 14,
+        "days": 13,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
@@ -9371,7 +9365,7 @@
       {
         "name": "ARD Contracting - Eastaboga, AL - Zeke - 2537",
         "end_date": "2026-05-28",
-        "days": 27,
+        "days": 26,
         "salesperson": "Zeke",
         "gid": "1210240026827411",
         "project_number": "2537"
@@ -9379,7 +9373,7 @@
       {
         "name": "Scaffold Resource - Baton Rouge, LA - Zeke - 2594",
         "end_date": "2026-05-30",
-        "days": 29,
+        "days": 28,
         "salesperson": "Zeke",
         "gid": "1212344857819012",
         "project_number": "2594"
@@ -9387,7 +9381,7 @@
       {
         "name": "Bowman Steel - Jonesborough, TN - Paul - 2576",
         "end_date": "2026-05-31",
-        "days": 30,
+        "days": 29,
         "salesperson": "Paul",
         "gid": "1211456854891625",
         "project_number": "2576"
@@ -9395,7 +9389,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - San Angelo, TX - Logan - 2613 [Houses C,D,E]",
         "end_date": "2026-05-31",
-        "days": 30,
+        "days": 29,
         "salesperson": "Logan",
         "gid": "1213240184667434",
         "project_number": "2613"
@@ -9403,7 +9397,7 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Umatilla, OR - Logan - 2617 [House A]",
         "end_date": "2026-05-31",
-        "days": 30,
+        "days": 29,
         "salesperson": "Logan",
         "gid": "1213329022938206",
         "project_number": "2617"
@@ -9411,7 +9405,7 @@
       {
         "name": "Gutknecht Construction - Louisville, KY - Matt - 2622",
         "end_date": "2026-05-31",
-        "days": 30,
+        "days": 29,
         "salesperson": "Matt",
         "gid": "1213439679118236",
         "project_number": "2622"
@@ -9419,25 +9413,25 @@
       {
         "name": "Aggregate Resource Industries, Inc. - Kuna, ID - Logan - 2630",
         "end_date": "2026-05-31",
-        "days": 30,
+        "days": 29,
         "salesperson": "Logan",
         "gid": "1213807211139673",
         "project_number": "2630"
+      },
+      {
+        "name": "Independence Excavating - Richmond, VA - Paul - 2532",
+        "end_date": "2026-06-01",
+        "days": 30,
+        "salesperson": "Paul",
+        "gid": "1210056931565763",
+        "project_number": "2532"
       }
     ],
     "ending_in_31_45": [
       {
-        "name": "Independence Excavating - Richmond, VA - Paul - 2532",
-        "end_date": "2026-06-01",
-        "days": 31,
-        "salesperson": "Paul",
-        "gid": "1210056931565763",
-        "project_number": "2532"
-      },
-      {
         "name": "Caliber 1 - Montgomery, AL - Paul - 2588",
         "end_date": "2026-06-05",
-        "days": 35,
+        "days": 34,
         "salesperson": "Paul",
         "gid": "1211939568903452",
         "project_number": "2588"
@@ -9445,7 +9439,7 @@
       {
         "name": "Southern Wall Systems - Fort Worth, TX - Logan - 2570",
         "end_date": "2026-06-12",
-        "days": 42,
+        "days": 41,
         "salesperson": "Logan",
         "gid": "1211269009738648",
         "project_number": "2570"
@@ -9453,7 +9447,7 @@
       {
         "name": "Benco Construction Services - Delray Beach, FL - Zeke - 2621 [House B]",
         "end_date": "2026-06-12",
-        "days": 42,
+        "days": 41,
         "salesperson": "Zeke",
         "gid": "1213423592821387",
         "project_number": "2621"
